@@ -1,0 +1,12 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/lingering_potion"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "item/lingering_potion/1"},
+		{"predicate": {"custom_model_data":2}, "model": "item/lingering_potion/2"},
+		{"predicate": {"custom_model_data":3}, "model": "item/lingering_potion/3"}
+	]
+}

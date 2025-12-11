@@ -1,0 +1,53 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "background",
+	"texture_size": [128, 128],
+	"textures": {
+		"1": "item/optn_panel/maps_tab/map_selection"
+	},
+	"elements": [
+		{
+			"from": [-9, 8, 8],
+			"to": [25, 11, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 10, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 0.375], "texture": "#missing"},
+				"south": {"uv": [0, 0, 0.875, 0.375], "texture": "#missing"},
+				"west": {"uv": [0, 0, 0, 0.375], "texture": "#missing"},
+				"up": {"uv": [0, 0, 0.875, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0.875, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"thirdperson_lefthand": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"firstperson_righthand": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"firstperson_lefthand": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"ground": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"gui": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"head": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"fixed": {
+			"scale": [1.6, 1.6, 1]
+		},
+		"on_shelf": {
+			"scale": [1.6, 1.6, 1]
+		}
+	}
+}
