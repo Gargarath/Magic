@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "used_bed": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": { "blocks": "#minecraft:beds" }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:used_bed/detect_map"
+  }
+}

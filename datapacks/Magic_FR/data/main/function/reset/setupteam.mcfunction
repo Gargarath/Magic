@@ -1,0 +1,227 @@
+team add red
+team modify red color red
+team modify red nametagVisibility hideForOtherTeams
+team modify red friendlyFire false
+team modify red collisionRule pushOwnTeam
+# Crée la team red utilisée pour le CTF
+
+team add blue
+team modify blue color blue
+team modify blue nametagVisibility hideForOtherTeams
+team modify blue friendlyFire false
+team modify blue collisionRule pushOwnTeam
+# Crée la team blue utilisée pour le CTF
+
+team add spectator
+team modify spectator color gray
+team modify spectator prefix [{"atlas":"minecraft:items","sprite":"item/ender_eye","color":"white"}," "]
+team modify spectator nametagVisibility always
+team modify spectator friendlyFire false
+team modify spectator seeFriendlyInvisibles false
+team modify spectator collisionRule never
+# Crée la team spectator utilisée pour le CTF
+
+team add lobby
+team modify lobby collisionRule never
+# Crée la team lobby utilisée pour les joueurs qui n'ont ni équipe ni équipe
+
+team add warrior
+team add archer
+team add mage
+team add rogue
+team modify warrior collisionRule never
+team modify archer collisionRule never
+team modify mage collisionRule never
+team modify rogue collisionRule never
+team modify warrior seeFriendlyInvisibles false
+team modify archer seeFriendlyInvisibles false
+team modify mage seeFriendlyInvisibles false
+team modify rogue seeFriendlyInvisibles false
+team modify warrior prefix {"text":"[Guerrier] ","color":"gold"}
+team modify archer prefix {"text":"[Archer] ","color":"dark_green"}
+team modify mage prefix {"text":"[Mage] ","color":"dark_purple"}
+team modify rogue prefix {"text":"[Assassin] ","color":"gray"}
+# Crée les team de classe utilisées dans le lobby pour afficher la classe
+
+team add w_red
+team add a_red
+team add m_red
+team add r_red
+team add w_red
+team modify w_red color red
+team modify a_red color red
+team modify m_red color red
+team modify r_red color red
+team modify w_red collisionRule never
+team modify a_red collisionRule never
+team modify m_red collisionRule never
+team modify r_red collisionRule never
+team modify w_red seeFriendlyInvisibles false
+team modify a_red seeFriendlyInvisibles false
+team modify m_red seeFriendlyInvisibles false
+team modify r_red seeFriendlyInvisibles false
+team modify w_red prefix {"text":"[Guerrier] ","color":"gold"}
+team modify a_red prefix {"text":"[Archer] ","color":"dark_green"}
+team modify m_red prefix {"text":"[Mage] ","color":"dark_purple"}
+team modify r_red prefix {"text":"[Assassin] ","color":"gray"}
+# Crée les team rouges utilisées dans le lobby pour afficher la classe
+
+
+team add w_blue
+team add a_blue
+team add m_blue
+team add r_blue
+team modify w_blue color blue
+team modify a_blue color blue
+team modify m_blue color blue
+team modify r_blue color blue
+team modify w_blue collisionRule never
+team modify a_blue collisionRule never
+team modify m_blue collisionRule never
+team modify r_blue collisionRule never
+team modify w_blue seeFriendlyInvisibles false
+team modify a_blue seeFriendlyInvisibles false
+team modify m_blue seeFriendlyInvisibles false
+team modify r_blue seeFriendlyInvisibles false
+team modify w_blue prefix {"text":"[Guerrier] ","color":"gold"}
+team modify a_blue prefix {"text":"[Archer] ","color":"dark_green"}
+team modify m_blue prefix {"text":"[Mage] ","color":"dark_purple"}
+team modify r_blue prefix {"text":"[Assassin] ","color":"gray"}
+# Crée les team bleues utilisées dans le lobby pour afficher la classe
+
+## VARIANTE OP
+
+team add red_op
+team modify red_op color red
+team modify red_op nametagVisibility always
+team modify red_op friendlyFire false
+team modify red_op collisionRule pushOwnTeam
+team modify red_op prefix {"text":"\uE600 ","color":"gold"}
+# Crée la team red_op
+
+team add blue_op
+team modify blue_op color blue
+team modify blue_op nametagVisibility always
+team modify blue_op friendlyFire false
+team modify blue_op collisionRule pushOwnTeam
+team modify blue_op prefix {"text":"\uE600 ","color":"gold"}
+# Crée la team blue_op
+
+team add spectator_op
+team modify spectator_op color gray
+team modify spectator_op prefix [{"text":"\uE600 ","color":"gold"},{"atlas":"minecraft:items","sprite":"item/ender_eye","color":"white","scale":1}," "]
+team modify spectator_op nametagVisibility always
+team modify spectator_op friendlyFire false
+team modify spectator_op seeFriendlyInvisibles false
+team modify spectator_op collisionRule never
+# Crée la team spectator utilisée pour le CTF
+
+team add lobby_op
+team modify lobby_op prefix {"text":"\uE600 ","color":"gold"}
+team modify lobby_op collisionRule never
+# Crée la team lobby utilisée pour les joueurs qui n'ont ni équipe ni équipe
+
+team add warrior_op
+team add archer_op
+team add mage_op
+team add rogue_op
+team modify warrior_op collisionRule never
+team modify archer_op collisionRule never
+team modify mage_op collisionRule never
+team modify rogue_op collisionRule never
+team modify warrior_op seeFriendlyInvisibles false
+team modify archer_op seeFriendlyInvisibles false
+team modify mage_op seeFriendlyInvisibles false
+team modify rogue_op seeFriendlyInvisibles false
+team modify warrior_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
+team modify archer_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
+team modify mage_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
+team modify rogue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+# Crée les team de classe utilisées dans le lobby pour afficher la classe
+
+team add w_red_op
+team add a_red_op
+team add m_red_op
+team add r_red_op
+team add w_red_op
+team modify w_red_op color red
+team modify a_red_op color red
+team modify m_red_op color red
+team modify r_red_op color red
+team modify w_red_op collisionRule never
+team modify a_red_op collisionRule never
+team modify m_red_op collisionRule never
+team modify r_red_op collisionRule never
+team modify w_red_op seeFriendlyInvisibles false
+team modify a_red_op seeFriendlyInvisibles false
+team modify m_red_op seeFriendlyInvisibles false
+team modify r_red_op seeFriendlyInvisibles false
+team modify w_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
+team modify a_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
+team modify m_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
+team modify r_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+# Crée les team rouges utilisées dans le lobby pour afficher la classe
+
+
+team add w_blue_op
+team add a_blue_op
+team add m_blue_op
+team add r_blue_op
+team modify w_blue_op color blue
+team modify a_blue_op color blue
+team modify m_blue_op color blue
+team modify r_blue_op color blue
+team modify w_blue_op collisionRule never
+team modify a_blue_op collisionRule never
+team modify m_blue_op collisionRule never
+team modify r_blue_op collisionRule never
+team modify w_blue_op seeFriendlyInvisibles false
+team modify a_blue_op seeFriendlyInvisibles false
+team modify m_blue_op seeFriendlyInvisibles false
+team modify r_blue_op seeFriendlyInvisibles false
+team modify w_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
+team modify a_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
+team modify m_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
+team modify r_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+# Crée les team bleues utilisées dans le lobby pour afficher la classe
+
+
+
+        ## SHOP
+
+team add ready_red
+team add non_ready_red
+team modify ready_red nametagVisibility never
+team modify non_ready_red nametagVisibility never
+team modify ready_red color red
+team modify non_ready_red color red
+team modify ready_red prefix {"text":"[Prêt] ","color":"dark_green"}
+team modify non_ready_red prefix {"text":"[Pas prêt] ","color":"dark_red"}
+# Crée les team rouges utilisées dans le shop pour afficher si prêt ou non
+
+team add ready_blue
+team add non_ready_blue
+team modify ready_blue nametagVisibility never
+team modify non_ready_blue nametagVisibility never
+team modify ready_blue color blue
+team modify non_ready_blue color blue
+team modify ready_blue prefix {"text":"[Prêt] ","color":"dark_green"}
+team modify non_ready_blue prefix {"text":"[Pas prêt] ","color":"dark_red"}
+# Crée les team bleues utilisées dans le shop pour afficher si prêt ou non
+
+
+team add respawn_red
+team add respawn_blue
+team modify respawn_red color gray
+team modify respawn_blue color gray
+team modify respawn_red nametagVisibility never
+team modify respawn_blue nametagVisibility never
+team modify respawn_blue prefix ["",{"text":"[","color":"gray"},{"text":"Mort","color":"blue"},{"text":"] ","color":"gray"}]
+team modify respawn_red prefix ["",{"text":"[","color":"gray"},{"text":"Mort","color":"red"},{"text":"] ","color":"gray"}]
+# Crée la team respawn utilisée pour la réaparition
+
+team add stats_book_blue
+team add stats_book_red
+team modify stats_book_blue color reset
+team modify stats_book_red color reset
+# Crée la team stats_book utilisée pour les le livre de stats

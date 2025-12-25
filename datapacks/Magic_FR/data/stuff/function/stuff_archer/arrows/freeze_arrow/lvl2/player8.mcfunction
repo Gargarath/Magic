@@ -1,0 +1,9 @@
+execute if score @s arrows_slot matches 0 run item replace entity @s hotbar.0 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 1 run item replace entity @s hotbar.1 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 2 run item replace entity @s hotbar.2 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 3 run item replace entity @s hotbar.3 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 4 run item replace entity @s hotbar.4 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 5 run item replace entity @s hotbar.5 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 6 run item replace entity @s hotbar.6 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 7 run item replace entity @s hotbar.7 from block 14 94 13 container.13
+execute if score @s arrows_slot matches 8 run item replace entity @s hotbar.8 from block 14 94 13 container.13

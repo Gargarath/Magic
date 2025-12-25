@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Mes options",
+    "type": "text",
+    "color": "gold",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Personnalise ton expérience de jeu !",
+      "type": "text",
+      "bold": false
+    },
+    "width": 300
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "",
+      "label": {
+        "text": "Afficher les raccourcis "
+      },
+      "options": [
+        {
+          "id": "",
+          "display": {
+            "text": "OUI",
+            "type": "text",
+            "color": "green",
+            "bold": true
+          },
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": {
+            "text": "NON",
+            "type": "text",
+            "color": "red",
+            "bold": true
+          }
+        }
+      ]
+    }
+  ],
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "a"
+      }
+    }
+  ]
+}

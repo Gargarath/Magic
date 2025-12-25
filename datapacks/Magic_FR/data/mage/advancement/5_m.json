@@ -1,0 +1,31 @@
+{
+  "display": {
+    "title": {
+      "text": "Trait de feu I - 30 PH           ",
+      "color": "red",
+      "bold": true
+    },
+    "description": {
+      "text": "Lance un trait de feu dans la direction visée. Il infligera 6 points de dégats au premier adversaire rencontré et 1 point de dégâts de brulure par seconde pendant 3 secondes.\n\nSi la cible est gelée, l'effet de gel sera annulé.\n \nToucher un ennemi avec ce sort réduit son temps de recharge de moitié.\n\nTemps de recharge: 20s.",
+      "color": "green",
+      "bold": false
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["spell1_m"] },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spell1lvl1m": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mage:passif_m"
+}

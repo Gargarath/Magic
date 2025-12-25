@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Jambières de vitesse VII - 21 PH"
+    },
+    "description": {
+      "text": "+3,5 points d'armure.                 \n \n+21% vitesse de déplacement.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:iron_leggings"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "legslvl7r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:legslvl6_r"
+}

@@ -1,0 +1,1 @@
+execute at @e[tag=lich] run particle minecraft:flame ~ ~2.3 ~0.6 ~ ~ ~ 0 0 normal

@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Bâton de combat VIII - 80 PH"
+    },
+    "description": {
+      "text": "+4 points d'attaque.                   \n\n---------------------------\nLance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.\n\nPortée maximale: 40 blocs.\n\nCoût en mana: 65\n---------------------------",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:blaze_rod"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "weapon1lvl8m": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mage:weapon1lvl7_m"
+}

@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "used_bed": {
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "main:stats/calculate_dmg_taken/took_dmg"
+  }
+}

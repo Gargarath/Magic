@@ -1,0 +1,10 @@
+## permet d'actualiser la bossbar de l'objectif secondaire
+
+bossbar set minecraft:secondary_objective_blue name ["",{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true}]
+
+bossbar set minecraft:secondary_objective_red name ["",{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true}]
+
+execute if score state point_capture matches 1 store result bossbar minecraft:secondary_objective_blue value run scoreboard players get blue point_capture
+execute if score state point_capture matches 2 store result bossbar minecraft:secondary_objective_blue value run scoreboard players get red point_capture
+execute if score state point_capture matches 1 store result bossbar minecraft:secondary_objective_red value run scoreboard players get blue point_capture
+execute if score state point_capture matches 2 store result bossbar minecraft:secondary_objective_red value run scoreboard players get red point_capture

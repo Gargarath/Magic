@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé IX - 45 PH"
+    },
+    "description": {
+      "text": "+4,5 points d'armure.\n \n+90% points de vie.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:diamond_chestplate"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl9r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:chestlvl8_r"
+}

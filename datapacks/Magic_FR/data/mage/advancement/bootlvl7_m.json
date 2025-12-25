@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Bottes d'acrobate VII - 14 PH"
+    },
+    "description": {
+      "text": "+3,5 points d'armure.\n\n+7 distance de chute avant dégâts",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:iron_boots"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bootlvl7m": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mage:bootlvl6_m"
+}

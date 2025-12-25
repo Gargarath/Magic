@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Mes options",
+    "type": "text",
+    "color": "gold",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Oui bon pour le moment y'a pas 15 000 options...",
+      "type": "text",
+      "bold": true
+    },
+    "width": 300
+  },
+  "inputs": [],
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "Pas grave t'es le GOAT !",
+        "color": "green",
+        "bold": true
+      },
+      "width": 155
+    }
+  ]
+}

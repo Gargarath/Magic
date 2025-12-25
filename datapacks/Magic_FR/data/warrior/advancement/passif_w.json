@@ -1,0 +1,36 @@
+{
+  "display": {
+    "title": {
+      "text": "Passif: Armure blindée",
+      "color": "dark_red",
+      "strikethrough": false
+    },
+    "description": [
+      "",
+      {
+        "text": "Votre plastron vous octroie 1.5 fois plus de points de vie",
+        "color": "green"
+      },
+      {
+        "text": "\n \nVos jambières vous octroient deux fois moins de vitesse.",
+        "color": "red"
+      }
+    ],
+    "icon": {
+      "id": "minecraft:diamond_chestplate",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "passifa": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "warrior:root"
+}

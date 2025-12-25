@@ -1,0 +1,33 @@
+{
+  "display": {
+    "title": {
+      "text": "Piège à ours III - 90 PH",
+      "color": "gold",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "Lance un piège à ours au sol qui immobilisera tout joueur adverse dans un rayon de 1 bloc pendant 4 secondes et lui infligera 6 points de dégâts.\n\n\nLes joueurs immobilisés ne peuvent pas utiliser de sorts.\n\nLe piège est destructible par tous les joueurs.\n\nTemps de recharge: 5s.",
+      "color": "green",
+      "bold": false,
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["spell2_a"] },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spell1lvl3a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:spell2lvl2_a"
+}

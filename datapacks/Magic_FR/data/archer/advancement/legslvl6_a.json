@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "Jambières de vitesse VI - 18 PH",
+      "italic": false
+    },
+    "description": {
+      "text": "+3 points d'armure.\n \n+18% vitesse de déplacement.",
+      "color": "green",
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:chainmail_leggings",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "legslvl6a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:legslvl5_a"
+}

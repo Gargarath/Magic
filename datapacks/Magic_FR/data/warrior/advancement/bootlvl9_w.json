@@ -1,0 +1,23 @@
+{
+  "display": {
+    "title": {
+      "text": "Bottes d'acrobate IX - 18 PH"
+    },
+    "description": {
+      "text": "+4,5 points d'armure.\n\n+9 distance de chute avant dégâts"
+    },
+    "icon": {
+      "id": "minecraft:diamond_boots"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bootlvl9w": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "warrior:bootlvl8_w"
+}

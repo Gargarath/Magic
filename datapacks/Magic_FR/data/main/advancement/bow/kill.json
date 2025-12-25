@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "player_bow_kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "direct_entity": { "type": "minecraft:arrow" },
+          "source_entity": { "type": "minecraft:player" }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "main:stats/bow/bow_kill/bow_kill" }
+}

@@ -1,0 +1,15 @@
+# appelée par stuff:stuffarcher si @s possède la flèche explosive
+# permet à @s de récuperer la bonne flèche explosive selon son numéro de joueur
+
+execute if score @s Player matches 1 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player1
+execute if score @s Player matches 2 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player2
+execute if score @s Player matches 3 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player3
+execute if score @s Player matches 4 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player4
+execute if score @s Player matches 5 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player5
+execute if score @s Player matches 6 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player6
+execute if score @s Player matches 7 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player7
+execute if score @s Player matches 8 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player8
+execute if score @s Player matches 9 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player9
+execute if score @s Player matches 10 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player10
+execute if score @s Player matches 11 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player11
+execute if score @s Player matches 12 run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/player12

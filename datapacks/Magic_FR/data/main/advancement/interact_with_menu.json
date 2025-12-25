@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity":{
+          "type":"interaction",
+          "nbt": "{Tags:[\"optn_menu_clickable\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lobby:option_panel/interact_with_menu/interact_with_menu"
+  }
+}

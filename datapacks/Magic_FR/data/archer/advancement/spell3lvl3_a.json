@@ -1,0 +1,33 @@
+{
+  "display": {
+    "title": {
+      "text": "Flèche de glace III 240 PH",
+      "color": "aqua",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "Votre prochaine flèche diminuera la vitesse de la cible de 60% pendant 7 secondes.\n\nSi la cible porte un drapeau, ce dernier tombera au sol immédiatement.\nSi la cible est en feu, l'effet de brûlure sera annulé.\n \nL'effet de ce sort peut être cumulé avec celui de la flèche explosive.\n \nTemps de recharge: 10s.",
+      "color": "green",
+      "bold": false,
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["spell3_a"] },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spell3lvl3a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:spell3lvl2_a"
+}

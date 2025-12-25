@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Bottes d'acrobate III - 6 PH"
+    },
+    "description": {
+      "text": "+1,5 points d'armure.\n\n+3 distance de chute avant dégâts",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:golden_boots"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bootlvl3m": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mage:bootlvl2_m"
+}

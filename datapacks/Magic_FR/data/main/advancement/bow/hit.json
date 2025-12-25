@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "arrow_hit_any": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": { "type": "#minecraft:spellable" },
+        "damage": {
+          "type": {
+            "direct_entity": { "type": "minecraft:arrow" }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "main:stats/bow/bow_damage/hit" }
+}

@@ -1,0 +1,42 @@
+## appelée par drop_w si @s a drop un item en guerrier
+# permet de lui faire lancer le spell du keybind 1 si il l'a
+
+execute as @s[scores={trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
+execute as @s[scores={hooked_w=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooked
+execute as @s[tag=is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooker
+execute as @s[team=respawn_red] run function spells:cant_usespell/respawn
+execute as @s[team=respawn_blue] run function spells:cant_usespell/respawn
+# dit qu'il peut pas si pas possible
+
+# Pour chaque slot, on vérifie si c'est le sort 1
+execute if score @s key_slot1 matches 0 if items entity @s hotbar.0 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 1 if items entity @s hotbar.1 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 2 if items entity @s hotbar.2 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 3 if items entity @s hotbar.3 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 4 if items entity @s hotbar.4 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 5 if items entity @s hotbar.5 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 6 if items entity @s hotbar.6 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 7 if items entity @s hotbar.7 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+execute if score @s key_slot1 matches 8 if items entity @s hotbar.8 minecraft:carrot_on_a_stick[custom_data={spell1_w:1b,spell1_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell1/usespell1_w
+
+# Pour chaque slot, on vérifie si c'est le sort 2
+execute if score @s key_slot1 matches 0 if items entity @s hotbar.0 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 1 if items entity @s hotbar.1 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 2 if items entity @s hotbar.2 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 3 if items entity @s hotbar.3 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 4 if items entity @s hotbar.4 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 5 if items entity @s hotbar.5 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 6 if items entity @s hotbar.6 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 7 if items entity @s hotbar.7 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+execute if score @s key_slot1 matches 8 if items entity @s hotbar.8 minecraft:carrot_on_a_stick[custom_data={spell2_w:1b,spell2_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell2/usespell2_w
+
+# Pour chaque slot, on vérifie si c'est le sort 3
+execute if score @s key_slot1 matches 0 if items entity @s hotbar.0 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 1 if items entity @s hotbar.1 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 2 if items entity @s hotbar.2 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 3 if items entity @s hotbar.3 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 4 if items entity @s hotbar.4 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 5 if items entity @s hotbar.5 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 6 if items entity @s hotbar.6 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 7 if items entity @s hotbar.7 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w
+execute if score @s key_slot1 matches 8 if items entity @s hotbar.8 minecraft:carrot_on_a_stick[custom_data={spell3_w:1b,spell3_slot:1b}] as @s[scores={trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:usespell/usespell3/usespell3_w

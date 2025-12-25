@@ -1,0 +1,11 @@
+# donne les objets qui indiquent le temps de recharge restant à @s (qui est mage) selon ses temps de recharge
+
+execute if score @s spell1 matches 1 if score @s cooldownspell1 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell1/spell1lvl1_m
+execute if score @s spell1 matches 2 if score @s cooldownspell1 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell1/spell1lvl2_m
+execute if score @s spell1 matches 3 if score @s cooldownspell1 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell1/spell1lvl3_m
+
+execute if score @s spell2 matches 1 if score @s cooldownspell2 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell2/spell2lvl1_m
+execute if score @s spell2 matches 2 if score @s cooldownspell2 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell2/spell2lvl2_m
+execute if score @s spell2 matches 3 if score @s cooldownspell2 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell2/spell2lvl3_m
+
+execute if score @s spell3 matches 1 if score @s cooldownspell3 matches 0.. run function stuff:stuff_mage/cooldowns_m/spell3/spell3lvl1_m

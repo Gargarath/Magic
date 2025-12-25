@@ -1,0 +1,30 @@
+{
+  "values":[
+	"minecraft:air",
+	"minecraft:short_grass",
+	"minecraft:tall_grass",
+	"#minecraft:plants",
+	"#minecraft:buttons",
+	"#minecraft:trapdoors",
+	"minecraft:lever",
+	"#minecraft:wall_signs",
+	"#minecraft:banners",
+	"#minecraft:carpets",
+	"minecraft:oak_fence_gate",
+	"#minecraft:rails",
+	"minecraft:stone_pressure_plate",
+	"minecraft:comparator",
+	"minecraft:cobweb",
+	"minecraft:torch",
+	"minecraft:redstone_torch",
+	"minecraft:heavy_weighted_pressure_plate",
+	"minecraft:iron_bars",
+	"minecraft:ladder",
+	"minecraft:black_stained_glass_pane",
+	"minecraft:white_stained_glass_pane",
+	"minecraft:vine",
+	"minecraft:iron_chain",
+	"minecraft:glow_lichen",
+	"minecraft:light"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé V - 25 PH",
+      "italic": false
+    },
+    "description": {
+      "text": "+2,5 points d'armure.\n \n+50% points de vie.",
+      "color": "green",
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:chainmail_chestplate"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl5a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:chestlvl4_a"
+}

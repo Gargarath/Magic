@@ -1,0 +1,25 @@
+{
+  "display": {
+    "title": {
+      "text": "Passif: Régénération      ",
+      "color": "yellow",
+      "strikethrough": false
+    },
+    "description": {
+      "text": "Vos points de vie se régénèrent beaucoup plus rapidement."
+    },
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "passifr": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:root"
+}

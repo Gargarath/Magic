@@ -1,0 +1,43 @@
+## appelée par end_game join_blueteam join_redteam... (chaque fois que @s change d'équipe vers une équipe du lobby)
+# permet de mettre la bonne équipe à @s
+
+team join lobby @s[tag=!blue_team,tag=!red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=0}]
+team join warrior @s[tag=!blue_team,tag=!red_team,tag=warrior,scores={operator=0}]
+team join archer @s[tag=!blue_team,tag=!red_team,tag=archer,scores={operator=0}]
+team join mage @s[tag=!blue_team,tag=!red_team,tag=mage,scores={operator=0}]
+team join rogue @s[tag=!blue_team,tag=!red_team,tag=rogue,scores={operator=0}]
+team join lobby_op @s[tag=!blue_team,tag=!red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=2}]
+team join warrior_op @s[tag=!blue_team,tag=!red_team,tag=warrior,scores={operator=2}]
+team join archer_op @s[tag=!blue_team,tag=!red_team,tag=archer,scores={operator=2}]
+team join mage_op @s[tag=!blue_team,tag=!red_team,tag=mage,scores={operator=2}]
+team join rogue_op @s[tag=!blue_team,tag=!red_team,tag=rogue,scores={operator=2}]
+
+team join red @s[tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=0}]
+team join w_red @s[tag=red_team,tag=warrior,scores={operator=0}]
+team join a_red @s[tag=red_team,tag=archer,scores={operator=0}]
+team join m_red @s[tag=red_team,tag=mage,scores={operator=0}]
+team join r_red @s[tag=red_team,tag=rogue,scores={operator=0}]
+team join blue @s[tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=0}]
+team join w_blue @s[tag=blue_team,tag=warrior,scores={operator=0}]
+team join a_blue @s[tag=blue_team,tag=archer,scores={operator=0}]
+team join m_blue @s[tag=blue_team,tag=mage,scores={operator=0}]
+team join r_blue @s[tag=blue_team,tag=rogue,scores={operator=0}]
+
+team join red_op @s[tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=2}]
+team join w_red_op @s[tag=red_team,tag=warrior,scores={operator=2}]
+team join a_red_op @s[tag=red_team,tag=archer,scores={operator=2}]
+team join m_red_op @s[tag=red_team,tag=mage,scores={operator=2}]
+team join r_red_op @s[tag=red_team,tag=rogue,scores={operator=2}]
+team join blue_op @s[tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=2}]
+team join w_blue_op @s[tag=blue_team,tag=warrior,scores={operator=2}]
+team join a_blue_op @s[tag=blue_team,tag=archer,scores={operator=2}]
+team join m_blue_op @s[tag=blue_team,tag=mage,scores={operator=2}]
+team join r_blue_op @s[tag=blue_team,tag=rogue,scores={operator=2}]
+
+team join spectator @s[tag=spectator,scores={operator=0}]
+team join spectator @s[tag=blue_spectator,scores={operator=0}]
+team join spectator @s[tag=red_spectator,scores={operator=0}]
+team join spectator_op @s[tag=spectator,scores={operator=2}]
+team join spectator_op @s[tag=blue_spectator,scores={operator=2}]
+team join spectator_op @s[tag=red_spectator,scores={operator=2}]
+# Donne sa team de lobby à @s

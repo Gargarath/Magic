@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "Arc de combat VIII - 80 PH",
+      "italic": false
+    },
+    "description": {
+      "text": "Puissance 5\n \nRecul 1\n \n+4 emplacements de flèches.",
+      "color": "green",
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:bow",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "weapon1lvl8a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:weapon1lvl7_a"
+}

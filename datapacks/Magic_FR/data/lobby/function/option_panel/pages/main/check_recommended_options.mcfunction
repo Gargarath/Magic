@@ -1,0 +1,35 @@
+## appelée par display_main_tab quand on affiche la page principale du panneau d'options
+## permet de check si on a les options recommandées d'activées
+
+scoreboard players set $recommended_optns option_panel 1
+
+
+# lobby
+execute unless score $lobby_arena option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $lobby_maps option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $lobby_jump option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $operator_access option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $matchmaking option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $force_launch option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0
+
+# gamemode
+# ctf
+execute unless score $secondary_objectives option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $teamkill option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $show_next_map option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $shop_timer option_panel matches 60 run scoreboard players set $recommended_optns option_panel 0
+
+# maps
+execute unless score $block_same_map map_selection matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $random map_selection matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $time_change option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+
+# shop
+execute unless score $build_reset option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $ph_start option_panel matches 300 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $ph_per_round option_panel matches 300 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $ph_per_obj option_panel matches 75 run scoreboard players set $recommended_optns option_panel 0
+
+# fun
+execute unless score $no_cooldowns option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $infinite_money option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0

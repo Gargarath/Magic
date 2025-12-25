@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé VIII - 40 PH"
+    },
+    "description": {
+      "text": "+4 points d'armure.\n \n+80% points de vie.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:iron_chestplate",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl7r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:chestlvl7_r"
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "title": {
+      "text": "Guerrier                    ",
+      "color": "red",
+      "bold": true
+    },
+    "description": {
+      "text": "Spécialiste du combat rapproché, votre capacité à encaisser les coups et votre grosse hache vous donnent un avantage certain au corps à corps !",
+      "color": "white",
+      "bold": false,
+      "italic": true
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["battle_axe"] }
+      }
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:block/red_concrete"
+  },
+  "criteria": {
+    "warrior": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

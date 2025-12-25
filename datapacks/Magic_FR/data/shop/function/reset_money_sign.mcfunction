@@ -1,0 +1,5 @@
+## appelée par resetframeroom et #buyX
+# permet d'actualiser le panneau d'argent
+
+execute if score $infinite_money option_panel matches 0 positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ run data merge block ~ ~3 ~4 {front_text:{messages:[{"text":"Points","color":"gold","bold":true},{"text":"d'honneur","color":"gold","bold":true},{"text":"restants :","color":"gold","bold":true},{"score":{"name":"@p[distance=..15,gamemode=!spectator]","objective":"PH"},"color":"green","bold":true}]}}
+execute if score $infinite_money option_panel matches 1 positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ run data merge block ~ ~3 ~4 {front_text:{messages:[{"text":"Points","color":"gold","bold":true},{"text":"d'honneur","color":"gold","bold":true},{"text":"restants :","color":"gold","bold":true},{"text":"∞","color":"green","bold":true}]}}

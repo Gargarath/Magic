@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "entity_hurt_by_arrow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": { "type": "minecraft:arrow" }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "main:stats/bow/bow_damage/victim_hit" }
+}

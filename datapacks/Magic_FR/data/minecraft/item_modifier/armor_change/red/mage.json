@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:trim": {
+      "material": "redstone",
+      "pattern": "minecraft:eye"
+    }
+  },
+  "conditions": []
+}

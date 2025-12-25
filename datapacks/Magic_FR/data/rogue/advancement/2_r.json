@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Jambières de vitesse I - 3 PH"
+    },
+    "description": {
+      "text": "+0,5 point d'armure.                    \n \n+3% vitesse de déplacement.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:leather_leggings"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "legslvl1r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:passif_r"
+}

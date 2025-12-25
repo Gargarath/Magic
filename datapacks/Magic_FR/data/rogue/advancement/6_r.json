@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé I - 5 PH"
+    },
+    "description": {
+      "text": "+0,5 point d'armure.\n \n+10% points de vie.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:leather_chestplate"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl1r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:passif_r"
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé II - 10 PH",
+      "italic": false
+    },
+    "description": {
+      "text": "+1 points d'armure.\n \n+20% points de vie.",
+      "color": "green",
+      "italic": false
+    },
+    "icon": {
+      "id": "minecraft:leather_chestplate",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl2a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "archer:7_a"
+}

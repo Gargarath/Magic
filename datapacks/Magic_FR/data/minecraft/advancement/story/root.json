@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Story",
+            "color": "red",
+            "bold": true
+        },
+        "description": {
+            "text": "x",
+            "color": "white",
+            "bold": true
+        },
+        "icon": {
+            "item": "bug"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "story": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

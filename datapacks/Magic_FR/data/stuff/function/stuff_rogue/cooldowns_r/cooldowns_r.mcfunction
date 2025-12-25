@@ -1,0 +1,9 @@
+# donne les objets qui indiquent le temps de recharge restant à @s (qui est assassin) selon ses temps de recharge
+
+execute if score @s spell1 matches 1 if score @s cooldownspell1 matches 0.. run function stuff:stuff_rogue/cooldowns_r/spell1/spell1lvl1_r
+execute if score @s spell1 matches 2 if score @s cooldownspell1 matches 0.. run function stuff:stuff_rogue/cooldowns_r/spell1/spell1lvl2_r
+execute if score @s spell1 matches 3 if score @s cooldownspell1 matches 0.. run function stuff:stuff_rogue/cooldowns_r/spell1/spell1lvl3_r
+
+execute if score @s spell2 matches 1 if score @s cooldownspell2 matches 0.. run function stuff:stuff_rogue/cooldowns_r/spell2/spell2lvl1_r
+
+execute if score @s spell3 matches 1 if score @s cooldownspell3 matches 0.. run function stuff:stuff_rogue/cooldowns_r/spell3/spell3lvl1_r

@@ -1,0 +1,9 @@
+{
+    "values": [
+    "minecraft:player",
+	"minecraft:wither_skeleton",
+    "minecraft:slime",
+	"minecraft:iron_golem"
+		
+    ]
+}

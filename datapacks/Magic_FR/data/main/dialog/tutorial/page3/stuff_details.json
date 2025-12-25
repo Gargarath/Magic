@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Tutoriel",
+    "type": "text",
+    "color": "green",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "EQUIPEMENT",
+      "type": "text",
+      "extra": [
+        {
+          "text": "\n\n\nUne bonne gestion de son équipement est essentielle pour remporter la partie. Il existe 3 grandes catégories d'équipement :",
+          "extra": [
+            {
+              "text": "\n\nLes armures : ",
+              "extra": [
+                {
+                  "text": "Communes à la plupart des classes, les pièces d'armure t'apporteront des effets uniques en plus de te protéger !",
+                  "extra": [
+                    {
+                      "text": "\n\nArme : ",
+                      "type": "text",
+                      "extra": [
+                        {
+                          "text": "Unique à ta classe, ton arme est essentielle pour remporter la partie.",
+                          "extra": [
+                            {
+                              "text": "\n\nSorts : ",
+                              "extra": [
+                                {
+                                  "text": "Unique à ta classe, tes sorts sont essentiels à ton gameplay, une bonne utilisation de tes sorts est une des clefs de la victoire.",
+                                  "extra": [
+                                    {
+                                      "text": "\n\nPour une liste complète des objets disponibles, ouvre le menu de succès.",
+                                      "color": "gray",
+                                      "italic": true
+                                    }
+                                  ],
+                                  "color": "white",
+                                  "bold": false
+                                }
+                              ],
+                              "color": "dark_purple",
+                              "bold": true
+                            }
+                          ],
+                          "color": "white",
+                          "bold": false
+                        }
+                      ],
+                      "color": "red",
+                      "bold": true
+                    }
+                  ],
+                  "color": "white",
+                  "bold": false
+                }
+              ],
+              "color": "gray",
+              "bold": true
+            }
+          ],
+          "color": "white",
+          "bold": false
+        }
+      ],
+      "color": "gold",
+      "bold": true
+    },
+    "width": 350
+  },
+  "action": {
+    "label": {
+      "text": "Suivant",
+      "color": "green",
+      "bold": true
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "main:tutorial/page4/page4_main"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+## appelée par shop_timer_increase, shop_timer_decrease ou display_gamemode_tab
+# permet d'afficher le bon prix
+
+execute if score $ph_per_round option_panel matches 0 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_0"]}}}}
+execute if score $ph_per_round option_panel matches 25 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_25"]}}}}
+execute if score $ph_per_round option_panel matches 50 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_50"]}}}}
+execute if score $ph_per_round option_panel matches 75 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_75"]}}}}
+execute if score $ph_per_round option_panel matches 100 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_100"]}}}}
+execute if score $ph_per_round option_panel matches 150 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_150"]}}}}
+execute if score $ph_per_round option_panel matches 200 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_200"]}}}}
+execute if score $ph_per_round option_panel matches 225 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_225"]}}}}
+execute if score $ph_per_round option_panel matches 250 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_250"]}}}}
+execute if score $ph_per_round option_panel matches 275 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_275"]}}}}
+execute if score $ph_per_round option_panel matches 300 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_300"]}}}}
+execute if score $ph_per_round option_panel matches 325 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_325"]}}}}
+execute if score $ph_per_round option_panel matches 350 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_350"]}}}}
+execute if score $ph_per_round option_panel matches 375 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_375"]}}}}
+execute if score $ph_per_round option_panel matches 400 run data merge entity @e[tag=optn_menu_shop_ph_per_round,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_400"]}}}}

@@ -1,0 +1,61 @@
+# appelée par arrow_hitted/playerX  au nom des joueurs qui ont été touchés par une fleche explo
+
+execute at @s run particle minecraft:explosion ~ ~0.5 ~ 0 0.5 0 0 3 force @a
+
+function main:stats/calculate_dmg_dealth/store_hp_before
+# lance la fonction qui calcule les dégats subit par @s pour les stats du caster
+
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 1 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 2 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 3 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 4 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 5 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 6 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 7 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 8 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 9 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 10 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 11 run damage @s 6 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 0 if score @s last_caster matches 12 run damage @s 6 minecraft:player_attack at ~ ~ ~
+
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 1 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 2 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 3 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 4 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 5 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 6 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 7 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 8 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 9 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 10 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 11 run damage @s 8 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 1 if score @s last_caster matches 12 run damage @s 8 minecraft:player_attack at ~ ~ ~
+
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 1 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 2 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 3 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 4 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 5 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 6 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 7 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 8 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 9 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 10 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 11 run damage @s 16 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 2 if score @s last_caster matches 12 run damage @s 16 minecraft:player_attack at ~ ~ ~
+
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 1 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 2 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 3 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 4 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 5 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 6 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 7 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 8 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 9 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 10 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 11 run damage @s 24 minecraft:player_attack at ~ ~ ~
+execute if score @s hit_by_explo_charge matches 3 if score @s last_caster matches 12 run damage @s 24 minecraft:player_attack at ~ ~ ~
+
+tag @s add get_exploded
+# indique que @s s'est tiré dessus par une flèche explo (pour le killfeed)

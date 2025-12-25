@@ -1,0 +1,9 @@
+## appelée par un des player si le joueur a le sort au niveau 3
+## permet de lui donner son cd
+
+execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldownspell2 10
+execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown2_clock 20
+execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_warrior/cooldowns_w/spell2/spell2lvl3_w
+
+execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell2 0
+execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown2_clock 5

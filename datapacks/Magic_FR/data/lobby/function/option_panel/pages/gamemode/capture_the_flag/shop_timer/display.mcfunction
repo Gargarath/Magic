@@ -1,0 +1,12 @@
+## appelée par shop_timer_increase, shop_timer_decrease ou display_gamemode_tab
+# permet d'afficher le bon timer d'achat
+
+execute if score $shop_timer option_panel matches -1 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_none"]}}}}
+execute if score $shop_timer option_panel matches 5 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_5"]}}}}
+execute if score $shop_timer option_panel matches 10 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_10"]}}}}
+execute if score $shop_timer option_panel matches 20 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_20"]}}}}
+execute if score $shop_timer option_panel matches 30 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_30"]}}}}
+execute if score $shop_timer option_panel matches 45 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_45"]}}}}
+execute if score $shop_timer option_panel matches 60 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_60"]}}}}
+execute if score $shop_timer option_panel matches 80 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_80"]}}}}
+execute if score $shop_timer option_panel matches 100 run data merge entity @e[tag=optn_menu_gamemode_shop_timer,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["shop_timer_100"]}}}}

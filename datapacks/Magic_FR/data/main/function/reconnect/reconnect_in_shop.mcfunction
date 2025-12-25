@@ -1,0 +1,114 @@
+## appelée par someone_reconnected si @s vient de rejoindre le shop pendant la partie
+# le remet ingame selon qu'il soit spec ou joueur | le met spec si il y a déjà assez de joueur ingame
+
+execute if score player playercount = player_atstart playercount run return run function main:reconnect/someone_joined_during_match
+# si il y a autant de joueur in_game qu'au début de la game -> annule la suite de cette fonction et fait rejoindre @s en spec
+
+scoreboard players set @s InShop 0
+scoreboard players set @s is_ready 0
+
+
+scoreboard players set @s IsAlive 0
+# reset ses morts si il en a eu dans les lobby
+
+scoreboard players set @s usespell 0
+
+scoreboard players set @s spec_player1 0
+scoreboard players set @s spec_player2 0
+scoreboard players set @s spec_player3 0
+scoreboard players set @s spec_player4 0
+scoreboard players set @s spec_player5 0
+scoreboard players set @s spec_player6 0
+scoreboard players set @s spec_player7 0
+scoreboard players set @s spec_player8 0
+scoreboard players set @s spec_player9 0
+scoreboard players set @s spec_player10 0
+scoreboard players set @s spec_player11 0
+scoreboard players set @s spec_player12 0
+tag @s remove spec_room1
+tag @s remove spec_room2
+tag @s remove spec_room3
+tag @s remove spec_room4
+tag @s remove spec_room5
+tag @s remove spec_room6
+tag @s remove spec_room7
+tag @s remove spec_room8
+tag @s remove spec_room9
+tag @s remove spec_room10
+tag @s remove spec_room11
+tag @s remove spec_room12
+# permet de reset les spectateur en spec dans le shop
+
+
+team join red @s[team=ready_red]
+team join red @s[team=non_ready_red]
+effect clear @s[scores={Player=1..}] minecraft:resistance
+execute as @s run function main:fix_health/clear_and_fix_health
+# reset la vie des joueurs et empêche aussi de check leur inventaire
+team join blue @s[team=ready_blue]
+team join blue @s[team=non_ready_blue]
+
+clear @s[scores={Player=1..}]
+item replace entity @s[scores={Player=1..}] armor.head from block 13 97 11 container.2
+tag @s[scores={Player=1..}] add save_inventory
+
+execute as @s run attribute @s minecraft:entity_interaction_range base set 3
+# redonne la portée d'interaction de base à tous
+execute as @s run attribute @s minecraft:block_interaction_range base set 4.5
+# reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)
+
+scoreboard players reset @s ready_sign
+scoreboard players reset @s reset_frameroom
+scoreboard players reset @s spec_player1
+scoreboard players reset @s spec_player2
+scoreboard players reset @s spec_player3
+scoreboard players reset @s spec_player4
+scoreboard players reset @s spec_player5
+scoreboard players reset @s spec_player6
+scoreboard players reset @s spec_player7
+scoreboard players reset @s spec_player8
+scoreboard players reset @s spec_player9
+scoreboard players reset @s spec_player10
+scoreboard players reset @s spec_player11
+scoreboard players reset @s spec_player12
+scoreboard players reset @s spec_stop
+# reset les trigger de tous
+
+
+gamemode spectator @s[scores={Player=-1}]
+tp @s[scores={Player=-1}] @r[scores={Player=1..}]
+# tp @s a un joueur (si il est spectateur)
+
+execute if score selected_map variables matches 1 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/pirate
+execute if score selected_map variables matches 2 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/graveyard
+execute if score selected_map variables matches 3 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/factory
+execute if score selected_map variables matches 4 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/volcano
+execute if score selected_map variables matches 5 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/ruin
+execute if score selected_map variables matches 6 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
+# tp @s sur la bonne map et set son spawn
+
+execute at @s[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
+# enlève les blocs invisibles autour de @s (si il y en a)
+
+tellraw @s ["",{"text":"La partie a déjà commencée ! Vous avez rejoint automatiquement.","italic":true,"color":"gray"}]
+execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
+# indique à @s qu'il est passé en mode spectateur
+
+effect clear @s[scores={Player=1..}] minecraft:invisibility
+effect clear @s[scores={Player=1..}] minecraft:resistance
+
+tag @s remove save_inventory
+execute as @s[tag=warrior,team=!spectator] run function stuff:stuff_warrior/stuffwarrior
+execute as @s[tag=archer,team=!spectator] run function stuff:stuff_archer/stuffarcher
+execute as @s[tag=mage,team=!spectator] run function stuff:stuff_mage/stuffmage
+execute as @s[tag=rogue,team=!spectator,tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
+tag @s add save_inventory
+# donne son stuff à @s
+
+
+execute as @s[tag=mage,scores={Player=1..,weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
+
+effect give @s[scores={Player=1..}] minecraft:instant_health 20 100 true
+effect give @s[scores={Player=1..},tag=!rogue] minecraft:regeneration infinite 0 true
+effect give @s[scores={Player=1..},tag=rogue] minecraft:regeneration infinite 1 true
+# lance la boucle de heal sur @s

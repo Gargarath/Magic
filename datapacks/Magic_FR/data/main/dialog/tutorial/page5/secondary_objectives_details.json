@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Tutoriel",
+    "type": "text",
+    "color": "green",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "OBJECTIFS SECONDAIRES",
+      "type": "text",
+      "extra": [
+        {
+          "text": "\n\nLes objectifs secondaires sont essentiels pour prendre l'avantage économique lors d'une partie.\n\nIl existe deux types d'objectifs secondaires qui diffèrent selon l'arène :",
+          "extra": [
+            {
+              "text": "\n\nCapture de point : ",
+              "extra": [
+                {
+                  "text": "Il s'agit d'un point à capturer au milieu de l'arène. Plus vous avez de coéquipiers dessus, plus la capture avance vite. Une fois arrivé à 100%, vous remportez l'objectif.",
+                  "extra": [
+                    {
+                      "text": "\n\nCombat de boss : ",
+                      "type": "text",
+                      "extra": [
+                        {
+                          "text": "Il s'agit d'un boss à tuer au centre de l'arène. Chaque boss possède des capacités uniques.",
+                          "extra": [
+                            {
+                              "text": "\nAttention ! C'est l'objet lâché par le boss lors de sa mort qui vous fait remporter l'objectif. Il n'est pas rare que des assassins tentent de vous le voler à la dernière minute.",
+                              "color": "gray",
+                              "italic": true
+                            }
+                          ],
+                          "color": "white",
+                          "bold": false
+                        }
+                      ],
+                      "color": "dark_red",
+                      "bold": true
+                    }
+                  ],
+                  "color": "white",
+                  "bold": false
+                }
+              ],
+              "color": "aqua",
+              "bold": true
+            }
+          ],
+          "color": "white",
+          "bold": false
+        }
+      ],
+      "color": "gold",
+      "bold": true
+    },
+    "width": 350
+  },
+  "action": {
+    "label": {
+      "text": "Suivant",
+      "color": "green",
+      "bold": true
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "main:tutorial/page6/page6_main"
+    }
+  }
+}

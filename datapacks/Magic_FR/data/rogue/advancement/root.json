@@ -1,0 +1,31 @@
+{
+  "display": {
+    "title": {
+      "text": "Assassin            ",
+      "color": "dark_gray",
+      "bold": true
+    },
+    "description": {
+      "text": "Expert en dissimulation,\nvous utilisez la ruse pour asservir vos ennemis !",
+      "color": "white",
+      "bold": false,
+      "italic": true
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["dagger"] }
+      }
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:block/light_gray_concrete"
+  },
+  "criteria": {
+    "rogue": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "text": "Plastron de santé III - 15 PH"
+    },
+    "description": [
+      "",
+      {
+        "text": "+1.5 point d'armure.             \n \n+45% points de vie.",
+        "color": "green"
+      }
+    ],
+    "icon": {
+      "id": "minecraft:golden_chestplate"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "chestlvl3w": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "warrior:chestlvl2_w"
+}

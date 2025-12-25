@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "pvp_kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "#minecraft:boss" },
+        "killing_blow": {
+          "source_entity": { "type": "minecraft:player" }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "ctf:killfeed/killer_boss" }
+}

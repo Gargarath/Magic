@@ -1,0 +1,56 @@
+{
+  "display": {
+    "title": {
+      "text": "Passif: Icône de discrétion      ",
+      "color": "gray",
+      "strikethrough": false
+    },
+    "description": [
+      "",
+      {
+        "text": "Lorsque vous êtes invisible, une icone indique votre degré de discrétion.",
+        "color": "green"
+      },
+      {
+        "text": "\n\n\uE508",
+        "color": "white"
+      },
+      {
+        "text": ": Vous êtes accroupi, personne ne peut vous voir.",
+        "color": "green"
+      },
+      {
+        "text": "\n\n\uE507",
+        "color": "white"
+      },
+      {
+        "text": ": Vous marchez, les archers peuvent vous voir grâce à leur passif.",
+        "color": "green"
+      },
+      {
+        "text": "\n\n\uE506",
+        "color": "white"
+      },
+      {
+        "text": ": Vous sprintez, tout le monde peut vous voir grâce à vos traces de pas.",
+        "color": "green"
+      }
+    ],
+    "icon": {
+       "id": "minecraft:shears",
+      "components": {
+        "minecraft:custom_model_data": { "strings": ["stealth_100"] }
+      }
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "passifr": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:root"
+}

@@ -1,0 +1,35 @@
+# Commande qui permet de setup tout ce qui est lié à un sort appelé par main:reset/initialisation
+
+scoreboard players set @s cooldownspell1 -1
+scoreboard players set @s cooldownspell2 -1
+scoreboard players set @s cooldownspell3 -1
+scoreboard players set @s cooldown1_clock -1
+scoreboard players set @s cooldown2_clock -1
+scoreboard players set @s cooldown3_clock -1
+scoreboard players set @s timer_backup_r -1
+scoreboard players set @s backup_number_r 0
+scoreboard players set @s usespell 0
+scoreboard players set @s using_berzerk -1
+scoreboard players set @s shotarrow 0
+scoreboard players set @s arrow_cooldown -1
+scoreboard players set @s dmgtaken 0
+scoreboard players set @s dealdmg 0
+scoreboard players set @s in_cloud1 0
+scoreboard players set @s in_cloud2 0
+scoreboard players set @s in_cloud3 0
+scoreboard players set @s trapped -1
+scoreboard players set @s trap_number_a 0
+scoreboard players set @s freeze -1
+scoreboard players set @s is_sneaking -1
+scoreboard players set @s is_sprinting -1
+scoreboard players set @s loud_bar -1
+scoreboard players set @s can_tp_m 0
+scoreboard players set @s thunderstrm_time -1
+scoreboard players set @s hooked_w -1
+scoreboard players set @s is_hooking_w -1
+scoreboard players set @s hooked_w -1
+scoreboard players set @s explosive_arrow_timer -1
+scoreboard players set @s explo_sneak_change 0
+scoreboard players set @s weapon1_mana_m 100
+scoreboard players set @s burning -1
+scoreboard players set @s using_ambush -1

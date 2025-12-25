@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Bâton de combat VI - 60 PH"
+    },
+    "description": {
+      "text": "+3 points d'attaque.                   \n---------------------------\nLance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.\n\nPortée maximale: 40 blocs.\n\nCoût en mana: 75\n---------------------------",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:blaze_rod"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "weapon1lvl6m": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mage:weapon1lvl5_m"
+}

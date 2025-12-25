@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Mage               ",
+      "color": "dark_purple",
+      "bold": true
+    },
+    "description": {
+      "text": "Adepte de la magie, vous anéantissez vos ennemis grâce à vos puissants sorts !",
+      "color": "white",
+      "bold": false,
+      "italic": true
+    },
+    "icon": {
+      "id": "minecraft:stick"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:block/orange_concrete"
+  },
+  "criteria": {
+    "mage": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

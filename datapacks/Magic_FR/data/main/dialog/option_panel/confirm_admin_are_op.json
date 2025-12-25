@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Menu d'option",
+    "color": "gold",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Attention !",
+      "extra": [
+        {
+          "text": "\n\nVous êtes sur le point d'activer l'accès au mode opérateur ",
+          "extra": [
+            {
+              "text": "uniquement",
+              "extra": [
+                {
+                  "text": " pour les joueurs administrateurs.",
+                  "type": "text",
+                  "extra": [
+                    {
+                      "text": "\n\n\nSi vous n'êtes pas vous même administrateur, cette commande échouera.",
+                      "extra": [
+                        {
+                          "text": "\n\n\nÊtes vous sûr de vouloir activer ce mode ?\n\n\n",
+                          "color": "dark_red",
+                          "bold": true,
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "bold": false,
+                      "italic": true
+                    }
+                  ],
+                  "color": "red",
+                  "bold": true,
+                  "underlined": false
+                }
+              ],
+              "color": "dark_red",
+              "bold": true,
+              "underlined": true
+            }
+          ],
+          "color": "red",
+          "bold": true
+        }
+      ],
+      "color": "gold",
+      "bold": true
+    },
+    "width": 500
+  },
+  "actions": [
+    {
+      "label": {
+        "text": "Je sais ce que je fais",
+        "color": "red",
+        "bold": true
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "dialog": "main:tutorial/page1/page1_main",
+        "command": "/function lobby:option_panel/pages/lobby/operator_access/op_are_admin"
+      }
+    },
+    {
+      "label": {
+        "text": "Annuler",
+        "color": "green",
+        "bold": true
+      }
+    }
+  ]
+}

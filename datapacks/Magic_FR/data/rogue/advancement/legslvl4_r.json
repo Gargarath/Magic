@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "text": "Jambières de vitesse IV - 12 PH"
+    },
+    "description": {
+      "text": "+2 points d'armure.                    \n \n+12% vitesse de déplacement.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:golden_leggings",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "legslvl4r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:legslvl3_r"
+}

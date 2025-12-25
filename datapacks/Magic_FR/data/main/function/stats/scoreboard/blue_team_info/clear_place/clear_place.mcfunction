@@ -1,0 +1,9 @@
+## appelée par left_blue
+# permet de clear la place actuelle de @s
+
+execute if score @s blue_place matches 1 run function main:stats/scoreboard/blue_team_info/clear_place/place1
+execute if score @s blue_place matches 2 run function main:stats/scoreboard/blue_team_info/clear_place/place2
+execute if score @s blue_place matches 3 run function main:stats/scoreboard/blue_team_info/clear_place/place3
+execute if score @s blue_place matches 4 run function main:stats/scoreboard/blue_team_info/clear_place/place4
+execute if score @s blue_place matches 5 run function main:stats/scoreboard/blue_team_info/clear_place/place5
+execute if score @s blue_place matches 6 run function main:stats/scoreboard/blue_team_info/clear_place/place6

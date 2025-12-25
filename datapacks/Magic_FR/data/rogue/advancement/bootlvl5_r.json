@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "text": "Bottes d'acrobate V - 10 PH"
+    },
+    "description": {
+      "text": "+2,5 points d'armure.\n\n+5 distance de chute avant dégâts",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:chainmail_boots"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bootlvl5r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "rogue:bootlvl4_r"
+}
