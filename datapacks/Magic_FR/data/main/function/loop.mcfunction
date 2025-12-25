@@ -32,7 +32,6 @@ execute if score stuff enable_loop matches 1 run function stuff:loop
                                     ## GUI ##
 
 execute as @e[scores={gui_actionbar_alert=1..}] run function main:gui/actionbar_timer
-execute as @a[scores={Player=1..,InLobby=0}] run function main:gui/display/ingame
 
                                     ## OPTION ##
 execute as @a[scores={opt_trig_keybind_order=1..}] run function main:options/keybind_order
