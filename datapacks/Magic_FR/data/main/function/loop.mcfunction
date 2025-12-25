@@ -11,7 +11,7 @@ execute as @a[scores={disconnected=1..}] run function main:reconnect/someone_rec
 scoreboard players remove @a[scores={nopack_detection=1..}] nopack_detection 1
 execute as @a[scores={nopack_detection=0}] run function main:ressource_pack_detector/display_something_else/show_message_again
 
-## FIX HEALTHPOINT ##
+## FIX HEALTHPOINT ## 
 
 scoreboard players remove @a[scores={timer_fix_health=1..}] timer_fix_health 1
 execute as @a[scores={timer_fix_health=0}] run function main:fix_health/stop_health_timer
