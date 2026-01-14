@@ -16,7 +16,6 @@ execute as @a[scores={nopack_detection=0}] run function main:ressource_pack_dete
 scoreboard players remove @a[scores={timer_fix_health=1..}] timer_fix_health 1
 execute as @a[scores={timer_fix_health=0}] run function main:fix_health/stop_health_timer
 
-
                                          #### CES COMMANDES PERMETENT DE GERER LES PREMIERS SPAWN ET DE LES INITIALISER #####
 
 execute as @a[tag=!initialised] run function main:reset/inisialisation

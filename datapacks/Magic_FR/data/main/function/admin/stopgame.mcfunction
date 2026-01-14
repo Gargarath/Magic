@@ -156,8 +156,6 @@ tag @e remove Has_Red_flag
 tag @a remove save_inventory
 execute as @a run function main:fix_health/clear_and_fix_health
 
-scoreboard objectives setdisplay sidebar
-
 team modify blue color blue
 team modify red color red
 
@@ -262,9 +260,3 @@ execute as @a run function lobby:hotbar_menu/main/give_items
 
 function lobby:arena/leaderboard/setup_leaderboard
 # setup l'arène du lobby (on le fait ici car ça se sert des mêmes stats)
-
-scoreboard players enable @a leaderbrd_right
-scoreboard players enable @a leaderbrd_left
-scoreboard players set @a leaderbrd_right 0
-scoreboard players set @a leaderbrd_left 0
-# autorise tous les joueurs à utiliser les panneaux du leaderboard

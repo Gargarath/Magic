@@ -28,3 +28,5 @@ scoreboard players set @s stat_bow_dmg_boss10 0
 scoreboard players reset @s stat_hand_dmg
 scoreboard players reset @s stat_boss_item_picked_up
 scoreboard players reset @s stat_dmg_taken
+scoreboard players reset @s stat_obj_score
+scoreboard players reset @s stat_final_score

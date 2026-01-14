@@ -105,12 +105,6 @@ scoreboard players set @s quit_slot_a 7
 scoreboard players set @s quit_slot_m 8
 scoreboard players set @s quit_slot_r 8
 
-scoreboard players enable @s leaderbrd_right
-scoreboard players enable @s leaderbrd_left
-scoreboard players set @s leaderbrd_right 0
-scoreboard players set @s leaderbrd_left 0
-# autorise tous les joueurs à utiliser les panneaux du leaderboard
-
 # intialise les options de @s
 scoreboard players set @s opt_display_keybinds 1
 scoreboard players set @s opt_keybind_order 2

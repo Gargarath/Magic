@@ -52,10 +52,11 @@ execute as @a[scores={IsAlive=1..}] if predicate minecraft:step_on_black_concret
 execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
 # détecte si un joueur clique gauche sur une map
 
-## PANNEAUX LEADERBOARD
+                                        ## LEADERBOARD
 
-execute as @a[scores={leaderbrd_right=1..}] run function lobby:leaderboard/right_sign
-execute as @a[scores={leaderbrd_left=1..}] run function lobby:leaderboard/left_sign
+execute at @e[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
+execute at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[0.208,0.965,0.988],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
+
 
                                         ## DEVENIR OPERATEUR
 

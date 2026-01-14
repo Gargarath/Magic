@@ -36,10 +36,6 @@ scoreboard players set @a IsAlive 0
 scoreboard players set @a is_ready 0
 # rend tous les joueurs pas prêt
 
-scoreboard players reset @a leaderbrd_right
-scoreboard players reset @a leaderbrd_left
-# enlève les autorisations des trigger du lobby
-
 scoreboard players set @a InShop 1
 team modify spectator seeFriendlyInvisibles true
 effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true

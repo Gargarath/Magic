@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "item/archer/spell2/spell2lvl1_a"
-    }
-}

@@ -52,8 +52,6 @@ scoreboard objectives add hotbar_menu dummy
 scoreboard objectives add option_panel dummy
 
 scoreboard objectives add leaderboard dummy
-scoreboard objectives add leaderbrd_right trigger
-scoreboard objectives add leaderbrd_left trigger
 scoreboard objectives add leaderboard_stand_place dummy
 scoreboard objectives add leaderboard_stand_class dummy
 
@@ -198,8 +196,17 @@ scoreboard objectives add stat_bow_dmg10 dummy
 scoreboard objectives add stat_killcount_boss dummy
 scoreboard objectives add stat_dmg_taken_last dummy
 scoreboard objectives add stat_total_dmg dummy
+scoreboard objectives add stat_final_score dummy
+scoreboard objectives add stat_obj_score dummy
+scoreboard objectives add stat_temp dummy
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add bow_dmg_counted10 dummy
+
+# global stats
+scoreboard objectives add gstat_warrior_score dummy
+scoreboard objectives add gstat_archer_score dummy
+scoreboard objectives add gstat_mage_score dummy
+scoreboard objectives add gstat_rogue_score dummy
 
 # sorting
 scoreboard objectives add sort_kd_ratio1000 dummy
@@ -207,6 +214,8 @@ scoreboard objectives add sort_arena_killcount dummy
 scoreboard objectives add sort_killcount dummy
 scoreboard objectives add sort_deathcount dummy
 scoreboard objectives add sort_total_dmg dummy
+scoreboard objectives add sort_final_score dummy
+scoreboard objectives add sort_obj_score dummy
 scoreboard objectives add sort_bow_dmg10 dummy
 scoreboard objectives add sort_dmg_taken dummy
 scoreboard objectives add sort_flag_earned dummy
@@ -391,3 +400,12 @@ scoreboard objectives add backup_number_r dummy
 scoreboard objectives add smoke_bomb_timer dummy
 scoreboard objectives add in_smoke1 dummy
 scoreboard objectives add has_smoke_potion dummy
+
+
+# setup numbers
+
+scoreboard players set %5 numbers 5
+scoreboard players set %6 numbers 6
+scoreboard players set %8 numbers 8
+scoreboard players set %10 numbers 10
+scoreboard players set %50 numbers 50

@@ -24,7 +24,7 @@ gamerule fall_damage false
 function main:gui/clear/clear_actionbar_bar
 # supprime les barres de hotbar
 
-execute if score yes used_reset matches 0 run tp @a 0.5 100 66.5 0 -2
+execute if score yes used_reset matches 0 run tp @a 0.5 100 70.5 0 -2
 # si pas de commande admin utilisée = tp fin de game -> tp tout le monde face aux stats
 execute if score yes used_reset matches 1 run tp @a 0 100 0 180 0
 # si commande admin utilisée, tp tout le monde face au menu

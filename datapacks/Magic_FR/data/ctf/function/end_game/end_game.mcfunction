@@ -86,7 +86,6 @@ function main:stats/leaderboard/setup_leaderboard_endgame
 function main:stats/stats_book/give_stat_books
 # lance le système de livre de stats
 
-scoreboard objectives setdisplay sidebar
 scoreboard players set Rouges Flag_posed 0
 scoreboard players set Bleus Flag_posed 0
 execute store result storage minecraft:matchinfo.blue score1 int 1 run scoreboard players get Bleus Flag_posed
@@ -107,8 +106,6 @@ scoreboard players set @a[scores={Player=1..}] in_fight 0
 
 scoreboard players set @a[scores={Player=1..}] Player 0
 scoreboard players set @a InLobby 1
-scoreboard players enable @a leaderbrd_right
-scoreboard players enable @a leaderbrd_left
 execute as @a run function main:reset/resetachats
 advancement grant @a from warrior:root
 advancement grant @a from archer:root

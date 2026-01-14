@@ -7,6 +7,8 @@ function main:stats/leaderboard/sort_stats/sort_stats
 function main:stats/leaderboard/summon_leaderboard/summon_leaderboard
 # met en place le leaderboard
 
+function main:stats/leaderboard/sort_gstats/sort_final_score/refresh_gstat_leaderboard
+# refresh les leaderboards globaux
 
 scoreboard players set current_page leaderboard 1
-execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/kd_ratio
+execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/final_score

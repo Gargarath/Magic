@@ -30,8 +30,6 @@ scoreboard players set @s[scores={Player=1..}] in_fight 0
 
 scoreboard players set @s[scores={Player=1..}] Player 0
 scoreboard players set @s InLobby 1
-scoreboard players enable @s leaderbrd_right
-scoreboard players enable @s leaderbrd_left
 function main:reset/resetachats
 advancement grant @s from warrior:root
 advancement grant @s from archer:root
