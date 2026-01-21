@@ -1,5 +1,8 @@
 # appelée par le livre de debug -> permet de reset la game en cours et de regler les éventuels bugs
 
+function lobby:map_island/reset_maps
+# vire les joueurs en visite de map et prépare les maps
+
 kill @e[type=minecraft:armor_stand,tag=Lobby_armor_stand]
 kill @e[type=minecraft:text_display,tag=Lobby_text]
 scoreboard players set Is_ready Lobby_ready 0
@@ -119,6 +122,8 @@ bossbar set bad_path:player10 players
 bossbar set bad_path:player11 players
 bossbar set bad_path:player12 players
 
+tag @a remove in_map_display
+# indique que les joueurs ne sont pas dans la zone de maps
 tag @a remove in_podium
 # enleve l'affichage de top_bar spéciale fin de game
 function main:gui/display/in_lobby/setup_top_bar
@@ -245,9 +250,6 @@ effect clear @a minecraft:speed
 scoreboard players set @a InLobby 1
 scoreboard players set @a InShop 0
 # Clear les effets puis donne les effets du lobby
-
-tag @a remove in_opt_panel
-# Reset le panneau de start et donne le droit a tous de l'utiliser
 
 scoreboard players set yes used_reset 1
 # indique qu'on a utilisé la commande reset game (pour ne pas tp les joueurs vers le menu de stats)

@@ -1,8 +1,7 @@
 # appelée par main:launch_arena/all_ready
 # permet de lancer l'arêne pirate
 
-forceload add 355 555 190 440
-# Forceload la map
+
 
 execute as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/pirate
 # met les spawns et tp les joueurs

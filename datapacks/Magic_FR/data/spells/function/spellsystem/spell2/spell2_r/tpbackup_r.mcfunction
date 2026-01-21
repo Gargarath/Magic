@@ -51,7 +51,6 @@ execute if score @s backup_number_r matches 10 run kill @e[tag=backup_r,scores={
 execute if score @s backup_number_r matches 11 run kill @e[tag=backup_r,scores={backup_number_r=11}]
 execute if score @s backup_number_r matches 12 run kill @e[tag=backup_r,scores={backup_number_r=12}]
 tag @s remove have_backup_r
-execute at @s run forceload remove ~ ~
 
 scoreboard players set @s backup_number_r 0
 

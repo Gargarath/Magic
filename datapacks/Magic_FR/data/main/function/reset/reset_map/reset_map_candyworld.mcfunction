@@ -53,6 +53,3 @@ clone -27 161 -775 -20 170 -768 7 197 -777
 # tête devient contente pain d'épice rouge
 clone -8 172 -778 -15 165 -785 9 180 -773
 # baisse le pied pain d'épice rouge
-
-forceload remove 47 -672 -84 -808
-# deforceload la map

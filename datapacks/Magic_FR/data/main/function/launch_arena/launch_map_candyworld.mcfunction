@@ -1,8 +1,6 @@
 # appelée par main:launch_arena/all_ready
 # permet de lancer l'arêne bonbon
 
-forceload add 47 -672 -84 -808
-# Forceload la map
 
 execute as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
 # met les spawns et tp les joueurs

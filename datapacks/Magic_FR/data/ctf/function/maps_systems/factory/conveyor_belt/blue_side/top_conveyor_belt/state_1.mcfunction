@@ -2,7 +2,7 @@
 # permet de faire bouger les tapis roulant du haut dans le sens inverse
 
         # JOUEURS
-execute as @a[team=!spectator,scores={trapped=-1,hooked_w=-1}] at @s if block ~ ~-34 ~ minecraft:red_wool run tp @s ~0.2 ~ ~
+execute as @a[gamemode=adventure,scores={trapped=-1,hooked_w=-1}] at @s if block ~ ~-34 ~ minecraft:red_wool run tp @s ~0.2 ~ ~
 # tp les joueurs qui sont sur le tapis rouge vers l'est
 
         # BLOCK DISPLAY

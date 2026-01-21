@@ -43,6 +43,7 @@ scoreboard objectives add point_capture dummy
 scoreboard objectives add golem dummy
 
 
+
 ## LOBBY
 scoreboard objectives add InLobby dummy
 scoreboard objectives add used_reset dummy
@@ -75,6 +76,15 @@ scoreboard objectives add jump_test dummy
 # arena
 scoreboard objectives add respawn_quality dummy
 scoreboard objectives add lobby_sneak dummy
+## MAP ISLAND
+scoreboard objectives add quit trigger
+scoreboard objectives add gamemode trigger
+scoreboard objectives add blue_spawn trigger
+scoreboard objectives add red_spawn trigger
+scoreboard objectives add blue_flag trigger
+scoreboard objectives add red_flag trigger
+scoreboard objectives add map_spectator dummy
+scoreboard objectives add map_display_position dummy
 
 ## MAPS
 scoreboard objectives add map_memories dummy
@@ -201,6 +211,7 @@ scoreboard objectives add stat_obj_score dummy
 scoreboard objectives add stat_temp dummy
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add bow_dmg_counted10 dummy
+scoreboard objectives add stat_obj_time dummy
 
 # global stats
 scoreboard objectives add gstat_warrior_score dummy
@@ -408,4 +419,5 @@ scoreboard players set %5 numbers 5
 scoreboard players set %6 numbers 6
 scoreboard players set %8 numbers 8
 scoreboard players set %10 numbers 10
+scoreboard players set %40 numbers 40
 scoreboard players set %50 numbers 50

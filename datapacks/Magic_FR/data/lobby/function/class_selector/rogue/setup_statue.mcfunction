@@ -9,7 +9,7 @@ item replace entity @e[tag=rogue_selector_statue,limit=1] weapon from block 13 9
 ## TITRE ET DESCRIPTION
 summon text_display ^ ^12.5 ^ {billboard:"horizontal",see_through:0b,Tags:["class_selector","rogue_selector","rogue_selector_title"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.3f,0f,0f],scale:[8f,8f,8f]},text:{"bold":true,"color":"gray","text":"Assassin",shadow_color:-13487566},background:16711680}
 # rogue title
-summon text_display ^ ^11 ^-0.5 {billboard:"horizontal",line_width:300,default_background:0b,shadow:1b,see_through:0b,alignment:"left",Tags:["class_selector","rogue_selector","rogue_selector_description"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.4f,0f],scale:[1.5f,1.5f,1.5f]},text:[{"bold":true,"color":"white","text":"Expert en dissimulation,\nvous utilisez la ruse pour asservir vos ennemis !"}],background:16711680}
+summon text_display ^ ^11 ^-0.5 {billboard:"horizontal",line_width:300,default_background:0b,shadow:1b,see_through:0b,alignment:"left",Tags:["class_selector","rogue_selector","rogue_selector_description"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.4f,0f],scale:[1.5f,1.5f,1.5f]},text:[{"bold":true,"color":"white","text":"Expert en dissimulation, vous utilisez la ruse pour asservir vos ennemis !"}],background:16711680}
 # rogue description
 
 ## PASSIF

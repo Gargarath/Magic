@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/mage/spell2/spell2lvl1_m"
+    }
+}

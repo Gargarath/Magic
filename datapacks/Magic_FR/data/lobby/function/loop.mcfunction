@@ -52,6 +52,21 @@ execute as @a[scores={IsAlive=1..}] if predicate minecraft:step_on_black_concret
 execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
 # détecte si un joueur clique gauche sur une map
 
+                                        ## MAP ISLAND ##
+
+execute as @a[scores={quit=1..}] run function lobby:map_island/commands/quit_map
+execute as @a[scores={gamemode=1..}] run function lobby:map_island/commands/gamemode
+execute as @a[scores={blue_spawn=1..}] run function lobby:map_island/commands/tp_blue_spawn
+execute as @a[scores={blue_flag=1..}] run function lobby:map_island/commands/tp_blue_flag
+execute as @a[scores={red_spawn=1..}] run function lobby:map_island/commands/tp_red_spawn
+execute as @a[scores={red_flag=1..}] run function lobby:map_island/commands/tp_red_flag
+execute if score $map_1 map_spectator matches 1.. run function lobby:map_island/loops/map1_loop
+execute if score $map_2 map_spectator matches 1.. run function lobby:map_island/loops/map2_loop
+execute if score $map_3 map_spectator matches 1.. run function lobby:map_island/loops/map3_loop
+execute if score $map_4 map_spectator matches 1.. run function lobby:map_island/loops/map4_loop
+execute if score $map_5 map_spectator matches 1.. run function lobby:map_island/loops/map5_loop
+execute if score $map_6 map_spectator matches 1.. run function lobby:map_island/loops/map6_loop
+
                                         ## LEADERBOARD
 
 execute at @e[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]

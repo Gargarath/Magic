@@ -3,8 +3,6 @@
 
 
 
-forceload add 175 -328 271 -227
-# forceload la map cimetière
 
 execute if score $time_change option_panel matches 1 run time set 18000
 # met la nuit si l'option de changement du temps est activé

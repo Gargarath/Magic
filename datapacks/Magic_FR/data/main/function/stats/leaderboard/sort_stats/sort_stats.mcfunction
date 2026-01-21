@@ -58,7 +58,7 @@ function main:stats/leaderboard/sort_stats/sort_kd_ratio1000/sort_kd_ratio1000
 # calcule le classement des ratio avec 2 décimales, donc en x1000)
 
 function main:stats/leaderboard/sort_stats/sort_obj_score/sort_obj_score
-# calcule le classement des score d'objectifs
+# calcule le classement des score stratégique
 
 function main:stats/leaderboard/sort_stats/sort_final_score/sort_final_score
-# calcule le classement du score final
+# calcule le classement du score total

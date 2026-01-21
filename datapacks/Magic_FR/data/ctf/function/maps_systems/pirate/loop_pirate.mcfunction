@@ -3,7 +3,7 @@
 ## OBJECTIFS SECONDAIRES
 
 execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 run function ctf:secondary_objectives/capture_point/pirate_map/capture_point_loop
-# si la fonction de lancement d'objectif secondaire à été lancée  -> refresh le système capture de point pirate
+# si on est pas sur le lobby si la fonction de lancement d'objectif secondaire à été lancée  -> refresh le système capture de point pirate
 
 ## MORTIERS
 

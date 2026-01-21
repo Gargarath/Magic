@@ -13,7 +13,10 @@ scoreboard players set $arena_members Player 0
 tag @a remove display_killfeed
 # fait en sorte que les joueurs ne voient plus le killfeed
 
+## MAPS
 
+function lobby:map_island/setup_maps_info
+# setup les objets éducatifs des maps
 
 
 ## AUTRE
@@ -24,7 +27,7 @@ gamerule fall_damage false
 function main:gui/clear/clear_actionbar_bar
 # supprime les barres de hotbar
 
-execute if score yes used_reset matches 0 run tp @a 0.5 100 70.5 0 -2
+execute if score yes used_reset matches 0 run tp @a 0.5 100 71.5 0 -2
 # si pas de commande admin utilisée = tp fin de game -> tp tout le monde face aux stats
 execute if score yes used_reset matches 1 run tp @a 0 100 0 180 0
 # si commande admin utilisée, tp tout le monde face au menu

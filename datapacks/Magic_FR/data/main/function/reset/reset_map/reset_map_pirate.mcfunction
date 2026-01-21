@@ -45,6 +45,3 @@ fill 206 94 476 206 95 476 air
 fill 205 95 477 207 94 477 minecraft:spruce_trapdoor[facing=south,open=true] replace minecraft:spruce_trapdoor
 setblock 206 94 476 minecraft:spruce_door[hinge=right,facing=north,half=lower,powered=false]
 setblock 206 95 476 minecraft:spruce_door[hinge=right,facing=north,half=upper,powered=false]
-
-forceload remove 355 555 190 440
-# deforceload la map

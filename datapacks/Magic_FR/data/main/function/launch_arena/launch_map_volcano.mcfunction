@@ -1,8 +1,7 @@
 # appelée par main:launch_arena/all_ready
 # permet de lancer l'arêne Volcan
 
-forceload add -539 443 -656 554
-# Forceload la map
+
 
 execute if score $time_change option_panel matches 1 run time set 12700
 # met la fin de journée si l'option de changement du temps est activé

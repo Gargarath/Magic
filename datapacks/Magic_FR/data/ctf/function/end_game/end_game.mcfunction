@@ -1,15 +1,3 @@
-scoreboard players set ctf enable_loop 0
-scoreboard players set lobby enable_loop 1
-# Desactiver le CTF et spell et activer le lobby
-
-stopsound @a
-# coupe les sons de tous les joueurs
-
-effect give @a minecraft:resistance infinite 255 true
-function main:reset/resetspells/resetspells
-execute as @a run execute at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 0
-scoreboard objectives setdisplay list stat_victory
-# affiche le score de victoire en list
 execute if score selected_map variables matches 1 run function main:reset/reset_map/reset_map_pirate
 # reset la map pirate si la map pirate est sélectionnée
 execute if score selected_map variables matches 2 run function main:reset/reset_map/reset_map_graveyard
@@ -22,6 +10,20 @@ execute if score selected_map variables matches 5 run function main:reset/reset_
 # reset la map ruine si la map ruine est sélectionnée
 execute if score selected_map variables matches 6 run function main:reset/reset_map/reset_map_candyworld
 # reset la map ruine si la map ruine est sélectionnée
+
+
+scoreboard players set ctf enable_loop 0
+scoreboard players set lobby enable_loop 1
+# Desactiver le CTF et spell et activer le lobby
+
+stopsound @a
+# coupe les sons de tous les joueurs
+
+effect give @a minecraft:resistance infinite 255 true
+function main:reset/resetspells/resetspells
+execute as @a run execute at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 0
+scoreboard objectives setdisplay list stat_victory
+# affiche le score de victoire en list
 
 scoreboard players set @a respawn_time -1
 scoreboard players set @a save_flag_time 0

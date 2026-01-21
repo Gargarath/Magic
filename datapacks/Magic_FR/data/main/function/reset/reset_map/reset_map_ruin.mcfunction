@@ -15,6 +15,3 @@ scoreboard players set @a in_water -1
 effect clear @a minecraft:poison
 
 advancement revoke @a only main:used_bed
-
-forceload remove -584 -24 -454 -198
-# deforceload la map

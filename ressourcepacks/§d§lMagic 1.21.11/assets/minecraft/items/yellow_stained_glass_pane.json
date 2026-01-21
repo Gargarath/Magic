@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/yellow_stained_glass_pane"
+    },
+    "cases": [
+      {
+        "when": "cooldown",
+        "model": {
+          "type": "model",
+          "model": "item/yellow_stained_glass_pane/cooldown"
+        }
+      }
+    ]
+  }
+}

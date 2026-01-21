@@ -17,6 +17,8 @@ function ctf:secondary_objectives/capture_point/refresh_bossbar
 
          # Récuperer le point
 
+execute as @a[x=-599.3,y=140,z=497.7,dx=2.6,dy=2.1,dz=3.6,scores={trapped=-1}] run scoreboard players add @s stat_obj_time 1
+
 # bleus
 execute unless score state point_capture matches 1 as @a[x=-599.3,y=140,z=497.7,dx=2.6,dy=2.1,dz=3.6,team=blue,scores={trapped=-1}] unless entity @a[x=-599.3,y=140,z=497.7,dx=2.6,dy=2.1,dz=3.6,team=red,scores={trapped=-1}] run function ctf:secondary_objectives/capture_point/point_state_0/blue_cap
 # si le point n'est pas bleu et qu'un joueur bleu va dessus et qu'il n'y a pas de joueurs rouges -> lance la fonction qui permet au bleu de cap le point

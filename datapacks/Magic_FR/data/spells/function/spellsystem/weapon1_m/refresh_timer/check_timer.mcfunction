@@ -14,3 +14,6 @@ execute if score @s weapon1_mana_m matches 70..79 run function spells:spellsyste
 execute if score @s weapon1_mana_m matches 80..89 run function spells:spellsystem/weapon1_m/refresh_timer/80-89
 execute if score @s weapon1_mana_m matches 90..99 run function spells:spellsystem/weapon1_m/refresh_timer/90-99
 execute if score @s weapon1_mana_m matches 100.. run function spells:spellsystem/weapon1_m/refresh_timer/100
+
+function main:gui/display/refresh_gui
+# actualise le gui

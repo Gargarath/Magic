@@ -24,6 +24,9 @@ scoreboard players set @a cooldownspell2 -1
 scoreboard players set @a cooldownspell3 -1
 # vire de l'arènes les joueurs qui sont dedans
 
+function lobby:map_island/reset_maps
+# vire les joueurs en visite de map et prépare les maps
+
 execute as @a run function main:reset/resetachats
 execute as @a run function main:stats/reset_stats
 
@@ -43,6 +46,8 @@ effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true
 
 scoreboard players set @a InLobby 0
 # Enleve les effet du lobby à @a
+tag @a remove in_map_display
+# indique que les joueurs ne sont pas dans la zone de maps
 
 clear @a
 

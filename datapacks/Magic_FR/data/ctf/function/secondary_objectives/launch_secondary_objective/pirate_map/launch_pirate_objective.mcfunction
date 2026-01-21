@@ -36,6 +36,7 @@ bossbar set minecraft:secondary_objective players
 # TEMPS DE CAPTURE BLEU
 scoreboard players set max_capture_blue point_capture 75
 scoreboard players operation max_capture_blue point_capture *= blue playercount
+execute if score max_capture_blue point_capture matches 0 run scoreboard players set max_capture_blue point_capture 75
 execute if score max_capture_blue point_capture matches 451.. run scoreboard players set max_capture_blue point_capture 450
 # mets le temps de capture du point de l'équipe bleu à 75 * nombre de joueurs dans l'équipe bleue (maximum 450 ticks)
 execute store result bossbar minecraft:point_capture_blue max run scoreboard players get max_capture_blue point_capture
@@ -44,6 +45,7 @@ execute store result bossbar minecraft:point_capture_blue max run scoreboard pla
 # TEMPS DE CAPTURE ROUGE
 scoreboard players set max_capture_red point_capture 75
 scoreboard players operation max_capture_red point_capture *= red playercount
+execute if score max_capture_red point_capture matches 0 run scoreboard players set max_capture_red point_capture 75
 execute if score max_capture_red point_capture matches 451.. run scoreboard players set max_capture_red point_capture 450
 # mets le temps de capture du point de l'équipe rouge à 75 * nombre de joueurs dans l'équipe rouge (maximum 450 ticks)
 execute store result bossbar minecraft:point_capture_red max run scoreboard players get max_capture_red point_capture

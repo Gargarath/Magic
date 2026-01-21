@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/rogue/spell3/spell3lvl1_r"
+    }
+}

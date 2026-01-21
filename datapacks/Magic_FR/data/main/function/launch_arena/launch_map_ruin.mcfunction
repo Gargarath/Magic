@@ -1,8 +1,7 @@
 # appelée par main:launch_arena/all_ready
 # permet de lancer l'arêne Ruine
 
-forceload add -584 -24 -454 -198
-# Forceload la map
+
 
 execute if score $time_change option_panel matches 1 run time set 13400
 # met la fin de journée si l'option de changement du temps est activé

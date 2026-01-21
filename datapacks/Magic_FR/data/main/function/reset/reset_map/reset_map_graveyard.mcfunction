@@ -63,6 +63,3 @@ bossbar set bad_path:player9 players
 bossbar set bad_path:player10 players
 bossbar set bad_path:player11 players
 bossbar set bad_path:player12 players
-
-forceload remove 175 -328 271 -227
-# deforceload la map cimetière

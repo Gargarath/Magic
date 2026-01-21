@@ -20,6 +20,3 @@ scoreboard players set blue steam_timer -1
 kill @e[tag=steam_button_blue]
 # reset zone vapeur bleue
 advancement revoke @a only main:used_bed
-
-forceload remove -539 443 -656 554
-# deforceload la map

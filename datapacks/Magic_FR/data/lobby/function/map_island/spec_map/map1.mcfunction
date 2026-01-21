@@ -1,0 +1,22 @@
+## appelé par spec_map si @s a cliqué sur la map1
+# permet de visiter la map pirate
+
+scoreboard players enable @s quit
+scoreboard players enable @s gamemode
+scoreboard players enable @s blue_spawn
+scoreboard players enable @s blue_flag
+scoreboard players enable @s red_spawn
+scoreboard players enable @s red_flag
+# active les commandes
+
+gamemode spectator @s
+tag @s add spec_map
+tag @s add spec_map1
+effect give @s resistance infinite 200 true
+tp @s 269 120 452 2 24
+
+function main:gui/display/refresh_gui
+# actualise le gui de tous (car besoin de l'interface spec pour @s)
+
+execute store result score $map_1 map_spectator run execute if entity @a[tag=spec_map1]
+execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 1
