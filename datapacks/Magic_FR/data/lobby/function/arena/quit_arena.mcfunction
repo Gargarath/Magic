@@ -1,4 +1,4 @@
-## 
+## ## appelée par option_panel/pages/arena/arena_off et autres quand @s quitte l'arène
 # clear les données d'arènes de @s
 
 scoreboard players set @s usespell 0

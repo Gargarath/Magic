@@ -126,6 +126,9 @@ tag @a remove in_map_display
 # indique que les joueurs ne sont pas dans la zone de maps
 tag @a remove in_podium
 # enleve l'affichage de top_bar spéciale fin de game
+tag @s remove jumping
+tag @s remove in_jump
+# enleve l'affichage spécial in_game
 function main:gui/display/in_lobby/setup_top_bar
 # met l'affichage en haut de l'écran en mode lobby
 

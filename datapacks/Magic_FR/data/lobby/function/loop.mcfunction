@@ -14,9 +14,10 @@ execute as @a[scores={usespell=1..},tag=!in_lobby_arena] run function lobby:hotb
 execute as @a[tag=!in_lobby_arena] unless predicate minecraft:has_item_offhand unless predicate offhand_autorized run function lobby:hotbar_menu/drop_item
 
                                         ## JUMP ##
-#execute as @a at @s if block ~ ~ ~ minecraft:light_weighted_pressure_plate run function lobby:finishedjump
-#execute as @a at @s if block ~ ~ ~ minecraft:heavy_weighted_pressure_plate run effect give @s minecraft:levitation 2 2 true
-#execute as @a at @s if block ~ ~-2 ~ minecraft:orange_concrete run function lobby:jump_failed
+execute as @a[tag=in_jump] at @s if block ~ ~ ~ #jump_plates run function lobby:jump/check_checkpoint
+# check sur les joueurs des jumps si ils marchent sur une plaque et fait l'action en fonction
+execute as @a[tag=jumping] run function lobby:jump/jump_timer
+# augmente le timer des joueurs dans le jump
 
                                         ## ARENE ##
 # lave
@@ -38,8 +39,6 @@ execute positioned -0.9 54.00 20.70 as @a[distance=..1.5] run function lobby:are
 execute as @a[scores={lobby_sneak=0}] if predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/start_sneak
 execute as @a[scores={lobby_sneak=1}] unless predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/stop_sneak
 # permet de check les joueurs qui s'accroupissent
-
-
 
 execute store result score $arena_members Player run execute if entity @a[scores={Player=1..}]
 # compte le nombre de joueurs dans l'arène
@@ -83,6 +82,10 @@ execute if score $operator_access option_panel matches 1 as @a[scores={operator=
                                          #### EFFETS DANS LE LOBBY #####
 effect give @a[scores={InLobby=1},tag=!in_lobby_arena] minecraft:weakness 1 255 true
 
+
+## JOUEURS QUI TOMBENT
+
+execute as @a[gamemode=adventure,tag=!in_lobby_arena,tag=!spec_map] at @s if predicate minecraft:felt_lobby run function lobby:felt_lobby
 
 
                                          #### CES COMMANDES PERMETENT DE GERER LA SELECTION D'EQUIPES #####

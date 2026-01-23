@@ -71,8 +71,52 @@ scoreboard objectives add admin_randomize_team trigger
 scoreboard objectives add admin_stop_game trigger
 
 # jump
-scoreboard objectives add jump_test dummy
+scoreboard objectives add jump_timer dummy
+scoreboard objectives add jump_timer_temp dummy
+scoreboard objectives add jump_timer_min dummy
+scoreboard objectives add jump_timer_min10 dummy
+scoreboard objectives add jump_timer_min01 dummy
+scoreboard objectives add jump_timer_sec dummy
+scoreboard objectives add jump_timer_sec10 dummy
+scoreboard objectives add jump_timer_sec01 dummy
+scoreboard objectives add jump_timer_dec dummy
+scoreboard objectives add jump_timer_dec10 dummy
+scoreboard objectives add jump_timer_dec01 dummy
 
+scoreboard objectives add jump_checkpoint dummy
+scoreboard objectives add jump1_score dummy
+scoreboard objectives add jump1_score_pr dummy
+scoreboard objectives add jump1_timer_min_pr dummy
+scoreboard objectives add jump1_timer_min10_pr dummy
+scoreboard objectives add jump1_timer_min01_pr dummy
+scoreboard objectives add jump1_timer_sec_pr dummy
+scoreboard objectives add jump1_timer_sec10_pr dummy
+scoreboard objectives add jump1_timer_sec01_pr dummy
+scoreboard objectives add jump1_timer_dec_pr dummy
+scoreboard objectives add jump1_timer_dec10_pr dummy
+scoreboard objectives add jump1_timer_dec01_pr dummy
+scoreboard objectives add jump2_score dummy
+scoreboard objectives add jump2_score_pr dummy
+scoreboard objectives add jump2_timer_min_pr dummy
+scoreboard objectives add jump2_timer_min10_pr dummy
+scoreboard objectives add jump2_timer_min01_pr dummy
+scoreboard objectives add jump2_timer_sec_pr dummy
+scoreboard objectives add jump2_timer_sec10_pr dummy
+scoreboard objectives add jump2_timer_sec01_pr dummy
+scoreboard objectives add jump2_timer_dec_pr dummy
+scoreboard objectives add jump2_timer_dec10_pr dummy
+scoreboard objectives add jump2_timer_dec01_pr dummy
+scoreboard objectives add jump3_score dummy
+scoreboard objectives add jump3_score_pr dummy
+scoreboard objectives add jump3_timer_min_pr dummy
+scoreboard objectives add jump3_timer_min10_pr dummy
+scoreboard objectives add jump3_timer_min01_pr dummy
+scoreboard objectives add jump3_timer_sec_pr dummy
+scoreboard objectives add jump3_timer_sec10_pr dummy
+scoreboard objectives add jump3_timer_sec01_pr dummy
+scoreboard objectives add jump3_timer_dec_pr dummy
+scoreboard objectives add jump3_timer_dec10_pr dummy
+scoreboard objectives add jump3_timer_dec01_pr dummy
 # arena
 scoreboard objectives add respawn_quality dummy
 scoreboard objectives add lobby_sneak dummy
@@ -419,5 +463,8 @@ scoreboard players set %5 numbers 5
 scoreboard players set %6 numbers 6
 scoreboard players set %8 numbers 8
 scoreboard players set %10 numbers 10
+scoreboard players set %20 numbers 20
 scoreboard players set %40 numbers 40
 scoreboard players set %50 numbers 50
+scoreboard players set %60 numbers 60
+scoreboard players set %100 numbers 100

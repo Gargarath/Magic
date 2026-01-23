@@ -9,8 +9,10 @@ scoreboard players set @s IsAlive 0
 scoreboard players set @s save_flag_time 0
 gamemode adventure @s[gamemode=!adventure]
 
-scoreboard players set @s jump_test 1
-# reset le score de nombre de jump de @s
+scoreboard players set @s jump1_score_pr 1000000
+scoreboard players set @s jump2_score_pr 1000000
+scoreboard players set @s jump3_score_pr 1000000
+# reset les temps de jump de @s
 
 scoreboard players set @s out_of_fight 301
 scoreboard players set @s in_fight 0

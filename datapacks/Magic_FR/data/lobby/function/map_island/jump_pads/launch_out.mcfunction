@@ -5,5 +5,6 @@ scoreboard players set $x player_motion.api.launch -65000
 scoreboard players set $y player_motion.api.launch 1500
 scoreboard players set $z player_motion.api.launch 0
 
-tag @s remove in_map_display
 function player_motion:api/launch_xyz
+
+function lobby:map_island/quit_maps

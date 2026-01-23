@@ -25,7 +25,11 @@ scoreboard players set @a cooldownspell3 -1
 # vire de l'arènes les joueurs qui sont dedans
 
 function lobby:map_island/reset_maps
+execute as @a[tag=in_map_display] run function lobby:map_island/quit_maps
 # vire les joueurs en visite de map et prépare les maps
+
+execute as @a[tag=in_jump] run function lobby:jump/quit_jump
+# vire les joueurs en jump
 
 execute as @a run function main:reset/resetachats
 execute as @a run function main:stats/reset_stats

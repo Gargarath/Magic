@@ -138,7 +138,11 @@ void main() {
             posoffset = vec2(0.19, 1.62);
             pos.y += 89.0;
             pos *= 0.81;   
-        } 
+        }  else if (sectionx == 20) {
+            // e.g., ascent near -200000 → actionbar
+            posoffset = vec2(0.0, 0.0);
+            pos.y += 0.0;  
+        }
         else {
             // section == 0 or anything else → no offset
             posoffset = vec2(0.0, 0.0);

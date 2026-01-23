@@ -265,6 +265,13 @@
           "type": "model",
           "model": "item/carrot_on_a_stick/air"
         }
+      },
+      {
+        "when": "tp_checkpoint",
+        "model": {
+          "type": "model",
+          "model": "item/heavy_weighted_pressure_plate"
+        }
       }
     ]
   }
