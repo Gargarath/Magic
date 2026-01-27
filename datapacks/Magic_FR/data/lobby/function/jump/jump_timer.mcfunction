@@ -2,7 +2,9 @@
 # permet de convertir un temps en tick en secondes
 
 # INCREASE TIMER
-scoreboard players add @s jump_timer 1
+execute store result score @s jump_now run stopwatch query minecraft:jump 20
+scoreboard players operation @s jump_timer = @s jump_now
+scoreboard players operation @s jump_timer -= @s jump_start
 
 ## CALCULATE TIMER
 

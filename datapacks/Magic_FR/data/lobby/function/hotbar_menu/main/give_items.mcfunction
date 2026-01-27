@@ -3,22 +3,27 @@
 clear @s
 
 item replace entity @s weapon.offhand with carrot_on_a_stick[item_name=" ",enchantments={"binding_curse":1},tooltip_display={hide_tooltip:true},custom_data={offhand_autorized:1b},custom_model_data={strings:["air"]}] 1
+# deuxième main vide
+
+## ISLAND SELECTOR
+item replace entity @s hotbar.0 with compass[item_name=[{"bold":true,"color":"gray","text":"Menu de jeu"}],custom_data={island_selector:1b},custom_model_data={strings:["island_selector"]}] 1
+
 
 ## CLASS SELECTOR
-item replace entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] hotbar.0 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={class_selector:1b},custom_model_data={strings:["class_selector"]}] 1
+item replace entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={class_selector:1b},custom_model_data={strings:["class_selector"]}] 1
 # donne l'item vierge si @s n'a pas de classe
-item replace entity @s[tag=warrior] hotbar.0 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"gold","italic":true,"text":"Guerrier"}],custom_data={class_selector:1b},custom_model_data={strings:["select_warrior"]}] 1
-item replace entity @s[tag=archer] hotbar.0 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"dark_green","italic":true,"text":"Archer"}],custom_data={class_selector:1b},custom_model_data={strings:["select_archer"]}] 1
-item replace entity @s[tag=mage] hotbar.0 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"dark_purple","italic":true,"text":"Mage"}],custom_data={class_selector:1b},custom_model_data={strings:["select_mage"]}] 1
-item replace entity @s[tag=rogue] hotbar.0 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"gray","italic":true,"text":"Assassin"}],custom_data={class_selector:1b},custom_model_data={strings:["select_rogue"]}] 1
+item replace entity @s[tag=warrior] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"gold","italic":true,"text":"Guerrier"}],custom_data={class_selector:1b},custom_model_data={strings:["select_warrior"]}] 1
+item replace entity @s[tag=archer] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"dark_green","italic":true,"text":"Archer"}],custom_data={class_selector:1b},custom_model_data={strings:["select_archer"]}] 1
+item replace entity @s[tag=mage] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"dark_purple","italic":true,"text":"Mage"}],custom_data={class_selector:1b},custom_model_data={strings:["select_mage"]}] 1
+item replace entity @s[tag=rogue] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"gray","italic":true,"text":"Assassin"}],custom_data={class_selector:1b},custom_model_data={strings:["select_rogue"]}] 1
 # donne l'item en fonction de la classe de @s
 
 ## TEAM SELECTOR
 
-item replace entity @s[tag=!blue_team,tag=!red_team] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={team_selector:1b},custom_model_data={strings:["team_selector"]}] 1
+item replace entity @s[tag=!blue_team,tag=!red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={team_selector:1b},custom_model_data={strings:["team_selector"]}] 1
 # donne l'item vierge si @s n'a pas de team
-item replace entity @s[tag=blue_team] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"blue","italic":true,"text":"Bleue"}],custom_data={team_selector:1b},custom_model_data={strings:["select_blue"]}] 1
-item replace entity @s[tag=red_team] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"red","italic":true,"text":"Rouge"}],custom_data={team_selector:1b},custom_model_data={strings:["select_red"]}] 1
+item replace entity @s[tag=blue_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"blue","italic":true,"text":"Bleue"}],custom_data={team_selector:1b},custom_model_data={strings:["select_blue"]}] 1
+item replace entity @s[tag=red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"red","italic":true,"text":"Rouge"}],custom_data={team_selector:1b},custom_model_data={strings:["select_red"]}] 1
 # donne l'item en fonction de la team de @s
 
 ## SPECTATOR SELECTOR

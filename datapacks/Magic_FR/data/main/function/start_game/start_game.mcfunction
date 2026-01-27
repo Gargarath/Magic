@@ -170,6 +170,9 @@ data modify storage minecraft:matchinfo.red scnd_objective_completed set value {
 scoreboard players set blue_wins secnd_objective 0
 scoreboard players set red_wins secnd_objective 0
 # reset le nombre d'objectif secondaire capturés par les équipes
+scoreboard players reset blue_won_last secnd_objective
+scoreboard players reset red_won_last secnd_objective
+# reset qui a gagné le dernier objectif secondaire
 
 execute if score $random map_selection matches 0 run function main:map_randomizer/predefined_map/predefined_map
 # si on est en "arènes prédéfinies"  -> calcule la prochaine map en fonction de celles choisie dans le menu

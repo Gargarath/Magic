@@ -1,0 +1,17 @@
+## appelée par interact_with_interaction/check_clicked_button si @s clique pour avoir les stats du rankX
+# permet d'afficher les données du rank X
+
+execute if data storage stats:jump 2.rank2{name:""} run return run tellraw @s [{"color":"gray","text":"* Aucune donnée *"}]
+# si le storage est vide -> annule et renvoi aucune donnée
+
+tellraw @s [{"color":"gold","text":"\n-- Record de "},{"text":"2. ","color":"yellow"},{"color":"white","interpret":true,"nbt":"2.rank2.head","storage":"stats:jump"}," ",{"color":"green","interpret":true,"nbt":"2.rank2.name","storage":"stats:jump"},{"color":"gold","text":" parcours n°2"},{"color":"gold","text":" --"}]
+
+tellraw @s ["Meilleur temps : ",{"color":"green","nbt":"2.rank2.min10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.sec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.dec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.dec01","storage":"stats:jump"}," - ",{"color":"green","nbt":"2.rank2.fall_pr","storage":"stats:jump"}," chute(s)"]
+
+
+tellraw @s ["  - Checkpoint n°1 : ",{"color":"green","nbt":"2.rank2.cp1.min10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp1.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp1.sec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp1.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp1.dec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp1.dec01","storage":"stats:jump"}]
+tellraw @s ["  - Checkpoint n°2 : ",{"color":"green","nbt":"2.rank2.cp2.min10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp2.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp2.sec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp2.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp2.dec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp2.dec01","storage":"stats:jump"}]
+tellraw @s ["  - Checkpoint n°3 : ",{"color":"green","nbt":"2.rank2.cp3.min10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp3.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp3.sec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp3.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp3.dec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp3.dec01","storage":"stats:jump"}]
+tellraw @s ["  - Checkpoint n°4 : ",{"color":"green","nbt":"2.rank2.cp4.min10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp4.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp4.sec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp4.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"2.rank2.cp4.dec10","storage":"stats:jump"},{"color":"green","nbt":"2.rank2.cp4.dec01","storage":"stats:jump"}]
+tellraw @s [{"text":"\nTentatives totales sur le parcours : "},{"color":"green","nbt":"2.rank2.tries","storage":"stats:jump"}]
+tellraw @s [{"text":"Chutes totales sur le parcours : "},{"color":"green","nbt":"2.rank2.fall","storage":"stats:jump"}]

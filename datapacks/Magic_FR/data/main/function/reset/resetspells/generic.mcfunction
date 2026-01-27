@@ -115,10 +115,16 @@ effect clear @s minecraft:blindness
 ## SPELL SPECIFIC
 execute if score @s Player matches 1 run function main:reset/resetspells/player1
 execute if score @s Player matches 2 run function main:reset/resetspells/player2
-
-
-
-
+execute if score @s Player matches 3 run function main:reset/resetspells/player3
+execute if score @s Player matches 4 run function main:reset/resetspells/player4
+execute if score @s Player matches 5 run function main:reset/resetspells/player5
+execute if score @s Player matches 6 run function main:reset/resetspells/player6
+execute if score @s Player matches 7 run function main:reset/resetspells/player7
+execute if score @s Player matches 8 run function main:reset/resetspells/player8
+execute if score @s Player matches 9 run function main:reset/resetspells/player9
+execute if score @s Player matches 10 run function main:reset/resetspells/player10
+execute if score @s Player matches 11 run function main:reset/resetspells/player11
+execute if score @s Player matches 12 run function main:reset/resetspells/player12
 
 
 # reset detection clique droit

@@ -8,6 +8,39 @@ data modify storage stats:jump 3.rank4.sec10 set from storage stats:jump 3.rank3
 data modify storage stats:jump 3.rank4.sec01 set from storage stats:jump 3.rank3.sec01
 data modify storage stats:jump 3.rank4.dec10 set from storage stats:jump 3.rank3.dec10
 data modify storage stats:jump 3.rank4.dec01 set from storage stats:jump 3.rank3.dec01
+
+data modify storage stats:jump 3.rank4.cp1.min10 set from storage stats:jump 3.rank3.cp1.min10
+data modify storage stats:jump 3.rank4.cp1.min01 set from storage stats:jump 3.rank3.cp1.min01
+data modify storage stats:jump 3.rank4.cp1.sec10 set from storage stats:jump 3.rank3.cp1.sec10
+data modify storage stats:jump 3.rank4.cp1.sec01 set from storage stats:jump 3.rank3.cp1.sec01
+data modify storage stats:jump 3.rank4.cp1.dec10 set from storage stats:jump 3.rank3.cp1.dec10
+data modify storage stats:jump 3.rank4.cp1.dec01 set from storage stats:jump 3.rank3.cp1.dec01
+
+data modify storage stats:jump 3.rank4.cp2.min10 set from storage stats:jump 3.rank3.cp2.min10
+data modify storage stats:jump 3.rank4.cp2.min01 set from storage stats:jump 3.rank3.cp2.min01
+data modify storage stats:jump 3.rank4.cp2.sec10 set from storage stats:jump 3.rank3.cp2.sec10
+data modify storage stats:jump 3.rank4.cp2.sec01 set from storage stats:jump 3.rank3.cp2.sec01
+data modify storage stats:jump 3.rank4.cp2.dec10 set from storage stats:jump 3.rank3.cp2.dec10
+data modify storage stats:jump 3.rank4.cp2.dec01 set from storage stats:jump 3.rank3.cp2.dec01
+
+data modify storage stats:jump 3.rank4.cp3.min10 set from storage stats:jump 3.rank3.cp3.min10
+data modify storage stats:jump 3.rank4.cp3.min01 set from storage stats:jump 3.rank3.cp3.min01
+data modify storage stats:jump 3.rank4.cp3.sec10 set from storage stats:jump 3.rank3.cp3.sec10
+data modify storage stats:jump 3.rank4.cp3.sec01 set from storage stats:jump 3.rank3.cp3.sec01
+data modify storage stats:jump 3.rank4.cp3.dec10 set from storage stats:jump 3.rank3.cp3.dec10
+data modify storage stats:jump 3.rank4.cp3.dec01 set from storage stats:jump 3.rank3.cp3.dec01
+
+data modify storage stats:jump 3.rank4.cp4.min10 set from storage stats:jump 3.rank3.cp4.min10
+data modify storage stats:jump 3.rank4.cp4.min01 set from storage stats:jump 3.rank3.cp4.min01
+data modify storage stats:jump 3.rank4.cp4.sec10 set from storage stats:jump 3.rank3.cp4.sec10
+data modify storage stats:jump 3.rank4.cp4.sec01 set from storage stats:jump 3.rank3.cp4.sec01
+data modify storage stats:jump 3.rank4.cp4.dec10 set from storage stats:jump 3.rank3.cp4.dec10
+data modify storage stats:jump 3.rank4.cp4.dec01 set from storage stats:jump 3.rank3.cp4.dec01
+
+data modify storage stats:jump 3.rank4.fall_pr set from storage stats:jump 3.rank3.fall_pr
+data modify storage stats:jump 3.rank4.fall set from storage stats:jump 3.rank3.fall
+data modify storage stats:jump 3.rank4.tries set from storage stats:jump 3.rank3.tries
+
 data modify storage stats:jump 3.rank4.name set from storage stats:jump 3.rank3.name
 data modify storage stats:jump 3.rank4.head.player.id set from storage stats:jump 3.rank3.head.player.id
 
@@ -24,10 +57,44 @@ execute store result storage stats:jump 3.rank3.sec01 int 1 run scoreboard playe
 execute store result storage stats:jump 3.rank3.dec10 int 1 run scoreboard players get @s jump_timer_dec10
 execute store result storage stats:jump 3.rank3.dec01 int 1 run scoreboard players get @s jump_timer_dec01
 
+execute store result storage stats:jump 3.rank3.cp1.min10 int 1 run scoreboard players get @s jump3_cp1_timer_min10_pr
+execute store result storage stats:jump 3.rank3.cp1.min01 int 1 run scoreboard players get @s jump3_cp1_timer_min01_pr
+execute store result storage stats:jump 3.rank3.cp1.sec10 int 1 run scoreboard players get @s jump3_cp1_timer_sec10_pr
+execute store result storage stats:jump 3.rank3.cp1.sec01 int 1 run scoreboard players get @s jump3_cp1_timer_sec01_pr
+execute store result storage stats:jump 3.rank3.cp1.dec10 int 1 run scoreboard players get @s jump3_cp1_timer_dec10_pr
+execute store result storage stats:jump 3.rank3.cp1.dec01 int 1 run scoreboard players get @s jump3_cp1_timer_dec01_pr
+
+execute store result storage stats:jump 3.rank3.cp2.min10 int 1 run scoreboard players get @s jump3_cp2_timer_min10_pr
+execute store result storage stats:jump 3.rank3.cp2.min01 int 1 run scoreboard players get @s jump3_cp2_timer_min01_pr
+execute store result storage stats:jump 3.rank3.cp2.sec10 int 1 run scoreboard players get @s jump3_cp2_timer_sec10_pr
+execute store result storage stats:jump 3.rank3.cp2.sec01 int 1 run scoreboard players get @s jump3_cp2_timer_sec01_pr
+execute store result storage stats:jump 3.rank3.cp2.dec10 int 1 run scoreboard players get @s jump3_cp2_timer_dec10_pr
+execute store result storage stats:jump 3.rank3.cp2.dec01 int 1 run scoreboard players get @s jump3_cp2_timer_dec01_pr
+
+execute store result storage stats:jump 3.rank3.cp3.min10 int 1 run scoreboard players get @s jump3_cp3_timer_min10_pr
+execute store result storage stats:jump 3.rank3.cp3.min01 int 1 run scoreboard players get @s jump3_cp3_timer_min01_pr
+execute store result storage stats:jump 3.rank3.cp3.sec10 int 1 run scoreboard players get @s jump3_cp3_timer_sec10_pr
+execute store result storage stats:jump 3.rank3.cp3.sec01 int 1 run scoreboard players get @s jump3_cp3_timer_sec01_pr
+execute store result storage stats:jump 3.rank3.cp3.dec10 int 1 run scoreboard players get @s jump3_cp3_timer_dec10_pr
+execute store result storage stats:jump 3.rank3.cp3.dec01 int 1 run scoreboard players get @s jump3_cp3_timer_dec01_pr
+
+execute store result storage stats:jump 3.rank3.cp4.min10 int 1 run scoreboard players get @s jump3_cp4_timer_min10_pr
+execute store result storage stats:jump 3.rank3.cp4.min01 int 1 run scoreboard players get @s jump3_cp4_timer_min01_pr
+execute store result storage stats:jump 3.rank3.cp4.sec10 int 1 run scoreboard players get @s jump3_cp4_timer_sec10_pr
+execute store result storage stats:jump 3.rank3.cp4.sec01 int 1 run scoreboard players get @s jump3_cp4_timer_sec01_pr
+execute store result storage stats:jump 3.rank3.cp4.dec10 int 1 run scoreboard players get @s jump3_cp4_timer_dec10_pr
+execute store result storage stats:jump 3.rank3.cp4.dec01 int 1 run scoreboard players get @s jump3_cp4_timer_dec01_pr
+
+execute store result storage stats:jump 3.rank3.fall_pr int 1 run scoreboard players get @s jump_fall
+execute store result storage stats:jump 3.rank3.fall int 1 run scoreboard players get @s jump3_fall
+execute store result storage stats:jump 3.rank3.tries int 1 run scoreboard players get @s jump3_tries
+
 data modify storage stats:jump 3.rank3.head.player.id set from entity @s UUID
 
 team leave @s
-execute at @s run data merge block 14 97 13 {front_text:{messages:[{"selector":"@p"},"","",""]}}
+tag @s add get_name
+execute at @s run data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[tag=get_name,limit=1]"},"","",""]}}
+tag @s remove get_name
 data modify storage stats:jump 3.rank3.name set from block 14 97 13 front_text.messages[0]
 function lobby:team_selector/give_lobby_team
 

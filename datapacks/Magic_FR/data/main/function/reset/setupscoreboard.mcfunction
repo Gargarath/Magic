@@ -86,6 +86,10 @@ scoreboard objectives add jump_timer_dec01 dummy
 scoreboard objectives add jump_checkpoint dummy
 scoreboard objectives add jump1_score dummy
 scoreboard objectives add jump1_score_pr dummy
+scoreboard objectives add jump1_cp1 dummy
+scoreboard objectives add jump1_cp2 dummy
+scoreboard objectives add jump1_cp1_pr dummy
+scoreboard objectives add jump1_cp2_pr dummy
 scoreboard objectives add jump1_timer_min_pr dummy
 scoreboard objectives add jump1_timer_min10_pr dummy
 scoreboard objectives add jump1_timer_min01_pr dummy
@@ -97,6 +101,14 @@ scoreboard objectives add jump1_timer_dec10_pr dummy
 scoreboard objectives add jump1_timer_dec01_pr dummy
 scoreboard objectives add jump2_score dummy
 scoreboard objectives add jump2_score_pr dummy
+scoreboard objectives add jump2_cp1 dummy
+scoreboard objectives add jump2_cp2 dummy
+scoreboard objectives add jump2_cp3 dummy
+scoreboard objectives add jump2_cp4 dummy
+scoreboard objectives add jump2_cp1_pr dummy
+scoreboard objectives add jump2_cp2_pr dummy
+scoreboard objectives add jump2_cp3_pr dummy
+scoreboard objectives add jump2_cp4_pr dummy
 scoreboard objectives add jump2_timer_min_pr dummy
 scoreboard objectives add jump2_timer_min10_pr dummy
 scoreboard objectives add jump2_timer_min01_pr dummy
@@ -108,6 +120,14 @@ scoreboard objectives add jump2_timer_dec10_pr dummy
 scoreboard objectives add jump2_timer_dec01_pr dummy
 scoreboard objectives add jump3_score dummy
 scoreboard objectives add jump3_score_pr dummy
+scoreboard objectives add jump3_cp1 dummy
+scoreboard objectives add jump3_cp2 dummy
+scoreboard objectives add jump3_cp3 dummy
+scoreboard objectives add jump3_cp4 dummy
+scoreboard objectives add jump3_cp1_pr dummy
+scoreboard objectives add jump3_cp2_pr dummy
+scoreboard objectives add jump3_cp3_pr dummy
+scoreboard objectives add jump3_cp4_pr dummy
 scoreboard objectives add jump3_timer_min_pr dummy
 scoreboard objectives add jump3_timer_min10_pr dummy
 scoreboard objectives add jump3_timer_min01_pr dummy
@@ -117,6 +137,129 @@ scoreboard objectives add jump3_timer_sec01_pr dummy
 scoreboard objectives add jump3_timer_dec_pr dummy
 scoreboard objectives add jump3_timer_dec10_pr dummy
 scoreboard objectives add jump3_timer_dec01_pr dummy
+
+# Tentatives
+scoreboard objectives add jump1_tries dummy
+scoreboard objectives add jump2_tries dummy
+scoreboard objectives add jump3_tries dummy
+# chutes
+scoreboard objectives add jump_fall dummy
+scoreboard objectives add jump1_fall dummy
+scoreboard objectives add jump2_fall dummy
+scoreboard objectives add jump3_fall dummy
+scoreboard objectives add jump1_fall_pr dummy
+scoreboard objectives add jump2_fall_pr dummy
+scoreboard objectives add jump3_fall_pr dummy
+# stocker PR checkpoint
+
+# jump 1
+scoreboard objectives add jump1_cp1_timer_min_pr dummy
+scoreboard objectives add jump1_cp1_timer_min10_pr dummy
+scoreboard objectives add jump1_cp1_timer_min01_pr dummy
+scoreboard objectives add jump1_cp1_timer_sec_pr dummy
+scoreboard objectives add jump1_cp1_timer_sec10_pr dummy
+scoreboard objectives add jump1_cp1_timer_sec01_pr dummy
+scoreboard objectives add jump1_cp1_timer_dec_pr dummy
+scoreboard objectives add jump1_cp1_timer_dec10_pr dummy
+scoreboard objectives add jump1_cp1_timer_dec01_pr dummy
+
+scoreboard objectives add jump1_cp2_timer_min_pr dummy
+scoreboard objectives add jump1_cp2_timer_min10_pr dummy
+scoreboard objectives add jump1_cp2_timer_min01_pr dummy
+scoreboard objectives add jump1_cp2_timer_sec_pr dummy
+scoreboard objectives add jump1_cp2_timer_sec10_pr dummy
+scoreboard objectives add jump1_cp2_timer_sec01_pr dummy
+scoreboard objectives add jump1_cp2_timer_dec_pr dummy
+scoreboard objectives add jump1_cp2_timer_dec10_pr dummy
+scoreboard objectives add jump1_cp2_timer_dec01_pr dummy
+
+# jump 2
+scoreboard objectives add jump2_cp1_timer_min_pr dummy
+scoreboard objectives add jump2_cp1_timer_min10_pr dummy
+scoreboard objectives add jump2_cp1_timer_min01_pr dummy
+scoreboard objectives add jump2_cp1_timer_sec_pr dummy
+scoreboard objectives add jump2_cp1_timer_sec10_pr dummy
+scoreboard objectives add jump2_cp1_timer_sec01_pr dummy
+scoreboard objectives add jump2_cp1_timer_dec_pr dummy
+scoreboard objectives add jump2_cp1_timer_dec10_pr dummy
+scoreboard objectives add jump2_cp1_timer_dec01_pr dummy
+
+scoreboard objectives add jump2_cp2_timer_min_pr dummy
+scoreboard objectives add jump2_cp2_timer_min10_pr dummy
+scoreboard objectives add jump2_cp2_timer_min01_pr dummy
+scoreboard objectives add jump2_cp2_timer_sec_pr dummy
+scoreboard objectives add jump2_cp2_timer_sec10_pr dummy
+scoreboard objectives add jump2_cp2_timer_sec01_pr dummy
+scoreboard objectives add jump2_cp2_timer_dec_pr dummy
+scoreboard objectives add jump2_cp2_timer_dec10_pr dummy
+scoreboard objectives add jump2_cp2_timer_dec01_pr dummy
+
+scoreboard objectives add jump2_cp3_timer_min_pr dummy
+scoreboard objectives add jump2_cp3_timer_min10_pr dummy
+scoreboard objectives add jump2_cp3_timer_min01_pr dummy
+scoreboard objectives add jump2_cp3_timer_sec_pr dummy
+scoreboard objectives add jump2_cp3_timer_sec10_pr dummy
+scoreboard objectives add jump2_cp3_timer_sec01_pr dummy
+scoreboard objectives add jump2_cp3_timer_dec_pr dummy
+scoreboard objectives add jump2_cp3_timer_dec10_pr dummy
+scoreboard objectives add jump2_cp3_timer_dec01_pr dummy
+
+scoreboard objectives add jump2_cp4_timer_min_pr dummy
+scoreboard objectives add jump2_cp4_timer_min10_pr dummy
+scoreboard objectives add jump2_cp4_timer_min01_pr dummy
+scoreboard objectives add jump2_cp4_timer_sec_pr dummy
+scoreboard objectives add jump2_cp4_timer_sec10_pr dummy
+scoreboard objectives add jump2_cp4_timer_sec01_pr dummy
+scoreboard objectives add jump2_cp4_timer_dec_pr dummy
+scoreboard objectives add jump2_cp4_timer_dec10_pr dummy
+scoreboard objectives add jump2_cp4_timer_dec01_pr dummy
+
+# jump 3
+scoreboard objectives add jump3_cp1_timer_min_pr dummy
+scoreboard objectives add jump3_cp1_timer_min10_pr dummy
+scoreboard objectives add jump3_cp1_timer_min01_pr dummy
+scoreboard objectives add jump3_cp1_timer_sec_pr dummy
+scoreboard objectives add jump3_cp1_timer_sec10_pr dummy
+scoreboard objectives add jump3_cp1_timer_sec01_pr dummy
+scoreboard objectives add jump3_cp1_timer_dec_pr dummy
+scoreboard objectives add jump3_cp1_timer_dec10_pr dummy
+scoreboard objectives add jump3_cp1_timer_dec01_pr dummy
+
+scoreboard objectives add jump3_cp2_timer_min_pr dummy
+scoreboard objectives add jump3_cp2_timer_min10_pr dummy
+scoreboard objectives add jump3_cp2_timer_min01_pr dummy
+scoreboard objectives add jump3_cp2_timer_sec_pr dummy
+scoreboard objectives add jump3_cp2_timer_sec10_pr dummy
+scoreboard objectives add jump3_cp2_timer_sec01_pr dummy
+scoreboard objectives add jump3_cp2_timer_dec_pr dummy
+scoreboard objectives add jump3_cp2_timer_dec10_pr dummy
+scoreboard objectives add jump3_cp2_timer_dec01_pr dummy
+
+scoreboard objectives add jump3_cp3_timer_min_pr dummy
+scoreboard objectives add jump3_cp3_timer_min10_pr dummy
+scoreboard objectives add jump3_cp3_timer_min01_pr dummy
+scoreboard objectives add jump3_cp3_timer_sec_pr dummy
+scoreboard objectives add jump3_cp3_timer_sec10_pr dummy
+scoreboard objectives add jump3_cp3_timer_sec01_pr dummy
+scoreboard objectives add jump3_cp3_timer_dec_pr dummy
+scoreboard objectives add jump3_cp3_timer_dec10_pr dummy
+scoreboard objectives add jump3_cp3_timer_dec01_pr dummy
+
+scoreboard objectives add jump3_cp4_timer_min_pr dummy
+scoreboard objectives add jump3_cp4_timer_min10_pr dummy
+scoreboard objectives add jump3_cp4_timer_min01_pr dummy
+scoreboard objectives add jump3_cp4_timer_sec_pr dummy
+scoreboard objectives add jump3_cp4_timer_sec10_pr dummy
+scoreboard objectives add jump3_cp4_timer_sec01_pr dummy
+scoreboard objectives add jump3_cp4_timer_dec_pr dummy
+scoreboard objectives add jump3_cp4_timer_dec10_pr dummy
+scoreboard objectives add jump3_cp4_timer_dec01_pr dummy
+
+# calculateur de temps
+
+scoreboard objectives add jump_start dummy
+scoreboard objectives add jump_now dummy
+
 # arena
 scoreboard objectives add respawn_quality dummy
 scoreboard objectives add lobby_sneak dummy
@@ -468,3 +611,8 @@ scoreboard players set %40 numbers 40
 scoreboard players set %50 numbers 50
 scoreboard players set %60 numbers 60
 scoreboard players set %100 numbers 100
+
+
+# setup stopwatch
+
+stopwatch create jump

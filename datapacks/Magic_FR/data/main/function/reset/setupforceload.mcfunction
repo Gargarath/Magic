@@ -7,6 +7,8 @@ forceload add 16 16 -17 -17
 # Forceload le Spawn
 forceload add 79 -1 80 0
 # Forceload la zone de visite de map (car tp dessus)
+forceload add -1 63 0 80
+# Forceload la zone des stats (pour leaderboard)
 
 forceload add 355 555 190 440
 # Forceload la map Pirate

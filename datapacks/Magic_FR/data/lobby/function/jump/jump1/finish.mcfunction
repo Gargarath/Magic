@@ -5,6 +5,9 @@ execute in minecraft:overworld run tp @s -79.62 99.00 6.48 -1.52 0
 tag @s remove jumping
 tag @s remove jumping_1
 
+function lobby:jump/jump_timer
+# calcule le temps de @s
+
 function lobby:hotbar_menu/main/give_items
 # remet @s sur le bon menu de hotbar
 

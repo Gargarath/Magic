@@ -5,6 +5,9 @@ tp @s -93.67 99.00 4.31 89.71 0.07
 tag @s remove jumping
 tag @s remove jumping_2
 
+function lobby:jump/jump_timer
+# calcule le temps de @s
+
 function lobby:hotbar_menu/main/give_items
 # remet @s sur le bon menu de hotbar
 

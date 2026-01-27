@@ -49,9 +49,6 @@ execute if score Is_ready Lobby_ready matches 0 unless score $current_blue playe
 # KILL LES ITEMS NON INVOQUES
 kill @e[type=item,tag=!summoned]
 
-# JUMPS
-execute as @a[scores={is_jumping=1..}] at @s run function main:is_jumping
-
 # LIVRE D'ADMINISTRATEUR
 item replace entity @a[scores={operator=2}] inventory.26 from block 13 97 11 container.0
 # donne le livre aux joueurs

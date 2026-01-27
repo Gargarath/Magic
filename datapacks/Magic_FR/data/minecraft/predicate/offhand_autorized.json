@@ -4,8 +4,11 @@
   "predicate": {
     "equipment": {
       "offhand": {
-        "components": {
-          "minecraft:custom_data": { "offhand_autorized": 1 }
+        "items": "minecraft:carrot_on_a_stick",
+        "predicates": {
+          "minecraft:custom_data": {
+            "offhand_autorized": 1
+          }
         }
       }
     }

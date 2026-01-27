@@ -13,6 +13,18 @@ scoreboard players set @s jump1_score_pr 1000000
 scoreboard players set @s jump2_score_pr 1000000
 scoreboard players set @s jump3_score_pr 1000000
 # reset les temps de jump de @s
+scoreboard players set @s jump1_tries 0
+scoreboard players set @s jump2_tries 0
+scoreboard players set @s jump3_tries 0
+scoreboard players set @s jump1_fall 0
+scoreboard players set @s jump2_fall 0
+scoreboard players set @s jump3_fall 0
+scoreboard players reset @s jump1_fall_pr
+scoreboard players reset @s jump2_fall_pr
+scoreboard players reset @s jump3_fall_pr
+tag @s remove in_jump
+tag @s remove jumping
+# reset les tentatives de jump de @s
 
 scoreboard players set @s out_of_fight 301
 scoreboard players set @s in_fight 0

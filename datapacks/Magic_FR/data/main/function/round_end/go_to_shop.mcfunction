@@ -144,8 +144,8 @@ execute if score $build_reset option_panel matches 2 run scoreboard players oper
 tellraw @a[scores={Player=1..}] ["",{"text":"+","bold":true,"color":"gold"},{"score":{"name":"$ph_per_round","objective":"option_panel"},"bold":true,"color":"gold"},{"text":" Points d'Honneur ! ","bold":true,"color":"gold"},{"text":"(pour avoir terminé la manche ","italic":true,"color":"gray"},{"score":{"name":"round","objective":"bossbar"},"italic":true,"color":"gray"},{"text":")","italic":true,"color":"gray"}]
 # Donne x points d'honneur a tous les joueurs et leur indique que c'est parce qu'ils viennent de terminer la manche (avec x score variables du joueur PH_per_round)
 
-execute if score blue_wins secnd_objective matches 1 run function main:round_end/blue_completed_objective
-execute if score red_wins secnd_objective matches 1 run function main:round_end/red_completed_objective
+execute if score blue_won_last secnd_objective matches 1 run function main:round_end/blue_completed_objective
+execute if score red_won_last secnd_objective matches 1 run function main:round_end/red_completed_objective
 # donne un bonnus d'argent à l'équipe qui a accompli l'objectif secondaire
 
 

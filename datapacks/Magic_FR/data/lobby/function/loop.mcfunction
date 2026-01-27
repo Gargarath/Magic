@@ -11,13 +11,17 @@ execute if score Is_ready Lobby_ready matches 0 run function lobby:is_ready
                                         ## DONNER STUFF
 execute as @a[scores={drop_item=1..},tag=!in_lobby_arena] run function lobby:hotbar_menu/drop_item
 execute as @a[scores={usespell=1..},tag=!in_lobby_arena] run function lobby:hotbar_menu/check_rightclick
-execute as @a[tag=!in_lobby_arena] unless predicate minecraft:has_item_offhand unless predicate offhand_autorized run function lobby:hotbar_menu/drop_item
+execute as @a[tag=!in_lobby_arena] unless predicate offhand_autorized run function lobby:hotbar_menu/drop_item
 
                                         ## JUMP ##
 execute as @a[tag=in_jump] at @s if block ~ ~ ~ #jump_plates run function lobby:jump/check_checkpoint
 # check sur les joueurs des jumps si ils marchent sur une plaque et fait l'action en fonction
 execute as @a[tag=jumping] run function lobby:jump/jump_timer
 # augmente le timer des joueurs dans le jump
+execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_start
+# check sur les joueurs dans le jumps si ils ont pas marché sur la plaque de départ -> leur cancel
+execute as @a[tag=jumping,tag=!jump_hide_close_players,tag=in_jump] at @s if entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/invisible
+execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/no_more_invisible
 
                                         ## ARENE ##
 # lave
@@ -86,6 +90,11 @@ effect give @a[scores={InLobby=1},tag=!in_lobby_arena] minecraft:weakness 1 255 
 ## JOUEURS QUI TOMBENT
 
 execute as @a[gamemode=adventure,tag=!in_lobby_arena,tag=!spec_map] at @s if predicate minecraft:felt_lobby run function lobby:felt_lobby
+
+## PADS
+
+execute as @a if predicate minecraft:step_on_slimeblock if entity @s[nbt={OnGround:1b}] run function lobby:slime_pads
+execute at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1 0 2 normal
 
 
                                          #### CES COMMANDES PERMETENT DE GERER LA SELECTION D'EQUIPES #####
