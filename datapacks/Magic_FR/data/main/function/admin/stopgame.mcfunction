@@ -146,6 +146,9 @@ execute if score selected_map variables matches 5 run function main:reset/reset_
 execute if score selected_map variables matches 6 run function main:reset/reset_map/reset_map_candyworld
 # reset la map bonbon si la map bonbon est sélectionnée
 
+execute as @a[tag=Has_Blue_flag] run function ctf:locator_bar_flags/reset_waypoint
+execute as @a[tag=Has_Red_flag] run function ctf:locator_bar_flags/reset_waypoint
+# enlève les waypoint à tous les joueurs qui avaient un drapeau
 kill @e[tag=Spot_Red_flag]
 kill @e[tag=Spot_Blue_flag]
 kill @e[tag=Red_banner]

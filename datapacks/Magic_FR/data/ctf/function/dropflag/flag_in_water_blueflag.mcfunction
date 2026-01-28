@@ -18,6 +18,9 @@ execute at @e[tag=Spot_Blue_flag] run summon armor_stand ~ ~2 ~ {NoGravity:1b,Sm
 execute at @e[tag=Spot_Blue_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Blue_banner"],Pose:{Body:[-90f,0f,0f]},DisabledSlots:4144959,equipment:{head:{id:"minecraft:blue_banner",count:1,components:{"minecraft:custom_model_data":{strings:["Blue_flag"]}}}}}
 # Re setup le drapeau bleu au spot de drapeau bleu
 
+execute as @e[type=armor_stand,tag=Blue_flag,limit=1] run function ctf:locator_bar_flags/flag_blue_base
+# remet le waypoint de drapeau bleu à sa base
+
 execute if score selected_map variables matches 1 run setblock 332 57 511 air
 execute if score selected_map variables matches 2 run setblock 259 131 -276 air
 execute if score selected_map variables matches 3 run setblock 287 127 -12 air

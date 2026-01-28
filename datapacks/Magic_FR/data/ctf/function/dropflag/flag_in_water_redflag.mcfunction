@@ -18,6 +18,9 @@ execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~2 ~ {NoGravity:1b,Sma
 execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Red_banner"],Pose:{Body:[-90f,0f,0f]},DisabledSlots:4144959,equipment:{head:{id:"minecraft:red_banner",count:1,components:{"minecraft:custom_model_data":{strings:["Red_flag"]}}}}}
 # Re setup le drapeau rouge au spot de drapeau rouge
 
+execute as @e[type=armor_stand,tag=Red_flag,limit=1] run function ctf:locator_bar_flags/flag_red_base
+# remet le waypoint de drapeau rouge à sa base
+
 execute if score selected_map variables matches 1 run setblock 204 57 485 air
 execute if score selected_map variables matches 2 run setblock 177 131 -286 air
 execute if score selected_map variables matches 3 run setblock 355 127 28 air

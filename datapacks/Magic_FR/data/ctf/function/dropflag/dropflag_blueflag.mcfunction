@@ -43,8 +43,8 @@ execute as @e[type=armor_stand,tag=Blue_flag,tag=droped] at @s if block ~ ~-0.1 
 # si le drapeau est trop haut, le redescend jusqu'a ce qu'il rencontre un bloc qui ne peut etre traversé (descend de 20.9 blocs max)
 
 scoreboard players set blue flag_wrong_place 0
-execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~ ~ water run scoreboard players set blue flag_wrong_place 1
-execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~-1 ~ water run scoreboard players set blue flag_wrong_place 1
+execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~ ~ #water_block run scoreboard players set blue flag_wrong_place 1
+execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~-1 ~ #water_block run scoreboard players set blue flag_wrong_place 1
 execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~ ~ lava run scoreboard players set blue flag_wrong_place 1
 execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~-1 ~ lava run scoreboard players set blue flag_wrong_place 1
 execute at @e[type=armor_stand,tag=Blue_flag] if block ~ ~-0.1 ~ #minecraft:traversable_blocs run scoreboard players set blue flag_wrong_place 1
@@ -66,6 +66,7 @@ execute if score blue flag_wrong_place matches 0 at @e[type=armor_stand,tag=Blue
 
 execute if score blue flag_wrong_place matches 0 run tellraw @a {"text":"Le drapeau bleu est tombé !","color":"blue","bold":false}
 execute if score blue flag_wrong_place matches 0 run execute at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
+execute if score blue flag_wrong_place matches 0 as @e[type=armor_stand,tag=Blue_flag,limit=1] run function ctf:locator_bar_flags/flag_blue_dropped
 data modify storage minecraft:matchinfo.blue flag_state set value "\uE303"
 function main:gui/display/refresh_gui
 # Indique à tout le monde que le drapeau bleu est tombé si il n'est pas tombé dans l'eau
@@ -74,6 +75,9 @@ item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 contai
 item replace entity @s weapon.offhand from block 13 97 11 container.1
 clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 # clear les items dans la offhand de @s
+
+function ctf:locator_bar_flags/reset_waypoint
+# retire le waypoint de drapeau bleu porté à @s
 
 execute if score blue flag_wrong_place matches 1 run function ctf:dropflag/flag_in_water_blueflag
 # lance la fonction ctf:dropflag/flag_in_water_blueflag si le drapeau bleu est tombé dans l'eau

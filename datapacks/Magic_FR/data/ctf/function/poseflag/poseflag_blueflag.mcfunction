@@ -19,6 +19,12 @@ execute at @e[tag=Spot_Blue_flag] run summon armor_stand ~ ~2 ~ {NoGravity:1b,Sm
 execute at @e[tag=Spot_Blue_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Blue_banner"],Pose:{Body:[-90f,0f,0f]},DisabledSlots:4144959,equipment:{head:{id:"minecraft:blue_banner",count:1,components:{"minecraft:custom_model_data":{strings:["Blue_flag"]}}}}}
 # Spawn la bannière bleue au niveau du spot de drapeau bleue
 
+function ctf:locator_bar_flags/reset_waypoint
+# retire le waypoint de drapeau bleu porté à @s
+
+execute as @e[type=armor_stand,tag=Blue_flag,limit=1] run function ctf:locator_bar_flags/flag_blue_base
+# remet le waypoint de drapeau bleu à sa base
+
 scoreboard players add Rouges Flag_posed 1
 
 # CALCUL DU NOUVEAU SCORE

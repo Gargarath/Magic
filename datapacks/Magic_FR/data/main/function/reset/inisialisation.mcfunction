@@ -65,6 +65,8 @@ attribute @s minecraft:attack_speed base set 50
 # met en vitesse de pvp 1.8
 attribute @s minecraft:entity_interaction_range base set 40
 # augmente la portée d'interaction à @s (pour les menus)
+attribute @s minecraft:waypoint_transmit_range base set 0
+# fait en sorte que @s ne soit pas visible sur la locator bar
 
 scoreboard players reset @s[tag=blue_member] blue_member
 # enleve le numéro de statue de @s bleue (pour qu'elle puisse etre retirée)
@@ -89,7 +91,8 @@ scoreboard players set @s operator 0
 
 dialog show @s main:initialised/main
 
-tellraw @s [{"bold":false,"color":"white","text":"Si vous êtes modérateur "},{"bold":false,"click_event":{"action":"run_command","command":"/scoreboard players set @s operator 1"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Cliquez pour obtenir les droits d'accès aux commandes.","color":"red"}]},"text":"cliquez ici"},{"bold":false,"color":"white","text":" pour obtenir l'accès aux commandes"}]
+execute if score $operator_access option_panel matches 1 run tellraw @s [{"bold":false,"color":"white","text":"Si vous êtes modérateur "},{"bold":false,"click_event":{"action":"run_command","command":"/scoreboard players set @s operator 1"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Cliquez pour obtenir les droits d'accès aux commandes.","color":"red"}]},"text":"cliquez ici"},{"bold":false,"color":"white","text":" pour obtenir l'accès aux commandes"}]
+execute if score $operator_access option_panel matches 0 unless entity @a[scores={operator=2}] run tellraw @s {"bold":false,"color":"gold","text":"Pour obtenir les droits de modération, tenez vous sur la plateforme jaune devant le menu d'option."}
 
 spawnpoint @s 0 100 0 180 0
 tp @s 0 100 0 180 0

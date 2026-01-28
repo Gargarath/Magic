@@ -16,6 +16,12 @@ execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~2 ~ {NoGravity:1b,Sma
 execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Red_banner"],Pose:{Body:[-90f,0f,0f]},DisabledSlots:4144959,equipment:{head:{id:"minecraft:red_banner",count:1,components:{"minecraft:custom_model_data":{strings:["Red_flag"]}}}}}
 # Spawn la bannière rouge au niveau du spot de drapeau rouge
 
+function ctf:locator_bar_flags/reset_waypoint
+# retire le waypoint de drapeau rouge porté à @s
+
+execute as @e[type=armor_stand,tag=Red_flag,limit=1] run function ctf:locator_bar_flags/flag_red_base
+# remet le waypoint de drapeau rouge à sa base
+
 scoreboard players add Bleus Flag_posed 1
 
 # CALCUL DU NOUVEAU SCORE

@@ -20,6 +20,9 @@ function main:stats/scoreboard/red_team_info/overlays/has_flag/check_place
 kill @e[tag=Blue_flag]
 # Enlever l'armorstand qui permet de cap le drapeau bleu
 
+function ctf:locator_bar_flags/flag_blue_carried
+# Mettre le waypoint de drapeau bleu en porté à @s
+
 scoreboard players set @s IsAlive 500
 # Met le score IsAlive de @s à 500 (pour que quand il est à 501 = il meurt avec le drapeau)
 
