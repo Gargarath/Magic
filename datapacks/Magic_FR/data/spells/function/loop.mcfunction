@@ -32,7 +32,8 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={uses
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},team=respawn_red] run function spells:cant_usespell/respawn
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},team=respawn_blue] run function spells:cant_usespell/respawn
 
-execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function main:items_positions/used_keybind2
+execute as @a[scores={Player=1..},tag=save_inventory,tag=!in_countdown] unless predicate offhand_autorized run function main:items_positions/used_keybind2
+execute as @a[scores={Player=1..},tag=save_inventory,tag=in_countdown] unless predicate offhand_autorized run function main:launch_arena/countdown/cant_usespell
 
 # Detecte si un joueur clique droit sur un objet carrot_on_a_stick -> lance une fonction qui va executer une fonction en fonction de sa classe et de son niveau sur le spell en question (fonction spells:testspell1)
 

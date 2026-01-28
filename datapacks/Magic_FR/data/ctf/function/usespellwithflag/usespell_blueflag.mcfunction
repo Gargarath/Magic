@@ -9,10 +9,11 @@ function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_plac
 tag @s remove Has_Blue_flag
 # Enleve le tag Has_Blue_flag de @s
 
-clear @s blue_banner
+
 # enlève le visuel de bannière de @s
 item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
-item replace entity @s[scores={freeze=-1}] weapon.offhand from block 13 97 11 container.1
+item replace entity @s weapon.offhand from block 13 97 11 container.1
+clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 # clear les items dans la offhand de @s
 
 scoreboard players set @s IsAlive 700

@@ -24,6 +24,8 @@ schedule clear main:launch_arena/countdown/animation_up
 schedule clear main:launch_arena/countdown/animation_down
 kill @e[type=text_display,tag=start_countdown]
 # reset les timer de 3/2/1
+tag @a[tag=in_countdown] remove in_countdown
+# indique que les joueurs ne sont plus en attente (pour éviter qu'ils utilisent leurs raccourcis de sorts)
 
 scoreboard players set @a is_ready 0
 

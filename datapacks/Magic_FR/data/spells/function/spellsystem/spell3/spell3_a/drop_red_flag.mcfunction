@@ -67,7 +67,8 @@ function main:gui/display/refresh_gui
 execute if score red flag_wrong_place matches 1 run function ctf:dropflag/flag_in_water_redflag
 # lance la fonction ctf:dropflag/flag_in_water_redflag si le drapeau rouge est tombé dans l'eau
 
-clear @s red_banner
+
 item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
 item replace entity @s[scores={freeze=-1}] weapon.offhand from block 13 97 11 container.1
 # clear les items dans la offhand de @s
+clear @s carrot_on_a_stick[custom_model_data={strings:["red_flag"]}]

@@ -71,10 +71,10 @@ function main:gui/display/refresh_gui
 # Indique à tout le monde que le drapeau bleu est tombé si il n'est pas tombé dans l'eau
 
 item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
-item replace entity @s[scores={freeze=-1}] weapon.offhand from block 13 97 11 container.1
+item replace entity @s weapon.offhand from block 13 97 11 container.1
+clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 # clear les items dans la offhand de @s
 
 execute if score blue flag_wrong_place matches 1 run function ctf:dropflag/flag_in_water_blueflag
 # lance la fonction ctf:dropflag/flag_in_water_blueflag si le drapeau bleu est tombé dans l'eau
 
-clear @s blue_banner

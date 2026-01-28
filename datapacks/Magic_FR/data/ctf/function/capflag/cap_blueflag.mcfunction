@@ -1,9 +1,9 @@
 tag @s add Has_Blue_flag
 # Donne le tag possède le drapeau à @s
 
-item replace entity @s armor.head with blue_banner[custom_data={flag:1b},custom_model_data={strings:["blue_flag"]},custom_name={"bold":true,"color":"blue","text":"Drapeau bleu"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-item replace entity @s weapon.offhand with blue_banner[custom_data={flag:1b},custom_model_data={strings:["blue_flag"]},custom_name={"bold":true,"color":"blue","text":"Drapeau bleu"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-# donne l'item à @s
+item replace entity @s armor.head from block 13 97 11 container.6
+item replace entity @s weapon.offhand from block 13 97 11 container.6
+# donne l'item blue flag à @s
 
 execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/spell1_r/nomoreinvisibility_r
 # si @s est fufu -> le sort de son invisibilité

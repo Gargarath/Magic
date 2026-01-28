@@ -10,6 +10,9 @@ execute as @a[scores={red_place=1..}] run function main:stats/scoreboard/red_tea
 scoreboard players set @a IsAlive 0
 # reset les morts si il y en a eu dans les lobby
 
+tag @a[scores={Player=1..}] add in_countdown
+# indique que les joueurs sont en attente (pour éviter qu'ils utilisent leurs raccourcis de sorts)
+
 scoreboard players set shop enable_loop 0
 scoreboard players set ctf enable_loop 1
 scoreboard players set spells enable_loop 1
@@ -66,15 +69,16 @@ team join blue @a[team=ready_blue]
 team join blue @a[team=non_ready_blue]
 
 clear @a[scores={Player=1..}]
+item replace entity @a[scores={Player=1..}] weapon.offhand from block 13 97 11 container.2
 item replace entity @a[scores={Player=1..}] armor.head from block 13 97 11 container.2
 tag @a[scores={Player=1..}] add save_inventory
 
 effect give @a[scores={Player=1..}] minecraft:invisibility infinite 0 true
 
 execute as @a run attribute @s minecraft:entity_interaction_range base set 3
-# redonne la portée d'interaction de base à tous
+# redonne la portée d'interaction d'entité de base à tous
 execute as @a run attribute @s minecraft:block_interaction_range base set 4.5
-# reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)
+# reset la portée d'interaction de block de base à tous (utilisé dans le shop pour les panneaux du shop)
 
 team modify red seeFriendlyInvisibles false
 team modify blue seeFriendlyInvisibles false
@@ -110,7 +114,7 @@ kill @e[type=item_frame,tag=spell2]
 kill @e[type=item_frame,tag=spell3]
 # supprime les items frames
 execute at @e[tag=room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
-# remet les barrier blocs
+# remet les barrier blocs dans les salles d'achat
 
 fill 2 -47 61 -2 -50 61 air replace minecraft:oak_wall_sign
 # enleve les panneaux au mur dans la room spectateur

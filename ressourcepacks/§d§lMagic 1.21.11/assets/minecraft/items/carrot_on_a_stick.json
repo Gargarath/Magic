@@ -272,6 +272,20 @@
           "type": "model",
           "model": "item/heavy_weighted_pressure_plate"
         }
+      },
+      {
+        "when": "blue_flag",
+        "model": {
+          "type": "model",
+          "model": "item/flags/blue_flag"
+        }
+      },
+      {
+        "when": "red_flag",
+        "model": {
+          "type": "model",
+          "model": "item/flags/red_flag"
+        }
       }
     ]
   }

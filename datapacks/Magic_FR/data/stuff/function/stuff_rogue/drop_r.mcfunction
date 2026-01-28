@@ -9,12 +9,12 @@ execute as @s[tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
 execute as @s[tag=invisibility_r] run function stuff:stuff_rogue/stuffrogue_invisible
 # Clear @s et lui redonne son stuff
 
-item replace entity @s[tag=Has_Blue_flag] armor.head with blue_banner[custom_data={flag:1b},custom_model_data={strings:["blue_flag"]},custom_name={"bold":true,"color":"blue","text":"Drapeau bleu"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-item replace entity @s[tag=Has_Blue_flag] weapon.offhand with blue_banner[custom_data={flag:1b},custom_model_data={strings:["blue_flag"]},custom_name={"bold":true,"color":"blue","text":"Drapeau bleu"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-# redonne le drapeau à @s
-item replace entity @s[tag=Has_Red_flag] armor.head with red_banner[custom_data={flag:1b},custom_model_data={strings:["red_flag"]},custom_name={"bold":true,"color":"red","text":"Drapeau rouge"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-item replace entity @s[tag=Has_Red_flag] weapon.offhand with red_banner[custom_data={flag:1b},custom_model_data={strings:["red_flag"]},custom_name={"bold":true,"color":"red","text":"Drapeau rouge"},lore=[{"color":"green","text":"Rapportez le à votre base"},{"color":"green","text":"pour marquer un point !"}]] 1
-# redonne le drapeau à @s
+item replace entity @s[tag=Has_Blue_flag] armor.head from block 13 97 11 container.6
+item replace entity @s[tag=Has_Blue_flag] weapon.offhand from block 13 97 11 container.6
+# redonne le drapeau bleu à @s
+item replace entity @s[tag=Has_Red_flag] armor.head from block 13 97 11 container.7
+item replace entity @s[tag=Has_Red_flag] weapon.offhand from block 13 97 11 container.7
+# redonne le drapeau rouge à @s
 
 scoreboard players set @s drop_item 0
 # Reset le score de drop_item de @s (pour éviter d'appeler cette fonction en boucle)

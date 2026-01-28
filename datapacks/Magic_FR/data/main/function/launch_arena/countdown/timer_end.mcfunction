@@ -2,6 +2,8 @@
 
 kill @e[type=text_display,tag=start_countdown]
 
+tag @a[scores={Player=1..}] remove in_countdown
+# indique que les joueurs ne sont plus en attente (pour éviter qu'ils utilisent leurs raccourcis de sorts)
 
 execute at @a[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
 execute as @a run execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 100 1

@@ -108,7 +108,8 @@ execute as @e[nbt={ItemRotation:1b},tag=spell3] run function shop:spell3/testpla
 
 # Interdit d'utiliser un sort
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell
-execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
+#execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
+execute as @a[scores={Player=1..}] unless predicate offhand_autorized run function shop:cant_usespell
 
                                     # GERE LES EFFETS DANS LA ZONE DE SHOP #
 

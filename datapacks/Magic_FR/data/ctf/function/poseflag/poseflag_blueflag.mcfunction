@@ -5,9 +5,10 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @p ~ ~
 tag @s remove Has_Blue_flag
 # Enleve le tag à le drapeau à celui qui vient de poser le drapeau
 
-clear @s blue_banner
+
 item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
-item replace entity @s[scores={freeze=-1}] weapon.offhand from block 13 97 11 container.1
+item replace entity @s weapon.offhand from block 13 97 11 container.1
+clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 # clear les items dans la offhand de @s
 
 kill @e[tag=Blue_banner]
