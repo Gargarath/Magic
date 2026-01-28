@@ -10,7 +10,10 @@ execute as @a run execute at @s run playsound minecraft:block.note_block.harp ma
 execute as @a run function main:ressource_pack_detector/ressource_pack_detector
 effect clear @a[scores={Player=1..}] minecraft:invisibility
 effect clear @a[scores={Player=1..}] minecraft:resistance
+
+
 function stuff:setstuff
+
 execute as @a[tag=mage,scores={Player=1..,weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
 
 effect give @a[scores={Player=1..}] minecraft:instant_health 20 100 true
