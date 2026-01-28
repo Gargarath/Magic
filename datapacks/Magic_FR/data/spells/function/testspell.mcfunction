@@ -1,3 +1,5 @@
+
+tag @s remove save_inventory
 								### 	ARENE LOBBY 	###
 
 execute if items entity @s[tag=in_lobby_arena,scores={usespell=1..}] weapon.mainhand minecraft:carrot_on_a_stick[custom_data={quit_slot:1b}] run function lobby:arena/quit_arena
@@ -153,3 +155,5 @@ execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=rogue]
 			# Spell 3
 			
 execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Bombe d'ombre"}}} at @s run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_r
+
+tag @s add save_inventory

@@ -1,6 +1,6 @@
 ## appelée par l'advancement item_save_system
 ## permet d'enregistrer les emplacements du stuff de @s selon sa classe
-say 1
+
 advancement revoke @s only main:item_save_system
 tag @s remove save_inventory
 

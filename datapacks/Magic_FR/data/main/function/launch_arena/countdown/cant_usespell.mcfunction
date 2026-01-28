@@ -20,7 +20,9 @@ scoreboard players set @s gui_actionbar_alert 55
 
 execute at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 1
 
+tag @s remove save_inventory
 clear @s
 item replace entity @s armor.head from block 13 97 11 container.1
 item replace entity @s weapon.offhand from block 13 97 11 container.1
+tag @s add save_inventory
 # lui donne les placeholder tête et seconde main
