@@ -22,3 +22,7 @@ execute as @a[scores={Player=1..},tag=!in_bad_path] at @s if block ~ ~-70 ~ mine
 execute as @a[scores={Player=1..},tag=in_bad_path] at @s unless block ~ ~-70 ~ minecraft:red_concrete run function ctf:maps_systems/graveyard/graveyard_path_abuse/quit_bad_path
 
 execute as @a[tag=in_bad_path] run function ctf:maps_systems/graveyard/graveyard_path_abuse/in_bad_path
+
+# SPECS CANT GO TOO FAR
+execute as @a[scores={Player=-1}] at @s unless entity @s[x=161,y=150,z=-349,dx=125,dy=150,dz=135] run tp @s 218 172 -312
+# tp les specs qui vont trop loins

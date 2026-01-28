@@ -5,6 +5,8 @@
 scoreboard players reset @s quit
 scoreboard players reset @s gamemode
 
+function lobby:hotbar_menu/main/give_items
+
 gamemode adventure @s[gamemode=spectator]
 tp @s 76 99 0 -90 0
 

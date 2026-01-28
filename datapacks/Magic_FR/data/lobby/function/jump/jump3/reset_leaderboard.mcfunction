@@ -10,6 +10,7 @@ scoreboard players set $rank5 jump3_score 1000000
 scoreboard players set $rank6 jump3_score 1000000
 
 scoreboard players set @a jump3_score_pr 1000000
+scoreboard players reset * jump3_fall_pr
 
 data modify storage stats:jump 3.rank6.min10 set value 0
 data modify storage stats:jump 3.rank6.min01 set value 0

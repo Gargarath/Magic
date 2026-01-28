@@ -25,11 +25,11 @@ execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless 
 
                                         ## ARENE ##
 # lave
-execute as @a[gamemode=adventure,tag=in_lobby_arena] at @s if block ~ ~ ~ lava run function lobby:arena/in_lava
+execute as @a[tag=in_lobby_arena,scores={Player=1..}] at @s if block ~ ~ ~ lava run function lobby:arena/in_lava
 
 # jump pad
 execute positioned 14.5 54.0 -9.50 run particle minecraft:happy_villager ~ ~ ~ 0.5 0 0.5 0 5 force @a[tag=in_lobby_arena]
-execute as @a[tag=in_lobby_arena] if predicate minecraft:step_on_slimeblock run effect give @s minecraft:jump_boost 1 16 true
+execute as @a[tag=in_lobby_arena,scores={Player=1..}] if predicate minecraft:step_on_slimeblock run effect give @s minecraft:jump_boost 1 16 true
 
 # tp
 particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} 1 81.5 -22.7 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
@@ -38,7 +38,7 @@ particle minecraft:dust{"color":[0.55,0.0,1.0],"scale":1.5} 1 81.5 -22.7 -0.5 0.
 
 particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} -0.9 55.3 20.70 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
 particle minecraft:dust{"color":[0.55,0.0,1.0],"scale":1.5} -0.9 55.3 20.70 -0.5 0.6 0 0 5 force @a[tag=in_lobby_arena]
-execute positioned -0.9 54.00 20.70 as @a[distance=..1.5] run function lobby:arena/tp
+execute positioned -0.9 54.00 20.70 as @a[distance=..1.5,scores={Player=1..}] run function lobby:arena/tp
 
 execute as @a[scores={lobby_sneak=0}] if predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/start_sneak
 execute as @a[scores={lobby_sneak=1}] unless predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/stop_sneak
@@ -49,6 +49,8 @@ execute store result score $arena_members Player run execute if entity @a[scores
 execute as @a[scores={IsAlive=1..}] if predicate minecraft:step_on_black_concrete run function lobby:arena/respawn/respawn
 # gere les respawns dans l'arene
 
+execute as @a[scores={Player=-1},tag=in_lobby_arena] at @s unless entity @s[x=-37,y=52,z=-29,dx=80,dy=44,dz=67] run function lobby:arena/quit_arena_spec
+# fait quitter les specs qui sortent de l'arène
 
                                         ## MENU D'OPTION ##
 

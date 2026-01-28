@@ -1,7 +1,7 @@
 ## appelée par used_keybind2 si @s a swap un item avec offhand et est guerrier
 # permet de lui faire lancer le spell du keybind 2 si il l'a
 
-
+tag @s remove save_inventory
 clear @s
 execute as @s run function stuff:stuff_warrior/stuffwarrior
 

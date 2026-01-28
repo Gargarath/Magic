@@ -1,5 +1,6 @@
 #Permet d'équiper tous les assassins avec leur équipement. Appelé par la fonction setstuff ou drop_r
 
+tag @s remove save_inventory
                          ###   COOLDOWN    ###
                          
 function stuff:stuff_rogue/cooldowns_r/cooldowns_r
@@ -122,3 +123,5 @@ item replace entity @s[scores={boots=8}] armor.feet from block 16 95 17 containe
 item replace entity @s[scores={boots=9}] armor.feet from block 16 95 17 container.20
 # Niv 10
 item replace entity @s[scores={boots=10}] armor.feet from block 16 95 17 container.21
+
+tag @s add save_inventory

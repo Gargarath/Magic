@@ -15,3 +15,4 @@ execute if entity @s[tag=spec_map5] run tp @s @e[type=item_display,tag=blue_flag
 execute if entity @s[tag=spec_map5] run rotate @s -128 0
 execute if entity @s[tag=spec_map6] run tp @s @e[type=item_display,tag=blue_flag_map_6,limit=1]
 execute if entity @s[tag=spec_map6] run rotate @s 138 0
+execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 1

@@ -31,3 +31,7 @@ execute if score red steam_timer matches 205.. run function ctf:maps_systems/vol
 ## LAVE MORTELLE
 
 execute as @a[gamemode=adventure] at @s if block ~ ~ ~ lava run function ctf:maps_systems/volcano/effect_in_lava
+
+# SPECS CANT GO TOO FAR
+execute as @a[scores={Player=-1}] at @s unless entity @s[x=-664,y=127,z=441,dx=134,dy=150,dz=116] run tp @s -611 160 483
+# tp les specs qui vont trop loins

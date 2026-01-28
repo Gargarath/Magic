@@ -1,5 +1,6 @@
 #Permet d'équiper tous les mages avec leur équipement. Appelé par la fonction setstuff ou drop_m
 
+tag @s remove save_inventory
                          ###   COOLDOWN    ###
                          
 function stuff:stuff_mage/cooldowns_m/cooldowns_m
@@ -141,3 +142,5 @@ execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify ent
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/mage
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/mage
 # personnalise l'armure selon l'équipe de @s
+
+tag @s add save_inventory

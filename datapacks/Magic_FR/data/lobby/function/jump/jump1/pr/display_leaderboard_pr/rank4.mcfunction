@@ -11,5 +11,5 @@ tellraw @s ["Meilleur temps : ",{"color":"green","nbt":"1.rank4.min10","storage"
 
 tellraw @s ["  - Checkpoint n°1 : ",{"color":"green","nbt":"1.rank4.cp1.min10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp1.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"1.rank4.cp1.sec10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp1.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"1.rank4.cp1.dec10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp1.dec01","storage":"stats:jump"}]
 tellraw @s ["  - Checkpoint n°2 : ",{"color":"green","nbt":"1.rank4.cp2.min10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp2.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"1.rank4.cp2.sec10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp2.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"1.rank4.cp2.dec10","storage":"stats:jump"},{"color":"green","nbt":"1.rank4.cp2.dec01","storage":"stats:jump"}]
-tellraw @s [{"text":"\nTentatives totales sur le parcours : "},{"color":"green","nbt":"1.rank4.tries","storage":"stats:jump"}]
-tellraw @s [{"text":"Chutes totales sur le parcours : "},{"color":"green","nbt":"1.rank4.fall","storage":"stats:jump"}]
+tellraw @s [{"text":"\nTentatives totales lors du record : "},{"color":"green","nbt":"1.rank4.tries","storage":"stats:jump"}]
+tellraw @s [{"text":"Chutes totales lors du record : "},{"color":"green","nbt":"1.rank4.fall","storage":"stats:jump"}]

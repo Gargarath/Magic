@@ -37,6 +37,7 @@ data modify storage minecraft:matchinfo.blue flag_state set value "\uE709"
 data modify storage minecraft:matchinfo.red flag_state set value "\uE709"
 # masque l'état des drapeaux
 
+execute if score player_atstart playercount matches 1 run function shop:spectator_room_sign_wall/1player
 execute if score player_atstart playercount matches 2 run function shop:spectator_room_sign_wall/2players
 execute if score player_atstart playercount matches 3 run function shop:spectator_room_sign_wall/3players
 execute if score player_atstart playercount matches 4 run function shop:spectator_room_sign_wall/4players

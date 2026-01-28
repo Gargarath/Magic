@@ -58,4 +58,5 @@ execute as @a[scores={admin_quit_admin=1}] run function main:admin/book_commands
 execute as @a[scores={admin_randomize_team=1}] run function main:admin/book_commands/randomize_team
 execute as @a[scores={admin_randomize_class=1}] run function main:admin/book_commands/randomize_class
 execute as @a[scores={admin_all_ready=1}] run function main:admin/book_commands/all_ready
+execute as @a[scores={admin_round_over=1}] run function main:admin/book_commands/round_over
 # active les commandes liées aux triggers du livre

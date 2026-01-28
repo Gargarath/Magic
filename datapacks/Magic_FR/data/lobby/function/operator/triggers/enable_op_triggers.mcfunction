@@ -6,4 +6,5 @@ scoreboard players enable @s admin_quit_admin
 scoreboard players enable @s admin_randomize_team
 scoreboard players enable @s admin_randomize_class
 scoreboard players enable @s admin_all_ready
+scoreboard players enable @s admin_round_over
 # active les trigger pour @s

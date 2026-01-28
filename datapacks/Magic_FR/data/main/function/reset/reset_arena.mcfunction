@@ -1,7 +1,7 @@
 ## apprlé par quit arena et start_game
 # clear les données d'arènes de @s
 
-scoreboard players set @s Player 0
+scoreboard players set @s[scores={Player=1..}] Player 0
 tag @s remove in_lobby_arena
 tag @s remove display_killfeed
 tag @s remove respawn

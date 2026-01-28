@@ -8,3 +8,7 @@ execute if score $secondary_objectives option_panel matches 1 if score on golem 
 ## EAU = POISON
 
 execute as @a[team=!spectator] at @s if block ~ ~ ~ #minecraft:water_block run function ctf:maps_systems/ruin/effect_in_water
+
+# SPECS CANT GO TOO FAR
+execute as @a[scores={Player=-1}] at @s unless entity @s[x=-589,y=144,z=-202,dx=140,dy=150,dz=190] run tp @s -528.5 161 -51.5
+# tp les specs qui vont trop loins

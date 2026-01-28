@@ -69,6 +69,7 @@ scoreboard objectives add admin_all_ready trigger
 scoreboard objectives add admin_randomize_class trigger
 scoreboard objectives add admin_randomize_team trigger
 scoreboard objectives add admin_stop_game trigger
+scoreboard objectives add admin_round_over trigger
 
 # jump
 scoreboard objectives add jump_timer dummy

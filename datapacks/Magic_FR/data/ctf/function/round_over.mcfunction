@@ -1,5 +1,8 @@
 # appelée par ctf:loop permet de finir la partie ou d'aller au shop selon la manche
 
+function main:launch_arena/countdown/reset_countdown
+# reset le countdown de lancement de partie (si utilisé par commande pendant le countdown)
+
 execute if score round bossbar matches 1..2 run function main:round_end/go_to_shop
 # Lance un deuxième round à la fin du round 1 ou 2
 

@@ -12,3 +12,6 @@ execute unless entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] if entit
 
 execute unless entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] if entity @s[scores={Player=0}] if score $arena_members Player matches ..11 run function lobby:arena/join_arena/join_arena
 # si @s a une classe et n'est pas en spec et qu'il y a de la place dans l'arène -> l'envoit dans l'arène
+
+execute if entity @s[scores={Player=-1}] run function lobby:arena/join_arena/join_arena_spectator
+# si @s est pas en spec -> l'envoit dans l'arène en spec

@@ -10,6 +10,7 @@ scoreboard players reset * admin_quit_admin
 scoreboard players reset * admin_randomize_team
 scoreboard players reset * admin_randomize_class
 scoreboard players reset * admin_all_ready
+scoreboard players reset * admin_round_over
 # enlève les modos actuels (co ou non)
 
 scoreboard players set @s operator 2

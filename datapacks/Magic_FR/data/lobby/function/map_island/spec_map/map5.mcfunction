@@ -9,6 +9,9 @@ scoreboard players enable @s red_spawn
 scoreboard players enable @s red_flag
 # active les commandes
 
+function lobby:hotbar_menu/map_visit/give_items
+# donne les objets de visite de map à @s
+
 gamemode spectator @s
 tag @s add spec_map
 tag @s add spec_map5

@@ -17,14 +17,6 @@ execute as @e[type=lingering_potion,tag=smoke_bomb] at @s if block ~ ~-45 ~ #spa
 
 # donne une regeneration rapide aux joueurs qui ont attendu assez longtemps et ne l'ont pas déjà
 
-# SPECTATOR CANT GO TOO FAR
-
-#execute if score selected_map variables matches 1 run execute at @a as @a[y=1,dy=54] run tp @s ~ ~3 ~
-#execute if score selected_map variables matches 2 run execute at @a as @a[y=1,dy=19] run tp @s ~ ~3 ~
-#execute if score selected_map variables matches 3 run execute at @a as @a[y=1,dy=25] run tp @s ~ ~3 ~
-
-
-
    ## LANCEMENT D'OBJECTIFS SECONDAIRES
 
 execute if score round bossbar matches 1..3 if score $secondary_objectives option_panel matches 1 if score on secnd_objective matches 0 if score $minutes timers matches 4 if score $seconds timers matches 0 run function ctf:secondary_objectives/launch_secondary_objective/launch_secondary_objectives

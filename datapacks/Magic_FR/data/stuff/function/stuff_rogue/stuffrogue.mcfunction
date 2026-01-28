@@ -1,6 +1,6 @@
 #Permet d'équiper tous les assassins avec leur équipement. Appelé par la fonction setstuff ou drop_r
 
-
+tag @s remove save_inventory
                          ###   COOLDOWN    ###
                          
 function stuff:stuff_rogue/cooldowns_r/cooldowns_r
@@ -144,3 +144,5 @@ execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify ent
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
+
+tag @s add save_inventory

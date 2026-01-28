@@ -7,6 +7,7 @@ scoreboard players set @s usespell 0
 execute as @s run function stuff:stuff_warrior/stuffwarrior
 # Clear @s et lui redonne son stuff
 
+tag @s remove save_inventory
 item replace entity @s[tag=Has_Blue_flag] armor.head from block 13 97 11 container.6
 item replace entity @s[tag=Has_Blue_flag] weapon.offhand from block 13 97 11 container.6
 # redonne le drapeau bleu à @s

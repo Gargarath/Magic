@@ -1,5 +1,7 @@
 #Permet d'équiper tous les guerrier avec leur équipement. Appelé par la fonction setstuff ou drop_w
 
+tag @s remove save_inventory
+
                          ###   COOLDOWN    ###
                          
 function stuff:stuff_warrior/cooldowns_w/cooldowns_w
@@ -144,3 +146,5 @@ execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify ent
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/warrior
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/warrior
 # personnalise l'armure selon l'équipe de @s
+
+tag @s add save_inventory

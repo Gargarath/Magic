@@ -97,12 +97,10 @@ execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 effect clear @s[scores={Player=1..}] minecraft:invisibility
 effect clear @s[scores={Player=1..}] minecraft:resistance
 
-tag @s remove save_inventory
 execute as @s[tag=warrior,team=!spectator] run function stuff:stuff_warrior/stuffwarrior
 execute as @s[tag=archer,team=!spectator] run function stuff:stuff_archer/stuffarcher
 execute as @s[tag=mage,team=!spectator] run function stuff:stuff_mage/stuffmage
 execute as @s[tag=rogue,team=!spectator,tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
-tag @s add save_inventory
 # donne son stuff à @s
 
 

@@ -1,5 +1,4 @@
 # appelée par shop:loop executé par un joueur qui lance un piege mais est en respawn
-tag @s remove save_inventory
 scoreboard players set @s usespell 0
 clear @s
 
@@ -24,4 +23,3 @@ scoreboard players set @s gui_actionbar_alert 55
 # affiche le message sur l'actionbar de @s pendant 55 tick
 
 execute at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 1
-tag @s add save_inventory

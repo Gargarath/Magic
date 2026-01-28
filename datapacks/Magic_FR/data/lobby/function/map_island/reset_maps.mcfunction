@@ -27,6 +27,7 @@ scoreboard players set $map_3 map_spectator 0
 scoreboard players set $map_4 map_spectator 0
 scoreboard players set $map_5 map_spectator 0
 scoreboard players set $map_6 map_spectator 0
+scoreboard players set @a[scores={hotbar_menu=5}] hotbar_menu 0
 
 function main:reset/reset_map/reset_map_pirate
 function main:reset/reset_map/reset_map_graveyard

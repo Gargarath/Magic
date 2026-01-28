@@ -12,4 +12,3 @@ execute if entity @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
 execute if entity @s[tag=archer] run function stuff:stuff_archer/stuffarcher
 execute if entity @s[tag=mage] run function stuff:stuff_mage/stuffmage
 execute if entity @s[tag=rogue] run function stuff:stuff_rogue/stuffrogue
-tag @s add save_inventory

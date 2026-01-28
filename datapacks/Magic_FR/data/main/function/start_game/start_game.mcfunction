@@ -18,7 +18,8 @@ kill @e[type=minecraft:armor_stand,tag=Lobby_armor_stand]
 kill @e[type=minecraft:text_display,tag=Lobby_text]
 # tue les armor_stand et textes qui permettent de selectionner les classes et les équipes
 
-execute as @a[tag=in_lobby_arena] run function lobby:arena/quit_arena
+execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function lobby:arena/quit_arena
+execute as @a[tag=in_lobby_arena,scores={Player=-1}] run function lobby:arena/quit_arena_spec
 scoreboard players set @a cooldownspell1 -1
 scoreboard players set @a cooldownspell2 -1
 scoreboard players set @a cooldownspell3 -1
