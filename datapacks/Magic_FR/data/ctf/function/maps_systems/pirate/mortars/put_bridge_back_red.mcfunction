@@ -3,5 +3,5 @@
 
 clone 275 65 501 287 56 512 275 85 501
 # remet le pont rouge
-clone 304 56 512 292 65 501 275 16 501
+clone 304 56 512 292 65 501 275 175 501
 # remet les blocs du pont pour le tp du mage

@@ -16,7 +16,7 @@ gamemode spectator @s
 tag @s add spec_map
 tag @s add spec_map6
 effect give @s resistance infinite 200 true
-tp @s 5.5 190 -761 43 15
+tp @s 5.5 170 -761 43 15
 function main:gui/display/refresh_gui
 # actualise le gui de tous (car besoin de l'interface spec pour @s)
 

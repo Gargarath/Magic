@@ -58,12 +58,12 @@ summon item_display -511 151.05 -164 {Glowing:1b,view_range:2f,item_display:"fix
 # spawn
 
 ## BONBON
-summon item_display 11 180.5 -711 {Glowing:1b,view_range:2f,item_display:"fixed",Tags:["map_info","blue_flag_map_6"],glow_color_override:3949738,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:blue_banner",count:1}}
-summon item_display -49 180.5 -767 {Glowing:1b,view_range:2f,item_display:"fixed",Tags:["map_info","red_flag_map_6"],glow_color_override:11546150,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:red_banner",count:1}}
+summon item_display 11 160.5 -711 {Glowing:1b,view_range:2f,item_display:"fixed",Tags:["map_info","blue_flag_map_6"],glow_color_override:3949738,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:blue_banner",count:1}}
+summon item_display -49 160.5 -767 {Glowing:1b,view_range:2f,item_display:"fixed",Tags:["map_info","red_flag_map_6"],glow_color_override:11546150,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:red_banner",count:1}}
 # drapeaux
-fill -20 194 -684 -18 195 -686 air
-fill -18 194 -794 -20 195 -792 air
+fill -20 174 -684 -18 175 -686 air
+fill -18 174 -794 -20 175 -792 air
 # barrier blocks spawn
-summon item_display -19 193.05 -685 {Glowing:1b,view_range:2f,item_display:"fixed",Rotation:[180F,-90F],Tags:["map_info","blue_spawn_map_6"],glow_color_override:3949738,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:blue_bed",count:1}}
-summon item_display -19 193.05 -793 {Glowing:1b,view_range:2f,item_display:"fixed",Rotation:[0F,-90F],Tags:["map_info","red_spawn_map_6"],glow_color_override:11546150,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:red_bed",count:1}}
+summon item_display -19 173.05 -685 {Glowing:1b,view_range:2f,item_display:"fixed",Rotation:[180F,-90F],Tags:["map_info","blue_spawn_map_6"],glow_color_override:3949738,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:blue_bed",count:1}}
+summon item_display -19 173.05 -793 {Glowing:1b,view_range:2f,item_display:"fixed",Rotation:[0F,-90F],Tags:["map_info","red_spawn_map_6"],glow_color_override:11546150,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:red_bed",count:1}}
 # spawn

@@ -5,9 +5,9 @@
 execute as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
 # met les spawns et tp les joueurs
 
-clone 19 95 17 21 96 19 -20 194 -794
+clone 19 95 17 21 96 19 -20 174 -794
 # place les blocs invisibles rouges
-clone 19 95 17 21 96 19 -20 194 -686
+clone 19 95 17 21 96 19 -20 174 -686
 # place les blocs invisibles bleus
 tp @a[scores={Player=-1}] @r[scores={Player=1..}]
 
@@ -23,8 +23,8 @@ tag @e remove Has_Red_flag
 kill @e[tag=red_tnt]
 kill @e[tag=blue_tnt]
 
-summon armor_stand -49 178 -767 {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,PersistenceRequired:1b,Tags:["Spot_Red_flag"],DisabledSlots:4144959}
-summon armor_stand 11 178 -711 {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,PersistenceRequired:1b,Tags:["Spot_Blue_flag"],DisabledSlots:4144959}
+summon armor_stand -49 158 -767 {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,PersistenceRequired:1b,Tags:["Spot_Red_flag"],DisabledSlots:4144959}
+summon armor_stand 11 158 -711 {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,PersistenceRequired:1b,Tags:["Spot_Blue_flag"],DisabledSlots:4144959}
 
 gamerule fall_damage false
 # enlève les dégats de chutes

@@ -28,10 +28,18 @@ execute if score red steam_timer matches 205.. run function ctf:maps_systems/vol
 # systèmes de vapeur
 
 
+## JUMPS PADS
+
+particle happy_villager -578 134 489.0 0.2 0 -0.5 0 2 normal @a
+particle happy_villager -618 134 510.9 0.2 0 -0.5 0 2 normal @a
+execute as @a[scores={Player=1..}] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 6 true
+execute as @a[scores={Player=1..,is_jumping=1..}] run function ctf:maps_systems/volcano/is_jumping
+execute as @a[scores={Player=1..}] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
+
 ## LAVE MORTELLE
 
 execute as @a[gamemode=adventure] at @s if block ~ ~ ~ lava run function ctf:maps_systems/volcano/effect_in_lava
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1}] at @s unless entity @s[x=-664,y=127,z=441,dx=134,dy=150,dz=116] run tp @s -611 160 483
+execute as @a[scores={Player=-1}] at @s unless entity @s[x=-664,y=131,z=441,dx=134,dy=150,dz=116] run tp @s -611 160 483
 # tp les specs qui vont trop loins

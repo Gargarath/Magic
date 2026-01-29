@@ -15,8 +15,10 @@ tag @a remove target
 tag @a remove targetable
 # enleve le tag target de tous
 
-clone -18 130 -738 -20 126 -740 -20 184 -740
+clone -20 142 -740 -18 145 -738 -20 164 -740
 # remet la cerise
+clone -20 136 -740 -18 140 -738 -20 253 -740
+# remet la cerise pour le tp du mage
 
 bossbar set minecraft:secondary_objective players
 bossbar set minecraft:secondary_objective value 0

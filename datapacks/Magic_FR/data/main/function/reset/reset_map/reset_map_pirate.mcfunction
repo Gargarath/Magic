@@ -4,8 +4,8 @@ clone 275 65 501 287 56 512 275 85 501
 clone 261 65 495 249 56 484 249 85 484
 # remet les ponts
 
-clone 304 56 512 292 65 501 275 16 501
-clone 232 56 484 244 65 495 249 16 484
+clone 304 56 512 292 65 501 275 175 501
+clone 232 56 484 244 65 495 249 175 484
 # remet les blocs des ponts pour le tp du mage
 
 setblock 271 96 522 minecraft:lever[facing=east]

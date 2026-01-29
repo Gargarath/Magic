@@ -1,8 +1,8 @@
 # appelée par blue_win / red_win / draw / stop_game et go_to_shop permet de reset la map bonbon
 
-setblock 11 145 -711 air
+setblock 11 125 -711 air
 # allume le beacon bleu
-setblock -49 145 -767 air
+setblock -49 125 -767 air
 # allume le beacon rouge
 
 tag @a remove sugar_way
@@ -45,11 +45,11 @@ tag @a remove gingerbread_passenger_blue
 tag @a remove gingerbread_passenger_red
 execute as @a run ride @s dismount
 
-clone -18 161 -710 -11 170 -703 -52 197 -708
+clone -18 141 -710 -11 150 -703 -52 177 -708
 # tête devient contente pain d'épice bleu
-clone -30 165 -700 -23 172 -693 -54 180 -712
+clone -30 145 -700 -23 152 -693 -54 160 -712
 # baisse le pied pain d'épice bleu
-clone -27 161 -775 -20 170 -768 7 197 -777
+clone -27 141 -775 -20 150 -768 7 177 -777
 # tête devient contente pain d'épice rouge
-clone -8 172 -778 -15 165 -785 9 180 -773
+clone -8 152 -778 -15 145 -785 9 160 -773
 # baisse le pied pain d'épice rouge

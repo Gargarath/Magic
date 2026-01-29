@@ -6,10 +6,10 @@ clone 193 138 -284 195 137 -288 193 168 -288
 clone 183 135 -272 187 134 -274 183 168 -274
 # modifie les barrières rouges
 
-clone 193 131 -306 191 131 -310 191 98 -310
-clone 195 131 -284 193 131 -288 193 98 -288
-clone 183 129 -298 187 129 -300 183 98 -300
-clone 183 129 -272 187 129 -274 183 98 -274
+clone 193 131 -306 191 131 -310 191 257 -310
+clone 195 131 -284 193 131 -288 193 257 -288
+clone 183 129 -298 187 129 -300 183 257 -300
+clone 183 129 -272 187 129 -274 183 257 -274
 # reset le systeme de block violet (pour le tp du mage) sous le portail rouge
 
 execute positioned 193 168 -286 run playsound minecraft:block.iron_door.close master @a ~ ~ ~ 1 1 0

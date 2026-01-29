@@ -6,6 +6,6 @@ execute at @s run playsound minecraft:entity.generic.explode master @a[distance=
 execute at @s run particle minecraft:explosion ~ ~ ~ 2 1 2 0 10 force
 clone 287 44 512 275 53 501 275 85 501
 # met le pont bleu en mode détruit
-clone 304 44 512 292 53 501 275 16 501
+clone 304 44 512 292 53 501 275 175 501
 # change les blocs violets (utilisés pour le tp du mage) sous la map pour qu'ils soient adapté au nouveau pont
 kill @e[tag=red_tnt]

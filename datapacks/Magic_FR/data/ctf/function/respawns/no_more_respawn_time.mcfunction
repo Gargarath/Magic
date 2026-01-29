@@ -26,8 +26,8 @@ effect give @s[tag=rogue] minecraft:regeneration infinite 1 true
 scoreboard players set @s in_fight 0
 # indique que @s n'est plus en fight
 
-execute if score selected_map variables matches 6 run tp @s[team=red] -19 193 -793 0 5
-execute if score selected_map variables matches 6 run tp @s[team=blue] -19 193 -685 180 5
+execute if score selected_map variables matches 6 run tp @s[team=red] -19 173 -793 0 5
+execute if score selected_map variables matches 6 run tp @s[team=blue] -19 173 -685 180 5
 # si on est sur la map bonbon tp le joueur a son spawn selon son équipe
 execute if score selected_map variables matches 5 run tp @s[team=red] -510.5 151 -163.5 10.5 -2
 execute if score selected_map variables matches 5 run tp @s[team=blue] -526.5 151 -57.5 -169.5 -2
