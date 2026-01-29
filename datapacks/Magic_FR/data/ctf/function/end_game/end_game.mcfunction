@@ -77,6 +77,10 @@ spawnpoint @a 0 100 0 180 0
 execute as @a run function lobby:team_selector/give_lobby_team
 # Donne les team du lobby à tous
 
+execute as @a[scores={blue_place=1..}] run function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/check_place
+execute as @a[scores={red_place=1..}] run function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
+# clear les overlays de tous sur la barre d'équipes
+
 execute as @a[scores={Player=1..}] run function main:stats/save_player_equipement
 # sauvegarde le stuff des joueurs dans un storage - a mettre avant le leaderbaord
 

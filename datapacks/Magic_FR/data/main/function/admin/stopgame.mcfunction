@@ -24,6 +24,10 @@ execute as @a[scores={blue_place=1..}] run function main:stats/scoreboard/blue_t
 execute as @a[scores={red_place=1..}] run function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
 # clear les overlays de tous
 
+function main:stats/scoreboard/clear_topbar_players_lastgame
+# clear les joueurs enregistrés dans la topbar de la game précédente
+
+
 advancement revoke @a everything
 advancement grant @a from warrior:root
 advancement grant @a from archer:root

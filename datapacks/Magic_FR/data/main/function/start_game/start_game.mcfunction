@@ -131,6 +131,9 @@ function ctf:killfeed/save_player_names
 # enregistre les noms des joueurs dans des storage (utilisé par le killfeed)
 function main:stats/save_player_data
 # enregistre les noms et classes des joueurs dans des storage (les stats)
+function main:stats/scoreboard/save_topbar_players_lastgame
+# enregistre les joueurs connectés dans la topbar pour l'ile des stats de fin de game
+
 
 scoreboard players reset * Player_last_game
 scoreboard players reset * team_last_game
