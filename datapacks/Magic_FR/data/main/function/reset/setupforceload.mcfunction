@@ -27,3 +27,6 @@ forceload add -584 -24 -454 -198
 
 forceload add 47 -672 -84 -808
 # Forceload la map Bonbon
+
+forceload add 29999999 29999999
+# Forceload utilisé par motionomicon
