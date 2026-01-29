@@ -7,6 +7,8 @@ tag @s remove jumping_1
 
 function lobby:jump/jump_timer
 # calcule le temps de @s
+function lobby:jump/jump1/pr/convert_checkpoint
+# convertit le temps de chaque checkpoint en secondes pour @s
 
 function lobby:hotbar_menu/main/give_items
 # remet @s sur le bon menu de hotbar

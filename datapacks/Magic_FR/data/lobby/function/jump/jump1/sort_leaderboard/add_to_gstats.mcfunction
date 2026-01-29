@@ -9,19 +9,21 @@ execute store result storage stats:jump 1.rank6.sec01 int 1 run scoreboard playe
 execute store result storage stats:jump 1.rank6.dec10 int 1 run scoreboard players get @s jump_timer_dec10
 execute store result storage stats:jump 1.rank6.dec01 int 1 run scoreboard players get @s jump_timer_dec01
 
-execute store result storage stats:jump 1.rank6.cp1.min10 int 1 run scoreboard players get @s jump1_cp1_timer_min10_pr
-execute store result storage stats:jump 1.rank6.cp1.min01 int 1 run scoreboard players get @s jump1_cp1_timer_min01_pr
-execute store result storage stats:jump 1.rank6.cp1.sec10 int 1 run scoreboard players get @s jump1_cp1_timer_sec10_pr
-execute store result storage stats:jump 1.rank6.cp1.sec01 int 1 run scoreboard players get @s jump1_cp1_timer_sec01_pr
-execute store result storage stats:jump 1.rank6.cp1.dec10 int 1 run scoreboard players get @s jump1_cp1_timer_dec10_pr
-execute store result storage stats:jump 1.rank6.cp1.dec01 int 1 run scoreboard players get @s jump1_cp1_timer_dec01_pr
+execute store result storage stats:jump 1.rank6.cp1.time int 1 run scoreboard players get @s jump1_cp1
+execute store result storage stats:jump 1.rank6.cp1.min10 int 1 run scoreboard players get @s jump1_cp1_timer_min10
+execute store result storage stats:jump 1.rank6.cp1.min01 int 1 run scoreboard players get @s jump1_cp1_timer_min01
+execute store result storage stats:jump 1.rank6.cp1.sec10 int 1 run scoreboard players get @s jump1_cp1_timer_sec10
+execute store result storage stats:jump 1.rank6.cp1.sec01 int 1 run scoreboard players get @s jump1_cp1_timer_sec01
+execute store result storage stats:jump 1.rank6.cp1.dec10 int 1 run scoreboard players get @s jump1_cp1_timer_dec10
+execute store result storage stats:jump 1.rank6.cp1.dec01 int 1 run scoreboard players get @s jump1_cp1_timer_dec01
 
-execute store result storage stats:jump 1.rank6.cp2.min10 int 1 run scoreboard players get @s jump1_cp2_timer_min10_pr
-execute store result storage stats:jump 1.rank6.cp2.min01 int 1 run scoreboard players get @s jump1_cp2_timer_min01_pr
-execute store result storage stats:jump 1.rank6.cp2.sec10 int 1 run scoreboard players get @s jump1_cp2_timer_sec10_pr
-execute store result storage stats:jump 1.rank6.cp2.sec01 int 1 run scoreboard players get @s jump1_cp2_timer_sec01_pr
-execute store result storage stats:jump 1.rank6.cp2.dec10 int 1 run scoreboard players get @s jump1_cp2_timer_dec10_pr
-execute store result storage stats:jump 1.rank6.cp2.dec01 int 1 run scoreboard players get @s jump1_cp2_timer_dec01_pr
+execute store result storage stats:jump 1.rank6.cp2.time int 1 run scoreboard players get @s jump1_cp2
+execute store result storage stats:jump 1.rank6.cp2.min10 int 1 run scoreboard players get @s jump1_cp2_timer_min10
+execute store result storage stats:jump 1.rank6.cp2.min01 int 1 run scoreboard players get @s jump1_cp2_timer_min01
+execute store result storage stats:jump 1.rank6.cp2.sec10 int 1 run scoreboard players get @s jump1_cp2_timer_sec10
+execute store result storage stats:jump 1.rank6.cp2.sec01 int 1 run scoreboard players get @s jump1_cp2_timer_sec01
+execute store result storage stats:jump 1.rank6.cp2.dec10 int 1 run scoreboard players get @s jump1_cp2_timer_dec10
+execute store result storage stats:jump 1.rank6.cp2.dec01 int 1 run scoreboard players get @s jump1_cp2_timer_dec01
 
 execute store result storage stats:jump 1.rank6.fall_pr int 1 run scoreboard players get @s jump_fall
 execute store result storage stats:jump 1.rank6.fall int 1 run scoreboard players get @s jump1_fall

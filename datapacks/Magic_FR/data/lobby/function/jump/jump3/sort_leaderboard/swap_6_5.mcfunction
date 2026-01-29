@@ -9,6 +9,7 @@ data modify storage stats:jump 3.rank6.sec01 set from storage stats:jump 3.rank5
 data modify storage stats:jump 3.rank6.dec10 set from storage stats:jump 3.rank5.dec10
 data modify storage stats:jump 3.rank6.dec01 set from storage stats:jump 3.rank5.dec01
 
+data modify storage stats:jump 3.rank6.cp1.time set from storage stats:jump 3.rank5.cp1.time
 data modify storage stats:jump 3.rank6.cp1.min10 set from storage stats:jump 3.rank5.cp1.min10
 data modify storage stats:jump 3.rank6.cp1.min01 set from storage stats:jump 3.rank5.cp1.min01
 data modify storage stats:jump 3.rank6.cp1.sec10 set from storage stats:jump 3.rank5.cp1.sec10
@@ -16,6 +17,7 @@ data modify storage stats:jump 3.rank6.cp1.sec01 set from storage stats:jump 3.r
 data modify storage stats:jump 3.rank6.cp1.dec10 set from storage stats:jump 3.rank5.cp1.dec10
 data modify storage stats:jump 3.rank6.cp1.dec01 set from storage stats:jump 3.rank5.cp1.dec01
 
+data modify storage stats:jump 3.rank6.cp2.time set from storage stats:jump 3.rank5.cp2.time
 data modify storage stats:jump 3.rank6.cp2.min10 set from storage stats:jump 3.rank5.cp2.min10
 data modify storage stats:jump 3.rank6.cp2.min01 set from storage stats:jump 3.rank5.cp2.min01
 data modify storage stats:jump 3.rank6.cp2.sec10 set from storage stats:jump 3.rank5.cp2.sec10
@@ -23,6 +25,7 @@ data modify storage stats:jump 3.rank6.cp2.sec01 set from storage stats:jump 3.r
 data modify storage stats:jump 3.rank6.cp2.dec10 set from storage stats:jump 3.rank5.cp2.dec10
 data modify storage stats:jump 3.rank6.cp2.dec01 set from storage stats:jump 3.rank5.cp2.dec01
 
+data modify storage stats:jump 3.rank6.cp3.time set from storage stats:jump 3.rank5.cp3.time
 data modify storage stats:jump 3.rank6.cp3.min10 set from storage stats:jump 3.rank5.cp3.min10
 data modify storage stats:jump 3.rank6.cp3.min01 set from storage stats:jump 3.rank5.cp3.min01
 data modify storage stats:jump 3.rank6.cp3.sec10 set from storage stats:jump 3.rank5.cp3.sec10
@@ -30,6 +33,7 @@ data modify storage stats:jump 3.rank6.cp3.sec01 set from storage stats:jump 3.r
 data modify storage stats:jump 3.rank6.cp3.dec10 set from storage stats:jump 3.rank5.cp3.dec10
 data modify storage stats:jump 3.rank6.cp3.dec01 set from storage stats:jump 3.rank5.cp3.dec01
 
+data modify storage stats:jump 3.rank6.cp4.time set from storage stats:jump 3.rank5.cp4.time
 data modify storage stats:jump 3.rank6.cp4.min10 set from storage stats:jump 3.rank5.cp4.min10
 data modify storage stats:jump 3.rank6.cp4.min01 set from storage stats:jump 3.rank5.cp4.min01
 data modify storage stats:jump 3.rank6.cp4.sec10 set from storage stats:jump 3.rank5.cp4.sec10
@@ -57,33 +61,37 @@ execute store result storage stats:jump 3.rank5.sec01 int 1 run scoreboard playe
 execute store result storage stats:jump 3.rank5.dec10 int 1 run scoreboard players get @s jump_timer_dec10
 execute store result storage stats:jump 3.rank5.dec01 int 1 run scoreboard players get @s jump_timer_dec01
 
-execute store result storage stats:jump 3.rank5.cp1.min10 int 1 run scoreboard players get @s jump3_cp1_timer_min10_pr
-execute store result storage stats:jump 3.rank5.cp1.min01 int 1 run scoreboard players get @s jump3_cp1_timer_min01_pr
-execute store result storage stats:jump 3.rank5.cp1.sec10 int 1 run scoreboard players get @s jump3_cp1_timer_sec10_pr
-execute store result storage stats:jump 3.rank5.cp1.sec01 int 1 run scoreboard players get @s jump3_cp1_timer_sec01_pr
-execute store result storage stats:jump 3.rank5.cp1.dec10 int 1 run scoreboard players get @s jump3_cp1_timer_dec10_pr
-execute store result storage stats:jump 3.rank5.cp1.dec01 int 1 run scoreboard players get @s jump3_cp1_timer_dec01_pr
+execute store result storage stats:jump 3.rank5.cp1.time int 1 run scoreboard players get @s jump3_cp1
+execute store result storage stats:jump 3.rank5.cp1.min10 int 1 run scoreboard players get @s jump3_cp1_timer_min10
+execute store result storage stats:jump 3.rank5.cp1.min01 int 1 run scoreboard players get @s jump3_cp1_timer_min01
+execute store result storage stats:jump 3.rank5.cp1.sec10 int 1 run scoreboard players get @s jump3_cp1_timer_sec10
+execute store result storage stats:jump 3.rank5.cp1.sec01 int 1 run scoreboard players get @s jump3_cp1_timer_sec01
+execute store result storage stats:jump 3.rank5.cp1.dec10 int 1 run scoreboard players get @s jump3_cp1_timer_dec10
+execute store result storage stats:jump 3.rank5.cp1.dec01 int 1 run scoreboard players get @s jump3_cp1_timer_dec01
 
-execute store result storage stats:jump 3.rank5.cp2.min10 int 1 run scoreboard players get @s jump3_cp2_timer_min10_pr
-execute store result storage stats:jump 3.rank5.cp2.min01 int 1 run scoreboard players get @s jump3_cp2_timer_min01_pr
-execute store result storage stats:jump 3.rank5.cp2.sec10 int 1 run scoreboard players get @s jump3_cp2_timer_sec10_pr
-execute store result storage stats:jump 3.rank5.cp2.sec01 int 1 run scoreboard players get @s jump3_cp2_timer_sec01_pr
-execute store result storage stats:jump 3.rank5.cp2.dec10 int 1 run scoreboard players get @s jump3_cp2_timer_dec10_pr
-execute store result storage stats:jump 3.rank5.cp2.dec01 int 1 run scoreboard players get @s jump3_cp2_timer_dec01_pr
+execute store result storage stats:jump 3.rank5.cp2.time int 1 run scoreboard players get @s jump3_cp2
+execute store result storage stats:jump 3.rank5.cp2.min10 int 1 run scoreboard players get @s jump3_cp2_timer_min10
+execute store result storage stats:jump 3.rank5.cp2.min01 int 1 run scoreboard players get @s jump3_cp2_timer_min01
+execute store result storage stats:jump 3.rank5.cp2.sec10 int 1 run scoreboard players get @s jump3_cp2_timer_sec10
+execute store result storage stats:jump 3.rank5.cp2.sec01 int 1 run scoreboard players get @s jump3_cp2_timer_sec01
+execute store result storage stats:jump 3.rank5.cp2.dec10 int 1 run scoreboard players get @s jump3_cp2_timer_dec10
+execute store result storage stats:jump 3.rank5.cp2.dec01 int 1 run scoreboard players get @s jump3_cp2_timer_dec01
 
-execute store result storage stats:jump 3.rank5.cp3.min10 int 1 run scoreboard players get @s jump3_cp3_timer_min10_pr
-execute store result storage stats:jump 3.rank5.cp3.min01 int 1 run scoreboard players get @s jump3_cp3_timer_min01_pr
-execute store result storage stats:jump 3.rank5.cp3.sec10 int 1 run scoreboard players get @s jump3_cp3_timer_sec10_pr
-execute store result storage stats:jump 3.rank5.cp3.sec01 int 1 run scoreboard players get @s jump3_cp3_timer_sec01_pr
-execute store result storage stats:jump 3.rank5.cp3.dec10 int 1 run scoreboard players get @s jump3_cp3_timer_dec10_pr
-execute store result storage stats:jump 3.rank5.cp3.dec01 int 1 run scoreboard players get @s jump3_cp3_timer_dec01_pr
+execute store result storage stats:jump 3.rank5.cp3.time int 1 run scoreboard players get @s jump3_cp3
+execute store result storage stats:jump 3.rank5.cp3.min10 int 1 run scoreboard players get @s jump3_cp3_timer_min10
+execute store result storage stats:jump 3.rank5.cp3.min01 int 1 run scoreboard players get @s jump3_cp3_timer_min01
+execute store result storage stats:jump 3.rank5.cp3.sec10 int 1 run scoreboard players get @s jump3_cp3_timer_sec10
+execute store result storage stats:jump 3.rank5.cp3.sec01 int 1 run scoreboard players get @s jump3_cp3_timer_sec01
+execute store result storage stats:jump 3.rank5.cp3.dec10 int 1 run scoreboard players get @s jump3_cp3_timer_dec10
+execute store result storage stats:jump 3.rank5.cp3.dec01 int 1 run scoreboard players get @s jump3_cp3_timer_dec01
 
-execute store result storage stats:jump 3.rank5.cp4.min10 int 1 run scoreboard players get @s jump3_cp4_timer_min10_pr
-execute store result storage stats:jump 3.rank5.cp4.min01 int 1 run scoreboard players get @s jump3_cp4_timer_min01_pr
-execute store result storage stats:jump 3.rank5.cp4.sec10 int 1 run scoreboard players get @s jump3_cp4_timer_sec10_pr
-execute store result storage stats:jump 3.rank5.cp4.sec01 int 1 run scoreboard players get @s jump3_cp4_timer_sec01_pr
-execute store result storage stats:jump 3.rank5.cp4.dec10 int 1 run scoreboard players get @s jump3_cp4_timer_dec10_pr
-execute store result storage stats:jump 3.rank5.cp4.dec01 int 1 run scoreboard players get @s jump3_cp4_timer_dec01_pr
+execute store result storage stats:jump 3.rank5.cp4.time int 1 run scoreboard players get @s jump3_cp4
+execute store result storage stats:jump 3.rank5.cp4.min10 int 1 run scoreboard players get @s jump3_cp4_timer_min10
+execute store result storage stats:jump 3.rank5.cp4.min01 int 1 run scoreboard players get @s jump3_cp4_timer_min01
+execute store result storage stats:jump 3.rank5.cp4.sec10 int 1 run scoreboard players get @s jump3_cp4_timer_sec10
+execute store result storage stats:jump 3.rank5.cp4.sec01 int 1 run scoreboard players get @s jump3_cp4_timer_sec01
+execute store result storage stats:jump 3.rank5.cp4.dec10 int 1 run scoreboard players get @s jump3_cp4_timer_dec10
+execute store result storage stats:jump 3.rank5.cp4.dec01 int 1 run scoreboard players get @s jump3_cp4_timer_dec01
 
 execute store result storage stats:jump 3.rank5.fall_pr int 1 run scoreboard players get @s jump_fall
 execute store result storage stats:jump 3.rank5.fall int 1 run scoreboard players get @s jump3_fall
