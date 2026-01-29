@@ -171,8 +171,9 @@ execute if score $show_next_map option_panel matches 1 if score selected_map var
 execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 6 run data modify storage minecraft:matchinfo map set value {"text":"\uE705Bonbon\uE704","color":"light_purple","bold":true}
 # si on a activé le fait de montrer la prochaine map -> la montre
 
-
-
+function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/clear_overlay
+function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/clear_overlay
+# clear les overlays des joueurs connectés dans la barre en haut de l'écran
 
 scoreboard players set shop is_working 0
 # Score qui passera a 1 et fera un resetframeroom dès que le loop du datapack shop fonctionnera (pour éviter que les frameroom soit reset avant d'être fonctionnelles)
