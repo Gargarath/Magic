@@ -6,7 +6,7 @@
       "bold": true
     },
     "description": {
-      "text": "Lance un trait de feu dans la direction visée. Il infligera 12 points de dégats au premier adversaire rencontré et 2 points de dégâts de brulure par seconde pendant 3 secondes.\n\nSi la cible est gelée, l'effet de gel sera annulé.\n \nToucher un ennemi avec ce sort réduit son temps de recharge de moitié.\n\nTemps de recharge: 14s.",
+      "text": "Lance un trait de feu dans la direction visée. Il infligera 12 points de dégats au premier adversaire 1 point de dégâts de brulure par seconde pendant 3 secondes.\n\nSi la cible est gelée, l'effet de gel sera annulé.\n \nToucher un ennemi avec ce sort réduit son temps de recharge de moitié.\n\nTemps de recharge: 14s.",
       "color": "green",
       "bold": false
     },
