@@ -240,27 +240,27 @@ item replace block 19 94 13 container.26 with tipped_arrow[custom_name={"bold":t
 # WEAPON 1
 
 # Niveau 0
-item replace block 13 95 13 container.0 with bow[custom_name="Arc de débutant",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.0 with bow[custom_name="Arc de débutant",unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon1_slot:1b}] 1
 # Niveau 1
-item replace block 13 95 13 container.1 with bow[custom_name="Arc de combat I",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.1 with bow[custom_name="Arc de combat I",unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 2
-item replace block 13 95 13 container.2 with bow[custom_name="Arc de combat II",lore=["+1 emplacement de flèche."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":2},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.2 with bow[custom_name="Arc de combat II",lore=["+1 emplacement de flèche."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":2},custom_data={weapon1_slot:1b}] 1
 # Niveau 3
-item replace block 13 95 13 container.3 with bow[custom_name="Arc de combat III",lore=["+1 emplacement de flèche."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":3},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.3 with bow[custom_name="Arc de combat III",lore=["+1 emplacement de flèche."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":3},custom_data={weapon1_slot:1b}] 1
 # Niveau 4
-item replace block 13 95 13 container.4 with bow[custom_name="Arc de combat IV",lore=["+2 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":3,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.4 with bow[custom_name="Arc de combat IV",lore=["+2 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":3,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 5
-item replace block 13 95 13 container.5 with bow[custom_name="Arc de combat V",lore=["+2 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":4,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.5 with bow[custom_name="Arc de combat V",lore=["+2 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":4,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 6
-item replace block 13 95 13 container.6 with bow[custom_name="Arc de combat VI",lore=["+3 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":4,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.6 with bow[custom_name="Arc de combat VI",lore=["+3 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":4,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 7
-item replace block 13 95 13 container.7 with bow[custom_name="Arc de combat VII",lore=["+3 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":5,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.7 with bow[custom_name="Arc de combat VII",lore=["+3 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":5,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 8
-item replace block 13 95 13 container.8 with bow[custom_name="Arc de combat VIII",lore=["+4 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":5,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.8 with bow[custom_name="Arc de combat VIII",lore=["+4 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":5,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 9
-item replace block 13 95 13 container.9 with bow[custom_name="Arc de combat IX",lore=["+4 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":6,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.9 with bow[custom_name="Arc de combat IX",lore=["+4 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":6,"minecraft:punch":1},custom_data={weapon1_slot:1b}] 1
 # Niveau 10
-item replace block 13 95 13 container.10 with bow[custom_name="Arc de combat X",lore=["+5 emplacements de flèches."],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":6,"minecraft:punch":2},custom_data={weapon1_slot:1b}] 1
+item replace block 13 95 13 container.10 with bow[custom_name="Arc de combat X",lore=["+5 emplacements de flèches."],unbreakable={},use_effects={speed_multiplier:1.0,can_sprint:true},tooltip_display={hidden_components:["unbreakable"]},enchantments={"minecraft:power":6,"minecraft:punch":2},custom_data={weapon1_slot:1b}] 1
 
 
                     ###   CHEST    ###
