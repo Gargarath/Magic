@@ -5,8 +5,7 @@ setblock 11 125 -711 air
 setblock -49 125 -767 air
 # allume le beacon rouge
 
-tag @a remove sugar_way
-execute as @a run attribute @s minecraft:movement_speed base set 0.10000000149011612
+execute as @a[tag=sugar_way] run function ctf:maps_systems/candyworld/sugar_way/exit_sugar_way
 #reset le systeme de chemins rapide
 
 function main:reset/reset_living_cherry
