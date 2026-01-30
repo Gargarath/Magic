@@ -3,9 +3,11 @@
 
 advancement revoke @s from archer:passif1_a
 advancement revoke @s from archer:passif2_a
+advancement revoke @s from archer:passif3_a
 
 advancement grant @s only archer:passif1_a
 advancement grant @s only archer:passif2_a
+advancement grant @s only archer:passif3_a
 
 execute if score @s weapon1 matches 1 run advancement grant @s until archer:6_a
 execute if score @s weapon1 matches 2 run advancement grant @s until archer:weapon1lvl2_a

@@ -35,6 +35,8 @@ clear @s minecraft:tipped_arrow
 execute unless entity @s[tag=!Has_explosive_arrow] unless entity @s[tag=!Has_freeze_arrow] run scoreboard players set @s shotarrow 1
 scoreboard players operation @s arrow = @s maxarrow
 
+execute if score @s jump_crouch_time_a matches 0.. run function spells:spellsystem/jump_a/reduce_jump_boost/remove_jump_boost
+
 # Spell1
 
 scoreboard players reset @s hit_by_explo

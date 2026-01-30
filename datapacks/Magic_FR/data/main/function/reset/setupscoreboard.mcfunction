@@ -626,6 +626,11 @@ scoreboard objectives add hook_timer dummy
 scoreboard objectives add hook_position dummy
 ## ARCHER
 
+# jump
+
+scoreboard objectives add jump_crouch_time_a dummy
+scoreboard objectives add is_jumping_a minecraft.custom:minecraft.jump
+
 # arrows
 scoreboard objectives add snap_health10 dummy
 scoreboard objectives add snap_hp10 dummy

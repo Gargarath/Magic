@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/empty",
+      "sprite": "jump_icon_a_empty"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_1",
+      "sprite": "jump_icon_a_1"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_2",
+      "sprite": "jump_icon_a_2"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_3",
+      "sprite": "jump_icon_a_3"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_4",
+      "sprite": "jump_icon_a_4"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_5",
+      "sprite": "jump_icon_a_5"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_6",
+      "sprite": "jump_icon_a_6"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_7",
+      "sprite": "jump_icon_a_7"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_8",
+      "sprite": "jump_icon_a_8"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_9",
+      "sprite": "jump_icon_a_9"
+    },
+    {
+      "type": "single",
+      "resource": "item/gui/jump_a/arrow_10",
+      "sprite": "jump_icon_a_10"
+    }
+  ]
+}

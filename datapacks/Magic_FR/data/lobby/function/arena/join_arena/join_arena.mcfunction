@@ -70,6 +70,7 @@ execute if score @s Player matches 12 run data modify storage gui player.12.acti
 scoreboard players set @s gui_actionbar_alert -1
 # clear l'action bar de @s
 
+
 clear @s
 execute as @s[tag=warrior] run function lobby:arena/stuff_give_max/warrior
 execute as @s[tag=archer] run function lobby:arena/stuff_give_max/archer

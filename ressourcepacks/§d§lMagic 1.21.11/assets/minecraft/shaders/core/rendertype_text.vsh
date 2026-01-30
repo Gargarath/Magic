@@ -142,6 +142,11 @@ void main() {
             // e.g., ascent near -200000 → actionbar
             posoffset = vec2(0.0, 0.0);
             pos.y += 0.0;  
+        }  else if (sectionx == 21) {
+            // e.g., ascent near -210000 → bellow crosshair
+            posoffset = vec2(-0.6, 1.2);
+            pos.y += 15.0;
+            pos *= 1.6;     
         }
         else {
             // section == 0 or anything else → no offset

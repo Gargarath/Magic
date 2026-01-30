@@ -95,6 +95,11 @@ execute as @e[type=minecraft:arrow,limit=1,nbt={inGround:1b,pickup:1b}] run data
 execute as @a[scores={shotarrow=1..},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function spells:arrow_give_system/arrowcounter
 # si un joueur tire une fleche non explosive ou glacée -> lui enleve 1 en score de arrow
 
+		# jump
+
+execute as @a[scores={Player=1..},tag=archer] if predicate minecraft:is_sneaking_on_ground run function spells:spellsystem/jump_a/is_sneaking
+execute as @a[scores={Player=1..,is_jumping_a=1..},tag=archer] run function spells:spellsystem/jump_a/jump
+execute as @a[scores={Player=1..},tag=archer,tag=sneaking_jump_a] unless predicate minecraft:is_sneaking_on_ground run function spells:spellsystem/jump_a/stopped_sneaking
 
 	# Spell1 #
 

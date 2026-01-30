@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/feather"
+    },
+    "cases": [
+      {
+        "when": "jump_icon_a_10",
+        "model": {
+          "type": "model",
+          "model": "item/gui/jump_a/jump_icon_a_10"
+        }
+      }
+    ]
+  }
+}

@@ -96,6 +96,7 @@ advancement revoke @a[team=!spectator] everything
 advancement grant @a[tag=warrior,team=!spectator] until warrior:passif_w
 advancement grant @a[tag=archer,team=!spectator] until archer:passif1_a
 advancement grant @a[tag=archer,team=!spectator] until archer:passif2_a
+advancement grant @a[tag=archer,team=!spectator] until archer:passif3_a
 advancement grant @a[tag=mage,team=!spectator] until mage:passif_m
 advancement grant @a[tag=rogue,team=!spectator] until rogue:passif_r
 advancement grant @a[tag=rogue,team=!spectator] until rogue:passif2_r
