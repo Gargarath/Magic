@@ -7,9 +7,6 @@ scoreboard players set @s[scores={last_caster=0}] last_caster 8
 execute at @s run function spells:spellsystem/spell2/spell2_m/lightning_hit/lightning_effect
 # permet de simuler un éclair sur @s
 
-function spells:spellsystem/spell2/spell2_m/took_spell2_m
-# indique que @s est touché par la tempête de foudre (pour le kill feed)
-
 execute if score @a[scores={Player=8},limit=1,tag=no_team] spell2 matches 1 unless entity @s[scores={Player=8}] run function spells:spellsystem/spell2/spell2_m/apply_dmg_lvl1
 execute if score @a[scores={Player=8},limit=1,tag=no_team] spell2 matches 2 unless entity @s[scores={Player=8}] run function spells:spellsystem/spell2/spell2_m/apply_dmg_lvl2
 execute if score @a[scores={Player=8},limit=1,tag=no_team] spell2 matches 3 unless entity @s[scores={Player=8}] run function spells:spellsystem/spell2/spell2_m/apply_dmg_lvl3

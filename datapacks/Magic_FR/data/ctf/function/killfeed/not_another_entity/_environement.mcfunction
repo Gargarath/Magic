@@ -1,4 +1,4 @@
-# appelé par _determine_who_killed si @s ne s'est pas auto tué
+# appelé par _determine_how_died si @s ne s'est pas auto tué
 
 
 # Si @s ne s'est pas tué -> si @s ne s'est pas fait tuer par un allié -> il est mort de l'environnement -> affiche par quoi

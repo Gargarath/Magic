@@ -1,4 +1,4 @@
-## appelée par ctf:loop si @s n'a pas subit de /damage depuis X temps
+## appelée par spells:loop si @s n'a pas subit de /damage depuis X temps
 # permet de reset son icone de killfeed si il meurt
 
 execute if score @s Player matches -2 run data modify storage ctf:killfeed death_cause.boss set value "\uE000"

@@ -18,5 +18,5 @@ execute if score @s Player matches 12 run data modify storage ctf:killfeed death
 execute if score @s last_caster = @s Player run tag @s add self_target
 # indique que @s s'est tiré dessus si il l'a fait (pour le kill feed)
 
-scoreboard players set @s special_dmg_recieved 5
+scoreboard players set @s special_dmg_recieved 12
 # met un timer au cours duquel la cause de la mort de @s sera reset

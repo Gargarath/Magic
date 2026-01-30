@@ -1,5 +1,8 @@
 # appelée par lightning_hitX au nom des joueurs qui ont été touchés par un éclair de la tempête de foudre I
 
+function spells:spellsystem/spell2/spell2_m/took_spell2_m
+# indique que @s est touché par la tempête de foudre (pour le kill feed)
+
 function main:stats/calculate_dmg_dealth/store_hp_before
 # lance la fonction qui calcule les dégats subit par @s pour les stats du caster
 

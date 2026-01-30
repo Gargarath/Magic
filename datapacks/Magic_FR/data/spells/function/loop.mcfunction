@@ -10,8 +10,8 @@ execute as @e[type=#minecraft:spellable] run function main:stats/bow/bow_damage/
 # calcule la vie des joueurs et boss en perma (pour ensuite calculer la diff quand ils prennent une flèche)
 
 ## KILLFEED
-scoreboard players remove @e[type=#spellable,scores={special_dmg_recieved=1..}] special_dmg_recieved 1
 execute as @e[type=#spellable,scores={special_dmg_recieved=0}] run function ctf:killfeed/clear_death_message
+scoreboard players remove @e[type=#spellable,scores={special_dmg_recieved=1..}] special_dmg_recieved 1
 # enlève un score de special_dmg_recieved à ceux qui viennent de se prendre des /damage
 
     ## HEAL HORS FIGHT
