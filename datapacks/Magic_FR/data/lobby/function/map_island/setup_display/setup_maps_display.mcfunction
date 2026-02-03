@@ -40,18 +40,19 @@ execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~
 execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~-0.45 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
 execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~-0.25 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
 execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~-0.05 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.25 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.45 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.65 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.85 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.05 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.25 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.45 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.65 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.85 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.05 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.25 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.45 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.15 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.35 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.55 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.75 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~0.95 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.15 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.35 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.55 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.75 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~1.95 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.15 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.35 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
+execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.55 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
 execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~2.65 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}
 # clickable map main
 

@@ -34,3 +34,9 @@ execute store result score $map_4 map_spectator run execute if entity @a[tag=spe
 execute store result score $map_5 map_spectator run execute if entity @a[tag=spec_map5]
 execute store result score $map_6 map_spectator run execute if entity @a[tag=spec_map6]
 execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 1
+
+execute unless entity @s[nbt={Fire:-20s}] run effect give @s minecraft:fire_resistance 1 0 true
+#si le joueur brule -> le rend insencible au feu avant de le heal
+
+execute unless entity @s[nbt={Fire:-20s}] run schedule function lobby:map_island/clear_fire 1t
+# si le joueur est en feu -> l'éteint
