@@ -29,6 +29,6 @@ data modify block 13 97 11 Items[{Slot:0b}].components."minecraft:custom_name" s
 # remet à jour le livre d'administrateur dans le barril
 
 ## ARMURE NIVEAU 0 (pour les armor trim)
-item replace block 13 97 11 container.9 with netherite_chestplate[enchantments={"binding_curse":1},unbreakable={},tooltip_display={hide_tooltip:true}] 1
-item replace block 13 97 11 container.10 with netherite_leggings[enchantments={"binding_curse":1},unbreakable={},tooltip_display={hide_tooltip:true}] 1
-item replace block 13 97 11 container.11 with netherite_boots[enchantments={"binding_curse":1},unbreakable={},tooltip_display={hide_tooltip:true}] 1
+item replace block 13 97 11 container.9 with netherite_chestplate[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
+item replace block 13 97 11 container.10 with netherite_leggings[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
+item replace block 13 97 11 container.11 with netherite_boots[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
