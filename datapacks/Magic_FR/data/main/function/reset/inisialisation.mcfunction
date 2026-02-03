@@ -123,9 +123,12 @@ scoreboard players set @s quit_slot_m 8
 scoreboard players set @s quit_slot_r 8
 
 # intialise les options de @s
+scoreboard players enable @s opt_open_options
 scoreboard players set @s opt_display_keybinds 1
 scoreboard players set @s opt_keybind_order 2
 scoreboard players enable @s opt_trig_keybind_order
+scoreboard players set @s opt_display_jump_timer 1
+scoreboard players enable @s opt_trig_display_jump_timer
 
 function lobby:hotbar_menu/main/give_items
 # Donne les item de hotbar

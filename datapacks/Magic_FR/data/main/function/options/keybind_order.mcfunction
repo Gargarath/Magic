@@ -1,4 +1,4 @@
-## appelée par operation
+## appelée par main:loop
 # permet d'alterner entre raccourcis depuis gauche et droite
 
 scoreboard players reset @s opt_trig_keybind_order

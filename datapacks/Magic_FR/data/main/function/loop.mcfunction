@@ -33,7 +33,9 @@ execute if score stuff enable_loop matches 1 run function stuff:loop
 execute as @e[scores={gui_actionbar_alert=1..}] run function main:gui/actionbar_timer
 
                                     ## OPTION ##
+execute as @a[scores={opt_open_options=1..}] run function main:options/open_options
 execute as @a[scores={opt_trig_keybind_order=1..}] run function main:options/keybind_order
+execute as @a[scores={opt_trig_display_jump_timer=1..}] run function main:options/display_jump_timer
 
                                         ### Donne effet de saturation
 

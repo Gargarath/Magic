@@ -28,7 +28,13 @@ scoreboard objectives add is_jumping minecraft.custom:minecraft.jump
 # gui
 scoreboard objectives add gui_actionbar_alert dummy
 
-
+# options
+scoreboard objectives add opt_open_options trigger
+scoreboard objectives add opt_display_keybinds dummy
+scoreboard objectives add opt_trig_keybind_order trigger
+scoreboard objectives add opt_keybind_order dummy
+scoreboard objectives add opt_trig_display_jump_timer trigger
+scoreboard objectives add opt_display_jump_timer dummy
 
 # teams
 scoreboard objectives add blue_place dummy
@@ -438,10 +444,7 @@ scoreboard objectives add IsAlive deathCount
 scoreboard objectives add timers dummy
 scoreboard objectives add timer dummy
 
-# options
-scoreboard objectives add opt_display_keybinds dummy
-scoreboard objectives add opt_trig_keybind_order trigger
-scoreboard objectives add opt_keybind_order dummy
+
 
 # specs
 scoreboard objectives add spec_stop trigger
@@ -573,6 +576,7 @@ scoreboard objectives add spell3_slot2 dummy
 scoreboard objectives add key_slot1 dummy
 scoreboard objectives add key_slot2 dummy
 scoreboard objectives add key_slot3 dummy
+scoreboard objectives add arrows_slot dummy
 scoreboard objectives add arrows_slot2 dummy
 scoreboard objectives add temp_key_slot dummy
 scoreboard objectives add temp1_key_slot dummy

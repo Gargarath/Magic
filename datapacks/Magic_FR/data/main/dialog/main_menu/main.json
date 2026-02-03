@@ -30,8 +30,9 @@
         "bold": true
       },
       "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "main:options/options_main"
+        "type": "minecraft:run_command",
+        "dialog": "main:options/options_main",
+        "command": "trigger opt_open_options"
       }
     },
     {
