@@ -14,6 +14,8 @@ tag @s remove no_team
 function main:reset/resetspells/generic
 # reset tout ce qui est lié au spell pour @s
 
+attribute @s minecraft:entity_interaction_range base set 40
+# redonne la portée d'interaction d'entité pour le mennu à @s
 
 spawnpoint @s 0 100 0 180 0
 

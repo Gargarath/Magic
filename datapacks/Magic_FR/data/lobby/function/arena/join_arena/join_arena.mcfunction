@@ -100,6 +100,9 @@ scoreboard players set @s stat_killcount_player 0
 function lobby:arena/leaderboard/refresh_leaderboard
 # ajoute @s au classement
 
+attribute @s minecraft:entity_interaction_range base set 3
+# redonne la portée d'interaction d'entité de base à @s
+
 effect give @s minecraft:instant_health 2 10 true
 
 tp @s ~ 96.0 ~
