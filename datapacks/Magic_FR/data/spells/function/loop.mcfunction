@@ -26,6 +26,8 @@ execute as @a[scores={out_of_fight=300}] run function ctf:healing_out_of_fight/b
 # Gere les spells
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:testspell
+execute as @a[scores={usespell=1..}] unless items entity @s weapon.mainhand carrot_on_a_stick run scoreboard players set @s usespell 0
+# si @s peut lancer un sort, check lequel (sauf si utilise arc)
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,hooked_w=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooked
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},tag=is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooker
