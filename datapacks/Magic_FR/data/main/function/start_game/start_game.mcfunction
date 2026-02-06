@@ -92,14 +92,14 @@ team join non_ready_blue @a[team=m_blue_op]
 team join non_ready_blue @a[team=r_blue_op]
 # Change les equipes de joueurs pour afficher qui est prêt ou non
 
-advancement revoke @a[team=!spectator] everything
-advancement grant @a[tag=warrior,team=!spectator] until warrior:passif_w
-advancement grant @a[tag=archer,team=!spectator] until archer:passif1_a
-advancement grant @a[tag=archer,team=!spectator] until archer:passif2_a
-advancement grant @a[tag=archer,team=!spectator] until archer:passif3_a
-advancement grant @a[tag=mage,team=!spectator] until mage:passif_m
-advancement grant @a[tag=rogue,team=!spectator] until rogue:passif_r
-advancement grant @a[tag=rogue,team=!spectator] until rogue:passif2_r
+advancement revoke @a[scores={Player=1..}] everything
+advancement grant @a[tag=warrior,scores={Player=1..}] until warrior:passif_w
+advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif1_a
+advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif2_a
+advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif3_a
+advancement grant @a[tag=mage,scores={Player=1..}] until mage:passif_m
+advancement grant @a[tag=rogue,scores={Player=1..}] until rogue:passif_r
+advancement grant @a[tag=rogue,scores={Player=1..}] until rogue:passif2_r
 # Affiche les objets achetable par le joueur selon sa classe
 
 execute at @e[tag=room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
