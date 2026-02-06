@@ -660,12 +660,9 @@ scoreboard objectives add used_bow dummy
 scoreboard objectives add hit_by_explo dummy
 scoreboard objectives add hit_by_explo_charge dummy
 scoreboard objectives add explosive_player_timer dummy
-scoreboard objectives add explo_sneak_change dummy
 scoreboard objectives add explo_position_a dummy
 scoreboard objectives add explo_max_range_a dummy
 scoreboard objectives add explosive_arrow_timer dummy
-scoreboard objectives add spell1_a_direction dummy
-scoreboard objectives add hit_by_explo_direction dummy
 # spell2
 scoreboard objectives add usespell2_a dummy
 scoreboard objectives add trapped dummy
@@ -726,3 +723,9 @@ scoreboard players set %100 numbers 100
 # setup stopwatch
 
 stopwatch create jump
+
+# setup values
+
+scoreboard players set $lvl1 explo_max_range_a 40
+scoreboard players set $lvl2 explo_max_range_a 48
+scoreboard players set $lvl3 explo_max_range_a 60

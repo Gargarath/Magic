@@ -23,7 +23,8 @@ scoreboard players operation @e[type=minecraft:arrow,sort=nearest,tag=!marked,li
 # indique à quel joueur appartient la flèche
 
 
-execute if entity @s[tag=Has_explosive_arrow] run function spells:spellsystem/spell1/spell1_a/mark_explosive_arrow/testplayer
+execute if entity @s[tag=Has_explosive_arrow] run tag @e[type=minecraft:arrow,sort=nearest,tag=!marked,limit=1] add explosive_arrow
+execute if entity @s[tag=Has_freeze_arrow] run tag @e[type=minecraft:arrow,sort=nearest,tag=!marked,limit=1] add freeze_arrow
 # si la flèche que @s vient de tirer est une fleche explo, note ses infos ailleurs
 
 tag @e[type=marker,scores={arrow_rotation=1..},sort=nearest,limit=1,tag=!marked] add marked

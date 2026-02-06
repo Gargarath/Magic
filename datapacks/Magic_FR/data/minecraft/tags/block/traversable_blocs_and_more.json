@@ -1,0 +1,12 @@
+{
+  "values":[
+	"#traversable_blocs",
+	"#minecraft:slabs",
+  "#walls",
+  "#fences",
+  "#bars",
+  "stone_brick_stairs",
+  "mossy_stone_brick_stairs",
+  "#half_blocs"
+  ]
+}

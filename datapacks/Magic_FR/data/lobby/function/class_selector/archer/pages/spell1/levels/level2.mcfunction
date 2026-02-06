@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"Flèche explosive II - 150 PH"},{"bold":false,"color":"green","text":"\n\nVotre prochaine flèche explosera 1s après avoir touché sa cible ou le sol, infligeant 6 à 24 points de dégâts dans un rayon de 8 blocs.\n\nLes dégâts varient selon le temps de charge du tir.\n\nVous pouvez modifier la direction de l’explosion avant de tirer en réactivant le sort ou en vous accroupissant.\n\nL'effet de ce sort peut être cumulé avec celui de la flèche de glace."},{"bold":false,"color":"white","text":"\n\nTemps de recharge : 15s."}],background:16711680}
+data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"Flèche explosive II - 150 PH"},{"bold":false,"color":"green","text":"\n\nVotre prochaine flèche explosera 0,4s après avoir touché sa cible ou le sol, infligeant 6 à 24 points de dégâts dans un rayon de 13 blocs.\n\nLes dégâts varient selon le temps de charge du tir.\n\nL'effet de ce sort peut être cumulé avec celui de la flèche de glace."},{"bold":false,"color":"white","text":"\n\nTemps de recharge : 15s."}],background:16711680}
 
 
 

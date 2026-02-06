@@ -8,7 +8,7 @@ function stuff:stuff_rogue/cooldowns_r/cooldowns_r
                          ###   HEAD ET OFFHAND    ###
 item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=!in_own_spawn] armor.head from block 13 97 11 container.1
 item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=in_own_spawn] armor.head from block 13 97 11 container.2
-item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
+item replace entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
 
 execute if score @s InShop matches 1 run function stuff:stuff_rogue/save_stuff_as_storage/determine_player
 # permet de save le stuff de @s dans un storage

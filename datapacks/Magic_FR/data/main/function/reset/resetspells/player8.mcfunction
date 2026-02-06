@@ -21,7 +21,7 @@ bossbar set hook_someone:player8 players
 
 
 # Spell1
-function spells:spellsystem/spell1/spell1_a/reset/player1
+function spells:spellsystem/spell1/spell1_a/reset/player8
 # clear la explosive arrow
 
 execute as @e[type=arrow,scores={arrow_owner=8}] run function spells:arrow_detection/clear_ground_arrow

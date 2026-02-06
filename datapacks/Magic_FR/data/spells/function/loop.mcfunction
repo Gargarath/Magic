@@ -86,7 +86,7 @@ execute as @e[type=#spellable,scores={arrow_owner=1..}] run function spells:arro
 # PASSIF Archer
 execute as @a[tag=invisibility_r,scores={loud_bar=1..}] run execute at @s run particle minecraft:effect ~ ~0.8 ~ 0.1 0.3 0.1 0 5 force @a[tag=archer,team=!spectator]
 
-execute as @e[type=minecraft:arrow,nbt={inGround:1b,life:20s}] unless score @s spell1_a_direction matches -1 at @s run function spells:arrow_detection/clear_ground_arrow
+execute as @e[type=minecraft:arrow,nbt={inGround:1b,life:20s}] unless entity @s[tag=explosive_arrow] at @s run function spells:arrow_detection/clear_ground_arrow
 # Detruit toute fleche 3s après qu'elle ait touché le sol
 execute as @e[type=minecraft:arrow,limit=1,nbt={inGround:1b,pickup:1b}] run data merge entity @s {pickup:0b}
 # Rend toute fleche ramassable non ramassable
@@ -114,14 +114,10 @@ execute as @a[scores={shotarrow=1..},tag=Has_explosive_arrow] run function spell
 execute at @a[scores={shotarrow=0},tag=Has_explosive_arrow] run particle minecraft:dripping_lava ~ ~2 ~ 0.1 0.1 0.1 1 1 force
 # Les joueurs avec leur prochaine fleche explosive on des particules au dessus de la tête
 
-execute as @a[scores={shotarrow=0,explo_sneak_change=0},tag=Has_explosive_arrow] if predicate minecraft:is_sneaking run function spells:spellsystem/spell1/spell1_a/sneak_change/start_sneak
-execute as @a[scores={shotarrow=0,explo_sneak_change=1},tag=Has_explosive_arrow] unless predicate minecraft:is_sneaking run function spells:spellsystem/spell1/spell1_a/sneak_change/stop_sneak
-# detecte si @s sneak pour changer de flèche
-
 # Niveau 1-3
 
 # gere l'explo au sol
-execute as @e[type=minecraft:arrow,scores={spell1_a_direction=1..}] if data entity @s {inGround:1b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck"}]}}}} run function spells:spellsystem/spell1/spell1_a/onground/start_countdown
+execute as @e[type=minecraft:arrow,tag=!touched_ground] if data entity @s {inGround:1b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck"}]}}}} run function spells:spellsystem/spell1/spell1_a/onground/start_countdown
 
 # gere l'explo au sur un joueur ou un mort vivant (liche)
 execute as @e[type=#minecraft:spellable,nbt={active_effects:[{id:"minecraft:luck"}]}] run function spells:spellsystem/spell1/spell1_a/onplayer/test_player

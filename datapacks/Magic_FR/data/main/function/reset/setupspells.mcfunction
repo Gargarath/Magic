@@ -29,7 +29,6 @@ scoreboard players set @s hooked_w -1
 scoreboard players set @s is_hooking_w -1
 scoreboard players set @s hooked_w -1
 scoreboard players set @s explosive_arrow_timer -1
-scoreboard players set @s explo_sneak_change 0
 scoreboard players set @s weapon1_mana_m 100
 scoreboard players set @s burning -1
 scoreboard players set @s using_ambush -1

@@ -28,5 +28,3 @@ execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell1 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown1_clock 5
 
-function main:ressource_pack_detector/display_something_else/show_message_again
-

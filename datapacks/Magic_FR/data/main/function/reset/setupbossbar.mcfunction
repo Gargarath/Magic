@@ -105,18 +105,18 @@ bossbar set explosive_arrow:player9 color red
 bossbar set explosive_arrow:player10 color red
 bossbar set explosive_arrow:player11 color red
 bossbar set explosive_arrow:player12 color red
-bossbar set explosive_arrow:player1 max 20
-bossbar set explosive_arrow:player2 max 20
-bossbar set explosive_arrow:player3 max 20
-bossbar set explosive_arrow:player4 max 20
-bossbar set explosive_arrow:player5 max 20
-bossbar set explosive_arrow:player6 max 20
-bossbar set explosive_arrow:player7 max 20
-bossbar set explosive_arrow:player8 max 20
-bossbar set explosive_arrow:player9 max 20
-bossbar set explosive_arrow:player10 max 20
-bossbar set explosive_arrow:player11 max 20
-bossbar set explosive_arrow:player12 max 20
+bossbar set explosive_arrow:player1 max 8
+bossbar set explosive_arrow:player2 max 8
+bossbar set explosive_arrow:player3 max 8
+bossbar set explosive_arrow:player4 max 8
+bossbar set explosive_arrow:player5 max 8
+bossbar set explosive_arrow:player6 max 8
+bossbar set explosive_arrow:player7 max 8
+bossbar set explosive_arrow:player8 max 8
+bossbar set explosive_arrow:player9 max 8
+bossbar set explosive_arrow:player10 max 8
+bossbar set explosive_arrow:player11 max 8
+bossbar set explosive_arrow:player12 max 8
 
 bossbar add explosive_player:player1 {"text":"Vous allez exploser !","color":"dark_red"}
 bossbar add explosive_player:player2 {"text":"Vous allez exploser !","color":"dark_red"}
@@ -142,18 +142,18 @@ bossbar set explosive_player:player9 color red
 bossbar set explosive_player:player10 color red
 bossbar set explosive_player:player11 color red
 bossbar set explosive_player:player12 color red
-bossbar set explosive_player:player1 max 20
-bossbar set explosive_player:player2 max 20
-bossbar set explosive_player:player3 max 20
-bossbar set explosive_player:player4 max 20
-bossbar set explosive_player:player5 max 20
-bossbar set explosive_player:player6 max 20
-bossbar set explosive_player:player7 max 20
-bossbar set explosive_player:player8 max 20
-bossbar set explosive_player:player9 max 20
-bossbar set explosive_player:player10 max 20
-bossbar set explosive_player:player11 max 20
-bossbar set explosive_player:player12 max 20
+bossbar set explosive_player:player1 max 8
+bossbar set explosive_player:player2 max 8
+bossbar set explosive_player:player3 max 8
+bossbar set explosive_player:player4 max 8
+bossbar set explosive_player:player5 max 8
+bossbar set explosive_player:player6 max 8
+bossbar set explosive_player:player7 max 8
+bossbar set explosive_player:player8 max 8
+bossbar set explosive_player:player9 max 8
+bossbar set explosive_player:player10 max 8
+bossbar set explosive_player:player11 max 8
+bossbar set explosive_player:player12 max 8
 
 bossbar add trapped:player1 {"text":"Vous êtes piégé !","color":"red"}
 bossbar add trapped:player2 {"text":"Vous êtes piégé !","color":"red"}

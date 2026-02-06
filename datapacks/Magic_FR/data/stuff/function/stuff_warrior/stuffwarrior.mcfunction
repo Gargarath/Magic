@@ -10,7 +10,7 @@ function stuff:stuff_warrior/cooldowns_w/cooldowns_w
                          ###   HEAD ET OFFHAND    ###
 item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=!in_own_spawn] armor.head from block 13 97 11 container.1
 item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=in_own_spawn] armor.head from block 13 97 11 container.2
-item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
+item replace entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
 
 item replace entity @s[scores={freeze=0..}] armor.head from block 17 95 13 container.24
 # met un bloc de glace sur la tête de @s si il est gelé

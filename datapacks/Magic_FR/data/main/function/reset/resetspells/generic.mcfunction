@@ -55,8 +55,9 @@ tag @s remove in_explo12
 tag @s remove get_exploded
 
 scoreboard players set @s explosive_arrow_timer -1
-scoreboard players set @s explo_sneak_change 0
 
+tag @s remove freeze_arrow
+# si @s devient une fleche de glace explo
 
 # Spell2
 scoreboard players set @s trapped -1
