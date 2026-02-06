@@ -110,6 +110,7 @@ tag @s remove have_backup_r
 
 # Spell3
 
+scoreboard players set @s smoke_bomb_timer -1
 scoreboard players set @s in_smoke1 -1
 effect clear @s minecraft:blindness
 
