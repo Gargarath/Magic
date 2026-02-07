@@ -79,7 +79,7 @@ execute if score @s weapon1_slot_a matches 7 run function stuff:stuff_archer/wea
 execute if score @s weapon1_slot_a matches 8 run function stuff:stuff_archer/weapon1/slot8
 
                    ###   SPELL 1    ###
-execute as @s[scores={cooldownspell2=-1},tag=!Has_explosive_arrow] run function stuff:stuff_archer/spell1/determine_slot
+execute as @s[scores={cooldownspell1=-1},tag=!Has_explosive_arrow] run function stuff:stuff_archer/spell1/determine_slot
 
 
                    ###   SPELL 2    ###
