@@ -3,6 +3,9 @@
 tag @e[tag=Blue_banner] add Has_Blue_flag
 # Donne le tag Has_Blue_flag à la bannière qui a drop (pour que l'équipe adverse ne puisse pas poser le drapeau tant que celui ci n'est pas rapporté)
 
+function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
+# afficher sur la barre d'équipe que @s n'a plus le drapeau
+
 tag @s remove Has_Blue_flag
 # Enleve le tag Has_Blue_flag de @s
 scoreboard players set @s IsAlive 0
