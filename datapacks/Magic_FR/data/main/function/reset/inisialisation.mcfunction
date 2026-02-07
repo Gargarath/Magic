@@ -77,6 +77,7 @@ scoreboard players reset @s[tag=red_member] red_member
 team join lobby @s
 tag @s remove blue_team
 tag @s remove red_team
+tag @s remove spectator
 tag @s remove blue_spectator
 tag @s remove red_spectator
 scoreboard players reset @s blue_member
