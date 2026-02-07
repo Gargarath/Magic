@@ -68,7 +68,7 @@ function spells:spellsystem/spell2/spell2_a/reset_trap
 # Spell3
 execute if score @s freeze matches 0.. run function spells:spellsystem/spell3/spell3_a/stop_freeze
 # si @s était gelé -> l'annule
-
+effect clear @s slowness
 
 ## MAGE
 scoreboard players set @s weapon1_mana_m 100
