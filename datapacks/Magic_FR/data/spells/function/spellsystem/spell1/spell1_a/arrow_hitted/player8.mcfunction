@@ -31,6 +31,12 @@ execute if score @a[scores={Player=8},limit=1] spell1 matches 3 as @a[tag=in_exp
 execute if score @a[scores={Player=8},limit=1] spell1 matches 3 as @a[tag=in_explo8] if entity @s[team=red] if entity @a[scores={Player=8},team=red] at @e[type=marker,tag=exploraycast8_1,limit=1] run function spells:spellsystem/spell1/spell1_a/apply_dmg/apply_dmg_by_ally_lvl3
 # inflige les dégats au nom de @s (joueur qui subit des dmgs)
 
+execute if score @a[scores={Player=8},limit=1] spell1 matches 1 as @e[type=#boss,tag=in_explo8] at @e[type=marker,tag=exploraycast8_1,limit=1] run function spells:spellsystem/spell1/spell1_a/apply_dmg/apply_dmg_lvl1
+execute if score @a[scores={Player=8},limit=1] spell1 matches 2 as @e[type=#boss,tag=in_explo8] at @e[type=marker,tag=exploraycast8_1,limit=1] run function spells:spellsystem/spell1/spell1_a/apply_dmg/apply_dmg_lvl2
+execute if score @a[scores={Player=8},limit=1] spell1 matches 3 as @e[type=#boss,tag=in_explo8] at @e[type=marker,tag=exploraycast8_1,limit=1] run function spells:spellsystem/spell1/spell1_a/apply_dmg/apply_dmg_lvl3
+# inflige les dégats au nom de @s (mob qui subit des dmgs)
+
+
 tag @e[type=#spellable,tag=in_explo8] remove in_explo8
 
 execute as @e[tag=exploraycast8] run function spells:spellsystem/spell1/spell1_a/delete_raycast_marker

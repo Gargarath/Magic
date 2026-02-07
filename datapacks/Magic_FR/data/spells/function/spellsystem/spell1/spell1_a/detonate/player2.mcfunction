@@ -18,9 +18,9 @@ execute as @e[type=marker,tag=exploraycast2] run rotate @s facing ~ ~ ~
 # fait regarder ses marquers vers ici
 
 scoreboard players set @e[type=marker,tag=exploraycast2] explo_position_a 0
-execute if score @a[scores={Player=2},limit=1] spell1 matches 1 if entity @a[scores={Player=2..},distance=..10] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
-execute if score @a[scores={Player=2},limit=1] spell1 matches 2 if entity @a[scores={Player=2..},distance=..12] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
-execute if score @a[scores={Player=2},limit=1] spell1 matches 3 if entity @a[scores={Player=2..},distance=..15] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
+execute if score @a[scores={Player=2},limit=1] spell1 matches 1 if entity @e[type=#spellable,distance=..10] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
+execute if score @a[scores={Player=2},limit=1] spell1 matches 2 if entity @e[type=#spellable,distance=..12] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
+execute if score @a[scores={Player=2},limit=1] spell1 matches 3 if entity @e[type=#spellable,distance=..15] as @e[type=marker,tag=exploraycast2] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player2/dark_red
 # fait un raycast depuis les markers
 
 execute if score @s explosive_player_timer matches 0.. if score @s Player matches 1 run bossbar set explosive_player:player1 players
