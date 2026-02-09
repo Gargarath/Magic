@@ -26,8 +26,8 @@ execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{ba
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{main_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/main_island
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{stats_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/stats_island
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{map_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/map_island
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{jump_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/jump_island
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{map_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/map_island/check_join
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{jump_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/jump_island/check_join
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{gamemode:1b}}}} run return run function lobby:map_island/commands/gamemode
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{tp_blue_flag:1b}}}} run return run function lobby:map_island/commands/tp_blue_flag
