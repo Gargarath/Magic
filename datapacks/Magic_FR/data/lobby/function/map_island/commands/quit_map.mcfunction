@@ -4,6 +4,10 @@
 
 scoreboard players reset @s quit
 scoreboard players reset @s gamemode
+scoreboard players reset @s blue_spawn
+scoreboard players reset @s blue_flag
+scoreboard players reset @s red_spawn
+scoreboard players reset @s red_flag
 
 function lobby:hotbar_menu/main/give_items
 
