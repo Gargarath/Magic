@@ -16,5 +16,5 @@ execute as @e[type=text_display,tag=mortar_lever] run function ctf:maps_systems/
 execute as @a[gamemode=adventure] at @s if block ~ ~ ~ #minecraft:water_block run function ctf:maps_systems/pirate/effect_in_water
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1}] at @s unless entity @s[x=170,y=76,z=420,dx=199,dy=150,dz=156] run tp @s 268 114 498
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=170,y=76,z=420,dx=199,dy=150,dz=156] run tp @s 268 114 498
 # tp les specs qui vont trop loins

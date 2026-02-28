@@ -24,5 +24,5 @@ execute as @a[scores={Player=1..},tag=in_bad_path] at @s unless block ~ ~-70 ~ m
 execute as @a[tag=in_bad_path] run function ctf:maps_systems/graveyard/graveyard_path_abuse/in_bad_path
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1}] at @s unless entity @s[x=161,y=159,z=-349,dx=125,dy=150,dz=135] run tp @s 218 172 -312
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=161,y=159,z=-349,dx=125,dy=150,dz=135] run tp @s 218 172 -312
 # tp les specs qui vont trop loins

@@ -28,5 +28,5 @@ execute if score ready_red gingerbread matches 0 run function ctf:maps_systems/c
 execute as @a[gamemode=adventure] at @s if block ~ ~ ~ #minecraft:water_block run function ctf:maps_systems/candyworld/effect_in_water
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1}] at @s unless entity @s[x=-82,y=158,z=-804,dx=126,dy=150,dz=135] run tp @s 5.5 170 -761
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=-82,y=158,z=-804,dx=126,dy=150,dz=135] run tp @s 5.5 170 -761
 # tp les specs qui vont trop loins
