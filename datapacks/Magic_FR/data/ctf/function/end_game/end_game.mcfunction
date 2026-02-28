@@ -86,7 +86,7 @@ execute as @a[scores={Player=1..}] run function main:stats/save_player_equipemen
 
 function main:stats/leaderboard/clear_leaderboard
 # clear le leaderboard
-function main:stats/leaderboard/setup_leaderboard_endgame
+schedule function main:stats/leaderboard/setup_leaderboard_endgame 1t
 # permet de calculer le classement des joueurs et d'actualiser le leaderboard du spawn
 
 function main:stats/stats_book/give_stat_books

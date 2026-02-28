@@ -3,16 +3,26 @@
 tag @a[scores={Player=0}] add not_on_team
 # Donne le tag not_on_team à tous les combattants
 
+team join lobby @a[team=red_op]
 team join lobby @a[team=red]
 team join lobby @a[team=blue]
+team join lobby @a[team=blue_op]
 team join warrior @a[team=w_red]
+team join warrior @a[team=w_red_op]
 team join warrior @a[team=w_blue]
+team join warrior @a[team=w_blue_op]
 team join archer @a[team=a_red]
+team join archer @a[team=a_red_op]
 team join archer @a[team=a_blue]
+team join archer @a[team=a_blue_op]
 team join mage @a[team=m_red]
+team join mage @a[team=m_red_op]
 team join mage @a[team=m_blue]
+team join mage @a[team=m_blue_op]
 team join rogue @a[team=r_red]
+team join rogue @a[team=r_red_op]
 team join rogue @a[team=r_blue]
+team join rogue @a[team=r_blue_op]
 # Enlève tous les joueurs de leur team
 
 
