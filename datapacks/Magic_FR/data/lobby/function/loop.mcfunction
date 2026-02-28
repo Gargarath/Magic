@@ -18,6 +18,8 @@ execute as @a[tag=in_jump] at @s if block ~ ~ ~ #jump_plates run function lobby:
 # check sur les joueurs des jumps si ils marchent sur une plaque et fait l'action en fonction
 execute as @a[tag=jumping] run function lobby:jump/jump_timer
 # augmente le timer des joueurs dans le jump
+execute as @a[tag=in_jump,tag=jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_jump
+# check sur les joueurs dans le jumps si ils vont vers le mauvais jump -> leur cancel
 execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_start
 # check sur les joueurs dans le jumps si ils ont pas marché sur la plaque de départ -> leur cancel
 execute as @a[tag=jumping,tag=!jump_hide_close_players,tag=in_jump] at @s if entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/invisible
