@@ -85,6 +85,8 @@ scoreboard players reset @s red_member
 # enleve le numéro de statue de @s (pour qu'elle puisse etre retirée)
 execute as @s run function main:stats/scoreboard/blue_team_info/left_blue
 # enlève @s de la liste des bleus (si il est co)
+execute as @s run function main:stats/scoreboard/red_team_info/left_red
+# enlève @s de la liste des rouge (si il est co)
 
 scoreboard players set @s lobby_sneak 0
 # permet de detcter le sneak dans le lobby

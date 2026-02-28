@@ -11,9 +11,9 @@ data modify storage stats:leaderboards blue.player6.head set value {"shadow_colo
 data modify storage stats:leaderboards blue.player6.head.player.id set from entity @s UUID
 # save la tête de @s
 
-execute if score @s class_id matches 0 run data modify storage stats:leaderboards blue.player6.class.name set value "\uE709"
-execute if score @s class_id matches 1 run data modify storage stats:leaderboards blue.player6.class.name set value "\uE601"
-execute if score @s class_id matches 2 run data modify storage stats:leaderboards blue.player6.class.name set value "\uE602"
-execute if score @s class_id matches 3 run data modify storage stats:leaderboards blue.player6.class.name set value "\uE603"
-execute if score @s class_id matches 4 run data modify storage stats:leaderboards blue.player6.class.name set value "\uE604"
+execute if score @s class_id matches 0 run data modify storage stats:leaderboards blue.player6.class.icon set value "\uE709"
+execute if score @s class_id matches 1 run data modify storage stats:leaderboards blue.player6.class.icon set value "\uE601"
+execute if score @s class_id matches 2 run data modify storage stats:leaderboards blue.player6.class.icon set value "\uE602"
+execute if score @s class_id matches 3 run data modify storage stats:leaderboards blue.player6.class.icon set value "\uE603"
+execute if score @s class_id matches 4 run data modify storage stats:leaderboards blue.player6.class.icon set value "\uE604"
 # save la classe de @s

@@ -42,5 +42,10 @@ title @a[tag=archer] title [{"text":"Vous êtes ","color":"white"},{"text":"Arch
 title @a[tag=mage] title [{"text":"Vous êtes ","color":"white"},{"text":"Mage","color":"dark_purple"},{"text":" !","color":"white"}]
 title @a[tag=rogue] title [{"text":"Vous êtes ","color":"white"},{"text":"Assassin","color":"gray"},{"text":" !","color":"white"}]
 
-title @a subtitle {"text":"Les équipes ont été constituées aléatoirement !","bold":false}
-# indique à tous que les équipes ont été formée aléatoirement et leur indique quelle est leur équipe
+title @a subtitle {"text":"Les classes ont été constituées aléatoirement !","bold":false}
+# indique à tous que les équipes ont été formée aléatoirement et leur indique quelle est leur calsse
+
+execute as @a[scores={Player=0}] if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/sort_blue
+# si @s est bleu -> actualise la barre des joueurs bleus selon la classe de @s
+execute as @a[scores={Player=0}] if entity @s[tag=red_team] run function main:stats/scoreboard/red_team_info/sort_red
+# si @s est rouge -> actualise la barre des joueurs rouges selon la classe de @s

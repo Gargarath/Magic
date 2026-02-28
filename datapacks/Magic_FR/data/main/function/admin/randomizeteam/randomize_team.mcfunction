@@ -3,47 +3,33 @@
 tag @a[scores={Player=0}] add not_on_team
 # Donne le tag not_on_team à tous les combattants
 
-team join lobby @a[team=red_op]
-team join lobby @a[team=red]
-team join lobby @a[team=blue]
-team join lobby @a[team=blue_op]
-team join warrior @a[team=w_red]
-team join warrior @a[team=w_red_op]
-team join warrior @a[team=w_blue]
-team join warrior @a[team=w_blue_op]
-team join archer @a[team=a_red]
-team join archer @a[team=a_red_op]
-team join archer @a[team=a_blue]
-team join archer @a[team=a_blue_op]
-team join mage @a[team=m_red]
-team join mage @a[team=m_red_op]
-team join mage @a[team=m_blue]
-team join mage @a[team=m_blue_op]
-team join rogue @a[team=r_red]
-team join rogue @a[team=r_red_op]
-team join rogue @a[team=r_blue]
-team join rogue @a[team=r_blue_op]
-# Enlève tous les joueurs de leur team
+execute as @a[tag=not_on_team,tag=blue_team] run function lobby:hotbar_menu/team_selector/join_randomteam
+execute as @a[tag=not_on_team,tag=red_team] run function lobby:hotbar_menu/team_selector/join_randomteam
 
 
 ### Permet de mettre successivement un joueur (sans équipe) dans l'équipe rouge et un joueur dans l'équipe bleue 6 fois
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
 
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
 
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
 
-execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
+
+
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
+
+
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
+
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
+execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 ###
 
 execute as @a run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
@@ -54,3 +40,6 @@ title @a[tag=blue_team] title {"text":"Vous êtes bleu !","color":"blue"}
 
 title @a subtitle {"text":"Les équipes ont été constituées aléatoirement !","bold":false}
 # indique à tous que les équipes ont été formée aléatoirement et leur indique quelle est leur équipe
+
+tellraw @a[tag=red_team] {"text":"Vous êtes rouge !","color":"red"}
+tellraw @a[tag=blue_team] {"text":"Vous êtes bleu !","color":"blue"}
