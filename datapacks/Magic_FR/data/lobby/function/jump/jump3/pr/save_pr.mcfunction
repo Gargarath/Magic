@@ -42,5 +42,14 @@ scoreboard players operation @s jump3_cp4_timer_dec10_pr = @s jump3_cp4_timer_de
 scoreboard players operation @s jump3_cp4_timer_dec01_pr = @s jump3_cp4_timer_dec01
 # save le temps de chaque checkpoint de @s en record
 
+scoreboard players operation @s jump3_cp5_pr = @s jump3_cp5
+scoreboard players operation @s jump3_cp5_timer_min10_pr = @s jump3_cp5_timer_min10
+scoreboard players operation @s jump3_cp5_timer_min01_pr = @s jump3_cp5_timer_min01
+scoreboard players operation @s jump3_cp5_timer_sec10_pr = @s jump3_cp5_timer_sec10
+scoreboard players operation @s jump3_cp5_timer_sec01_pr = @s jump3_cp5_timer_sec01
+scoreboard players operation @s jump3_cp5_timer_dec10_pr = @s jump3_cp5_timer_dec10
+scoreboard players operation @s jump3_cp5_timer_dec01_pr = @s jump3_cp5_timer_dec01
+# save le temps de chaque checkpoint de @s en record
+
 scoreboard players operation @s jump3_fall_pr = @s jump_fall
 # save le nombre de tentatives de @s sur cette run

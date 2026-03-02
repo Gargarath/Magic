@@ -48,5 +48,8 @@ execute unless score @s jump_checkpoint matches 3.. if entity @e[type=marker,tag
 execute unless score @s jump_checkpoint matches 4.. if entity @e[type=marker,tag=jump_3_checkpoint4,distance=..1] run function lobby:jump/jump3/checkpoint4
 # si @s ne l'a pas déjà débloqué -> lui débloque le checkpoint 4
 
+execute unless score @s jump_checkpoint matches 5.. if entity @e[type=marker,tag=jump_3_checkpoint5,distance=..1] run function lobby:jump/jump3/checkpoint5
+# si @s ne l'a pas déjà débloqué -> lui débloque le checkpoint 4
+
 execute if entity @e[type=marker,tag=jump_3_finish,distance=..1] run function lobby:jump/jump3/finish
 # si @s est à la fin -> lui fait finir le jump

@@ -13,6 +13,7 @@ scoreboard players set @s jump3_cp1 0
 scoreboard players set @s jump3_cp2 0
 scoreboard players set @s jump3_cp3 0
 scoreboard players set @s jump3_cp4 0
+scoreboard players set @s jump3_cp5 0
 # reset les temps par checkpoints de @s
 
 scoreboard players set @s jump_checkpoint 0

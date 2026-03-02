@@ -24,6 +24,9 @@ execute store result score #tmp jump3_cp4 run data get storage stats:jump 3.rank
 execute unless score #tmp jump3_cp4 matches 0 run tellraw @s ["  - Checkpoint n°4 : ",{"color":"green","nbt":"3.rank2.cp4.min10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp4.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"3.rank2.cp4.sec10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp4.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"3.rank2.cp4.dec10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp4.dec01","storage":"stats:jump"}]
 execute if score #tmp jump3_cp4 matches 0 run tellraw @s ["  - Checkpoint n°4 : ",{"color":"green","text":"—"}]
 
+execute store result score #tmp jump3_cp5 run data get storage stats:jump 3.rank2.cp5.time
+execute unless score #tmp jump3_cp5 matches 0 run tellraw @s ["  - Checkpoint n°5 : ",{"color":"green","nbt":"3.rank2.cp5.min10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp5.min01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"3.rank2.cp5.sec10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp5.sec01","storage":"stats:jump"},{"color":"white","text":":"},{"color":"green","nbt":"3.rank2.cp5.dec10","storage":"stats:jump"},{"color":"green","nbt":"3.rank2.cp5.dec01","storage":"stats:jump"}]
+execute if score #tmp jump3_cp5 matches 0 run tellraw @s ["  - Checkpoint n°5 : ",{"color":"green","text":"—"}]
 
 tellraw @s [{"text":"\nTentatives totales lors du record : "},{"color":"green","nbt":"3.rank2.tries","storage":"stats:jump"}]
 tellraw @s [{"text":"Chutes totales lors du record : "},{"color":"green","nbt":"3.rank2.fall","storage":"stats:jump"}]

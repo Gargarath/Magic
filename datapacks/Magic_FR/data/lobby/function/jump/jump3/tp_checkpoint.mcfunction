@@ -8,6 +8,7 @@ execute if score @s jump_checkpoint matches 1 run tp @s @e[type=marker,tag=jump_
 execute if score @s jump_checkpoint matches 2 run tp @s @e[type=marker,tag=jump_3_checkpoint2,limit=1]
 execute if score @s jump_checkpoint matches 3 run tp @s @e[type=marker,tag=jump_3_checkpoint3,limit=1]
 execute if score @s jump_checkpoint matches 4 run tp @s @e[type=marker,tag=jump_3_checkpoint4,limit=1]
+execute if score @s jump_checkpoint matches 5 run tp @s @e[type=marker,tag=jump_3_checkpoint5,limit=1]
 
 scoreboard players add @s jump3_fall 1
 # ajoute 1 au score de chutes total de @s sur ce parcours

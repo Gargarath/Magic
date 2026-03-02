@@ -131,10 +131,12 @@ scoreboard objectives add jump3_cp1 dummy
 scoreboard objectives add jump3_cp2 dummy
 scoreboard objectives add jump3_cp3 dummy
 scoreboard objectives add jump3_cp4 dummy
+scoreboard objectives add jump3_cp5 dummy
 scoreboard objectives add jump3_cp1_pr dummy
 scoreboard objectives add jump3_cp2_pr dummy
 scoreboard objectives add jump3_cp3_pr dummy
 scoreboard objectives add jump3_cp4_pr dummy
+scoreboard objectives add jump3_cp5_pr dummy
 scoreboard objectives add jump3_timer_min_pr dummy
 scoreboard objectives add jump3_timer_min10_pr dummy
 scoreboard objectives add jump3_timer_min01_pr dummy
@@ -322,6 +324,16 @@ scoreboard objectives add jump3_cp4_timer_dec_pr dummy
 scoreboard objectives add jump3_cp4_timer_dec10_pr dummy
 scoreboard objectives add jump3_cp4_timer_dec01_pr dummy
 
+scoreboard objectives add jump3_cp5_timer_min_pr dummy
+scoreboard objectives add jump3_cp5_timer_min10_pr dummy
+scoreboard objectives add jump3_cp5_timer_min01_pr dummy
+scoreboard objectives add jump3_cp5_timer_sec_pr dummy
+scoreboard objectives add jump3_cp5_timer_sec10_pr dummy
+scoreboard objectives add jump3_cp5_timer_sec01_pr dummy
+scoreboard objectives add jump3_cp5_timer_dec_pr dummy
+scoreboard objectives add jump3_cp5_timer_dec10_pr dummy
+scoreboard objectives add jump3_cp5_timer_dec01_pr dummy
+
 scoreboard objectives add jump3_cp1_timer_min dummy
 scoreboard objectives add jump3_cp1_timer_min10 dummy
 scoreboard objectives add jump3_cp1_timer_min01 dummy
@@ -361,6 +373,16 @@ scoreboard objectives add jump3_cp4_timer_sec01 dummy
 scoreboard objectives add jump3_cp4_timer_dec dummy
 scoreboard objectives add jump3_cp4_timer_dec10 dummy
 scoreboard objectives add jump3_cp4_timer_dec01 dummy
+
+scoreboard objectives add jump3_cp5_timer_min dummy
+scoreboard objectives add jump3_cp5_timer_min10 dummy
+scoreboard objectives add jump3_cp5_timer_min01 dummy
+scoreboard objectives add jump3_cp5_timer_sec dummy
+scoreboard objectives add jump3_cp5_timer_sec10 dummy
+scoreboard objectives add jump3_cp5_timer_sec01 dummy
+scoreboard objectives add jump3_cp5_timer_dec dummy
+scoreboard objectives add jump3_cp5_timer_dec10 dummy
+scoreboard objectives add jump3_cp5_timer_dec01 dummy
 
 # calculateur de temps
 
