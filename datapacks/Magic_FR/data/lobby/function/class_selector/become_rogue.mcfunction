@@ -17,4 +17,5 @@ execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team
 execute if entity @s[tag=red_team] run function main:stats/scoreboard/red_team_info/sort_red
 # si @s est rouge -> actualise la barre des joueurs rouges selon la classe de @s
 
-function lobby:hotbar_menu/main/give_items
+execute as @s[scores={hotbar_menu=0..1}] run function lobby:hotbar_menu/main/give_items
+# si @s est dans la selection de classe ou dans le menu principal -> le met dans le menu principal avec la bonne classe

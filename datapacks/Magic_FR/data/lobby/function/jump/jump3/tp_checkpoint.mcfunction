@@ -2,7 +2,7 @@
 ## tp @s au dernier checkpoint
 
 
-execute if score @s jump_checkpoint matches 0 run tp @s @e[type=marker,tag=jump_3_start,limit=1]
+execute if score @s jump_checkpoint matches 0 run tp @s -89 99 -9 180 0
 execute if score @s jump_checkpoint matches 0 store result score @s jump_start run stopwatch query minecraft:jump 20
 execute if score @s jump_checkpoint matches 1 run tp @s @e[type=marker,tag=jump_3_checkpoint1,limit=1]
 execute if score @s jump_checkpoint matches 2 run tp @s @e[type=marker,tag=jump_3_checkpoint2,limit=1]
