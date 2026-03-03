@@ -13,6 +13,8 @@ scoreboard players set @s spell3 3
 scoreboard players set @s maxarrow 6
 scoreboard players operation @s arrow = @s maxarrow
 # met le nombre de flèche et max de @s à 6
+scoreboard players operation @s explo_max_range_a = $lvl3 explo_max_range_a
+# donne la range du spell1 à @s
 
 scoreboard players set @s cooldownspell1 4
 scoreboard players set @s cooldownspell2 4
@@ -22,6 +24,7 @@ scoreboard players set @s cooldownspell3 4
 scoreboard players set @s cooldown1_clock 20
 scoreboard players set @s cooldown2_clock 20
 scoreboard players set @s cooldown3_clock 20
+
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell1 -1
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell2 -1
