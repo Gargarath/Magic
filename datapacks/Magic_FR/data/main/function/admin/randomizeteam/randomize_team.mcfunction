@@ -6,6 +6,9 @@ tag @a[scores={Player=0}] add not_on_team
 execute as @a[tag=not_on_team,tag=blue_team] run function lobby:hotbar_menu/team_selector/join_randomteam
 execute as @a[tag=not_on_team,tag=red_team] run function lobby:hotbar_menu/team_selector/join_randomteam
 
+kill @e[type=armor_stand,tag=blue_member]
+kill @e[type=armor_stand,tag=red_member]
+# clear les armor_stand d'équipe
 
 ### Permet de mettre successivement un joueur (sans équipe) dans l'équipe rouge et un joueur dans l'équipe bleue 6 fois
 
