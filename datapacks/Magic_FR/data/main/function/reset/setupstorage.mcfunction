@@ -190,3 +190,18 @@ data modify storage stats:leaderboards red.player9.head set value {"text":"\uE70
 data modify storage stats:leaderboards red.player10.head set value {"text":"\uE708",font:top_left_side}
 data modify storage stats:leaderboards red.player11.head set value {"text":"\uE708",font:top_left_side}
 data modify storage stats:leaderboards red.player12.head set value {"text":"\uE708",font:top_left_side}
+
+
+# SETUP LES CASES VIDES POUR LES GUI ICONE JUMP DE L'ARCHER
+data modify storage gui player.1.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.2.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.3.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.4.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.5.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.6.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.7.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.8.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.9.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.10.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.11.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+data modify storage gui player.12.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
