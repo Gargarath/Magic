@@ -46,7 +46,7 @@ execute as @e[type=marker,tag=lich_aoe] at @s run function ctf:secondary_objecti
 
 
 # gere la victoire d'une des deux équipes
-execute as @a[team=!spectator,nbt={Inventory:[{id:"minecraft:nether_star"}]}] run function ctf:secondary_objectives/bossfight/graveyard_map/picked_up_item
+execute as @a[scores={Player=1..},nbt={Inventory:[{id:"minecraft:nether_star"}]}] run function ctf:secondary_objectives/bossfight/graveyard_map/picked_up_item
 
-execute as @a[team=!spectator] at @s run function ctf:secondary_objectives/bossfight/graveyard_map/determine_targetable
+execute as @a[scores={Player=1..}] at @s run function ctf:secondary_objectives/bossfight/graveyard_map/determine_targetable
 # determine qui est ciblable par la liche

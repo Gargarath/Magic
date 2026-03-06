@@ -1,7 +1,7 @@
 ## appelé par stuf_archer si @s à son arme en slot 6
 ## lui donne son arme en slot 6
 
-item replace entity @s[scores={arrow=1,weapon1=0..},team=!spectator,tag=archer] hotbar.6 with stick[custom_name="Flèche",custom_data={arrows_slot:1b},custom_model_data={strings:["unusable_arrow"]}] 1
+item replace entity @s[scores={arrow=1,weapon1=0..,Player=1..},tag=archer] hotbar.6 with stick[custom_name="Flèche",custom_data={arrows_slot:1b},custom_model_data={strings:["unusable_arrow"]}] 1
 item replace entity @s[scores={arrow=2,weapon1=0..}] hotbar.6 with stick[custom_name="Flèche",custom_data={arrows_slot:1b},custom_model_data={strings:["unusable_arrow"]}] 2
 item replace entity @s[scores={arrow=3,weapon1=0..}] hotbar.6 with stick[custom_name="Flèche",custom_data={arrows_slot:1b},custom_model_data={strings:["unusable_arrow"]}] 3
 item replace entity @s[scores={arrow=4,weapon1=0..}] hotbar.6 with stick[custom_name="Flèche",custom_data={arrows_slot:1b},custom_model_data={strings:["unusable_arrow"]}] 4

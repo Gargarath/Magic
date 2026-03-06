@@ -24,7 +24,7 @@ execute if score invulnerable golem matches 1 as @e[type=iron_golem,tag=golem,li
 # actualise la bossbar maudit selon le temps de cast du golem
 
 # gere la victoire d'une des deux équipes
-execute as @a[team=!spectator,nbt={Inventory:[{id:"minecraft:emerald_block"}]}] run function ctf:secondary_objectives/bossfight/ruin_map/picked_up_item
+execute as @a[scores={Player=1..},nbt={Inventory:[{id:"minecraft:emerald_block"}]}] run function ctf:secondary_objectives/bossfight/ruin_map/picked_up_item
 
 
 execute if entity @a[tag=target] unless entity @a[tag=target,tag=targetable] as @e[type=iron_golem,tag=golem] run function ctf:secondary_objectives/bossfight/ruin_map/ai/reset_aggro
@@ -32,5 +32,5 @@ execute if entity @a[tag=target] unless entity @a[tag=target,tag=targetable] as 
 execute if entity @e[type=minecraft:zombie,tag=golem_waiting_spot] positioned -519 146 -111 if entity @e[tag=golem,distance=..2] run function ctf:secondary_objectives/bossfight/ruin_map/ai/freeze_golem
 # permet de freeze le golem une fois qu'il est retourné à son spot
 
-execute as @a[team=!spectator] at @s run function ctf:secondary_objectives/bossfight/ruin_map/determine_targetable
+execute as @a[scores={Player=1..}] at @s run function ctf:secondary_objectives/bossfight/ruin_map/determine_targetable
 # determine qui est ciblable par le golem

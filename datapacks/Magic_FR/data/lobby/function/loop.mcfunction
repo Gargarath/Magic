@@ -106,8 +106,8 @@ execute at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1
                                          #### CES COMMANDES PERMETENT DE GERER LA SELECTION D'EQUIPES #####
     # Bleu
 
-execute positioned -10.5 99 -17.5 as @a[distance=..2,tag=!blue_team,team=!spectator] run function lobby:team_selector/join_blueteam
-execute positioned -10.5 99 -17.5 run particle dust{color:[0.000,0.000,1.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!blue_team,team=!spectator]
+execute positioned -10.5 99 -17.5 as @a[distance=..2,tag=!blue_team,team=!spectator,team=!spectator_op] run function lobby:team_selector/join_blueteam
+execute positioned -10.5 99 -17.5 run particle dust{color:[0.000,0.000,1.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!blue_team,team=!spectator,team=!spectator_op]
 
 execute store result score blue playercount run execute if entity @a[tag=blue_team]
 execute if score $max blue_member > blue playercount run function lobby:team_selector/display_team_members/blue/remove_member
@@ -119,7 +119,7 @@ execute if score $max red_member > red playercount run function lobby:team_selec
 
     # Rouge
 
-execute positioned 11.5 99 -17.5 as @a[distance=..2,tag=!red_team,team=!spectator] run function lobby:team_selector/join_redteam
-execute positioned 11.5 99 -17.5 run particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!red_team,team=!spectator]
+execute positioned 11.5 99 -17.5 as @a[distance=..2,tag=!red_team,team=!spectator,team=!spectator_op] run function lobby:team_selector/join_redteam
+execute positioned 11.5 99 -17.5 run particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!red_team,team=!spectator,team=!spectator_op]
 
 execute store result score red playercount run execute if entity @a[tag=red_team]

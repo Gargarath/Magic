@@ -1,7 +1,7 @@
 ## appelé par determine_stuff
 ## lui donne son arme en fonction du slot choisit
 
-item replace entity @s[scores={weapon1=0},team=!spectator] hotbar.5 from block 13 95 17 container.12
+item replace entity @s[scores={weapon1=0,Player=1..}] hotbar.5 from block 13 95 17 container.12
 item replace entity @s[scores={weapon1=1}] hotbar.5 from block 13 95 17 container.13
 item replace entity @s[scores={weapon1=2}] hotbar.5 from block 13 95 17 container.14
 item replace entity @s[scores={weapon1=3}] hotbar.5 from block 13 95 17 container.15

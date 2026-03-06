@@ -2,14 +2,14 @@
 # permet d'appliquer les dmgs aux joueurs dans la zone
 
 
-execute as @e[type=#spellable,tag=in_explo5,scores={last_caster=0}] run function spells:spellsystem/spell1/spell1_a/took_spell1_a
+execute as @e[type=#spellable,tag=!spell_immune,tag=in_explo5,scores={last_caster=0}] run function spells:spellsystem/spell1/spell1_a/took_spell1_a
 # indique que @s est touché par la flèche explo (pour le kill feed)
 
-scoreboard players set @e[type=#spellable,tag=in_explo5,scores={last_caster=0}] last_caster 5
+scoreboard players set @e[type=#spellable,tag=!spell_immune,tag=in_explo5,scores={last_caster=0}] last_caster 5
 # tag pour check après 1 tick les pv des joueurs ou du boss - le tag dépend du numéro de joueur du caster
 
 
-execute at @e[type=#spellable,tag=in_explo5] run playsound minecraft:entity.arrow.hit_player master @a[scores={Player=5}] ~ ~ ~ 100 0
+execute at @e[type=#spellable,tag=!spell_immune,tag=in_explo5] run playsound minecraft:entity.arrow.hit_player master @a[scores={Player=5}] ~ ~ ~ 100 0
 # fait un son de hit au caster à l'endroit d'impact
 
 execute if score @a[scores={Player=5},limit=1] spell1 matches 1 as @a[tag=in_explo5] if entity @s[team=blue] if entity @a[scores={Player=5},team=blue] at @e[type=marker,tag=exploraycast5_1,limit=1] run function spells:spellsystem/spell1/spell1_a/apply_dmg/apply_dmg_by_ally_lvl1
@@ -37,6 +37,6 @@ execute if score @a[scores={Player=5},limit=1] spell1 matches 3 as @e[type=#boss
 # inflige les dégats au nom de @s (mob qui subit des dmgs)
 
 
-tag @e[type=#spellable,tag=in_explo5] remove in_explo5
+tag @e[type=#spellable,tag=!spell_immune,tag=in_explo5] remove in_explo5
 
 execute as @e[tag=exploraycast5] run function spells:spellsystem/spell1/spell1_a/delete_raycast_marker

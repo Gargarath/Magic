@@ -98,10 +98,10 @@ execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 effect clear @s[scores={Player=1..}] minecraft:invisibility
 effect clear @s[scores={Player=1..}] minecraft:resistance
 
-execute as @s[tag=warrior,team=!spectator] run function stuff:stuff_warrior/stuffwarrior
-execute as @s[tag=archer,team=!spectator] run function stuff:stuff_archer/stuffarcher
-execute as @s[tag=mage,team=!spectator] run function stuff:stuff_mage/stuffmage
-execute as @s[tag=rogue,team=!spectator,tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
+execute as @s[tag=warrior,scores={Player=1..}] run function stuff:stuff_warrior/stuffwarrior
+execute as @s[tag=archer,scores={Player=1..}] run function stuff:stuff_archer/stuffarcher
+execute as @s[tag=mage,scores={Player=1..}] run function stuff:stuff_mage/stuffmage
+execute as @s[tag=rogue,scores={Player=1..},tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
 # donne son stuff à @s
 
 

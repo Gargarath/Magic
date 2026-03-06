@@ -2,7 +2,7 @@
 ## lui donne son arme en slot 2
 
 # Niveau 0
-item replace entity @s[scores={weapon1=0},team=!spectator] hotbar.2 from block 13 95 13 container.0
+item replace entity @s[scores={weapon1=0,Player=1..}] hotbar.2 from block 13 95 13 container.0
 # Niveau 1
 item replace entity @s[scores={weapon1=1}] hotbar.2 from block 13 95 13 container.1
 # Niveau 2

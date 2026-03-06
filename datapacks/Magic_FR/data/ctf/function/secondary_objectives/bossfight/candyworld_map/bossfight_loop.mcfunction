@@ -19,7 +19,7 @@ execute if score invulnerable living_cherry matches 0 as @e[type=slime,tag=livin
 execute if score invulnerable living_cherry matches 1 as @e[type=slime,tag=living_cherry,limit=1] at @s if entity @a[tag=invisibility_r,distance=..6] run function ctf:secondary_objectives/bossfight/candyworld_map/ai/no_more_invulnerability
 
 # gere la victoire d'une des deux équipes
-execute as @a[team=!spectator,nbt={Inventory:[{id:"minecraft:slime_ball"}]}] run function ctf:secondary_objectives/bossfight/candyworld_map/picked_up_item
+execute as @a[scores={Player=1..},nbt={Inventory:[{id:"minecraft:slime_ball"}]}] run function ctf:secondary_objectives/bossfight/candyworld_map/picked_up_item
 
 execute if score is_dead living_cherry matches 0 as @e[type=minecraft:slime,tag=!targetable,limit=1] run function ctf:secondary_objectives/bossfight/candyworld_map/ai/cherry_out_of_zone
 # si la cerise est active et qu'il n'y a plus de target -> check si la cerise est encore dans la zone et si non la remet dedans

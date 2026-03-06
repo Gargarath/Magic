@@ -3,7 +3,7 @@
 
 effect clear @s luck
 
-execute if entity @s[type=#minecraft:spellable,nbt={active_effects:[{id:"minecraft:unluck"}]}] run tag @s add freeze_arrow
+execute if entity @s[type=#minecraft:spellable,tag=!spell_immune,nbt={active_effects:[{id:"minecraft:unluck"}]}] run tag @s add freeze_arrow
 
 scoreboard players set @s[type=player] explosive_player_timer 8
 execute if score @s Player matches 1 run bossbar set explosive_player:player1 value 8

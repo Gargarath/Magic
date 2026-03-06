@@ -9,18 +9,18 @@ playsound minecraft:entity.generic.explode master @a[distance=..15] ~ ~ ~ 100 1
 playsound minecraft:entity.generic.explode master @a[distance=16..,scores={Player=9}] ~ ~ ~ 100 1
 particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @a
 
-execute if score @a[scores={Player=9},limit=1] spell1 matches 1 as @e[type=#spellable,distance=..10] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
-execute if score @a[scores={Player=9},limit=1] spell1 matches 2 as @e[type=#spellable,distance=..12] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
-execute if score @a[scores={Player=9},limit=1] spell1 matches 3 as @e[type=#spellable,distance=..15] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
+execute if score @a[scores={Player=9},limit=1] spell1 matches 1 as @e[type=#spellable,tag=!spell_immune,distance=..10] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
+execute if score @a[scores={Player=9},limit=1] spell1 matches 2 as @e[type=#spellable,tag=!spell_immune,distance=..12] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
+execute if score @a[scores={Player=9},limit=1] spell1 matches 3 as @e[type=#spellable,tag=!spell_immune,distance=..15] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:9}
 # spawn des markers autour des joueurs dans la zone rayon de 10 blocs
 
 execute as @e[type=marker,tag=exploraycast9] run rotate @s facing ~ ~ ~
 # fait regarder ses marquers vers ici
 
 scoreboard players set @e[type=marker,tag=exploraycast9] explo_position_a 0
-execute if score @a[scores={Player=9},limit=1] spell1 matches 1 if entity @e[type=#spellable,distance=..10] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
-execute if score @a[scores={Player=9},limit=1] spell1 matches 2 if entity @e[type=#spellable,distance=..12] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
-execute if score @a[scores={Player=9},limit=1] spell1 matches 3 if entity @e[type=#spellable,distance=..15] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
+execute if score @a[scores={Player=9},limit=1] spell1 matches 1 if entity @e[type=#spellable,tag=!spell_immune,distance=..10] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
+execute if score @a[scores={Player=9},limit=1] spell1 matches 2 if entity @e[type=#spellable,tag=!spell_immune,distance=..12] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
+execute if score @a[scores={Player=9},limit=1] spell1 matches 3 if entity @e[type=#spellable,tag=!spell_immune,distance=..15] as @e[type=marker,tag=exploraycast9] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player9/dark_red
 # fait un raycast depuis les markers
 
 execute if score @s explosive_player_timer matches 0.. if score @s Player matches 1 run bossbar set explosive_player:player1 players
@@ -37,11 +37,11 @@ execute if score @s explosive_player_timer matches 0.. if score @s Player matche
 execute if score @s explosive_player_timer matches 0.. if score @s Player matches 12 run bossbar set explosive_player:player12 players
 scoreboard players reset @s explosive_player_timer
 
-scoreboard players reset @e[type=#spellable,scores={hit_by_explo=9}] hit_by_explo
+scoreboard players reset @e[type=#spellable,tag=!spell_immune,scores={hit_by_explo=9}] hit_by_explo
 # clear toutes les cibles de cette flèche explo
 
-scoreboard players operation @e[type=#spellable,tag=in_explo9,scores={last_caster=0}] hit_by_explo_charge = @s arrow_charge
-execute if entity @s[tag=freeze_arrow] as @e[type=#spellable,tag=in_explo9] run function spells:spellsystem/spell3/spell3_a/get_frozen/player9/test_lvl
+scoreboard players operation @e[type=#spellable,tag=!spell_immune,tag=in_explo9,scores={last_caster=0}] hit_by_explo_charge = @s arrow_charge
+execute if entity @s[tag=freeze_arrow] as @e[type=#spellable,tag=!spell_immune,tag=in_explo9] run function spells:spellsystem/spell3/spell3_a/get_frozen/player9/test_lvl
 # si la flèche est de glace -> freeze également
 
 tag @s remove freeze_arrow

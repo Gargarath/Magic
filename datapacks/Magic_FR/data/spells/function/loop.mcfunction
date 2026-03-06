@@ -86,7 +86,7 @@ execute as @e[type=#spellable,scores={arrow_owner=1..}] run function spells:arro
 
 
 # PASSIF Archer
-execute as @a[tag=invisibility_r,scores={loud_bar=1..}] run execute at @s run particle minecraft:effect ~ ~0.8 ~ 0.1 0.3 0.1 0 5 force @a[tag=archer,team=!spectator]
+execute as @a[tag=invisibility_r,scores={loud_bar=1..}] run execute at @s run particle minecraft:effect ~ ~0.8 ~ 0.1 0.3 0.1 0 5 force @a[tag=archer,scores={Player=1..}]
 
 execute as @e[type=minecraft:arrow,nbt={inGround:1b,life:20s}] unless entity @s[tag=explosive_arrow] at @s run function spells:arrow_detection/clear_ground_arrow
 # Detruit toute fleche 3s après qu'elle ait touché le sol
