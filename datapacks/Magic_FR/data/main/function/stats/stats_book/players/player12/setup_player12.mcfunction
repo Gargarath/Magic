@@ -26,7 +26,7 @@ execute if data storage stats:leaderboards by_player."12".kd_ratio.positive run 
 execute if data storage stats:leaderboards by_player."12".kd_ratio.big run function main:stats/stats_book/players/player12/ratio_big
 # si @s a un ratio positif ou grand -> change la couleur dans sa page 2
 
-data merge block 14 97 13 {front_text:{messages:[[{"text":"Statistiques de ","color":"gold","bold":true},{"nbt":"by_player.122.name","storage":"stats:leaderboards","interpret":true,"color":"white","bold":true}],"","",""]}}
+data merge block 14 97 13 {front_text:{messages:[[{"text":"Statistiques de ","color":"gold","bold":true},{"nbt":"by_player.12.name","storage":"stats:leaderboards","interpret":true,"color":"white","bold":true}],"","",""]}}
 data modify block 13 97 13 Items[{Slot:12b}].components."minecraft:custom_name" set from block 14 97 13 front_text.messages[0]
 # change le nom du livre
 
