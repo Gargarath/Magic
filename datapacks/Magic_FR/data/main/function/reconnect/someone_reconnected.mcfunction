@@ -41,5 +41,9 @@ execute store result score $count operator if entity @a[scores={operator=2}]
 execute if score $operator_access option_panel matches 0 if score @s operator matches 2 if score $count operator matches 2.. run function lobby:operator/leave_op
 # si on est en mode player_are_op et que @s est modo et qu'il y a déjà un modo -> enlève @s des modos
 
+execute as @a run attribute @s waypoint_receive_range base set 0
+schedule function ctf:locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir)
+
 function main:gui/display/refresh_gui
 # actualise la barre en haut de l'écran

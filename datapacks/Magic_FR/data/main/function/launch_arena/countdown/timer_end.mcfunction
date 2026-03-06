@@ -28,6 +28,10 @@ team modify blue collisionRule pushOtherTeams
 team modify red nametagVisibility hideForOtherTeams
 team modify blue nametagVisibility hideForOtherTeams
 
+execute as @a run attribute @s waypoint_receive_range base set 0
+schedule function ctf:locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir)
+
 schedule function ctf:timer/refresh_timer 1s
 # lance la boucle du chrono
 

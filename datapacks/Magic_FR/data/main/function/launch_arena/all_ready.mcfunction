@@ -169,6 +169,7 @@ scoreboard players set max_time time_to_obj 60
 # Affiche la bossbar objectif secondaire et prépare le crono
 
 gamemode spectator @a[scores={Player=-1}]
+
 execute if score selected_map variables matches 1 run function main:launch_arena/launch_map_pirate
 execute if score selected_map variables matches 2 run function main:launch_arena/launch_map_graveyard
 execute if score selected_map variables matches 3 run function main:launch_arena/launch_map_factory

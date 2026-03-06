@@ -153,6 +153,11 @@ execute if score selected_map variables matches 6 run function main:reset/reset_
 execute as @a[tag=Has_Blue_flag] run function ctf:locator_bar_flags/reset_waypoint
 execute as @a[tag=Has_Red_flag] run function ctf:locator_bar_flags/reset_waypoint
 # enlève les waypoint à tous les joueurs qui avaient un drapeau
+
+execute as @a run attribute @s waypoint_receive_range base set 0
+schedule function ctf:locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir)
+
 kill @e[tag=Spot_Red_flag]
 kill @e[tag=Spot_Blue_flag]
 kill @e[tag=Red_banner]
