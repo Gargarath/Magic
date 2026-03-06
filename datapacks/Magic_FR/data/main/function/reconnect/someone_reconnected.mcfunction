@@ -33,8 +33,8 @@ execute if score $secondary_objectives option_panel matches 1 if score on point_
 # si l'objectif secondaire est autorisé et qu'on est in game -> affiche la bossbar obj secondaire à tous
 execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_blue players
 execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_red players
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_blue players @a[team=!red]
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_red players @a[team=red]
+execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_blue players @a[tag=!red_team]
+execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_red players @a[tag=red_team]
 # si l'objectif secondaire a commencé mais n'est pas fini, affiche la bonne bossbar à tous
 
 execute store result score $count operator if entity @a[scores={operator=2}]

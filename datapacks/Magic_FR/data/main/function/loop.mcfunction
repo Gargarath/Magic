@@ -5,7 +5,7 @@
 
 ## RECONNECTION
 
-execute as @a[scores={disconnected=1..}] run function main:reconnect/someone_reconnected
+execute as @a[tag=initialised,scores={disconnected=1..}] run function main:reconnect/someone_reconnected
 
 ## RESSOURCE PACK DETECTION
 scoreboard players remove @a[scores={nopack_detection=1..}] nopack_detection 1

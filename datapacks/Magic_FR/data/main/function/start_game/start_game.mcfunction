@@ -1,7 +1,8 @@
 # Appelée par lobby:start_sign/start_sign_yes permet de commencer une partie
 
 title @a reset
-# clear les title de tous les joueurs
+dialog clear @a
+# clear les title et dialog de tous les joueurs
 
 scoreboard players set @a drop_item 0
 scoreboard players set @a hotbar_menu 0

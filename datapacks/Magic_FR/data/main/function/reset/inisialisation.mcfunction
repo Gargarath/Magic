@@ -145,3 +145,8 @@ bossbar set minecraft:aaa_placeholder players @a
 
 function main:gui/display/refresh_gui
 # refresh le gui
+
+# ---------
+
+execute if score lobby enable_loop matches 0 unless score @s Player matches -1 run function main:reconnect/someone_joined_during_match
+# si une game est déjà lancée et que @s n'est pas encore mis en spec -> le met en spec

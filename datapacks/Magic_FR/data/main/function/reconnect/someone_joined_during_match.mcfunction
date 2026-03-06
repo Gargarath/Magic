@@ -29,6 +29,7 @@ scoreboard players set @s Player -1
 team join spectator @s
 scoreboard players set @s InLobby 0
 effect give @s minecraft:invisibility infinite 0 true
+clear @s
 # permet à @s de devenir spectateur
 
 tag @s remove hurt
@@ -61,6 +62,7 @@ attribute @s minecraft:waypoint_receive_range base reset
 # remet la locator bar de tous
 
 title @s times 0 1000000000 0
+dialog clear @s
 
 tellraw @s ["",{"text":"Une partie a déjà commencée ! Vous êtes automatiquement passé en mode spectateur.","italic":true,"color":"gray"}]
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2

@@ -76,7 +76,6 @@ scoreboard players reset @s spec_player12
 scoreboard players reset @s spec_stop
 # reset les trigger de tous
 
-
 gamemode spectator @s[scores={Player=-1}]
 tp @s[scores={Player=-1}] @r[scores={Player=1..}]
 # tp @s a un joueur (si il est spectateur)
