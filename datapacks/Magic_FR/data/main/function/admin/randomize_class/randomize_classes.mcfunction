@@ -4,35 +4,32 @@ tag @a[scores={Player=0}] remove warrior
 tag @a[scores={Player=0}] remove archer
 tag @a[scores={Player=0}] remove mage
 tag @a[scores={Player=0}] remove rogue
-team join lobby @a[scores={Player=0},tag=!blue_team,tag=!red_team]
-team join blue @a[scores={Player=0},tag=blue_team]
-team join red @a[scores={Player=0},tag=red_team]
 
 
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
-execute as @r[scores={Player=0},team=blue,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
-execute as @r[scores={Player=0},team=red,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_archer
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_mage
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_warrior
+execute as @r[scores={Player=0},tag=blue_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
+execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] run function lobby:class_selector/become_rogue
 
 execute as @a[scores={Player=0}] run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 execute as @a[scores={Player=0}] run function main:ressource_pack_detector/display_something_else/show_another_message
