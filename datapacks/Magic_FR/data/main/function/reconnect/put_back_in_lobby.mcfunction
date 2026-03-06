@@ -49,10 +49,12 @@ execute if score yes used_reset matches 1 run tp @s 0 100 0 180 0
 
 function lobby:hotbar_menu/drop_item
 
+attribute @s minecraft:waypoint_receive_range base set 0
+# enlève la locator bar de @s
 attribute @s minecraft:entity_interaction_range base set 17
 # augmente la portée d'interaction à @s (pour les menus)
-execute as @a run attribute @s minecraft:block_interaction_range base set 4.5
-# reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)
+attribute @s minecraft:block_interaction_range base set 4.5
+# reset la portée d'interaction block à @s (utilisé dans le shop pour les panneaux du shop)
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 # indique à @s qu'il est passé en mode spectateur

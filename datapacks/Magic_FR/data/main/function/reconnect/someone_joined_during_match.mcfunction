@@ -57,6 +57,9 @@ execute if score ctf enable_loop matches 1 if score selected_map variables match
 execute if score ctf enable_loop matches 1 if score selected_map variables matches 2 run spawnpoint @s 223 52 -320
 # si les joueurs sont sur une map passe @s en mode spectateur déffini son spawn et le tp à un joueur aléatoire et réaffiche le timer à @a
 
+attribute @s minecraft:waypoint_receive_range base reset
+# remet la locator bar de tous
+
 title @s times 0 1000000000 0
 
 tellraw @s ["",{"text":"Une partie a déjà commencée ! Vous êtes automatiquement passé en mode spectateur.","italic":true,"color":"gray"}]

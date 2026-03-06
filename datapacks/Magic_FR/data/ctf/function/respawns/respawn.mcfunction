@@ -73,5 +73,9 @@ execute if entity @s[team=respawn_red] run function ctf:respawns/calculate_respa
 # calcule le temps de respawn selon l'équipe d'@s
 
 
+execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
+schedule function ctf:locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)
+
 tag @s remove killed_by_hand
 # enlève le truc qui dit que @s est mort par une arme

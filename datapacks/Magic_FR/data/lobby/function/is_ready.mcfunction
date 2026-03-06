@@ -38,6 +38,9 @@ tag @a remove in_own_spawn
 
 effect clear @a minecraft:regeneration
 
+execute as @a run attribute @s minecraft:waypoint_receive_range base set 0
+# enlève la locator bar de tous
+
 execute as @a run attribute @s minecraft:entity_interaction_range base set 40
 # augmente la portée d'interaction à tous (pour les menus)
 

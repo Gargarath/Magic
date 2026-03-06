@@ -162,6 +162,9 @@ scoreboard players set @a[team=non_ready_red] team_last_game 2
 clone -4 -52 56 -4 -52 56 -4 -51 56
 # rend le levier de particule des specs utilisable
 
+execute as @a run attribute @s minecraft:waypoint_receive_range base reset
+# remet la locator bar de tous
+
 execute as @a run attribute @s minecraft:block_interaction_range base set 20
 # augmente la portée d'interaction block à tous (pour les panneaux du shop)
 

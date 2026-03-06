@@ -52,10 +52,12 @@ clear @s[scores={Player=1..}]
 item replace entity @s[scores={Player=1..}] armor.head from block 13 97 11 container.2
 tag @s[scores={Player=1..}] add save_inventory
 
-execute as @s run attribute @s minecraft:entity_interaction_range base set 3
-# redonne la portée d'interaction de base à tous
-execute as @s run attribute @s minecraft:block_interaction_range base set 4.5
-# reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)
+attribute @s minecraft:waypoint_receive_range base reset
+# remet la locator bar de @s
+attribute @s minecraft:entity_interaction_range base set 3
+# redonne la portée d'interaction de base à @s
+attribute @s minecraft:block_interaction_range base set 4.5
+# reset la portée d'interaction block à @s (utilisé dans le shop pour les panneaux du shop)
 
 scoreboard players reset @s ready_sign
 scoreboard players reset @s reset_frameroom

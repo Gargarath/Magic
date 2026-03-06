@@ -33,7 +33,6 @@ execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 
 execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_blue
 execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
-###
 
 execute as @a run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message

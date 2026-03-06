@@ -5,6 +5,10 @@ scoreboard players set @s respawn_time -1
 team join blue @s[team=respawn_blue]
 team join red @s[team=respawn_red]
 
+execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
+schedule function ctf:locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)
+
 execute as @s[scores={Player=1}] run bossbar set respawn:player1 players
 execute as @s[scores={Player=2}] run bossbar set respawn:player2 players
 execute as @s[scores={Player=3}] run bossbar set respawn:player3 players

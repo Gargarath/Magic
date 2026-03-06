@@ -16,6 +16,7 @@ function lobby:team_selector/give_lobby_team
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
+
 tellraw @s {"text":"Votre équipe sera choisie aléatoirement !","color":"light_purple","bold":false}
 execute if score @s hotbar_menu matches 0 run function lobby:hotbar_menu/main/give_items
 execute if score @s hotbar_menu matches 2 run function lobby:hotbar_menu/main/give_items

@@ -61,6 +61,8 @@ function main:reset/resetclass
 function main:stats/reset_stats
 effect clear @s
 
+attribute @s minecraft:waypoint_receive_range base set 0
+# enlève la locator bar de @s
 attribute @s minecraft:attack_speed base set 50
 # met en vitesse de pvp 1.8
 attribute @s minecraft:entity_interaction_range base set 40

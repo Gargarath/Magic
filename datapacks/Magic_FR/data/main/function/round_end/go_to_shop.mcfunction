@@ -67,7 +67,7 @@ execute as @a[tag=Has_Red_flag] run function ctf:locator_bar_flags/reset_waypoin
 
 execute as @a run attribute @s waypoint_receive_range base set 0
 schedule function ctf:locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir)
+# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe)
 
 kill @e[tag=Spot_Red_flag]
 kill @e[tag=Spot_Blue_flag]
