@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat III - 30 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 3\n \n+1 emplacement de flèche.\n \n"}],background:16711680}
+data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat III - 30 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 3 : 10 à 20 points de dégats (selon charge)\n\nCarquois  : 2 flèches\n\n \n"}],background:16711680}
 
 
 ## LEVEL
