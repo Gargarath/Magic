@@ -36,12 +36,14 @@ execute if score $no_cooldowns option_panel matches 0 run execute if entity @s[t
 
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={spell3_w:1b,spell3_slot:1b}]
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown3_clock 20
-execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_warrior/cooldowns_w/spell3/spell3lvl1_w
+
 # give @s his cooldown item
 
-execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell3 0
+execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell3 2
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown3_clock 5
-# give no cooldown if option is enabled
+# give lower cooldown if option is enabled
+
+function stuff:stuff_warrior/cooldowns_w/spell3/spell3lvl1_w
 
 tag @s remove short_hook
 # remove the tag that reduce cooldown from @s
