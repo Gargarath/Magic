@@ -6,7 +6,6 @@ title @a[team=respawn_blue] subtitle {"text":"Votre équipe a été éliminée !
 title @a[team=red] subtitle {"text":"Equipe adverse éliminée !","italic":true}
 title @a[team=spectator] subtitle {"text":"Equipe bleue éliminée !","italic":true,"color":"blue"}
 title @a[team=respawn_red] subtitle {"text":"Equipe adverse éliminée !","italic":true}
-scoreboard players add @a[team=respawn_blue] max_respawn_bar 40
 execute as @a[team=respawn_blue] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 0
 execute as @a[team=red] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 1
 execute as @a[team=respawn_red] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 1
