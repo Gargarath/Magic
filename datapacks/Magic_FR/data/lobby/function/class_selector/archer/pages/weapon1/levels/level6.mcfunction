@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat VI - 60 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 4 : 12 à 23 points de dégats (selon charge)\n\nRecul 1\n\nCarquois  : 4 flèches\n"}],background:16711680}
+data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat VI - 60 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 4 : 12 à 23 points de dégats (selon la charge)\n\nRecul 1\n\nCarquois  : 4 flèches\n"}],background:16711680}
 
 
 ## LEVEL

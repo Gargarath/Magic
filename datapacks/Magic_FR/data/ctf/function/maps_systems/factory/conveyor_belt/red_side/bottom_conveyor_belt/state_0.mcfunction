@@ -3,7 +3,7 @@
 
         # JOUEURS
 execute as @a[gamemode=adventure,scores={trapped=-1,hooked_w=-1},x=282.0,y=152.3,z=17.9,dx=79,dy=0.6,dz=0.5,tag=!conveyor_belt_red_bottom] if data entity @s {OnGround:1b} run function ctf:maps_systems/factory/conveyor_belt/red_side/bottom_conveyor_belt/joined_conveyor
-execute as @a[gamemode=adventure,scores={trapped=-1,hooked_w=-1},x=282.0,y=152.3,z=17.9,dx=79,dy=0.6,dz=0.5,tag=conveyor_belt_red_bottom] unless entity @s[x=282.0,y=152.3,z=17.9,dx=79,dy=0.6,dz=0.5] run function ctf:maps_systems/factory/conveyor_belt/red_side/bottom_conveyor_belt/left_conveyor
+execute as @a[gamemode=adventure,scores={trapped=-1,hooked_w=-1},tag=conveyor_belt_red_bottom] unless entity @s[x=282.0,y=152.3,z=17.9,dx=79,dy=0.6,dz=0.5] run function ctf:maps_systems/factory/conveyor_belt/red_side/bottom_conveyor_belt/left_conveyor
 # tp les joueurs qui sont sur le tapis vert foncé vers l'est
 
 scoreboard players add @a[tag=conveyor_belt_red_bottom] conveyor_belt 1
