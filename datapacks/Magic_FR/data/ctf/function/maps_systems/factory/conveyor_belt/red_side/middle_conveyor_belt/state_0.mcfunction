@@ -7,7 +7,7 @@ execute as @a[gamemode=adventure,scores={trapped=-1,hooked_w=-1},tag=conveyor_be
 # tp les joueurs qui sont sur le tapis vert foncé vers l'est
 
 scoreboard players add @a[tag=conveyor_belt_red_middle] conveyor_belt 1
-execute as @a[tag=conveyor_belt_red_middle,scores={conveyor_belt=2..},x=332.9,y=155.3,z=-18.9,dx=0.5,dy=0.6,dz=55] at @s run function ctf:maps_systems/factory/conveyor_belt/red_side/middle_conveyor_belt/move_state_0
+execute as @a[gamemode=adventure,tag=conveyor_belt_red_middle,scores={conveyor_belt=2..},x=332.9,y=155.3,z=-18.9,dx=0.5,dy=0.6,dz=55] at @s run function ctf:maps_systems/factory/conveyor_belt/red_side/middle_conveyor_belt/move_state_0
         # BLOCK DISPLAY
 
 # tapis bleu clair

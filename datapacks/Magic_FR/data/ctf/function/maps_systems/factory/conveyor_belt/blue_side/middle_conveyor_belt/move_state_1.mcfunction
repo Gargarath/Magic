@@ -2,4 +2,4 @@
 # tag @s et reset son score
 
 scoreboard players set @s conveyor_belt 0
-tp @s ~ ~ ~-0.4
+tp @s ~ ~ ~-0.3
