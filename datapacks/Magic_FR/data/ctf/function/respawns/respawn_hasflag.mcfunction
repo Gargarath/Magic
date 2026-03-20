@@ -3,7 +3,7 @@
 execute if score @s killfeed_died_checked < @s killfeed_died run function ctf:killfeed/not_another_entity/_determine_how_died
 # si le killfeed n'a pas déterminé comment @s est mort (donc pas par une autre entité) -> determine comment il est mort
 
-execute if score @s using_berzerk matches 1.. run scoreboard players set @s using_berzerk 0
+execute if score @s using_berzerk matches 1.. run function spells:spellsystem/spell1/spell1_w/no_more_berzerk
 # si @s était en berzerk, l'annule
 
 execute if score @s thunderstrm_time matches 0.. run function spells:spellsystem/spell2/spell2_m/die_with_thunderstorm
@@ -69,6 +69,9 @@ execute if entity @s[tag=targetable] run tag @s remove targetable
 execute if entity @s[team=respawn_blue] run function ctf:respawns/calculate_respawn_time_blue
 execute if entity @s[team=respawn_red] run function ctf:respawns/calculate_respawn_time_red
 # calcule le temps de respawn selon l'équipe d'@s
+
+function spells:cooldowns/reset_cooldown
+# reset les temps de recharge de @s
 
 execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
 schedule function ctf:locator_bar_flags/enable_waypoint 1t
