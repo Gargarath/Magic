@@ -26,6 +26,7 @@
 	"minecraft:glow_lichen",
 	"minecraft:light",
 	"minecraft:lily_pad",
-	"minecraft:player_head"
+	"minecraft:player_head",
+	"minecraft:end_rod"
   ]
 }
