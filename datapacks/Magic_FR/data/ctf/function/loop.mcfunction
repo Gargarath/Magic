@@ -88,12 +88,12 @@ execute as @a[scores={IsAlive=7..10}] run function ctf:respawns/respawn
 
 # Rouge
 
-execute at @e[tag=Red_flag] run execute if entity @a[team=blue,dy=3,distance=..0.7,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute unless entity @a[distance=..10,scores={IsAlive=600..}] run execute as @r[team=blue,dy=3,distance=..0.7,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function ctf:capflag/cap_redflag
+execute at @e[tag=Red_flag] run execute if entity @a[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute unless entity @a[distance=..10,scores={IsAlive=600..}] run execute as @r[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function ctf:capflag/cap_redflag
 # Execute la fonction ctf:capflag/cap_redflag au nom de celui qui cap le drapeau rouge
 
 # Bleu
 
-execute at @e[tag=Blue_flag] run execute if entity @a[team=red,dy=3,distance=..0.7,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute unless entity @a[distance=..10,scores={IsAlive=600..}] run execute as @r[team=red,dy=3,distance=..0.7,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function ctf:capflag/cap_blueflag
+execute at @e[tag=Blue_flag] run execute if entity @a[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute unless entity @a[distance=..10,scores={IsAlive=600..}] run execute as @r[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function ctf:capflag/cap_blueflag
 # Execute la fonction ctf:capflag/cap_blueflag au nom de celui qui cap le drapeau rouge
 
     # Gere la pause des drapeaux
@@ -101,12 +101,12 @@ execute at @e[tag=Blue_flag] run execute if entity @a[team=red,dy=3,distance=..0
 
 # Rouge
 
-execute unless entity @e[tag=Has_Blue_flag,tag=!droped] run execute at @e[tag=Blue_flag] if entity @a[team=blue,dy=3,distance=..0.7,tag=Has_Red_flag] run execute as @a[team=blue,dy=3,distance=..0.7,tag=Has_Red_flag] run function ctf:poseflag/poseflag_redflag
+execute unless entity @e[tag=Has_Blue_flag,tag=!droped] run execute at @e[tag=Blue_flag] if entity @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] run execute as @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] run function ctf:poseflag/poseflag_redflag
 # Execute la fonction ctf:poseflag/poseflag_redflag au nom de celui qui pose le drapeau rouge
 
 # Bleu
 
-execute unless entity @e[tag=Has_Red_flag,tag=!droped] run execute at @e[tag=Red_flag] if entity @a[team=red,dy=3,distance=..0.7,tag=Has_Blue_flag] run execute as @a[team=red,dy=3,distance=..0.7,tag=Has_Blue_flag] run function ctf:poseflag/poseflag_blueflag
+execute unless entity @e[tag=Has_Red_flag,tag=!droped] run execute at @e[tag=Red_flag] if entity @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] run execute as @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] run function ctf:poseflag/poseflag_blueflag
 # Execute la fonction ctf:poseflag/poseflag_blueflag au nom de celui qui pose le drapeau rouge
 
     # Gere le drop des drapeaux
@@ -127,20 +127,20 @@ execute as @a[tag=Has_Blue_flag,scores={IsAlive=501}] run function ctf:dropflag/
 
 # Rouge
 
-execute at @e[tag=Red_flag,tag=droped] run execute as @a[team=red,dy=3,distance=..0.7,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:saveflag/bossbar/detect_player_number
+execute at @e[tag=Red_flag,tag=droped] run execute as @a[team=red,distance=..0.9,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:saveflag/bossbar/detect_player_number
 # augmente le score de save_flag_time du joueur rouge en train de ramener son drapeau
-execute as @a[scores={save_flag_time=1..,using_berzerk=-1},team=red,tag=!cant_pickup_flag] at @s unless entity @e[tag=Red_flag,tag=droped,distance=..0.7] run function ctf:saveflag/stop_saving
+execute as @a[scores={save_flag_time=1..,using_berzerk=-1},team=red,tag=!cant_pickup_flag] at @s unless entity @e[tag=Red_flag,tag=droped,distance=..0.9] run function ctf:saveflag/stop_saving
 # reset le score de save_flag_time du joueur rouge qui ne ramène plus son drapeau et lui enleve la bossbar qui indique le temps de réccupération
-execute at @e[tag=Red_flag,tag=droped] run execute as @a[team=red,dy=3,distance=..0.7,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 60.. run function ctf:saveflag/saveflag_redflag
+execute at @e[tag=Red_flag,tag=droped] run execute as @a[team=red,distance=..0.9,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 60.. run function ctf:saveflag/saveflag_redflag
 # ramene le drapeau rouge à sa base et reset la bossbar de celui qui le ramène
 
 # Bleu
 
-execute at @e[tag=Blue_flag,tag=droped] run execute as @a[team=blue,dy=3,distance=..0.7,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:saveflag/bossbar/detect_player_number
+execute at @e[tag=Blue_flag,tag=droped] run execute as @a[team=blue,distance=..0.9,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:saveflag/bossbar/detect_player_number
 # augmente le score de save_flag_time du joueur rouge en train de ramener son drapeau
-execute as @a[scores={save_flag_time=1..,using_berzerk=-1},team=blue,tag=!cant_pickup_flag] at @s unless entity @e[tag=Blue_flag,tag=droped,distance=..0.7] run function ctf:saveflag/stop_saving
+execute as @a[scores={save_flag_time=1..,using_berzerk=-1},team=blue,tag=!cant_pickup_flag] at @s unless entity @e[tag=Blue_flag,tag=droped,distance=..0.9] run function ctf:saveflag/stop_saving
 # reset le score de save_flag_time du joueur rouge qui ne ramène plus son drapeau et lui enleve la bossbar qui indique le temps de réccupération
-execute at @e[tag=Blue_flag,tag=droped] run execute as @a[team=blue,dy=3,distance=..0.7,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 60.. run function ctf:saveflag/saveflag_blueflag
+execute at @e[tag=Blue_flag,tag=droped] run execute as @a[team=blue,distance=..0.9,limit=1,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 60.. run function ctf:saveflag/saveflag_blueflag
 # ramene le drapeau rouge à sa base et reset la bossbar de celui qui le ramène
 
                                          #### TIMER 3/2/1 du début
