@@ -1,4 +1,4 @@
-## appelée par setup_playerX si a un ratio positif
+Slot:3b## appelée par setup_playerX si a un ratio positif
 # adapte la deuxième page de son livre pour afficher le ratio
 
 
@@ -12,11 +12,11 @@ data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_c
 data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value "\n\n"
 
 # 3) Kills / morts / dégâts (scores du lecteur @s)
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_killcount","storage":"stats:leaderboards","color":"red","bold":false}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" kills\n\n",color:"black",bold:0b}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_deathcount","storage":"stats:leaderboards","color":"red","bold":false}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" morts\n\n",bold:0b}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_total_dmg","storage":"stats:leaderboards","color":"red","bold":false}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" dégâts infligés\n\n",bold:0b}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_dmg_taken","storage":"stats:leaderboards","color":"red","bold":false}
-data modify block 13 97 13 Items[{Slot:1b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" dégâts reçus",bold:0b}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_killcount","storage":"stats:leaderboards","color":"red","bold":false}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" kills\n\n",color:"black",bold:0b}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_deathcount","storage":"stats:leaderboards","color":"red","bold":false}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" morts\n\n",bold:0b}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_total_dmg","storage":"stats:leaderboards","color":"red","bold":false}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" dégâts infligés\n\n",bold:0b}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {"nbt":"by_player.3.stat_dmg_taken","storage":"stats:leaderboards","color":"red","bold":false}
+data modify block 13 97 13 Items[{Slot:3b}].components."minecraft:written_book_content".pages[1].raw.extra append value {text:" dégâts reçus",bold:0b}
