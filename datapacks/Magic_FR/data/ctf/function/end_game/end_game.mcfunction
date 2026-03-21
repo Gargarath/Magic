@@ -89,9 +89,6 @@ function main:stats/leaderboard/clear_leaderboard
 schedule function main:stats/leaderboard/setup_leaderboard_endgame 1t
 # permet de calculer le classement des joueurs et d'actualiser le leaderboard du spawn
 
-function main:stats/stats_book/give_stat_books
-# lance le système de livre de stats
-
 scoreboard players set Rouges Flag_posed 0
 scoreboard players set Bleus Flag_posed 0
 execute store result storage minecraft:matchinfo.blue score1 int 1 run scoreboard players get Bleus Flag_posed
