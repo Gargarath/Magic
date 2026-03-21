@@ -12,6 +12,7 @@ function main:stats/leaderboard/sort_gstats/sort_final_score/refresh_gstat_leade
 
 function main:stats/stats_book/give_stat_books
 # lance le système de livre de stats
+execute as @a run function lobby:hotbar_menu/main/give_items
 
 scoreboard players set current_page leaderboard 1
 execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/final_score
