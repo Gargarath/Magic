@@ -30,6 +30,7 @@ function lobby:map_island/reset_maps
 execute as @a[tag=in_map_display] run function lobby:map_island/quit_maps
 # vire les joueurs en visite de map et prépare les maps
 
+execute as @a[tag=jump_spec] run function lobby:jump/spectator/leave_spec
 execute as @a[tag=in_jump] run function lobby:jump/quit_jump
 # vire les joueurs en jump
 

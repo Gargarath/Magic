@@ -25,6 +25,8 @@ execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[ty
 execute as @a[tag=jumping,tag=!jump_hide_close_players,tag=in_jump] at @s if entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/invisible
 execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/no_more_invisible
 
+execute as @a[tag=jump_spec] unless entity @s[x=-204,y=77,z=-93,dx=145,dy=71,dz=168] run tp @s -79.5 103.0 -0.4 448 11.5
+execute as @a[tag=jump_spec,scores={quit=1..}] run function lobby:jump/spectator/quit_spec
                                         ## ARENE ##
 # lave
 execute as @a[tag=in_lobby_arena,scores={Player=1..}] at @s if block ~ ~ ~ lava run function lobby:arena/in_lava
@@ -63,7 +65,7 @@ execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data e
 
                                         ## MAP ISLAND ##
 
-execute as @a[scores={quit=1..}] run function lobby:map_island/commands/quit_map
+execute as @a[tag=spec_map,scores={quit=1..}] run function lobby:map_island/commands/quit_map
 execute as @a[scores={gamemode=1..}] run function lobby:map_island/commands/gamemode
 execute as @a[scores={blue_spawn=1..}] run function lobby:map_island/commands/tp_blue_spawn
 execute as @a[scores={blue_flag=1..}] run function lobby:map_island/commands/tp_blue_flag

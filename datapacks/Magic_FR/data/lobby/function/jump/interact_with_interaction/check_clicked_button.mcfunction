@@ -26,6 +26,8 @@ execute if entity @s[type=interaction,tag=jump_3_clickable_4] if data entity @s 
 execute if entity @s[type=interaction,tag=jump_3_clickable_5] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank5
 execute if entity @s[type=interaction,tag=jump_3_clickable_6] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank6
 
+execute if entity @s[type=interaction,tag=jump_spec_clickable] if data entity @s interaction on target run function lobby:jump/spectator/become_spec
+
 execute on target at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
 
 data remove entity @s interaction

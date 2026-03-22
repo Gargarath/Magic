@@ -4,6 +4,7 @@
 scoreboard players set $lobby_jump option_panel 0
 
 tp @a[tag=in_jump] 0 100 0 180 0
+execute as @a[tag=jump_spec] run function lobby:jump/spectator/leave_spec
 execute as @a[tag=in_jump] run function lobby:jump/quit_jump
 # sort les joueurs du jump
 
