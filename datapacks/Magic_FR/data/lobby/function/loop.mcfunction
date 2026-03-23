@@ -101,7 +101,8 @@ execute as @a[gamemode=adventure,tag=!in_lobby_arena,tag=!spec_map] at @s if pre
 
 ## PADS
 
-execute as @a if predicate minecraft:step_on_slimeblock if entity @s[nbt={OnGround:1b}] run function lobby:slime_pads
+execute as @a if predicate minecraft:step_on_slimeblock if entity @s[nbt={OnGround:1b},tag=!on_pads] run function lobby:joined_slime_pads
+execute as @a[tag=on_pads] at @s unless block ~ ~-1 ~ slime_block run function lobby:left_slime_pads
 execute at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1 0 2 normal
 
 
