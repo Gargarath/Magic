@@ -1,4 +1,4 @@
-Slot:3b## appelée par setup_playerX si a un ratio positif
+## appelée par setup_playerX si a un ratio positif
 # adapte la deuxième page de son livre pour afficher le ratio
 
 
