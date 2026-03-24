@@ -1,7 +1,7 @@
 ## Appelée par sort_stats/sort_stats
 
 data modify storage stats:leaderboards by_stat.stat_killcount set value {}
-# reset la partie bow_damage du storage
+# reset la partie killcount du storage
 
 scoreboard players set @a[scores={played_last_game=1}] played_last_game 2
 # ajoute tous les joueurs de la dernière game à la liste de ceux qui doivent être triés
