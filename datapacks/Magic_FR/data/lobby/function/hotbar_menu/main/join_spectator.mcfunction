@@ -12,7 +12,7 @@ scoreboard players reset @s blue_member
 scoreboard players set @s usespell 0
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s {"bold":false,"color":"yellow","text":"Vous avez rejoint le mode spectateur !"}
+
 
 
 tag @s add spell_immune
@@ -22,10 +22,12 @@ tag @s[tag=red_team] add red_spectator
 tag @s remove blue_team
 tag @s remove red_team
 
-function lobby:team_selector/give_lobby_team
-# Donne la bonne équipe de lobby à @s
-
-
-function lobby:hotbar_menu/main/give_spectator_item
+# si on est dans le lobby (si @s ne se co pas en pleine game)
+execute if score lobby enable_loop matches 1 run function lobby:team_selector/give_lobby_team
+# si on est dans le lobby -> Donne la bonne équipe de lobby à @s
+execute if score lobby enable_loop matches 1 run tellraw @s {"bold":false,"color":"yellow","text":"Vous avez rejoint le mode spectateur !"}
+# si on est dans le lobby -> Indique à @s qu'il est en spec
+execute if score lobby enable_loop matches 1 run function lobby:hotbar_menu/main/give_spectator_item
+# si on est dans le lobby -> donne l'équipement du lobby à @s
 
 scoreboard players set @s Player -1
