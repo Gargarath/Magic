@@ -7,8 +7,8 @@ function lobby:check_game_startable/matchmaking/save_class_and_team
 # sauvegarde les équipes et classes déjà séléctionnées
 
 tag @a[tag=!blue_spectator,tag=!red_spectator] remove mm_needs
-tag @a[scores={team_side=0},tag=!blue_spectator,tag=!red_spectator] add mm_needs
-tag @a[scores={class_id=0},tag=!blue_spectator,tag=!red_spectator] add mm_needs
+tag @a[scores={team_side=0,Player=0},tag=!blue_spectator,tag=!red_spectator] add mm_needs
+tag @a[scores={class_id=0,Player=0},tag=!blue_spectator,tag=!red_spectator] add mm_needs
 #Marquer ceux qui ont besoin d'une assignation (sans équipe OU sans classe)
 
 

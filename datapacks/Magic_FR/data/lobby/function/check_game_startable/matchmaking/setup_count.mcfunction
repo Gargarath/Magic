@@ -16,15 +16,15 @@ scoreboard players set #m_red mm_count 0
 scoreboard players set #r_red mm_count 0
 
 # Comptes (on tient compte de tout le monde déjà fixé)
-execute as @a[scores={team_side=1}] run scoreboard players add #blue mm_count 1
-execute as @a[scores={team_side=2}] run scoreboard players add #red mm_count 1
+execute as @a[scores={team_side=1,Player=0}] run scoreboard players add #blue mm_count 1
+execute as @a[scores={team_side=2,Player=0}] run scoreboard players add #red mm_count 1
 
-execute as @a[scores={team_side=1,class_id=1}] run scoreboard players add #w_blue mm_count 1
-execute as @a[scores={team_side=1,class_id=2}] run scoreboard players add #a_blue mm_count 1
-execute as @a[scores={team_side=1,class_id=3}] run scoreboard players add #m_blue mm_count 1
-execute as @a[scores={team_side=1,class_id=4}] run scoreboard players add #r_blue mm_count 1
+execute as @a[scores={team_side=1,class_id=1,Player=0}] run scoreboard players add #w_blue mm_count 1
+execute as @a[scores={team_side=1,class_id=2,Player=0}] run scoreboard players add #a_blue mm_count 1
+execute as @a[scores={team_side=1,class_id=3,Player=0}] run scoreboard players add #m_blue mm_count 1
+execute as @a[scores={team_side=1,class_id=4,Player=0}] run scoreboard players add #r_blue mm_count 1
 
-execute as @a[scores={team_side=2,class_id=1}] run scoreboard players add #w_red mm_count 1
-execute as @a[scores={team_side=2,class_id=2}] run scoreboard players add #a_red mm_count 1
-execute as @a[scores={team_side=2,class_id=3}] run scoreboard players add #m_red mm_count 1
-execute as @a[scores={team_side=2,class_id=4}] run scoreboard players add #r_red mm_count 1
+execute as @a[scores={team_side=2,class_id=1,Player=0}] run scoreboard players add #w_red mm_count 1
+execute as @a[scores={team_side=2,class_id=2,Player=0}] run scoreboard players add #a_red mm_count 1
+execute as @a[scores={team_side=2,class_id=3,Player=0}] run scoreboard players add #m_red mm_count 1
+execute as @a[scores={team_side=2,class_id=4,Player=0}] run scoreboard players add #r_red mm_count 1

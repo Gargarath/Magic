@@ -3,30 +3,13 @@
 execute if entity @s[tag=in_lobby_arena] run function main:reset/reset_arena
 
 tag @s remove save_inventory
-tag @s add spell_immune
-tag @s[team=red] add red_spectator
-tag @s[team=w_red] add red_spectator
-tag @s[team=a_red] add red_spectator
-tag @s[team=m_red] add red_spectator
-tag @s[team=r_red] add red_spectator
-tag @s[team=blue] add blue_spectator
-tag @s[team=w_blue] add blue_spectator
-tag @s[team=a_blue] add blue_spectator
-tag @s[team=m_blue] add blue_spectator
-tag @s[team=r_blue] add blue_spectator
-tag @s[team=red_op] add red_spectator
-tag @s[team=w_red_op] add red_spectator
-tag @s[team=a_red_op] add red_spectator
-tag @s[team=m_red_op] add red_spectator
-tag @s[team=r_red_op] add red_spectator
-tag @s[team=blue_op] add blue_spectator
-tag @s[team=w_blue_op] add blue_spectator
-tag @s[team=a_blue_op] add blue_spectator
-tag @s[team=m_blue_op] add blue_spectator
-tag @s[team=r_blue_op] add blue_spectator
 
-scoreboard players set @s Player -1
+function lobby:hotbar_menu/main/join_spectator
+# fais passer @s en spectateur
+
 team join spectator @s
+# affiche @s dans l'équipe des specs
+
 scoreboard players set @s InLobby 0
 effect give @s minecraft:invisibility infinite 0 true
 clear @s
