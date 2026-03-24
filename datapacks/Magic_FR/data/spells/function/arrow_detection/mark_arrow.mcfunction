@@ -7,8 +7,9 @@ summon minecraft:marker ~ ~ ~ {Tags:["arrow_rotation"]}
 scoreboard players add $count arrow_rotation 1
 scoreboard players operation @e[type=minecraft:marker,sort=nearest,limit=1,tag=!marked,tag=arrow_rotation] arrow_rotation = $count arrow_rotation
 execute rotated as @s run rotate @e[type=minecraft:marker,sort=nearest,limit=1,tag=!marked,tag=arrow_rotation] ~ ~
-execute if score @s team_side matches 1 run data merge entity @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] {crit:0b,Tags:["blue"]}
-execute if score @s team_side matches 2 run data merge entity @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] {crit:0b,Tags:["red"]}
+execute if score @s[tag=!no_team] team_side matches 1 run data merge entity @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] {crit:0b,Tags:["blue"]}
+execute if score @s[tag=!no_team] team_side matches 2 run data merge entity @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] {crit:0b,Tags:["red"]}
+execute if entity @s[tag=no_team] run data merge entity @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] {crit:0b,Tags:["no_team"]}
 
 execute as @e[type=minecraft:arrow,sort=nearest,limit=1,tag=!marked] run function spells:arrow_detection/calculate_norm
 # calcule la norme de la flèche pour infliger des dégats adaptés

@@ -82,6 +82,7 @@ execute as @a[scores={is_hooking_w=1..}] run function spells:spellsystem/spell3/
 execute as @a[scores={used_bow=1..}] at @s run function spells:arrow_detection/mark_arrow
 execute as @e[type=arrow,tag=marked,tag=blue] at @s rotated as @e[type=marker,tag=arrow_rotation,limit=1,sort=nearest] positioned ^ ^ ^1.5 positioned ~ ~-1 ~ if entity @e[type=#spellable,distance=..1,team=!blue] run function spells:arrow_detection/touch_player_blue
 execute as @e[type=arrow,tag=marked,tag=red] at @s rotated as @e[type=marker,tag=arrow_rotation,limit=1,sort=nearest] positioned ^ ^ ^1.5 positioned ~ ~-1 ~ if entity @e[type=#spellable,distance=..1,team=!red] run function spells:arrow_detection/touch_player_red
+execute as @e[type=arrow,tag=marked,tag=no_team] at @s rotated as @e[type=marker,tag=arrow_rotation,limit=1,sort=nearest] positioned ^ ^ ^1.5 positioned ~ ~-1 ~ if entity @e[type=#spellable,distance=..1] run function spells:arrow_detection/touch_player_no_team
 execute as @e[type=#spellable,scores={arrow_owner=1..}] run function spells:arrow_detection/hit_by_arrow
 
 
