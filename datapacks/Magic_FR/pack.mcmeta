@@ -1,8 +1,32 @@
- {
-       "pack": {
-           "pack_format": 94.1,
-           "max_format":94.1,
-           "min_format":94.1,
-           "description": "Gère tout"
-       }
-   }
+{
+  "pack": {
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": [
+      101,
+      1
+    ],
+    "description": [
+      {
+        "text": "Datapack qui contient le code de Magic, compatible avec la version : "
+      },
+      {
+        "text": "Vanilla 26.1",
+        "color": "gold",
+        "bold": true
+      },
+      {
+        "text": "\nCréé par ",
+        "color": "blue",
+        "bold": true
+      },
+      {
+        "text": "Gargarath",
+        "color": "gold",
+        "bold": true
+      }
+    ]
+  }
+}
