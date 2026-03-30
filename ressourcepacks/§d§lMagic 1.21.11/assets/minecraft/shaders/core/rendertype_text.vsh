@@ -1,8 +1,9 @@
-#version 150
+#version 330
 
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
+#moj_import <minecraft:sample_lightmap.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -159,8 +160,8 @@ void main() {
     // Move in clip space by "one screen width/height" per unit in posoffset.
     gl_Position.xy += gl_Position.w * posoffset;
 
-    vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
+    vertexColor = Color * sample_lightmap(Sampler2, UV2);
     sphericalVertexDistance = fog_spherical_distance(pos);
-    cylindricalVertexDistance = fog_cylindrical_distance(pos);
+    cylindricalVertexDistance = fog_cylindrical_distance(pos);  
     texCoord0 = UV0;
 }
