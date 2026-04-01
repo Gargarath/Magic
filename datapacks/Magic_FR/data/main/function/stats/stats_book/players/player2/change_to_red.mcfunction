@@ -10,9 +10,9 @@ data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_c
 
 # 3) Espace + scores (numériques) + tiret
 data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value "\n\n        "
-data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value {nbt:"game.result.score.red",storage:"stats:leaderboards",bold:1b,color:"red"}
+data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value {nbt:"game.result.score.red","storage":"stats:leaderboards","plain":true,bold:1b,color:"red"}
 data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value {text:" - ",bold:1b}
-data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value {nbt:"game.result.score.blue",storage:"stats:leaderboards",bold:1b,color:"blue"}
+data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value {nbt:"game.result.score.blue","storage":"stats:leaderboards","plain":true,bold:1b,color:"blue"}
 
 # 4) Séparateur + étiquettes
 data modify block 13 97 13 Items[{Slot:2b}].components."minecraft:written_book_content".pages[0].raw.extra append value "\n\n\n\n----------------\n\n"
