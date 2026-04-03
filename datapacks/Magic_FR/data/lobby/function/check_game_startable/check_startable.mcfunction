@@ -1,5 +1,5 @@
 
-## appellée par lobby:main permet de lancer la partie (si toute les conditions sont réunie)
+## appellée par option_panel/lobby/launch_game quand on est en mode CTF permet de lancer la partie (si toute les conditions sont réunie)
 
 
 

@@ -3,8 +3,8 @@
 execute at @s positioned ~ ~-9 ~ at @e[tag=room,distance=..10] positioned ~ ~9 ~ run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Prêt","color":"black","bold":true},{"text":"√","color":"dark_green","bold":true},""]}}
 execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
 
-team join ready_red @s[team=non_ready_red]
-team join ready_blue @s[team=non_ready_blue]
+team join ready_red @s[tag=red_team]
+team join ready_blue @s[tag=blue_team]
 
 scoreboard players set @s ready_sign 0
 scoreboard players enable @s ready_sign

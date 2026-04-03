@@ -205,3 +205,17 @@ data modify storage gui player.9.actionbar.icon set value {atlas:"minecraft:gui"
 data modify storage gui player.10.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
 data modify storage gui player.11.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
 data modify storage gui player.12.actionbar.icon set value {atlas:"minecraft:gui",sprite:"jump_icon_a_empty","shadow_color":0}
+
+data modify storage main:killfeed death_cause.boss set value "\uE000"
+data modify storage main:killfeed death_cause.1 set value "\uE000"
+data modify storage main:killfeed death_cause.2 set value "\uE000"
+data modify storage main:killfeed death_cause.3 set value "\uE000"
+data modify storage main:killfeed death_cause.4 set value "\uE000"
+data modify storage main:killfeed death_cause.5 set value "\uE000"
+data modify storage main:killfeed death_cause.6 set value "\uE000"
+data modify storage main:killfeed death_cause.7 set value "\uE000"
+data modify storage main:killfeed death_cause.8 set value "\uE000"
+data modify storage main:killfeed death_cause.9 set value "\uE000"
+data modify storage main:killfeed death_cause.10 set value "\uE000"
+data modify storage main:killfeed death_cause.11 set value "\uE000"
+data modify storage main:killfeed death_cause.12 set value "\uE000"

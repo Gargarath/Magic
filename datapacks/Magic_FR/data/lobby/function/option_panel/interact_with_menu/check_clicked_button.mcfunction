@@ -10,7 +10,7 @@ execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matc
 execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/fun/display_fun_tab
 
 # Main
-execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:check_game_startable/check_startable
+execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/launch_game
 execute if entity @s[tag=optn_menu_main_recommended_button] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/recommended_options
 execute if entity @s[tag=optn_menu_main_recommended_button_yes] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/enable_recommended_options
 
@@ -28,8 +28,12 @@ execute if entity @s[tag=optn_menu_lobby_enable_matchmaking_off] on target if sc
 execute if entity @s[tag=optn_menu_lobby_enable_force_launch_on] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/force_launch/force_launch_on
 execute if entity @s[tag=optn_menu_lobby_enable_force_launch_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/force_launch/force_launch_off
 
+# gamemode (FFA)
+execute if entity @s[tag=optn_menu_gamemode_ctf] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/display_capture_the_flag_tab
+
 # gamemode (CTF)
 
+execute if entity @s[tag=optn_menu_gamemode_ffa] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/display_free_for_all_tab
     # secondary objective
 execute if entity @s[tag=optn_menu_gamemode_secondary_objectives_on] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/secondary_objectives/secondary_objectives_on
 execute if entity @s[tag=optn_menu_gamemode_secondary_objectives_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/secondary_objectives/secondary_objectives_off

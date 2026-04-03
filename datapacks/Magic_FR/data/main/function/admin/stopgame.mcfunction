@@ -3,8 +3,6 @@
 function lobby:map_island/reset_maps
 # vire les joueurs en visite de map et prépare les maps
 
-kill @e[type=minecraft:armor_stand,tag=Lobby_armor_stand]
-kill @e[type=minecraft:text_display,tag=Lobby_text]
 scoreboard players set Is_ready Lobby_ready 0
 # permet qu'une fois que le datapack lobby sera lancé ce score passe a 1 et tous les joueurs soient tp au lobby
 scoreboard players set ctf enable_loop 0

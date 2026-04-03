@@ -4,7 +4,7 @@
 function lobby:arena/give_player_number
 # donne un numéro de joueur pas encore prit à @s
 
-function ctf:killfeed/save_player_names_arena
+function main:killfeed/save_player_names_arena
 # stock le nom de @s (pour le killfeed)
 
 tag @s add in_lobby_arena

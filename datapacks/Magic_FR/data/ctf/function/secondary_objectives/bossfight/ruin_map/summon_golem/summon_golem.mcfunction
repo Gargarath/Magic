@@ -13,7 +13,7 @@ execute if score min_players golem matches 0 run scoreboard players set min_play
 
 scoreboard players set invulnerable golem 1
 
-data modify storage ctf:killfeed bossname set value {"bold":false,"color":"green","text":"Le Gardien"}
+data modify storage main:killfeed bossname set value {"bold":false,"color":"green","text":"Le Gardien"}
 # met le nom du boss dans un storage (pour le killfeed)
 summon iron_golem -518.5 146 -110.5 {CustomNameVisible:1b,CustomName:{"bold":true,"color":"green","text":"Le Gardien"},Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["golem"],Passengers:[{id:"minecraft:item_display",NoGravity:1b,Tags:["show_golem_invulnerable"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1}}]}
 scoreboard players set @e[type=#boss] last_caster 0
@@ -39,5 +39,5 @@ scoreboard players set @e[type=minecraft:iron_golem,limit=1] rocked_w -1
 scoreboard players set is_dead golem 0
 # met le score golem de is_dead à 0 (si il n'y a plus de golem et que ce score est à 0 -> lance le système de drop de l'objet du golem)
 
-execute as @e[type=#boss] run function ctf:killfeed/clear_death_message
+execute as @e[type=#boss] run function main:killfeed/clear_death_message
 # reset le message de mort du boss (au cas ou il meurt que de cac et que ça se rappelle d'un vieut sort d'une autre game) - doit déjà avoir le score de Player à -2

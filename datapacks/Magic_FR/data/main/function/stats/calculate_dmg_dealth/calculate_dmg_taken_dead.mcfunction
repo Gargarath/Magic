@@ -42,7 +42,7 @@ execute if entity @s[type=player] if score @s last_caster matches 10 unless scor
 execute if entity @s[type=player] if score @s last_caster matches 11 unless score @s team_side = @a[scores={Player=11},limit=1] team_side run scoreboard players operation @a[scores={Player=11},limit=1] stat_spell_dmg += @s hp_before10
 execute if entity @s[type=player] if score @s last_caster matches 12 unless score @s team_side = @a[scores={Player=12},limit=1] team_side run scoreboard players operation @a[scores={Player=12},limit=1] stat_spell_dmg += @s hp_before10
 
-#tellraw @a ["",{"nbt":"death_cause.1","storage":"ctf:killfeed"}]
+#tellraw @a ["",{"nbt":"death_cause.1","storage":"main:killfeed"}]
 # a teme ce storage (selon le n° de joueur) permet de préciser de quelle façon il a subit les dégats et donc de mettre dans le spell adapté
 
 scoreboard players set @s last_caster 0

@@ -3,9 +3,9 @@ scoreboard players set @s Player 1
 execute at @e[tag=room1] run tp @s ~ ~9 ~ 0 -5
 execute at @e[tag=room1] run spawnpoint @s ~ ~9 ~
 
-execute as @s[team=non_ready_blue] at @s run function main:start_game/make_frameroom_blue
+execute as @s[tag=blue_team] at @s run function main:start_game/make_frameroom_blue
 # modifie la frameroom des joueurs bleus en bleue.
-execute as @s[team=non_ready_red] at @s run function main:start_game/make_frameroom_red
+execute as @s[tag=red_team] at @s run function main:start_game/make_frameroom_red
 # modifie la frameroom des joueurs rouges en rouge.
 
 execute if entity @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior

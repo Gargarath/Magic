@@ -4,5 +4,5 @@
       "trigger": "minecraft:entity_killed_player"
     }
   },
-  "rewards": { "function": "ctf:killfeed/killed" }
+  "rewards": { "function": "main:killfeed/killed" }
 }

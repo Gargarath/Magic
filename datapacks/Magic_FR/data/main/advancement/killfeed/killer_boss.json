@@ -10,5 +10,5 @@
       }
     }
   },
-  "rewards": { "function": "ctf:killfeed/killer_boss" }
+  "rewards": { "function": "main:killfeed/killer_boss" }
 }

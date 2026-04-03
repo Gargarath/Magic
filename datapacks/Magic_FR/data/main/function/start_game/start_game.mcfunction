@@ -12,12 +12,6 @@ scoreboard players set lobby enable_loop 0
 scoreboard players set spells enable_loop 0
 scoreboard players set shop enable_loop 1
 # desactive le datapack Lobby et active le Shop
-data merge block 0 101 -19 {front_text:{messages:["",{"text":"Partie en","color":"white","bold":true},{"text":"cours...","color":"white","bold":true},""]}}
-# change le panneau pour lancer la partie afin qu'il ne soit plus cliquable
-
-kill @e[type=minecraft:armor_stand,tag=Lobby_armor_stand]
-kill @e[type=minecraft:text_display,tag=Lobby_text]
-# tue les armor_stand et textes qui permettent de selectionner les classes et les équipes
 
 execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function lobby:arena/quit_arena
 execute as @a[tag=in_lobby_arena,scores={Player=-1}] run function lobby:arena/quit_arena_spec
@@ -76,26 +70,6 @@ execute if score $infinite_money option_panel matches 1 run scoreboard players s
 # si mode argent illimité -> donne plein d'argent
 
 
-team join non_ready_red @a[team=w_red]
-team join non_ready_red @a[team=a_red]
-team join non_ready_red @a[team=m_red]
-team join non_ready_red @a[team=r_red]
-team join non_ready_blue @a[team=w_blue]
-team join non_ready_blue @a[team=a_blue]
-team join non_ready_blue @a[team=m_blue]
-team join non_ready_blue @a[team=r_blue]
-team join non_ready_red @a[team=w_red_op]
-team join non_ready_red @a[team=a_red_op]
-team join non_ready_red @a[team=m_red_op]
-team join non_ready_red @a[team=r_red_op]
-team join non_ready_blue @a[team=w_blue_op]
-team join non_ready_blue @a[team=a_blue_op]
-team join non_ready_blue @a[team=m_blue_op]
-team join non_ready_blue @a[team=r_blue_op]
-# Change les equipes de joueurs pour afficher qui est prêt ou non
-
-
-
 execute at @e[tag=room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
 # remet les barrier blocs dans le shop
 
@@ -132,7 +106,7 @@ tag @a[scores={Player=1..}] add display_killfeed
 tag @a[scores={Player=-1}] add display_killfeed
 # permet aux joueurs de voir le killfeed
 
-function ctf:killfeed/save_player_names
+function main:killfeed/save_player_names
 # enregistre les noms des joueurs dans des storage (utilisé par le killfeed)
 function main:stats/save_player_data
 # enregistre les noms et classes des joueurs dans des storage (les stats)
@@ -157,8 +131,8 @@ scoreboard players set @a[scores={Player=10}] Player_last_game 10
 scoreboard players set @a[scores={Player=11}] Player_last_game 11
 scoreboard players set @a[scores={Player=12}] Player_last_game 12
 # enregistre le numéro de joueur des joueurs
-scoreboard players set @a[team=non_ready_blue] team_last_game 1
-scoreboard players set @a[team=non_ready_red] team_last_game 2
+scoreboard players set @a[tag=blue_team] team_last_game 1
+scoreboard players set @a[tag=red_team] team_last_game 2
 # enregistre la team des joueurs
 
 clone -4 -52 56 -4 -52 56 -4 -51 56

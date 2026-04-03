@@ -5,7 +5,7 @@ tag @s remove save_inventory
 clear @s slime_ball
 tag @s add save_inventory
 
-tellraw @a ["",{"selector":"@s"}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"nbt":"bossname","storage":"ctf:killfeed","interpret":true}]
+tellraw @a ["",{"selector":"@s"}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"nbt":"bossname","storage":"main:killfeed","interpret":true}]
 
 execute if score @s team_side matches 1 run function ctf:secondary_objectives/bossfight/candyworld_map/win/blue_win
 execute if score @s team_side matches 2 run function ctf:secondary_objectives/bossfight/candyworld_map/win/red_win

@@ -3,8 +3,8 @@
 data modify storage stats:leaderboards by_player set value {}
 # reset les stats par joueur dans le storage
 
-team join Blue_Color @a[team=non_ready_blue]
-team join Red_Color @a[team=non_ready_red]
+team join Blue_Color @a[tag=blue_team]
+team join Red_Color @a[tag=red_team]
 
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={Player=1},limit=1]"},"","",""]}}
 data modify storage stats:leaderboards by_player."1".name set from block 14 97 13 front_text.messages[0]

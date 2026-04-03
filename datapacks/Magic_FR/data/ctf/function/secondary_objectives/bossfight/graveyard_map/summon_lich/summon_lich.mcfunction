@@ -11,7 +11,7 @@ execute if score blue playercount > red playercount run scoreboard players opera
 # si il y a plus de bleus que de rouges -> dis au système que le nombre de joueur minimal est = au nombre de joueur de l'équipe rouge
 execute if score min_players lich matches 0 run scoreboard players set min_players lich 1
 
-data modify storage ctf:killfeed bossname set value {"bold":false,"color":"gray","text":"Liche"}
+data modify storage main:killfeed bossname set value {"bold":false,"color":"gray","text":"Liche"}
 # met le nom du boss dans un storage (pour le killfeed)
 summon wither_skeleton 218 169 -281 {CustomNameVisible:0b,CustomName:{"bold":true,"color":"gray","text":"Liche"},Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["lich"],Passengers:[{id:"minecraft:item_display",NoGravity:1b,Tags:["show_lich_invulnerable"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1}}]}
 scoreboard players set @e[type=#boss] last_caster 0
@@ -32,5 +32,5 @@ scoreboard players set @e[type=minecraft:wither_skeleton,limit=1] rocked_w -1
 scoreboard players set is_dead lich 0
 # met le score lich de is_dead à 0 (si il n'y a plus de lich et que ce score est à 0 -> lance le système de drop de l'objet de la liche)
 
-execute as @e[type=#boss] run function ctf:killfeed/clear_death_message
+execute as @e[type=#boss] run function main:killfeed/clear_death_message
 # reset le message de mort du boss (au cas ou il meurt que de cac et que ça se rappelle d'un vieut sort d'une autre game) - doit déjà avoir le score de Player à -2

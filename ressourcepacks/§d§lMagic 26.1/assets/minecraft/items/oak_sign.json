@@ -78,6 +78,13 @@
         }
       },
             {
+        "when": "gamemode_tab_ffa",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/gamemode_tab/ffa/background"
+        }
+      },
+            {
         "when": "maps_tab",
         "model": {
           "type": "model",

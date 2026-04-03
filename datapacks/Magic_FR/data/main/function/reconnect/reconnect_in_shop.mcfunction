@@ -40,13 +40,11 @@ tag @s remove spec_room12
 # permet de reset les spectateur en spec dans le shop
 
 
-team join red @s[team=ready_red]
-team join red @s[team=non_ready_red]
+team join red @s[tag=red_team]
 effect clear @s[scores={Player=1..}] minecraft:resistance
 execute as @s run function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
-team join blue @s[team=ready_blue]
-team join blue @s[team=non_ready_blue]
+team join blue @s[tag=blue_team]
 
 clear @s[scores={Player=1..}]
 item replace entity @s[scores={Player=1..}] armor.head from block 13 97 11 container.2

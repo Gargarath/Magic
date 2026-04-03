@@ -5,7 +5,7 @@ tag @s add respawn
 scoreboard players set @s IsAlive 0
 # clear le compteur de mort
 
-execute if score @s killfeed_died_checked < @s killfeed_died run function ctf:killfeed/not_another_entity/_determine_how_died
+execute if score @s killfeed_died_checked < @s killfeed_died run function main:killfeed/not_another_entity/_determine_how_died
 # si le killfeed n'a pas déterminé comment @s est mort (donc pas par une autre entité) -> determine comment il est mort
 
 execute if score @s using_berzerk matches 1.. run scoreboard players set @s using_berzerk 0
