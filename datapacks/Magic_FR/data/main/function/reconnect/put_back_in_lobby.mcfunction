@@ -15,6 +15,7 @@ function main:reset/resetspells/resetspells
 
 scoreboard players set @s respawn_time -1
 scoreboard players set @s save_flag_time 0
+scoreboard players set @s cap_flag_time 0
 
 
 spawnpoint @s 0 100 0 180 0

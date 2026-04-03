@@ -44,6 +44,31 @@ bossbar set saveflag:player10 max 60
 bossbar set saveflag:player11 max 60
 bossbar set saveflag:player12 max 60
 
+bossbar add capflag:player1 {"text":"Capture :"}
+bossbar add capflag:player2 {"text":"Capture :"}
+bossbar add capflag:player3 {"text":"Capture :"}
+bossbar add capflag:player4 {"text":"Capture :"}
+bossbar add capflag:player5 {"text":"Capture :"}
+bossbar add capflag:player6 {"text":"Capture :"}
+bossbar add capflag:player7 {"text":"Capture :"}
+bossbar add capflag:player8 {"text":"Capture :"}
+bossbar add capflag:player9 {"text":"Capture :"}
+bossbar add capflag:player10 {"text":"Capture :"}
+bossbar add capflag:player11 {"text":"Capture :"}
+bossbar add capflag:player12 {"text":"Capture :"}
+bossbar set capflag:player1 max 15
+bossbar set capflag:player2 max 15
+bossbar set capflag:player3 max 15
+bossbar set capflag:player4 max 15
+bossbar set capflag:player5 max 15
+bossbar set capflag:player6 max 15
+bossbar set capflag:player7 max 15
+bossbar set capflag:player8 max 15
+bossbar set capflag:player9 max 15
+bossbar set capflag:player10 max 15
+bossbar set capflag:player11 max 15
+bossbar set capflag:player12 max 15
+
 bossbar add burning:player1 {"text":"En feu !","color":"red"}
 bossbar add burning:player2 {"text":"En feu !","color":"red"}
 bossbar add burning:player3 {"text":"En feu !","color":"red"}

@@ -424,6 +424,7 @@ scoreboard objectives add lever_graveyard dummy
 ## CTF
 scoreboard objectives add Flag_posed dummy
 scoreboard objectives add save_flag_time dummy
+scoreboard objectives add cap_flag_time dummy
 scoreboard objectives add flag_wrong_place dummy
 scoreboard objectives add Game_result dummy
 

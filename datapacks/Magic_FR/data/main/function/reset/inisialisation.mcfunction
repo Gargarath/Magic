@@ -7,6 +7,7 @@ scoreboard players set @s Player 0
 scoreboard players set @s is_ready 0
 scoreboard players set @s IsAlive 0
 scoreboard players set @s save_flag_time 0
+scoreboard players set @s cap_flag_time 0
 gamemode adventure @s[gamemode=!adventure]
 
 scoreboard players set @s jump1_score_pr 1000000

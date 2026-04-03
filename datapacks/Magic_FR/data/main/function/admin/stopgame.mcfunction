@@ -41,6 +41,7 @@ scoreboard players set @a[scores={Player=1..}] Player 0
 spawnpoint @a 0 100 0 180 0
 scoreboard players set @a respawn_time -1
 scoreboard players set @a save_flag_time 0
+scoreboard players set @a cap_flag_time 0
 
 execute as @a run attribute @s minecraft:block_interaction_range base set 4.5
 # reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)
