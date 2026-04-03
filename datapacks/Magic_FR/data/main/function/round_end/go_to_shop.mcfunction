@@ -19,18 +19,9 @@ bossbar set respawn:player9 players
 bossbar set respawn:player10 players
 bossbar set respawn:player11 players
 bossbar set respawn:player12 players
-bossbar set saveflag:player1 players
-bossbar set saveflag:player2 players
-bossbar set saveflag:player3 players
-bossbar set saveflag:player4 players
-bossbar set saveflag:player5 players
-bossbar set saveflag:player6 players
-bossbar set saveflag:player7 players
-bossbar set saveflag:player8 players
-bossbar set saveflag:player9 players
-bossbar set saveflag:player10 players
-bossbar set saveflag:player11 players
-bossbar set saveflag:player12 players
+
+execute as @a[scores={save_flag_time=1..}] run function ctf:saveflag/stop_saving
+execute as @a[scores={cap_flag_time=1..}] run function ctf:capflag_droped/stop_caping
 
 schedule clear ctf:timer/refresh_timer
 # fait en sorte que le chronometre ne défile plus

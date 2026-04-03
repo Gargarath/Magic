@@ -26,7 +26,9 @@ scoreboard objectives setdisplay list stat_victory
 # affiche le score de victoire en list
 
 scoreboard players set @a respawn_time -1
-scoreboard players set @a save_flag_time 0
+
+execute as @a[scores={save_flag_time=1..}] run function ctf:saveflag/stop_saving
+execute as @a[scores={cap_flag_time=1..}] run function ctf:capflag_droped/stop_caping
 
 # reset les bossbar
 bossbar set respawn:player1 players
@@ -41,18 +43,6 @@ bossbar set respawn:player9 players
 bossbar set respawn:player10 players
 bossbar set respawn:player11 players
 bossbar set respawn:player12 players
-bossbar set saveflag:player1 players
-bossbar set saveflag:player2 players
-bossbar set saveflag:player3 players
-bossbar set saveflag:player4 players
-bossbar set saveflag:player5 players
-bossbar set saveflag:player6 players
-bossbar set saveflag:player7 players
-bossbar set saveflag:player8 players
-bossbar set saveflag:player9 players
-bossbar set saveflag:player10 players
-bossbar set saveflag:player11 players
-bossbar set saveflag:player12 players
 
 tag @a add in_podium
 # met l'affichage de top_bar spéciale fin de game

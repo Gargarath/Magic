@@ -147,7 +147,7 @@ execute at @e[tag=Red_flag,tag=droped] as @a[team=blue,distance=..0.9,tag=!cant_
 
 # Rouge
 
-execute at @e[tag=Red_flag,tag=droped] as @a[team=red,distance=..0.9,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:capflag_droped/bossbar/detect_player_number
+execute at @e[tag=Red_flag,tag=droped] as @a[team=red,distance=..0.9,tag=!cant_pickup_flag] if score @s[scores={using_berzerk=-1,in_smoke1=-1}] save_flag_time matches 0..59 run function ctf:saveflag/bossbar/detect_player_number
 # augmente le score de save_flag_time du joueur rouge en train de ramener son drapeau
 execute as @a[scores={save_flag_time=1..,using_berzerk=-1},team=red,tag=!cant_pickup_flag] at @s unless entity @e[tag=Red_flag,tag=droped,distance=..0.9] run function ctf:saveflag/stop_saving
 # reset le score de save_flag_time du joueur rouge qui ne ramène plus son drapeau et lui enleve la bossbar qui indique le temps de réccupération
