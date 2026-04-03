@@ -1,7 +1,7 @@
 ## appelée parmain:map_randomizer/limited_randomization/round2/round2 si les options de la partie sont sur aléatoire (pas deux fois la même map activé) et qu'on est au round 3
 ## permet de sélectionner la quatrième map au hazard et de l'enregistrer
 
-execute store result score %rng_map map_selection run loot spawn ~ ~ ~ loot minecraft:blocks/rng
+execute store result score %rng_map map_selection run random value 1..6
 scoreboard players operation selected_map variables = %rng_map map_selection
 # génére un nombre aléatoire entre 1 et 6 et attribue ce numéro au numéro de map
 
