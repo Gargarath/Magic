@@ -2,5 +2,6 @@
 # permet de donner de l'argent régulièrement aux joueurs
 
 scoreboard players operation @a[scores={Player=1..}] PH += $passive_money option_panel
+scoreboard players operation @a[scores={Player=1..}] stat_total_money_earned += $passive_money option_panel
 
 schedule function gamemode:ffa/money_distribution/increase_player_money 3s
