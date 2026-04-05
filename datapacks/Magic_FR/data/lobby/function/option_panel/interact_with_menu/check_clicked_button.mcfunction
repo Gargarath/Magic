@@ -10,7 +10,7 @@ execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matc
 execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/fun/display_fun_tab
 
 # Main
-execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/launch_game
+execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/launch_game
 execute if entity @s[tag=optn_menu_main_recommended_button] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/recommended_options
 execute if entity @s[tag=optn_menu_main_recommended_button_yes] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/enable_recommended_options
 

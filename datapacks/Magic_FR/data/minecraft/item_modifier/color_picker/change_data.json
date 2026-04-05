@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "Choix de couleur",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{color_selector:1b}"
+  }
+]

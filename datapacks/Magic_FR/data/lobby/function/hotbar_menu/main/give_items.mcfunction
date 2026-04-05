@@ -18,12 +18,16 @@ item replace entity @s[tag=mage] hotbar.1 with carrot_on_a_stick[item_name=[{"bo
 item replace entity @s[tag=rogue] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"gray","italic":true,"text":"Assassin"}],custom_data={class_selector:1b},custom_model_data={strings:["select_rogue"]}] 1
 # donne l'item en fonction de la classe de @s
 
-## TEAM SELECTOR
+## COLOR PICKER (FFA)
 
-item replace entity @s[tag=!blue_team,tag=!red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={team_selector:1b},custom_model_data={strings:["team_selector"]}] 1
+execute if score $gamemode option_panel matches 0 run function lobby:hotbar_menu/color_picker/give_color_picker
+
+## TEAM SELECTOR (CTF)
+
+execute if score $gamemode option_panel matches 1 run item replace entity @s[tag=!blue_team,tag=!red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={team_selector:1b},custom_model_data={strings:["team_selector"]}] 1
 # donne l'item vierge si @s n'a pas de team
-item replace entity @s[tag=blue_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"blue","italic":true,"text":"Bleue"}],custom_data={team_selector:1b},custom_model_data={strings:["select_blue"]}] 1
-item replace entity @s[tag=red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"red","italic":true,"text":"Rouge"}],custom_data={team_selector:1b},custom_model_data={strings:["select_red"]}] 1
+execute if score $gamemode option_panel matches 1 run item replace entity @s[tag=blue_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"blue","italic":true,"text":"Bleue"}],custom_data={team_selector:1b},custom_model_data={strings:["select_blue"]}] 1
+execute if score $gamemode option_panel matches 1 run item replace entity @s[tag=red_team] hotbar.2 with carrot_on_a_stick[item_name=[{"bold":true,"color":"green","text":"Equipe : "},{"bold":true,"color":"red","italic":true,"text":"Rouge"}],custom_data={team_selector:1b},custom_model_data={strings:["select_red"]}] 1
 # donne l'item en fonction de la team de @s
 
 ## SPECTATOR SELECTOR

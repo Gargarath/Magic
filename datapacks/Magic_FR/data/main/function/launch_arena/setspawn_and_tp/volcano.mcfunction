@@ -1,4 +1,4 @@
-# appelée par main:launch_arena/launch_map_volcano et reconnect_in_shop au nom des joueurs à tp
+# appelée par main:launch_arena/launch_map_volcano 
 # permet de tp @s et de setup son spawnpoint selon son équipe et numéro de joueur
 
 spawnpoint @s[scores={Player=1}] -582 125 497
@@ -29,5 +29,5 @@ spawnpoint @s[scores={Player=-1}] -597 159 480
 # spawnpoint spectateurs
 
 
-tp @s[team=red] -646 159 505 -128 2
-tp @s[team=blue] -550 159 494 53 2
+tp @s[tag=red_team,scores={Player=1..}] -646 159 505 -128 2
+tp @s[tag=blue_team,scores={Player=1..}] -550 159 494 53 2

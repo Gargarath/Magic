@@ -4,5 +4,5 @@
 execute as @a[tag=spec_map3] at @s unless entity @s[x=264,y=144,z=-35,dx=115,dy=32,dz=84] run tp @s 297.5 157 20.0
 # tp les specs qui vont trop loins
 
-function ctf:maps_systems/factory/loop_factory
+function gamemode:ctf/maps_systems/factory/loop_factory
 # lance le systeme de loop usine

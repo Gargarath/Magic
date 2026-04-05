@@ -1,3 +1,6 @@
+## appelée par shop:loop lorsqu'on lance le système de shop (début de game / fin de manche)
+## permet de setup le shop
+
 scoreboard players set shop is_working 1
 # met le score is_working du joueur shop à 1 pour éviter que cette fonction soit appelée en boucle
 
@@ -33,9 +36,9 @@ execute as @a[tag=mage,scores={weapon1=1..}] run function spells:spellsystem/wea
 # remet les barres de mana a fond
 
 
-data modify storage minecraft:matchinfo.blue flag_state set value "\uE709"
-data modify storage minecraft:matchinfo.red flag_state set value "\uE709"
-# masque l'état des drapeaux
+execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.blue flag_state set value "\uE709"
+execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.red flag_state set value "\uE709"
+# masque l'état des drapeaux si on est en CTF
 
 execute if score player_atstart playercount matches 1 run function shop:spectator_room_sign_wall/1player
 execute if score player_atstart playercount matches 2 run function shop:spectator_room_sign_wall/2players
@@ -50,6 +53,6 @@ execute if score player_atstart playercount matches 10 run function shop:spectat
 execute if score player_atstart playercount matches 11 run function shop:spectator_room_sign_wall/11players
 execute if score player_atstart playercount matches 12 run function shop:spectator_room_sign_wall/12players
 
-execute if score $shop_timer option_panel matches -1 run function shop:shop_timer_infinite
-execute unless score $shop_timer option_panel matches -1 run function shop:shop_setup_timer
-# lance le timer si ça n'est pas désactivé dans les options
+execute if score $gamemode option_panel matches 1 if score $shop_timer option_panel matches -1 run function shop:shop_timer/shop_timer_infinite
+execute if score $gamemode option_panel matches 1 unless score $shop_timer option_panel matches -1 run function shop:shop_timer/setup_timer
+# si on est en CTF -> lance le timer si ça n'est pas désactivé dans les options

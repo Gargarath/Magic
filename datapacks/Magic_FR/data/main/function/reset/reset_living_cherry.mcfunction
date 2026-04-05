@@ -3,7 +3,7 @@
 
 scoreboard players set on living_cherry 0
 # arrete la clock sur l'objectif secondaire living_cherry
-function ctf:secondary_objectives/bossfight/candyworld_map/tp_residual_slimes
+function gamemode:ctf/secondary_objectives/bossfight/candyworld_map/tp_residual_slimes
 
 kill @e[type=minecraft:husk,tag=living_cherry_waiting_spot]
 kill @e[type=item,tag=living_cherry_item]

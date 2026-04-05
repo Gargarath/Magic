@@ -137,6 +137,7 @@ scoreboard players set @s opt_keybind_order 2
 scoreboard players enable @s opt_trig_keybind_order
 scoreboard players set @s opt_display_jump_timer 1
 scoreboard players enable @s opt_trig_display_jump_timer
+scoreboard players set @s opt_color 0
 
 function lobby:hotbar_menu/main/give_items
 # Donne les item de hotbar

@@ -78,6 +78,20 @@
         }
       },
       {
+        "when": "left_arrow",
+        "model": {
+          "type": "model",
+          "model": "item/carrot_on_a_stick/left_arrow"
+        }
+      },
+      {
+        "when": "right_arrow",
+        "model": {
+          "type": "model",
+          "model": "item/carrot_on_a_stick/right_arrow"
+        }
+      },
+      {
         "when": "select_blue",
         "model": {
           "type": "model",

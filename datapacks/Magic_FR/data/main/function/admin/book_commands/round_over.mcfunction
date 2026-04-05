@@ -7,9 +7,10 @@ scoreboard players reset @s admin_round_over
 scoreboard players enable @s admin_round_over
 # permet à @s de réutiliser le trigger
 
+execute if score $gamemode option_panel matches 0 run return run function main:admin/book_commands/cant_use_in_ffa
+# prévient qu'impossible en FFA
 
-
-execute if score @s InLobby matches 0 if score @s InShop matches 0 run return run function ctf:round_over
+execute if score @s InLobby matches 0 if score @s InShop matches 0 run return run function gamemode:ctf/round_over
 # stop cette fonction et lance la fonction pour terminer la manche
 
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1

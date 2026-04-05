@@ -1,9 +1,9 @@
 # appelée par spells:testspell permet de tp @s a son armorstand qui a le même score de backup_number que lui puis de kill cet armorstand et enlever à @s le tag have_backup
-execute as @s[tag=Has_Red_flag] run function ctf:usespellwithflag/usespell_redflag
-execute as @s[tag=Has_Blue_flag] run function ctf:usespellwithflag/usespell_blueflag
+execute as @s[tag=Has_Red_flag] run function gamemode:ctf/usespellwithflag/usespell_redflag
+execute as @s[tag=Has_Blue_flag] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 # permet de drop le flag si on le possède (car c'est un sort de mouvement)
 
-function ctf:maps_systems/candyworld/gingerbread/clear_gingerbread_effect
+function gamemode:ctf/maps_systems/candyworld/gingerbread/clear_gingerbread_effect
 # si @s était dans le punch pain d'épice -> le cancel
 
 scoreboard players add @s stat_usespell 1

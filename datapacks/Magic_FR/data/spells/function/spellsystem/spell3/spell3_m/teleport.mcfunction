@@ -3,11 +3,11 @@
 
 tag @s remove can_tp_m
 
-function ctf:maps_systems/candyworld/gingerbread/clear_gingerbread_effect
+function gamemode:ctf/maps_systems/candyworld/gingerbread/clear_gingerbread_effect
 # si @s était dans le punch pain d'épice -> le cancel
 
-execute as @s[tag=Has_Red_flag] run function ctf:usespellwithflag/usespell_redflag
-execute as @s[tag=Has_Blue_flag] run function ctf:usespellwithflag/usespell_blueflag
+execute as @s[tag=Has_Red_flag] run function gamemode:ctf/usespellwithflag/usespell_redflag
+execute as @s[tag=Has_Blue_flag] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 # si @s a le drapeau, le fait tomber
 
 execute at @s run particle minecraft:witch ~ ~1 ~ 0 0.4 0 0.0001 20 force

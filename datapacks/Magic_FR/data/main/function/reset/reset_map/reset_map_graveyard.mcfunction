@@ -63,3 +63,7 @@ bossbar set bad_path:player9 players
 bossbar set bad_path:player10 players
 bossbar set bad_path:player11 players
 bossbar set bad_path:player12 players
+
+team modify blue color blue
+team modify red color red
+# utilisé par les épitaphes

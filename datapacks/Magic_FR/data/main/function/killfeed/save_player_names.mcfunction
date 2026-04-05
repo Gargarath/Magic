@@ -1,7 +1,8 @@
 ## appelée par main:start_game en début de partie pour enregistrer les noms des joueurs dans un storage
 
-team join Blue_Color @a[team=non_ready_blue]
-team join Red_Color @a[tag=red_team]
+team join Blue_Color @a[tag=blue_team,scores={Player=1..}]
+team join Red_Color @a[tag=red_team,scores={Player=1..}]
+execute as @a[tag=no_team,scores={Player=1..}] run function lobby:team_selector/give_ffa_team/check_player
 
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={Player=1},limit=1]"},"","",""]}}
 data modify storage main:killfeed name.1 set from block 14 97 13 front_text.messages[0]

@@ -4,12 +4,14 @@ title @a reset
 dialog clear @a
 # clear les title et dialog de tous les joueurs
 
+execute if score $gamemode option_panel matches 0 run function main:start_game/start_gamemode/ffa
+execute if score $gamemode option_panel matches 1 run function main:start_game/start_gamemode/ctf
+
 scoreboard players set @a drop_item 0
 scoreboard players set @a hotbar_menu 0
 # met les joueurs dans le stade 0 du menu d'option hotbar
 
 scoreboard players set lobby enable_loop 0
-scoreboard players set spells enable_loop 0
 scoreboard players set shop enable_loop 1
 # desactive le datapack Lobby et active le Shop
 
@@ -110,13 +112,11 @@ function main:killfeed/save_player_names
 # enregistre les noms des joueurs dans des storage (utilisé par le killfeed)
 function main:stats/save_player_data
 # enregistre les noms et classes des joueurs dans des storage (les stats)
-function main:stats/scoreboard/save_topbar_players_lastgame
-# enregistre les joueurs connectés dans la topbar pour l'ile des stats de fin de game
 
 
 scoreboard players reset * Player_last_game
 scoreboard players reset * team_last_game
-# reset les stats de @a
+# suprimme les données des joueurs de la dernière game
 
 scoreboard players set @a[scores={Player=1}] Player_last_game 1
 scoreboard players set @a[scores={Player=2}] Player_last_game 2
@@ -131,9 +131,6 @@ scoreboard players set @a[scores={Player=10}] Player_last_game 10
 scoreboard players set @a[scores={Player=11}] Player_last_game 11
 scoreboard players set @a[scores={Player=12}] Player_last_game 12
 # enregistre le numéro de joueur des joueurs
-scoreboard players set @a[tag=blue_team] team_last_game 1
-scoreboard players set @a[tag=red_team] team_last_game 2
-# enregistre la team des joueurs
 
 clone -4 -52 56 -4 -52 56 -4 -51 56
 # rend le levier de particule des specs utilisable
@@ -148,58 +145,18 @@ execute as @a run attribute @s minecraft:block_interaction_range base set 20
 
 scoreboard players set round bossbar 0
 
-
-
-
-data modify storage minecraft:matchinfo.blue scnd_objective_completed set value {"text":"\uE307\uE307\uE307","shadow_color":855309,"color":"white","bold":false}
-data modify storage minecraft:matchinfo.red scnd_objective_completed set value {"text":"\uE307\uE307\uE307","shadow_color":855309,"color":"white","bold":false}
-scoreboard players set blue_wins secnd_objective 0
-scoreboard players set red_wins secnd_objective 0
-# reset le nombre d'objectif secondaire capturés par les équipes
-scoreboard players reset blue_won_last secnd_objective
-scoreboard players reset red_won_last secnd_objective
-# reset qui a gagné le dernier objectif secondaire
+# MAPS
 
 execute if score $random map_selection matches 0 run function main:map_randomizer/predefined_map/predefined_map
 # si on est en "arènes prédéfinies"  -> calcule la prochaine map en fonction de celles choisie dans le menu
-execute if score $random map_selection matches 1 if score $block_same_map map_selection matches 0 run function main:map_randomizer/full_randomization/full_randomization
-# si le choix des maps est sur aléatoire et deux fois la même map -> calcule la prochaine map totalement aléatoirement
-execute if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
-# si on est en "arènes aléatoires" et pas deux fois la même map -> calcule la prochaine map aléatoirement parmis les maps qui n'ont pas été jouées
+execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 0 run function main:map_randomizer/full_randomization/full_randomization
+# si on est en mode CTF et que le choix des maps est sur aléatoire et deux fois la même map -> calcule la prochaine map totalement aléatoirement
+execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
+# si on est en mode CTF et que on est en "arènes aléatoires" et pas deux fois la même map -> calcule la prochaine map aléatoirement parmis les maps qui n'ont pas été jouées
 
-
-scoreboard players add round bossbar 1
-data modify storage minecraft:matchinfo round set value {"text":"1","color":"white","bold":true}
-scoreboard players remove round bossbar 1
-# actualise le numéro de manche pour l'affichage en haut de l'écran
-
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 1 run data modify storage minecraft:matchinfo map set value {"text":"\uE708Pirate\uE707","color":"aqua","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 2 run data modify storage minecraft:matchinfo map set value {"text":"Cimetière","color":"red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 3 run data modify storage minecraft:matchinfo map set value {"text":"\uE710Usine\uE710","color":"dark_red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 4 run data modify storage minecraft:matchinfo map set value {"text":"\uE706Volcan\uE706","color":"dark_red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 5 run data modify storage minecraft:matchinfo map set value {"text":"\uE710Ruine\uE710","color":"gray","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 6 run data modify storage minecraft:matchinfo map set value {"text":"\uE705Bonbon\uE704","color":"light_purple","bold":true}
-# si on a activé le fait de montrer la prochaine map -> la montre
-
-data modify storage minecraft:matchinfo score1.1 set value 0
-data modify storage minecraft:matchinfo score1.2 set value 0
-data modify storage minecraft:matchinfo score2.1 set value 0
-data modify storage minecraft:matchinfo score2.2 set value 0
-# reset les scores
-
-
-scoreboard players reset * played_last_game
-# reset la liste des joueurs qui ont joué la dernière game
 scoreboard players set @a[scores={Player=1..}] played_last_game 1
 # ajoute les joueurs connecté à la liste des joueurs qui ont joué la dernière game
 
-execute if score $secondary_objectives option_panel matches 1 run scoreboard players set on secnd_objective 0
-# si les objectifs secondaires sont activés -> fais en sorte qu'il se lance à 5min
-
-team modify blue nametagVisibility hideForOtherTeams
-team modify red nametagVisibility hideForOtherTeams
-team modify spectator nametagVisibility never
-# modifie la visibilité des nametag pour la game
 
 tellraw @a[scores={Player=1..}] ["",{"text":"\nAppuyez sur ","color":"aqua"},{"keybind":"key.advancements","color":"yellow"},{"text":" pour voir votre progression dans l'arbre d'amélioration !","color":"aqua"}]
 # Indique à tous les joueurs qu'ils peuvent voir leur progression dans l'arbre en appuyant sur la touche advancements
@@ -252,7 +209,7 @@ execute as @a[scores={Player=11},tag=archer,limit=1] run data modify storage gui
 execute as @a[scores={Player=12},tag=archer,limit=1] run data modify storage gui player.12.actionbar.right_side set value ["                       ",{"score":{"name":"@s","objective":"arrow"}},{"text":"/"},{"score":{"name":"@s","objective":"maxarrow"}}]
 # afiche à droite de la hotbar des archer leur nombre de flèche
 
-scoreboard players operation $current_blue playercount = player playercount
+scoreboard players operation $current playercount = player playercount
 # setup le nombre de joueur qui sert à calculer si ça bouge (détection d'une déco)
 
 scoreboard players set Is_ready Lobby_ready 0

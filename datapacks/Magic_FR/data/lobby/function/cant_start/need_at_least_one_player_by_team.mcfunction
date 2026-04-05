@@ -1,4 +1,4 @@
-# Appellée par lobby:start_sign/start_sign_yes permet d'avertir qu'il faut au moins 2 joueurs par équipe
+# Appellée par option_panel/main/launch_game permet d'avertir qu'il faut au moins 1 joueur par équipe
 
 tellraw @s ["",{"text":"\nImpossible de lancer la partie tant qu'il n'y a pas au moins un joueur dans chaque équipe !","color":"red"}]
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 0

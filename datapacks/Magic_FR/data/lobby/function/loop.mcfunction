@@ -27,6 +27,7 @@ execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless 
 
 execute as @a[tag=jump_spec] unless entity @s[x=-204,y=77,z=-93,dx=145,dy=71,dz=168] run tp @s -79.5 103.0 -0.4 448 11.5
 execute as @a[tag=jump_spec,scores={quit=1..}] run function lobby:jump/spectator/quit_spec
+
                                         ## ARENE ##
 # lave
 execute as @a[tag=in_lobby_arena,scores={Player=1..}] at @s if block ~ ~ ~ lava run function lobby:arena/in_lava
@@ -106,23 +107,7 @@ execute as @a[tag=on_pads] at @s unless block ~ ~-1 ~ slime_block run function l
 execute at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1 0 2 normal
 
 
-                                         #### CES COMMANDES PERMETENT DE GERER LA SELECTION D'EQUIPES #####
-    # Bleu
+                                         #### STATUES DE CHOIX D'EQUIPES ####
 
-execute positioned -10.5 99 -17.5 as @a[distance=..2,tag=!blue_team,team=!spectator,team=!spectator_op] run function lobby:team_selector/join_blueteam
-execute positioned -10.5 99 -17.5 run particle dust{color:[0.000,0.000,1.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!blue_team,team=!spectator,team=!spectator_op]
-
-execute store result score blue playercount run execute if entity @a[tag=blue_team]
-execute if score $max blue_member > blue playercount run function lobby:team_selector/display_team_members/blue/remove_member
-# permet de compter le nombre de joueur bleu et d'actualiser les statues si certains leavent
-
-execute store result score red playercount run execute if entity @a[tag=red_team]
-execute if score $max red_member > red playercount run function lobby:team_selector/display_team_members/red/remove_member
-# permet de compter le nombre de joueur rouge et d'actualiser les statues si certains leavent
-
-    # Rouge
-
-execute positioned 11.5 99 -17.5 as @a[distance=..2,tag=!red_team,team=!spectator,team=!spectator_op] run function lobby:team_selector/join_redteam
-execute positioned 11.5 99 -17.5 run particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~ ~ 0.5 0.2 0.5 0 3 normal @a[tag=!red_team,team=!spectator,team=!spectator_op]
-
-execute store result score red playercount run execute if entity @a[tag=red_team]
+execute if score $gamemode option_panel matches 1 run function lobby:team_selector/use_statues/teams_statues_loop
+# lance la boucle qui gère les statues d'équipe si on est en mode CTF

@@ -1,4 +1,4 @@
-# appelée par main:launch_arena/launch_map_candyworld et reconnect_in_shop au nom des joueurs à tp
+# appelée par main:launch_arena/launch_map_candyworld
 # permet de tp @s et de setup son spawnpoint selon son équipe et numéro de joueur
 
 spawnpoint @s[scores={Player=1}] -17 147 -684
@@ -29,5 +29,5 @@ spawnpoint @s[scores={Player=-1}] 12 198 -738 90 0
 # spawnpoint spectateurs
 
 
-tp @s[team=red] -19 173 -793 0 5
-tp @s[team=blue] -19 173 -685 180 5
+tp @s[tag=red_team,scores={Player=1..}] -19 173 -793 0 5
+tp @s[tag=blue_team,scores={Player=1..}] -19 173 -685 180 5

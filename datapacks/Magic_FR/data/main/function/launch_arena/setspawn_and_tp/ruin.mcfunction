@@ -1,4 +1,4 @@
-# appelée par main:launch_arena/launch_map_ruin et reconnect_in_shop au nom des joueurs à tp
+# appelée par main:launch_arena/launch_map_ruin
 # permet de tp @s et de setup son spawnpoint selon son équipe et numéro de joueur
 
 spawnpoint @s[scores={Player=1}] -529 121 -49
@@ -29,5 +29,5 @@ spawnpoint @s[scores={Player=-1}] -523 157 -60
 # spawnpoint spectateurs
 
 
-tp @s[team=red] -510.5 151 -163.5 10.5 -2
-tp @s[team=blue] -526.5 151 -57.5 -169.5 -2
+tp @s[tag=red_team,scores={Player=1..}] -510.5 151 -163.5 10.5 -2
+tp @s[tag=blue_team,scores={Player=1..}] -526.5 151 -57.5 -169.5 -2

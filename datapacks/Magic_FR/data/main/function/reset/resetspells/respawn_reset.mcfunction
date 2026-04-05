@@ -1,0 +1,70 @@
+## appelée par les différent respawn
+# clear tout ce qui est generique pour les respawn
+
+execute if score @s using_berzerk matches 1.. run function spells:spellsystem/spell1/spell1_w/no_more_berzerk
+# si @s était en berzerk, l'annule
+
+function spells:spellsystem/spell2/spell2_w/summon_flag/destroy_flag/testplayer
+# si @s avait un drapeau de ralliement -> l'annule
+
+execute if score @s thunderstrm_time matches 0.. run function spells:spellsystem/spell2/spell2_m/die_with_thunderstorm
+# si @s avait une tempête de foudre -> l'annule
+
+execute if score @s freeze matches 0.. run function spells:spellsystem/spell3/spell3_a/stop_freeze
+# si @s était gelé -> l'annule
+
+execute if score @s burning matches 0.. run function spells:spellsystem/spell1/spell1_m/remove_fire
+# si @s était brulé -> l'annule
+
+tag @s remove in_explo1
+tag @s remove in_explo2
+tag @s remove in_explo3
+tag @s remove in_explo4
+tag @s remove in_explo5
+tag @s remove in_explo6
+tag @s remove in_explo7
+tag @s remove in_explo8
+tag @s remove in_explo9
+tag @s remove in_explo10
+tag @s remove in_explo11
+tag @s remove in_explo12
+# si @s était sous explo -> l'annule
+
+clear @s minecraft:tipped_arrow
+execute unless entity @s[tag=!Has_explosive_arrow] unless entity @s[tag=!Has_freeze_arrow] run scoreboard players set @s shotarrow 1
+execute as @s[tag=Has_explosive_arrow] run function spells:spellsystem/spell1/spell1_a/usedexplosivearrow_a
+execute as @s[tag=Has_freeze_arrow] run function spells:spellsystem/spell3/spell3_a/usedfreezearrow_a
+# si @s a la flèche explo, la flèche de glace ou les deux, lui enlève
+
+execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
+# enlève l'accès au flèche de @s (si archer)
+
+execute as @s[tag=invisibility_r] run function spells:spellsystem/spell1/spell1_r/nomoreinvisibility_r
+# si @s est invisible, lui enlève
+execute if entity @s[tag=have_backup_r] run function spells:spellsystem/spell2/spell2_r/killbackup_r
+# si @s possède une voie des ombres -> la détruit
+
+scoreboard players set @s in_fight 0
+scoreboard players set @s out_of_fight 301
+# indique que @s n'est plus en fight
+
+scoreboard players set @s IsAlive 0
+
+execute if score @s in_trap_number matches 1.. run function spells:spellsystem/spell2/spell2_a/respawn_dead_in_trap
+# si @s est mort dans un piege reset le piege en question
+
+execute if score @s hooked_by_player matches 1.. run function spells:spellsystem/spell3/spell3_w/hook/respawn_dead_in_hook
+# si @s est mort dans un hook reset le statut de hook
+
+execute if entity @s[tag=is_hooking] run function spells:spellsystem/spell3/spell3_w/hook/retract_hook/end_hook_player/testplayer
+# si @s a un hook -> reset le hook
+
+execute if entity @s[tag=targetable] run tag @s remove targetable
+# enleve le tag targetable (peut etre visé par la liche) de @s si il l'a
+
+function spells:cooldowns/reset_cooldown
+# reset les temps de recharge de @s
+
+execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
+schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
+# permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)

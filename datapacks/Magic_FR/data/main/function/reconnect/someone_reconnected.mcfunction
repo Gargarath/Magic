@@ -1,6 +1,13 @@
 ## appelée par main:loop si @s vient de se reconnecter
 
 scoreboard players set @s disconnected 0
+
+# si @s n'est pas dans le même gamemode que actuellement -> l'actualise
+execute if score $gamemode option_panel matches 0 if entity @s[tag=!no_team,scores={Player=0..}] run function lobby:team_selector/team_disabler/disable_team
+execute if score $gamemode option_panel matches 0 if entity @s[tag=!no_team,scores={Player=-1}] run function lobby:team_selector/team_disabler/disable_team_spec
+execute if score $gamemode option_panel matches 1 if entity @s[tag=no_team,scores={Player=0..}] run function lobby:team_selector/team_disabler/enable_team
+execute if score $gamemode option_panel matches 1 if entity @s[tag=no_team,scores={Player=-1}] run function lobby:team_selector/team_disabler/enable_team_spec
+
 execute if score lobby enable_loop matches 0 as @s[scores={InLobby=1}] run function main:reconnect/someone_joined_during_match
 # si @s pendant la partie le fait devenir spectateur
 
@@ -17,7 +24,7 @@ execute if score lobby enable_loop matches 1 as @s[tag=blue_team] run function l
 # si @s est bleu et que le lobby est activé -> remet ça statue
 execute if score lobby enable_loop matches 1 as @s[tag=red_team] run function lobby:team_selector/display_team_members/red/new_member
 # si @s est rouge et que le lobby est activé -> remet ça statue
-execute if score lobby enable_loop matches 1 if score player playercount matches 1 run kill @e[type=armor_stand,tag=team_member,name="Armor Stand"]
+execute if score lobby enable_loop matches 1 run kill @e[type=armor_stand,tag=team_member,name="Armor Stand"]
 # si @s est le premier à se co -> kill l'armor stand qui a pu être invoqué en trop si il est heberge lui même le serv
 
 execute if score lobby enable_loop matches 0 as @s[tag=blue_team,scores={Player=1..},tag=!in_lobby_arena] run function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/check_place
@@ -42,7 +49,7 @@ execute if score $operator_access option_panel matches 0 if score @s operator ma
 # si on est en mode player_are_op et que @s est modo et qu'il y a déjà un modo -> enlève @s des modos
 
 execute as @a run attribute @s waypoint_receive_range base set 0
-schedule function ctf:locator_bar_flags/enable_waypoint 1t
+schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
 # permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir)
 
 function main:gui/display/refresh_gui

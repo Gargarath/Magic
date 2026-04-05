@@ -1,17 +1,8 @@
-execute as @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/left_blue
-# enlève @s de la liste des bleus
+# appelée par hotbar_menu/team_selector/check_rightclick si @s veut rejoindre les red
+# rend @s red et l'informe
 
-scoreboard players reset @s blue_member
-# enleve le numéro de statue de @s bleue (pour qu'elle puisse etre retirée)
-
-execute unless entity @s[tag=red_team] run function lobby:team_selector/display_team_members/red/new_member
-# permet d'ajouter @s à la liste des statues rouges si pas déjà le cas
-
-scoreboard players set @s usespell 0
-tag @s remove blue_team
-tag @s add red_team
-function lobby:team_selector/give_lobby_team
-# Donne la bonne équipe de lobby à @s
+function lobby:team_selector/join_team/red
+# rend @s red
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 

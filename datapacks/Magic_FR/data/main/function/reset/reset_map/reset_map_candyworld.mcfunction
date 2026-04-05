@@ -5,7 +5,7 @@ setblock 11 125 -711 air
 setblock -49 125 -767 air
 # allume le beacon rouge
 
-execute as @a[tag=sugar_way] run function ctf:maps_systems/candyworld/sugar_way/exit_sugar_way
+execute as @a[tag=sugar_way] run function gamemode:ctf/maps_systems/candyworld/sugar_way/exit_sugar_way
 #reset le systeme de chemins rapide
 
 function main:reset/reset_living_cherry

@@ -9,5 +9,5 @@ attribute @s minecraft:knockback_resistance base set 1
 scoreboard players set @s hooked_w 20
 # set the timer of stunned for @s to 2 seconds
 
-function ctf:maps_systems/candyworld/gingerbread/clear_gingerbread_effect
+function gamemode:ctf/maps_systems/candyworld/gingerbread/clear_gingerbread_effect
 # si @s était dans le punch pain d'épice -> cancel l'effet du pain d'épice

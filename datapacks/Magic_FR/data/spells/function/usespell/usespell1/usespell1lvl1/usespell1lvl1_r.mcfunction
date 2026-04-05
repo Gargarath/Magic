@@ -2,8 +2,8 @@
 
 tag @s remove save_inventory
 
-execute as @s[tag=Has_Red_flag] run function ctf:usespellwithflag/usespell_redflag
-execute as @s[tag=Has_Blue_flag] run function ctf:usespellwithflag/usespell_blueflag
+execute as @s[tag=Has_Red_flag] run function gamemode:ctf/usespellwithflag/usespell_redflag
+execute as @s[tag=Has_Blue_flag] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 scoreboard players set @s usespell 0
 execute at @s run particle minecraft:smoke ~ ~ ~ 0.2 1 0.2 0 100
 effect give @s minecraft:invisibility infinite 0 true

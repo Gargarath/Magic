@@ -1,10 +1,13 @@
 # permet de randomizer les team
 
+execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function lobby:arena/quit_arena
+# vire les joueurs de l'arène
+
 tag @a[scores={Player=0}] add not_on_team
 # Donne le tag not_on_team à tous les combattants
 
-execute as @a[tag=not_on_team,tag=blue_team] run function lobby:hotbar_menu/team_selector/join_randomteam
-execute as @a[tag=not_on_team,tag=red_team] run function lobby:hotbar_menu/team_selector/join_randomteam
+execute as @a[tag=not_on_team,tag=blue_team] run function lobby:team_selector/join_team/random
+execute as @a[tag=not_on_team,tag=red_team] run function lobby:team_selector/join_team/random
 
 kill @e[type=armor_stand,tag=blue_member]
 kill @e[type=armor_stand,tag=red_member]

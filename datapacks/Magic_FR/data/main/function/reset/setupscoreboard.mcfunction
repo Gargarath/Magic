@@ -9,6 +9,7 @@ scoreboard objectives add numbers dummy
 scoreboard objectives add class_count dummy
 scoreboard objectives add class_id dummy
 scoreboard objectives add team_side dummy
+scoreboard objectives add team_side_save dummy
 
 scoreboard objectives add enable_loop dummy
 scoreboard objectives add is_working dummy
@@ -35,6 +36,7 @@ scoreboard objectives add opt_trig_keybind_order trigger
 scoreboard objectives add opt_keybind_order dummy
 scoreboard objectives add opt_trig_display_jump_timer trigger
 scoreboard objectives add opt_display_jump_timer dummy
+scoreboard objectives add opt_color dummy
 
 # teams
 scoreboard objectives add blue_place dummy
@@ -497,7 +499,7 @@ scoreboard objectives add bow_dmg_tmp10 dummy
 scoreboard objectives add stat_usespell dummy
 scoreboard objectives add stat_flag_saved dummy
 scoreboard objectives add stat_killcount_f dummy
-scoreboard objectives add stat_killcount_player dummy
+
 scoreboard objectives add stat_ppl_trapped dummy
 scoreboard objectives add stat_bow_dmg_boss10 dummy
 scoreboard objectives add stat_boss_item_picked_up dummy
@@ -526,6 +528,10 @@ scoreboard objectives add stat_temp dummy
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add bow_dmg_counted10 dummy
 scoreboard objectives add stat_obj_time dummy
+
+scoreboard objectives add stat_killcount_player dummy
+scoreboard objectives modify stat_killcount_player displayname {"text":"Eliminations","color":"red","bold":true}
+
 
 # global stats
 scoreboard objectives add gstat_warrior_score dummy

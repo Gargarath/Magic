@@ -17,11 +17,11 @@ scoreboard players remove @e[type=#spellable,scores={special_dmg_recieved=1..}] 
     ## HEAL HORS FIGHT
 scoreboard players add @a[scores={out_of_fight=0..299,in_fight=0}] out_of_fight 1
 # ajoute un de score de temps hors fight à tous les joueurs qui n'ont pas la fast regen et n'ont pas encore subit de dégâts
-execute as @a[scores={in_fight=1..}] run function ctf:healing_out_of_fight/reset_time_out_of_fight
+execute as @a[scores={in_fight=1..}] run function gamemode:ctf/healing_out_of_fight/reset_time_out_of_fight
 # enlève la regen puissante aux joueurs qui la possède et suibissent des dégâts
-execute as @a[scores={out_of_fight=100}] run function ctf:healing_out_of_fight/boost_health1
-execute as @a[scores={out_of_fight=200}] run function ctf:healing_out_of_fight/boost_health2
-execute as @a[scores={out_of_fight=300}] run function ctf:healing_out_of_fight/boost_health3
+execute as @a[scores={out_of_fight=100}] run function gamemode:ctf/healing_out_of_fight/boost_health1
+execute as @a[scores={out_of_fight=200}] run function gamemode:ctf/healing_out_of_fight/boost_health2
+execute as @a[scores={out_of_fight=300}] run function gamemode:ctf/healing_out_of_fight/boost_health3
 
 # Gere les spells
 
@@ -252,8 +252,8 @@ execute at @e[type=minecraft:lingering_potion,nbt={Item:{tag:{Tags:["smoke_bomb"
 
 execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=-1}] at @s if entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/enter_smoke
 execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=1}] at @s unless entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/leave_smoke
-execute as @a[tag=Has_Red_flag,scores={in_smoke1=1}] run function ctf:usespellwithflag/usespell_redflag
-execute as @a[tag=Has_Blue_flag,scores={in_smoke1=1}] run function ctf:usespellwithflag/usespell_blueflag
+execute as @a[tag=Has_Red_flag,scores={in_smoke1=1}] run function gamemode:ctf/usespellwithflag/usespell_redflag
+execute as @a[tag=Has_Blue_flag,scores={in_smoke1=1}] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 
 execute at @e[type=minecraft:area_effect_cloud,tag=smoke_bomb_lvl1] run effect give @a[distance=..4,tag=!spell_immune,tag=!rogue] blindness 2 0 true
 execute at @e[type=minecraft:area_effect_cloud,tag=smoke_bomb_lvl1] run effect give @a[distance=..4,tag=!spell_immune,tag=!rogue] slowness 1 0 true

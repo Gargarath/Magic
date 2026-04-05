@@ -6,10 +6,6 @@
 execute if score shop is_working matches 0 run function shop:shop_is_ready
 # Permet de reset les frameroom de tous les joueurs dès que cette boucle fonctionne
 
-## KILL LES FLECHES
-
-kill @e[type=arrow]
-
             ## SPECTATEURS
 
 # tp back si part trop loin
@@ -60,8 +56,7 @@ execute as @a[scores={spec_stop=1..}] run function shop:spectate_ppl/stop
 execute as @a[scores={reset_frameroom=1}] run function shop:reset_frameroom_sign
                                         ## READY SIGN ##
 
-execute as @a[scores={ready_sign=1,is_ready=0}] run function shop:ready_sign/be_ready
-execute as @a[scores={ready_sign=1,is_ready=1}] run function shop:ready_sign/be_not_ready
+execute as @a[scores={ready_sign=1}] run function shop:ready_sign/check_sign
 # Permet de rendre les panneau ready fonctionnels
 
 execute store result score player playercount if entity @a[scores={Player=1..}]
@@ -109,7 +104,7 @@ execute as @e[nbt={ItemRotation:1b},tag=spell3] run function shop:spell3/testpla
 # Interdit d'utiliser un sort
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell
 #execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
-execute as @a[scores={Player=1..}] unless predicate offhand_autorized run function shop:cant_usespell
+execute as @a[scores={Player=1..,InShop=1}] unless predicate offhand_autorized run function shop:cant_usespell
 
                                     # GERE LES EFFETS DANS LA ZONE DE SHOP #
 

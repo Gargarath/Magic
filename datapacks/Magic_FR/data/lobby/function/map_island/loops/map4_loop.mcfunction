@@ -4,5 +4,5 @@
 execute as @a[tag=spec_map4] at @s unless entity @s[x=-664,y=131,z=441,dx=134,dy=150,dz=116] run tp @s -611 160 483
 # tp les specs qui vont trop loins
 
-function ctf:maps_systems/volcano/loop_volcano
+function gamemode:ctf/maps_systems/volcano/loop_volcano
 # lance le systeme de loop volcan

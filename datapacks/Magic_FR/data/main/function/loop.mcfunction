@@ -22,7 +22,8 @@ execute as @a[tag=!initialised] run function main:reset/inisialisation
 
                                         ## LANCE LES BOUCLES DES AUTRES SYSTEMES SI IL Y A BESOIN ##
                                         
-execute if score ctf enable_loop matches 1 run function ctf:loop
+execute if score ctf enable_loop matches 1 run function gamemode:ctf/loop
+execute if score ffa enable_loop matches 1 run function gamemode:ffa/loop
 execute if score lobby enable_loop matches 1 run function lobby:loop
 execute if score shop enable_loop matches 1 run function shop:loop
 execute if score spells enable_loop matches 1 run function spells:loop
@@ -45,8 +46,8 @@ effect give @a minecraft:saturation 5 255 true
 execute store result score player playercount if entity @a[scores={Player=0..}]
 # compte le nombre de joueurs
 
-execute if score Is_ready Lobby_ready matches 0 unless score $current_blue playercount = player playercount run function main:disconnected/someone_disconnected
-# si le nombre de joueur a changé in game -> lance le système un joueur leave
+execute if score $gamemode option_panel matches 1 if score Is_ready Lobby_ready matches 0 unless score $current playercount = player playercount run function main:disconnected/someone_disconnected
+# si en CTF -> si le nombre de joueur a changé in game -> lance le système un joueur leave
 
 # KILL LES ITEMS NON INVOQUES
 kill @e[type=item,tag=!summoned]

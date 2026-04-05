@@ -23,9 +23,9 @@ tag @s remove spec_map5
 tag @s remove spec_map6
 effect clear @s resistance
 
-execute as @s[tag=sugar_way] run function ctf:maps_systems/candyworld/sugar_way/exit_sugar_way
-execute as @s[tag=gingerbread_passenger_blue] run function ctf:maps_systems/candyworld/gingerbread/clear_gingerbread_effect
-execute as @s[tag=gingerbread_passenger_red] run function ctf:maps_systems/candyworld/gingerbread/clear_gingerbread_effect
+execute as @s[tag=sugar_way] run function gamemode:ctf/maps_systems/candyworld/sugar_way/exit_sugar_way
+execute as @s[tag=gingerbread_passenger_blue] run function gamemode:ctf/maps_systems/candyworld/gingerbread/clear_gingerbread_effect
+execute as @s[tag=gingerbread_passenger_red] run function gamemode:ctf/maps_systems/candyworld/gingerbread/clear_gingerbread_effect
 
 
 function main:gui/display/refresh_gui

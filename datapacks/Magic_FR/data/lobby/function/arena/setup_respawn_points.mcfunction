@@ -1,5 +1,5 @@
-## pas appelée
-# permet de setup les points de respawn
+## appelée par lobby:is_ready
+# permet de setup les points de respawn dans l'arène
 
 kill @e[type=marker,tag=respawn_spot]
 summon minecraft:marker -8 69 24.5 {NoGravity:1b,Rotation:[190F,0F],Tags:["respawn_spot","respawn_spot1"]}

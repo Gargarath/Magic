@@ -1,9 +1,9 @@
 ## appelée par les différents launch_map
 # permet de setup la bossbar d'info du match
 
-data modify storage matchinfo.blue flag_state set value "\uE301"
-data modify storage matchinfo.red flag_state set value "\uE304"
-# reset les position de drapeau pour chaque équipe
+execute if score $gamemode option_panel matches 1 run data modify storage matchinfo.blue flag_state set value "\uE301"
+execute if score $gamemode option_panel matches 1 run data modify storage matchinfo.red flag_state set value "\uE304"
+# reset les position de drapeau pour chaque équipe (si on est en mode CTF)
 
 execute if score selected_map variables matches 1 run data modify storage minecraft:matchinfo map set value {"text":"\uE708Pirate\uE707","color":"aqua","bold":true}
 execute if score selected_map variables matches 2 run data modify storage minecraft:matchinfo map set value {"text":"Cimetière","color":"red","bold":true}

@@ -3,8 +3,9 @@
 data modify storage stats:leaderboards by_player set value {}
 # reset les stats par joueur dans le storage
 
-team join Blue_Color @a[tag=blue_team]
-team join Red_Color @a[tag=red_team]
+team join Blue_Color @a[tag=blue_team,scores={Player=1..}]
+team join Red_Color @a[tag=red_team,scores={Player=1..}]
+execute as @a[tag=no_team,scores={Player=1..}] run function lobby:team_selector/give_ffa_team/check_player
 
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={Player=1},limit=1]"},"","",""]}}
 data modify storage stats:leaderboards by_player."1".name set from block 14 97 13 front_text.messages[0]

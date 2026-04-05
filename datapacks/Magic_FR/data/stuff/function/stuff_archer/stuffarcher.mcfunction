@@ -32,26 +32,11 @@ execute if score @s[tag=in_lobby_arena] quit_slot_a matches 8 run item replace e
                          ###   WEAPON 1    ###
 # FLECHES
 
-clear @s arrow
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 0 run function stuff:stuff_archer/arrows/classics/slot0
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 1 run function stuff:stuff_archer/arrows/classics/slot1
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 2 run function stuff:stuff_archer/arrows/classics/slot2
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 3 run function stuff:stuff_archer/arrows/classics/slot3
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 4 run function stuff:stuff_archer/arrows/classics/slot4
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 5 run function stuff:stuff_archer/arrows/classics/slot5
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 6 run function stuff:stuff_archer/arrows/classics/slot6
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 7 run function stuff:stuff_archer/arrows/classics/slot7
-execute if score @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 8 run function stuff:stuff_archer/arrows/classics/slot8
+execute if entity @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics/testplayer
 
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 0 run function stuff:stuff_archer/arrows/classics_unusable/slot0
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 1 run function stuff:stuff_archer/arrows/classics_unusable/slot1
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 2 run function stuff:stuff_archer/arrows/classics_unusable/slot2
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 3 run function stuff:stuff_archer/arrows/classics_unusable/slot3
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 4 run function stuff:stuff_archer/arrows/classics_unusable/slot4
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 5 run function stuff:stuff_archer/arrows/classics_unusable/slot5
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 6 run function stuff:stuff_archer/arrows/classics_unusable/slot6
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 7 run function stuff:stuff_archer/arrows/classics_unusable/slot7
-execute if score @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] arrows_slot matches 8 run function stuff:stuff_archer/arrows/classics_unusable/slot8
+
+execute if entity @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
+execute if entity @s[scores={respawn_time=0..},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
 
 # FLECHES EXPLOSIVE
 execute if entity @s[scores={weapon1=0..,spell1=1},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl1/check_player_number

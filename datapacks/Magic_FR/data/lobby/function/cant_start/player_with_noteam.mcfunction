@@ -1,4 +1,4 @@
-# Appellée par lobby:start_sign/start_sign_yes permet d'avertir que tous les joueurs n'ont pas choisit leur équipe
+# Appellée par option_panel/main/launch_game permet d'avertir que tous les joueurs n'ont pas choisit leur équipe
 
 tellraw @s ["",{"text":"\nImpossible de lancer la partie tant que tous les joueurs n'ont pas choisit leur équipe !","color":"red"}]
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 0

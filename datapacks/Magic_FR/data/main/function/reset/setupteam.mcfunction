@@ -37,10 +37,10 @@ team modify warrior seeFriendlyInvisibles false
 team modify archer seeFriendlyInvisibles false
 team modify mage seeFriendlyInvisibles false
 team modify rogue seeFriendlyInvisibles false
-team modify warrior prefix {"text":"[Guerrier] ","color":"gold"}
-team modify archer prefix {"text":"[Archer] ","color":"dark_green"}
-team modify mage prefix {"text":"[Mage] ","color":"dark_purple"}
-team modify rogue prefix {"text":"[Assassin] ","color":"gray"}
+team modify warrior prefix {"text":"\uE601 ","color":"white"}
+team modify archer prefix {"text":"\uE602 ","color":"white"}
+team modify mage prefix {"text":"\uE603 ","color":"white"}
+team modify rogue prefix {"text":"\uE604 ","color":"white"}
 # Crée les team de classe utilisées dans le lobby pour afficher la classe
 
 team add w_red
@@ -60,10 +60,10 @@ team modify w_red seeFriendlyInvisibles false
 team modify a_red seeFriendlyInvisibles false
 team modify m_red seeFriendlyInvisibles false
 team modify r_red seeFriendlyInvisibles false
-team modify w_red prefix {"text":"[Guerrier] ","color":"gold"}
-team modify a_red prefix {"text":"[Archer] ","color":"dark_green"}
-team modify m_red prefix {"text":"[Mage] ","color":"dark_purple"}
-team modify r_red prefix {"text":"[Assassin] ","color":"gray"}
+team modify w_red prefix {"text":"\uE601 ","color":"white"}
+team modify a_red prefix {"text":"\uE602 ","color":"white"}
+team modify m_red prefix {"text":"\uE603 ","color":"white"}
+team modify r_red prefix {"text":"\uE604 ","color":"white"}
 # Crée les team rouges utilisées dans le lobby pour afficher la classe
 
 
@@ -83,10 +83,10 @@ team modify w_blue seeFriendlyInvisibles false
 team modify a_blue seeFriendlyInvisibles false
 team modify m_blue seeFriendlyInvisibles false
 team modify r_blue seeFriendlyInvisibles false
-team modify w_blue prefix {"text":"[Guerrier] ","color":"gold"}
-team modify a_blue prefix {"text":"[Archer] ","color":"dark_green"}
-team modify m_blue prefix {"text":"[Mage] ","color":"dark_purple"}
-team modify r_blue prefix {"text":"[Assassin] ","color":"gray"}
+team modify w_blue prefix {"text":"\uE601 ","color":"white"}
+team modify a_blue prefix {"text":"\uE602 ","color":"white"}
+team modify m_blue prefix {"text":"\uE603 ","color":"white"}
+team modify r_blue prefix {"text":"\uE604 ","color":"white"}
 # Crée les team bleues utilisées dans le lobby pour afficher la classe
 
 ## VARIANTE OP
@@ -133,10 +133,10 @@ team modify warrior_op seeFriendlyInvisibles false
 team modify archer_op seeFriendlyInvisibles false
 team modify mage_op seeFriendlyInvisibles false
 team modify rogue_op seeFriendlyInvisibles false
-team modify warrior_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
-team modify archer_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
-team modify mage_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
-team modify rogue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+team modify warrior_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE601 ","color":"white"}]
+team modify archer_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE602 ","color":"white"}]
+team modify mage_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE603 ","color":"white"}]
+team modify rogue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE604 ","color":"white"}]
 # Crée les team de classe utilisées dans le lobby pour afficher la classe
 
 team add w_red_op
@@ -156,10 +156,10 @@ team modify w_red_op seeFriendlyInvisibles false
 team modify a_red_op seeFriendlyInvisibles false
 team modify m_red_op seeFriendlyInvisibles false
 team modify r_red_op seeFriendlyInvisibles false
-team modify w_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
-team modify a_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
-team modify m_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
-team modify r_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+team modify w_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE601 ","color":"white"}]
+team modify a_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE602 ","color":"white"}]
+team modify m_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE603 ","color":"white"}]
+team modify r_red_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE604 ","color":"white"}]
 # Crée les team rouges utilisées dans le lobby pour afficher la classe
 
 
@@ -179,10 +179,10 @@ team modify w_blue_op seeFriendlyInvisibles false
 team modify a_blue_op seeFriendlyInvisibles false
 team modify m_blue_op seeFriendlyInvisibles false
 team modify r_blue_op seeFriendlyInvisibles false
-team modify w_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Guerrier] ","color":"gold"}]
-team modify a_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Archer] ","color":"dark_green"}]
-team modify m_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Mage] ","color":"dark_purple"}]
-team modify r_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"[Assassin] ","color":"gray"}]
+team modify w_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE601 ","color":"white"}]
+team modify a_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE602 ","color":"white"}]
+team modify m_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE603 ","color":"white"}]
+team modify r_blue_op prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE604 ","color":"white"}]
 # Crée les team bleues utilisées dans le lobby pour afficher la classe
 
 
@@ -209,7 +209,6 @@ team modify ready_blue prefix {"text":"[Prêt] ","color":"dark_green"}
 team modify non_ready_blue prefix {"text":"[Pas prêt] ","color":"dark_red"}
 # Crée les team bleues utilisées dans le shop pour afficher si prêt ou non
 
-
 team add respawn_red
 team add respawn_blue
 team modify respawn_red color gray
@@ -225,3 +224,66 @@ team add stats_book_red
 team modify stats_book_blue color reset
 team modify stats_book_red color reset
 # Crée la team stats_book utilisée pour les le livre de stats
+
+
+## FFA
+
+team add player1
+team modify player1 nametagVisibility never
+team modify player1 prefix {"text":"\uE601 ","color":white}
+team modify player1 color white
+
+team add player2
+team modify player2 nametagVisibility never
+team modify player2 prefix {"text":"\uE601 ","color":white}
+team modify player2 color white
+
+team add player3
+team modify player3 nametagVisibility never
+team modify player3 prefix {"text":"\uE601 ","color":white}
+team modify player3 color white
+
+team add player4
+team modify player4 nametagVisibility never
+team modify player4 prefix {"text":"\uE601 ","color":white}
+team modify player4 color white
+
+team add player5
+team modify player5 nametagVisibility never
+team modify player5 prefix {"text":"\uE601 ","color":white}
+team modify player5 color white
+
+team add player6
+team modify player6 nametagVisibility never
+team modify player6 prefix {"text":"\uE601 ","color":white}
+team modify player6 color white
+
+team add player7
+team modify player7 nametagVisibility never
+team modify player7 prefix {"text":"\uE601 ","color":white}
+team modify player7 color white
+
+team add player8
+team modify player8 nametagVisibility never
+team modify player8 prefix {"text":"\uE601 ","color":white}
+team modify player8 color white
+
+team add player9
+team modify player9 nametagVisibility never
+team modify player9 prefix {"text":"\uE601 ","color":white}
+team modify player9 color white
+
+team add player10
+team modify player10 nametagVisibility never
+team modify player10 prefix {"text":"\uE601 ","color":white}
+team modify player10 color white
+
+team add player11
+team modify player11 nametagVisibility never
+team modify player11 prefix {"text":"\uE601 ","color":white}
+team modify player11 color white
+
+team add player12
+team modify player12 nametagVisibility never
+team modify player12 prefix {"text":"\uE601 ","color":white}
+team modify player12 color white

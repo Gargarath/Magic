@@ -29,11 +29,11 @@ team modify red nametagVisibility hideForOtherTeams
 team modify blue nametagVisibility hideForOtherTeams
 
 execute as @a run attribute @s waypoint_receive_range base set 0
-schedule function ctf:locator_bar_flags/enable_waypoint 1t
+schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
 # permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe)
 
-schedule function ctf:timer/refresh_timer 1s
-# lance la boucle du chrono
+schedule function gamemode:ctf/timer/refresh_timer 1s
+# clear la boucle du chrono
 
 execute if score round bossbar matches 1..3 if score $secondary_objectives option_panel matches 1 run bossbar set minecraft:secondary_objective players @a
 # affiche la bossbar objectif secondaire si on est sur la map pirate et que l'option objectif secondaire est activé

@@ -1,16 +1,11 @@
-# appellée par main:admin/randomizeteam permet à @s de devnir bleu
+# appellée par main:admin/randomizeteam permet à @s de devenir blue
 
+function lobby:team_selector/join_team/blue
+# rend @s blue
 
-execute unless entity @s[tag=blue_team] run function lobby:team_selector/display_team_members/blue/new_member
-# permet d'ajouter @s à la liste des statues bleues si pas déjà le cas
-
-tag @s remove red_team
-tag @s add blue_team
-function lobby:hotbar_menu/drop_item
-# actualise la team de @s pour le menu de selection de la hotbar
-
-function lobby:team_selector/give_lobby_team
-# Donne sa team du lobby à @s
+execute if score @s hotbar_menu matches 0 run function lobby:hotbar_menu/drop_item
+execute if score @s hotbar_menu matches 2 run function lobby:hotbar_menu/drop_item
+# actualise la team de @s pour le menu de selection de la hotbar (si il est pas dans d'autres menus)
 
 tag @s remove not_on_team
 # enlève le tag not_on_team à @s afin qu'il ne soit plus appellée par main:admin/randomizeteam

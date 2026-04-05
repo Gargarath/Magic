@@ -274,6 +274,34 @@
             "ascent": -59995,
             "height": 8,
             "chars": ["\uE600"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/generic/class_icons/warrior.png",
+            "ascent": -59995,
+            "height": 8,
+            "chars": ["\uE601"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/generic/class_icons/archer.png",
+            "ascent": -59995,
+            "height": 8,
+            "chars": ["\uE602"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/generic/class_icons/mage.png",
+            "ascent": -59995,
+            "height": 8,
+            "chars": ["\uE603"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/generic/class_icons/rogue.png",
+            "ascent": -59995,
+            "height": 8,
+            "chars": ["\uE604"]
         }
  ]
 }

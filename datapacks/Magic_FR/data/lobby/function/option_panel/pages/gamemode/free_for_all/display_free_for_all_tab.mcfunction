@@ -2,7 +2,22 @@
 # permet d'afficher le menu -> mode de jeu FFA
 
 
+execute unless score $gamemode option_panel matches 0 as @a[scores={Player=0}] run function lobby:team_selector/team_disabler/disable_team
+execute unless score $gamemode option_panel matches 0 as @a[scores={Player=-1}] run function lobby:team_selector/team_disabler/disable_team_spec
+# si on est pas déjà en mode FFA -> enlève les joueurs dans les équipes
+
 scoreboard players set $gamemode option_panel 0
+
+execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items
+execute as @a[scores={hotbar_menu=2}] run function lobby:hotbar_menu/main/give_items
+# refresh l'inventaire des joueurs du lobby qui ont l'option de choisir une équipe
+
+function lobby:team_selector/display_team_members/blue/remove_member
+function lobby:team_selector/display_team_members/red/remove_member
+# actualise de force les statues d'équipes (car le système que le gère est désactivé)
+
+function lobby:team_selector/team_disabler/team_statues_off
+# reskin les statues en mode par équipe
 
 # clear menu
 kill @e[type=interaction,tag=optn_menu_gamemode_clickable]

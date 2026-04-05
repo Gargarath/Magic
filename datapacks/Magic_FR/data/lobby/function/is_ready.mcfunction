@@ -12,6 +12,7 @@ scoreboard players set $arena_members Player 0
 # indique qu'il n'y a aucun joueur dans l'arène
 tag @a remove display_killfeed
 # fait en sorte que les joueurs ne voient plus le killfeed
+function lobby:arena/setup_respawn_points
 
 ## MAPS
 

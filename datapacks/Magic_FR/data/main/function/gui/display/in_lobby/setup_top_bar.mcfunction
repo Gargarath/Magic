@@ -1,7 +1,7 @@
 ## appelée par end_game ou stop_game
 # permet de mettre la barre du haut en mode lobby
 
-schedule clear ctf:timer/refresh_timer
+schedule clear gamemode:ctf/timer/refresh_timer
 # désactive la boucle du chronomettre
 
 data modify storage minecraft:matchinfo time.minutes set value "\uE706"

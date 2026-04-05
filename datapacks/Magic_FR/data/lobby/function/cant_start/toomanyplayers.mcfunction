@@ -1,4 +1,4 @@
-# Appellée par lobby:start_sign/start_sign_yes permet d'avertir que la limite de joueur est atteinte
+# Appellée par option_panel/main/launch_game permet d'avertir que la limite de joueur est atteinte
 
 tellraw @s ["",{"text":"\nIl y a trop de joueur dans la partie ! La limite de joueur est de 12.","color":"red"}]
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 0

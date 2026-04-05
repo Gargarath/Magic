@@ -2,8 +2,8 @@
 
 tag @s remove save_inventory
 
-execute as @s[tag=Has_Red_flag] run function ctf:usespellwithflag/usespell_redflag
-execute as @s[tag=Has_Blue_flag] run function ctf:usespellwithflag/usespell_blueflag
+execute as @s[tag=Has_Red_flag] run function gamemode:ctf/usespellwithflag/usespell_redflag
+execute as @s[tag=Has_Blue_flag] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 scoreboard players set @s usespell 0
 execute at @s run playsound minecraft:entity.ender_dragon.growl master @a[distance=..30] ~ ~ ~ 10 1
 

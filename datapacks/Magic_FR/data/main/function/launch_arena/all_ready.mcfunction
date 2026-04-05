@@ -16,9 +16,8 @@ tag @a[scores={Player=1..}] add in_countdown
 scoreboard players set shop enable_loop 0
 scoreboard players set ctf enable_loop 1
 scoreboard players set spells enable_loop 1
-schedule clear shop:shop_timer
+schedule clear shop:shop_timer/shop_timer/shop_timer
 
-# Desactive le datapack SHOP et active le datapack CTF
 scoreboard players set @a usespell 0
 
 scoreboard players set @a spec_player1 0
