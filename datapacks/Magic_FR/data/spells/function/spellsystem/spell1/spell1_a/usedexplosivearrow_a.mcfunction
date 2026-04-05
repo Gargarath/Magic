@@ -21,9 +21,9 @@ execute if score $no_cooldowns option_panel matches 0 run scoreboard players set
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s[scores={spell1=2}] cooldownspell1 15
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s[scores={spell1=3}] cooldownspell1 15
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown1_clock 20
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell1=1}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl1_a
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell1=2}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl2_a
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell1=3}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl3_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=1}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl1_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=2}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl2_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=3}] run function stuff:stuff_archer/cooldowns_a/spell1/spell1lvl3_a
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell1 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown1_clock 5

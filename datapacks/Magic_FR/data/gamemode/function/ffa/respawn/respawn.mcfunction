@@ -18,3 +18,6 @@ attribute @s minecraft:entity_interaction_range base set 17
 # augmente la portée d'interaction de @s (pour les menus)
 attribute @s minecraft:block_interaction_range base set 20
 # augmente la portée d'interaction block de @s (pour les panneaux du shop)
+
+execute at @s run function main:reset/resetframeroom
+# refresh la frameroom de @s

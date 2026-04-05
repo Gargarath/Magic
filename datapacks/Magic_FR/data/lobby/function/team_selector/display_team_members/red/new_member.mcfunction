@@ -3,7 +3,7 @@
 
 scoreboard players add $max red_member 1
 # ajoute 1 au max de joueurs rouges (pour le système de statues au lobby)
-execute store result score red playercount run execute if entity @a[tag=red_team]
+execute store result score red playercount if entity @a[tag=red_team]
 
 scoreboard players reset @s red_member
 

@@ -9,9 +9,9 @@ scoreboard players set team_error start_error 0
 # Reset le score qui indique que tous les joueurs n'ont pas une team
 
 
-execute store result score blue playercount run execute if entity @a[tag=blue_team]
-execute store result score red playercount run execute if entity @a[tag=red_team]
-execute store result score no_team playercount run execute if entity @a[tag=!blue_team,tag=!red_team,scores={Player=0}]
+execute store result score blue playercount if entity @a[tag=blue_team]
+execute store result score red playercount if entity @a[tag=red_team]
+execute store result score no_team playercount if entity @a[tag=!blue_team,tag=!red_team,scores={Player=0}]
 # Permet de compter le nombre de joueurs dans les équipes rouge et bleu et sans équipe
 
 execute if score player playercount matches 13.. run function lobby:cant_start/toomanyplayers

@@ -3,7 +3,7 @@
 
 scoreboard players add $max blue_member 1
 # ajoute 1 au max de joueurs bleus (pour le système de statues au lobby)
-execute store result score blue playercount run execute if entity @a[tag=blue_team]
+execute store result score blue playercount if entity @a[tag=blue_team]
 
 scoreboard players reset @s blue_member
 

@@ -13,7 +13,7 @@ stopsound @a
 
 effect give @a minecraft:resistance infinite 255 true
 function main:reset/resetspells/resetspells
-execute as @a run execute at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 0
+execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 100 0
 scoreboard objectives setdisplay list stat_victory
 # affiche le score de victoire en list
 

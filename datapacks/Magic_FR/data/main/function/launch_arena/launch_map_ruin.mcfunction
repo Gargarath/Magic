@@ -6,7 +6,7 @@
 execute if score $time_change option_panel matches 1 run time set 13400
 # met la fin de journée si l'option de changement du temps est activé
 
-execute if score shop enable_loop matches 0 run execute as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/ruin
+execute if score shop enable_loop matches 0 as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/ruin
 # met les spawns et tp les joueurs (seulement si le shop est désactivé, donc si on est par manche et qu'il faut tp les joueurs)
 
 execute if score shop enable_loop matches 0 run clone 19 95 17 21 96 19 -512 152 -165

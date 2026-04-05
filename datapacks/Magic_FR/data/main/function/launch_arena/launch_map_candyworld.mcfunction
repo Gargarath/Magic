@@ -2,7 +2,7 @@
 # permet de lancer l'arêne bonbon
 
 
-execute if score shop enable_loop matches 0 run execute as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
+execute if score shop enable_loop matches 0 as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
 # met les spawns et tp les joueurs (seulement si le shop est désactivé, donc si on est par manche et qu'il faut tp les joueurs)
 
 execute if score shop enable_loop matches 0 run clone 19 95 17 21 96 19 -20 174 -794

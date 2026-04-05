@@ -85,12 +85,12 @@ execute as @a[scores={IsAlive=7..10}] run function gamemode:ctf/respawns/respawn
 
 # Rouge
 
-execute at @e[tag=Red_flag,tag=!droped] run execute if entity @a[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute as @r[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function gamemode:ctf/capflag/cap_redflag
+execute at @e[tag=Red_flag,tag=!droped] if entity @a[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] as @r[team=blue,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function gamemode:ctf/capflag/cap_redflag
 # Execute la fonction ctf:capflag/cap_redflag au nom de celui qui cap le drapeau rouge
 
 # Bleu
 
-execute at @e[tag=Blue_flag,tag=!droped] run execute if entity @a[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] run execute as @r[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function gamemode:ctf/capflag/cap_blueflag
+execute at @e[tag=Blue_flag,tag=!droped] if entity @a[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1,in_smoke1=-1}] as @r[team=red,dy=3,distance=..0.9,tag=!cant_pickup_flag,scores={using_berzerk=-1}] run function gamemode:ctf/capflag/cap_blueflag
 # Execute la fonction ctf:capflag/cap_blueflag au nom de celui qui cap le drapeau rouge
 
     # Gere la pause des drapeaux
@@ -98,12 +98,12 @@ execute at @e[tag=Blue_flag,tag=!droped] run execute if entity @a[team=red,dy=3,
 
 # Rouge
 
-execute unless entity @e[tag=Has_Blue_flag,tag=!droped] run execute at @e[tag=Blue_flag] if entity @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] run execute as @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] run function gamemode:ctf/poseflag/poseflag_redflag
+execute unless entity @e[tag=Has_Blue_flag,tag=!droped] at @e[tag=Blue_flag] if entity @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] as @a[team=blue,dy=3,distance=..0.9,tag=Has_Red_flag] run function gamemode:ctf/poseflag/poseflag_redflag
 # Execute la fonction ctf:poseflag/poseflag_redflag au nom de celui qui pose le drapeau rouge
 
 # Bleu
 
-execute unless entity @e[tag=Has_Red_flag,tag=!droped] run execute at @e[tag=Red_flag] if entity @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] run execute as @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] run function gamemode:ctf/poseflag/poseflag_blueflag
+execute unless entity @e[tag=Has_Red_flag,tag=!droped] at @e[tag=Red_flag] if entity @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] as @a[team=red,dy=3,distance=..0.9,tag=Has_Blue_flag] run function gamemode:ctf/poseflag/poseflag_blueflag
 # Execute la fonction ctf:poseflag/poseflag_blueflag au nom de celui qui pose le drapeau rouge
 
     # Gere le drop des drapeaux

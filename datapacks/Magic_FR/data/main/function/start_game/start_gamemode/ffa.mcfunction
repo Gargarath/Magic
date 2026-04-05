@@ -29,3 +29,6 @@ scoreboard players display numberformat $aaab_blank stat_killcount_player blank
 scoreboard players set @a stat_killcount_player 0
 
 scoreboard objectives setdisplay sidebar stat_killcount_player
+
+    schedule function gamemode:ffa/money_distribution/increase_player_money 10s
+# lance la boucle de money passive pour les joueurs

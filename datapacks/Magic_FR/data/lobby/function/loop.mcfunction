@@ -51,7 +51,7 @@ execute as @a[scores={lobby_sneak=0}] if predicate minecraft:is_sneaking at @s r
 execute as @a[scores={lobby_sneak=1}] unless predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/stop_sneak
 # permet de check les joueurs qui s'accroupissent
 
-execute store result score $arena_members Player run execute if entity @a[scores={Player=1..}]
+execute store result score $arena_members Player if entity @a[scores={Player=1..}]
 # compte le nombre de joueurs dans l'arène
 execute as @a[scores={IsAlive=1..}] if predicate minecraft:step_on_black_concrete run function lobby:arena/respawn/respawn
 # gere les respawns dans l'arene

@@ -12,18 +12,18 @@ item replace entity @s armor.head from block 17 95 15 container.6
 # met un bloc de magma sur la tête de @s
 
 
-execute if score @s Player matches 1 run execute store result bossbar burning:player1 value run scoreboard players get @s burning
-execute if score @s Player matches 2 run execute store result bossbar burning:player2 value run scoreboard players get @s burning
-execute if score @s Player matches 3 run execute store result bossbar burning:player3 value run scoreboard players get @s burning
-execute if score @s Player matches 4 run execute store result bossbar burning:player4 value run scoreboard players get @s burning
-execute if score @s Player matches 5 run execute store result bossbar burning:player5 value run scoreboard players get @s burning
-execute if score @s Player matches 6 run execute store result bossbar burning:player6 value run scoreboard players get @s burning
-execute if score @s Player matches 7 run execute store result bossbar burning:player7 value run scoreboard players get @s burning
-execute if score @s Player matches 8 run execute store result bossbar burning:player8 value run scoreboard players get @s burning
-execute if score @s Player matches 9 run execute store result bossbar burning:player9 value run scoreboard players get @s burning
-execute if score @s Player matches 10 run execute store result bossbar burning:player10 value run scoreboard players get @s burning
-execute if score @s Player matches 11 run execute store result bossbar burning:player11 value run scoreboard players get @s burning
-execute if score @s Player matches 12 run execute store result bossbar burning:player12 value run scoreboard players get @s burning
+execute if score @s Player matches 1 store result bossbar burning:player1 value run scoreboard players get @s burning
+execute if score @s Player matches 2 store result bossbar burning:player2 value run scoreboard players get @s burning
+execute if score @s Player matches 3 store result bossbar burning:player3 value run scoreboard players get @s burning
+execute if score @s Player matches 4 store result bossbar burning:player4 value run scoreboard players get @s burning
+execute if score @s Player matches 5 store result bossbar burning:player5 value run scoreboard players get @s burning
+execute if score @s Player matches 6 store result bossbar burning:player6 value run scoreboard players get @s burning
+execute if score @s Player matches 7 store result bossbar burning:player7 value run scoreboard players get @s burning
+execute if score @s Player matches 8 store result bossbar burning:player8 value run scoreboard players get @s burning
+execute if score @s Player matches 9 store result bossbar burning:player9 value run scoreboard players get @s burning
+execute if score @s Player matches 10 store result bossbar burning:player10 value run scoreboard players get @s burning
+execute if score @s Player matches 11 store result bossbar burning:player11 value run scoreboard players get @s burning
+execute if score @s Player matches 12 store result bossbar burning:player12 value run scoreboard players get @s burning
 
 execute if score @s Player matches 1 run bossbar set burning:player1 players @s
 execute if score @s Player matches 2 run bossbar set burning:player2 players @s

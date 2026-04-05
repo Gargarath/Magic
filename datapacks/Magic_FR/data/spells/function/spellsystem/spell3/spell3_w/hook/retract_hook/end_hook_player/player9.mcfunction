@@ -30,8 +30,8 @@ execute at @s run playsound minecraft:item.armor.equip_iron master @s ~ ~ ~ 100 
 tag @s remove is_hooking
 # allow @s to hook_again if he has the cooldown
 
-execute if score $no_cooldowns option_panel matches 0 run execute if entity @s[tag=short_hook] run scoreboard players set @s cooldownspell3 2
-execute if score $no_cooldowns option_panel matches 0 run execute if entity @s[tag=!short_hook] run scoreboard players set @s cooldownspell3 7
+execute if score $no_cooldowns option_panel matches 0 if entity @s[tag=short_hook] run scoreboard players set @s cooldownspell3 2
+execute if score $no_cooldowns option_panel matches 0 if entity @s[tag=!short_hook] run scoreboard players set @s cooldownspell3 7
 # give @s a cooldown depending of if the hook was long or not
 
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={spell3_w:1b,spell3_slot:1b}]

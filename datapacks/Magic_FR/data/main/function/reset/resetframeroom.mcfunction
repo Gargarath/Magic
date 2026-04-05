@@ -23,10 +23,10 @@ function shop:reset_money_sign
 
 ### Actualise le panneau ready
 
-execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ run execute if score @s[distance=..15,gamemode=!spectator] is_ready matches 0 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Pas prêt","color":"black","bold":true},{"text":"x","color":"dark_red","bold":true},""]}}
+execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ if score @s[distance=..15,gamemode=!spectator] is_ready matches 0 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Pas prêt","color":"black","bold":true},{"text":"x","color":"dark_red","bold":true},""]}}
 # Si joueur est pas prêt
 
-execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ run execute if score @s[distance=..15,gamemode=!spectator] is_ready matches 1 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Prêt","color":"black","bold":true},{"text":"√","color":"dark_green","bold":true},""]}}
+execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ if score @s[distance=..15,gamemode=!spectator] is_ready matches 1 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Prêt","color":"black","bold":true},{"text":"√","color":"dark_green","bold":true},""]}}
 # Si joueur est prêt
 
 ###    REMPLACE L'ITEM FRAME DES BOTTES PAR LES BOTTES ADAPTES AU NIVEAU D'ACHAT DU JOUEUR ###

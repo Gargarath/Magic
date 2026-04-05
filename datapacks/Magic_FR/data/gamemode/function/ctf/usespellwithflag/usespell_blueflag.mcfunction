@@ -72,7 +72,7 @@ execute if score blue flag_wrong_place matches 0 at @e[tag=Blue_flag] run tp @e[
 # tp la banniere là où le joueur est mort avec le drapeau
 
 execute if score blue flag_wrong_place matches 0 run tellraw @a {"text":"Le drapeau bleu est tombé !","color":"blue","bold":false}
-execute if score blue flag_wrong_place matches 0 run execute at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
+execute if score blue flag_wrong_place matches 0 at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
 execute if score blue flag_wrong_place matches 0 as @e[type=armor_stand,tag=Blue_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_blue_dropped
 data modify storage minecraft:matchinfo.blue flag_state set value "\uE303"
 function main:gui/display/refresh_gui

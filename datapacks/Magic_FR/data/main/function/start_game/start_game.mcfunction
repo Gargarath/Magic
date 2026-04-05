@@ -91,7 +91,7 @@ execute as @r[scores={Player=0}] run function main:start_game/players/player_12
 execute as @a[scores={Player=-1}] at @e[tag=spectator_room] run tp @s ~ ~9 ~ 0 -5
 execute as @a[scores={Player=-1}] at @e[tag=spectator_room] run spawnpoint @s ~ ~9 ~ 0 -5
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
-#execute as @a[scores={Player=1..}] run execute at @s run function main:reset/resetframeroom
+#execute as @a[scores={Player=1..}] at @s run function main:reset/resetframeroom
 # Reset les framerooms de tout les joueurs
 
 advancement revoke @a[scores={Player=1..}] everything

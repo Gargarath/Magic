@@ -18,3 +18,6 @@ team modify player9 nametagVisibility never
 team modify player10 nametagVisibility never
 team modify player11 nametagVisibility never
 team modify player12 nametagVisibility never
+
+schedule clear gamemode:ffa/money_distribution/increase_player_money
+# enlève la boucle d'argent passive sur les joueurs

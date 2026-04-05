@@ -1,6 +1,6 @@
 # appelée par ctf:loop quand il faut activer la vapeur rouge
 
-execute if score red steam_timer matches 250.. run execute positioned -595.00 147.65 490.50 as @a[distance=..10] run playsound minecraft:weather.rain.above master @s -595.00 147 490.50 1 0 1
+execute if score red steam_timer matches 250.. positioned -595.00 147.65 490.50 as @a[distance=..10] run playsound minecraft:weather.rain.above master @s -595.00 147 490.50 1 0 1
 # fait un bruit dans la zone
 
 execute positioned -594.82 147.00 490.76 run particle minecraft:cloud ~ ~0.5 ~ 0.25 0 0.25 0.05 1 force

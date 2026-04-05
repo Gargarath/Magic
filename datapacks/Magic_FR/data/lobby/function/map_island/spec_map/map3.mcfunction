@@ -21,5 +21,5 @@ tp @s 297.5 157 20.0 -120 9
 function main:gui/display/refresh_gui
 # actualise le gui de tous (car besoin de l'interface spec pour @s)
 
-execute store result score $map_3 map_spectator run execute if entity @a[tag=spec_map3]
+execute store result score $map_3 map_spectator if entity @a[tag=spec_map3]
 execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 1

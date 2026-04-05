@@ -15,7 +15,7 @@ execute if score @s ppl_dead_in_team matches 1.. run scoreboard players add @a[t
 execute if score @s ppl_dead_in_team matches 1.. run scoreboard players operation @s max_respawn_bar += @s ppl_dead_in_team
 # si il y a d'autre joueurs morts dans la team de @s -> ajoute au score respawn_time de @s son score de ppl_dead_in_team
 scoreboard players set @a[team=respawn_blue,scores={max_respawn_bar=241..}] max_respawn_bar 240
-execute if score $teamkill option_panel matches 1 if score blue playercount matches 3.. run execute unless entity @a[team=blue] run function gamemode:ctf/respawns/bossbar/teamkill/teamkill_blue
+execute if score $teamkill option_panel matches 1 if score blue playercount matches 3.. unless entity @a[team=blue] run function gamemode:ctf/respawns/bossbar/teamkill/teamkill_blue
 scoreboard players set @s respawn_time 0
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/overlays/respawn_time/check_place
 execute if entity @s[tag=red_team] run function main:stats/scoreboard/red_team_info/overlays/respawn_time/check_place

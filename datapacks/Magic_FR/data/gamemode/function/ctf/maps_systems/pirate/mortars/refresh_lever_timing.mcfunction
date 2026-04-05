@@ -35,20 +35,20 @@ execute if score @s mortars matches 580..599 run data merge entity @s {text:{"te
 execute if score @s mortars matches 600..619 run data merge entity @s {text:{"text":"30","bold":true}}
 
 execute if score @s[tag=mortar_lever_blue] mortars matches 540 positioned 255 93 489 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_blue] mortars matches 540 positioned 255 93 489 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_blue] mortars matches 540 positioned 255 93 489 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
 execute if score @s[tag=mortar_lever_blue] mortars matches 560 positioned 255 93 489 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_blue] mortars matches 560 positioned 255 93 489 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_blue] mortars matches 560 positioned 255 93 489 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
 execute if score @s[tag=mortar_lever_blue] mortars matches 580 positioned 255 93 489 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_blue] mortars matches 580 positioned 255 93 489 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
-execute if score @s[tag=mortar_lever_blue] mortars matches 600 positioned 255 93 489 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 0
+execute if score @s[tag=mortar_lever_blue] mortars matches 580 positioned 255 93 489 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_blue] mortars matches 600 positioned 255 93 489 as @a[distance=..30] at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 0
 
 execute if score @s[tag=mortar_lever_red] mortars matches 540 positioned 281 93 507 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_red] mortars matches 540 positioned 281 93 507 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_red] mortars matches 540 positioned 281 93 507 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
 execute if score @s[tag=mortar_lever_red] mortars matches 560 positioned 281 93 507 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_red] mortars matches 560 positioned 281 93 507 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_red] mortars matches 560 positioned 281 93 507 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
 execute if score @s[tag=mortar_lever_red] mortars matches 580 positioned 281 93 507 run particle minecraft:happy_villager ~ ~ ~ 2.5 1 2.5 0 15
-execute if score @s[tag=mortar_lever_red] mortars matches 580 positioned 281 93 507 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
-execute if score @s[tag=mortar_lever_red] mortars matches 600 positioned 281 93 507 run execute as @a[distance=..30] at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 0
+execute if score @s[tag=mortar_lever_red] mortars matches 580 positioned 281 93 507 as @a[distance=..30] at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 100 2
+execute if score @s[tag=mortar_lever_red] mortars matches 600 positioned 281 93 507 as @a[distance=..30] at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 0
 
 execute if score @s mortars matches 620..639 run data merge entity @s {text:{"text":"29","bold":true}}
 execute if score @s mortars matches 640..659 run data merge entity @s {text:{"text":"28","bold":true}}

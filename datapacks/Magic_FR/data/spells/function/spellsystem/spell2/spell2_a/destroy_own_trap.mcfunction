@@ -62,9 +62,9 @@ scoreboard players set @s[scores={spell2=3}] cooldownspell2 5
 scoreboard players set @s cooldown2_clock 20
 clear @s carrot_on_a_stick[minecraft:custom_data={spell2_a:1b,spell2_slot:1b}]
 execute if score $no_cooldowns option_panel matches 0 run clear @s #minecraft:stained_glass_pane[minecraft:custom_data={spell2_slot:1b,cooldownspell2:1b}]
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell2=1}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl1_a
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell2=2}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl2_a
-execute if score $no_cooldowns option_panel matches 0 run execute as @s[scores={spell2=3}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl3_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell2=1}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl1_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell2=2}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl2_a
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell2=3}] run function stuff:stuff_archer/cooldowns_a/spell2/spell2lvl3_a
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell2 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown2_clock 5

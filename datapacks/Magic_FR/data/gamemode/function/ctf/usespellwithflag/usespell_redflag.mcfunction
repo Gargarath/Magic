@@ -66,11 +66,11 @@ execute if score red flag_wrong_place matches 0 as @e[tag=Red_flag,tag=droped] a
 execute if score red flag_wrong_place matches 0 as @e[tag=Red_flag,tag=droped] at @s if block ~ ~-0.5 ~ #minecraft:half_blocs run tp @s ~ ~-0.1 ~
 # si il n'y a pas d'erreurs redescend le drapeau pour qu'il soit pile au dessus du bloc selon si le bloc fait 0.5 blocs de haut (#minecraft:half_blocs) ou peut etre traversé (#minecraft:traversable:blocs)
 
-execute if score red flag_wrong_place matches 0 run execute at @e[tag=Red_flag] run tp @e[tag=Red_banner] ~ ~-1.77 ~0.2
+execute if score red flag_wrong_place matches 0 at @e[tag=Red_flag] run tp @e[tag=Red_banner] ~ ~-1.77 ~0.2
 # tp la banniere là où le joueur est mort avec le drapeau si il n'y a pas eu d'erreurs
 
 execute if score red flag_wrong_place matches 0 run tellraw @a {"text":"Le drapeau rouge est tombé !","color":"red","bold":false}
-execute if score red flag_wrong_place matches 0 run execute at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
+execute if score red flag_wrong_place matches 0 at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
 execute if score red flag_wrong_place matches 0 as @e[type=armor_stand,tag=Red_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_red_dropped
 data modify storage minecraft:matchinfo.red flag_state set value "\uE306"
 function main:gui/display/refresh_gui

@@ -7,7 +7,7 @@ execute if score #blue mm_count < #red mm_count run scoreboard players set @s te
 execute if score #red mm_count < #blue mm_count run scoreboard players set @s team_side 2
 
 # Égalité -> tirage 0/1
-execute if score #blue mm_count = #red mm_count run execute store result score @s mm_rand run random value 0..1
+execute if score #blue mm_count = #red mm_count store result score @s mm_rand run random value 0..1
 execute if score #blue mm_count = #red mm_count if score @s mm_rand matches 0 run scoreboard players set @s team_side 1
 execute if score #blue mm_count = #red mm_count if score @s mm_rand matches 1 run scoreboard players set @s team_side 2
 

@@ -19,5 +19,5 @@ bossbar set minecraft:point_capture_blue value 0
 # clear les bossbar liées aux objectifs secondaires
 
 execute if score selected_map variables matches 3 run clone 316 128 3 326 133 13 316 146 3
-execute if score selected_map variables matches 3 run execute as @a at @s run playsound minecraft:block.beacon.activate master @s 321 148 8 100 0
+execute if score selected_map variables matches 3 as @a at @s run playsound minecraft:block.beacon.activate master @s 321 148 8 100 0
 # si on est sur usine -> rallume le générateur
