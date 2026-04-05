@@ -71,6 +71,7 @@ execute if score $infinite_money option_panel matches 0 run scoreboard players o
 execute if score $infinite_money option_panel matches 1 run scoreboard players set @a[scores={Player=0}] PH 99999999
 # si mode argent illimité -> donne plein d'argent
 
+scoreboard players operation @a[scores={Player=0}] stat_total_money_earned = @s PH
 
 execute at @e[tag=room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
 # remet les barrier blocs dans le shop

@@ -530,6 +530,7 @@ scoreboard objectives add stat_temp dummy
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add bow_dmg_counted10 dummy
 scoreboard objectives add stat_obj_time dummy
+scoreboard objectives add stat_total_money_earned dummy
 
 scoreboard objectives add stat_killcount_player dummy
 scoreboard objectives modify stat_killcount_player displayname {"text":"Eliminations","color":"red","bold":true}
