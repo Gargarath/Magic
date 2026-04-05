@@ -63,3 +63,6 @@ execute as @a[scores={admin_randomize_class=1}] run function main:admin/book_com
 execute as @a[scores={admin_all_ready=1}] run function main:admin/book_commands/all_ready
 execute as @a[scores={admin_round_over=1}] run function main:admin/book_commands/round_over
 # active les commandes liées aux triggers du livre
+
+# COMMANDES DE TRICHE
+execute as @a[scores={motherlode=1..}] run function main:admin/cheat_commands/motherlode
