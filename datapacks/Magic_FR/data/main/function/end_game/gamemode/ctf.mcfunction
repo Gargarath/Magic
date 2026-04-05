@@ -8,6 +8,9 @@ scoreboard players set ctf enable_loop 0
 execute as @a[scores={save_flag_time=1..}] run function gamemode:ctf/saveflag/stop_saving
 execute as @a[scores={cap_flag_time=1..}] run function gamemode:ctf/capflag_droped/stop_caping
 
+function main:reset/resetctf
+# reset ce qui est lié au CTF
+
 # reset les bossbar
 scoreboard players set @a respawn_time -1
 bossbar set respawn:player1 players
