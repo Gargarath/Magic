@@ -21,3 +21,6 @@ scoreboard players operation @s stat_temp *= %8 numbers
 scoreboard players operation @s stat_temp /= %10 numbers
 scoreboard players operation @s stat_final_score -= @s stat_temp
 # - mort * 0.8
+
+execute if score @s stat_final_score matches ..-1 run scoreboard players set @s stat_final_score 0
+# si @s a un final score négatif -> le met à 0 
