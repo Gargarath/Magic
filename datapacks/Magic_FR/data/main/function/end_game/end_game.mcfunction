@@ -22,7 +22,8 @@ tag @a add in_podium
 function main:gui/display/in_lobby/setup_top_bar
 # met l'affichage en haut de l'écran en mode lobby
 
-spawnpoint @a 0 100 0 180 0
+spawnpoint @a 0 100 71 0 -2
+# met le spawn devant le podium (car si joueur meurt pile à la fin -> sera mis là)
 
 execute as @a run function lobby:team_selector/give_lobby_team
 # Donne les team du lobby à tous
