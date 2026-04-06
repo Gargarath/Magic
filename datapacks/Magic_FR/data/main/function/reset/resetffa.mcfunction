@@ -2,6 +2,7 @@
 # Commande qui permet de reset tout ce qui est lié au FFA
 
 scoreboard players set ffa enable_loop 0
+scoreboard players set shop enable_loop 0
 # désactiver le ffa
 
 scoreboard objectives setdisplay sidebar

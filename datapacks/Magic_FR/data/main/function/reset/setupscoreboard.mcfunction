@@ -553,6 +553,7 @@ scoreboard objectives add sort_obj_score dummy
 scoreboard objectives add sort_bow_dmg10 dummy
 scoreboard objectives add sort_dmg_taken dummy
 scoreboard objectives add sort_flag_earned dummy
+scoreboard objectives add sort_total_money_earned dummy
 
 ## SPELLS
 scoreboard objectives add usespell dummy

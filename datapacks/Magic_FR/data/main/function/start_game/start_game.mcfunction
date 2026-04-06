@@ -118,6 +118,9 @@ function main:stats/save_player_data
 scoreboard players reset * Player_last_game
 scoreboard players reset * team_last_game
 # suprimme les données des joueurs de la dernière game
+execute if score $gamemode option_panel matches 0 run data modify storage minecraft:matchinfo last_game_gamemode set value 0b
+execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo last_game_gamemode set value 1b
+# stock le mode de jeu de la game
 
 scoreboard players set @a[scores={Player=1}] Player_last_game 1
 scoreboard players set @a[scores={Player=2}] Player_last_game 2

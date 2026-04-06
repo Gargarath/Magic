@@ -62,3 +62,6 @@ function main:stats/leaderboard/sort_stats/sort_obj_score/sort_obj_score
 
 function main:stats/leaderboard/sort_stats/sort_final_score/sort_final_score
 # calcule le classement du score total
+
+function main:stats/leaderboard/sort_stats/sort_total_money_earned/sort_total_money_earned
+# calcule le classement d'argent total récolté

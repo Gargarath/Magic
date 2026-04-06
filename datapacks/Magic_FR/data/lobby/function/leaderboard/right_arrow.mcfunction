@@ -8,14 +8,24 @@ advancement revoke @s only main:leaderboard/interact_with_leaderboard_title_righ
 
 scoreboard players add current_page leaderboard 1
 execute if score current_page leaderboard matches 9 run scoreboard players set current_page leaderboard 1
+execute if score current_page leaderboard matches 108 run scoreboard players set current_page leaderboard 101
 # indique qu'on passe à la page suivante
 
-execute if score current_page leaderboard matches 1 as @e[tag=leaderboard] run function main:stats/leaderboard/display/final_score
-execute if score current_page leaderboard matches 2 as @e[tag=leaderboard] run function main:stats/leaderboard/display/kd_ratio
-execute if score current_page leaderboard matches 3 as @e[tag=leaderboard] run function main:stats/leaderboard/display/killcount
-execute if score current_page leaderboard matches 4 as @e[tag=leaderboard] run function main:stats/leaderboard/display/deathcount
-execute if score current_page leaderboard matches 5 as @e[tag=leaderboard] run function main:stats/leaderboard/display/total_dmg
-execute if score current_page leaderboard matches 6 as @e[tag=leaderboard] run function main:stats/leaderboard/display/dmg_taken
-execute if score current_page leaderboard matches 7 as @e[tag=leaderboard] run function main:stats/leaderboard/display/obj_score
-execute if score current_page leaderboard matches 8 as @e[tag=leaderboard] run function main:stats/leaderboard/display/flag_earned
-# affiche le classement selon le numéro de page
+execute if score current_page leaderboard matches 1 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score
+execute if score current_page leaderboard matches 2 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/kd_ratio
+execute if score current_page leaderboard matches 3 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/killcount
+execute if score current_page leaderboard matches 4 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/deathcount
+execute if score current_page leaderboard matches 5 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/total_dmg
+execute if score current_page leaderboard matches 6 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/dmg_taken
+execute if score current_page leaderboard matches 7 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/obj_score
+execute if score current_page leaderboard matches 8 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/flag_earned
+# affiche le classement selon le numéro de page (si en CTF)
+
+execute if score current_page leaderboard matches 101 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score
+execute if score current_page leaderboard matches 102 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/kd_ratio
+execute if score current_page leaderboard matches 103 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/killcount
+execute if score current_page leaderboard matches 104 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/deathcount
+execute if score current_page leaderboard matches 105 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/total_dmg
+execute if score current_page leaderboard matches 106 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/dmg_taken
+execute if score current_page leaderboard matches 107 as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/total_money_earned
+# affiche le classement selon le numéro de page (si en FFA)

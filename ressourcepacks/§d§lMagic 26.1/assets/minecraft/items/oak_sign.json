@@ -447,6 +447,13 @@
           "type": "model",
           "model": "item/leaderboard/titles/flag_earned"
         } 
+      },
+            {
+        "when": "total_money_earned_title",
+        "model": {
+          "type": "model",
+          "model": "item/leaderboard/titles/total_money_earned"
+        } 
       }
     ]
   }

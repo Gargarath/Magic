@@ -14,5 +14,6 @@ function main:stats/stats_book/give_stat_books
 # lance le système de livre de stats
 execute as @a run function lobby:hotbar_menu/main/give_items
 
-scoreboard players set current_page leaderboard 1
-execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/final_score
+execute if data storage minecraft:matchinfo {last_game_gamemode:0b} run scoreboard players set current_page leaderboard 101
+execute if data storage minecraft:matchinfo {last_game_gamemode:1b} run scoreboard players set current_page leaderboard 1
+execute as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score
