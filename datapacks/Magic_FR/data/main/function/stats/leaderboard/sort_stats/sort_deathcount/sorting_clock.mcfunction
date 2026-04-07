@@ -11,7 +11,7 @@ scoreboard players operation $min stat_deathcount < @a[scores={played_last_game=
 execute as @a[scores={played_last_game=2}] if score @s stat_deathcount = $min stat_deathcount run scoreboard players set @s played_last_game 3
 # tag tous les joueurs qui ont le score au min
 
-execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_deathcount/save_place
+execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_deathcount/get_place
 # sélectionne un des joueur qui a le score au min et les stock selon sa place
 
 scoreboard players set @a[scores={played_last_game=3}] played_last_game 2

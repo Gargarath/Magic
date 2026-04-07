@@ -11,7 +11,7 @@ scoreboard players operation $max stat_kd_ratio1000 > @a[scores={played_last_gam
 execute as @a[scores={played_last_game=2}] if score @s stat_kd_ratio1000 = $max stat_kd_ratio1000 run scoreboard players set @s played_last_game 3
 # tag tous les joueurs qui ont le score au max
 
-execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_kd_ratio1000/save_place
+execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_kd_ratio1000/get_place
 # sélectionne un des joueur qui a le score au max et les stock selon sa place
 
 scoreboard players set @a[scores={played_last_game=3}] played_last_game 2

@@ -11,7 +11,7 @@ scoreboard players operation $max stat_flag_earned > @a[scores={played_last_game
 execute as @a[scores={played_last_game=2}] if score @s stat_flag_earned = $max stat_flag_earned run scoreboard players set @s played_last_game 3
 # tag tous les joueurs qui ont le score au max
 
-execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_flag_earned/save_place
+execute as @r[scores={played_last_game=3}] run function main:stats/leaderboard/sort_stats/sort_flag_earned/get_place
 # sélectionne un des joueur qui a le score au max et les stock selon sa place
 
 scoreboard players set @a[scores={played_last_game=3}] played_last_game 2

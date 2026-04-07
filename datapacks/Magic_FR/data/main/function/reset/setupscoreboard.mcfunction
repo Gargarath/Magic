@@ -497,6 +497,7 @@ scoreboard objectives add stat_kd_ratio1 dummy
 scoreboard objectives add stat_kd_ratio2 dummy
 scoreboard objectives add stat_kd_ratio1000 dummy
 scoreboard objectives add stat_kd_num dummy
+scoreboard objectives add stat_kd_tmp dummy
 scoreboard objectives add bow_dmg_tmp10 dummy
 scoreboard objectives add stat_usespell dummy
 scoreboard objectives add stat_flag_saved dummy
