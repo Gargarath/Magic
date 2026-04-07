@@ -148,10 +148,10 @@ attribute @s minecraft:jump_strength base reset
 attribute @s minecraft:knockback_resistance base reset
 
 # reset pour le killfeed
-scoreboard players set @s last_caster 0
+
+function main:killfeed/clear_death_message
 tag @s remove killer
 tag @s remove same_team
 tag @s remove temp
-tag @s remove self_target
 
 
