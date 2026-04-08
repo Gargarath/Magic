@@ -82,7 +82,8 @@ execute if score $map_6 map_spectator matches 1.. run function lobby:map_island/
                                         ## LEADERBOARD
 
 execute at @e[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
-execute at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[0.208,0.965,0.988],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
+execute if data storage minecraft:matchinfo {last_game_gamemode:0b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[1.0,0.745,0.035],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
+execute if data storage minecraft:matchinfo {last_game_gamemode:1b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[0.208,0.965,0.988],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
 
 
                                         ## DEVENIR OPERATEUR
