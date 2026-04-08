@@ -10,8 +10,9 @@ function main:stats/leaderboard/summon_leaderboard/summon_leaderboard
 function main:stats/leaderboard/sort_gstats/sort_final_score/refresh_gstat_leaderboard
 # refresh les leaderboards globaux
 
-function main:stats/stats_book/give_stat_books
+execute as @a[scores={Player_last_game=1..}] run function main:stats/stats_book/give_stat_books
 # lance le système de livre de stats
+
 execute as @a run function lobby:hotbar_menu/main/give_items
 
 execute if data storage minecraft:matchinfo {last_game_gamemode:0b} run scoreboard players set current_page leaderboard 101

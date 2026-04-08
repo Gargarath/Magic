@@ -121,6 +121,8 @@ scoreboard players reset * team_last_game
 execute if score $gamemode option_panel matches 0 run data modify storage minecraft:matchinfo last_game_gamemode set value 0b
 execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo last_game_gamemode set value 1b
 # stock le mode de jeu de la game
+execute store result storage minecraft:matchinfo max_player_last_game int 1 run scoreboard players get player_atstart playercount
+# stock le nombre de joueur dans un storage
 
 scoreboard players set @a[scores={Player=1}] Player_last_game 1
 scoreboard players set @a[scores={Player=2}] Player_last_game 2
