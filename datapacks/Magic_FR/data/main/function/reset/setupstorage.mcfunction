@@ -162,19 +162,31 @@ data modify storage stats:leaderboards blue.player10.class.icon set value "\uE70
 data modify storage stats:leaderboards blue.player11.class.icon set value "\uE709"
 data modify storage stats:leaderboards blue.player12.class.icon set value "\uE709"
 
-data modify storage stats:leaderboards blue.player1.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player2.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player3.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player4.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player5.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player6.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player7.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player8.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player9.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player10.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player11.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards blue.player12.head set value {"text":"\uE708",font:top_left_side}
+data modify storage stats:leaderboards blue.player1.head set value "\uE708"
+data modify storage stats:leaderboards blue.player2.head set value "\uE708"
+data modify storage stats:leaderboards blue.player3.head set value "\uE708"
+data modify storage stats:leaderboards blue.player4.head set value "\uE708"
+data modify storage stats:leaderboards blue.player5.head set value "\uE708"
+data modify storage stats:leaderboards blue.player6.head set value "\uE708"
+data modify storage stats:leaderboards blue.player7.head set value "\uE708"
+data modify storage stats:leaderboards blue.player8.head set value "\uE708"
+data modify storage stats:leaderboards blue.player9.head set value "\uE708"
+data modify storage stats:leaderboards blue.player10.head set value "\uE708"
+data modify storage stats:leaderboards blue.player11.head set value "\uE708"
+data modify storage stats:leaderboards blue.player12.head set value "\uE708"
 
+data modify storage stats:leaderboards blue.player1.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player2.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player3.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player4.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player5.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player6.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player7.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player8.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player9.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player10.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player11.overlay set value "\uE709"
+data modify storage stats:leaderboards blue.player12.overlay set value "\uE709"
 
 
 data modify storage stats:leaderboards red set value {}
@@ -204,18 +216,31 @@ data modify storage stats:leaderboards red.player10.class.icon set value "\uE709
 data modify storage stats:leaderboards red.player11.class.icon set value "\uE709"
 data modify storage stats:leaderboards red.player12.class.icon set value "\uE709"
 
-data modify storage stats:leaderboards red.player1.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player2.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player3.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player4.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player5.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player6.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player7.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player8.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player9.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player10.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player11.head set value {"text":"\uE708",font:top_left_side}
-data modify storage stats:leaderboards red.player12.head set value {"text":"\uE708",font:top_left_side}
+data modify storage stats:leaderboards red.player1.head set value "\uE708"
+data modify storage stats:leaderboards red.player2.head set value "\uE708"
+data modify storage stats:leaderboards red.player3.head set value "\uE708"
+data modify storage stats:leaderboards red.player4.head set value "\uE708"
+data modify storage stats:leaderboards red.player5.head set value "\uE708"
+data modify storage stats:leaderboards red.player6.head set value "\uE708"
+data modify storage stats:leaderboards red.player7.head set value "\uE708"
+data modify storage stats:leaderboards red.player8.head set value "\uE708"
+data modify storage stats:leaderboards red.player9.head set value "\uE708"
+data modify storage stats:leaderboards red.player10.head set value "\uE708"
+data modify storage stats:leaderboards red.player11.head set value "\uE708"
+data modify storage stats:leaderboards red.player12.head set value "\uE708"
+
+data modify storage stats:leaderboards red.player1.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player2.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player3.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player4.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player5.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player6.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player7.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player8.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player9.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player10.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player11.overlay set value "\uE709"
+data modify storage stats:leaderboards red.player12.overlay set value "\uE709"
 
 
 # SETUP LES CASES VIDES POUR LES GUI ICONE JUMP DE L'ARCHER
