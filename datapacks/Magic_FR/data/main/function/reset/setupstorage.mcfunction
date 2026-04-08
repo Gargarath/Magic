@@ -149,6 +149,19 @@ data modify storage stats:leaderboards blue.player10 set value {}
 data modify storage stats:leaderboards blue.player11 set value {}
 data modify storage stats:leaderboards blue.player12 set value {}
 
+data modify storage stats:leaderboards blue.player1.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player2.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player3.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player4.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player5.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player6.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player7.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player8.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player9.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player10.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player11.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player12.class.icon set value "\uE709"
+
 data modify storage stats:leaderboards blue.player1.head set value {"text":"\uE708",font:top_left_side}
 data modify storage stats:leaderboards blue.player2.head set value {"text":"\uE708",font:top_left_side}
 data modify storage stats:leaderboards blue.player3.head set value {"text":"\uE708",font:top_left_side}
@@ -177,6 +190,19 @@ data modify storage stats:leaderboards red.player9 set value {}
 data modify storage stats:leaderboards red.player10 set value {}
 data modify storage stats:leaderboards red.player11 set value {}
 data modify storage stats:leaderboards red.player12 set value {}
+
+data modify storage stats:leaderboards red.player1.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player2.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player3.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player4.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player5.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player6.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player7.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player8.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player9.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player10.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player11.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player12.class.icon set value "\uE709"
 
 data modify storage stats:leaderboards red.player1.head set value {"text":"\uE708",font:top_left_side}
 data modify storage stats:leaderboards red.player2.head set value {"text":"\uE708",font:top_left_side}
@@ -219,3 +245,16 @@ data modify storage main:killfeed death_cause.9 set value "\uE000"
 data modify storage main:killfeed death_cause.10 set value "\uE000"
 data modify storage main:killfeed death_cause.11 set value "\uE000"
 data modify storage main:killfeed death_cause.12 set value "\uE000"
+
+data modify storage gui ffa.1.place set value [{"text":"1er","color":"gold","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.2.place set value [{"text":"2eme","color":"yellow","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.3.place set value [{"text":"3eme","color":"yellow","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.4.place set value [{"text":"4eme","color":"green","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.5.place set value [{"text":"5eme","color":"green","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.6.place set value [{"text":"6eme","color":"green","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.7.place set value [{"text":"7eme","color":"red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.8.place set value [{"text":"8eme","color":"red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.9.place set value [{"text":"9eme","color":"red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.10.place set value [{"text":"10eme","color":"dark_red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.11.place set value [{"text":"11eme","color":"dark_red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
+data modify storage gui ffa.12.place set value [{"text":"12eme","color":"dark_red","bold":true},{"text":" / ","color":"black","bold":true},{"nbt":"max_player_last_game","storage":"minecraft:matchinfo","color":"black","bold":true}]
