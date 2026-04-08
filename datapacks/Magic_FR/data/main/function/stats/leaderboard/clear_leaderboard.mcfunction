@@ -12,5 +12,5 @@ kill @e[type=item_display,tag=leaderboard]
 # tue les textes
 
 scoreboard players set current_page leaderboard 1
-execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/kd_ratio
+execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score
 # affiche la page de ratio
