@@ -37,6 +37,7 @@ scoreboard objectives add opt_keybind_order dummy
 scoreboard objectives add opt_trig_display_jump_timer trigger
 scoreboard objectives add opt_display_jump_timer dummy
 scoreboard objectives add opt_color dummy
+scoreboard objectives add opt_lang dummy
 
 # teams
 scoreboard objectives add blue_place dummy

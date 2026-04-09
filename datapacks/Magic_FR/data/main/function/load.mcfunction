@@ -2,3 +2,6 @@
 # You can have more than 1 of these type of files, and you can change naming and such.
 # To do so go to this data > minecraft > tags > functions > load
 # that file says what functions get played on load.
+
+function main:translation/langs/en_en
+function main:translation/langs/fr_fr

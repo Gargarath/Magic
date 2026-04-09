@@ -5,7 +5,7 @@
 scoreboard players set @s usespell 0
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s {"bold":false,"color":"yellow","text":"Vous avez quitté le mode spectateur !"}
+tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.translate.left_spectator","bold":false,"color":"yellow"}
 
 
 function lobby:team_selector/leave_team/leave_spectator
