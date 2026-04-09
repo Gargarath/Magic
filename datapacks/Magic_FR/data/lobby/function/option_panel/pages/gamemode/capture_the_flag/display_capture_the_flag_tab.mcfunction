@@ -16,6 +16,8 @@ execute as @a[scores={hotbar_menu=6..8}] run function lobby:hotbar_menu/main/giv
 
 function lobby:team_selector/team_disabler/team_statues_on
 # reskin les statues en mode par équipe
+function main:stats/leaderboard/display/gstats/refresh_gstats {mode:"ctf",stat:"stat_final_score"}
+# affiche les stats globales de CTF
 
 ## MENU
 

@@ -7,7 +7,8 @@ function main:stats/leaderboard/sort_stats/sort_stats
 function main:stats/leaderboard/summon_leaderboard/summon_leaderboard
 # met en place le leaderboard
 
-function main:stats/leaderboard/sort_gstats/sort_final_score/refresh_gstat_leaderboard
+execute if data storage minecraft:matchinfo {last_game_gamemode:0b} run function main:stats/leaderboard/sort_gstats/sort_final_score/sort_final_score {mode:"ffa",stat:"stat_final_score"}
+execute if data storage minecraft:matchinfo {last_game_gamemode:1b} run function main:stats/leaderboard/sort_gstats/sort_final_score/sort_final_score {mode:"ctf",stat:"stat_final_score"}
 # refresh les leaderboards globaux
 
 execute as @a[scores={Player_last_game=1..}] run function main:stats/stats_book/give_stat_books

@@ -18,6 +18,8 @@ function lobby:team_selector/display_team_members/red/remove_member
 
 function lobby:team_selector/team_disabler/team_statues_off
 # reskin les statues en mode par équipe
+function main:stats/leaderboard/display/gstats/refresh_gstats {mode:"ffa",stat:"stat_final_score"}
+# affiche les stats globales de FFA
 
 # clear menu
 kill @e[type=interaction,tag=optn_menu_gamemode_clickable]
