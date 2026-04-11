@@ -585,7 +585,7 @@ scoreboard objectives add weapon1_slot_w dummy
 scoreboard objectives add weapon1_slot_a dummy
 scoreboard objectives add weapon1_slot_m dummy
 scoreboard objectives add weapon1_slot_r dummy
-scoreboard objectives add weapon_1_slot2 dummy
+scoreboard objectives add weapon1_slot2 dummy
 scoreboard objectives add quit_slot_w dummy
 scoreboard objectives add quit_slot_a dummy
 scoreboard objectives add quit_slot_m dummy
@@ -595,7 +595,6 @@ scoreboard objectives add spell1_slot_w dummy
 scoreboard objectives add spell1_slot_a dummy
 scoreboard objectives add spell1_slot_m dummy
 scoreboard objectives add spell1_slot_r dummy
-scoreboard objectives add spell1_slot2 dummy
 scoreboard objectives add spell1_slot2 dummy
 scoreboard objectives add spell2_slot_w dummy
 scoreboard objectives add spell2_slot_m dummy
@@ -642,7 +641,6 @@ scoreboard objectives add explo_max_range_a_backup dummy
 
 # shop
 scoreboard objectives add PH dummy
-scoreboard objectives add ready_sign trigger
 ## GUERRIER
 
 # spell1
