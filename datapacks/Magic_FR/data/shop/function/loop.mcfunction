@@ -10,29 +10,29 @@ execute if score shop is_working matches 0 run function shop:shop_is_ready
 
 # tp back si part trop loin
 
-execute at @e[tag=room1] positioned ~ ~10 ~ run tp @a[tag=spec_room1,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room1] positioned ~ ~10 ~ run tp @a[tag=spec_room1,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room1
-execute at @e[tag=room2] positioned ~ ~10 ~ run tp @a[tag=spec_room2,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room2] positioned ~ ~10 ~ run tp @a[tag=spec_room2,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room2
-execute at @e[tag=room3] positioned ~ ~10 ~ run tp @a[tag=spec_room3,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room3] positioned ~ ~10 ~ run tp @a[tag=spec_room3,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room3
-execute at @e[tag=room4] positioned ~ ~10 ~ run tp @a[tag=spec_room4,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room4] positioned ~ ~10 ~ run tp @a[tag=spec_room4,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room4
-execute at @e[tag=room5] positioned ~ ~10 ~ run tp @a[tag=spec_room5,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room5] positioned ~ ~10 ~ run tp @a[tag=spec_room5,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room5
-execute at @e[tag=room6] positioned ~ ~10 ~ run tp @a[tag=spec_room6,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room6] positioned ~ ~10 ~ run tp @a[tag=spec_room6,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room6
-execute at @e[tag=room7] positioned ~ ~10 ~ run tp @a[tag=spec_room7,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room7] positioned ~ ~10 ~ run tp @a[tag=spec_room7,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room7
-execute at @e[tag=room8] positioned ~ ~10 ~ run tp @a[tag=spec_room8,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room8] positioned ~ ~10 ~ run tp @a[tag=spec_room8,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room8
-execute at @e[tag=room9] positioned ~ ~10 ~ run tp @a[tag=spec_room9,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room9] positioned ~ ~10 ~ run tp @a[tag=spec_room9,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room9
-execute at @e[tag=room10] positioned ~ ~10 ~ run tp @a[tag=spec_room10,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room10] positioned ~ ~10 ~ run tp @a[tag=spec_room10,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room10
-execute at @e[tag=room11] positioned ~ ~10 ~ run tp @a[tag=spec_room11,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room11] positioned ~ ~10 ~ run tp @a[tag=spec_room11,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room11
-execute at @e[tag=room12] positioned ~ ~10 ~ run tp @a[tag=spec_room12,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room12] positioned ~ ~10 ~ run tp @a[tag=spec_room12,distance=4..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room12
 
 # Spectate ou arreter de spectate
@@ -66,40 +66,59 @@ execute if score player_atstart playercount = player playercount unless entity @
 
                                          #### CES COMMANDES PERMETENT DE GERER LES SHOPS #####
 
+execute as @a[scores={InShop=1},tag=!look_at_sword] at @s if predicate minecraft:shop/look_at_sword run function shop:look_at/look_at_sword
+execute as @a[scores={InShop=1},tag=look_at_sword] at @s unless predicate minecraft:shop/look_at_sword run function shop:look_away/look_away_sword
+
+execute as @a[scores={InShop=1},tag=!look_at_chest] at @s if predicate minecraft:shop/look_at_chest run function shop:look_at/look_at_chest
+execute as @a[scores={InShop=1},tag=look_at_chest] at @s unless predicate minecraft:shop/look_at_chest run function shop:look_away/look_away_chest
+
+execute as @a[scores={InShop=1},tag=!look_at_legs] at @s if predicate minecraft:shop/look_at_legs run function shop:look_at/look_at_legs
+execute as @a[scores={InShop=1},tag=look_at_legs] at @s unless predicate minecraft:shop/look_at_legs run function shop:look_away/look_away_legs
+
+execute as @a[scores={InShop=1},tag=!look_at_boots] at @s if predicate minecraft:shop/look_at_boots run function shop:look_at/look_at_boots
+execute as @a[scores={InShop=1},tag=look_at_boots] at @s unless predicate minecraft:shop/look_at_boots run function shop:look_away/look_away_boots
+
+execute as @a[scores={InShop=1},tag=!look_at_spell1] at @s if predicate minecraft:shop/look_at_spell1 run function shop:look_at/look_at_spell1
+execute as @a[scores={InShop=1},tag=look_at_spell1] at @s unless predicate minecraft:shop/look_at_spell1 run function shop:look_away/look_away_spell1
+
+execute as @a[scores={InShop=1},tag=!look_at_spell2] at @s if predicate minecraft:shop/look_at_spell2 run function shop:look_at/look_at_spell2
+execute as @a[scores={InShop=1},tag=look_at_spell2] at @s unless predicate minecraft:shop/look_at_spell2 run function shop:look_away/look_away_spell2
+
+execute as @a[scores={InShop=1},tag=!look_at_spell3] at @s if predicate minecraft:shop/look_at_spell3 run function shop:look_at/look_at_spell3
+execute as @a[scores={InShop=1},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3
+
           # shop boots #
 
-execute as @e[nbt={ItemRotation:1b},tag=boots] run function shop:boot/testplayerscore/testboots
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=boots] run function shop:boot/testplayerscore/testboots
 # La commande du dessus est executé sur tous les item frame boots qui ont été tournés. Elle lance la fonction de verification du niveau d'objet boot et de l'agent du joueur du lobby en question.
 
 
 
           # shop leggs #
 
-execute as @e[nbt={ItemRotation:1b},tag=legs] run function shop:legs/testplayerscore/testlegs
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=legs] run function shop:legs/testplayerscore/testlegs
 # La commande du dessus est executé sur tous les item frame legs qui ont été tournés. Elle lance la fonction de verification du niveau d'objet legs et de l'agent du joueur du lobby en question.
-
-
 
            # shop chest #
 
-execute as @e[nbt={ItemRotation:1b},tag=chest] run function shop:chest/testplayerscore/testchest
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=chest] run function shop:chest/testplayerscore/testchest
 
 
 			# shop weapon
 
-execute as @e[nbt={ItemRotation:1b},tag=weapon1] run function shop:weapon1/testplayerscore/testweapon1
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=weapon1] run function shop:weapon1/testplayerscore/testweapon1
 
 			# shop spell1
 
-execute as @e[nbt={ItemRotation:1b},tag=spell1] run function shop:spell1/testplayerscore/testspell1
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell1] run function shop:spell1/testplayerscore/testspell1
 
 			# shop spell2
 
-execute as @e[nbt={ItemRotation:1b},tag=spell2] run function shop:spell2/testplayerscore/testspell2
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell2] run function shop:spell2/testplayerscore/testspell2
 
 			# shop spell3
 
-execute as @e[nbt={ItemRotation:1b},tag=spell3] run function shop:spell3/testplayerscore/testspell3
+#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell3] run function shop:spell3/testplayerscore/testspell3
 
 # Interdit d'utiliser un sort
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell

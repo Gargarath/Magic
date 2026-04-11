@@ -17,7 +17,7 @@ clear @s
 
 tag @s remove hurt
 
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 2.. run scoreboard players enable @s spec_player1
+execute if score shop enable_loop matches 1 if score player_atstart playercount matches 1.. run scoreboard players enable @s spec_player1
 execute if score shop enable_loop matches 1 if score player_atstart playercount matches 2.. run scoreboard players enable @s spec_player2
 execute if score shop enable_loop matches 1 if score player_atstart playercount matches 3.. run scoreboard players enable @s spec_player3
 execute if score shop enable_loop matches 1 if score player_atstart playercount matches 4.. run scoreboard players enable @s spec_player4
@@ -30,7 +30,7 @@ execute if score shop enable_loop matches 1 if score player_atstart playercount 
 execute if score shop enable_loop matches 1 if score player_atstart playercount matches 11.. run scoreboard players enable @s spec_player11
 execute if score shop enable_loop matches 1 if score player_atstart playercount matches 12 run scoreboard players enable @s spec_player12
 # donne les droits de cliquer sur le panneau spec selon le nombre de joueurs
-execute if score shop enable_loop matches 1 at @e[tag=spectator_room] run tp @s ~ ~9 ~ 0 -5
+execute if score shop enable_loop matches 1 at @e[type=marker,tag=shop_room0] run tp @s ~ ~9 ~ 0 -5
 execute if score shop enable_loop matches 1 run scoreboard players set @s InShop 1
 # si les joueurs sont dans le shop tp @s dans le shop
 

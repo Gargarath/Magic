@@ -73,24 +73,15 @@ execute if score $infinite_money option_panel matches 1 run scoreboard players s
 
 scoreboard players operation @a[scores={Player=0}] stat_total_money_earned = @s PH
 
-execute at @e[tag=room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
+execute at @e[type=marker,tag=shop_room] positioned ~ ~10 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
 # remet les barrier blocs dans le shop
 
 scoreboard players set @a[scores={Player=1..}] Player 0
-execute as @r[scores={Player=0}] run function main:start_game/players/player_1
-execute as @r[scores={Player=0}] run function main:start_game/players/player_2
-execute as @r[scores={Player=0}] run function main:start_game/players/player_3
-execute as @r[scores={Player=0}] run function main:start_game/players/player_4
-execute as @r[scores={Player=0}] run function main:start_game/players/player_5
-execute as @r[scores={Player=0}] run function main:start_game/players/player_6
-execute as @r[scores={Player=0}] run function main:start_game/players/player_7
-execute as @r[scores={Player=0}] run function main:start_game/players/player_8
-execute as @r[scores={Player=0}] run function main:start_game/players/player_9
-execute as @r[scores={Player=0}] run function main:start_game/players/player_10
-execute as @r[scores={Player=0}] run function main:start_game/players/player_11
-execute as @r[scores={Player=0}] run function main:start_game/players/player_12
-execute as @a[scores={Player=-1}] at @e[tag=spectator_room] run tp @s ~ ~9 ~ 0 -5
-execute as @a[scores={Player=-1}] at @e[tag=spectator_room] run spawnpoint @s ~ ~9 ~ 0 -5
+scoreboard players set $current Player 0
+execute as @r[scores={Player=0}] run function main:start_game/setup_players/give_player_number
+
+execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room0] run tp @s ~ ~9 ~ 0 -5
+execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room0] run spawnpoint @s ~ ~9 ~ 0 -5
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
 #execute as @a[scores={Player=1..}] at @s run function main:reset/resetframeroom
 # Reset les framerooms de tout les joueurs

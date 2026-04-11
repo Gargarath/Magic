@@ -98,19 +98,19 @@ scoreboard players enable @a ready_sign
 # Permet de rendre le panneau ready clicable pour tous
 
 gamemode adventure @a[scores={Player=-1}]
-execute as @a[scores={Player=-1}] at @e[type=armor_stand,tag=spectator_room] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=1}] at @e[type=armor_stand,tag=room1] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=2}] at @e[type=armor_stand,tag=room2] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=3}] at @e[type=armor_stand,tag=room3] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=4}] at @e[type=armor_stand,tag=room4] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=5}] at @e[type=armor_stand,tag=room5] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=6}] at @e[type=armor_stand,tag=room6] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=7}] at @e[type=armor_stand,tag=room7] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=8}] at @e[type=armor_stand,tag=room8] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=9}] at @e[type=armor_stand,tag=room9] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=10}] at @e[type=armor_stand,tag=room10] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=11}] at @e[type=armor_stand,tag=room11] run function main:round_end/tp_and_set_spawnpoint
-execute as @a[scores={Player=12}] at @e[type=armor_stand,tag=room12] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room0] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=1}] at @e[type=marker,tag=shop_room1] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=2}] at @e[type=marker,tag=shop_room2] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=3}] at @e[type=marker,tag=shop_room3] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=4}] at @e[type=marker,tag=shop_room4] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=5}] at @e[type=marker,tag=shop_room5] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=6}] at @e[type=marker,tag=shop_room6] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=7}] at @e[type=marker,tag=shop_room7] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=8}] at @e[type=marker,tag=shop_room8] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=9}] at @e[type=marker,tag=shop_room9] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=10}] at @e[type=marker,tag=shop_room10] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=11}] at @e[type=marker,tag=shop_room11] run function main:round_end/tp_and_set_spawnpoint
+execute as @a[scores={Player=12}] at @e[type=marker,tag=shop_room12] run function main:round_end/tp_and_set_spawnpoint
 
 stopsound @a
 # coupe les sons de tous les joueurs

@@ -17,6 +17,7 @@
     "\uE730": 30,
     "\uE740": 40,
     "\uE750": 50,
+    "\uE761": -1,
     "\"":0
    }
   },
@@ -439,6 +440,34 @@
             "ascent": 7,
             "height": 16,
             "chars": ["\uE626"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/left_empty_square.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE627"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/left_full_square.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE628"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/right_empty_square.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE630"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/right_full_square.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE631"]
         }
     ]
 }
