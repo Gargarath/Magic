@@ -138,7 +138,15 @@ scoreboard players enable @s opt_trig_keybind_order
 scoreboard players set @s opt_display_jump_timer 1
 scoreboard players enable @s opt_trig_display_jump_timer
 scoreboard players set @s opt_color 0
-scoreboard players set @s opt_lang 1
+scoreboard players set @s opt_lang 0
+
+# ------ # STORAGE PERSONNEL # ---------------
+function main:translation/change_language/save_storage_to_item with storage personnal_storage.temp
+# setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
+
+function main:translation/change_language/change_language
+# fait changer @s de langue (le passe en fr)
+# ----------------------------------------------------------
 
 function lobby:hotbar_menu/main/give_items
 # Donne les item de hotbar
