@@ -1,7 +1,7 @@
 ## appelée par sort_final_scor au nom des joueurs de la game d'avant
 # permet de les ajouter au leaderboard global selon leur stat
 
-function main:get_name
+function main:personnal_data/get_name
 data modify storage stats:temp name set from storage temp name
 data modify storage stats:temp head.player.id set from entity @s UUID
 data modify storage stats:temp stat set value "stat_final_score"

@@ -3,5 +3,5 @@
 # To do so go to this data > minecraft > tags > functions > load
 # that file says what functions get played on load.
 
-function main:translation/langs/en_en
-function main:translation/langs/fr_fr
+function main:personnal_data/translation/langs/en_en
+function main:personnal_data/translation/langs/fr_fr

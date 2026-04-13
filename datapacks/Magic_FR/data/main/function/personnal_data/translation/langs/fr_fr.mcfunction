@@ -1,3 +1,4 @@
+# appelée par rien
 # setup les strings en français (utilisés quand on doit afficher du texte)
 
 data modify storage strings fr_fr set value {\

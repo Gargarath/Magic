@@ -1,4 +1,4 @@
-## appelée au début de game au nom de chaque joueur
+## appelée par setup_player au début de game au nom de chaque joueur
 # actualise le shop selon ses items et son nom
 
 $data merge entity @n[type=mannequin,tag=statue$(player)] {profile:"$(name)"}

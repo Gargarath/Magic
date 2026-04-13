@@ -10,9 +10,9 @@ execute if score @s opt_lang matches 0 run data modify storage temp:language tra
 execute if score @s opt_lang matches 1 run data modify storage temp:language translate set from storage strings fr_fr
 # met la trad de @s dans un storage selon sa langue
 
-function main:translation/change_language/merge_storages with storage temp:language
+function main:personnal_data/translation/change_language/merge_storages with storage temp:language
 # merge le storage avec les trad de @s avec son storage perso
-function main:translation/change_language/save_storage_to_item with storage personnal_storage.temp
+function main:personnal_data/save_new_data with storage personnal_storage.temp
 # remet son storage perso dans son enderchest
 
 tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_changed_language","bold":false,"color":"yellow"}

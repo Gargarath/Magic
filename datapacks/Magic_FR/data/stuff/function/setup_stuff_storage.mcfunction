@@ -1,45 +1,41 @@
 ## appelée par rien
 # permet de determiner le stuff via des storage (avec prix, nom, lore...) pour ensuite etre utilisé par stuff ou shop
 
-## permet de setup le stuff guerrier dans les baril (pour le give plus tard aux joueurs)
-
                          ###   WEAPON 1    ###
 
 # Niveau 0
 
-data modify storage stuff warrior.weapon.0 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_0_name"},price:0,lore:[],custommodeldata:"battle_axe_0"}
-
-$data modify storage stuff warrior.weapon.0 set value {name:{text:"$(tr_rookie_axe_name)",italic:false},price:0,description:[{text:"$(rookie_axe_dmg) $(tr_damages)",color:"gray",italic:false},{text:"Arme de départ",color:"dark_gray",italic:false}],custommodeldata:"battle_axe_0",item:{custom_name="$(tr_rookie_axe_name)",attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:0.5,operation:"add_value",slot:"mainhand"}],unbreakable={},tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon1_slot:1b}}}
+data modify storage stuff warrior.weapon.0 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe_0",level:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 1
-data modify storage stuff warrior.weapon.1 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_1_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.1 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 2
-data modify storage stuff warrior.weapon.2 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_2_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.2 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 3
-data modify storage stuff warrior.weapon.3 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_3_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.3 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 4
-data modify storage stuff warrior.weapon.4 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_4_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.4 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 5
-data modify storage stuff warrior.weapon.5 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_5_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.5 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 6
-data modify storage stuff warrior.weapon.6 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_6_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.6 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 7
-data modify storage stuff warrior.weapon.7 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_7_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.7 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 8
-data modify storage stuff warrior.weapon.8 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_8_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.8 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE630"}
 
 # Niveau 9
-data modify storage stuff warrior.weapon.9 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_9_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.9 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE630"}
 
 # Niveau 10
-data modify storage stuff warrior.weapon.10 set value {name:{entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_warrior_weapon_10_name"},price:0,lore:[],custommodeldata:"battle_axe"}
+data modify storage stuff warrior.weapon.10 set value {item:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE631"}
 
 
                     ###   CHEST    ###

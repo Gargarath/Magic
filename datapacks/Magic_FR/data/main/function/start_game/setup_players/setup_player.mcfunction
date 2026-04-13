@@ -4,7 +4,7 @@
 $execute at @e[tag=shop_room$(player)] run tp @s ~ ~ ~ 0 -5
 $execute at @e[tag=shop_room$(player)] run spawnpoint @s ~ ~ ~
 
-function shop:setup_shop with storage temp
+function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute as @s[tag=blue_team] at @s run function main:start_game/make_frameroom_blue
 # modifie la frameroom des joueurs bleus en bleue.

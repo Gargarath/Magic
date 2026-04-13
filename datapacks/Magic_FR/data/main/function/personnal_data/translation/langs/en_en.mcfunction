@@ -1,4 +1,5 @@
-# sets up the English strings (used when text must be displayed)
+# appelée par rien
+# setup les strings en anglais (utilisés quand on doit afficher du texte)
 
 data modify storage strings en_en set value {\
 "tr_changed_language":"Your language has been set to: English",\

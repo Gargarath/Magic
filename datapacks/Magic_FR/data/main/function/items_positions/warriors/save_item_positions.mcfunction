@@ -16,4 +16,4 @@ execute store result storage personnal_storage.temp storage.slot_weapon1_w int 1
 execute if score @s spell1 matches 1.. store result storage personnal_storage.temp storage.slot_spell1_w int 1 run scoreboard players get @s spell1_slot_w
 execute if score @s spell2 matches 1.. store result storage personnal_storage.temp storage.slot_spell2_w int 1 run scoreboard players get @s spell2_slot_w
 execute if score @s spell3 matches 1.. store result storage personnal_storage.temp storage.slot_spell3_w int 1 run scoreboard players get @s spell3_slot_w
-function main:items_positions/update_storage with storage personnal_storage.temp
+function main:personnal_data/save_new_data with storage personnal_storage.temp

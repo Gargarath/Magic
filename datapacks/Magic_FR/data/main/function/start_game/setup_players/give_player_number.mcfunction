@@ -3,10 +3,24 @@
 scoreboard players add $current Player 1
 scoreboard players operation @s Player = $current Player
 
-function main:get_name
-data modify storage temp name set from storage temp name
-execute store result storage temp player int 1 run scoreboard players get @s Player
-function main:start_game/setup_players/setup_player with storage temp
+
+
+
+## AJOUTE LE NOM ET NUM DE JOUEUR DANS LE STOCKAGE DE @s
+function main:personnal_data/get_name
+# récupère le nom de @s dans un storage
+
+data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
+# récupère la data de @s et la met dans un storage
+data modify storage personnal_storage.temp storage.name set from storage temp name
+# met le nom de @s dans ce storage
+execute store result storage personnal_storage.temp storage.player int 1 run scoreboard players get @s Player
+# save le numéro de joueur de @s dans ce storage
+function main:personnal_data/save_new_data with storage personnal_storage.temp
+# met ce storage dans la data de @s
+
+function main:start_game/setup_players/setup_player with entity @s EnderItems[0].components.minecraft:custom_data
+# lance le setup de shop avec la data de @s
 
 execute as @r[scores={Player=0}] run function main:start_game/setup_players/give_player_number
 # réappelle la fonction en boucle tant qu'il y a des joueurs à setup
