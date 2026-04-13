@@ -60,7 +60,7 @@ execute if score @s[scores={cooldownspell2=-1}] spell2 matches 3 unless score @s
 
                    ###   SPELL 3    ###
 
-execute as @s[scores={cooldownspell3=-1}] run function stuff:stuff_warrior/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @s[scores={cooldownspell3=-1,spell3=1}] run function stuff:stuff_warrior/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 ###   CHEST   ###
 

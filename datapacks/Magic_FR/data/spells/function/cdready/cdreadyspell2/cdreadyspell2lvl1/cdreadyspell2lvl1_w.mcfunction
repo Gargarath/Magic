@@ -21,12 +21,4 @@ scoreboard players set @s cooldownspell2 -1
 clear @s #minecraft:stained_glass_pane[minecraft:custom_data={spell2_slot:1b,cooldownspell2:1b}]
 #clear tous les glass_pane (au cas où)
 
-execute if score @s spell2_slot_w matches 0 run function stuff:stuff_warrior/spell2/slot0
-execute if score @s spell2_slot_w matches 1 run function stuff:stuff_warrior/spell2/slot1
-execute if score @s spell2_slot_w matches 2 run function stuff:stuff_warrior/spell2/slot2
-execute if score @s spell2_slot_w matches 3 run function stuff:stuff_warrior/spell2/slot3
-execute if score @s spell2_slot_w matches 4 run function stuff:stuff_warrior/spell2/slot4
-execute if score @s spell2_slot_w matches 5 run function stuff:stuff_warrior/spell2/slot5
-execute if score @s spell2_slot_w matches 6 run function stuff:stuff_warrior/spell2/slot6
-execute if score @s spell2_slot_w matches 7 run function stuff:stuff_warrior/spell2/slot7
-execute if score @s spell2_slot_w matches 8 run function stuff:stuff_warrior/spell2/slot8
+function stuff:stuff_warrior/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
