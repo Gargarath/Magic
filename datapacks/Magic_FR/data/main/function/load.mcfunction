@@ -5,3 +5,4 @@
 
 function main:personnal_data/translation/langs/en_en
 function main:personnal_data/translation/langs/fr_fr
+function main:reset/setup_stuff_storage

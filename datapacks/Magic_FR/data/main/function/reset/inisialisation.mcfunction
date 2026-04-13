@@ -147,22 +147,24 @@ slot_weapon1_a:0,\
 slot_weapon1_m:0,\
 slot_weapon1_r:0,\
 \
-slot_spell1_w:0,\
-slot_spell1_a:0,\
-slot_spell1_m:0,\
-slot_spell1_r:0,\
+slot_spell1_w:1,\
+slot_spell1_a:1,\
+slot_spell1_m:1,\
+slot_spell1_r:1,\
 \
-slot_spell2_w:0,\
-slot_spell2_a:0,\
-slot_spell2_m:0,\
-slot_spell2_r:0,\
+slot_spell2_w:2,\
+slot_spell2_a:2,\
+slot_spell2_m:2,\
+slot_spell2_r:2,\
 \
-slot_spell3_w:0,\
-slot_spell3_a:0,\
-slot_spell3_m:0,\
-slot_spell3_r:0}]
+slot_spell3_w:3,\
+slot_spell3_a:3,\
+slot_spell3_m:3,\
+slot_spell3_r:3}]
 # setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
 
+function main:personnal_data/shop/add_shop_data
+# ajoute les infos du storage de shop dans la data de @s (utilisé par le shop)
 function main:personnal_data/translation/change_language/change_language
 # fait changer @s de langue (le passe en fr)
 # ----------------------------------------------------------
