@@ -48,15 +48,19 @@ execute if score @s weapon1 matches 10 run function stuff:stuff_warrior/weapon1/
 
                    ###   SPELL 1    ###
 
-execute as @s[scores={cooldownspell1=-1,using_berzerk=-1}] run function stuff:stuff_warrior/spell1/determine_slot
+execute if score @s[scores={cooldownspell1=-1,using_berzerk=-1}] spell1 matches 1 run function stuff:stuff_warrior/spell1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1,using_berzerk=-1}] spell1 matches 2 run function stuff:stuff_warrior/spell1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1,using_berzerk=-1}] spell1 matches 3 run function stuff:stuff_warrior/spell1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 2    ###
 
-execute as @s[scores={cooldownspell2=-1}] unless score @s timer_rally_flag matches 1.. run function stuff:stuff_warrior/spell2/determine_slot
+execute if score @s[scores={cooldownspell2=-1}] spell2 matches 1 unless score @s timer_rally_flag matches 1.. run function stuff:stuff_warrior/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell2=-1}] spell2 matches 2 unless score @s timer_rally_flag matches 1.. run function stuff:stuff_warrior/spell2/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell2=-1}] spell2 matches 3 unless score @s timer_rally_flag matches 1.. run function stuff:stuff_warrior/spell2/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 3    ###
 
-execute as @s[scores={cooldownspell3=-1}] run function stuff:stuff_warrior/spell3/determine_slot
+execute as @s[scores={cooldownspell3=-1}] run function stuff:stuff_warrior/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 ###   CHEST   ###
 

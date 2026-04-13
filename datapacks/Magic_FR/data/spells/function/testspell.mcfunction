@@ -14,35 +14,35 @@ execute if items entity @s[tag=warrior] weapon.mainhand minecraft:carrot_on_a_st
 			# Spell 1
 
 	# Niveau 1
-execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Berzerk I"}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_w
+execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_w:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_w
 # Si un guerrier utilise le Berzerk I (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Berzerk I en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_w
 
 	# Niveau 2
-execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Berzerk II"}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_w
+execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_w:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_w
 # Si un guerrier utilise le Berzerk II (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Berzerk II en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl2_w
 
 	# Niveau 3
-execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Berzerk III"}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_w
+execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_w:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_w
 # Si un guerrier utilise le Berzerk III (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Berzerk III en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl3_w
 
 			# Spell 2
 
 	# Niveau 1
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Drapeau de ralliement I"}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_w
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_w:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_w
 # Si un guerrier utilise le Drapeau de ralliement I (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Drapeau de ralliement I en main) et à le droit -> lance la fonction spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_w
 
 	# Niveau 2
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Drapeau de ralliement II"}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_w
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_w:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_w
 # Si un guerrier utilise le Drapeau de ralliement II (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Drapeau de ralliement II en main) et à le droit -> lance la fonction spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_w
 
 	# Niveau 3
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Drapeau de ralliement III"}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_w
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_w:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_w
 # Si un guerrier utilise le Drapeau de ralliement III (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Drapeau de ralliement III en main) et à le droit -> lance la fonction spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_w
 
 			# Spell 3
 
 	# Niveau 1
-execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Grappin",color:"gray"}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_w
+execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=warrior] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_w:1b,spell3_slot:1b}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_w
 # Si un guerrier utilise le Grappin I (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet Grappin I en main) et à le droit -> lance la fonction spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_w
 
 
