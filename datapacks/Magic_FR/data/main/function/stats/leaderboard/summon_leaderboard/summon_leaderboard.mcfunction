@@ -23,13 +23,11 @@ execute if score $current_check sort_killcount matches 1.. at @n[type=marker,tag
 execute as @e[type=#leaderboard_statues_display,tag=leaderboard] run function main:stats/leaderboard/display/god_statues/god_statues
 # invoque les statues des meilleurs joueurs de la partie
 
-execute at @n[tag=leaderboard_title] run summon item_display ~ ~ ~ {Rotation:[180f,0f],billboard:"horizontal",item_display:"head",Tags:["leaderboard","leaderboard_title"],glow_color_override:16701501,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["final_score_title"]}}}}
+execute at @n[type=marker,tag=leaderboard_title] run summon item_display ~ ~ ~ {Rotation:[180f,0f],billboard:"horizontal",item_display:"head",Tags:["leaderboard","leaderboard_title"],glow_color_override:16701501,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["final_score_title"]}}}}
 # titre
-execute at @n[tag=leaderboard_title] run summon interaction ~1.8 ~-0.5 ~-0.1 {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_left_clickable"]}
-execute at @n[tag=leaderboard_title] run summon interaction ~1.8 ~-0.5 ~ {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_left_clickable"]}
+execute at @n[type=marker,tag=leaderboard_title] run summon interaction ~1.8 ~-0.5 ~-0.1 {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_left_clickable"]}
 # clickable left
-execute at @n[tag=leaderboard_title] run summon interaction ~-1.7 ~-0.5 ~-0.1 {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_right_clickable"]}
-execute at @n[tag=leaderboard_title] run summon interaction ~-1.7 ~-0.5 ~ {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_right_clickable"]}
+execute at @n[type=marker,tag=leaderboard_title] run summon interaction ~-1.7 ~-0.5 ~-0.1 {width:0.7f,height:0.7,response:1b,Tags:["leaderboard","leaderboard_title","leaderboard_title_right_clickable"]}
 # clickable right
 
 execute as @e[type=minecraft:mannequin,tag=leaderboard] run rotate @s facing entity @e[type=minecraft:marker,tag=leaderboard_view_point,limit=1]
