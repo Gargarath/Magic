@@ -34,16 +34,17 @@ execute if score @s[tag=in_lobby_arena] quit_slot_w matches 8 run item replace e
 
 
                          ###   WEAPON 1    ###
-
-execute if score @s weapon1_slot_w matches 0 run function stuff:stuff_warrior/weapon1/slot0
-execute if score @s weapon1_slot_w matches 1 run function stuff:stuff_warrior/weapon1/slot1
-execute if score @s weapon1_slot_w matches 2 run function stuff:stuff_warrior/weapon1/slot2
-execute if score @s weapon1_slot_w matches 3 run function stuff:stuff_warrior/weapon1/slot3
-execute if score @s weapon1_slot_w matches 4 run function stuff:stuff_warrior/weapon1/slot4
-execute if score @s weapon1_slot_w matches 5 run function stuff:stuff_warrior/weapon1/slot5
-execute if score @s weapon1_slot_w matches 6 run function stuff:stuff_warrior/weapon1/slot6
-execute if score @s weapon1_slot_w matches 7 run function stuff:stuff_warrior/weapon1/slot7
-execute if score @s weapon1_slot_w matches 8 run function stuff:stuff_warrior/weapon1/slot8
+execute if score @s weapon1 matches 0 run function stuff:stuff_warrior/weapon1/lvl0 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 1 run function stuff:stuff_warrior/weapon1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 2 run function stuff:stuff_warrior/weapon1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 3 run function stuff:stuff_warrior/weapon1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 4 run function stuff:stuff_warrior/weapon1/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 5 run function stuff:stuff_warrior/weapon1/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 6 run function stuff:stuff_warrior/weapon1/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 7 run function stuff:stuff_warrior/weapon1/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 8 run function stuff:stuff_warrior/weapon1/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 9 run function stuff:stuff_warrior/weapon1/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 10 run function stuff:stuff_warrior/weapon1/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 1    ###
 

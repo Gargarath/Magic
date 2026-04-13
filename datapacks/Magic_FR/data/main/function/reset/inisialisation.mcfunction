@@ -141,7 +141,26 @@ scoreboard players set @s opt_color 0
 scoreboard players set @s opt_lang 0
 
 # ------ # STORAGE PERSONNEL # ---------------
-function main:translation/change_language/save_storage_to_item with storage personnal_storage.temp
+item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane[minecraft:custom_data={\
+slot_weapon1_w:0,\
+slot_weapon1_a:0,\
+slot_weapon1_m:0,\
+slot_weapon1_r:0,\
+\
+slot_spell1_w:0,\
+slot_spell1_a:0,\
+slot_spell1_m:0,\
+slot_spell1_r:0,\
+\
+slot_spell2_w:0,\
+slot_spell2_a:0,\
+slot_spell2_m:0,\
+slot_spell2_r:0,\
+\
+slot_spell3_w:0,\
+slot_spell3_a:0,\
+slot_spell3_m:0,\
+slot_spell3_r:0}]
 # setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
 
 function main:translation/change_language/change_language
