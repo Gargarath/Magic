@@ -43,7 +43,7 @@ execute if score $no_cooldowns option_panel matches 1 run scoreboard players set
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown3_clock 5
 # give lower cooldown if option is enabled
 
-function stuff:stuff_warrior/cooldowns_w/spell3/spell3lvl1_w
+function stuff:stuff_warrior/cooldowns_w/spell3/spell3lvl1_w with entity @s EnderItems[0].components.minecraft:custom_data
 
 tag @s remove short_hook
 # remove the tag that reduce cooldown from @s
