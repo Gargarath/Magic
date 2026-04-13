@@ -1,4 +1,4 @@
-## appelée lorsque l'on doit actualiser le plastron dans le shop de @s
+## appelée lorsque l'on veut l'info sur le prochain plastron de @s (pour le shop)
 
 $execute if score @s chest matches 0 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"chest",level:"1"}
 $execute if score @s chest matches 1 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"chest",level:"2"}

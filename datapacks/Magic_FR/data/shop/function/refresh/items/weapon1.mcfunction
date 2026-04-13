@@ -1,4 +1,5 @@
-## appelée lorsque l'on doit actualiser l'arme dans le shop de @s
+## appelée lorsque l'on veut l'info sur la prochaine arme de @s (pour le shop)
+# stock dans un truc temporaire, l'arme
 
 $execute if score @s weapon1 matches 0 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"weapon1",level:"1"}
 $execute if score @s weapon1 matches 1 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"weapon1",level:"2"}
@@ -11,6 +12,3 @@ $execute if score @s weapon1 matches 7 run function main:personnal_data/shop/set
 $execute if score @s weapon1 matches 8 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"weapon1",level:"9"}
 $execute if score @s weapon1 matches 9 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"weapon1",level:"10"}
 $execute if score @s weapon1 matches 10 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"weapon1",level:"max"}
-
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item

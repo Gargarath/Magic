@@ -5,28 +5,28 @@ data modify storage strings fr_fr set value {\
 "tr_changed_language":"Votre langue a été définie sur : Français",\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
-"tr_warrior_weapon_0_name":"Hache de débutant",\
-"tr_warrior_weapon_0_lore":"",\
-"tr_warrior_weapon_1_name":"Hache de bataille I",\
-"tr_warrior_weapon_1_lore":"",\
-"tr_warrior_weapon_2_name":"Hache de bataille II",\
-"tr_warrior_weapon_2_lore":"",\
-"tr_warrior_weapon_3_name":"Hache de bataille III",\
-"tr_warrior_weapon_3_lore":"",\
-"tr_warrior_weapon_4_name":"Hache de bataille IV",\
-"tr_warrior_weapon_4_lore":"",\
-"tr_warrior_weapon_5_name":"Hache de bataille V",\
-"tr_warrior_weapon_5_lore":"",\
-"tr_warrior_weapon_6_name":"Hache de bataille VI",\
-"tr_warrior_weapon_6_lore":"",\
-"tr_warrior_weapon_7_name":"Hache de bataille VII",\
-"tr_warrior_weapon_7_lore":"",\
-"tr_warrior_weapon_8_name":"Hache de bataille VIII",\
-"tr_warrior_weapon_8_lore":"",\
-"tr_warrior_weapon_9_name":"Hache de bataille IX",\
-"tr_warrior_weapon_9_lore":"",\
-"tr_warrior_weapon_10_name":"Hache de bataille X",\
-"tr_warrior_weapon_10_lore":"",\
+"tr_warrior_weapon1_0_name":"Hache de débutant",\
+"tr_warrior_weapon1_0_lore":"",\
+"tr_warrior_weapon1_1_name":"Hache de bataille I",\
+"tr_warrior_weapon1_1_lore":"",\
+"tr_warrior_weapon1_2_name":"Hache de bataille II",\
+"tr_warrior_weapon1_2_lore":"",\
+"tr_warrior_weapon1_3_name":"Hache de bataille III",\
+"tr_warrior_weapon1_3_lore":"",\
+"tr_warrior_weapon1_4_name":"Hache de bataille IV",\
+"tr_warrior_weapon1_4_lore":"",\
+"tr_warrior_weapon1_5_name":"Hache de bataille V",\
+"tr_warrior_weapon1_5_lore":"",\
+"tr_warrior_weapon1_6_name":"Hache de bataille VI",\
+"tr_warrior_weapon1_6_lore":"",\
+"tr_warrior_weapon1_7_name":"Hache de bataille VII",\
+"tr_warrior_weapon1_7_lore":"",\
+"tr_warrior_weapon1_8_name":"Hache de bataille VIII",\
+"tr_warrior_weapon1_8_lore":"",\
+"tr_warrior_weapon1_9_name":"Hache de bataille IX",\
+"tr_warrior_weapon1_9_lore":"",\
+"tr_warrior_weapon1_10_name":"Hache de bataille X",\
+"tr_warrior_weapon1_10_lore":"",\
 "tr_warrior_chest_1_name":"Plastron de santé I",\
 "tr_warrior_chest_1_lore":"",\
 "tr_warrior_chest_2_name":"Plastron de santé II",\
@@ -286,57 +286,57 @@ data modify storage strings fr_fr set value {\
 "tr_archer_fleche_de_glace_explosives_9_lore_3":"La flèche explosive III",\
 "tr_archer_fleche_de_glace_explosives_9_lore_4":"La flèche de glace III",\
 "tr_archer_fleche_de_glace_explosives_9_lore_5":"------------------------",\
-"tr_archer_weapon_0_name":"Arc de débutant",\
-"tr_archer_weapon_0_lore_1":"Puissance 0 : 5 à 11 points de",\
-"tr_archer_weapon_0_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_0_lore_3":"Carquois  : 1 flèche",\
-"tr_archer_weapon_1_name":"Arc de combat I",\
-"tr_archer_weapon_1_lore_1":"Puissance 1 : 8 à 16 points de",\
-"tr_archer_weapon_1_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_1_lore_3":"Carquois  : 1 flèche",\
-"tr_archer_weapon_2_name":"Arc de combat II",\
-"tr_archer_weapon_2_lore_1":"Puissance 2 : 9 à 19 points de",\
-"tr_archer_weapon_2_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_2_lore_3":"Carquois  : 2 flèches",\
-"tr_archer_weapon_3_name":"Arc de combat III",\
-"tr_archer_weapon_3_lore_1":"Puissance 3 : 10 à 20 points de",\
-"tr_archer_weapon_3_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_3_lore_3":"Carquois  : 2 flèches",\
-"tr_archer_weapon_4_name":"Arc de combat IV",\
-"tr_archer_weapon_4_lore_1":"Puissance 3 : 10 à 20 points de",\
-"tr_archer_weapon_4_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_4_lore_3":"Recul 1",\
-"tr_archer_weapon_4_lore_4":"Carquois  : 3 flèches",\
-"tr_archer_weapon_5_name":"Arc de combat V",\
-"tr_archer_weapon_5_lore_1":"Puissance 4 : 12 à 23 points de",\
-"tr_archer_weapon_5_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_5_lore_3":"Recul 1",\
-"tr_archer_weapon_5_lore_4":"Carquois  : 3 flèches",\
-"tr_archer_weapon_6_name":"Arc de combat VI",\
-"tr_archer_weapon_6_lore_1":"Puissance 4 : 12 à 23 points de",\
-"tr_archer_weapon_6_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_6_lore_3":"Recul 1",\
-"tr_archer_weapon_6_lore_4":"Carquois  : 4 flèches",\
-"tr_archer_weapon_7_name":"Arc de combat VII",\
-"tr_archer_weapon_7_lore_1":"Puissance 5 : 13 à 25 points de",\
-"tr_archer_weapon_7_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_7_lore_3":"Recul 1",\
-"tr_archer_weapon_7_lore_4":"Carquois  : 4 flèches",\
-"tr_archer_weapon_8_name":"Arc de combat VIII",\
-"tr_archer_weapon_8_lore_1":"Puissance 5 : 13 à 25 points de",\
-"tr_archer_weapon_8_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_8_lore_3":"Recul 1",\
-"tr_archer_weapon_8_lore_4":"Carquois  : 5 flèches",\
-"tr_archer_weapon_9_name":"Arc de combat IX",\
-"tr_archer_weapon_9_lore_1":"Puissance 6 : 14 à 30 points de",\
-"tr_archer_weapon_9_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_9_lore_3":"Recul 1",\
-"tr_archer_weapon_9_lore_4":"Carquois  : 5 flèches",\
-"tr_archer_weapon_10_name":"Arc de combat X",\
-"tr_archer_weapon_10_lore_1":"Puissance 6 : 14 à 30 points de",\
-"tr_archer_weapon_10_lore_2":"dégats (selon la charge)",\
-"tr_archer_weapon_10_lore_3":"Recul 2",\
-"tr_archer_weapon_10_lore_4":"Carquois  : 6 flèches",\
+"tr_archer_weapon1_0_name":"Arc de débutant",\
+"tr_archer_weapon1_0_lore_1":"Puissance 0 : 5 à 11 points de",\
+"tr_archer_weapon1_0_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_0_lore_3":"Carquois  : 1 flèche",\
+"tr_archer_weapon1_1_name":"Arc de combat I",\
+"tr_archer_weapon1_1_lore_1":"Puissance 1 : 8 à 16 points de",\
+"tr_archer_weapon1_1_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_1_lore_3":"Carquois  : 1 flèche",\
+"tr_archer_weapon1_2_name":"Arc de combat II",\
+"tr_archer_weapon1_2_lore_1":"Puissance 2 : 9 à 19 points de",\
+"tr_archer_weapon1_2_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_2_lore_3":"Carquois  : 2 flèches",\
+"tr_archer_weapon1_3_name":"Arc de combat III",\
+"tr_archer_weapon1_3_lore_1":"Puissance 3 : 10 à 20 points de",\
+"tr_archer_weapon1_3_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_3_lore_3":"Carquois  : 2 flèches",\
+"tr_archer_weapon1_4_name":"Arc de combat IV",\
+"tr_archer_weapon1_4_lore_1":"Puissance 3 : 10 à 20 points de",\
+"tr_archer_weapon1_4_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_4_lore_3":"Recul 1",\
+"tr_archer_weapon1_4_lore_4":"Carquois  : 3 flèches",\
+"tr_archer_weapon1_5_name":"Arc de combat V",\
+"tr_archer_weapon1_5_lore_1":"Puissance 4 : 12 à 23 points de",\
+"tr_archer_weapon1_5_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_5_lore_3":"Recul 1",\
+"tr_archer_weapon1_5_lore_4":"Carquois  : 3 flèches",\
+"tr_archer_weapon1_6_name":"Arc de combat VI",\
+"tr_archer_weapon1_6_lore_1":"Puissance 4 : 12 à 23 points de",\
+"tr_archer_weapon1_6_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_6_lore_3":"Recul 1",\
+"tr_archer_weapon1_6_lore_4":"Carquois  : 4 flèches",\
+"tr_archer_weapon1_7_name":"Arc de combat VII",\
+"tr_archer_weapon1_7_lore_1":"Puissance 5 : 13 à 25 points de",\
+"tr_archer_weapon1_7_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_7_lore_3":"Recul 1",\
+"tr_archer_weapon1_7_lore_4":"Carquois  : 4 flèches",\
+"tr_archer_weapon1_8_name":"Arc de combat VIII",\
+"tr_archer_weapon1_8_lore_1":"Puissance 5 : 13 à 25 points de",\
+"tr_archer_weapon1_8_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_8_lore_3":"Recul 1",\
+"tr_archer_weapon1_8_lore_4":"Carquois  : 5 flèches",\
+"tr_archer_weapon1_9_name":"Arc de combat IX",\
+"tr_archer_weapon1_9_lore_1":"Puissance 6 : 14 à 30 points de",\
+"tr_archer_weapon1_9_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_9_lore_3":"Recul 1",\
+"tr_archer_weapon1_9_lore_4":"Carquois  : 5 flèches",\
+"tr_archer_weapon1_10_name":"Arc de combat X",\
+"tr_archer_weapon1_10_lore_1":"Puissance 6 : 14 à 30 points de",\
+"tr_archer_weapon1_10_lore_2":"dégats (selon la charge)",\
+"tr_archer_weapon1_10_lore_3":"Recul 2",\
+"tr_archer_weapon1_10_lore_4":"Carquois  : 6 flèches",\
 "tr_archer_chest_1_name":"Plastron de santé I",\
 "tr_archer_chest_1_lore":"",\
 "tr_archer_chest_2_name":"Plastron de santé II",\
@@ -563,92 +563,92 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell3_status_0_lore_1":"----------------",\
 "tr_archer_spell3_status_0_lore_2":"Vous êtes gelé !",\
 "tr_archer_spell3_status_0_lore_3":"----------------",\
-"tr_mage_weapon_0_name":"Bâton de débutant",\
-"tr_mage_weapon_0_lore_1":"-----------------------------------",\
-"tr_mage_weapon_0_lore_2":"Ce bâton miteux est incapable de lancer",\
-"tr_mage_weapon_0_lore_3":"le moindre sort...",\
-"tr_mage_weapon_0_lore_4":"Mais au moins vous avez une arme !",\
-"tr_mage_weapon_0_lore_5":"-----------------------------------",\
-"tr_mage_weapon_1_name":"Bâton de combat I",\
-"tr_mage_weapon_1_lore_1":"-----------------------------------",\
-"tr_mage_weapon_1_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_1_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_1_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_1_lore_5":"Portée maximale: 20 blocs.",\
-"tr_mage_weapon_1_lore_6":"Coût en mana: 90",\
-"tr_mage_weapon_1_lore_7":"-----------------------------------",\
-"tr_mage_weapon_2_name":"Bâton de combat II",\
-"tr_mage_weapon_2_lore_1":"-----------------------------------",\
-"tr_mage_weapon_2_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_2_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_2_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_2_lore_5":"Portée maximale: 25 blocs.",\
-"tr_mage_weapon_2_lore_6":"Coût en mana: 90",\
-"tr_mage_weapon_2_lore_7":"-----------------------------------",\
-"tr_mage_weapon_3_name":"Bâton de combat III",\
-"tr_mage_weapon_3_lore_1":"-----------------------------------",\
-"tr_mage_weapon_3_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_3_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_3_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_3_lore_5":"Portée maximale: 30 blocs.",\
-"tr_mage_weapon_3_lore_6":"Coût en mana: 85",\
-"tr_mage_weapon_3_lore_7":"-----------------------------------",\
-"tr_mage_weapon_4_name":"Bâton de combat IV",\
-"tr_mage_weapon_4_lore_1":"-----------------------------------",\
-"tr_mage_weapon_4_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_4_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_4_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_4_lore_5":"Portée maximale: 35 blocs.",\
-"tr_mage_weapon_4_lore_6":"Coût en mana: 85",\
-"tr_mage_weapon_4_lore_7":"-----------------------------------",\
-"tr_mage_weapon_5_name":"Bâton de combat V",\
-"tr_mage_weapon_5_lore_1":"-----------------------------------",\
-"tr_mage_weapon_5_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_5_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_5_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_5_lore_5":"Portée maximale: 35 blocs.",\
-"tr_mage_weapon_5_lore_6":"Coût en mana: 80",\
-"tr_mage_weapon_5_lore_7":"-----------------------------------",\
-"tr_mage_weapon_6_name":"Bâton de combat VI",\
-"tr_mage_weapon_6_lore_1":"-----------------------------------",\
-"tr_mage_weapon_6_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_6_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_6_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_6_lore_5":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon_6_lore_6":"Coût en mana: 75",\
-"tr_mage_weapon_6_lore_7":"-----------------------------------",\
-"tr_mage_weapon_7_name":"Bâton de combat VII",\
-"tr_mage_weapon_7_lore_1":"-----------------------------------",\
-"tr_mage_weapon_7_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_7_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_7_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_7_lore_5":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon_7_lore_6":"Coût en mana: 70",\
-"tr_mage_weapon_7_lore_7":"-----------------------------------",\
-"tr_mage_weapon_8_name":"Bâton de combat VIII",\
-"tr_mage_weapon_8_lore_1":"-----------------------------------",\
-"tr_mage_weapon_8_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_8_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_8_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_8_lore_5":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon_8_lore_6":"Coût en mana: 65",\
-"tr_mage_weapon_8_lore_7":"-----------------------------------",\
-"tr_mage_weapon_9_name":"Bâton de combat IX",\
-"tr_mage_weapon_9_lore_1":"-----------------------------------",\
-"tr_mage_weapon_9_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_9_lore_3":"Il infligera 6 points de dégats au premier",\
-"tr_mage_weapon_9_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_9_lore_5":"Portée maximale: 45 blocs.",\
-"tr_mage_weapon_9_lore_6":"Coût en mana: 65",\
-"tr_mage_weapon_9_lore_7":"-----------------------------------",\
-"tr_mage_weapon_10_name":"Bâton de combat X",\
-"tr_mage_weapon_10_lore_1":"-----------------------------------",\
-"tr_mage_weapon_10_lore_2":"Lance un sort dans la direction visée.",\
-"tr_mage_weapon_10_lore_3":"Il infligera 12 points de dégats au premier",\
-"tr_mage_weapon_10_lore_4":"adversaire rencontré.",\
-"tr_mage_weapon_10_lore_5":"Portée maximale: 45 blocs.",\
-"tr_mage_weapon_10_lore_6":"Coût en mana: 55",\
-"tr_mage_weapon_10_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_0_name":"Bâton de débutant",\
+"tr_mage_weapon1_0_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_0_lore_2":"Ce bâton miteux est incapable de lancer",\
+"tr_mage_weapon1_0_lore_3":"le moindre sort...",\
+"tr_mage_weapon1_0_lore_4":"Mais au moins vous avez une arme !",\
+"tr_mage_weapon1_0_lore_5":"-----------------------------------",\
+"tr_mage_weapon1_1_name":"Bâton de combat I",\
+"tr_mage_weapon1_1_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_1_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_1_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_1_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_1_lore_5":"Portée maximale: 20 blocs.",\
+"tr_mage_weapon1_1_lore_6":"Coût en mana: 90",\
+"tr_mage_weapon1_1_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_2_name":"Bâton de combat II",\
+"tr_mage_weapon1_2_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_2_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_2_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_2_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_2_lore_5":"Portée maximale: 25 blocs.",\
+"tr_mage_weapon1_2_lore_6":"Coût en mana: 90",\
+"tr_mage_weapon1_2_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_3_name":"Bâton de combat III",\
+"tr_mage_weapon1_3_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_3_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_3_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_3_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_3_lore_5":"Portée maximale: 30 blocs.",\
+"tr_mage_weapon1_3_lore_6":"Coût en mana: 85",\
+"tr_mage_weapon1_3_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_4_name":"Bâton de combat IV",\
+"tr_mage_weapon1_4_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_4_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_4_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_4_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_4_lore_5":"Portée maximale: 35 blocs.",\
+"tr_mage_weapon1_4_lore_6":"Coût en mana: 85",\
+"tr_mage_weapon1_4_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_5_name":"Bâton de combat V",\
+"tr_mage_weapon1_5_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_5_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_5_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_5_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_5_lore_5":"Portée maximale: 35 blocs.",\
+"tr_mage_weapon1_5_lore_6":"Coût en mana: 80",\
+"tr_mage_weapon1_5_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_6_name":"Bâton de combat VI",\
+"tr_mage_weapon1_6_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_6_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_6_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_6_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_6_lore_5":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_6_lore_6":"Coût en mana: 75",\
+"tr_mage_weapon1_6_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_7_name":"Bâton de combat VII",\
+"tr_mage_weapon1_7_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_7_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_7_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_7_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_7_lore_5":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_7_lore_6":"Coût en mana: 70",\
+"tr_mage_weapon1_7_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_8_name":"Bâton de combat VIII",\
+"tr_mage_weapon1_8_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_8_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_8_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_8_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_8_lore_5":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_8_lore_6":"Coût en mana: 65",\
+"tr_mage_weapon1_8_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_9_name":"Bâton de combat IX",\
+"tr_mage_weapon1_9_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_9_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_9_lore_3":"Il infligera 6 points de dégats au premier",\
+"tr_mage_weapon1_9_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_9_lore_5":"Portée maximale: 45 blocs.",\
+"tr_mage_weapon1_9_lore_6":"Coût en mana: 65",\
+"tr_mage_weapon1_9_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_10_name":"Bâton de combat X",\
+"tr_mage_weapon1_10_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_10_lore_2":"Lance un sort dans la direction visée.",\
+"tr_mage_weapon1_10_lore_3":"Il infligera 12 points de dégats au premier",\
+"tr_mage_weapon1_10_lore_4":"adversaire rencontré.",\
+"tr_mage_weapon1_10_lore_5":"Portée maximale: 45 blocs.",\
+"tr_mage_weapon1_10_lore_6":"Coût en mana: 55",\
+"tr_mage_weapon1_10_lore_7":"-----------------------------------",\
 "tr_mage_chest_1_name":"Plastron de santé I",\
 "tr_mage_chest_1_lore":"",\
 "tr_mage_chest_2_name":"Plastron de santé II",\
@@ -809,4 +809,8 @@ data modify storage strings fr_fr set value {\
 \
 "tr_shop_title":"Magasin",\
 "tr_shop_money_display_price1_1":"Points",\
-"tr_shop_money_display_price1_2":"d'honneur :"}
+"tr_shop_money_display_price1_2":"d'honneur :",\
+"tr_shop_ready_button":"Pas prêt",\
+"tr_shop_item_overlay_price_1":"Coût :",\
+"tr_shop_item_overlay_price_2":"points d'honneur",\
+"tr_shop_item_overlay_buy_tip":"clic droit pour acheter"}

@@ -5,28 +5,28 @@ data modify storage strings en_en set value {\
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You have joined spectator mode!",\
 "tr_left_spectator":"You have left spectator mode!",\
-"tr_warrior_weapon_0_name":"Beginner's Axe",\
-"tr_warrior_weapon_0_lore":"",\
-"tr_warrior_weapon_1_name":"Battle Axe I",\
-"tr_warrior_weapon_1_lore":"",\
-"tr_warrior_weapon_2_name":"Battle Axe II",\
-"tr_warrior_weapon_2_lore":"",\
-"tr_warrior_weapon_3_name":"Battle Axe III",\
-"tr_warrior_weapon_3_lore":"",\
-"tr_warrior_weapon_4_name":"Battle Axe IV",\
-"tr_warrior_weapon_4_lore":"",\
-"tr_warrior_weapon_5_name":"Battle Axe V",\
-"tr_warrior_weapon_5_lore":"",\
-"tr_warrior_weapon_6_name":"Battle Axe VI",\
-"tr_warrior_weapon_6_lore":"",\
-"tr_warrior_weapon_7_name":"Battle Axe VII",\
-"tr_warrior_weapon_7_lore":"",\
-"tr_warrior_weapon_8_name":"Battle Axe VIII",\
-"tr_warrior_weapon_8_lore":"",\
-"tr_warrior_weapon_9_name":"Battle Axe IX",\
-"tr_warrior_weapon_9_lore":"",\
-"tr_warrior_weapon_10_name":"Battle Axe X",\
-"tr_warrior_weapon_10_lore":"",\
+"tr_warrior_weapon1_0_name":"Beginner's Axe",\
+"tr_warrior_weapon1_0_lore":"",\
+"tr_warrior_weapon1_1_name":"Battle Axe I",\
+"tr_warrior_weapon1_1_lore":"",\
+"tr_warrior_weapon1_2_name":"Battle Axe II",\
+"tr_warrior_weapon1_2_lore":"",\
+"tr_warrior_weapon1_3_name":"Battle Axe III",\
+"tr_warrior_weapon1_3_lore":"",\
+"tr_warrior_weapon1_4_name":"Battle Axe IV",\
+"tr_warrior_weapon1_4_lore":"",\
+"tr_warrior_weapon1_5_name":"Battle Axe V",\
+"tr_warrior_weapon1_5_lore":"",\
+"tr_warrior_weapon1_6_name":"Battle Axe VI",\
+"tr_warrior_weapon1_6_lore":"",\
+"tr_warrior_weapon1_7_name":"Battle Axe VII",\
+"tr_warrior_weapon1_7_lore":"",\
+"tr_warrior_weapon1_8_name":"Battle Axe VIII",\
+"tr_warrior_weapon1_8_lore":"",\
+"tr_warrior_weapon1_9_name":"Battle Axe IX",\
+"tr_warrior_weapon1_9_lore":"",\
+"tr_warrior_weapon1_10_name":"Battle Axe X",\
+"tr_warrior_weapon1_10_lore":"",\
 "tr_warrior_chest_1_name":"Health Chestplate I",\
 "tr_warrior_chest_1_lore":"",\
 "tr_warrior_chest_2_name":"Health Chestplate II",\
@@ -286,57 +286,57 @@ data modify storage strings en_en set value {\
 "tr_archer_fleche_de_glace_explosives_9_lore_3":"Explosive Arrow III",\
 "tr_archer_fleche_de_glace_explosives_9_lore_4":"Ice Arrow III",\
 "tr_archer_fleche_de_glace_explosives_9_lore_5":"------------------------",\
-"tr_archer_weapon_0_name":"Beginner's Bow",\
-"tr_archer_weapon_0_lore_1":"Power 0: 5 to 11 points of",\
-"tr_archer_weapon_0_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_0_lore_3":"Quiver  : 1 arrow",\
-"tr_archer_weapon_1_name":"Combat Bow I",\
-"tr_archer_weapon_1_lore_1":"Power 1: 8 to 16 points of",\
-"tr_archer_weapon_1_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_1_lore_3":"Quiver  : 1 arrow",\
-"tr_archer_weapon_2_name":"Combat Bow II",\
-"tr_archer_weapon_2_lore_1":"Power 2: 9 to 19 points of",\
-"tr_archer_weapon_2_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_2_lore_3":"Quiver  : 2 arrows",\
-"tr_archer_weapon_3_name":"Combat Bow III",\
-"tr_archer_weapon_3_lore_1":"Power 3: 10 to 20 points of",\
-"tr_archer_weapon_3_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_3_lore_3":"Quiver  : 2 arrows",\
-"tr_archer_weapon_4_name":"Combat Bow IV",\
-"tr_archer_weapon_4_lore_1":"Power 3: 10 to 20 points of",\
-"tr_archer_weapon_4_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_4_lore_3":"Punch 1",\
-"tr_archer_weapon_4_lore_4":"Quiver  : 3 arrows",\
-"tr_archer_weapon_5_name":"Combat Bow V",\
-"tr_archer_weapon_5_lore_1":"Power 4: 12 to 23 points of",\
-"tr_archer_weapon_5_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_5_lore_3":"Punch 1",\
-"tr_archer_weapon_5_lore_4":"Quiver  : 3 arrows",\
-"tr_archer_weapon_6_name":"Combat Bow VI",\
-"tr_archer_weapon_6_lore_1":"Power 4: 12 to 23 points of",\
-"tr_archer_weapon_6_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_6_lore_3":"Punch 1",\
-"tr_archer_weapon_6_lore_4":"Quiver  : 4 arrows",\
-"tr_archer_weapon_7_name":"Combat Bow VII",\
-"tr_archer_weapon_7_lore_1":"Power 5: 13 to 25 points of",\
-"tr_archer_weapon_7_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_7_lore_3":"Punch 1",\
-"tr_archer_weapon_7_lore_4":"Quiver  : 4 arrows",\
-"tr_archer_weapon_8_name":"Combat Bow VIII",\
-"tr_archer_weapon_8_lore_1":"Power 5: 13 to 25 points of",\
-"tr_archer_weapon_8_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_8_lore_3":"Punch 1",\
-"tr_archer_weapon_8_lore_4":"Quiver  : 5 arrows",\
-"tr_archer_weapon_9_name":"Combat Bow IX",\
-"tr_archer_weapon_9_lore_1":"Power 6: 14 to 30 points of",\
-"tr_archer_weapon_9_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_9_lore_3":"Punch 1",\
-"tr_archer_weapon_9_lore_4":"Quiver  : 5 arrows",\
-"tr_archer_weapon_10_name":"Combat Bow X",\
-"tr_archer_weapon_10_lore_1":"Power 6: 14 to 30 points of",\
-"tr_archer_weapon_10_lore_2":"damage (based on charge)",\
-"tr_archer_weapon_10_lore_3":"Punch 2",\
-"tr_archer_weapon_10_lore_4":"Quiver  : 6 arrows",\
+"tr_archer_weapon1_0_name":"Beginner's Bow",\
+"tr_archer_weapon1_0_lore_1":"Power 0: 5 to 11 points of",\
+"tr_archer_weapon1_0_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_0_lore_3":"Quiver  : 1 arrow",\
+"tr_archer_weapon1_1_name":"Combat Bow I",\
+"tr_archer_weapon1_1_lore_1":"Power 1: 8 to 16 points of",\
+"tr_archer_weapon1_1_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_1_lore_3":"Quiver  : 1 arrow",\
+"tr_archer_weapon1_2_name":"Combat Bow II",\
+"tr_archer_weapon1_2_lore_1":"Power 2: 9 to 19 points of",\
+"tr_archer_weapon1_2_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_2_lore_3":"Quiver  : 2 arrows",\
+"tr_archer_weapon1_3_name":"Combat Bow III",\
+"tr_archer_weapon1_3_lore_1":"Power 3: 10 to 20 points of",\
+"tr_archer_weapon1_3_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_3_lore_3":"Quiver  : 2 arrows",\
+"tr_archer_weapon1_4_name":"Combat Bow IV",\
+"tr_archer_weapon1_4_lore_1":"Power 3: 10 to 20 points of",\
+"tr_archer_weapon1_4_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_4_lore_3":"Punch 1",\
+"tr_archer_weapon1_4_lore_4":"Quiver  : 3 arrows",\
+"tr_archer_weapon1_5_name":"Combat Bow V",\
+"tr_archer_weapon1_5_lore_1":"Power 4: 12 to 23 points of",\
+"tr_archer_weapon1_5_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_5_lore_3":"Punch 1",\
+"tr_archer_weapon1_5_lore_4":"Quiver  : 3 arrows",\
+"tr_archer_weapon1_6_name":"Combat Bow VI",\
+"tr_archer_weapon1_6_lore_1":"Power 4: 12 to 23 points of",\
+"tr_archer_weapon1_6_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_6_lore_3":"Punch 1",\
+"tr_archer_weapon1_6_lore_4":"Quiver  : 4 arrows",\
+"tr_archer_weapon1_7_name":"Combat Bow VII",\
+"tr_archer_weapon1_7_lore_1":"Power 5: 13 to 25 points of",\
+"tr_archer_weapon1_7_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_7_lore_3":"Punch 1",\
+"tr_archer_weapon1_7_lore_4":"Quiver  : 4 arrows",\
+"tr_archer_weapon1_8_name":"Combat Bow VIII",\
+"tr_archer_weapon1_8_lore_1":"Power 5: 13 to 25 points of",\
+"tr_archer_weapon1_8_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_8_lore_3":"Punch 1",\
+"tr_archer_weapon1_8_lore_4":"Quiver  : 5 arrows",\
+"tr_archer_weapon1_9_name":"Combat Bow IX",\
+"tr_archer_weapon1_9_lore_1":"Power 6: 14 to 30 points of",\
+"tr_archer_weapon1_9_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_9_lore_3":"Punch 1",\
+"tr_archer_weapon1_9_lore_4":"Quiver  : 5 arrows",\
+"tr_archer_weapon1_10_name":"Combat Bow X",\
+"tr_archer_weapon1_10_lore_1":"Power 6: 14 to 30 points of",\
+"tr_archer_weapon1_10_lore_2":"damage (based on charge)",\
+"tr_archer_weapon1_10_lore_3":"Punch 2",\
+"tr_archer_weapon1_10_lore_4":"Quiver  : 6 arrows",\
 "tr_archer_chest_1_name":"Health Chestplate I",\
 "tr_archer_chest_1_lore":"",\
 "tr_archer_chest_2_name":"Health Chestplate II",\
@@ -563,92 +563,92 @@ data modify storage strings en_en set value {\
 "tr_archer_spell3_status_0_lore_1":"----------------",\
 "tr_archer_spell3_status_0_lore_2":"You are frozen!",\
 "tr_archer_spell3_status_0_lore_3":"----------------",\
-"tr_mage_weapon_0_name":"Beginner's Staff",\
-"tr_mage_weapon_0_lore_1":"-----------------------------------",\
-"tr_mage_weapon_0_lore_2":"This shabby staff is incapable of casting",\
-"tr_mage_weapon_0_lore_3":"even the smallest spell...",\
-"tr_mage_weapon_0_lore_4":"But at least you have a weapon!",\
-"tr_mage_weapon_0_lore_5":"-----------------------------------",\
-"tr_mage_weapon_1_name":"Combat Staff I",\
-"tr_mage_weapon_1_lore_1":"-----------------------------------",\
-"tr_mage_weapon_1_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_1_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_1_lore_4":"enemy hit.",\
-"tr_mage_weapon_1_lore_5":"Maximum range: 20 blocks.",\
-"tr_mage_weapon_1_lore_6":"Mana cost: 90",\
-"tr_mage_weapon_1_lore_7":"-----------------------------------",\
-"tr_mage_weapon_2_name":"Combat Staff II",\
-"tr_mage_weapon_2_lore_1":"-----------------------------------",\
-"tr_mage_weapon_2_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_2_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_2_lore_4":"enemy hit.",\
-"tr_mage_weapon_2_lore_5":"Maximum range: 25 blocks.",\
-"tr_mage_weapon_2_lore_6":"Mana cost: 90",\
-"tr_mage_weapon_2_lore_7":"-----------------------------------",\
-"tr_mage_weapon_3_name":"Combat Staff III",\
-"tr_mage_weapon_3_lore_1":"-----------------------------------",\
-"tr_mage_weapon_3_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_3_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_3_lore_4":"enemy hit.",\
-"tr_mage_weapon_3_lore_5":"Maximum range: 30 blocks.",\
-"tr_mage_weapon_3_lore_6":"Mana cost: 85",\
-"tr_mage_weapon_3_lore_7":"-----------------------------------",\
-"tr_mage_weapon_4_name":"Combat Staff IV",\
-"tr_mage_weapon_4_lore_1":"-----------------------------------",\
-"tr_mage_weapon_4_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_4_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_4_lore_4":"enemy hit.",\
-"tr_mage_weapon_4_lore_5":"Maximum range: 35 blocks.",\
-"tr_mage_weapon_4_lore_6":"Mana cost: 85",\
-"tr_mage_weapon_4_lore_7":"-----------------------------------",\
-"tr_mage_weapon_5_name":"Combat Staff V",\
-"tr_mage_weapon_5_lore_1":"-----------------------------------",\
-"tr_mage_weapon_5_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_5_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_5_lore_4":"enemy hit.",\
-"tr_mage_weapon_5_lore_5":"Maximum range: 35 blocks.",\
-"tr_mage_weapon_5_lore_6":"Mana cost: 80",\
-"tr_mage_weapon_5_lore_7":"-----------------------------------",\
-"tr_mage_weapon_6_name":"Combat Staff VI",\
-"tr_mage_weapon_6_lore_1":"-----------------------------------",\
-"tr_mage_weapon_6_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_6_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_6_lore_4":"enemy hit.",\
-"tr_mage_weapon_6_lore_5":"Maximum range: 40 blocks.",\
-"tr_mage_weapon_6_lore_6":"Mana cost: 75",\
-"tr_mage_weapon_6_lore_7":"-----------------------------------",\
-"tr_mage_weapon_7_name":"Combat Staff VII",\
-"tr_mage_weapon_7_lore_1":"-----------------------------------",\
-"tr_mage_weapon_7_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_7_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_7_lore_4":"enemy hit.",\
-"tr_mage_weapon_7_lore_5":"Maximum range: 40 blocks.",\
-"tr_mage_weapon_7_lore_6":"Mana cost: 70",\
-"tr_mage_weapon_7_lore_7":"-----------------------------------",\
-"tr_mage_weapon_8_name":"Combat Staff VIII",\
-"tr_mage_weapon_8_lore_1":"-----------------------------------",\
-"tr_mage_weapon_8_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_8_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_8_lore_4":"enemy hit.",\
-"tr_mage_weapon_8_lore_5":"Maximum range: 40 blocks.",\
-"tr_mage_weapon_8_lore_6":"Mana cost: 65",\
-"tr_mage_weapon_8_lore_7":"-----------------------------------",\
-"tr_mage_weapon_9_name":"Combat Staff IX",\
-"tr_mage_weapon_9_lore_1":"-----------------------------------",\
-"tr_mage_weapon_9_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_9_lore_3":"It deals 6 damage to the first",\
-"tr_mage_weapon_9_lore_4":"enemy hit.",\
-"tr_mage_weapon_9_lore_5":"Maximum range: 45 blocks.",\
-"tr_mage_weapon_9_lore_6":"Mana cost: 65",\
-"tr_mage_weapon_9_lore_7":"-----------------------------------",\
-"tr_mage_weapon_10_name":"Combat Staff X",\
-"tr_mage_weapon_10_lore_1":"-----------------------------------",\
-"tr_mage_weapon_10_lore_2":"Casts a spell in the aimed direction.",\
-"tr_mage_weapon_10_lore_3":"It deals 12 damage to the first",\
-"tr_mage_weapon_10_lore_4":"enemy hit.",\
-"tr_mage_weapon_10_lore_5":"Maximum range: 45 blocks.",\
-"tr_mage_weapon_10_lore_6":"Mana cost: 55",\
-"tr_mage_weapon_10_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_0_name":"Beginner's Staff",\
+"tr_mage_weapon1_0_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_0_lore_2":"This shabby staff is incapable of casting",\
+"tr_mage_weapon1_0_lore_3":"even the smallest spell...",\
+"tr_mage_weapon1_0_lore_4":"But at least you have a weapon!",\
+"tr_mage_weapon1_0_lore_5":"-----------------------------------",\
+"tr_mage_weapon1_1_name":"Combat Staff I",\
+"tr_mage_weapon1_1_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_1_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_1_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_1_lore_4":"enemy hit.",\
+"tr_mage_weapon1_1_lore_5":"Maximum range: 20 blocks.",\
+"tr_mage_weapon1_1_lore_6":"Mana cost: 90",\
+"tr_mage_weapon1_1_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_2_name":"Combat Staff II",\
+"tr_mage_weapon1_2_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_2_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_2_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_2_lore_4":"enemy hit.",\
+"tr_mage_weapon1_2_lore_5":"Maximum range: 25 blocks.",\
+"tr_mage_weapon1_2_lore_6":"Mana cost: 90",\
+"tr_mage_weapon1_2_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_3_name":"Combat Staff III",\
+"tr_mage_weapon1_3_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_3_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_3_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_3_lore_4":"enemy hit.",\
+"tr_mage_weapon1_3_lore_5":"Maximum range: 30 blocks.",\
+"tr_mage_weapon1_3_lore_6":"Mana cost: 85",\
+"tr_mage_weapon1_3_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_4_name":"Combat Staff IV",\
+"tr_mage_weapon1_4_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_4_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_4_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_4_lore_4":"enemy hit.",\
+"tr_mage_weapon1_4_lore_5":"Maximum range: 35 blocks.",\
+"tr_mage_weapon1_4_lore_6":"Mana cost: 85",\
+"tr_mage_weapon1_4_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_5_name":"Combat Staff V",\
+"tr_mage_weapon1_5_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_5_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_5_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_5_lore_4":"enemy hit.",\
+"tr_mage_weapon1_5_lore_5":"Maximum range: 35 blocks.",\
+"tr_mage_weapon1_5_lore_6":"Mana cost: 80",\
+"tr_mage_weapon1_5_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_6_name":"Combat Staff VI",\
+"tr_mage_weapon1_6_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_6_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_6_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_6_lore_4":"enemy hit.",\
+"tr_mage_weapon1_6_lore_5":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_6_lore_6":"Mana cost: 75",\
+"tr_mage_weapon1_6_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_7_name":"Combat Staff VII",\
+"tr_mage_weapon1_7_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_7_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_7_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_7_lore_4":"enemy hit.",\
+"tr_mage_weapon1_7_lore_5":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_7_lore_6":"Mana cost: 70",\
+"tr_mage_weapon1_7_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_8_name":"Combat Staff VIII",\
+"tr_mage_weapon1_8_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_8_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_8_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_8_lore_4":"enemy hit.",\
+"tr_mage_weapon1_8_lore_5":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_8_lore_6":"Mana cost: 65",\
+"tr_mage_weapon1_8_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_9_name":"Combat Staff IX",\
+"tr_mage_weapon1_9_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_9_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_9_lore_3":"It deals 6 damage to the first",\
+"tr_mage_weapon1_9_lore_4":"enemy hit.",\
+"tr_mage_weapon1_9_lore_5":"Maximum range: 45 blocks.",\
+"tr_mage_weapon1_9_lore_6":"Mana cost: 65",\
+"tr_mage_weapon1_9_lore_7":"-----------------------------------",\
+"tr_mage_weapon1_10_name":"Combat Staff X",\
+"tr_mage_weapon1_10_lore_1":"-----------------------------------",\
+"tr_mage_weapon1_10_lore_2":"Casts a spell in the aimed direction.",\
+"tr_mage_weapon1_10_lore_3":"It deals 12 damage to the first",\
+"tr_mage_weapon1_10_lore_4":"enemy hit.",\
+"tr_mage_weapon1_10_lore_5":"Maximum range: 45 blocks.",\
+"tr_mage_weapon1_10_lore_6":"Mana cost: 55",\
+"tr_mage_weapon1_10_lore_7":"-----------------------------------",\
 "tr_mage_chest_1_name":"Health Chestplate I",\
 "tr_mage_chest_1_lore":"",\
 "tr_mage_chest_2_name":"Health Chestplate II",\
@@ -809,4 +809,8 @@ data modify storage strings en_en set value {\
 \
 "tr_shop_title":"Shop",\
 "tr_shop_money_display_price1_1":"Total",\
-"tr_shop_money_display_price1_2":"money:"}
+"tr_shop_money_display_price1_2":"coins:",\
+"tr_shop_ready_button":"Not ready",\
+"tr_shop_item_overlay_price_1":"Cost:",\
+"tr_shop_item_overlay_price_2":"coins",\
+"tr_shop_item_overlay_buy_tip":"right click to purchase"}

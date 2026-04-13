@@ -1,4 +1,4 @@
-## appelée lorsque l'on doit actualiser les jambières dans le shop de @s
+## appelée lorsque l'on veut l'info sur les prochaines jambières de @s (pour le shop)
 
 $execute if score @s legs matches 0 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"legs",level:"1"}
 $execute if score @s legs matches 1 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"legs",level:"2"}

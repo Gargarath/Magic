@@ -8,34 +8,34 @@
 data modify storage shop_data stuff.stuff_warrior_weapon1_0 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe_0",level:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 1
-data modify storage shop_data stuff.stuff_warrior_weapon1_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_1 set value {item_id:"carrot_on_a_stick",price:10,custommodeldata:"battle_axe",level:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 2
-data modify storage shop_data stuff.stuff_warrior_weapon1_2 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_2 set value {item_id:"carrot_on_a_stick",price:20,custommodeldata:"battle_axe",level:"\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 3
-data modify storage shop_data stuff.stuff_warrior_weapon1_3 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_3 set value {item_id:"carrot_on_a_stick",price:30,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 4
-data modify storage shop_data stuff.stuff_warrior_weapon1_4 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_4 set value {item_id:"carrot_on_a_stick",price:40,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 5
-data modify storage shop_data stuff.stuff_warrior_weapon1_5 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_5 set value {item_id:"carrot_on_a_stick",price:50,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 6
-data modify storage shop_data stuff.stuff_warrior_weapon1_6 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_6 set value {item_id:"carrot_on_a_stick",price:60,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 7
-data modify storage shop_data stuff.stuff_warrior_weapon1_7 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_7 set value {item_id:"carrot_on_a_stick",price:70,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 8
-data modify storage shop_data stuff.stuff_warrior_weapon1_8 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_8 set value {item_id:"carrot_on_a_stick",price:80,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE627\uE761\uE630"}
 
 # Niveau 9
-data modify storage shop_data stuff.stuff_warrior_weapon1_9 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_9 set value {item_id:"carrot_on_a_stick",price:90,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE627\uE761\uE630"}
 
 # Niveau 10
-data modify storage shop_data stuff.stuff_warrior_weapon1_10 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_weapon1_10 set value {item_id:"carrot_on_a_stick",price:100,custommodeldata:"battle_axe",level:"\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE628\uE761\uE630"}
 
 data modify storage shop_data stuff.stuff_warrior_weapon1_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"battle_axe",level:"\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE632\uE761\uE633"}
 

@@ -1,4 +1,4 @@
-## appelée lorsque l'on doit actualiser les bottes dans le shop de @s
+## appelée lorsque l'on veut l'info sur le prochaines bottes de @s (pour le shop)
 
 $execute if score @s boots matches 0 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"boots",level:"1"}
 $execute if score @s boots matches 1 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"boots",level:"2"}

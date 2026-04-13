@@ -66,8 +66,8 @@ execute if score player_atstart playercount = player playercount unless entity @
 
                                          #### CES COMMANDES PERMETENT DE GERER LES SHOPS #####
 
-execute as @a[scores={InShop=1},tag=!look_at_sword] at @s if predicate minecraft:shop/look_at_sword run function shop:look_at/look_at_sword
-execute as @a[scores={InShop=1},tag=look_at_sword] at @s unless predicate minecraft:shop/look_at_sword run function shop:look_away/look_away_sword
+execute as @a[scores={InShop=1},tag=!look_at_weapon1] at @s if predicate minecraft:shop/look_at_weapon1 run function shop:look_at/look_at_weapon1
+execute as @a[scores={InShop=1},tag=look_at_weapon1] at @s unless predicate minecraft:shop/look_at_weapon1 run function shop:look_away/look_away_weapon1
 
 execute as @a[scores={InShop=1},tag=!look_at_chest] at @s if predicate minecraft:shop/look_at_chest run function shop:look_at/look_at_chest
 execute as @a[scores={InShop=1},tag=look_at_chest] at @s unless predicate minecraft:shop/look_at_chest run function shop:look_away/look_away_chest
