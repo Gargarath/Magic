@@ -64,28 +64,28 @@ execute as @s[scores={cooldownspell3=-1,spell3=1}] run function stuff:stuff_warr
 
 ###   CHEST   ###
 
-# Niv 0
-item replace entity @s[scores={chest=0}] armor.chest from block 13 97 11 container.9
+# Niveau 0
+execute if score @s chest matches 0 run function stuff:stuff_warrior/chest/lvl0 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 1
-item replace entity @s[scores={chest=1}] armor.chest from block 14 95 11 container.1
+execute if score @s chest matches 1 run function stuff:stuff_warrior/chest/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 2
-item replace entity @s[scores={chest=2}] armor.chest from block 14 95 11 container.2
+execute if score @s chest matches 2 run function stuff:stuff_warrior/chest/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 3
-item replace entity @s[scores={chest=3}] armor.chest from block 14 95 11 container.3
+execute if score @s chest matches 3 run function stuff:stuff_warrior/chest/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 4
-item replace entity @s[scores={chest=4}] armor.chest from block 14 95 11 container.4
+execute if score @s chest matches 4 run function stuff:stuff_warrior/chest/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 5
-item replace entity @s[scores={chest=5}] armor.chest from block 14 95 11 container.5
+execute if score @s chest matches 5 run function stuff:stuff_warrior/chest/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 6
-item replace entity @s[scores={chest=6}] armor.chest from block 14 95 11 container.6
+execute if score @s chest matches 6 run function stuff:stuff_warrior/chest/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 7
-item replace entity @s[scores={chest=7}] armor.chest from block 14 95 11 container.7
+execute if score @s chest matches 7 run function stuff:stuff_warrior/chest/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 8
-item replace entity @s[scores={chest=8}] armor.chest from block 14 95 11 container.8
+execute if score @s chest matches 8 run function stuff:stuff_warrior/chest/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 9
-item replace entity @s[scores={chest=9}] armor.chest from block 14 95 11 container.9
+execute if score @s chest matches 9 run function stuff:stuff_warrior/chest/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
 # Niveau 10
-item replace entity @s[scores={chest=10}] armor.chest from block 14 95 11 container.10
+execute if score @s chest matches 10 run function stuff:stuff_warrior/chest/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/warrior
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/warrior
