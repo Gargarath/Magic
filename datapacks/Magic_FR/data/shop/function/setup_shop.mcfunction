@@ -1,28 +1,25 @@
 ## appelée par setup_player au début de game au nom de chaque joueur
 # actualise le shop selon ses items et son nom
 
-$data merge entity @n[type=mannequin,tag=statue$(player)] {profile:"$(name)"}
+$data merge entity @n[type=mannequin,tag=statue_$(player)] {profile:"$(name)"}
+# actualise le skin du mannequin
 
-$data merge entity @n[type=item_display,tag=shop_sword$(player)] {item:{id:"minecraft:wooden_sword",count:1}}
-$data merge entity @n[type=text_display,tag=shop_sword_level,tag=shop_sword$(player)] {text:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+$data merge entity @n[type=text_display,tag=shop_title,tag=shop_title_$(player)] {text:{"text":"$(tr_shop_title)","bold":true,"color":"gold"}}
 
-$data merge entity @n[type=item_display,tag=shop_chest$(player)] {item:{id:"minecraft:leather_chestplate",count:1}}
-$data merge entity @n[type=text_display,tag=shop_chest_level,tag=shop_chest$(player)] {text:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
+function shop:refresh/money/refresh_money
+# actualise l'argent dans le shop de @s
 
-$data merge entity @n[type=item_display,tag=shop_legs$(player)] {item:{id:"minecraft:leather_leggings",count:1}}
-$data merge entity @n[type=text_display,tag=shop_legs_level,tag=shop_legs$(player)] {text:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
-
-$data merge entity @n[type=item_display,tag=shop_boots$(player)] {item:{id:"minecraft:leather_boots",count:1}}
-$data merge entity @n[type=text_display,tag=shop_boots_level,tag=shop_boots$(player)] {text:"\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE627\uE761\uE630"}
-
-execute if entity @s[tag=warrior] run data merge entity @n[type=text_display,tag=shop_spell1_level,tag=shop_spell1$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=warrior] run data merge entity @n[type=text_display,tag=shop_spell2_level,tag=shop_spell2$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=warrior] run data merge entity @n[type=text_display,tag=shop_spell3_level,tag=shop_spell3$(player)] {text:"\uE630"}
-
-execute if entity @s[tag=archer] run data merge entity @n[type=text_display,tag=shop_spell1_level,tag=shop_spell1$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=archer] run data merge entity @n[type=text_display,tag=shop_spell2_level,tag=shop_spell2$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=archer] run data merge entity @n[type=text_display,tag=shop_spell3_level,tag=shop_spell3$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-
-execute if entity @s[tag=mage] run data merge entity @n[type=text_display,tag=shop_spell1_level,tag=shop_spell1$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=mage] run data merge entity @n[type=text_display,tag=shop_spell2_level,tag=shop_spell2$(player)] {text:"\uE627\uE761\uE627\uE761\uE630"}
-execute if entity @s[tag=mage] run data merge entity @n[type=text_display,tag=shop_spell3_level,tag=shop_spell3$(player)] {text:"\uE630"}
+function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de weapon1 dans le shop de @s
+function shop:refresh/items/spell1 with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de spell1 dans le shop de @s
+function shop:refresh/items/spell2 with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de spell2 dans le shop de @s
+function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de spell3 dans le shop de @s
+function shop:refresh/items/chest with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de chest dans le shop de @s
+function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de legs dans le shop de @s
+function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les infos de boots dans le shop de @s

@@ -3,6 +3,7 @@
   {
    "type": "space",
    "advances": {
+    "\uE700": 0,
     "\uE701": 1,
     "\uE702": 2,
     "\uE703": 3,
@@ -468,6 +469,27 @@
             "ascent": 7,
             "height": 8,
             "chars": ["\uE631"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/left_full_square_max.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE632"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/right_full_square_max.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE633"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/shop/money.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["\uE634"]
         }
     ]
 }

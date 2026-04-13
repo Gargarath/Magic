@@ -1,7 +1,7 @@
 # appelée par shop:loop permet à @s qui vient de cliquer sur le panneau du joueur 8 de spec le joueur 8
 
 gamemode spectator @s
-execute at @e[type=marker,tag=shop_room8] run tp @s ~ ~1.5 ~0.5 0 20
+execute at @e[type=marker,tag=shop_room_8] run tp @s ~ ~1.5 ~0.5 0 20
 tag @s add spec_room8
 scoreboard players set @s spec_player8 0
 scoreboard players enable @s spec_player8

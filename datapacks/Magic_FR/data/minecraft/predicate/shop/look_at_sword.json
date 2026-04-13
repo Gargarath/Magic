@@ -6,7 +6,7 @@
       "type": "minecraft:player",
       "looking_at": {
         "type": "minecraft:interaction",
-        "nbt": "{Tags:[\"shop_sword\"]}"
+        "nbt": "{Tags:[\"shop_weapon1\"]}"
       }
     }
   }

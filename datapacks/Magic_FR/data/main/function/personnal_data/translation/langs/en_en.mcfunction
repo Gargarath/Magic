@@ -100,7 +100,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell1_1_lore_10":"Cooldown: 20s.",\
 "tr_warrior_spell1_1_lore_11":"-----------------------------------",\
 "tr_warrior_cooldownspell1_1_name":"Berserk I",\
-"tr_warrior_cooldownspell1_1_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell1_1_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell1_2_name":"Berserk II",\
 "tr_warrior_spell1_2_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_2_lore_2":"Increases damage dealt by 9 points",\
@@ -114,7 +114,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell1_2_lore_10":"Cooldown: 20s.",\
 "tr_warrior_spell1_2_lore_11":"-----------------------------------",\
 "tr_warrior_cooldownspell1_2_name":"Berserk II",\
-"tr_warrior_cooldownspell1_2_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell1_2_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell1_3_name":"Berserk III",\
 "tr_warrior_spell1_3_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_3_lore_2":"Increases damage dealt by 9 points",\
@@ -128,7 +128,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell1_3_lore_10":"Cooldown: 20s.",\
 "tr_warrior_spell1_3_lore_11":"-----------------------------------",\
 "tr_warrior_cooldownspell1_3_name":"Berserk III",\
-"tr_warrior_cooldownspell1_3_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell1_3_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell2_1_name":"Rallying Banner I",\
 "tr_warrior_spell2_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_1_lore_2":"You place a rallying banner at",\
@@ -140,7 +140,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell2_1_lore_8":"Cooldown: 15s.",\
 "tr_warrior_spell2_1_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_1_name":"Rallying Banner I",\
-"tr_warrior_cooldownspell2_1_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell2_1_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell2_2_name":"Rallying Banner II",\
 "tr_warrior_spell2_2_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_2_lore_2":"You place a rallying banner at",\
@@ -152,7 +152,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell2_2_lore_8":"Cooldown: 15s.",\
 "tr_warrior_spell2_2_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_2_name":"Rallying Banner II",\
-"tr_warrior_cooldownspell2_2_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell2_2_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell2_3_name":"Rallying Banner III",\
 "tr_warrior_spell2_3_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_3_lore_2":"You place a rallying banner at",\
@@ -164,12 +164,12 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell2_3_lore_8":"Cooldown: 10s.",\
 "tr_warrior_spell2_3_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_3_name":"Rallying Banner III",\
-"tr_warrior_cooldownspell2_3_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell2_3_lore_1":"Your spell is on cooldown!!",\
 "tr_warrior_spell3_1_name":"Grappling Hook",\
-"tr_warrior_spell3_1_lore_1":"-----------------------------------------",\
+"tr_warrior_spell3_1_lore_1":"-------------------------------------",\
 "tr_warrior_spell3_1_lore_2":"Launches a grappling hook in the",\
-"tr_warrior_spell3_1_lore_3":"aimed direction, pulling back the first enemy player",\
-"tr_warrior_spell3_1_lore_4":"within 25 blocks.",\
+"tr_warrior_spell3_1_lore_3":"aimed direction, pulling back the first",\
+"tr_warrior_spell3_1_lore_4":"enemy player within 25 blocks.",\
 "tr_warrior_spell3_1_lore_5":"The pulled player is also stunned",\
 "tr_warrior_spell3_1_lore_6":"for 2 seconds and takes 1 damage.",\
 "tr_warrior_spell3_1_lore_7":"Stun prevents spell use.",\
@@ -177,9 +177,9 @@ data modify storage strings en_en set value {\
 "tr_warrior_spell3_1_lore_9":"Cooldown: 7s.",\
 "tr_warrior_spell3_1_lore_10":"Cooldown on nearby collision",\
 "tr_warrior_spell3_1_lore_11":"nearby: 2s.",\
-"tr_warrior_spell3_1_lore_12":"-----------------------------------------",\
+"tr_warrior_spell3_1_lore_12":"-------------------------------------",\
 "tr_warrior_cooldownspell3_1_name":"Grappling Hook",\
-"tr_warrior_cooldownspell3_1_lore_1":"Your spell is still recharging!",\
+"tr_warrior_cooldownspell3_1_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_fleches_explosive_1_name":"Explosive Arrow I",\
 "tr_archer_fleches_explosive_1_lore_1":"-----------------------------------",\
 "tr_archer_fleches_explosive_1_lore_2":"Your next arrow will explode on",\
@@ -412,7 +412,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell1_1_lore_12":"Cooldown: 15s.",\
 "tr_archer_spell1_1_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_1_name":"Explosive Arrow I",\
-"tr_archer_cooldownspell1_1_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell1_1_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell1_2_name":"Explosive Arrow II",\
 "tr_archer_spell1_2_lore_1":"----------------------------------------",\
 "tr_archer_spell1_2_lore_2":"Your next arrow will explode 1s after",\
@@ -428,7 +428,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell1_2_lore_12":"Cooldown: 15s.",\
 "tr_archer_spell1_2_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_2_name":"Explosive Arrow II",\
-"tr_archer_cooldownspell1_2_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell1_2_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell1_3_name":"Explosive Arrow III",\
 "tr_archer_spell1_3_lore_1":"----------------------------------------",\
 "tr_archer_spell1_3_lore_2":"Your next arrow will explode 1s after",\
@@ -444,7 +444,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell1_3_lore_12":"Cooldown: 15s.",\
 "tr_archer_spell1_3_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_3_name":"Explosive Arrow III",\
-"tr_archer_cooldownspell1_3_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell1_3_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell2_poser_1_name":"Bear Trap I - Place",\
 "tr_archer_spell2_poser_1_lore_1":"--------------------------------------",\
 "tr_archer_spell2_poser_1_lore_2":"Throws a bear trap on the ground that will root",\
@@ -512,11 +512,11 @@ data modify storage strings en_en set value {\
 "tr_archer_spell2_detruire_3_lore_9":"Cooldown: 5s.",\
 "tr_archer_spell2_detruire_3_lore_10":"--------------------------------------",\
 "tr_archer_cooldownspell2_1_name":"Bear Trap I - Place",\
-"tr_archer_cooldownspell2_1_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell2_1_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_cooldownspell2_2_name":"Bear Trap II - Place",\
-"tr_archer_cooldownspell2_2_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell2_2_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_cooldownspell2_3_name":"Bear Trap III - Place",\
-"tr_archer_cooldownspell2_3_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell2_3_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell3_1_name":"Ice Arrow I",\
 "tr_archer_spell3_1_lore_1":"--------------------------------------",\
 "tr_archer_spell3_1_lore_2":"Your next arrow will reduce the target's speed",\
@@ -530,7 +530,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell3_1_lore_10":"Cooldown: 20s.",\
 "tr_archer_spell3_1_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_1_name":"Ice Arrow I",\
-"tr_archer_cooldownspell3_1_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell3_1_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell3_2_name":"Ice Arrow II",\
 "tr_archer_spell3_2_lore_1":"--------------------------------------",\
 "tr_archer_spell3_2_lore_2":"Your next arrow will reduce the target's speed",\
@@ -544,7 +544,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell3_2_lore_10":"Cooldown: 15s.",\
 "tr_archer_spell3_2_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_2_name":"Ice Arrow II",\
-"tr_archer_cooldownspell3_2_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell3_2_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell3_3_name":"Ice Arrow III",\
 "tr_archer_spell3_3_lore_1":"--------------------------------------",\
 "tr_archer_spell3_3_lore_2":"Your next arrow will reduce the target's speed",\
@@ -558,7 +558,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell3_3_lore_10":"Cooldown: 10s.",\
 "tr_archer_spell3_3_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_3_name":"Ice Arrow III",\
-"tr_archer_cooldownspell3_3_lore_1":"Your spell is still recharging!",\
+"tr_archer_cooldownspell3_3_lore_1":"Your spell is on cooldown!!",\
 "tr_archer_spell3_status_0_name":"Frozen",\
 "tr_archer_spell3_status_0_lore_1":"----------------",\
 "tr_archer_spell3_status_0_lore_2":"You are frozen!",\
@@ -749,11 +749,11 @@ data modify storage strings en_en set value {\
 "tr_mage_spell1_3_lore_11":"Cooldown: 8s.",\
 "tr_mage_spell1_3_lore_12":"-----------------------------------",\
 "tr_mage_cooldownspell1_1_name":"Fire Bolt I",\
-"tr_mage_cooldownspell1_1_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell1_1_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_cooldownspell1_2_name":"Fire Bolt II",\
-"tr_mage_cooldownspell1_2_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell1_2_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_cooldownspell1_3_name":"Fire Bolt III",\
-"tr_mage_cooldownspell1_3_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell1_3_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_spell1_status_0_name":"Burning",\
 "tr_mage_spell1_status_0_lore_1":"----------------",\
 "tr_mage_spell1_status_0_lore_2":"You are on fire!",\
@@ -788,11 +788,11 @@ data modify storage strings en_en set value {\
 "tr_mage_spell2_3_lore_9":"Cooldown: 19s.",\
 "tr_mage_spell2_3_lore_10":"-----------------------------------",\
 "tr_mage_cooldownspell2_1_name":"Lightning Storm I",\
-"tr_mage_cooldownspell2_1_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell2_1_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_cooldownspell2_2_name":"Lightning Storm II",\
-"tr_mage_cooldownspell2_2_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell2_2_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_cooldownspell2_3_name":"Lightning Storm III",\
-"tr_mage_cooldownspell2_3_lore_1":"Your spell is still recharging!",\
+"tr_mage_cooldownspell2_3_lore_1":"Your spell is on cooldown!!",\
 "tr_mage_spell3_1_name":"Teleportation",\
 "tr_mage_spell3_1_lore_1":"--------------------------",\
 "tr_mage_spell3_1_lore_2":"Instantly teleports you to",\
@@ -801,4 +801,12 @@ data modify storage strings en_en set value {\
 "tr_mage_spell3_1_lore_5":"Cooldown: 20s.",\
 "tr_mage_spell3_1_lore_6":"--------------------------",\
 "tr_mage_cooldownspell3_1_name":"Teleportation",\
-"tr_mage_cooldownspell3_1_lore_1":"Your spell is still recharging!"}
+"tr_mage_cooldownspell3_1_lore_1":"Your spell is on cooldown!!",\
+\
+\
+\
+\
+\
+"tr_shop_title":"Shop",\
+"tr_shop_money_display_price1_1":"Total",\
+"tr_shop_money_display_price1_2":"money:"}

@@ -1,8 +1,8 @@
 # Fonction appellée par start_game/setup_players/give_player_number
 # permet de setup @s selon son numéro de joueur
 
-$execute at @e[tag=shop_room$(player)] run tp @s ~ ~ ~ 0 -5
-$execute at @e[tag=shop_room$(player)] run spawnpoint @s ~ ~ ~
+$execute at @e[tag=shop_room_$(player)] run tp @s ~ ~ ~ 0 -5
+$execute at @e[tag=shop_room_$(player)] run spawnpoint @s ~ ~ ~
 
 function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
 

@@ -742,6 +742,7 @@ scoreboard objectives add has_smoke_potion dummy
 
 # setup numbers
 
+scoreboard players set %-1 numbers -1
 scoreboard players set %0 numbers 0
 scoreboard players set %5 numbers 5
 scoreboard players set %6 numbers 6

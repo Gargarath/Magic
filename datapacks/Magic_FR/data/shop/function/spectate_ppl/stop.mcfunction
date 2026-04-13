@@ -17,7 +17,7 @@ tag @s remove spec_room12
 scoreboard players set @s spec_stop 0
 # reset le score de spec_stop de @s pour éviter que cette fonction ne soit appelée en boucle
 
-execute at @e[type=marker,tag=shop_room0] run tp @s ~ ~ ~ 0 -5
+execute at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
 gamemode adventure @s
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 100 1
 tellraw @s ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]

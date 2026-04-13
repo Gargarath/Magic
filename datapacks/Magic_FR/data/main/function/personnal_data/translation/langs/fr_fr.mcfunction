@@ -801,4 +801,12 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell3_1_lore_5":"Temps de recharge: 20s.",\
 "tr_mage_spell3_1_lore_6":"--------------------------",\
 "tr_mage_cooldownspell3_1_name":"Téléportation",\
-"tr_mage_cooldownspell3_1_lore_1":"Votre sort doit se recharger !"}
+"tr_mage_cooldownspell3_1_lore_1":"Votre sort doit se recharger !",\
+\
+\
+\
+\
+\
+"tr_shop_title":"Magasin",\
+"tr_shop_money_display_price1_1":"Points",\
+"tr_shop_money_display_price1_2":"d'honneur :"}

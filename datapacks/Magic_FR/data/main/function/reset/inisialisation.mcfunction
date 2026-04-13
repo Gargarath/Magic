@@ -163,8 +163,6 @@ slot_spell3_m:3,\
 slot_spell3_r:3}]
 # setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
 
-function main:personnal_data/shop/add_shop_data
-# ajoute les infos du storage de shop dans la data de @s (utilisé par le shop)
 function main:personnal_data/translation/change_language/change_language
 # fait changer @s de langue (le passe en fr)
 # ----------------------------------------------------------
