@@ -6,87 +6,87 @@ data modify storage strings en_en set value {\
 "tr_joined_spectator":"You have joined spectator mode!",\
 "tr_left_spectator":"You have left spectator mode!",\
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
-"tr_warrior_weapon1_0_lore":"",\
+"tr_warrior_weapon1_0_lore_1":"\n",\
 "tr_warrior_weapon1_1_name":"Battle Axe I",\
-"tr_warrior_weapon1_1_lore":"",\
+"tr_warrior_weapon1_1_lore_1":"\n",\
 "tr_warrior_weapon1_2_name":"Battle Axe II",\
-"tr_warrior_weapon1_2_lore":"",\
+"tr_warrior_weapon1_2_lore_1":"\n",\
 "tr_warrior_weapon1_3_name":"Battle Axe III",\
-"tr_warrior_weapon1_3_lore":"",\
+"tr_warrior_weapon1_3_lore_1":"\n",\
 "tr_warrior_weapon1_4_name":"Battle Axe IV",\
-"tr_warrior_weapon1_4_lore":"",\
+"tr_warrior_weapon1_4_lore_1":"\n",\
 "tr_warrior_weapon1_5_name":"Battle Axe V",\
-"tr_warrior_weapon1_5_lore":"",\
+"tr_warrior_weapon1_5_lore_1":"\n",\
 "tr_warrior_weapon1_6_name":"Battle Axe VI",\
-"tr_warrior_weapon1_6_lore":"",\
+"tr_warrior_weapon1_6_lore_1":"\n",\
 "tr_warrior_weapon1_7_name":"Battle Axe VII",\
-"tr_warrior_weapon1_7_lore":"",\
+"tr_warrior_weapon1_7_lore_1":"\n",\
 "tr_warrior_weapon1_8_name":"Battle Axe VIII",\
-"tr_warrior_weapon1_8_lore":"",\
+"tr_warrior_weapon1_8_lore_1":"\n",\
 "tr_warrior_weapon1_9_name":"Battle Axe IX",\
-"tr_warrior_weapon1_9_lore":"",\
+"tr_warrior_weapon1_9_lore_1":"\n",\
 "tr_warrior_weapon1_10_name":"Battle Axe X",\
-"tr_warrior_weapon1_10_lore":"",\
+"tr_warrior_weapon1_10_lore_1":"\n",\
 "tr_warrior_chest_1_name":"Health Chestplate I",\
-"tr_warrior_chest_1_lore":"",\
+"tr_warrior_chest_1_lore_1":"\n",\
 "tr_warrior_chest_2_name":"Health Chestplate II",\
-"tr_warrior_chest_2_lore":"",\
+"tr_warrior_chest_2_lore_1":"\n",\
 "tr_warrior_chest_3_name":"Health Chestplate III",\
-"tr_warrior_chest_3_lore":"",\
+"tr_warrior_chest_3_lore_1":"\n",\
 "tr_warrior_chest_4_name":"Health Chestplate IV",\
-"tr_warrior_chest_4_lore":"",\
+"tr_warrior_chest_4_lore_1":"\n",\
 "tr_warrior_chest_5_name":"Health Chestplate V",\
-"tr_warrior_chest_5_lore":"",\
+"tr_warrior_chest_5_lore_1":"\n",\
 "tr_warrior_chest_6_name":"Health Chestplate VI",\
-"tr_warrior_chest_6_lore":"",\
+"tr_warrior_chest_6_lore_1":"\n",\
 "tr_warrior_chest_7_name":"Health Chestplate VII",\
-"tr_warrior_chest_7_lore":"",\
+"tr_warrior_chest_7_lore_1":"\n",\
 "tr_warrior_chest_8_name":"Health Chestplate VIII",\
-"tr_warrior_chest_8_lore":"",\
+"tr_warrior_chest_8_lore_1":"\n",\
 "tr_warrior_chest_9_name":"Health Chestplate IX",\
-"tr_warrior_chest_9_lore":"",\
+"tr_warrior_chest_9_lore_1":"\n",\
 "tr_warrior_chest_10_name":"Health Chestplate X",\
-"tr_warrior_chest_10_lore":"",\
+"tr_warrior_chest_10_lore_1":"\n",\
 "tr_warrior_legs_1_name":"Speed Leggings I",\
-"tr_warrior_legs_1_lore":"",\
+"tr_warrior_legs_1_lore_1":"\n",\
 "tr_warrior_legs_2_name":"Speed Leggings II",\
-"tr_warrior_legs_2_lore":"",\
+"tr_warrior_legs_2_lore_1":"\n",\
 "tr_warrior_legs_3_name":"Speed Leggings III",\
-"tr_warrior_legs_3_lore":"",\
+"tr_warrior_legs_3_lore_1":"\n",\
 "tr_warrior_legs_4_name":"Speed Leggings IV",\
-"tr_warrior_legs_4_lore":"",\
+"tr_warrior_legs_4_lore_1":"\n",\
 "tr_warrior_legs_5_name":"Speed Leggings V",\
-"tr_warrior_legs_5_lore":"",\
+"tr_warrior_legs_5_lore_1":"\n",\
 "tr_warrior_legs_6_name":"Speed Leggings VI",\
-"tr_warrior_legs_6_lore":"",\
+"tr_warrior_legs_6_lore_1":"\n",\
 "tr_warrior_legs_7_name":"Speed Leggings VII",\
-"tr_warrior_legs_7_lore":"",\
+"tr_warrior_legs_7_lore_1":"\n",\
 "tr_warrior_legs_8_name":"Speed Leggings VIII",\
-"tr_warrior_legs_8_lore":"",\
+"tr_warrior_legs_8_lore_1":"\n",\
 "tr_warrior_legs_9_name":"Speed Leggings IX",\
-"tr_warrior_legs_9_lore":"",\
+"tr_warrior_legs_9_lore_1":"\n",\
 "tr_warrior_legs_10_name":"Speed Leggings X",\
-"tr_warrior_legs_10_lore":"",\
+"tr_warrior_legs_10_lore_1":"\n",\
 "tr_warrior_boots_1_name":"Acrobat Boots I",\
-"tr_warrior_boots_1_lore":"",\
+"tr_warrior_boots_1_lore_1":"\n",\
 "tr_warrior_boots_2_name":"Acrobat Boots II",\
-"tr_warrior_boots_2_lore":"",\
+"tr_warrior_boots_2_lore_1":"\n",\
 "tr_warrior_boots_3_name":"Acrobat Boots III",\
-"tr_warrior_boots_3_lore":"",\
+"tr_warrior_boots_3_lore_1":"\n",\
 "tr_warrior_boots_4_name":"Acrobat Boots IV",\
-"tr_warrior_boots_4_lore":"",\
+"tr_warrior_boots_4_lore_1":"\n",\
 "tr_warrior_boots_5_name":"Acrobat Boots V",\
-"tr_warrior_boots_5_lore":"",\
+"tr_warrior_boots_5_lore_1":"\n",\
 "tr_warrior_boots_6_name":"Acrobat Boots VI",\
-"tr_warrior_boots_6_lore":"",\
+"tr_warrior_boots_6_lore_1":"\n",\
 "tr_warrior_boots_7_name":"Acrobat Boots VII",\
-"tr_warrior_boots_7_lore":"",\
+"tr_warrior_boots_7_lore_1":"\n",\
 "tr_warrior_boots_8_name":"Acrobat Boots VIII",\
-"tr_warrior_boots_8_lore":"",\
+"tr_warrior_boots_8_lore_1":"\n",\
 "tr_warrior_boots_9_name":"Acrobat Boots IX",\
-"tr_warrior_boots_9_lore":"",\
+"tr_warrior_boots_9_lore_1":"\n",\
 "tr_warrior_boots_10_name":"Acrobat Boots X",\
-"tr_warrior_boots_10_lore":"",\
+"tr_warrior_boots_10_lore_1":"\n",\
 "tr_warrior_spell1_1_name":"Berserk I",\
 "tr_warrior_spell1_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_1_lore_2":"Increases damage dealt by 6 points",\
@@ -338,65 +338,65 @@ data modify storage strings en_en set value {\
 "tr_archer_weapon1_10_lore_3":"Punch 2",\
 "tr_archer_weapon1_10_lore_4":"Quiver  : 6 arrows",\
 "tr_archer_chest_1_name":"Health Chestplate I",\
-"tr_archer_chest_1_lore":"",\
+"tr_archer_chest_1_lore_1":"\n",\
 "tr_archer_chest_2_name":"Health Chestplate II",\
-"tr_archer_chest_2_lore":"",\
+"tr_archer_chest_2_lore_1":"\n",\
 "tr_archer_chest_3_name":"Health Chestplate III",\
-"tr_archer_chest_3_lore":"",\
+"tr_archer_chest_3_lore_1":"\n",\
 "tr_archer_chest_4_name":"Health Chestplate IV",\
-"tr_archer_chest_4_lore":"",\
+"tr_archer_chest_4_lore_1":"\n",\
 "tr_archer_chest_5_name":"Health Chestplate V",\
-"tr_archer_chest_5_lore":"",\
+"tr_archer_chest_5_lore_1":"\n",\
 "tr_archer_chest_6_name":"Health Chestplate VI",\
-"tr_archer_chest_6_lore":"",\
+"tr_archer_chest_6_lore_1":"\n",\
 "tr_archer_chest_7_name":"Health Chestplate VII",\
-"tr_archer_chest_7_lore":"",\
+"tr_archer_chest_7_lore_1":"\n",\
 "tr_archer_chest_8_name":"Health Chestplate VIII",\
-"tr_archer_chest_8_lore":"",\
+"tr_archer_chest_8_lore_1":"\n",\
 "tr_archer_chest_9_name":"Health Chestplate IX",\
-"tr_archer_chest_9_lore":"",\
+"tr_archer_chest_9_lore_1":"\n",\
 "tr_archer_chest_10_name":"Health Chestplate X",\
-"tr_archer_chest_10_lore":"",\
+"tr_archer_chest_10_lore_1":"\n",\
 "tr_archer_legs_1_name":"Speed Leggings I",\
-"tr_archer_legs_1_lore":"",\
+"tr_archer_legs_1_lore_1":"\n",\
 "tr_archer_legs_2_name":"Speed Leggings II",\
-"tr_archer_legs_2_lore":"",\
+"tr_archer_legs_2_lore_1":"\n",\
 "tr_archer_legs_3_name":"Speed Leggings III",\
-"tr_archer_legs_3_lore":"",\
+"tr_archer_legs_3_lore_1":"\n",\
 "tr_archer_legs_4_name":"Speed Leggings IV",\
-"tr_archer_legs_4_lore":"",\
+"tr_archer_legs_4_lore_1":"\n",\
 "tr_archer_legs_5_name":"Speed Leggings V",\
-"tr_archer_legs_5_lore":"",\
+"tr_archer_legs_5_lore_1":"\n",\
 "tr_archer_legs_6_name":"Speed Leggings VI",\
-"tr_archer_legs_6_lore":"",\
+"tr_archer_legs_6_lore_1":"\n",\
 "tr_archer_legs_7_name":"Speed Leggings VII",\
-"tr_archer_legs_7_lore":"",\
+"tr_archer_legs_7_lore_1":"\n",\
 "tr_archer_legs_8_name":"Speed Leggings VIII",\
-"tr_archer_legs_8_lore":"",\
+"tr_archer_legs_8_lore_1":"\n",\
 "tr_archer_legs_9_name":"Speed Leggings IX",\
-"tr_archer_legs_9_lore":"",\
+"tr_archer_legs_9_lore_1":"\n",\
 "tr_archer_legs_10_name":"Speed Leggings X",\
-"tr_archer_legs_10_lore":"",\
+"tr_archer_legs_10_lore_1":"\n",\
 "tr_archer_boots_1_name":"Acrobat Boots I",\
-"tr_archer_boots_1_lore":"",\
+"tr_archer_boots_1_lore_1":"\n",\
 "tr_archer_boots_2_name":"Acrobat Boots II",\
-"tr_archer_boots_2_lore":"",\
+"tr_archer_boots_2_lore_1":"\n",\
 "tr_archer_boots_3_name":"Acrobat Boots III",\
-"tr_archer_boots_3_lore":"",\
+"tr_archer_boots_3_lore_1":"\n",\
 "tr_archer_boots_4_name":"Acrobat Boots IV",\
-"tr_archer_boots_4_lore":"",\
+"tr_archer_boots_4_lore_1":"\n",\
 "tr_archer_boots_5_name":"Acrobat Boots V",\
-"tr_archer_boots_5_lore":"",\
+"tr_archer_boots_5_lore_1":"\n",\
 "tr_archer_boots_6_name":"Acrobat Boots VI",\
-"tr_archer_boots_6_lore":"",\
+"tr_archer_boots_6_lore_1":"\n",\
 "tr_archer_boots_7_name":"Acrobat Boots VII",\
-"tr_archer_boots_7_lore":"",\
+"tr_archer_boots_7_lore_1":"\n",\
 "tr_archer_boots_8_name":"Acrobat Boots VIII",\
-"tr_archer_boots_8_lore":"",\
+"tr_archer_boots_8_lore_1":"\n",\
 "tr_archer_boots_9_name":"Acrobat Boots IX",\
-"tr_archer_boots_9_lore":"",\
+"tr_archer_boots_9_lore_1":"\n",\
 "tr_archer_boots_10_name":"Acrobat Boots X",\
-"tr_archer_boots_10_lore":"",\
+"tr_archer_boots_10_lore_1":"\n",\
 "tr_archer_spell1_1_name":"Explosive Arrow I",\
 "tr_archer_spell1_1_lore_1":"----------------------------------------",\
 "tr_archer_spell1_1_lore_2":"Your next arrow will explode 1s after",\
@@ -650,65 +650,65 @@ data modify storage strings en_en set value {\
 "tr_mage_weapon1_10_lore_6":"Mana cost: 55",\
 "tr_mage_weapon1_10_lore_7":"-----------------------------------",\
 "tr_mage_chest_1_name":"Health Chestplate I",\
-"tr_mage_chest_1_lore":"",\
+"tr_mage_chest_1_lore_1":"\n",\
 "tr_mage_chest_2_name":"Health Chestplate II",\
-"tr_mage_chest_2_lore":"",\
+"tr_mage_chest_2_lore_1":"\n",\
 "tr_mage_chest_3_name":"Health Chestplate III",\
-"tr_mage_chest_3_lore":"",\
+"tr_mage_chest_3_lore_1":"\n",\
 "tr_mage_chest_4_name":"Health Chestplate IV",\
-"tr_mage_chest_4_lore":"",\
+"tr_mage_chest_4_lore_1":"\n",\
 "tr_mage_chest_5_name":"Health Chestplate V",\
-"tr_mage_chest_5_lore":"",\
+"tr_mage_chest_5_lore_1":"\n",\
 "tr_mage_chest_6_name":"Health Chestplate VI",\
-"tr_mage_chest_6_lore":"",\
+"tr_mage_chest_6_lore_1":"\n",\
 "tr_mage_chest_7_name":"Health Chestplate VII",\
-"tr_mage_chest_7_lore":"",\
+"tr_mage_chest_7_lore_1":"\n",\
 "tr_mage_chest_8_name":"Health Chestplate VIII",\
-"tr_mage_chest_8_lore":"",\
+"tr_mage_chest_8_lore_1":"\n",\
 "tr_mage_chest_9_name":"Health Chestplate IX",\
-"tr_mage_chest_9_lore":"",\
+"tr_mage_chest_9_lore_1":"\n",\
 "tr_mage_chest_10_name":"Health Chestplate X",\
-"tr_mage_chest_10_lore":"",\
+"tr_mage_chest_10_lore_1":"\n",\
 "tr_mage_legs_1_name":"Speed Leggings I",\
-"tr_mage_legs_1_lore":"",\
+"tr_mage_legs_1_lore_1":"\n",\
 "tr_mage_legs_2_name":"Speed Leggings II",\
-"tr_mage_legs_2_lore":"",\
+"tr_mage_legs_2_lore_1":"\n",\
 "tr_mage_legs_3_name":"Speed Leggings III",\
-"tr_mage_legs_3_lore":"",\
+"tr_mage_legs_3_lore_1":"\n",\
 "tr_mage_legs_4_name":"Speed Leggings IV",\
-"tr_mage_legs_4_lore":"",\
+"tr_mage_legs_4_lore_1":"\n",\
 "tr_mage_legs_5_name":"Speed Leggings V",\
-"tr_mage_legs_5_lore":"",\
+"tr_mage_legs_5_lore_1":"\n",\
 "tr_mage_legs_6_name":"Speed Leggings VI",\
-"tr_mage_legs_6_lore":"",\
+"tr_mage_legs_6_lore_1":"\n",\
 "tr_mage_legs_7_name":"Speed Leggings VII",\
-"tr_mage_legs_7_lore":"",\
+"tr_mage_legs_7_lore_1":"\n",\
 "tr_mage_legs_8_name":"Speed Leggings VIII",\
-"tr_mage_legs_8_lore":"",\
+"tr_mage_legs_8_lore_1":"\n",\
 "tr_mage_legs_9_name":"Speed Leggings IX",\
-"tr_mage_legs_9_lore":"",\
+"tr_mage_legs_9_lore_1":"\n",\
 "tr_mage_legs_10_name":"Speed Leggings X",\
-"tr_mage_legs_10_lore":"",\
+"tr_mage_legs_10_lore_1":"\n",\
 "tr_mage_boots_1_name":"Acrobat Boots I",\
-"tr_mage_boots_1_lore":"",\
+"tr_mage_boots_1_lore_1":"\n",\
 "tr_mage_boots_2_name":"Acrobat Boots II",\
-"tr_mage_boots_2_lore":"",\
+"tr_mage_boots_2_lore_1":"\n",\
 "tr_mage_boots_3_name":"Acrobat Boots III",\
-"tr_mage_boots_3_lore":"",\
+"tr_mage_boots_3_lore_1":"\n",\
 "tr_mage_boots_4_name":"Acrobat Boots IV",\
-"tr_mage_boots_4_lore":"",\
+"tr_mage_boots_4_lore_1":"\n",\
 "tr_mage_boots_5_name":"Acrobat Boots V",\
-"tr_mage_boots_5_lore":"",\
+"tr_mage_boots_5_lore_1":"\n",\
 "tr_mage_boots_6_name":"Acrobat Boots VI",\
-"tr_mage_boots_6_lore":"",\
+"tr_mage_boots_6_lore_1":"\n",\
 "tr_mage_boots_7_name":"Acrobat Boots VII",\
-"tr_mage_boots_7_lore":"",\
+"tr_mage_boots_7_lore_1":"\n",\
 "tr_mage_boots_8_name":"Acrobat Boots VIII",\
-"tr_mage_boots_8_lore":"",\
+"tr_mage_boots_8_lore_1":"\n",\
 "tr_mage_boots_9_name":"Acrobat Boots IX",\
-"tr_mage_boots_9_lore":"",\
+"tr_mage_boots_9_lore_1":"\n",\
 "tr_mage_boots_10_name":"Acrobat Boots X",\
-"tr_mage_boots_10_lore":"",\
+"tr_mage_boots_10_lore_1":"\n",\
 "tr_mage_spell1_1_name":"Fire Bolt I",\
 "tr_mage_spell1_1_lore_1":"-----------------------------------",\
 "tr_mage_spell1_1_lore_2":"Launches a fire bolt in the",\

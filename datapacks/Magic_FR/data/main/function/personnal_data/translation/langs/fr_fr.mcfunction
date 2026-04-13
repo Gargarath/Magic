@@ -6,87 +6,87 @@ data modify storage strings fr_fr set value {\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
-"tr_warrior_weapon1_0_lore":"",\
+"tr_warrior_weapon1_0_lore_1":"\n",\
 "tr_warrior_weapon1_1_name":"Hache de bataille I",\
-"tr_warrior_weapon1_1_lore":"",\
+"tr_warrior_weapon1_1_lore_1":"\n",\
 "tr_warrior_weapon1_2_name":"Hache de bataille II",\
-"tr_warrior_weapon1_2_lore":"",\
+"tr_warrior_weapon1_2_lore_1":"\n",\
 "tr_warrior_weapon1_3_name":"Hache de bataille III",\
-"tr_warrior_weapon1_3_lore":"",\
+"tr_warrior_weapon1_3_lore_1":"\n",\
 "tr_warrior_weapon1_4_name":"Hache de bataille IV",\
-"tr_warrior_weapon1_4_lore":"",\
+"tr_warrior_weapon1_4_lore_1":"\n",\
 "tr_warrior_weapon1_5_name":"Hache de bataille V",\
-"tr_warrior_weapon1_5_lore":"",\
+"tr_warrior_weapon1_5_lore_1":"\n",\
 "tr_warrior_weapon1_6_name":"Hache de bataille VI",\
-"tr_warrior_weapon1_6_lore":"",\
+"tr_warrior_weapon1_6_lore_1":"\n",\
 "tr_warrior_weapon1_7_name":"Hache de bataille VII",\
-"tr_warrior_weapon1_7_lore":"",\
+"tr_warrior_weapon1_7_lore_1":"\n",\
 "tr_warrior_weapon1_8_name":"Hache de bataille VIII",\
-"tr_warrior_weapon1_8_lore":"",\
+"tr_warrior_weapon1_8_lore_1":"\n",\
 "tr_warrior_weapon1_9_name":"Hache de bataille IX",\
-"tr_warrior_weapon1_9_lore":"",\
+"tr_warrior_weapon1_9_lore_1":"\n",\
 "tr_warrior_weapon1_10_name":"Hache de bataille X",\
-"tr_warrior_weapon1_10_lore":"",\
+"tr_warrior_weapon1_10_lore_1":"\n",\
 "tr_warrior_chest_1_name":"Plastron de santé I",\
-"tr_warrior_chest_1_lore":"",\
+"tr_warrior_chest_1_lore_1":"\n",\
 "tr_warrior_chest_2_name":"Plastron de santé II",\
-"tr_warrior_chest_2_lore":"",\
+"tr_warrior_chest_2_lore_1":"\n",\
 "tr_warrior_chest_3_name":"Plastron de santé III",\
-"tr_warrior_chest_3_lore":"",\
+"tr_warrior_chest_3_lore_1":"\n",\
 "tr_warrior_chest_4_name":"Plastron de santé IV",\
-"tr_warrior_chest_4_lore":"",\
+"tr_warrior_chest_4_lore_1":"\n",\
 "tr_warrior_chest_5_name":"Plastron de santé V",\
-"tr_warrior_chest_5_lore":"",\
+"tr_warrior_chest_5_lore_1":"\n",\
 "tr_warrior_chest_6_name":"Plastron de santé VI",\
-"tr_warrior_chest_6_lore":"",\
+"tr_warrior_chest_6_lore_1":"\n",\
 "tr_warrior_chest_7_name":"Plastron de santé VII",\
-"tr_warrior_chest_7_lore":"",\
+"tr_warrior_chest_7_lore_1":"\n",\
 "tr_warrior_chest_8_name":"Plastron de santé VIII",\
-"tr_warrior_chest_8_lore":"",\
+"tr_warrior_chest_8_lore_1":"\n",\
 "tr_warrior_chest_9_name":"Plastron de santé IX",\
-"tr_warrior_chest_9_lore":"",\
+"tr_warrior_chest_9_lore_1":"\n",\
 "tr_warrior_chest_10_name":"Plastron de santé X",\
-"tr_warrior_chest_10_lore":"",\
+"tr_warrior_chest_10_lore_1":"\n",\
 "tr_warrior_legs_1_name":"Jambières de vitesse I",\
-"tr_warrior_legs_1_lore":"",\
+"tr_warrior_legs_1_lore_1":"\n",\
 "tr_warrior_legs_2_name":"Jambières de vitesse II",\
-"tr_warrior_legs_2_lore":"",\
+"tr_warrior_legs_2_lore_1":"\n",\
 "tr_warrior_legs_3_name":"Jambières de vitesse III",\
-"tr_warrior_legs_3_lore":"",\
+"tr_warrior_legs_3_lore_1":"\n",\
 "tr_warrior_legs_4_name":"Jambières de vitesse IV",\
-"tr_warrior_legs_4_lore":"",\
+"tr_warrior_legs_4_lore_1":"\n",\
 "tr_warrior_legs_5_name":"Jambières de vitesse V",\
-"tr_warrior_legs_5_lore":"",\
+"tr_warrior_legs_5_lore_1":"\n",\
 "tr_warrior_legs_6_name":"Jambières de vitesse VI",\
-"tr_warrior_legs_6_lore":"",\
+"tr_warrior_legs_6_lore_1":"\n",\
 "tr_warrior_legs_7_name":"Jambières de vitesse VII",\
-"tr_warrior_legs_7_lore":"",\
+"tr_warrior_legs_7_lore_1":"\n",\
 "tr_warrior_legs_8_name":"Jambières de vitesse VIII",\
-"tr_warrior_legs_8_lore":"",\
+"tr_warrior_legs_8_lore_1":"\n",\
 "tr_warrior_legs_9_name":"Jambières de vitesse IX",\
-"tr_warrior_legs_9_lore":"",\
+"tr_warrior_legs_9_lore_1":"\n",\
 "tr_warrior_legs_10_name":"Jambières de vitesse X",\
-"tr_warrior_legs_10_lore":"",\
+"tr_warrior_legs_10_lore_1":"\n",\
 "tr_warrior_boots_1_name":"Bottes d'acrobate I",\
-"tr_warrior_boots_1_lore":"",\
+"tr_warrior_boots_1_lore_1":"\n",\
 "tr_warrior_boots_2_name":"Bottes d'acrobate II",\
-"tr_warrior_boots_2_lore":"",\
+"tr_warrior_boots_2_lore_1":"\n",\
 "tr_warrior_boots_3_name":"Bottes d'acrobate III",\
-"tr_warrior_boots_3_lore":"",\
+"tr_warrior_boots_3_lore_1":"\n",\
 "tr_warrior_boots_4_name":"Bottes d'acrobate IV",\
-"tr_warrior_boots_4_lore":"",\
+"tr_warrior_boots_4_lore_1":"\n",\
 "tr_warrior_boots_5_name":"Bottes d'acrobate V",\
-"tr_warrior_boots_5_lore":"",\
+"tr_warrior_boots_5_lore_1":"\n",\
 "tr_warrior_boots_6_name":"Bottes d'acrobate VI",\
-"tr_warrior_boots_6_lore":"",\
+"tr_warrior_boots_6_lore_1":"\n",\
 "tr_warrior_boots_7_name":"Bottes d'acrobate VII",\
-"tr_warrior_boots_7_lore":"",\
+"tr_warrior_boots_7_lore_1":"\n",\
 "tr_warrior_boots_8_name":"Bottes d'acrobate VIII",\
-"tr_warrior_boots_8_lore":"",\
+"tr_warrior_boots_8_lore_1":"\n",\
 "tr_warrior_boots_9_name":"Bottes d'acrobate IX",\
-"tr_warrior_boots_9_lore":"",\
+"tr_warrior_boots_9_lore_1":"\n",\
 "tr_warrior_boots_10_name":"Bottes d'acrobate X",\
-"tr_warrior_boots_10_lore":"",\
+"tr_warrior_boots_10_lore_1":"\n",\
 "tr_warrior_spell1_1_name":"Berzerk I",\
 "tr_warrior_spell1_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_1_lore_2":"Augmente les dégats infligés de 6 points",\
@@ -338,65 +338,65 @@ data modify storage strings fr_fr set value {\
 "tr_archer_weapon1_10_lore_3":"Recul 2",\
 "tr_archer_weapon1_10_lore_4":"Carquois  : 6 flèches",\
 "tr_archer_chest_1_name":"Plastron de santé I",\
-"tr_archer_chest_1_lore":"",\
+"tr_archer_chest_1_lore_1":"\n",\
 "tr_archer_chest_2_name":"Plastron de santé II",\
-"tr_archer_chest_2_lore":"",\
+"tr_archer_chest_2_lore_1":"\n",\
 "tr_archer_chest_3_name":"Plastron de santé III",\
-"tr_archer_chest_3_lore":"",\
+"tr_archer_chest_3_lore_1":"\n",\
 "tr_archer_chest_4_name":"Plastron de santé IV",\
-"tr_archer_chest_4_lore":"",\
+"tr_archer_chest_4_lore_1":"\n",\
 "tr_archer_chest_5_name":"Plastron de santé V",\
-"tr_archer_chest_5_lore":"",\
+"tr_archer_chest_5_lore_1":"\n",\
 "tr_archer_chest_6_name":"Plastron de santé VI",\
-"tr_archer_chest_6_lore":"",\
+"tr_archer_chest_6_lore_1":"\n",\
 "tr_archer_chest_7_name":"Plastron de santé VII",\
-"tr_archer_chest_7_lore":"",\
+"tr_archer_chest_7_lore_1":"\n",\
 "tr_archer_chest_8_name":"Plastron de santé VIII",\
-"tr_archer_chest_8_lore":"",\
+"tr_archer_chest_8_lore_1":"\n",\
 "tr_archer_chest_9_name":"Plastron de santé IX",\
-"tr_archer_chest_9_lore":"",\
+"tr_archer_chest_9_lore_1":"\n",\
 "tr_archer_chest_10_name":"Plastron de santé X",\
-"tr_archer_chest_10_lore":"",\
+"tr_archer_chest_10_lore_1":"\n",\
 "tr_archer_legs_1_name":"Jambières de vitesse I",\
-"tr_archer_legs_1_lore":"",\
+"tr_archer_legs_1_lore_1":"\n",\
 "tr_archer_legs_2_name":"Jambières de vitesse II",\
-"tr_archer_legs_2_lore":"",\
+"tr_archer_legs_2_lore_1":"\n",\
 "tr_archer_legs_3_name":"Jambières de vitesse III",\
-"tr_archer_legs_3_lore":"",\
+"tr_archer_legs_3_lore_1":"\n",\
 "tr_archer_legs_4_name":"Jambières de vitesse IV",\
-"tr_archer_legs_4_lore":"",\
+"tr_archer_legs_4_lore_1":"\n",\
 "tr_archer_legs_5_name":"Jambières de vitesse V",\
-"tr_archer_legs_5_lore":"",\
+"tr_archer_legs_5_lore_1":"\n",\
 "tr_archer_legs_6_name":"Jambières de vitesse VI",\
-"tr_archer_legs_6_lore":"",\
+"tr_archer_legs_6_lore_1":"\n",\
 "tr_archer_legs_7_name":"Jambières de vitesse VII",\
-"tr_archer_legs_7_lore":"",\
+"tr_archer_legs_7_lore_1":"\n",\
 "tr_archer_legs_8_name":"Jambières de vitesse VIII",\
-"tr_archer_legs_8_lore":"",\
+"tr_archer_legs_8_lore_1":"\n",\
 "tr_archer_legs_9_name":"Jambières de vitesse IX",\
-"tr_archer_legs_9_lore":"",\
+"tr_archer_legs_9_lore_1":"\n",\
 "tr_archer_legs_10_name":"Jambières de vitesse X",\
-"tr_archer_legs_10_lore":"",\
+"tr_archer_legs_10_lore_1":"\n",\
 "tr_archer_boots_1_name":"Bottes d'acrobate I",\
-"tr_archer_boots_1_lore":"",\
+"tr_archer_boots_1_lore_1":"\n",\
 "tr_archer_boots_2_name":"Bottes d'acrobate II",\
-"tr_archer_boots_2_lore":"",\
+"tr_archer_boots_2_lore_1":"\n",\
 "tr_archer_boots_3_name":"Bottes d'acrobate III",\
-"tr_archer_boots_3_lore":"",\
+"tr_archer_boots_3_lore_1":"\n",\
 "tr_archer_boots_4_name":"Bottes d'acrobate IV",\
-"tr_archer_boots_4_lore":"",\
+"tr_archer_boots_4_lore_1":"\n",\
 "tr_archer_boots_5_name":"Bottes d'acrobate V",\
-"tr_archer_boots_5_lore":"",\
+"tr_archer_boots_5_lore_1":"\n",\
 "tr_archer_boots_6_name":"Bottes d'acrobate VI",\
-"tr_archer_boots_6_lore":"",\
+"tr_archer_boots_6_lore_1":"\n",\
 "tr_archer_boots_7_name":"Bottes d'acrobate VII",\
-"tr_archer_boots_7_lore":"",\
+"tr_archer_boots_7_lore_1":"\n",\
 "tr_archer_boots_8_name":"Bottes d'acrobate VIII",\
-"tr_archer_boots_8_lore":"",\
+"tr_archer_boots_8_lore_1":"\n",\
 "tr_archer_boots_9_name":"Bottes d'acrobate IX",\
-"tr_archer_boots_9_lore":"",\
+"tr_archer_boots_9_lore_1":"\n",\
 "tr_archer_boots_10_name":"Bottes d'acrobate X",\
-"tr_archer_boots_10_lore":"",\
+"tr_archer_boots_10_lore_1":"\n",\
 "tr_archer_spell1_1_name":"Flèche explosive I",\
 "tr_archer_spell1_1_lore_1":"----------------------------------------",\
 "tr_archer_spell1_1_lore_2":"Votre prochaine flèche explosera 1s après",\
@@ -650,65 +650,65 @@ data modify storage strings fr_fr set value {\
 "tr_mage_weapon1_10_lore_6":"Coût en mana: 55",\
 "tr_mage_weapon1_10_lore_7":"-----------------------------------",\
 "tr_mage_chest_1_name":"Plastron de santé I",\
-"tr_mage_chest_1_lore":"",\
+"tr_mage_chest_1_lore_1":"\n",\
 "tr_mage_chest_2_name":"Plastron de santé II",\
-"tr_mage_chest_2_lore":"",\
+"tr_mage_chest_2_lore_1":"\n",\
 "tr_mage_chest_3_name":"Plastron de santé III",\
-"tr_mage_chest_3_lore":"",\
+"tr_mage_chest_3_lore_1":"\n",\
 "tr_mage_chest_4_name":"Plastron de santé IV",\
-"tr_mage_chest_4_lore":"",\
+"tr_mage_chest_4_lore_1":"\n",\
 "tr_mage_chest_5_name":"Plastron de santé V",\
-"tr_mage_chest_5_lore":"",\
+"tr_mage_chest_5_lore_1":"\n",\
 "tr_mage_chest_6_name":"Plastron de santé VI",\
-"tr_mage_chest_6_lore":"",\
+"tr_mage_chest_6_lore_1":"\n",\
 "tr_mage_chest_7_name":"Plastron de santé VII",\
-"tr_mage_chest_7_lore":"",\
+"tr_mage_chest_7_lore_1":"\n",\
 "tr_mage_chest_8_name":"Plastron de santé VIII",\
-"tr_mage_chest_8_lore":"",\
+"tr_mage_chest_8_lore_1":"\n",\
 "tr_mage_chest_9_name":"Plastron de santé IX",\
-"tr_mage_chest_9_lore":"",\
+"tr_mage_chest_9_lore_1":"\n",\
 "tr_mage_chest_10_name":"Plastron de santé X",\
-"tr_mage_chest_10_lore":"",\
+"tr_mage_chest_10_lore_1":"\n",\
 "tr_mage_legs_1_name":"Jambières de vitesse I",\
-"tr_mage_legs_1_lore":"",\
+"tr_mage_legs_1_lore_1":"\n",\
 "tr_mage_legs_2_name":"Jambières de vitesse II",\
-"tr_mage_legs_2_lore":"",\
+"tr_mage_legs_2_lore_1":"\n",\
 "tr_mage_legs_3_name":"Jambières de vitesse III",\
-"tr_mage_legs_3_lore":"",\
+"tr_mage_legs_3_lore_1":"\n",\
 "tr_mage_legs_4_name":"Jambières de vitesse IV",\
-"tr_mage_legs_4_lore":"",\
+"tr_mage_legs_4_lore_1":"\n",\
 "tr_mage_legs_5_name":"Jambières de vitesse V",\
-"tr_mage_legs_5_lore":"",\
+"tr_mage_legs_5_lore_1":"\n",\
 "tr_mage_legs_6_name":"Jambières de vitesse VI",\
-"tr_mage_legs_6_lore":"",\
+"tr_mage_legs_6_lore_1":"\n",\
 "tr_mage_legs_7_name":"Jambières de vitesse VII",\
-"tr_mage_legs_7_lore":"",\
+"tr_mage_legs_7_lore_1":"\n",\
 "tr_mage_legs_8_name":"Jambières de vitesse VIII",\
-"tr_mage_legs_8_lore":"",\
+"tr_mage_legs_8_lore_1":"\n",\
 "tr_mage_legs_9_name":"Jambières de vitesse IX",\
-"tr_mage_legs_9_lore":"",\
+"tr_mage_legs_9_lore_1":"\n",\
 "tr_mage_legs_10_name":"Jambières de vitesse X",\
-"tr_mage_legs_10_lore":"",\
+"tr_mage_legs_10_lore_1":"\n",\
 "tr_mage_boots_1_name":"Bottes d'acrobate I",\
-"tr_mage_boots_1_lore":"",\
+"tr_mage_boots_1_lore_1":"\n",\
 "tr_mage_boots_2_name":"Bottes d'acrobate II",\
-"tr_mage_boots_2_lore":"",\
+"tr_mage_boots_2_lore_1":"\n",\
 "tr_mage_boots_3_name":"Bottes d'acrobate III",\
-"tr_mage_boots_3_lore":"",\
+"tr_mage_boots_3_lore_1":"\n",\
 "tr_mage_boots_4_name":"Bottes d'acrobate IV",\
-"tr_mage_boots_4_lore":"",\
+"tr_mage_boots_4_lore_1":"\n",\
 "tr_mage_boots_5_name":"Bottes d'acrobate V",\
-"tr_mage_boots_5_lore":"",\
+"tr_mage_boots_5_lore_1":"\n",\
 "tr_mage_boots_6_name":"Bottes d'acrobate VI",\
-"tr_mage_boots_6_lore":"",\
+"tr_mage_boots_6_lore_1":"\n",\
 "tr_mage_boots_7_name":"Bottes d'acrobate VII",\
-"tr_mage_boots_7_lore":"",\
+"tr_mage_boots_7_lore_1":"\n",\
 "tr_mage_boots_8_name":"Bottes d'acrobate VIII",\
-"tr_mage_boots_8_lore":"",\
+"tr_mage_boots_8_lore_1":"\n",\
 "tr_mage_boots_9_name":"Bottes d'acrobate IX",\
-"tr_mage_boots_9_lore":"",\
+"tr_mage_boots_9_lore_1":"\n",\
 "tr_mage_boots_10_name":"Bottes d'acrobate X",\
-"tr_mage_boots_10_lore":"",\
+"tr_mage_boots_10_lore_1":"\n",\
 "tr_mage_spell1_1_name":"Trait de feu I",\
 "tr_mage_spell1_1_lore_1":"-----------------------------------",\
 "tr_mage_spell1_1_lore_2":"Lance un trait de feu dans la direction",\
