@@ -18,9 +18,9 @@ execute if score @s Player matches 12 run bossbar set berzerk:player12 players
 # clear la bossbar berzerk de @s selon son numéro de joueur
 
 execute if score @s spell1 matches 1..3 run scoreboard players set @s cooldownspell1 20
-execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=1}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl1_w
-execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=2}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl2_w
-execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=3}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl3_w
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=1}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl1_w with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=2}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl2_w with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $no_cooldowns option_panel matches 0 as @s[scores={spell1=3}] run function stuff:stuff_warrior/cooldowns_w/spell1/spell1lvl3_w with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown1_clock 20
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell1 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown1_clock 5

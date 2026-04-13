@@ -17,3 +17,11 @@ item replace entity @s[scores={spell3_slot_w=6}] hotbar.6 from block 17 95 11 co
 item replace entity @s[scores={spell3_slot_w=7}] hotbar.7 from block 17 95 11 container.21
 item replace entity @s[scores={spell3_slot_w=8}] hotbar.8 from block 17 95 11 container.21
 # donne la nouvelle quantité
+
+
+
+                   ###   SPELL 3    ###
+
+
+# Cooldown niveau 1
+item replace block 17 95 11 container.21 with light_gray_stained_glass_pane[custom_name={"bold":true,"color":"gray","text":"Grappin"},lore=["Votre sort doit se recharger !"],custom_data={spell3_slot:1b,cooldownspell3:1b},custom_model_data={strings:["cooldown"]}] 1

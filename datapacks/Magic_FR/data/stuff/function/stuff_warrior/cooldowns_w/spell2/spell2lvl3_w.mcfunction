@@ -17,3 +17,7 @@ item replace entity @s[scores={spell2_slot_w=6}] hotbar.6 from block 17 95 11 co
 item replace entity @s[scores={spell2_slot_w=7}] hotbar.7 from block 17 95 11 container.14
 item replace entity @s[scores={spell2_slot_w=8}] hotbar.8 from block 17 95 11 container.14
 # donne la nouvelle quantité
+
+
+# Cooldown niveau 3
+item replace block 17 95 11 container.14 with orange_stained_glass_pane[custom_name={"bold":true,"color":"gold","text":"Drapeau de ralliement III"},lore=["Votre sort doit se recharger !"],custom_data={spell2_slot:1b,cooldownspell2:1b},custom_model_data={strings:["cooldown"]}] 1

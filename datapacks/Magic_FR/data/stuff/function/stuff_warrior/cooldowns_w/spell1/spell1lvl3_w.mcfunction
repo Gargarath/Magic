@@ -4,16 +4,7 @@ clear @s #minecraft:stained_glass_pane[minecraft:custom_data={spell1_slot:1b,coo
 scoreboard players operation #temp give_cd_amount = @s cooldownspell1
 # défini la quantité
 
-item modify block 17 95 11 container.5 minecraft:count_modifier
-# modifie la quantité dans le container
+$item replace entity @s hotbar.$(slot_spell1_w) with red_stained_glass_pane[custom_name={"bold":true,"color":"dark_red","text":"$(tr_warrior_spell1_3_name)"},lore=["",{"color":"dark_red","bold":true,"text":"$(tr_warrior_cooldownspell1_1_lore_1)"},"",{"color":"dark_red","text":"$(tr_warrior_spell1_3_lore_1)"},{"color":"green","text":"$(tr_warrior_spell1_3_lore_2)"},{"color":"green","text":"$(tr_warrior_spell1_3_lore_3)"},"",{"color":"green","text":"$(tr_warrior_spell1_3_lore_4)"},{"color":"green","text":"$(tr_warrior_spell1_3_lore_5)"},"",{"color":"red","text":"$(tr_warrior_spell1_3_lore_6)"},{"color":"red","text":"$(tr_warrior_spell1_3_lore_7)"},"",{"color":"red","text":"$(tr_warrior_spell1_3_lore_8)"},{"color":"red","text":"$(tr_warrior_spell1_3_lore_9)"},"",{"color":"dark_red","text":"$(tr_warrior_spell1_3_lore_10)"},{"color":"dark_red","text":"$(tr_warrior_spell1_3_lore_11)"}],custom_data={spell1_slot:1b,cooldownspell1:1b},custom_model_data={strings:["cooldown"]}] 1
 
-item replace entity @s[scores={spell1_slot_w=0}] hotbar.0 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=1}] hotbar.1 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=2}] hotbar.2 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=3}] hotbar.3 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=4}] hotbar.4 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=5}] hotbar.5 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=6}] hotbar.6 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=7}] hotbar.7 from block 17 95 11 container.5
-item replace entity @s[scores={spell1_slot_w=8}] hotbar.8 from block 17 95 11 container.5
-# donne la nouvelle quantité
+$item modify entity @s hotbar.$(slot_spell1_w) minecraft:count_modifier
+# modifie la quantité dans l'inventaire
