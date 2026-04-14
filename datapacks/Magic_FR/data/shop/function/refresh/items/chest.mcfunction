@@ -11,6 +11,3 @@ $execute if score @s chest matches 7 run function main:personnal_data/shop/set_i
 $execute if score @s chest matches 8 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"chest",level:"9"}
 $execute if score @s chest matches 9 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"chest",level:"10"}
 $execute if score @s chest matches 10 run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"chest",level:"max"}
-
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item

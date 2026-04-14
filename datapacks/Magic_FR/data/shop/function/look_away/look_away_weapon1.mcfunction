@@ -6,4 +6,5 @@ data merge entity @n[type=item_display,tag=shop_weapon1] {start_interpolation:0,
 execute as @n[type=text_display,tag=shop_weapon1_level] run data merge entity @s {start_interpolation:0,interpolation_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.3f,0.3f,0.3f]}}
 data merge entity @n[type=text_display,tag=shop_weapon1_price] {start_interpolation:0,interpolation_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]}}
 
-kill @n[tag=shop_overlay]
+# delete l'overlay
+$kill @n[type=text_display,tag=shop_overlay_weapon1_$(player)]

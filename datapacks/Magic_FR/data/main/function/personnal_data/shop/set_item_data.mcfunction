@@ -6,6 +6,7 @@ data modify storage personnal_storage.temp storage set from entity @s EnderItems
 $data modify storage temp:item data set from storage minecraft:shop_data stuff.stuff_$(class)_$(item_category)_$(level)
 $data modify storage temp:item data.item_name set from entity @s EnderItems[0].components.minecraft:custom_data.tr_$(class)_$(item_category)_$(level)_name
 $data modify storage temp:item data.item_category set value "$(item_category)"
+
 data modify storage temp:item data.lore set value []
 data modify storage temp:item index set value 0
 scoreboard players set @s shop_lore_line 0

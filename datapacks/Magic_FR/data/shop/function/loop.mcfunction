@@ -66,26 +66,26 @@ execute if score player_atstart playercount = player playercount unless entity @
 
                                          #### CES COMMANDES PERMETENT DE GERER LES SHOPS #####
 
-execute as @a[scores={InShop=1},tag=!look_at_weapon1] at @s if predicate minecraft:shop/look_at_weapon1 run function shop:look_at/look_at_weapon1
-execute as @a[scores={InShop=1},tag=look_at_weapon1] at @s unless predicate minecraft:shop/look_at_weapon1 run function shop:look_away/look_away_weapon1
+execute as @a[scores={InShop=1},tag=!look_at_weapon1] at @s if predicate minecraft:shop/look_at_weapon1 run function shop:look_at/look_at_weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_weapon1] at @s unless predicate minecraft:shop/look_at_weapon1 run function shop:look_away/look_away_weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_chest] at @s if predicate minecraft:shop/look_at_chest run function shop:look_at/look_at_chest
-execute as @a[scores={InShop=1},tag=look_at_chest] at @s unless predicate minecraft:shop/look_at_chest run function shop:look_away/look_away_chest
+execute as @a[scores={InShop=1},tag=!look_at_chest] at @s if predicate minecraft:shop/look_at_chest run function shop:look_at/look_at_chest with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_chest] at @s unless predicate minecraft:shop/look_at_chest run function shop:look_away/look_away_chest with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_legs] at @s if predicate minecraft:shop/look_at_legs run function shop:look_at/look_at_legs
-execute as @a[scores={InShop=1},tag=look_at_legs] at @s unless predicate minecraft:shop/look_at_legs run function shop:look_away/look_away_legs
+execute as @a[scores={InShop=1},tag=!look_at_legs] at @s if predicate minecraft:shop/look_at_legs run function shop:look_at/look_at_legs with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_legs] at @s unless predicate minecraft:shop/look_at_legs run function shop:look_away/look_away_legs with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_boots] at @s if predicate minecraft:shop/look_at_boots run function shop:look_at/look_at_boots
-execute as @a[scores={InShop=1},tag=look_at_boots] at @s unless predicate minecraft:shop/look_at_boots run function shop:look_away/look_away_boots
+execute as @a[scores={InShop=1},tag=!look_at_boots] at @s if predicate minecraft:shop/look_at_boots run function shop:look_at/look_at_boots with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_boots] at @s unless predicate minecraft:shop/look_at_boots run function shop:look_away/look_away_boots with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_spell1] at @s if predicate minecraft:shop/look_at_spell1 run function shop:look_at/look_at_spell1
-execute as @a[scores={InShop=1},tag=look_at_spell1] at @s unless predicate minecraft:shop/look_at_spell1 run function shop:look_away/look_away_spell1
+execute as @a[scores={InShop=1},tag=!look_at_spell1] at @s if predicate minecraft:shop/look_at_spell1 run function shop:look_at/look_at_spell1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_spell1] at @s unless predicate minecraft:shop/look_at_spell1 run function shop:look_away/look_away_spell1 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_spell2] at @s if predicate minecraft:shop/look_at_spell2 run function shop:look_at/look_at_spell2
-execute as @a[scores={InShop=1},tag=look_at_spell2] at @s unless predicate minecraft:shop/look_at_spell2 run function shop:look_away/look_away_spell2
+execute as @a[scores={InShop=1},tag=!look_at_spell2] at @s if predicate minecraft:shop/look_at_spell2 run function shop:look_at/look_at_spell2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_spell2] at @s unless predicate minecraft:shop/look_at_spell2 run function shop:look_away/look_away_spell2 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute as @a[scores={InShop=1},tag=!look_at_spell3] at @s if predicate minecraft:shop/look_at_spell3 run function shop:look_at/look_at_spell3
-execute as @a[scores={InShop=1},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3
+execute as @a[scores={InShop=1},tag=!look_at_spell3] at @s if predicate minecraft:shop/look_at_spell3 run function shop:look_at/look_at_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={InShop=1},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 
           # shop boots #
 
