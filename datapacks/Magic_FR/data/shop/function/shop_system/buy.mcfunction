@@ -7,6 +7,10 @@ $scoreboard players remove @s PH $(price)
 # enlève le cout en PH à @s
 $scoreboard players add @s $(item_category) 1
 # ajoute 1 au niveau d'item de @s
+
+$function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
+# donne l'item en question à @s
+
 function shop:refresh/money/refresh_money
 # actualise le compteur de sous de @s
 $function shop:refresh/items/$(item_category) with entity @s EnderItems[0].components.minecraft:custom_data
