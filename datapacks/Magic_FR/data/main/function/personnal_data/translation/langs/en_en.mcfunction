@@ -1016,4 +1016,5 @@ data modify storage strings en_en set value {\
 "tr_shop_item_overlay_price_1":"Cost:",\
 "tr_shop_item_overlay_price_2":"coins",\
 "tr_shop_item_overlay_buy_tip":"right click to purchase",\
-"tr_shop_item_max_lvl":"Max level reached"}
+"tr_shop_item_max_lvl":"Max level reached",\
+"tr_shop_item_not_enough_money":"Not enough coins!"}

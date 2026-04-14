@@ -1026,4 +1026,5 @@ data modify storage strings fr_fr set value {\
 "tr_shop_item_overlay_price_1":"Coût :",\
 "tr_shop_item_overlay_price_2":"points d'honneur",\
 "tr_shop_item_overlay_buy_tip":"clic droit pour acheter",\
-"tr_shop_item_max_lvl":"Niveau maximal atteint"}
+"tr_shop_item_max_lvl":"Niveau maximal atteint",\
+"tr_shop_item_not_enough_money":"Pas assez de points d'honneur !"}

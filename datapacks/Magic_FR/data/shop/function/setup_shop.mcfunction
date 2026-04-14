@@ -15,9 +15,6 @@ function shop:refresh/money/refresh_money
 
 function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de weapon1 dans le shop de @s
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item en question
-
 function shop:refresh/items/spell1 with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de spell1 dans le shop de @s
 function shop:refresh/items/spell2 with entity @s EnderItems[0].components.minecraft:custom_data
@@ -26,13 +23,7 @@ function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minec
 # actualise les infos de spell3 dans le shop de @s
 function shop:refresh/items/chest with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de chest dans le shop de @s
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item en question
 function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de legs dans le shop de @s
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item
 function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de boots dans le shop de @s
-function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
-# refresh l'item en question
