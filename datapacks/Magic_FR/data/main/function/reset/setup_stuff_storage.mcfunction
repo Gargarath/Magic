@@ -176,22 +176,22 @@ data modify storage shop_data stuff.stuff_warrior_boots_max set value {item_id:"
                    ###   SPELL 1    ###
 
 # Niveau 1
-data modify storage shop_data stuff.stuff_warrior_spell1_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE627\uE761\uE627\uE761\uE630",lore:["",{"color":"dark_red","bold":true,"text":"$(tr_warrior_cooldownspell1_1_lore_1)"},"",{"color":"dark_red","text":"$(tr_warrior_cooldownspell1_1_lore_1)"},{"color":"green","text":"$(tr_warrior_spell1_1_lore_2)"},{"color":"green","text":"$(tr_warrior_spell1_1_lore_3)"},"",{"color":"green","text":"$(tr_warrior_spell1_1_lore_4)"},{"color":"green","text":"$(tr_warrior_spell1_1_lore_5)"},"",{"color":"red","text":"$(tr_warrior_spell1_1_lore_6)"},{"color":"red","text":"$(tr_warrior_spell1_1_lore_7)"},"",{"color":"red","text":"$(tr_warrior_spell1_1_lore_8)"},{"color":"red","text":"$(tr_warrior_spell1_1_lore_9)"},"",{"color":"dark_red","text":"$(tr_warrior_spell1_1_lore_10)"},{"color":"dark_red","text":"$(tr_warrior_spell1_1_lore_11)"}]}
+data modify storage shop_data stuff.stuff_warrior_spell1_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE627\uE761\uE627\uE761\uE630",lore_template:["",{key:"tr_warrior_spell1_1_lore_1",color:"gray"},{key:"tr_warrior_spell1_1_lore_2",color:"gray"},{key:"tr_warrior_spell1_1_lore_3",color:"gray"},{key:"tr_warrior_spell1_1_lore_4",color:"gray"},{key:"tr_warrior_spell1_1_lore_5",color:"gray"},{key:"tr_warrior_spell1_1_lore_6",color:"gray"},{key:"tr_warrior_spell1_1_lore_7",color:"gray"},{key:"tr_warrior_spell1_1_lore_8",color:"gray"},{key:"tr_warrior_spell1_1_lore_9",color:"gray"},{key:"tr_warrior_spell1_1_lore_10",color:"gray"},{key:"tr_warrior_spell1_1_lore_11",color:"gray"}]}
 
 # Cooldown niveau 1
 data modify storage shop_data stuff.stuff_warrior_cooldownspell1_1 set value {item_id:"red_stained_glass_pane",price:0,custommodeldata:"cooldown"}
 
 # Niveau 2
-data modify storage shop_data stuff.stuff_warrior_spell1_2 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE628\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell1_2 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE628\uE761\uE627\uE761\uE630",lore_template:["",{key:"tr_warrior_spell1_2_lore_1",color:"gray"},{key:"tr_warrior_spell1_2_lore_2",color:"gray"},{key:"tr_warrior_spell1_2_lore_3",color:"gray"},{key:"tr_warrior_spell1_2_lore_4",color:"gray"},{key:"tr_warrior_spell1_2_lore_5",color:"gray"},{key:"tr_warrior_spell1_2_lore_6",color:"gray"},{key:"tr_warrior_spell1_2_lore_7",color:"gray"},{key:"tr_warrior_spell1_2_lore_8",color:"gray"},{key:"tr_warrior_spell1_2_lore_9",color:"gray"},{key:"tr_warrior_spell1_2_lore_10",color:"gray"},{key:"tr_warrior_spell1_2_lore_11",color:"gray"}]}
 
 # Cooldown niveau 2
 data modify storage shop_data stuff.stuff_warrior_cooldownspell1_2 set value {item_id:"red_stained_glass_pane",price:0,custommodeldata:"cooldown"}
 
 
 # Niveau 3
-data modify storage shop_data stuff.stuff_warrior_spell1_3 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE628\uE761\uE628\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell1_3 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell1_w",level:"\uE628\uE761\uE628\uE761\uE630",lore_template:["",{key:"tr_warrior_spell1_3_lore_1",color:"gray"},{key:"tr_warrior_spell1_3_lore_2",color:"gray"},{key:"tr_warrior_spell1_3_lore_3",color:"gray"},{key:"tr_warrior_spell1_3_lore_4",color:"gray"},{key:"tr_warrior_spell1_3_lore_5",color:"gray"},{key:"tr_warrior_spell1_3_lore_6",color:"gray"},{key:"tr_warrior_spell1_3_lore_7",color:"gray"},{key:"tr_warrior_spell1_3_lore_8",color:"gray"},{key:"tr_warrior_spell1_3_lore_9",color:"gray"},{key:"tr_warrior_spell1_3_lore_10",color:"gray"},{key:"tr_warrior_spell1_3_lore_11",color:"gray"}]}
 
-data modify storage shop_data stuff.stuff_warrior_spell1_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell1_w",level:"\uE632\uE761\uE632\uE761\uE633"}
+data modify storage shop_data stuff.stuff_warrior_spell1_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell1_w",level:"\uE632\uE761\uE632\uE761\uE633",lore_template:["",{key:"tr_warrior_spell1_3_lore_1",color:"gray"},{key:"tr_warrior_spell1_3_lore_2",color:"gray"},{key:"tr_warrior_spell1_3_lore_3",color:"gray"},{key:"tr_warrior_spell1_3_lore_4",color:"gray"},{key:"tr_warrior_spell1_3_lore_5",color:"gray"},{key:"tr_warrior_spell1_3_lore_6",color:"gray"},{key:"tr_warrior_spell1_3_lore_7",color:"gray"},{key:"tr_warrior_spell1_3_lore_8",color:"gray"},{key:"tr_warrior_spell1_3_lore_9",color:"gray"},{key:"tr_warrior_spell1_3_lore_10",color:"gray"},{key:"tr_warrior_spell1_3_lore_11",color:"gray"}]}
 
 # Cooldown niveau 3
 data modify storage shop_data stuff.stuff_warrior_cooldownspell1_3 set value {item_id:"red_stained_glass_pane",price:0,custommodeldata:"cooldown"}
@@ -200,21 +200,21 @@ data modify storage shop_data stuff.stuff_warrior_cooldownspell1_3 set value {it
                    ###   SPELL 2    ###
 
 # Niveau 1
-data modify storage shop_data stuff.stuff_warrior_spell2_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE627\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell2_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE627\uE761\uE627\uE761\uE630",lore_template:["",{key:"tr_warrior_spell2_1_lore_1",color:"gray"},{key:"tr_warrior_spell2_1_lore_2",color:"gray"},{key:"tr_warrior_spell2_1_lore_3",color:"gray"},{key:"tr_warrior_spell2_1_lore_4",color:"gray"},{key:"tr_warrior_spell2_1_lore_5",color:"gray"},{key:"tr_warrior_spell2_1_lore_6",color:"gray"},{key:"tr_warrior_spell2_1_lore_7",color:"gray"},{key:"tr_warrior_spell2_1_lore_8",color:"gray"},{key:"tr_warrior_spell2_1_lore_9",color:"gray"}]}
 
 # Cooldown niveau 1
 data modify storage shop_data stuff.stuff_warrior_cooldownspell2_1 set value {item_id:"orange_stained_glass_pane",price:0,custommodeldata:"cooldown"}
 
 # Niveau 2
-data modify storage shop_data stuff.stuff_warrior_spell2_2 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE628\uE761\uE627\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell2_2 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE628\uE761\uE627\uE761\uE630",lore_template:["",{key:"tr_warrior_spell2_2_lore_1",color:"gray"},{key:"tr_warrior_spell2_2_lore_2",color:"gray"},{key:"tr_warrior_spell2_2_lore_3",color:"gray"},{key:"tr_warrior_spell2_2_lore_4",color:"gray"},{key:"tr_warrior_spell2_2_lore_5",color:"gray"},{key:"tr_warrior_spell2_2_lore_6",color:"gray"},{key:"tr_warrior_spell2_2_lore_7",color:"gray"},{key:"tr_warrior_spell2_2_lore_8",color:"gray"},{key:"tr_warrior_spell2_2_lore_9",color:"gray"}]}
 
 # Cooldown niveau 2
 data modify storage shop_data stuff.stuff_warrior_cooldownspell2_2 set value {item_id:"orange_stained_glass_pane",price:0,custommodeldata:"cooldown"}
 
 # Niveau 3
-data modify storage shop_data stuff.stuff_warrior_spell2_3 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE628\uE761\uE628\uE761\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell2_3 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell2_w",level:"\uE628\uE761\uE628\uE761\uE630",lore_template:["",{key:"tr_warrior_spell2_3_lore_1",color:"gray"},{key:"tr_warrior_spell2_3_lore_2",color:"gray"},{key:"tr_warrior_spell2_3_lore_3",color:"gray"},{key:"tr_warrior_spell2_3_lore_4",color:"gray"},{key:"tr_warrior_spell2_3_lore_5",color:"gray"},{key:"tr_warrior_spell2_3_lore_6",color:"gray"},{key:"tr_warrior_spell2_3_lore_7",color:"gray"},{key:"tr_warrior_spell2_3_lore_8",color:"gray"},{key:"tr_warrior_spell2_3_lore_9",color:"gray"}]}
 
-data modify storage shop_data stuff.stuff_warrior_spell2_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell2_w",level:"\uE632\uE761\uE632\uE761\uE633"}
+data modify storage shop_data stuff.stuff_warrior_spell2_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell2_w",level:"\uE632\uE761\uE632\uE761\uE633",lore_template:["",{key:"tr_warrior_spell2_3_lore_1",color:"gray"},{key:"tr_warrior_spell2_3_lore_2",color:"gray"},{key:"tr_warrior_spell2_3_lore_3",color:"gray"},{key:"tr_warrior_spell2_3_lore_4",color:"gray"},{key:"tr_warrior_spell2_3_lore_5",color:"gray"},{key:"tr_warrior_spell2_3_lore_6",color:"gray"},{key:"tr_warrior_spell2_3_lore_7",color:"gray"},{key:"tr_warrior_spell2_3_lore_8",color:"gray"},{key:"tr_warrior_spell2_3_lore_9",color:"gray"}]}
 
 # Cooldown niveau 3
 data modify storage shop_data stuff.stuff_warrior_cooldownspell2_3 set value {item_id:"orange_stained_glass_pane",price:0,custommodeldata:"cooldown"}
@@ -223,9 +223,9 @@ data modify storage shop_data stuff.stuff_warrior_cooldownspell2_3 set value {it
                    ###   SPELL 3    ###
 
 # Niveau 1
-data modify storage shop_data stuff.stuff_warrior_spell3_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell3_w",level:"\uE630"}
+data modify storage shop_data stuff.stuff_warrior_spell3_1 set value {item_id:"carrot_on_a_stick",price:0,custommodeldata:"spell3_w",level:"\uE630",lore_template:["",{key:"tr_warrior_spell3_1_lore_1",color:"gray"},{key:"tr_warrior_spell3_1_lore_2",color:"gray"},{key:"tr_warrior_spell3_1_lore_3",color:"gray"},{key:"tr_warrior_spell3_1_lore_4",color:"gray"},{key:"tr_warrior_spell3_1_lore_5",color:"gray"},{key:"tr_warrior_spell3_1_lore_6",color:"gray"},{key:"tr_warrior_spell3_1_lore_7",color:"gray"},{key:"tr_warrior_spell3_1_lore_8",color:"gray"},{key:"tr_warrior_spell3_1_lore_9",color:"gray"},{key:"tr_warrior_spell3_1_lore_10",color:"gray"},{key:"tr_warrior_spell3_1_lore_11",color:"gray"},{key:"tr_warrior_spell3_1_lore_12",color:"gray"}]}
 
-data modify storage shop_data stuff.stuff_warrior_spell3_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell3_w",level:"\uE633"}
+data modify storage shop_data stuff.stuff_warrior_spell3_max set value {item_id:"carrot_on_a_stick",price:-1,custommodeldata:"spell3_w",level:"\uE633",lore_template:["",{key:"tr_warrior_spell3_1_lore_1",color:"gray"},{key:"tr_warrior_spell3_1_lore_2",color:"gray"},{key:"tr_warrior_spell3_1_lore_3",color:"gray"},{key:"tr_warrior_spell3_1_lore_4",color:"gray"},{key:"tr_warrior_spell3_1_lore_5",color:"gray"},{key:"tr_warrior_spell3_1_lore_6",color:"gray"},{key:"tr_warrior_spell3_1_lore_7",color:"gray"},{key:"tr_warrior_spell3_1_lore_8",color:"gray"},{key:"tr_warrior_spell3_1_lore_9",color:"gray"},{key:"tr_warrior_spell3_1_lore_10",color:"gray"},{key:"tr_warrior_spell3_1_lore_11",color:"gray"},{key:"tr_warrior_spell3_1_lore_12",color:"gray"}]}
 
 # Cooldown niveau 1
 data modify storage shop_data stuff.stuff_warrior_cooldownspell3_1 set value {item_id:"light_gray_stained_glass_pane",price:0,custommodeldata:"cooldown"}
