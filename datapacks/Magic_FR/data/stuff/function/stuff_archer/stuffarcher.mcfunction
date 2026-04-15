@@ -50,9 +50,6 @@ execute if entity @s[scores={weapon1=0..,spell3=3},tag=!Has_explosive_arrow,tag=
 # FLECHE DE GLACE EXPLOSIVES
 execute as @s[tag=Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/combined_arrow/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 
-#function spells:spellsystem/spell1_spell3_a/test_player
-# si @s active la flèche explo et la flèche de glace lui donne la bonne flèche de glace explo selon son niveau d'amélioration sur la flèche explosive et la flèche de glace
-
                    ###   WEAPON 1    ###
 
 execute if score @s weapon1_slot_a matches 0 run function stuff:stuff_archer/weapon1/slot0
