@@ -70,6 +70,14 @@ execute if score @s Player matches 12 run data modify storage gui player.12.acti
 scoreboard players set @s gui_actionbar_alert -1
 # clear l'action bar de @s
 
+# save l'emplacement de l'item pour quitter l'arène de @s (change selon la classe)
+data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[tag=warrior] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_w
+execute if entity @s[tag=archer] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_a
+execute if entity @s[tag=mage] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_m
+execute if entity @s[tag=rogue] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_r
+function main:personnal_data/save_new_data with storage personnal_storage.temp
+
 
 clear @s
 execute as @s[tag=warrior] run function lobby:arena/stuff_give_max/warrior

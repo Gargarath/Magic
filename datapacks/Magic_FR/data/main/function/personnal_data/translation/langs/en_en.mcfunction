@@ -5,6 +5,11 @@ data modify storage strings en_en set value {\
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You joined spectator mode!",\
 "tr_left_spectator":"You left spectator mode!",\
+\
+\
+"tr_stuff_generic_quit_arena_name":"Quit arena",\
+\
+\
 "tr_warrior_weapon1_0_name":"Beginner Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\
 "tr_warrior_weapon1_1_name":"Battle Axe I",\

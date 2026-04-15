@@ -14,6 +14,7 @@ function main:items_positions/determine_spell_order
 data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
 execute store result storage personnal_storage.temp storage.slot_weapon1_a int 1 run scoreboard players get @s weapon1_slot_a
 execute store result storage personnal_storage.temp storage.slot_arrows int 1 run scoreboard players get @s arrows_slot
+execute store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_a
 execute if score @s spell1 matches 1.. store result storage personnal_storage.temp storage.slot_spell1_a int 1 run scoreboard players get @s spell1_slot_a
 execute if score @s spell2 matches 1.. store result storage personnal_storage.temp storage.slot_spell2_a int 1 run scoreboard players get @s spell2_slot_a
 execute if score @s spell3 matches 1.. store result storage personnal_storage.temp storage.slot_spell3_a int 1 run scoreboard players get @s spell3_slot_a

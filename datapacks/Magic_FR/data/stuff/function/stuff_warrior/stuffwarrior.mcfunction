@@ -21,15 +21,7 @@ execute if score @s InShop matches 1 run function stuff:stuff_warrior/save_stuff
 # permet de save le stuff de @s dans un storage
 
 
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 0 run item replace entity @s hotbar.0 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 1 run item replace entity @s hotbar.1 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 2 run item replace entity @s hotbar.2 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 3 run item replace entity @s hotbar.3 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 4 run item replace entity @s hotbar.4 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 5 run item replace entity @s hotbar.5 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 6 run item replace entity @s hotbar.6 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 7 run item replace entity @s hotbar.7 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_w matches 8 run item replace entity @s hotbar.8 from block 13 97 11 container.3
+execute if entity @s[tag=in_lobby_arena] run function stuff:generic_stuff/quit_arena with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item pour quitter l'arene du lobby si il est dedans
 
 

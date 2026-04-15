@@ -18,15 +18,7 @@ item replace entity @s[scores={burning=0..}] armor.head from block 17 95 15 cont
 execute if score @s InShop matches 1 run function stuff:stuff_rogue/save_stuff_as_storage/determine_player
 # permet de save le stuff de @s dans un storage
 
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 0 run item replace entity @s hotbar.0 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 1 run item replace entity @s hotbar.1 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 2 run item replace entity @s hotbar.2 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 3 run item replace entity @s hotbar.3 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 4 run item replace entity @s hotbar.4 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 5 run item replace entity @s hotbar.5 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 6 run item replace entity @s hotbar.6 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 7 run item replace entity @s hotbar.7 from block 13 97 11 container.3
-execute if score @s[tag=in_lobby_arena] quit_slot_r matches 8 run item replace entity @s hotbar.8 from block 13 97 11 container.3
+execute if entity @s[tag=in_lobby_arena] run function stuff:generic_stuff/quit_arena with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item pour quitter l'arene du lobby si il est dedans
 
                          ###   WEAPON 1    ###

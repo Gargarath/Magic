@@ -5,6 +5,11 @@ data modify storage strings fr_fr set value {\
 "tr_changed_language":"Votre langue a été définie sur : Français",\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
+\
+\
+"tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
+\
+\
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
 "tr_warrior_weapon1_1_name":"Hache de bataille I",\
