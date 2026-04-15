@@ -32,22 +32,24 @@ execute if score @s[tag=in_lobby_arena] quit_slot_a matches 8 run item replace e
                          ###   WEAPON 1    ###
 # FLECHES
 
-execute if entity @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics/testplayer
+execute if entity @s[scores={InShop=0},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 
 
-execute if entity @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
-execute if entity @s[scores={respawn_time=0..},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
+execute if entity @s[scores={InShop=1},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[scores={respawn_time=0..},tag=!Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/classics_unusable/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 
 # FLECHES EXPLOSIVE
-execute if entity @s[scores={weapon1=0..,spell1=1},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl1/check_player_number
-execute if entity @s[scores={weapon1=0..,spell1=2},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl2/check_player_number
-execute if entity @s[scores={weapon1=0..,spell1=3},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl3/check_player_number
+execute if entity @s[scores={weapon1=0..,spell1=1},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[scores={weapon1=0..,spell1=2},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[scores={weapon1=0..,spell1=3},tag=Has_explosive_arrow,tag=!Has_freeze_arrow] run function stuff:stuff_archer/arrows/explosive_arrow/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 # FLECHE DE GLACE
-execute if entity @s[scores={weapon1=0..,spell3=1},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/check_player_number
-execute if entity @s[scores={weapon1=0..,spell3=2},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl2/check_player_number
-execute if entity @s[scores={weapon1=0..,spell3=3},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl3/check_player_number
+execute if entity @s[scores={weapon1=0..,spell3=1},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[scores={weapon1=0..,spell3=2},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[scores={weapon1=0..,spell3=3},tag=!Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+
 # FLECHE DE GLACE EXPLOSIVES
-execute as @s[tag=Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/combined_arrow/check_player_number
+execute as @s[tag=Has_explosive_arrow,tag=Has_freeze_arrow] run function stuff:stuff_archer/arrows/combined_arrow/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
+
 #function spells:spellsystem/spell1_spell3_a/test_player
 # si @s active la flèche explo et la flèche de glace lui donne la bonne flèche de glace explo selon son niveau d'amélioration sur la flèche explosive et la flèche de glace
 

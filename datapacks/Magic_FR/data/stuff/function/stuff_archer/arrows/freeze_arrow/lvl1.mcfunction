@@ -1,0 +1,4 @@
+# appelée par stuff:stuffarcher si @s possède la flèche de glace
+# permet à @s de récuperer la bonne flèche de glace selon son numéro de joueur
+
+$item replace entity @s hotbar.$(slot_arrows) with tipped_arrow[custom_name={"bold":true,"color":"aqua","text":"$(tr_archer_ice_arrow_1_lore_1)"},lore=[{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_1)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_2)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_3)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_4)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_5)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_6)"},{"color":"gray","text":"$(tr_archer_ice_arrow_1_lore_7)"}],potion_contents={potion:"minecraft:thick",custom_color:917503,custom_effects:[{id:"minecraft:unluck",amplifier:$(player),duration:200,show_particles:0b,show_icon:0b}]},tooltip_display={hidden_components:["potion_contents"]},custom_data={arrows_slot:1b}] 1

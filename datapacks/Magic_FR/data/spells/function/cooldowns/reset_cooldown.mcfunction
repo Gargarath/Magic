@@ -10,7 +10,7 @@ execute unless score @s cooldownspell3 matches -1 run scoreboard players set @s 
 execute unless score @s cooldownspell3 matches -1 run scoreboard players set @s cooldown3_clock 5
 
 execute unless score @s[tag=archer] arrow = @s maxarrow run scoreboard players operation @s arrow = @s maxarrow
-execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
+execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics_unusable/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 # rend l'arc de @s utilisable si c'est un archer
 
 scoreboard players set @s[tag=mage] weapon1_mana_m 100

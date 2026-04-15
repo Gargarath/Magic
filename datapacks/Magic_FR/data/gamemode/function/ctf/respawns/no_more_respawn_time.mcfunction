@@ -27,7 +27,7 @@ effect give @s[tag=!rogue] minecraft:regeneration infinite 0 true
 effect give @s[tag=rogue] minecraft:regeneration infinite 1 true
 # donne la regen à @s
 
-execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics/testplayer
+execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est archer -> lui rend ses bonnes flèches
 
 scoreboard players set @s in_fight 0

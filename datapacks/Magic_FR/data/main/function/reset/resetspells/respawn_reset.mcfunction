@@ -36,7 +36,7 @@ execute as @s[tag=Has_explosive_arrow] run function spells:spellsystem/spell1/sp
 execute as @s[tag=Has_freeze_arrow] run function spells:spellsystem/spell3/spell3_a/usedfreezearrow_a
 # si @s a la flèche explo, la flèche de glace ou les deux, lui enlève
 
-execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics_unusable/testplayer
+execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics_unusable/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 # enlève l'accès au flèche de @s (si archer)
 
 execute as @s[tag=invisibility_r] run function spells:spellsystem/spell1/spell1_r/nomoreinvisibility_r

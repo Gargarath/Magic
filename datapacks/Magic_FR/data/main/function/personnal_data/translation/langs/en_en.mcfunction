@@ -222,6 +222,11 @@ data modify storage strings en_en set value {\
 \
 \
 \
+"tr_archer_classic_arrow_1_name":"Arrow",\
+"tr_archer_classic_arrow_1_lore_1":"-----------------------------",\
+"tr_archer_classic_arrow_1_lore_2":"A simple arrow. Upgrade your bow",\
+"tr_archer_classic_arrow_1_lore_3":"to get more arrows",\
+"tr_archer_classic_arrow_1_lore_4":"-----------------------------",\
 "tr_archer_explosive_arrow_1_name":"Explosive Arrow I",\
 "tr_archer_explosive_arrow_1_lore_1":"-----------------------------------",\
 "tr_archer_explosive_arrow_1_lore_2":"Your next arrow will explode on",\

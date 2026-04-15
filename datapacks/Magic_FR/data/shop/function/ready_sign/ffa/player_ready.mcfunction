@@ -16,7 +16,7 @@ function lobby:team_selector/give_ffa_team/change_name_visibility/show_name
 scoreboard players set @s InShop 0
 scoreboard players set @s usespell 0
 
-execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics/testplayer
+execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 # rend ses flèches à @s
 
 function gamemode:ffa/spawn/spawn_good_spot

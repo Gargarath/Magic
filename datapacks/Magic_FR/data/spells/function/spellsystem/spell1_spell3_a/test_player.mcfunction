@@ -1,18 +1,7 @@
 # appelée par usespell1_a ou usespell3_a si @s utilise la flèche explo et la flèche de glace
 # permet de détecter le numéro de joueur de @s pour lui donner la flèche de glace explosive adaptée
 
-execute if score @s Player matches 1 run function stuff:stuff_archer/arrows/combined_arrow/player1/check_combination
-execute if score @s Player matches 2 run function stuff:stuff_archer/arrows/combined_arrow/player2/check_combination
-execute if score @s Player matches 3 run function stuff:stuff_archer/arrows/combined_arrow/player3/check_combination
-execute if score @s Player matches 4 run function stuff:stuff_archer/arrows/combined_arrow/player4/check_combination
-execute if score @s Player matches 5 run function stuff:stuff_archer/arrows/combined_arrow/player5/check_combination
-execute if score @s Player matches 6 run function stuff:stuff_archer/arrows/combined_arrow/player6/check_combination
-execute if score @s Player matches 7 run function stuff:stuff_archer/arrows/combined_arrow/player7/check_combination
-execute if score @s Player matches 8 run function stuff:stuff_archer/arrows/combined_arrow/player8/check_combination
-execute if score @s Player matches 9 run function stuff:stuff_archer/arrows/combined_arrow/player9/check_combination
-execute if score @s Player matches 10 run function stuff:stuff_archer/arrows/combined_arrow/player10/check_combination
-execute if score @s Player matches 11 run function stuff:stuff_archer/arrows/combined_arrow/player11/check_combination
-execute if score @s Player matches 12 run function stuff:stuff_archer/arrows/combined_arrow/player12/check_combination
+function stuff:stuff_archer/arrows/combined_arrow/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s Player matches 1 run data modify storage gui player.1.actionbar.alert set value ["",{"text":"Votre prochaine flèche explosera","bold":false,"color":"dark_red"},{"text":" et gèlera sa cible !","bold":false,"color":"aqua"}]
 execute if score @s Player matches 2 run data modify storage gui player.2.actionbar.alert set value ["",{"text":"Votre prochaine flèche explosera","bold":false,"color":"dark_red"},{"text":" et gèlera sa cible !","bold":false,"color":"aqua"}]

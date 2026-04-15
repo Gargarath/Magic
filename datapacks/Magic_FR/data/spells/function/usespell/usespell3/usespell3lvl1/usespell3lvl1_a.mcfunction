@@ -6,18 +6,7 @@ scoreboard players set @s usespell 0
 clear @s arrow
 clear @s minecraft:tipped_arrow
 
-execute as @s[tag=!Has_explosive_arrow,scores={Player=1}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player1
-execute as @s[tag=!Has_explosive_arrow,scores={Player=2}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player2
-execute as @s[tag=!Has_explosive_arrow,scores={Player=3}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player3
-execute as @s[tag=!Has_explosive_arrow,scores={Player=4}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player4
-execute as @s[tag=!Has_explosive_arrow,scores={Player=5}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player5
-execute as @s[tag=!Has_explosive_arrow,scores={Player=6}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player6
-execute as @s[tag=!Has_explosive_arrow,scores={Player=7}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player7
-execute as @s[tag=!Has_explosive_arrow,scores={Player=8}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player8
-execute as @s[tag=!Has_explosive_arrow,scores={Player=9}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player9
-execute as @s[tag=!Has_explosive_arrow,scores={Player=10}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player10
-execute as @s[tag=!Has_explosive_arrow,scores={Player=11}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player11
-execute as @s[tag=!Has_explosive_arrow,scores={Player=12}] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1/player12
+execute if entity @s[tag=!Has_explosive_arrow] run function stuff:stuff_archer/arrows/freeze_arrow/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s[tag=!Has_explosive_arrow] Player matches 1 run data modify storage gui player.1.actionbar.alert set value {"text":"Votre prochaine flèche gèlera sa cible !","color":"aqua","bold":false}
 execute if score @s[tag=!Has_explosive_arrow] Player matches 2 run data modify storage gui player.2.actionbar.alert set value {"text":"Votre prochaine flèche gèlera sa cible !","color":"aqua","bold":false}

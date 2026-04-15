@@ -29,11 +29,13 @@ execute if score @s quit_slot2 = @s spell1_slot2 run scoreboard players set @s i
 execute if score @s quit_slot2 = @s spell2_slot2 run scoreboard players set @s item_save_error 1
 execute if score @s quit_slot2 = @s spell3_slot2 run scoreboard players set @s item_save_error 1
 execute if score @s weapon1_slot2 matches 9.. run scoreboard players set @s item_save_error 1
+execute if score @s arrows_slot2 matches 9.. run scoreboard players set @s item_save_error 1
 execute if score @s spell1_slot2 matches 9.. run scoreboard players set @s item_save_error 1
 execute if score @s spell2_slot2 matches 9.. run scoreboard players set @s item_save_error 1
 execute if score @s spell3_slot2 matches 9.. run scoreboard players set @s item_save_error 1
 execute if score @s quit_slot2 matches 9.. run scoreboard players set @s item_save_error 1
 execute if score @s weapon1_slot2 matches ..-1 run scoreboard players set @s item_save_error 1
+execute if score @s arrows_slot2 matches ..-1 run scoreboard players set @s item_save_error 1
 execute if score @s spell1_slot2 matches ..-1 run scoreboard players set @s item_save_error 1
 execute if score @s spell2_slot2 matches ..-1 run scoreboard players set @s item_save_error 1
 execute if score @s spell3_slot2 matches ..-1 run scoreboard players set @s item_save_error 1

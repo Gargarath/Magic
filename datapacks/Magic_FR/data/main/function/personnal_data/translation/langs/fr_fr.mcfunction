@@ -222,19 +222,25 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+"tr_archer_classic_arrow_1_name":"Flèche",\
+"tr_archer_classic_arrow_1_lore_1":"-----------------------------",\
+"tr_archer_classic_arrow_1_lore_2":"Une flèche simple, améliorez votre",\
+"tr_archer_classic_arrow_1_lore_3":"arc pour obtenir plus de flèches",\
+"tr_archer_classic_arrow_1_lore_4":"-----------------------------",\
 "tr_archer_explosive_arrow_1_name":"Flèche explosive I",\
 "tr_archer_explosive_arrow_1_lore_1":"-----------------------------------",\
 "tr_archer_explosive_arrow_1_lore_2":"Votre prochaine flèche explosera au",\
-"tr_archer_explosive_arrow_1_lore_3":"moindre contact d'un bloc et infligera 12",\
-"tr_archer_explosive_arrow_1_lore_4":"points de dégats dans un rayon de 3",\
-"tr_archer_explosive_arrow_1_lore_5":"blocs.",\
-"tr_archer_explosive_arrow_1_lore_6":"Temps de recharge: 25s.",\
-"tr_archer_explosive_arrow_1_lore_7":"-----------------------------------",\
+"tr_archer_explosive_arrow_1_lore_3":"moindre contact et infligera 12 points",\
+"tr_archer_explosive_arrow_1_lore_4":"de dégats dans un rayon de 3 blocs",\
+"tr_archer_explosive_arrow_3_lore_5":"L'effet de ce sort peut être cumulé avec",\
+"tr_archer_explosive_arrow_3_lore_6":"celui de la flèche de glace.",\
+"tr_archer_explosive_arrow_1_lore_7":"Temps de recharge: 25s.",\
+"tr_archer_explosive_arrow_1_lore_8":"-----------------------------------",\
 "tr_archer_explosive_arrow_2_name":"Flèche explosive II",\
 "tr_archer_explosive_arrow_2_lore_1":"-----------------------------------",\
 "tr_archer_explosive_arrow_2_lore_2":"Votre prochaine flèche explosera au",\
-"tr_archer_explosive_arrow_2_lore_3":"moindre contact et infligera 24 points de",\
-"tr_archer_explosive_arrow_2_lore_4":"dégats dans un rayon de 4 blocs.",\
+"tr_archer_explosive_arrow_2_lore_3":"moindre contact et infligera 24 points",\
+"tr_archer_explosive_arrow_2_lore_4":"de dégats dans un rayon de 4 blocs.",\
 "tr_archer_explosive_arrow_2_lore_5":"L'effet de ce sort peut être cumulé avec",\
 "tr_archer_explosive_arrow_2_lore_6":"celui de la flèche de glace.",\
 "tr_archer_explosive_arrow_2_lore_7":"Temps de recharge: 25s.",\
@@ -242,14 +248,12 @@ data modify storage strings fr_fr set value {\
 "tr_archer_explosive_arrow_3_name":"Flèche explosive III",\
 "tr_archer_explosive_arrow_3_lore_1":"-----------------------------------",\
 "tr_archer_explosive_arrow_3_lore_2":"Votre prochaine flèche explosera au",\
-"tr_archer_explosive_arrow_3_lore_3":"moindre contact.",\
-"tr_archer_explosive_arrow_3_lore_4":"Elle infligera 24 points de dégats dans",\
-"tr_archer_explosive_arrow_3_lore_5":"un rayon de 4 blocs et 12 points de",\
-"tr_archer_explosive_arrow_3_lore_6":"dégats dans un rayon de 6 blocs.",\
-"tr_archer_explosive_arrow_3_lore_7":"L'effet de ce sort peut être cumulé avec",\
-"tr_archer_explosive_arrow_3_lore_8":"celui de la flèche de glace.",\
-"tr_archer_explosive_arrow_3_lore_9":"Temps de recharge: 25s.",\
-"tr_archer_explosive_arrow_3_lore_10":"-----------------------------------",\
+"tr_archer_explosive_arrow_3_lore_3":"moindre contact et infligera 24 points",\
+"tr_archer_explosive_arrow_3_lore_4":"de dégats dans un rayon de 6 blocs.",\
+"tr_archer_explosive_arrow_3_lore_5":"L'effet de ce sort peut être cumulé avec",\
+"tr_archer_explosive_arrow_3_lore_6":"celui de la flèche de glace.",\
+"tr_archer_explosive_arrow_3_lore_7":"Temps de recharge: 25s.",\
+"tr_archer_explosive_arrow_3_lore_8":"-----------------------------------",\
 "tr_archer_ice_arrow_1_name":"Flèche de glace I",\
 "tr_archer_ice_arrow_1_lore_1":"--------------------------------------",\
 "tr_archer_ice_arrow_1_lore_2":"Votre prochaine flèche diminuera la vitesse",\
@@ -277,57 +281,9 @@ data modify storage strings fr_fr set value {\
 "tr_archer_explosive_ice_arrow_1_name":"Flèche de glace explosive",\
 "tr_archer_explosive_ice_arrow_1_lore_1":"------------------------",\
 "tr_archer_explosive_ice_arrow_1_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_1_lore_3":"La flèche explosive I",\
-"tr_archer_explosive_ice_arrow_1_lore_4":"La flèche de glace I",\
+"tr_archer_explosive_ice_arrow_1_lore_3":"La flèche explosive",\
+"tr_archer_explosive_ice_arrow_1_lore_4":"et la flèche de glace",\
 "tr_archer_explosive_ice_arrow_1_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_2_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_2_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_2_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_2_lore_3":"La flèche explosive I",\
-"tr_archer_explosive_ice_arrow_2_lore_4":"La flèche de glace II",\
-"tr_archer_explosive_ice_arrow_2_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_3_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_3_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_3_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_3_lore_3":"La flèche explosive I",\
-"tr_archer_explosive_ice_arrow_3_lore_4":"La flèche de glace III",\
-"tr_archer_explosive_ice_arrow_3_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_4_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_4_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_4_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_4_lore_3":"La flèche explosive II",\
-"tr_archer_explosive_ice_arrow_4_lore_4":"La flèche de glace I",\
-"tr_archer_explosive_ice_arrow_4_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_5_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_5_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_5_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_5_lore_3":"La flèche explosive II",\
-"tr_archer_explosive_ice_arrow_5_lore_4":"La flèche de glace II",\
-"tr_archer_explosive_ice_arrow_5_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_6_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_6_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_6_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_6_lore_3":"La flèche explosive II",\
-"tr_archer_explosive_ice_arrow_6_lore_4":"La flèche de glace III",\
-"tr_archer_explosive_ice_arrow_6_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_7_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_7_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_7_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_7_lore_3":"La flèche explosive III",\
-"tr_archer_explosive_ice_arrow_7_lore_4":"La flèche de glace I",\
-"tr_archer_explosive_ice_arrow_7_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_8_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_8_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_8_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_8_lore_3":"La flèche explosive III",\
-"tr_archer_explosive_ice_arrow_8_lore_4":"La flèche de glace II",\
-"tr_archer_explosive_ice_arrow_8_lore_5":"------------------------",\
-"tr_archer_explosive_ice_arrow_9_name":"Flèche de glace explosive",\
-"tr_archer_explosive_ice_arrow_9_lore_1":"------------------------",\
-"tr_archer_explosive_ice_arrow_9_lore_2":"Combine les effets de:",\
-"tr_archer_explosive_ice_arrow_9_lore_3":"La flèche explosive III",\
-"tr_archer_explosive_ice_arrow_9_lore_4":"La flèche de glace III",\
-"tr_archer_explosive_ice_arrow_9_lore_5":"------------------------",\
 "tr_archer_weapon1_0_name":"Arc de débutant",\
 "tr_archer_weapon1_0_lore_1":"Puissance 0 : 5 à 11 points",\
 "tr_archer_weapon1_0_lore_2":"de dégats (selon la charge)",\
