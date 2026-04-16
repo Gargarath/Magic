@@ -469,7 +469,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell1_3_lore_12":"Cooldown: 15s.",\
 "tr_archer_spell1_3_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_3_name":"Explosive Arrow III",\
-"tr_archer_spell2_place_1_name":"Bear Trap I - Place",\
+"tr_archer_spell2_1_name":"Bear Trap I - Place",\
 "tr_archer_spell2_1_lore_1":"--------------------------------------",\
 "tr_archer_spell2_1_lore_2":"Throws a bear trap onto the ground that immobilizes",\
 "tr_archer_spell2_1_lore_3":"any enemy player within a radius of 1 block",\
@@ -480,7 +480,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell2_1_lore_8":"The trap can be destroyed by all players.",\
 "tr_archer_spell2_1_lore_9":"Cooldown: 10s.",\
 "tr_archer_spell2_1_lore_10":"--------------------------------------",\
-"tr_archer_spell2_place_2_name":"Bear Trap II - Place",\
+"tr_archer_spell2_2_name":"Bear Trap II - Place",\
 "tr_archer_spell2_2_lore_1":"--------------------------------------",\
 "tr_archer_spell2_2_lore_2":"Throws a bear trap onto the ground that immobilizes",\
 "tr_archer_spell2_2_lore_3":"any enemy player within a radius of 1 block",\
@@ -491,7 +491,7 @@ data modify storage strings en_en set value {\
 "tr_archer_spell2_2_lore_8":"The trap can be destroyed by all players.",\
 "tr_archer_spell2_2_lore_9":"Cooldown: 8s.",\
 "tr_archer_spell2_2_lore_10":"--------------------------------------",\
-"tr_archer_spell2_place_3_name":"Bear Trap III - Place",\
+"tr_archer_spell2_3_name":"Bear Trap III - Place",\
 "tr_archer_spell2_3_lore_1":"--------------------------------------",\
 "tr_archer_spell2_3_lore_2":"Throws a bear trap onto the ground that immobilizes",\
 "tr_archer_spell2_3_lore_3":"any enemy player within a radius of 1 block",\

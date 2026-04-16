@@ -624,7 +624,7 @@ scoreboard objectives add ready_sign trigger
 scoreboard objectives add is_ready dummy
 scoreboard objectives add InShop dummy
 scoreboard objectives add shop_lore_line dummy
-scoreboard objectives add temp_PH dummy
+scoreboard objectives add temp_shop dummy
 
 # reset achats
 scoreboard objectives add reset_frameroom trigger

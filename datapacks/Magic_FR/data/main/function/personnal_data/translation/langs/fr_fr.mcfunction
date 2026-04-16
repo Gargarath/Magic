@@ -469,7 +469,7 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell1_3_lore_12":"Temps de recharge: 15s.",\
 "tr_archer_spell1_3_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_3_name":"Flèche explosive III",\
-"tr_archer_spell2_place_1_name":"Piège à ours I - Poser",\
+"tr_archer_spell2_1_name":"Piège à ours I - Poser",\
 "tr_archer_spell2_1_lore_1":"--------------------------------------",\
 "tr_archer_spell2_1_lore_2":"Lance un piège à ours au sol qui immobilisera",\
 "tr_archer_spell2_1_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
@@ -480,7 +480,7 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell2_1_lore_8":"Le piège est destructible par tous les joueurs.",\
 "tr_archer_spell2_1_lore_9":"Temps de recharge: 10s.",\
 "tr_archer_spell2_1_lore_10":"--------------------------------------",\
-"tr_archer_spell2_place_2_name":"Piège à ours II - Poser",\
+"tr_archer_spell2_2_name":"Piège à ours II - Poser",\
 "tr_archer_spell2_2_lore_1":"--------------------------------------",\
 "tr_archer_spell2_2_lore_2":"Lance un piège à ours au sol qui immobilisera",\
 "tr_archer_spell2_2_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
@@ -491,7 +491,7 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell2_2_lore_8":"Le piège est destructible par tous les joueurs.",\
 "tr_archer_spell2_2_lore_9":"Temps de recharge: 8s.",\
 "tr_archer_spell2_2_lore_10":"--------------------------------------",\
-"tr_archer_spell2_place_3_name":"Piège à ours III - Poser",\
+"tr_archer_spell2_3_name":"Piège à ours III - Poser",\
 "tr_archer_spell2_3_lore_1":"--------------------------------------",\
 "tr_archer_spell2_3_lore_2":"Lance un piège à ours au sol qui immobilisera",\
 "tr_archer_spell2_3_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
