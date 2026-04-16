@@ -6,16 +6,10 @@ scoreboard players operation @s trap_number_a = @s Player
 tag @s add have_trap
 # indique que @s possède le trap X
 
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=0}] run function stuff:stuff_archer/spell2/slot0
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=1}] run function stuff:stuff_archer/spell2/slot1
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=2}] run function stuff:stuff_archer/spell2/slot2
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=3}] run function stuff:stuff_archer/spell2/slot3
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=4}] run function stuff:stuff_archer/spell2/slot4
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=5}] run function stuff:stuff_archer/spell2/slot5
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=6}] run function stuff:stuff_archer/spell2/slot6
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=7}] run function stuff:stuff_archer/spell2/slot7
-execute as @s[scores={cooldownspell2=-1,spell2_slot_a=8}] run function stuff:stuff_archer/spell2/slot8
-# on utilise le slot du spell3 car pour l'archer les sort 2 et 3 sont inversés
+execute if score @s spell2 matches 1 run function stuff:stuff_archer/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s spell2 matches 2 run function stuff:stuff_archer/spell2/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s spell2 matches 3 run function stuff:stuff_archer/spell2/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+# donne l'item de spell2 "détruire" selon son niveau de sort
 
 scoreboard players add @s stat_usespell 1
 # ajoute un à la stat de stat_usespell de @s (stat du nombre de sorts lancés)

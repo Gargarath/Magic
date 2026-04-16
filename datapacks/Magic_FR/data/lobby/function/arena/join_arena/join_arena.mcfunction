@@ -70,8 +70,9 @@ execute if score @s Player matches 12 run data modify storage gui player.12.acti
 scoreboard players set @s gui_actionbar_alert -1
 # clear l'action bar de @s
 
-# save l'emplacement de l'item pour quitter l'arène de @s (change selon la classe)
+# save le numéro de joueur et l'emplacement de l'item pour quitter l'arène de @s (change selon la classe)
 data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
+execute store result storage personnal_storage.temp storage.player int 1 run scoreboard players get @s Player
 execute if entity @s[tag=warrior] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_w
 execute if entity @s[tag=archer] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_a
 execute if entity @s[tag=mage] store result storage personnal_storage.temp storage.slot_quit int 1 run scoreboard players get @s quit_slot_m

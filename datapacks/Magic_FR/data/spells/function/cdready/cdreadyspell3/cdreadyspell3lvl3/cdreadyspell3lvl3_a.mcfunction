@@ -21,14 +21,5 @@ scoreboard players set @s cooldownspell3 -1
 clear @s #minecraft:stained_glass_pane[minecraft:custom_data={spell3_slot:1b,cooldownspell3:1b}]
 #clear tous les glass_pane (au cas où)
 
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=0}] run function stuff:stuff_archer/spell3/slot0
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=1}] run function stuff:stuff_archer/spell3/slot1
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=2}] run function stuff:stuff_archer/spell3/slot2
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=3}] run function stuff:stuff_archer/spell3/slot3
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=4}] run function stuff:stuff_archer/spell3/slot4
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=5}] run function stuff:stuff_archer/spell3/slot5
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=6}] run function stuff:stuff_archer/spell3/slot6
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=7}] run function stuff:stuff_archer/spell3/slot7
-execute as @s[scores={cooldownspell3=-1,spell3_slot_a=8}] run function stuff:stuff_archer/spell3/slot8
-# on utilise le slot du spell2 car pour l'archer les sort 2 et 3 sont inversés
+function stuff:stuff_archer/spell3/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 

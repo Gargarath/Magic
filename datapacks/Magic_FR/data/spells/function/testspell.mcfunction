@@ -52,49 +52,49 @@ execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=warrio
 			# Spell 1
 			
 	# Niveau 1
-execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche explosive I"}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_a
+execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_a:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_a
 # Si un archer utilise la flèche explosive I (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet flèche explosive I en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_a
 
 	# Niveau 2
-execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche explosive II"}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_a
+execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_a:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_a
 # Si un archer utilise la flèche explosive II (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet flèche explosive II en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl2_a
 
 	# Niveau 3
-execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche explosive III"}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_a
+execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_a:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_a
 # Si un archer utilise la flèche explosive III (a un score de usespell=1.. (stat utiliser une map vierge) et tient l'objet flèche explosive III en main) et à le droit -> lance la fonction spells:usespell/usespell1/usespell1lvl1/usespell1lvl3_a
 
 			# Spell 2
 
 	# Niveau 1 - Poser
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours I - Poser"}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
 # Si un archer utilise le piège I poser en main -> lance la fonction spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
 
 	# Niveau 1 - Détruire
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours I - Détruire"}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 # Si un archer utilise le piège I détruire en main -> lance la fonction spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 	# Niveau 2 - Poser
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours II - Poser"}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_a
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_a
 
 	# Niveau 2 - Détruire
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours II - Détruire"}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 	# Niveau 3 - Poser
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours III - Poser"}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_a
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_a
 
 	# Niveau 3 - Détruire
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Piège à ours III - Détruire"}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 			# Spell 3
 			
 	# Niveau 1
-execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche de glace I"}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_a
+execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_a:1b,spell3_slot:1b}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_a
 
 	# Niveau 2
-execute if entity @s[scores={spell3=2,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche de glace II"}}} run function spells:usespell/usespell3/usespell3lvl2/usespell3lvl2_a
+execute if entity @s[scores={spell3=2,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_a:1b,spell3_slot:1b}}} run function spells:usespell/usespell3/usespell3lvl2/usespell3lvl2_a
 
 	# Niveau 3
-execute if entity @s[scores={spell3=3,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Flèche de glace III"}}} run function spells:usespell/usespell3/usespell3lvl3/usespell3lvl3_a
+execute if entity @s[scores={spell3=3,usespell=1..,cooldownspell3=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_a:1b,spell3_slot:1b}}} run function spells:usespell/usespell3/usespell3lvl3/usespell3lvl3_a
 
 
 								###   MAGE  	###

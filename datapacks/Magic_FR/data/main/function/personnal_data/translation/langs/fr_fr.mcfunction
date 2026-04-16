@@ -8,6 +8,7 @@ data modify storage strings fr_fr set value {\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
+"tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
 \
 \
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
@@ -139,7 +140,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell1_1_lore_10":"Temps de recharge: 20s.",\
 "tr_warrior_spell1_1_lore_11":"-----------------------------------",\
 "tr_warrior_cooldownspell1_1_name":"Berzerk I",\
-"tr_warrior_cooldownspell1_1_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell1_2_name":"Berzerk II",\
 "tr_warrior_spell1_2_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_2_lore_2":"Augmente les dégats infligés de 9 points",\
@@ -153,7 +153,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell1_2_lore_10":"Temps de recharge: 20s.",\
 "tr_warrior_spell1_2_lore_11":"-----------------------------------",\
 "tr_warrior_cooldownspell1_2_name":"Berzerk II",\
-"tr_warrior_cooldownspell1_2_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell1_3_name":"Berzerk III",\
 "tr_warrior_spell1_3_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_3_lore_2":"Augmente les dégats infligés de 9 points",\
@@ -168,7 +167,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell1_3_lore_11":"-----------------------------------",\
 "tr_warrior_spell1_max_name":"Berzerk III",\
 "tr_warrior_cooldownspell1_3_name":"Berzerk III",\
-"tr_warrior_cooldownspell1_3_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell2_1_name":"Drapeau de ralliement I",\
 "tr_warrior_spell2_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_1_lore_2":"Vous posez un drapeau de ralliement à",\
@@ -180,7 +178,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell2_1_lore_8":"Temps de recharge: 15s.",\
 "tr_warrior_spell2_1_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_1_name":"Drapeau de ralliement I",\
-"tr_warrior_cooldownspell2_1_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell2_2_name":"Drapeau de ralliement II",\
 "tr_warrior_spell2_2_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_2_lore_2":"Vous posez un drapeau de ralliement à",\
@@ -192,7 +189,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell2_2_lore_8":"Temps de recharge: 15s.",\
 "tr_warrior_spell2_2_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_2_name":"Drapeau de ralliement II",\
-"tr_warrior_cooldownspell2_2_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell2_3_name":"Drapeau de ralliement III",\
 "tr_warrior_spell2_3_lore_1":"-----------------------------------",\
 "tr_warrior_spell2_3_lore_2":"Vous posez un drapeau de ralliement à",\
@@ -204,7 +200,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell2_3_lore_8":"Temps de recharge: 10s.",\
 "tr_warrior_spell2_3_lore_9":"-----------------------------------",\
 "tr_warrior_cooldownspell2_3_name":"Drapeau de ralliement III",\
-"tr_warrior_cooldownspell2_3_lore_1":"Votre sort doit se recharger !",\
 "tr_warrior_spell2_max_name":"Drapeau de ralliement III",\
 "tr_warrior_spell3_1_name":"Grappin",\
 "tr_warrior_spell3_1_lore_1":"-----------------------------------------",\
@@ -221,7 +216,6 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_spell3_1_lore_12":"-----------------------------------------",\
 "tr_warrior_spell3_max_name":"Grappin",\
 "tr_warrior_cooldownspell3_1_name":"Grappin",\
-"tr_warrior_cooldownspell3_1_lore_1":"Votre sort doit se recharger !",\
 \
 \
 \
@@ -445,7 +439,6 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell1_1_lore_12":"Temps de recharge: 15s.",\
 "tr_archer_spell1_1_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_1_name":"Flèche explosive I",\
-"tr_archer_cooldownspell1_1_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell1_2_name":"Flèche explosive II",\
 "tr_archer_spell1_2_lore_1":"----------------------------------------",\
 "tr_archer_spell1_2_lore_2":"Votre prochaine flèche explosera 1s après",\
@@ -461,7 +454,6 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell1_2_lore_12":"Temps de recharge: 15s.",\
 "tr_archer_spell1_2_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_2_name":"Flèche explosive II",\
-"tr_archer_cooldownspell1_2_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell1_3_name":"Flèche explosive III",\
 "tr_archer_spell1_3_lore_1":"----------------------------------------",\
 "tr_archer_spell1_3_lore_2":"Votre prochaine flèche explosera 1s après",\
@@ -477,79 +469,45 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell1_3_lore_12":"Temps de recharge: 15s.",\
 "tr_archer_spell1_3_lore_13":"----------------------------------------",\
 "tr_archer_cooldownspell1_3_name":"Flèche explosive III",\
-"tr_archer_cooldownspell1_3_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell2_place_1_name":"Piège à ours I - Poser",\
-"tr_archer_spell2_place_1_lore_1":"--------------------------------------",\
-"tr_archer_spell2_place_1_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_place_1_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_place_1_lore_4":"pendant 2 secondes et lui infligera 6 points",\
-"tr_archer_spell2_place_1_lore_5":"de dégâts.",\
-"tr_archer_spell2_place_1_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_place_1_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_place_1_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_place_1_lore_9":"Temps de recharge: 10s.",\
-"tr_archer_spell2_place_1_lore_10":"--------------------------------------",\
+"tr_archer_spell2_1_lore_1":"--------------------------------------",\
+"tr_archer_spell2_1_lore_2":"Lance un piège à ours au sol qui immobilisera",\
+"tr_archer_spell2_1_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
+"tr_archer_spell2_1_lore_4":"pendant 2 secondes et lui infligera 6 points",\
+"tr_archer_spell2_1_lore_5":"de dégâts.",\
+"tr_archer_spell2_1_lore_6":"Les joueurs immobilisés ne peuvent pas",\
+"tr_archer_spell2_1_lore_7":"utiliser de sorts.",\
+"tr_archer_spell2_1_lore_8":"Le piège est destructible par tous les joueurs.",\
+"tr_archer_spell2_1_lore_9":"Temps de recharge: 10s.",\
+"tr_archer_spell2_1_lore_10":"--------------------------------------",\
 "tr_archer_spell2_place_2_name":"Piège à ours II - Poser",\
-"tr_archer_spell2_place_2_lore_1":"--------------------------------------",\
-"tr_archer_spell2_place_2_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_place_2_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_place_2_lore_4":"pendant 3 secondes et lui infligera 6 points",\
-"tr_archer_spell2_place_2_lore_5":"de dégâts.",\
-"tr_archer_spell2_place_2_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_place_2_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_place_2_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_place_2_lore_9":"Temps de recharge: 8s.",\
-"tr_archer_spell2_place_2_lore_10":"--------------------------------------",\
+"tr_archer_spell2_2_lore_1":"--------------------------------------",\
+"tr_archer_spell2_2_lore_2":"Lance un piège à ours au sol qui immobilisera",\
+"tr_archer_spell2_2_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
+"tr_archer_spell2_2_lore_4":"pendant 3 secondes et lui infligera 6 points",\
+"tr_archer_spell2_2_lore_5":"de dégâts.",\
+"tr_archer_spell2_2_lore_6":"Les joueurs immobilisés ne peuvent pas",\
+"tr_archer_spell2_2_lore_7":"utiliser de sorts.",\
+"tr_archer_spell2_2_lore_8":"Le piège est destructible par tous les joueurs.",\
+"tr_archer_spell2_2_lore_9":"Temps de recharge: 8s.",\
+"tr_archer_spell2_2_lore_10":"--------------------------------------",\
 "tr_archer_spell2_place_3_name":"Piège à ours III - Poser",\
-"tr_archer_spell2_place_3_lore_1":"--------------------------------------",\
-"tr_archer_spell2_place_3_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_place_3_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_place_3_lore_4":"pendant 4 secondes et lui infligera 6 points",\
-"tr_archer_spell2_place_3_lore_5":"de dégâts.",\
-"tr_archer_spell2_place_3_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_place_3_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_place_3_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_place_3_lore_9":"Temps de recharge: 5s.",\
-"tr_archer_spell2_place_3_lore_10":"--------------------------------------",\
+"tr_archer_spell2_3_lore_1":"--------------------------------------",\
+"tr_archer_spell2_3_lore_2":"Lance un piège à ours au sol qui immobilisera",\
+"tr_archer_spell2_3_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
+"tr_archer_spell2_3_lore_4":"pendant 4 secondes et lui infligera 6 points",\
+"tr_archer_spell2_3_lore_5":"de dégâts.",\
+"tr_archer_spell2_3_lore_6":"Les joueurs immobilisés ne peuvent pas",\
+"tr_archer_spell2_3_lore_7":"utiliser de sorts.",\
+"tr_archer_spell2_3_lore_8":"Le piège est destructible par tous les joueurs.",\
+"tr_archer_spell2_3_lore_9":"Temps de recharge: 5s.",\
+"tr_archer_spell2_3_lore_10":"--------------------------------------",\
 "tr_archer_spell2_destroy_1_name":"Piège à ours I - Détruire",\
-"tr_archer_spell2_destroy_1_lore_1":"--------------------------------------",\
-"tr_archer_spell2_destroy_1_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_destroy_1_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_destroy_1_lore_4":"pendant 2 secondes et lui infligera 6 points",\
-"tr_archer_spell2_destroy_1_lore_5":"de dégâts.",\
-"tr_archer_spell2_destroy_1_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_destroy_1_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_destroy_1_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_destroy_1_lore_9":"Temps de recharge: 10s.",\
-"tr_archer_spell2_destroy_1_lore_10":"--------------------------------------",\
 "tr_archer_spell2_destroy_2_name":"Piège à ours II - Détruire",\
-"tr_archer_spell2_destroy_2_lore_1":"--------------------------------------",\
-"tr_archer_spell2_destroy_2_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_destroy_2_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_destroy_2_lore_4":"pendant 3 secondes et lui infligera 6 points",\
-"tr_archer_spell2_destroy_2_lore_5":"de dégâts.",\
-"tr_archer_spell2_destroy_2_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_destroy_2_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_destroy_2_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_destroy_2_lore_9":"Temps de recharge: 8s.",\
-"tr_archer_spell2_destroy_2_lore_10":"--------------------------------------",\
 "tr_archer_spell2_destroy_3_name":"Piège à ours III - Détruire",\
-"tr_archer_spell2_destroy_3_lore_1":"--------------------------------------",\
-"tr_archer_spell2_destroy_3_lore_2":"Lance un piège à ours au sol qui immobilisera",\
-"tr_archer_spell2_destroy_3_lore_3":"tout joueur adverse dans un rayon de 1 bloc",\
-"tr_archer_spell2_destroy_3_lore_4":"pendant 4 secondes et lui infligera 6 points",\
-"tr_archer_spell2_destroy_3_lore_5":"de dégâts.",\
-"tr_archer_spell2_destroy_3_lore_6":"Les joueurs immobilisés ne peuvent pas",\
-"tr_archer_spell2_destroy_3_lore_7":"utiliser de sorts.",\
-"tr_archer_spell2_destroy_3_lore_8":"Le piège est destructible par tous les joueurs.",\
-"tr_archer_spell2_destroy_3_lore_9":"Temps de recharge: 5s.",\
-"tr_archer_spell2_destroy_3_lore_10":"--------------------------------------",\
 "tr_archer_cooldownspell2_1_name":"Piège à ours I - Poser",\
-"tr_archer_cooldownspell2_1_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_cooldownspell2_2_name":"Piège à ours II - Poser",\
-"tr_archer_cooldownspell2_2_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_cooldownspell2_3_name":"Piège à ours III - Poser",\
-"tr_archer_cooldownspell2_3_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell3_1_name":"Flèche de glace I",\
 "tr_archer_spell3_1_lore_1":"--------------------------------------",\
 "tr_archer_spell3_1_lore_2":"Votre prochaine flèche diminuera la vitesse",\
@@ -563,7 +521,6 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell3_1_lore_10":"Temps de recharge: 20s.",\
 "tr_archer_spell3_1_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_1_name":"Flèche de glace I",\
-"tr_archer_cooldownspell3_1_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell3_2_name":"Flèche de glace II",\
 "tr_archer_spell3_2_lore_1":"--------------------------------------",\
 "tr_archer_spell3_2_lore_2":"Votre prochaine flèche diminuera la vitesse",\
@@ -577,7 +534,6 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell3_2_lore_10":"Temps de recharge: 15s.",\
 "tr_archer_spell3_2_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_2_name":"Flèche de glace II",\
-"tr_archer_cooldownspell3_2_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell3_3_name":"Flèche de glace III",\
 "tr_archer_spell3_3_lore_1":"--------------------------------------",\
 "tr_archer_spell3_3_lore_2":"Votre prochaine flèche diminuera la vitesse",\
@@ -591,7 +547,6 @@ data modify storage strings fr_fr set value {\
 "tr_archer_spell3_3_lore_10":"Temps de recharge: 10s.",\
 "tr_archer_spell3_3_lore_11":"--------------------------------------",\
 "tr_archer_cooldownspell3_3_name":"Flèche de glace III",\
-"tr_archer_cooldownspell3_3_lore_1":"Votre sort doit se recharger !",\
 "tr_archer_spell3_status_0_name":"Gel",\
 "tr_archer_spell3_status_0_lore_1":"----------------",\
 "tr_archer_spell3_status_0_lore_2":"Vous êtes gelé !",\
@@ -807,11 +762,8 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell1_3_lore_11":"Temps de recharge: 8s.",\
 "tr_mage_spell1_3_lore_12":"-----------------------------------",\
 "tr_mage_cooldownspell1_1_name":"Trait de feu I",\
-"tr_mage_cooldownspell1_1_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_cooldownspell1_2_name":"Trait de feu II",\
-"tr_mage_cooldownspell1_2_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_cooldownspell1_3_name":"Trait de feu III",\
-"tr_mage_cooldownspell1_3_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_spell1_status_0_name":"Brulure",\
 "tr_mage_spell1_status_0_lore_1":"----------------",\
 "tr_mage_spell1_status_0_lore_2":"Vous êtes en feu !",\
@@ -846,11 +798,8 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell2_3_lore_9":"Temps de recharge: 19s.",\
 "tr_mage_spell2_3_lore_10":"-----------------------------------",\
 "tr_mage_cooldownspell2_1_name":"Tempête de foudre I",\
-"tr_mage_cooldownspell2_1_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_cooldownspell2_2_name":"Tempête de foudre II",\
-"tr_mage_cooldownspell2_2_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_cooldownspell2_3_name":"Tempête de foudre III",\
-"tr_mage_cooldownspell2_3_lore_1":"Votre sort doit se recharger !",\
 "tr_mage_spell3_1_name":"Téléportation",\
 "tr_mage_spell3_1_lore_1":"--------------------------",\
 "tr_mage_spell3_1_lore_2":"Téléporte instantanément vers",\
@@ -859,7 +808,6 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell3_1_lore_5":"Temps de recharge: 20s.",\
 "tr_mage_spell3_1_lore_6":"--------------------------",\
 "tr_mage_cooldownspell3_1_name":"Téléportation",\
-"tr_mage_cooldownspell3_1_lore_1":"Votre sort doit se recharger !",\
 \
 \
 \
