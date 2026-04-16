@@ -565,73 +565,93 @@ data modify storage strings fr_fr set value {\
 "tr_mage_weapon1_1_name":"Bâton de combat I",\
 "tr_mage_weapon1_1_lore_1":"+0.5 point d'attaque.",\
 "tr_mage_weapon1_1_lore_2":"---------------------------",\
-"tr_mage_weapon1_1_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier joueur adverse rencontré.",\
-"tr_mage_weapon1_1_lore_4":"Portée maximale: 20 blocs.",\
-"tr_mage_weapon1_1_lore_5":"Coût en mana: 90",\
-"tr_mage_weapon1_1_lore_6":"---------------------------",\
+"tr_mage_weapon1_1_lore_3":"Lance un sort dans la direction visée",\
+"tr_mage_weapon1_1_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_1_lore_5":"au premier joueur adverse rencontré.",\
+"tr_mage_weapon1_1_lore_6":"Portée maximale: 20 blocs.",\
+"tr_mage_weapon1_1_lore_7":"Coût en mana: 90",\
+"tr_mage_weapon1_1_lore_8":"---------------------------",\
 "tr_mage_weapon1_2_name":"Bâton de combat II",\
 "tr_mage_weapon1_2_lore_1":"+1 point d'attaque.",\
 "tr_mage_weapon1_2_lore_2":"---------------------------",\
-"tr_mage_weapon1_2_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_2_lore_4":"Portée maximale: 25 blocs.",\
-"tr_mage_weapon1_2_lore_5":"Coût en mana: 90",\
-"tr_mage_weapon1_2_lore_6":"---------------------------",\
+"tr_mage_weapon1_2_lore_3":"Lance un sort dans la direction visée",\
+"tr_mage_weapon1_2_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_2_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_2_lore_6":"Portée maximale: 25 blocs.",\
+"tr_mage_weapon1_2_lore_7":"Coût en mana: 90",\
+"tr_mage_weapon1_2_lore_8":"---------------------------",\
 "tr_mage_weapon1_3_name":"Bâton de combat III",\
 "tr_mage_weapon1_3_lore_1":"+1.5 points d'attaque.",\
 "tr_mage_weapon1_3_lore_2":"---------------------------",\
-"tr_mage_weapon1_3_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_3_lore_4":"Portée maximale: 30 blocs.",\
-"tr_mage_weapon1_3_lore_5":"Coût en mana: 85",\
-"tr_mage_weapon1_3_lore_6":"---------------------------",\
+"tr_mage_weapon1_3_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_3_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_3_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_3_lore_6":"Portée maximale: 30 blocs.",\
+"tr_mage_weapon1_3_lore_7":"Coût en mana: 85",\
+"tr_mage_weapon1_3_lore_8":"---------------------------",\
 "tr_mage_weapon1_4_name":"Bâton de combat IV",\
 "tr_mage_weapon1_4_lore_1":"+2 points d'attaque.",\
 "tr_mage_weapon1_4_lore_2":"---------------------------",\
-"tr_mage_weapon1_4_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_4_lore_4":"Portée maximale: 35 blocs.",\
-"tr_mage_weapon1_4_lore_5":"Coût en mana: 85",\
-"tr_mage_weapon1_4_lore_6":"---------------------------",\
+"tr_mage_weapon1_4_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_4_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_4_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_4_lore_6":"Portée maximale: 35 blocs.",\
+"tr_mage_weapon1_4_lore_7":"Coût en mana: 85",\
+"tr_mage_weapon1_4_lore_8":"---------------------------",\
 "tr_mage_weapon1_5_name":"Bâton de combat V",\
 "tr_mage_weapon1_5_lore_1":"+2.5 points d'attaque.",\
 "tr_mage_weapon1_5_lore_2":"---------------------------",\
-"tr_mage_weapon1_5_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_5_lore_4":"Portée maximale: 35 blocs.",\
-"tr_mage_weapon1_5_lore_5":"Coût en mana: 80",\
-"tr_mage_weapon1_5_lore_6":"---------------------------",\
+"tr_mage_weapon1_5_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_5_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_5_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_5_lore_6":"Portée maximale: 35 blocs.",\
+"tr_mage_weapon1_5_lore_7":"Coût en mana: 80",\
+"tr_mage_weapon1_5_lore_8":"---------------------------",\
 "tr_mage_weapon1_6_name":"Bâton de combat VI",\
 "tr_mage_weapon1_6_lore_1":"+3 points d'attaque.",\
 "tr_mage_weapon1_6_lore_2":"---------------------------",\
-"tr_mage_weapon1_6_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_6_lore_4":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon1_6_lore_5":"Coût en mana: 75",\
-"tr_mage_weapon1_6_lore_6":"---------------------------",\
+"tr_mage_weapon1_6_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_6_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_6_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_6_lore_6":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_6_lore_7":"Coût en mana: 75",\
+"tr_mage_weapon1_6_lore_8":"---------------------------",\
 "tr_mage_weapon1_7_name":"Bâton de combat VII",\
 "tr_mage_weapon1_7_lore_1":"+3.5 points d'attaque.",\
 "tr_mage_weapon1_7_lore_2":"---------------------------",\
-"tr_mage_weapon1_7_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_7_lore_4":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon1_7_lore_5":"Coût en mana: 70",\
-"tr_mage_weapon1_7_lore_6":"---------------------------",\
+"tr_mage_weapon1_7_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_7_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_7_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_7_lore_6":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_7_lore_7":"Coût en mana: 70",\
+"tr_mage_weapon1_7_lore_8":"---------------------------",\
 "tr_mage_weapon1_8_name":"Bâton de combat VIII",\
 "tr_mage_weapon1_8_lore_1":"+4 points d'attaque.",\
 "tr_mage_weapon1_8_lore_2":"---------------------------",\
-"tr_mage_weapon1_8_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_8_lore_4":"Portée maximale: 40 blocs.",\
-"tr_mage_weapon1_8_lore_5":"Coût en mana: 65",\
-"tr_mage_weapon1_8_lore_6":"---------------------------",\
+"tr_mage_weapon1_8_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_8_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_8_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_8_lore_6":"Portée maximale: 40 blocs.",\
+"tr_mage_weapon1_8_lore_7":"Coût en mana: 65",\
+"tr_mage_weapon1_8_lore_8":"---------------------------",\
 "tr_mage_weapon1_9_name":"Bâton de combat IX",\
 "tr_mage_weapon1_9_lore_1":"+4.5 points d'attaque.",\
 "tr_mage_weapon1_9_lore_2":"---------------------------",\
-"tr_mage_weapon1_9_lore_3":"Lance un sort dans la direction visée, il infligera 6 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_9_lore_4":"Portée maximale: 45 blocs.",\
-"tr_mage_weapon1_9_lore_5":"Coût en mana: 65",\
-"tr_mage_weapon1_9_lore_6":"---------------------------",\
+"tr_mage_weapon1_9_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_9_lore_4":"il infligera 6 points de dégats",\
+"tr_mage_weapon1_9_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_9_lore_6":"Portée maximale: 45 blocs.",\
+"tr_mage_weapon1_9_lore_7":"Coût en mana: 65",\
+"tr_mage_weapon1_9_lore_8":"---------------------------",\
 "tr_mage_weapon1_10_name":"Bâton de combat X",\
 "tr_mage_weapon1_10_lore_1":"+5 points d'attaque.",\
 "tr_mage_weapon1_10_lore_2":"----------------------------",\
-"tr_mage_weapon1_10_lore_3":"Lance un sort dans la direction visée, il infligera 12 points de dégats au premier adversaire rencontré.",\
-"tr_mage_weapon1_10_lore_4":"Portée maximale: 45 blocs.",\
-"tr_mage_weapon1_10_lore_5":"Coût en mana: 55",\
-"tr_mage_weapon1_10_lore_6":"----------------------------",\
+"tr_mage_weapon1_10_lore_3":"Lance un sort dans la direction visée,",\
+"tr_mage_weapon1_10_lore_4":"il infligera 12 points de dégats",\
+"tr_mage_weapon1_10_lore_5":"au premier adversaire rencontré.",\
+"tr_mage_weapon1_10_lore_6":"Portée maximale: 45 blocs.",\
+"tr_mage_weapon1_10_lore_7":"Coût en mana: 55",\
+"tr_mage_weapon1_10_lore_8":"----------------------------",\
 "tr_mage_chest_1_name":"Plastron de santé I",\
 "tr_mage_chest_1_lore_1":"+0,5 point d'armure.",\
 "tr_mage_chest_1_lore_2":"+10% points de vie.",\

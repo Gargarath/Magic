@@ -1,0 +1,3 @@
+## appele par stuff_mage si @s a son arme au niveau 6
+
+$item replace entity @s hotbar.$(slot_weapon1_m) with carrot_on_a_stick[custom_name="$(tr_mage_weapon1_6_name)",lore=["$(tr_mage_weapon1_6_lore_1)","$(tr_mage_weapon1_6_lore_2)","$(tr_mage_weapon1_6_lore_3)","$(tr_mage_weapon1_6_lore_4)","$(tr_mage_weapon1_6_lore_5)","$(tr_mage_weapon1_6_lore_6)","$(tr_mage_weapon1_6_lore_7)","$(tr_mage_weapon1_6_lore_8)"],unbreakable={},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:3,operation:"add_value"}],tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon_1_m:1b,weapon1_slot:1b},custom_model_data={strings:["weapon1_m_6_10"]}] 1

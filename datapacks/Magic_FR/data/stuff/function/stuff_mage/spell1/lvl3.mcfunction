@@ -1,0 +1,3 @@
+## appele par stuff_mage si @s a son sort 1 au niveau 3
+
+$item replace entity @s hotbar.$(slot_spell1_m) with carrot_on_a_stick[custom_name={"text":"$(tr_mage_spell1_3_name)","color":"dark_red","bold":true},lore=["$(tr_mage_spell1_3_lore_1)","$(tr_mage_spell1_3_lore_2)","$(tr_mage_spell1_3_lore_3)","$(tr_mage_spell1_3_lore_4)","$(tr_mage_spell1_3_lore_5)","$(tr_mage_spell1_3_lore_6)","$(tr_mage_spell1_3_lore_7)","$(tr_mage_spell1_3_lore_8)","$(tr_mage_spell1_3_lore_9)","$(tr_mage_spell1_3_lore_10)","$(tr_mage_spell1_3_lore_11)","$(tr_mage_spell1_3_lore_12)"],enchantment_glint_override=true,custom_data={spell1_m:1b,spell1_slot:1b},custom_model_data={strings:["spell1_m"]}] 1

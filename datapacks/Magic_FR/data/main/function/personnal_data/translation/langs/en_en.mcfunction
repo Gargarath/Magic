@@ -565,73 +565,93 @@ data modify storage strings en_en set value {\
 "tr_mage_weapon1_1_name":"Battle Staff I",\
 "tr_mage_weapon1_1_lore_1":"+0.5 attack damage.",\
 "tr_mage_weapon1_1_lore_2":"---------------------------",\
-"tr_mage_weapon1_1_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_1_lore_4":"Maximum range: 20 blocks.",\
-"tr_mage_weapon1_1_lore_5":"Mana cost: 90",\
-"tr_mage_weapon1_1_lore_6":"---------------------------",\
+"tr_mage_weapon1_1_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_1_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_1_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_1_lore_6":"Maximum range: 20 blocks.",\
+"tr_mage_weapon1_1_lore_7":"Mana cost: 90",\
+"tr_mage_weapon1_1_lore_8":"---------------------------",\
 "tr_mage_weapon1_2_name":"Battle Staff II",\
 "tr_mage_weapon1_2_lore_1":"+1 attack damage.",\
 "tr_mage_weapon1_2_lore_2":"---------------------------",\
-"tr_mage_weapon1_2_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_2_lore_4":"Maximum range: 25 blocks.",\
-"tr_mage_weapon1_2_lore_5":"Mana cost: 90",\
-"tr_mage_weapon1_2_lore_6":"---------------------------",\
+"tr_mage_weapon1_2_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_2_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_2_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_2_lore_6":"Maximum range: 25 blocks.",\
+"tr_mage_weapon1_2_lore_7":"Mana cost: 90",\
+"tr_mage_weapon1_2_lore_8":"---------------------------",\
 "tr_mage_weapon1_3_name":"Battle Staff III",\
 "tr_mage_weapon1_3_lore_1":"+1.5 attack damage.",\
 "tr_mage_weapon1_3_lore_2":"---------------------------",\
-"tr_mage_weapon1_3_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_3_lore_4":"Maximum range: 30 blocks.",\
-"tr_mage_weapon1_3_lore_5":"Mana cost: 85",\
-"tr_mage_weapon1_3_lore_6":"---------------------------",\
+"tr_mage_weapon1_3_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_3_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_3_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_3_lore_6":"Maximum range: 30 blocks.",\
+"tr_mage_weapon1_3_lore_7":"Mana cost: 85",\
+"tr_mage_weapon1_3_lore_8":"---------------------------",\
 "tr_mage_weapon1_4_name":"Battle Staff IV",\
 "tr_mage_weapon1_4_lore_1":"+2 attack damage.",\
 "tr_mage_weapon1_4_lore_2":"---------------------------",\
-"tr_mage_weapon1_4_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_4_lore_4":"Maximum range: 35 blocks.",\
-"tr_mage_weapon1_4_lore_5":"Mana cost: 85",\
-"tr_mage_weapon1_4_lore_6":"---------------------------",\
+"tr_mage_weapon1_4_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_4_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_4_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_4_lore_6":"Maximum range: 35 blocks.",\
+"tr_mage_weapon1_4_lore_7":"Mana cost: 85",\
+"tr_mage_weapon1_4_lore_8":"---------------------------",\
 "tr_mage_weapon1_5_name":"Battle Staff V",\
 "tr_mage_weapon1_5_lore_1":"+2.5 attack damage.",\
 "tr_mage_weapon1_5_lore_2":"---------------------------",\
-"tr_mage_weapon1_5_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_5_lore_4":"Maximum range: 35 blocks.",\
-"tr_mage_weapon1_5_lore_5":"Mana cost: 80",\
-"tr_mage_weapon1_5_lore_6":"---------------------------",\
+"tr_mage_weapon1_5_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_5_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_5_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_5_lore_6":"Maximum range: 35 blocks.",\
+"tr_mage_weapon1_5_lore_7":"Mana cost: 80",\
+"tr_mage_weapon1_5_lore_8":"---------------------------",\
 "tr_mage_weapon1_6_name":"Battle Staff VI",\
 "tr_mage_weapon1_6_lore_1":"+3 attack damage.",\
 "tr_mage_weapon1_6_lore_2":"---------------------------",\
-"tr_mage_weapon1_6_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_6_lore_4":"Maximum range: 40 blocks.",\
-"tr_mage_weapon1_6_lore_5":"Mana cost: 75",\
-"tr_mage_weapon1_6_lore_6":"---------------------------",\
+"tr_mage_weapon1_6_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_6_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_6_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_6_lore_6":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_6_lore_7":"Mana cost: 75",\
+"tr_mage_weapon1_6_lore_8":"---------------------------",\
 "tr_mage_weapon1_7_name":"Battle Staff VII",\
 "tr_mage_weapon1_7_lore_1":"+3.5 attack damage.",\
 "tr_mage_weapon1_7_lore_2":"---------------------------",\
-"tr_mage_weapon1_7_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_7_lore_4":"Maximum range: 40 blocks.",\
-"tr_mage_weapon1_7_lore_5":"Mana cost: 70",\
-"tr_mage_weapon1_7_lore_6":"---------------------------",\
+"tr_mage_weapon1_7_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_7_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_7_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_7_lore_6":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_7_lore_7":"Mana cost: 70",\
+"tr_mage_weapon1_7_lore_8":"---------------------------",\
 "tr_mage_weapon1_8_name":"Battle Staff VIII",\
 "tr_mage_weapon1_8_lore_1":"+4 attack damage.",\
 "tr_mage_weapon1_8_lore_2":"---------------------------",\
-"tr_mage_weapon1_8_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_8_lore_4":"Maximum range: 40 blocks.",\
-"tr_mage_weapon1_8_lore_5":"Mana cost: 65",\
-"tr_mage_weapon1_8_lore_6":"---------------------------",\
+"tr_mage_weapon1_8_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_8_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_8_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_8_lore_6":"Maximum range: 40 blocks.",\
+"tr_mage_weapon1_8_lore_7":"Mana cost: 65",\
+"tr_mage_weapon1_8_lore_8":"---------------------------",\
 "tr_mage_weapon1_9_name":"Battle Staff IX",\
 "tr_mage_weapon1_9_lore_1":"+4.5 attack damage.",\
 "tr_mage_weapon1_9_lore_2":"---------------------------",\
-"tr_mage_weapon1_9_lore_3":"Casts a spell in the aimed direction, dealing 6 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_9_lore_4":"Maximum range: 45 blocks.",\
-"tr_mage_weapon1_9_lore_5":"Mana cost: 65",\
-"tr_mage_weapon1_9_lore_6":"---------------------------",\
+"tr_mage_weapon1_9_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_9_lore_4":"dealing 6 points of damage",\
+"tr_mage_weapon1_9_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_9_lore_6":"Maximum range: 45 blocks.",\
+"tr_mage_weapon1_9_lore_7":"Mana cost: 65",\
+"tr_mage_weapon1_9_lore_8":"---------------------------",\
 "tr_mage_weapon1_10_name":"Battle Staff X",\
 "tr_mage_weapon1_10_lore_1":"+5 attack damage.",\
 "tr_mage_weapon1_10_lore_2":"----------------------------",\
-"tr_mage_weapon1_10_lore_3":"Casts a spell in the aimed direction, dealing 12 points of damage to the first enemy player hit.",\
-"tr_mage_weapon1_10_lore_4":"Maximum range: 45 blocks.",\
-"tr_mage_weapon1_10_lore_5":"Mana cost: 55",\
-"tr_mage_weapon1_10_lore_6":"----------------------------",\
+"tr_mage_weapon1_10_lore_3":"Casts a spell in the aimed direction,",\
+"tr_mage_weapon1_10_lore_4":"dealing 12 points of damage",\
+"tr_mage_weapon1_10_lore_5":"to the first enemy player hit.",\
+"tr_mage_weapon1_10_lore_6":"Maximum range: 45 blocks.",\
+"tr_mage_weapon1_10_lore_7":"Mana cost: 55",\
+"tr_mage_weapon1_10_lore_8":"----------------------------",\
 "tr_mage_chest_1_name":"Breastplate of Health I",\
 "tr_mage_chest_1_lore_1":"+0.5 armor.",\
 "tr_mage_chest_1_lore_2":"+10% max health.",\

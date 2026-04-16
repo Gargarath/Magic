@@ -102,29 +102,29 @@ execute if entity @s[scores={spell3=3,usespell=1..,cooldownspell3=-1},tag=archer
 			# Spell 1
 			
 	# Niveau 1
-execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Trait de feu I"}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_m
+execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_m:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_m
 
 	# Niveau 2
-execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Trait de feu II"}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_m
+execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_m:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_m
 
 	# Niveau 3
-execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Trait de feu III"}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_m
+execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_m:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_m
 
 			# Spell 2
 			
 	# Niveau 1
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Tempête de foudre I"}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_m
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_m:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_m
 
 	# Niveau 2
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Tempête de foudre II"}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_m
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_m:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_m
 
 	# Niveau 3
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Tempête de foudre III"}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_m
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_m:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_m
 
 			# Spell 3
 			
 	# Niveau 1
-execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Téléportation"}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_m
+execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=mage] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_m:1b,spell3_slot:1b}}} run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_m
 
 
 								###   ASSASSIN  	###

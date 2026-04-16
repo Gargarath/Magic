@@ -26,51 +26,47 @@ execute if entity @s[tag=in_lobby_arena] run function stuff:generic_stuff/quit_a
 
                          ###   WEAPON 1    ###
 
-execute if score @s weapon1_slot_m matches 0 run function stuff:stuff_mage/weapon1/slot0
-execute if score @s weapon1_slot_m matches 1 run function stuff:stuff_mage/weapon1/slot1
-execute if score @s weapon1_slot_m matches 2 run function stuff:stuff_mage/weapon1/slot2
-execute if score @s weapon1_slot_m matches 3 run function stuff:stuff_mage/weapon1/slot3
-execute if score @s weapon1_slot_m matches 4 run function stuff:stuff_mage/weapon1/slot4
-execute if score @s weapon1_slot_m matches 5 run function stuff:stuff_mage/weapon1/slot5
-execute if score @s weapon1_slot_m matches 6 run function stuff:stuff_mage/weapon1/slot6
-execute if score @s weapon1_slot_m matches 7 run function stuff:stuff_mage/weapon1/slot7
-execute if score @s weapon1_slot_m matches 8 run function stuff:stuff_mage/weapon1/slot8
+execute if score @s weapon1 matches 0 run function stuff:stuff_mage/weapon1/lvl0 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 1 run function stuff:stuff_mage/weapon1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 2 run function stuff:stuff_mage/weapon1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 3 run function stuff:stuff_mage/weapon1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 4 run function stuff:stuff_mage/weapon1/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 5 run function stuff:stuff_mage/weapon1/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 6 run function stuff:stuff_mage/weapon1/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 7 run function stuff:stuff_mage/weapon1/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 8 run function stuff:stuff_mage/weapon1/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 9 run function stuff:stuff_mage/weapon1/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 10 run function stuff:stuff_mage/weapon1/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 1    ###
 
-execute if entity @s[scores={cooldownspell1=-1}] run function stuff:stuff_mage/spell1/determine_slot
+execute if score @s[scores={cooldownspell1=-1}] spell1 matches 1 run function stuff:stuff_mage/spell1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1}] spell1 matches 2 run function stuff:stuff_mage/spell1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1}] spell1 matches 3 run function stuff:stuff_mage/spell1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 2    ###
 
-execute if entity @s[scores={cooldownspell2=-1,thunderstrm_time=-1}] run function stuff:stuff_mage/spell2/determine_slot
+execute if score @s[scores={cooldownspell2=-1,thunderstrm_time=-1}] spell2 matches 1 run function stuff:stuff_mage/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell2=-1,thunderstrm_time=-1}] spell2 matches 2 run function stuff:stuff_mage/spell2/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell2=-1,thunderstrm_time=-1}] spell2 matches 3 run function stuff:stuff_mage/spell2/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 3    ###
 
-execute if entity @s[scores={cooldownspell3=-1}] run function stuff:stuff_mage/spell3/determine_slot
+execute if score @s[scores={cooldownspell3=-1}] spell3 matches 1 run function stuff:stuff_mage/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 ###   CHEST    ###
 # Niv 0
-item replace entity @s[scores={chest=0}] armor.chest from block 13 97 11 container.9
-# Niveau 1
-item replace entity @s[scores={chest=1}] armor.chest from block 14 95 15 container.1
-# Niveau 2
-item replace entity @s[scores={chest=2}] armor.chest from block 14 95 15 container.2
-# Niveau 3
-item replace entity @s[scores={chest=3}] armor.chest from block 14 95 15 container.3
-# Niveau 4
-item replace entity @s[scores={chest=4}] armor.chest from block 14 95 15 container.4
-# Niveau 5
-item replace entity @s[scores={chest=5}] armor.chest from block 14 95 15 container.5
-# Niveau 6
-item replace entity @s[scores={chest=6}] armor.chest from block 14 95 15 container.6
-# Niveau 7
-item replace entity @s[scores={chest=7}] armor.chest from block 14 95 15 container.7
-# Niveau 8
-item replace entity @s[scores={chest=8}] armor.chest from block 14 95 15 container.8
-# Niveau 9
-item replace entity @s[scores={chest=9}] armor.chest from block 14 95 15 container.9
-# Niveau 10
-item replace entity @s[scores={chest=10}] armor.chest from block 14 95 15 container.10
+execute if score @s chest matches 0 run function stuff:stuff_mage/chest/lvl0
+execute if score @s chest matches 1 run function stuff:stuff_mage/chest/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 2 run function stuff:stuff_mage/chest/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 3 run function stuff:stuff_mage/chest/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 4 run function stuff:stuff_mage/chest/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 5 run function stuff:stuff_mage/chest/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 6 run function stuff:stuff_mage/chest/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 7 run function stuff:stuff_mage/chest/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 8 run function stuff:stuff_mage/chest/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 9 run function stuff:stuff_mage/chest/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 10 run function stuff:stuff_mage/chest/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/mage
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/mage
@@ -79,27 +75,17 @@ execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.chest m
 
 ###   LEGS    ###
 # Niv 0
-item replace entity @s[scores={legs=0}] armor.legs from block 13 97 11 container.10
-# Niveau 1
-item replace entity @s[scores={legs=1}] armor.legs from block 15 95 15 container.1
-# Niveau 2
-item replace entity @s[scores={legs=2}] armor.legs from block 15 95 15 container.2
-# Niveau 3
-item replace entity @s[scores={legs=3}] armor.legs from block 15 95 15 container.3
-# Niveau 4
-item replace entity @s[scores={legs=4}] armor.legs from block 15 95 15 container.4
-# Niveau 5
-item replace entity @s[scores={legs=5}] armor.legs from block 15 95 15 container.5
-# Niveau 6
-item replace entity @s[scores={legs=6}] armor.legs from block 15 95 15 container.6
-# Niveau 7
-item replace entity @s[scores={legs=7}] armor.legs from block 15 95 15 container.7
-# Niveau 8
-item replace entity @s[scores={legs=8}] armor.legs from block 15 95 15 container.8
-# Niveau 9
-item replace entity @s[scores={legs=9}] armor.legs from block 15 95 15 container.9
-# Niveau 10
-item replace entity @s[scores={legs=10}] armor.legs from block 15 95 15 container.10
+execute if score @s legs matches 0 run function stuff:stuff_mage/legs/lvl0
+execute if score @s legs matches 1 run function stuff:stuff_mage/legs/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 2 run function stuff:stuff_mage/legs/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 3 run function stuff:stuff_mage/legs/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 4 run function stuff:stuff_mage/legs/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 5 run function stuff:stuff_mage/legs/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 6 run function stuff:stuff_mage/legs/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 7 run function stuff:stuff_mage/legs/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 8 run function stuff:stuff_mage/legs/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 9 run function stuff:stuff_mage/legs/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 10 run function stuff:stuff_mage/legs/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/mage
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/mage
@@ -108,27 +94,17 @@ execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.legs mi
 
 ###   BOOTS    ###
 # Niv 0
-item replace entity @s[scores={boots=0}] armor.feet from block 13 97 11 container.11
-# Niveau 1
-item replace entity @s[scores={boots=1}] armor.feet from block 16 95 15 container.1
-# Niveau 2
-item replace entity @s[scores={boots=2}] armor.feet from block 16 95 15 container.2
-# Niveau 3
-item replace entity @s[scores={boots=3}] armor.feet from block 16 95 15 container.3
-# Niveau 4
-item replace entity @s[scores={boots=4}] armor.feet from block 16 95 15 container.4
-# Niveau 5
-item replace entity @s[scores={boots=5}] armor.feet from block 16 95 15 container.5
-# Niveau 6
-item replace entity @s[scores={boots=6}] armor.feet from block 16 95 15 container.6
-# Niveau 7
-item replace entity @s[scores={boots=7}] armor.feet from block 16 95 15 container.7
-# Niveau 8
-item replace entity @s[scores={boots=8}] armor.feet from block 16 95 15 container.8
-# Niveau 9
-item replace entity @s[scores={boots=9}] armor.feet from block 16 95 15 container.9
-# Niveau 10
-item replace entity @s[scores={boots=10}] armor.feet from block 16 95 15 container.10
+execute if score @s boots matches 0 run function stuff:stuff_mage/boots/lvl0
+execute if score @s boots matches 1 run function stuff:stuff_mage/boots/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 2 run function stuff:stuff_mage/boots/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 3 run function stuff:stuff_mage/boots/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 4 run function stuff:stuff_mage/boots/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 5 run function stuff:stuff_mage/boots/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 6 run function stuff:stuff_mage/boots/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 7 run function stuff:stuff_mage/boots/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 8 run function stuff:stuff_mage/boots/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 9 run function stuff:stuff_mage/boots/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 10 run function stuff:stuff_mage/boots/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/mage
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/mage

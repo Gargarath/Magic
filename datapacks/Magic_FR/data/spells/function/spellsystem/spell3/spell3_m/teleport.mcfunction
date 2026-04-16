@@ -19,7 +19,7 @@ execute at @s run playsound minecraft:entity.enderman.teleport master @a[distanc
 
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldownspell3 20
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown3_clock 20
-execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_mage/cooldowns_m/spell3/spell3lvl1_m
+execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_mage/cooldowns_m/spell3/spell3lvl1_m with entity @s EnderItems[0].components.minecraft:custom_data
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={spell3_m:1b,spell3_slot:1b}]
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell3 0
