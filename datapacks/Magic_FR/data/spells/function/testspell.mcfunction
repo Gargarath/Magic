@@ -66,24 +66,24 @@ execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=archer
 			# Spell 2
 
 	# Niveau 1 - Poser
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer,tag=!have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
 # Si un archer utilise le piège I poser en main -> lance la fonction spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_a
 
 	# Niveau 1 - Détruire
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=archer,tag=have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 # Si un archer utilise le piège I détruire en main -> lance la fonction spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 	# Niveau 2 - Poser
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_a
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer,tag=!have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl2/usespell2lvl2_a
 
 	# Niveau 2 - Détruire
-execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=2,usespell=1..,cooldownspell2=-1},tag=archer,tag=have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 	# Niveau 3 - Poser
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_a
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer,tag=!have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl3/usespell2lvl3_a
 
 	# Niveau 3 - Détruire
-execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
+execute if entity @s[scores={spell2=3,usespell=1..,cooldownspell2=-1},tag=archer,tag=have_trap] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_a:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_a/destroy_own_trap
 
 			# Spell 3
 			
