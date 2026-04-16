@@ -9,6 +9,7 @@ execute if score $no_cooldowns option_panel matches 1 run scoreboard players set
 # on met pas de temps ici car de toute façon le stuff est reset juste après donc le cooldown est donné (et trop casse tete a maintenir si on change dans stuffrogue)
 
 tag @s remove invisibility_r
+# enlève le tag invisible à @s
 
 scoreboard players set @s using_ambush -1
 

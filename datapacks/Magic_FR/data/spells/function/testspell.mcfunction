@@ -136,24 +136,24 @@ execute if items entity @s[tag=rogue] weapon.mainhand minecraft:carrot_on_a_stic
 			# Spell 1
 			
 	# Niveau 1
-execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Embuscade I"}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_r
+execute if entity @s[scores={spell1=1,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_r:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl1/usespell1lvl1_r
 
 	# Niveau 2
-execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Embuscade II"}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_r
+execute if entity @s[scores={spell1=2,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_r:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl2/usespell1lvl2_r
 
 	# Niveau 3
-execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Embuscade III"}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_r
+execute if entity @s[scores={spell1=3,usespell=1..,cooldownspell1=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell1_r:1b,spell1_slot:1b}}} run function spells:usespell/usespell1/usespell1lvl3/usespell1lvl3_r
 
 			# Spell 2
 
 	# Niveau 1 - Poser
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Voie des ombres - Poser"}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_r
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=rogue,tag=!have_backup_r] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_r:1b,spell2_slot:1b}}} run function spells:usespell/usespell2/usespell2lvl1/usespell2lvl1_r
 
 	# Niveau 1 - Utiliser
-execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Voie des ombres - Utiliser"}}} run function spells:spellsystem/spell2/spell2_r/tpbackup_r
+execute if entity @s[scores={spell2=1,usespell=1..,cooldownspell2=-1},tag=rogue,tag=have_backup_r] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell2_r:1b,spell2_slot:1b}}} run function spells:spellsystem/spell2/spell2_r/tpbackup_r
 
 			# Spell 3
 			
-execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_name":{text:"Bombe d'ombre"}}} at @s run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_r
+execute if entity @s[scores={spell3=1,usespell=1..,cooldownspell3=-1},tag=rogue] if data entity @s SelectedItem{components:{"minecraft:custom_data":{spell3_r:1b,spell3_slot:1b}}} at @s run function spells:usespell/usespell3/usespell3lvl1/usespell3lvl1_r
 
 tag @s add save_inventory

@@ -36,7 +36,7 @@ scoreboard players set @s backup_number_r 0
 clear @s carrot_on_a_stick[minecraft:custom_data={spell2_r:1b,spell2_slot:1b}]
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldownspell2 7
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown2_clock 20
-execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_rogue/cooldowns_r/spell2/spell2lvl1_r
+execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_rogue/cooldowns_r/spell2/spell2lvl1_r with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell2 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown2_clock 5

@@ -1,0 +1,5 @@
+## appele par stuff_rogue si @s a son armure au niveau 6
+
+$item replace entity @s[tag=!invisibility_r] armor.feet with chainmail_boots[attribute_modifiers=[{id:"armor_feet",type:"armor",amount:3,operation:"add_value",slot:"feet"},{id:"safe_fall_distance",type:"safe_fall_distance",amount:6,operation:"add_value",slot:"feet"}],unbreakable={},tooltip_display={hide_tooltip:false,hidden_components:["unbreakable","enchantments","trim"]},enchantments={"binding_curse":1},custom_name="$(tr_rogue_boots_6_name)",enchantment_glint_override=true] 1
+
+$item replace entity @s[tag=invisibility_r] armor.feet with netherite_boots[attribute_modifiers=[{id:"armor_feet",type:"armor",amount:3,operation:"add_value",slot:"feet"},{id:"safe_fall_distance",type:"safe_fall_distance",amount:6,operation:"add_value",slot:"feet"}],unbreakable={},tooltip_display={hide_tooltip:false,hidden_components:["unbreakable","enchantments","trim"]},enchantments={"binding_curse":1},custom_name="$(tr_rogue_boots_6_name)",enchantment_glint_override=true] 1

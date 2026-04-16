@@ -3,8 +3,7 @@
 
 scoreboard players set @s usespell 0
 clear @s
-execute as @s[tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
-execute as @s[tag=invisibility_r] run function stuff:stuff_rogue/stuffrogue_invisible
+function stuff:stuff_rogue/stuffrogue
 
 execute as @s[scores={trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
 execute as @s[scores={hooked_w=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooked

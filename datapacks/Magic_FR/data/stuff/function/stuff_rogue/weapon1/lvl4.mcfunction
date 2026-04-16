@@ -1,0 +1,5 @@
+## appele par stuff_rogue si @s a son arme au niveau 4
+
+$item replace entity @s[tag=!invisibility_r] hotbar.$(slot_weapon1_r) with carrot_on_a_stick[custom_name="$(tr_rogue_weapon1_4_name)",lore=[{"color":"gray","text":"$(tr_rogue_weapon1_4_lore_1)"}],unbreakable={},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:4,operation:"add_value",slot:"mainhand"}],tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon1_slot:1b},custom_model_data={strings:["dagger"]}] 1
+
+$item replace entity @s[tag=invisibility_r] hotbar.$(slot_weapon1_r) with carrot_on_a_stick[custom_name="$(tr_rogue_weapon1_4_name)",lore=[{"color":"gray","text":"$(tr_rogue_weapon1_4_lore_1)"}],unbreakable={},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:4,operation:"add_value",slot:"mainhand"}],tooltip_display={hidden_components:["unbreakable"]},custom_data={weapon1_slot:1b},custom_model_data={strings:["dagger_invisible"]}] 1

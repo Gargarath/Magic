@@ -21,22 +21,4 @@ scoreboard players set @s cooldownspell3 -1
 clear @s #minecraft:stained_glass_pane[minecraft:custom_data={spell3_slot:1b,cooldownspell3:1b}]
 #clear tous les glass_pane (au cas où)
 
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 0 run function stuff:stuff_rogue/stuff_visible/spell3/slot0
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 1 run function stuff:stuff_rogue/stuff_visible/spell3/slot1
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 2 run function stuff:stuff_rogue/stuff_visible/spell3/slot2
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 3 run function stuff:stuff_rogue/stuff_visible/spell3/slot3
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 4 run function stuff:stuff_rogue/stuff_visible/spell3/slot4
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 5 run function stuff:stuff_rogue/stuff_visible/spell3/slot5
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 6 run function stuff:stuff_rogue/stuff_visible/spell3/slot6
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 7 run function stuff:stuff_rogue/stuff_visible/spell3/slot7
-execute if score @s[tag=!invisibility_r] spell3_slot_r matches 8 run function stuff:stuff_rogue/stuff_visible/spell3/slot8
-
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 0 run function stuff:stuff_rogue/stuff_invisible/spell3/slot0
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 1 run function stuff:stuff_rogue/stuff_invisible/spell3/slot1
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 2 run function stuff:stuff_rogue/stuff_invisible/spell3/slot2
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 3 run function stuff:stuff_rogue/stuff_invisible/spell3/slot3
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 4 run function stuff:stuff_rogue/stuff_invisible/spell3/slot4
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 5 run function stuff:stuff_rogue/stuff_invisible/spell3/slot5
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 6 run function stuff:stuff_rogue/stuff_invisible/spell3/slot6
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 7 run function stuff:stuff_rogue/stuff_invisible/spell3/slot7
-execute if score @s[tag=invisibility_r] spell3_slot_r matches 8 run function stuff:stuff_rogue/stuff_invisible/spell3/slot8
+execute if entity @s[scores={spell3=1}] run function stuff:stuff_rogue/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data

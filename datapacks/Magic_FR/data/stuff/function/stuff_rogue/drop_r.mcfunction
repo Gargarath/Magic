@@ -5,8 +5,7 @@ tag @s remove save_inventory
 clear @s
 scoreboard players set @s usespell 0
 scoreboard players set @s usespell3_r 0
-execute as @s[tag=!invisibility_r] run function stuff:stuff_rogue/stuffrogue
-execute as @s[tag=invisibility_r] run function stuff:stuff_rogue/stuffrogue_invisible
+function stuff:stuff_rogue/stuffrogue
 # Clear @s et lui redonne son stuff
 
 item replace entity @s[tag=Has_Blue_flag] armor.head from block 13 97 11 container.6

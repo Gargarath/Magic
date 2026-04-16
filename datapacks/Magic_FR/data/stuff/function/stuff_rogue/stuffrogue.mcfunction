@@ -23,118 +23,89 @@ execute if entity @s[tag=in_lobby_arena] run function stuff:generic_stuff/quit_a
 
                          ###   WEAPON 1    ###
 
-execute if score @s weapon1_slot_r matches 0 run function stuff:stuff_rogue/stuff_visible/weapon1/slot0
-execute if score @s weapon1_slot_r matches 1 run function stuff:stuff_rogue/stuff_visible/weapon1/slot1
-execute if score @s weapon1_slot_r matches 2 run function stuff:stuff_rogue/stuff_visible/weapon1/slot2
-execute if score @s weapon1_slot_r matches 3 run function stuff:stuff_rogue/stuff_visible/weapon1/slot3
-execute if score @s weapon1_slot_r matches 4 run function stuff:stuff_rogue/stuff_visible/weapon1/slot4
-execute if score @s weapon1_slot_r matches 5 run function stuff:stuff_rogue/stuff_visible/weapon1/slot5
-execute if score @s weapon1_slot_r matches 6 run function stuff:stuff_rogue/stuff_visible/weapon1/slot6
-execute if score @s weapon1_slot_r matches 7 run function stuff:stuff_rogue/stuff_visible/weapon1/slot7
-execute if score @s weapon1_slot_r matches 8 run function stuff:stuff_rogue/stuff_visible/weapon1/slot8
+execute if score @s weapon1 matches 0 run function stuff:stuff_rogue/weapon1/lvl0 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 1 run function stuff:stuff_rogue/weapon1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 2 run function stuff:stuff_rogue/weapon1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 3 run function stuff:stuff_rogue/weapon1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 4 run function stuff:stuff_rogue/weapon1/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 5 run function stuff:stuff_rogue/weapon1/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 6 run function stuff:stuff_rogue/weapon1/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 7 run function stuff:stuff_rogue/weapon1/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 8 run function stuff:stuff_rogue/weapon1/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 9 run function stuff:stuff_rogue/weapon1/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s weapon1 matches 10 run function stuff:stuff_rogue/weapon1/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 1    ###
 
-execute as @s[scores={spell1=1..,cooldownspell1=-1},tag=!invisibility_r] run function stuff:stuff_rogue/stuff_visible/spell1/determine_slot
+execute if score @s[scores={cooldownspell1=-1},tag=!invisibility_r] spell1 matches 1 run function stuff:stuff_rogue/spell1/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1},tag=!invisibility_r] spell1 matches 2 run function stuff:stuff_rogue/spell1/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[scores={cooldownspell1=-1},tag=!invisibility_r] spell1 matches 3 run function stuff:stuff_rogue/spell1/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+
                    ###   SPELL 2    ###
 
-execute as @s[scores={spell2=1,cooldownspell2=-1}] run function stuff:stuff_rogue/stuff_visible/spell2/determine_slot
+execute if score @s[scores={spell2=1,cooldownspell2=-1}] spell2 matches 1 run function stuff:stuff_rogue/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
                    ###   SPELL 3    ###
 
-# Niveau 1
-execute as @s[scores={spell3=1,cooldownspell3=-1,smoke_bomb_timer=-1}] run function stuff:stuff_rogue/stuff_visible/spell3/determine_slot
+execute if score @s[scores={cooldownspell3=-1,smoke_bomb_timer=-1}] spell3 matches 1 run function stuff:stuff_rogue/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 ###   CHEST   ###
 
-# Niv 0
-item replace entity @s[scores={chest=0},tag=!invisibility_r] armor.chest from block 13 97 11 container.9
-# Niv 1
-item replace entity @s[scores={chest=1},tag=!invisibility_r] armor.chest from block 14 95 17 container.1
-# Niv 2
-item replace entity @s[scores={chest=2},tag=!invisibility_r] armor.chest from block 14 95 17 container.2
-# Niv 3
-item replace entity @s[scores={chest=3},tag=!invisibility_r] armor.chest from block 14 95 17 container.3
-# Niv 4
-item replace entity @s[scores={chest=4},tag=!invisibility_r] armor.chest from block 14 95 17 container.4
-# Niv 5
-item replace entity @s[scores={chest=5},tag=!invisibility_r] armor.chest from block 14 95 17 container.5
-# Niv 6
-item replace entity @s[scores={chest=6},tag=!invisibility_r] armor.chest from block 14 95 17 container.6
-# Niv 7
-item replace entity @s[scores={chest=7},tag=!invisibility_r] armor.chest from block 14 95 17 container.7
-# Niv 8
-item replace entity @s[scores={chest=8},tag=!invisibility_r] armor.chest from block 14 95 17 container.8
-# Niv 9
-item replace entity @s[scores={chest=9},tag=!invisibility_r] armor.chest from block 14 95 17 container.9
-# Niv 10
-item replace entity @s[scores={chest=10},tag=!invisibility_r] armor.chest from block 14 95 17 container.10
+execute if score @s chest matches 0 run function stuff:stuff_rogue/chest/lvl0
+execute if score @s chest matches 1 run function stuff:stuff_rogue/chest/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 2 run function stuff:stuff_rogue/chest/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 3 run function stuff:stuff_rogue/chest/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 4 run function stuff:stuff_rogue/chest/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 5 run function stuff:stuff_rogue/chest/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 6 run function stuff:stuff_rogue/chest/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 7 run function stuff:stuff_rogue/chest/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 8 run function stuff:stuff_rogue/chest/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 9 run function stuff:stuff_rogue/chest/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s chest matches 10 run function stuff:stuff_rogue/chest/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/rogue
-execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/rogue
-execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.chest minecraft:armor_change/no_team/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/rogue
+execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.chest minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
 
 ###   LEGS   ###
 
-# Niv 0
-item replace entity @s[scores={legs=0},tag=!invisibility_r] armor.legs from block 13 97 11 container.10
-# Niv 1
-item replace entity @s[scores={legs=1},tag=!invisibility_r] armor.legs from block 15 95 17 container.1
-# Niv 2
-item replace entity @s[scores={legs=2},tag=!invisibility_r] armor.legs from block 15 95 17 container.2
-# Niv 3
-item replace entity @s[scores={legs=3},tag=!invisibility_r] armor.legs from block 15 95 17 container.3
-# Niv 4
-item replace entity @s[scores={legs=4},tag=!invisibility_r] armor.legs from block 15 95 17 container.4
-# Niv 5
-item replace entity @s[scores={legs=5},tag=!invisibility_r] armor.legs from block 15 95 17 container.5
-# Niv 6
-item replace entity @s[scores={legs=6},tag=!invisibility_r] armor.legs from block 15 95 17 container.6
-# Niv 7
-item replace entity @s[scores={legs=7},tag=!invisibility_r] armor.legs from block 15 95 17 container.7
-# Niv 8
-item replace entity @s[scores={legs=8},tag=!invisibility_r] armor.legs from block 15 95 17 container.8
-# Niv 9
-item replace entity @s[scores={legs=9},tag=!invisibility_r] armor.legs from block 15 95 17 container.9
-# Niv 10
-item replace entity @s[scores={legs=10},tag=!invisibility_r] armor.legs from block 15 95 17 container.10
+execute if score @s legs matches 0 run function stuff:stuff_rogue/legs/lvl0
+execute if score @s legs matches 1 run function stuff:stuff_rogue/legs/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 2 run function stuff:stuff_rogue/legs/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 3 run function stuff:stuff_rogue/legs/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 4 run function stuff:stuff_rogue/legs/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 5 run function stuff:stuff_rogue/legs/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 6 run function stuff:stuff_rogue/legs/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 7 run function stuff:stuff_rogue/legs/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 8 run function stuff:stuff_rogue/legs/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 9 run function stuff:stuff_rogue/legs/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s legs matches 10 run function stuff:stuff_rogue/legs/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/rogue
-execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/rogue
-execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.legs minecraft:armor_change/no_team/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/rogue
+execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.legs minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
 
 ###   BOOTS   ###
 
-# Niv 0
-item replace entity @s[scores={boots=0},tag=!invisibility_r] armor.feet from block 13 97 11 container.11
-# Niv 1
-item replace entity @s[scores={boots=1},tag=!invisibility_r] armor.feet from block 16 95 17 container.1
-# Niv 2
-item replace entity @s[scores={boots=2},tag=!invisibility_r] armor.feet from block 16 95 17 container.2
-# Niv 3
-item replace entity @s[scores={boots=3},tag=!invisibility_r] armor.feet from block 16 95 17 container.3
-# Niv 4
-item replace entity @s[scores={boots=4},tag=!invisibility_r] armor.feet from block 16 95 17 container.4
-# Niv 5
-item replace entity @s[scores={boots=5},tag=!invisibility_r] armor.feet from block 16 95 17 container.5
-# Niv 6
-item replace entity @s[scores={boots=6},tag=!invisibility_r] armor.feet from block 16 95 17 container.6
-# Niv 7
-item replace entity @s[scores={boots=7},tag=!invisibility_r] armor.feet from block 16 95 17 container.7
-# Niv 8
-item replace entity @s[scores={boots=8},tag=!invisibility_r] armor.feet from block 16 95 17 container.8
-# Niv 9
-item replace entity @s[scores={boots=9},tag=!invisibility_r] armor.feet from block 16 95 17 container.9
-# Niv 10
-item replace entity @s[scores={boots=10},tag=!invisibility_r] armor.feet from block 16 95 17 container.10
+execute if score @s boots matches 0 run function stuff:stuff_rogue/boots/lvl0
+execute if score @s boots matches 1 run function stuff:stuff_rogue/boots/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 2 run function stuff:stuff_rogue/boots/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 3 run function stuff:stuff_rogue/boots/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 4 run function stuff:stuff_rogue/boots/lvl4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 5 run function stuff:stuff_rogue/boots/lvl5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 6 run function stuff:stuff_rogue/boots/lvl6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 7 run function stuff:stuff_rogue/boots/lvl7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 8 run function stuff:stuff_rogue/boots/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 9 run function stuff:stuff_rogue/boots/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s boots matches 10 run function stuff:stuff_rogue/boots/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/rogue
-execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
-execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/rogue
+execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
+execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.feet minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
 tag @s add save_inventory

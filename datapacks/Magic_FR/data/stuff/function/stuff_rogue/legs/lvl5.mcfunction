@@ -1,0 +1,5 @@
+## appele par stuff_rogue si @s a son armure au niveau 5
+
+$item replace entity @s[tag=!invisibility_r] armor.legs with chainmail_leggings[attribute_modifiers=[{id:"armor_legs",type:"armor",amount:2.5,operation:"add_value",slot:"legs"},{id:"speed_legs",type:"movement_speed",amount:0.15,operation:"add_multiplied_base",slot:"legs"}],unbreakable={},tooltip_display={hide_tooltip:false,hidden_components:["unbreakable","enchantments","trim"]},enchantments={"binding_curse":1},custom_name="$(tr_rogue_legs_5_name)",enchantment_glint_override=false] 1
+
+$item replace entity @s[tag=invisibility_r] armor.legs with netherite_leggings[attribute_modifiers=[{id:"armor_legs",type:"armor",amount:2.5,operation:"add_value",slot:"legs"},{id:"speed_legs",type:"movement_speed",amount:0.15,operation:"add_multiplied_base",slot:"legs"}],unbreakable={},tooltip_display={hide_tooltip:false,hidden_components:["unbreakable","enchantments","trim"]},enchantments={"binding_curse":1},custom_name="$(tr_rogue_legs_5_name)",enchantment_glint_override=false] 1

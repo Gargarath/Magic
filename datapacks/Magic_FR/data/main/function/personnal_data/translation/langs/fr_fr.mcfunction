@@ -833,6 +833,8 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+"tr_rogue_weapon1_0_name":"Dague de débutant I",\
+"tr_rogue_weapon1_0_lore_1":"+0,5 point d'attaque.",\
 "tr_rogue_weapon1_1_name":"Dague sournoise I",\
 "tr_rogue_weapon1_1_lore_1":"+1 point d'attaque.",\
 "tr_rogue_weapon1_2_name":"Dague sournoise II",\
@@ -948,6 +950,90 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+"tr_rogue_spell1_1_name":"Embuscade I",\
+"tr_rogue_spell1_1_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_1_lore_2":"Vous vous camouflez dans l'ombre ce qui",\
+"tr_rogue_spell1_1_lore_3":"vous rends invisible.",\
+"tr_rogue_spell1_1_lore_4":"",\
+"tr_rogue_spell1_1_lore_5":"Les degats de votre prochaine attaque",\
+"tr_rogue_spell1_1_lore_6":"augmentent de 3 points.",\
+"tr_rogue_spell1_1_lore_7":"",\
+"tr_rogue_spell1_1_lore_8":"Duree de l'invisibilite : 4s.",\
+"tr_rogue_spell1_1_lore_9":"",\
+"tr_rogue_spell1_1_lore_10":"Subir ou infliger des degats annule l'effet.",\
+"tr_rogue_spell1_1_lore_11":"Interagir avec les drapeaux annule l'effet.",\
+"tr_rogue_spell1_1_lore_12":"",\
+"tr_rogue_spell1_1_lore_13":"Temps de recharge: 13s.",\
+"tr_rogue_spell1_1_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_1_name":"Embuscade I",\
+"tr_rogue_spell1_2_name":"Embuscade II",\
+"tr_rogue_spell1_2_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_2_lore_2":"Vous vous camouflez dans l'ombre ce qui",\
+"tr_rogue_spell1_2_lore_3":"vous rends invisible.",\
+"tr_rogue_spell1_2_lore_4":"",\
+"tr_rogue_spell1_2_lore_5":"Les degats de votre prochaine attaque",\
+"tr_rogue_spell1_2_lore_6":"augmentent de 6 points.",\
+"tr_rogue_spell1_2_lore_7":"",\
+"tr_rogue_spell1_2_lore_8":"Duree de l'invisibilite : 6s.",\
+"tr_rogue_spell1_2_lore_9":"",\
+"tr_rogue_spell1_2_lore_10":"Subir ou infliger des degats annule l'effet.",\
+"tr_rogue_spell1_2_lore_11":"Interagir avec les drapeaux annule l'effet.",\
+"tr_rogue_spell1_2_lore_12":"",\
+"tr_rogue_spell1_2_lore_13":"Temps de recharge: 10s.",\
+"tr_rogue_spell1_2_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_2_name":"Embuscade II",\
+"tr_rogue_spell1_3_name":"Embuscade III",\
+"tr_rogue_spell1_3_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_3_lore_2":"Vous vous camouflez dans l'ombre ce qui",\
+"tr_rogue_spell1_3_lore_3":"vous rends invisible.",\
+"tr_rogue_spell1_3_lore_4":"",\
+"tr_rogue_spell1_3_lore_5":"Les degats de votre prochaine attaque",\
+"tr_rogue_spell1_3_lore_6":"augmentent de 12 points.",\
+"tr_rogue_spell1_3_lore_7":"",\
+"tr_rogue_spell1_3_lore_8":"Duree de l'invisibilite : 6s.",\
+"tr_rogue_spell1_3_lore_9":"",\
+"tr_rogue_spell1_3_lore_10":"Subir ou infliger des degats annule l'effet.",\
+"tr_rogue_spell1_3_lore_11":"Interagir avec les drapeaux annule l'effet.",\
+"tr_rogue_spell1_3_lore_12":"",\
+"tr_rogue_spell1_3_lore_13":"Temps de recharge: 8s.",\
+"tr_rogue_spell1_3_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_3_name":"Embuscade III",\
+"tr_rogue_spell2_1_name":"Voie des ombres - Poser",\
+"tr_rogue_spell2_use_1_name":"Voie des ombres - Utiliser",\
+"tr_rogue_spell2_1_lore_1":"--------------------------------------",\
+"tr_rogue_spell2_1_lore_2":"Vous ouvrez une voie des ombres a votre",\
+"tr_rogue_spell2_1_lore_3":"emplacement.",\
+"tr_rogue_spell2_1_lore_4":"",\
+"tr_rogue_spell2_1_lore_5":"Lorsque vous empruntez la voie des ombres,",\
+"tr_rogue_spell2_1_lore_6":"vous vous teleportez immediatement a son",\
+"tr_rogue_spell2_1_lore_7":"entree.",\
+"tr_rogue_spell2_1_lore_8":"",\
+"tr_rogue_spell2_1_lore_9":"L'entree de la voie des ombre peut etre.",\
+"tr_rogue_spell2_1_lore_10":"detruite par tous les joueurs.",\
+"tr_rogue_spell2_1_lore_11":"",\
+"tr_rogue_spell2_1_lore_12":"Temps de recharge: 10s.",\
+"tr_rogue_spell2_1_lore_13":"--------------------------------------",\
+"tr_rogue_cooldownspell2_1_name":"Voie des ombres - Poser",\
+"tr_rogue_spell3_1_name":"Bombe d'ombre",\
+"tr_rogue_spell3_1_lore_1":"--------------------------------------",\
+"tr_rogue_spell3_1_lore_2":"Lance une bombe d'ombre dans la direction",\
+"tr_rogue_spell3_1_lore_3":"visee.",\
+"tr_rogue_spell3_1_lore_4":"",\
+"tr_rogue_spell3_1_lore_5":"Pendant 8 secondes, la bombe d'ombre",\
+"tr_rogue_spell3_1_lore_6":"aveuglera et ralentira de 15% tous les",\
+"tr_rogue_spell3_1_lore_7":"joueurs dans un rayon de 4 blocs.",\
+"tr_rogue_spell3_1_lore_8":"",\
+"tr_rogue_spell3_1_lore_9":"Tous les joueurs presents dans la",\
+"tr_rogue_spell3_1_lore_10":"zone d'effet lacheront immediatement leur",\
+"tr_rogue_spell3_1_lore_11":"drapeau et ne pourront plus interagir avec",\
+"tr_rogue_spell3_1_lore_12":"ce dernier avant la fin de l'effet.",\
+"tr_rogue_spell3_1_lore_13":"",\
+"tr_rogue_spell3_1_lore_14":"Les assassins sont immunises contre",\
+"tr_rogue_spell3_1_lore_15":"l'effet de ce sort.",\
+"tr_rogue_spell3_1_lore_16":"",\
+"tr_rogue_spell3_1_lore_17":"Temps de recharge: 10s.",\
+"tr_rogue_spell3_1_lore_18":"--------------------------------------",\
+"tr_rogue_cooldownspell3_1_name":"Bombe d'ombre",\
 "tr_shop_title":"Magasin",\
 "tr_shop_money_display_price1_1":"Points",\
 "tr_shop_money_display_price1_2":"d'honneur :",\

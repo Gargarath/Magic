@@ -833,6 +833,8 @@ data modify storage strings en_en set value {\
 \
 \
 \
+"tr_rogue_weapon1_0_name":"Beginner's Dagger",\
+"tr_rogue_weapon1_0_lore_1":"+0.5 attack damage.",\
 "tr_rogue_weapon1_1_name":"Sneaky Dagger I",\
 "tr_rogue_weapon1_1_lore_1":"+1 attack damage.",\
 "tr_rogue_weapon1_2_name":"Sneaky Dagger II",\
@@ -948,6 +950,90 @@ data modify storage strings en_en set value {\
 \
 \
 \
+"tr_rogue_spell1_1_name":"Ambush I",\
+"tr_rogue_spell1_1_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_1_lore_2":"You conceal yourself in the shadows,",\
+"tr_rogue_spell1_1_lore_3":"turning invisible.",\
+"tr_rogue_spell1_1_lore_4":"",\
+"tr_rogue_spell1_1_lore_5":"Your next attack deals",\
+"tr_rogue_spell1_1_lore_6":"3 extra damage.",\
+"tr_rogue_spell1_1_lore_7":"",\
+"tr_rogue_spell1_1_lore_8":"Invisibility duration: 4s.",\
+"tr_rogue_spell1_1_lore_9":"",\
+"tr_rogue_spell1_1_lore_10":"Taking or dealing damage cancels the effect.",\
+"tr_rogue_spell1_1_lore_11":"Interacting with flags cancels the effect.",\
+"tr_rogue_spell1_1_lore_12":"",\
+"tr_rogue_spell1_1_lore_13":"Cooldown: 13s.",\
+"tr_rogue_spell1_1_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_1_name":"Ambush I",\
+"tr_rogue_spell1_2_name":"Ambush II",\
+"tr_rogue_spell1_2_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_2_lore_2":"You conceal yourself in the shadows,",\
+"tr_rogue_spell1_2_lore_3":"turning invisible.",\
+"tr_rogue_spell1_2_lore_4":"",\
+"tr_rogue_spell1_2_lore_5":"Your next attack deals",\
+"tr_rogue_spell1_2_lore_6":"6 extra damage.",\
+"tr_rogue_spell1_2_lore_7":"",\
+"tr_rogue_spell1_2_lore_8":"Invisibility duration: 6s.",\
+"tr_rogue_spell1_2_lore_9":"",\
+"tr_rogue_spell1_2_lore_10":"Taking or dealing damage cancels the effect.",\
+"tr_rogue_spell1_2_lore_11":"Interacting with flags cancels the effect.",\
+"tr_rogue_spell1_2_lore_12":"",\
+"tr_rogue_spell1_2_lore_13":"Cooldown: 10s.",\
+"tr_rogue_spell1_2_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_2_name":"Ambush II",\
+"tr_rogue_spell1_3_name":"Ambush III",\
+"tr_rogue_spell1_3_lore_1":"-------------------------------------",\
+"tr_rogue_spell1_3_lore_2":"You conceal yourself in the shadows,",\
+"tr_rogue_spell1_3_lore_3":"turning invisible.",\
+"tr_rogue_spell1_3_lore_4":"",\
+"tr_rogue_spell1_3_lore_5":"Your next attack deals",\
+"tr_rogue_spell1_3_lore_6":"12 extra damage.",\
+"tr_rogue_spell1_3_lore_7":"",\
+"tr_rogue_spell1_3_lore_8":"Invisibility duration: 6s.",\
+"tr_rogue_spell1_3_lore_9":"",\
+"tr_rogue_spell1_3_lore_10":"Taking or dealing damage cancels the effect.",\
+"tr_rogue_spell1_3_lore_11":"Interacting with flags cancels the effect.",\
+"tr_rogue_spell1_3_lore_12":"",\
+"tr_rogue_spell1_3_lore_13":"Cooldown: 8s.",\
+"tr_rogue_spell1_3_lore_14":"-------------------------------------",\
+"tr_rogue_cooldownspell1_3_name":"Ambush III",\
+"tr_rogue_spell2_1_name":"Shadow Path - Place",\
+"tr_rogue_spell2_use_1_name":"Shadow Path - Use",\
+"tr_rogue_spell2_1_lore_1":"--------------------------------------",\
+"tr_rogue_spell2_1_lore_2":"You open a shadow path at your",\
+"tr_rogue_spell2_1_lore_3":"location.",\
+"tr_rogue_spell2_1_lore_4":"",\
+"tr_rogue_spell2_1_lore_5":"When you use the shadow path,",\
+"tr_rogue_spell2_1_lore_6":"you are instantly teleported to its",\
+"tr_rogue_spell2_1_lore_7":"entrance.",\
+"tr_rogue_spell2_1_lore_8":"",\
+"tr_rogue_spell2_1_lore_9":"The shadow path entrance can be",\
+"tr_rogue_spell2_1_lore_10":"destroyed by any player.",\
+"tr_rogue_spell2_1_lore_11":"",\
+"tr_rogue_spell2_1_lore_12":"Cooldown: 10s.",\
+"tr_rogue_spell2_1_lore_13":"--------------------------------------",\
+"tr_rogue_cooldownspell2_1_name":"Shadow Path - Place",\
+"tr_rogue_spell3_1_name":"Shadow Bomb",\
+"tr_rogue_spell3_1_lore_1":"--------------------------------------",\
+"tr_rogue_spell3_1_lore_2":"Throws a shadow bomb in the targeted",\
+"tr_rogue_spell3_1_lore_3":"direction.",\
+"tr_rogue_spell3_1_lore_4":"",\
+"tr_rogue_spell3_1_lore_5":"For 8 seconds, the shadow bomb",\
+"tr_rogue_spell3_1_lore_6":"blinds and slows all players by 15%",\
+"tr_rogue_spell3_1_lore_7":"within a 4-block radius.",\
+"tr_rogue_spell3_1_lore_8":"",\
+"tr_rogue_spell3_1_lore_9":"All players caught in the area",\
+"tr_rogue_spell3_1_lore_10":"immediately drop their flag",\
+"tr_rogue_spell3_1_lore_11":"and can no longer interact with",\
+"tr_rogue_spell3_1_lore_12":"it until the effect ends.",\
+"tr_rogue_spell3_1_lore_13":"",\
+"tr_rogue_spell3_1_lore_14":"Rogues are immune to",\
+"tr_rogue_spell3_1_lore_15":"this spell's effect.",\
+"tr_rogue_spell3_1_lore_16":"",\
+"tr_rogue_spell3_1_lore_17":"Cooldown: 10s.",\
+"tr_rogue_spell3_1_lore_18":"--------------------------------------",\
+"tr_rogue_cooldownspell3_1_name":"Shadow Bomb",\
 "tr_shop_title":"Shop",\
 "tr_shop_money_display_price1_1":"Honor",\
 "tr_shop_money_display_price1_2":"Points:",\

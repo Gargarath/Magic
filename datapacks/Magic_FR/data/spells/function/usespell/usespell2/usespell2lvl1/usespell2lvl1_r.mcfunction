@@ -22,25 +22,7 @@ execute at @s run playsound minecraft:entity.armor_stand.hit master @a[distance=
 function spells:spellsystem/spell2/spell2_r/summonbackup_r
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={spell2_r:1b,spell2_slot:1b}]
 
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=0}] run function stuff:stuff_rogue/stuff_visible/spell2/slot0
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=1}] run function stuff:stuff_rogue/stuff_visible/spell2/slot1
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=2}] run function stuff:stuff_rogue/stuff_visible/spell2/slot2
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=3}] run function stuff:stuff_rogue/stuff_visible/spell2/slot3
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=4}] run function stuff:stuff_rogue/stuff_visible/spell2/slot4
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=5}] run function stuff:stuff_rogue/stuff_visible/spell2/slot5
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=6}] run function stuff:stuff_rogue/stuff_visible/spell2/slot6
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=7}] run function stuff:stuff_rogue/stuff_visible/spell2/slot7
-execute as @s[tag=!invisibility_r,scores={spell2_slot_r=8}] run function stuff:stuff_rogue/stuff_visible/spell2/slot8
-
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=0}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot0
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=1}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot1
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=2}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot2
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=3}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot3
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=4}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot4
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=5}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot5
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=6}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot6
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=7}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot7
-execute as @s[tag=invisibility_r,scores={spell2_slot_r=8}] run function stuff:stuff_rogue/stuff_invisible/spell2/slot8
+execute as @s[scores={spell2=1}] run function stuff:stuff_rogue/spell2/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 
 scoreboard players add @s stat_usespell 1
 # ajoute un à la stat de stat_usespell de @s (stat du nombre de sorts lancés)

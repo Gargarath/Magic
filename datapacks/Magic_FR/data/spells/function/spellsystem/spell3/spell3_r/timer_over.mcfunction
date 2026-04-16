@@ -16,7 +16,7 @@ execute if score @s Player matches 12 run bossbar set smoke_bomb:player12 player
 
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldownspell3 10
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s cooldown3_clock 20
-execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_rogue/cooldowns_r/spell3/spell3lvl1_r
+execute if score $no_cooldowns option_panel matches 0 run function stuff:stuff_rogue/cooldowns_r/spell3/spell3lvl1_r with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldownspell3 0
 execute if score $no_cooldowns option_panel matches 1 run scoreboard players set @s cooldown3_clock 5

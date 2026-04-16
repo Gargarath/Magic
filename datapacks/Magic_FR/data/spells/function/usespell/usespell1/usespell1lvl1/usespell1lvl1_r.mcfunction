@@ -2,6 +2,9 @@
 
 tag @s remove save_inventory
 
+tag @s add invisibility_r
+# ajoute le tag invisible à @s
+
 execute as @s[tag=Has_Red_flag] run function gamemode:ctf/usespellwithflag/usespell_redflag
 execute as @s[tag=Has_Blue_flag] run function gamemode:ctf/usespellwithflag/usespell_blueflag
 scoreboard players set @s usespell 0
@@ -12,7 +15,7 @@ scoreboard players set @s dealdmg 0
 scoreboard players set @s dmgtaken 0
 
 clear @s
-function stuff:stuff_rogue/stuffrogue_invisible
+function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue invisible à @s
 
 scoreboard players set @s using_ambush 80
@@ -35,7 +38,7 @@ execute if score @s Player matches 12 run function spells:spellsystem/spell1/spe
 scoreboard players add @s stat_usespell 1
 # ajoute un à la stat de stat_usespell de @s (stat du nombre de sorts lancés)
 
-tag @s add invisibility_r
+
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={spell1_r:1b,spell1_slot:1b}]
 tag @s add save_inventory
 
