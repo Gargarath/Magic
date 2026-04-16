@@ -35,6 +35,13 @@ item replace block 13 97 11 container.9 with netherite_chestplate[enchantments={
 item replace block 13 97 11 container.10 with netherite_leggings[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
 item replace block 13 97 11 container.11 with netherite_boots[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
 
+# OVERLAY FEU
+item replace block 17 95 15 container.6 with magma_block[minecraft:equippable={slot:"head",camera_overlay:"minecraft:overlay/burning1"},enchantments={"binding_curse":1},lore=["----------------","Vous êtes en feu !","----------------"],item_name={"bold":true,"color":"red","text":"Brulure"},tooltip_display={hidden_components:["enchantments"]}] 1
+
+
+# OVERLAY GLACE
+item replace block 17 95 13 container.24 with ice[minecraft:equippable={slot:"head",camera_overlay:"minecraft:overlay/frozen1"},enchantments={"binding_curse":1},lore=["----------------","Vous êtes gelé !","----------------"],item_name={"bold":true,"color":"aqua","text":"Gel"},tooltip_display={hidden_components:["enchantments"]}] 1
+
 # COLOR PICKER (pour FFA)
 
 item replace block 13 97 14 container.0 with white_wool[custom_name={"bold":true,"color":"white","text":"Blanc"},custom_data={select_white_color:1b}] 1
