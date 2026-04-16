@@ -21,13 +21,14 @@ execute if entity @s[tag=archer] positioned ~ ~-9 ~ at @e[tag=room,distance=..15
 ### Actualise le panneau de points restants
 function shop:reset_money_sign
 
-### Actualise le panneau ready
+### Actualise le bouton ready (si en ctf)
 
-execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ if score @s[distance=..15,gamemode=!spectator] is_ready matches 0 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Pas prêt","color":"black","bold":true},{"text":"x","color":"dark_red","bold":true},""]}}
 # Si joueur est pas prêt
+execute if score $gamemode option_panel matches 1 if score @s is_ready matches 0 run function shop:refresh/ready_button/not_ready with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute positioned ~ ~-9 ~ at @e[tag=room,distance=..15] positioned ~ ~9 ~ if score @s[distance=..15,gamemode=!spectator] is_ready matches 1 run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Prêt","color":"black","bold":true},{"text":"√","color":"dark_green","bold":true},""]}}
 # Si joueur est prêt
+execute if score $gamemode option_panel matches 1 if score @s is_ready matches 1 run function shop:refresh/ready_button/ready with entity @s EnderItems[0].components.minecraft:custom_data
+
 
 ###    REMPLACE L'ITEM FRAME DES BOTTES PAR LES BOTTES ADAPTES AU NIVEAU D'ACHAT DU JOUEUR ###
 

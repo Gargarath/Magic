@@ -83,8 +83,6 @@ execute as @r[scores={Player=0}] run function main:start_game/setup_players/give
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run tp @s ~ ~9 ~ 0 -5
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run spawnpoint @s ~ ~9 ~ 0 -5
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
-#execute as @a[scores={Player=1..}] at @s run function main:reset/resetframeroom
-# Reset les framerooms de tout les joueurs
 
 advancement revoke @a[scores={Player=1..}] everything
 advancement grant @a[tag=warrior,scores={Player=1..}] until warrior:passif_w

@@ -93,9 +93,8 @@ scoreboard players set @a InShop 1
 function stuff:setstuff
 
 scoreboard players set @a is_ready 0
-scoreboard players set @a ready_sign 0
-scoreboard players enable @a ready_sign
-# Permet de rendre le panneau ready clicable pour tous
+execute as @a[scores={Player=1..}] run function shop:refresh/ready_button/not_ready with entity @s EnderItems[0].components.minecraft:custom_data
+# Remet tout le monde en pas pret
 
 gamemode adventure @a[scores={Player=-1}]
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run function main:round_end/tp_and_set_spawnpoint

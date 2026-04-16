@@ -1034,10 +1034,13 @@ data modify storage strings fr_fr set value {\
 "tr_rogue_spell3_1_lore_17":"Temps de recharge: 10s.",\
 "tr_rogue_spell3_1_lore_18":"--------------------------------------",\
 "tr_rogue_cooldownspell3_1_name":"Bombe d'ombre",\
-"tr_shop_title":"Magasin",\
+"tr_shop_title":"Salle d'achat",\
 "tr_shop_money_display_price1_1":"Points",\
 "tr_shop_money_display_price1_2":"d'honneur :",\
-"tr_shop_ready_button":"Pas prêt",\
+"tr_shop_not_ready_button_1":"Pas",\
+"tr_shop_not_ready_button_2":"Prêt",\
+"tr_shop_ready_button":"Prêt",\
+"tr_shop_play_button":"Jouer",\
 "tr_shop_item_overlay_price_1":"Coût :",\
 "tr_shop_item_overlay_price_2":"points d'honneur",\
 "tr_shop_item_overlay_buy_tip":"clic droit pour acheter",\

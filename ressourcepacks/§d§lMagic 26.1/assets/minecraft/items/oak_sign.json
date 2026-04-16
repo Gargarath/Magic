@@ -454,6 +454,27 @@
           "type": "model",
           "model": "item/leaderboard/titles/total_money_earned"
         } 
+      },
+            {
+        "when": "ready_button",
+        "model": {
+          "type": "model",
+          "model": "item/shop/ready_button"
+        } 
+      },
+            {
+        "when": "not_ready_button",
+        "model": {
+          "type": "model",
+          "model": "item/shop/not_ready_button"
+        } 
+      },
+            {
+        "when": "play_button",
+        "model": {
+          "type": "model",
+          "model": "item/shop/play_button"
+        } 
       }
     ]
   }

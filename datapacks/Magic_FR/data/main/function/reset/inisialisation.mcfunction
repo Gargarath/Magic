@@ -94,7 +94,6 @@ execute as @s run function main:stats/scoreboard/red_team_info/left_red
 scoreboard players set @s lobby_sneak 0
 # permet de detcter le sneak dans le lobby
 
-scoreboard players enable @s ready_sign
 scoreboard players set @s operator 0
 
 dialog show @s main:initialised/main

@@ -1037,7 +1037,10 @@ data modify storage strings en_en set value {\
 "tr_shop_title":"Shop",\
 "tr_shop_money_display_price1_1":"Honor",\
 "tr_shop_money_display_price1_2":"Points:",\
-"tr_shop_ready_button":"Not Ready",\
+"tr_shop_not_ready_button_1":"Not",\
+"tr_shop_not_ready_button_2":"Ready",\
+"tr_shop_ready_button":"Ready",\
+"tr_shop_play_button":"Play",\
 "tr_shop_item_overlay_price_1":"Cost:",\
 "tr_shop_item_overlay_price_2":"coins",\
 "tr_shop_item_overlay_buy_tip":"right-click to buy",\

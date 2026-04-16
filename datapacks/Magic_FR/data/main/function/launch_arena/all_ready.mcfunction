@@ -84,7 +84,6 @@ team modify blue collisionRule never
 team modify red nametagVisibility never
 team modify blue nametagVisibility never
 
-scoreboard players reset @a ready_sign
 scoreboard players reset @a reset_frameroom
 scoreboard players reset @a spec_player1
 scoreboard players reset @a spec_player2

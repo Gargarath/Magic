@@ -1,4 +1,4 @@
-## appelée par ready_sign/ffa/player_ready
+## appelée par ready_button/ffa/player_ready
 # permet de check où faire spawn @s et de le faire spawn
 
 # reset

@@ -99,7 +99,6 @@ execute if score selected_map variables matches 6 run function main:reset/reset_
 tag @a remove save_inventory
 execute as @a run function main:fix_health/clear_and_fix_health
 
-scoreboard players reset @a ready_sign
 scoreboard players reset @a reset_frameroom
 scoreboard players reset @a spec_player1
 scoreboard players reset @a spec_player2

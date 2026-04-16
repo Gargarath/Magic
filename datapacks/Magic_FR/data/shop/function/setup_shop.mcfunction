@@ -7,8 +7,10 @@ $data merge entity @n[type=mannequin,tag=statue_$(player)] {profile:"$(name)"}
 $data merge entity @n[type=text_display,tag=shop_title,tag=shop_title_$(player)] {text:{"text":"$(tr_shop_title)","bold":true,"color":"gold"}}
 # traduis le titre
 
-$execute if score @s is_ready matches 0 run data merge entity @n[type=text_display,tag=shop_ready,tag=shop_ready_$(player)] {text:{"text":"$(tr_shop_ready_button)","bold":true},background:-65536}
-$execute if score @s is_ready matches 1 run data merge entity @n[type=text_display,tag=shop_ready,tag=shop_ready_$(player)] {text:{"text":"$(tr_shop_ready_button)","bold":true},background:-8337633}
+# bouton ready
+execute if score $gamemode option_panel matches 0 run function shop:refresh/ready_button/play with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $gamemode option_panel matches 1 if score @s is_ready matches 0 run function shop:refresh/ready_button/not_ready with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $gamemode option_panel matches 1 if score @s is_ready matches 1 run function shop:refresh/ready_button/ready with entity @s EnderItems[0].components.minecraft:custom_data
 
 function shop:refresh/money/refresh_money
 # actualise l'argent dans le shop de @s

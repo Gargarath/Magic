@@ -54,10 +54,8 @@ execute as @a[scores={spec_stop=1..}] run function shop:spectate_ppl/stop
                                     ## RESET FRAMEROOM SIGN ##
 
 execute as @a[scores={reset_frameroom=1}] run function shop:reset_frameroom_sign
-                                        ## READY SIGN ##
 
-execute as @a[scores={ready_sign=1}] run function shop:ready_sign/check_sign
-# Permet de rendre les panneau ready fonctionnels
+                                        ## READY SIGN ##
 
 execute store result score player playercount if entity @a[scores={Player=1..}]
 execute if score player_atstart playercount = player playercount unless entity @a[scores={Player=0..,is_ready=0}] run function main:launch_arena/all_ready

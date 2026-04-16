@@ -7,4 +7,4 @@ scoreboard players enable @s motherlode
 
 tellraw @s "motherlode !"
 scoreboard players add @s PH 50
-execute if score @s InShop matches 1 at @s run function main:reset/resetframeroom
+execute if score @s InShop matches 1 at @s run function shop:refresh/money/refresh_money

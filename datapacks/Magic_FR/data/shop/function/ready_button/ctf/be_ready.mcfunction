@@ -1,6 +1,7 @@
 # Appelé par shop:loop permet a un joueur de devenir ready si il est en CTF
 
-execute at @s positioned ~ ~-9 ~ at @e[tag=room,distance=..10] positioned ~ ~9 ~ run data merge block ~4 ~1 ~ {front_text:{messages:[{"text":" ","click_event":{"action":"run_command","command":"/trigger ready_sign add 1"}},{"text":"Prêt","color":"black","bold":true},{"text":"√","color":"dark_green","bold":true},""]}}
+function shop:refresh/ready_button/ready with entity @s EnderItems[0].components.minecraft:custom_data
+# met la room de @s en pret
 execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
 
 team join ready_red @s[tag=red_team]

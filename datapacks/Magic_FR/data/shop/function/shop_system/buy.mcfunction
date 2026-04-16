@@ -15,7 +15,5 @@ function shop:refresh/money/refresh_money
 # actualise le compteur de sous de @s
 $function shop:refresh/items/$(item_category) with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise l'item que @s vient d'acheter (prix / level / item)
-function shop:refresh/refresh_price_color with entity @s EnderItems[0].components.minecraft:custom_data
-# actualise les couleurs de prix des autres items de la salle
 function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise l'overlay de @s

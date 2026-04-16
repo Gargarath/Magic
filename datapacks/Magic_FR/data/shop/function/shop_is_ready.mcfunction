@@ -10,14 +10,9 @@ execute if score $build_reset option_panel matches 1 as @a[scores={Player=1..12}
 execute if score $build_reset option_panel matches 2 if score round bossbar matches 0 as @a[scores={Player=1..12}] run function shop:save_achats
 # si l'option de reset d'achat est sur toujours et qu'on est premiere manche -> save les achats de @s
 
-#execute as @a[scores={Player=1..12}] at @s run function main:reset/resetframeroom
-#reset les frameroom
 execute if score $build_reset option_panel matches 0 at @a[scores={Player=1..12}] at @e[distance=..10,type=marker,tag=shop_room] run data merge block ~-4 ~1 ~ {front_text:{messages:[{"text":"Réinitialisation","color":"white","bold":false,"italic":true,"click_event":{"action":"run_command","command":"/trigger reset_frameroom"}},{"text":"des achats","color":"white","bold":false,"italic":true},{"text":"désactivée.","color":"white","bold":false,"italic":true},""]}}
 execute if score $build_reset option_panel matches 1 at @a[scores={Player=1..12}] at @e[distance=..10,type=marker,tag=shop_room] run data merge block ~-4 ~1 ~ {front_text:{messages:[{"text":"[Réinitialiser","color":"gold","bold":false,"italic":true,"click_event":{"action":"run_command","command":"/trigger reset_frameroom"}},{"text":"les achats","color":"gold","bold":false,"italic":true},{"text":"de la manche]","color":"gold","bold":false,"italic":true},""]}}
 execute if score $build_reset option_panel matches 2 at @a[scores={Player=1..12}] at @e[distance=..10,type=marker,tag=shop_room] run data merge block ~-4 ~1 ~ {front_text:{messages:["",{"text":"[Réinitialiser","color":"gold","bold":false,"italic":true,"click_event":{"action":"run_command","command":"/trigger reset_frameroom"}},{"text":"les achats]","color":"gold","bold":false,"italic":true},""]}}
-
-scoreboard players enable @a[scores={Player=1..}] ready_sign
-# Permet de rendre le panneau ready_sign cliquable pour tous
 
 scoreboard players enable @a[scores={Player=1..}] reset_frameroom
 # Permet de rendre le panneau reset_frameroon cliquable pour tous

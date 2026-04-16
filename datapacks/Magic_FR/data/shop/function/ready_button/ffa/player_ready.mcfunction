@@ -21,3 +21,6 @@ execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics
 
 function gamemode:ffa/spawn/spawn_good_spot
 # fait spawn @s à un spot adapté
+
+execute at @s run playsound minecraft:entity.player.teleport master @s ~ ~ ~ 100 1
+# fait un son de tp à @s

@@ -1,4 +1,4 @@
-## appelée par ready_sign sign
+## appelée par ready_button
 # rend prêt le joueur à la place X
 
 execute if score @s red_place matches 1 run function main:stats/scoreboard/red_team_info/overlays/ready/place1
