@@ -16,3 +16,5 @@ execute if score @s chest matches 10 run function stuff:stuff_archer/chest/lvl10
 execute if score @s team_side matches 0 run item modify entity @s armor.chest minecraft:armor_change/no_team/archer
 execute if score @s team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/archer
 execute if score @s team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/archer
+
+function shop:refresh/items/chest with entity @s EnderItems[0].components.minecraft:custom_data

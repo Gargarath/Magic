@@ -4,11 +4,6 @@
 scoreboard players set shop is_working 1
 # met le score is_working du joueur shop a 1 pour eviter que cette fonction soit appelee en boucle
 
-## HISTORIQUE ACHATS
-execute as @a[scores={Player=1..12}] run function shop:history/init with entity @s EnderItems[0].components.minecraft:custom_data
-# initialise l'historique undo / redo des joueurs a l'ouverture du shop
-
-
 execute at @a[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
 # enleve les barrier blocs autour des joueurs
 

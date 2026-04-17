@@ -11,6 +11,8 @@ function main:reset/resetspells/respawn_reset
 
 # POUR SHOP
 
+execute if score $build_reset option_panel matches 1 run function shop:history/reset_history with entity @s EnderItems[0].components.minecraft:custom_data
+# reinitialise l'historique undo / redo si on est en mode par phase d'achat
 function lobby:team_selector/give_ffa_team/change_name_visibility/hide_name
 # cache le pseudo de @s
 

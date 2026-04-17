@@ -14,8 +14,8 @@ function shop:shop_system/apply_configured_scores with entity @s EnderItems[0].c
 $function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item en question a @s
 
-function shop:history/push_state with entity @s EnderItems[0].components.minecraft:custom_data
-# ajoute le nouvel etat a l'historique de @s
+execute unless score $build_reset option_panel matches 0 run function shop:history/push_state with entity @s EnderItems[0].components.minecraft:custom_data
+# ajoute le nouvel etat a l'historique de @s (sauf si on est en mode pas de undo)
 
 function shop:refresh/money/refresh_money
 # actualise le compteur de sous de @s

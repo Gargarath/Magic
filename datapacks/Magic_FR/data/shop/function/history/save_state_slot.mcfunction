@@ -1,7 +1,6 @@
 ## appelee par l'historique du shop
 # sauvegarde l'etat courant de @s dans un slot storage
 
-$execute store result storage shop:history player.$(player).states.slot$(slot).PH int 1 run scoreboard players get @s PH
 $execute store result storage shop:history player.$(player).states.slot$(slot).weapon1 int 1 run scoreboard players get @s weapon1
 $execute store result storage shop:history player.$(player).states.slot$(slot).spell1 int 1 run scoreboard players get @s spell1
 $execute store result storage shop:history player.$(player).states.slot$(slot).spell2 int 1 run scoreboard players get @s spell2

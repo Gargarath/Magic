@@ -12,3 +12,5 @@ execute if score @s weapon1 matches 7 run function stuff:stuff_rogue/weapon1/lvl
 execute if score @s weapon1 matches 8 run function stuff:stuff_rogue/weapon1/lvl8 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s weapon1 matches 9 run function stuff:stuff_rogue/weapon1/lvl9 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s weapon1 matches 10 run function stuff:stuff_rogue/weapon1/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
+
+function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data

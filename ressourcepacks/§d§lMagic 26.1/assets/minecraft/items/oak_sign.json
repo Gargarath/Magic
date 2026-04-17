@@ -484,6 +484,13 @@
         } 
       },
             {
+        "when": "undo_unpossible",
+        "model": {
+          "type": "model",
+          "model": "item/shop/undo_unpossible"
+        } 
+      },
+            {
         "when": "redo",
         "model": {
           "type": "model",

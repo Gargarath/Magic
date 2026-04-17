@@ -1044,5 +1044,7 @@ data modify storage strings en_en set value {\
 "tr_shop_item_overlay_price_1":"Cost:",\
 "tr_shop_item_overlay_price_2":"coins",\
 "tr_shop_item_overlay_buy_tip":"right-click to buy",\
+"tr_shop_undo_empty":"You have nothing left to undo.",\
+"tr_shop_undo_desactivated":"Undo is disabled.",\
 "tr_shop_item_max_lvl":"Maximum level reached",\
 "tr_shop_item_not_enough_money":"Not enough coins!"}

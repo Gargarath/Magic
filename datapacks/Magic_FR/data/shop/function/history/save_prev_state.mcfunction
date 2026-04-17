@@ -1,7 +1,6 @@
 ## appelee avant de charger un etat d'historique
 # sauvegarde l'etat shop courant dans des objectifs temporaires
 
-scoreboard players operation @s shop_prev_PH = @s PH
 scoreboard players operation @s shop_prev_weapon1 = @s weapon1
 scoreboard players operation @s shop_prev_spell1 = @s spell1
 scoreboard players operation @s shop_prev_spell2 = @s spell2

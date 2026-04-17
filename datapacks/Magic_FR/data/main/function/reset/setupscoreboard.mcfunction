@@ -624,11 +624,16 @@ scoreboard objectives add is_ready dummy
 scoreboard objectives add InShop dummy
 scoreboard objectives add shop_lore_line dummy
 scoreboard objectives add temp_shop dummy
+
+
+# undo/redo
 scoreboard objectives add shop_history_current dummy
 scoreboard objectives add shop_history_max dummy
 scoreboard objectives add shop_history_can_undo dummy
 scoreboard objectives add shop_history_can_redo dummy
-scoreboard objectives add shop_prev_PH dummy
+scoreboard objectives add shop_history_delta_mode dummy
+scoreboard objectives add shop_history_delta_count dummy
+scoreboard objectives add shop_history_price dummy
 scoreboard objectives add shop_prev_weapon1 dummy
 scoreboard objectives add shop_prev_spell1 dummy
 scoreboard objectives add shop_prev_spell2 dummy
@@ -640,22 +645,6 @@ scoreboard objectives add shop_prev_arrow dummy
 scoreboard objectives add shop_prev_maxarrow dummy
 scoreboard objectives add shop_prev_weapon1_max_range_m dummy
 scoreboard objectives add shop_prev_explo_max_range_a dummy
-
-# reset achats
-scoreboard objectives add reset_frameroom trigger
-
-scoreboard objectives add arrow_backup dummy
-scoreboard objectives add maxarrow_backup dummy
-scoreboard objectives add chest_backup dummy
-scoreboard objectives add legs_backup dummy
-scoreboard objectives add boots_backup dummy
-scoreboard objectives add spell1_backup dummy
-scoreboard objectives add spell2_backup dummy
-scoreboard objectives add spell3_backup dummy
-scoreboard objectives add weapon1_max_range_m_backup dummy
-scoreboard objectives add PH_backup dummy
-scoreboard objectives add weapon1_backup dummy
-scoreboard objectives add explo_max_range_a_backup dummy
 
 # shop
 scoreboard objectives add PH dummy

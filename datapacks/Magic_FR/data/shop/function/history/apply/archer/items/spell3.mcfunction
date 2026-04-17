@@ -5,3 +5,5 @@ $execute if score @s spell3 matches 0 run item replace entity @s hotbar.$(slot_s
 execute if score @s spell3 matches 1 run function stuff:stuff_archer/spell3/lvl1 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s spell3 matches 2 run function stuff:stuff_archer/spell3/lvl2 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s spell3 matches 3 run function stuff:stuff_archer/spell3/lvl3 with entity @s EnderItems[0].components.minecraft:custom_data
+
+function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minecraft:custom_data

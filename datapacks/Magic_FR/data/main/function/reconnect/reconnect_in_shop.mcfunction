@@ -57,7 +57,6 @@ attribute @s minecraft:entity_interaction_range base set 3
 attribute @s minecraft:block_interaction_range base set 4.5
 # reset la portée d'interaction block à @s (utilisé dans le shop pour les panneaux du shop)
 
-scoreboard players reset @s reset_frameroom
 scoreboard players reset @s spec_player1
 scoreboard players reset @s spec_player2
 scoreboard players reset @s spec_player3

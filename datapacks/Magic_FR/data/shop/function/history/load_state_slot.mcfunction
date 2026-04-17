@@ -1,7 +1,6 @@
 ## appelee par l'historique du shop
 # recharge un slot storage dans les scores de @s
 
-$execute store result score @s PH run data get storage shop:history player.$(player).states.slot$(slot).PH
 $execute store result score @s weapon1 run data get storage shop:history player.$(player).states.slot$(slot).weapon1
 $execute store result score @s spell1 run data get storage shop:history player.$(player).states.slot$(slot).spell1
 $execute store result score @s spell2 run data get storage shop:history player.$(player).states.slot$(slot).spell2

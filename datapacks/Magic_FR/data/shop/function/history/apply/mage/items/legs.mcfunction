@@ -16,4 +16,5 @@ execute if score @s legs matches 10 run function stuff:stuff_mage/legs/lvl10 wit
 execute if score @s team_side matches 0 run item modify entity @s armor.legs minecraft:armor_change/no_team/mage
 execute if score @s team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/mage
 execute if score @s team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/mage
-say 1
+
+function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data

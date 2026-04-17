@@ -8,6 +8,9 @@ scoreboard players operation @s Player = $current Player
 function main:personnal_data/get_name
 # récupère le nom de @s dans un storage
 
+function shop:history/reset_history with entity @s EnderItems[0].components.minecraft:custom_data
+# initialise l'historique undo / redo
+
 data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
 # récupère la data de @s et la met dans un storage
 data modify storage personnal_storage.temp storage.name set from storage temp name
@@ -27,3 +30,5 @@ function main:start_game/setup_players/setup_player with entity @s EnderItems[0]
 
 execute as @r[scores={Player=0}] run function main:start_game/setup_players/give_player_number
 # réappelle la fonction en boucle tant qu'il y a des joueurs à setup
+
+

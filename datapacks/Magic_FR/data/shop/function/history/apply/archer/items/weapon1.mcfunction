@@ -16,3 +16,5 @@ execute if score @s weapon1 matches 9 run function stuff:stuff_archer/weapon1/lv
 execute if score @s weapon1 matches 10 run function stuff:stuff_archer/weapon1/lvl10 with entity @s EnderItems[0].components.minecraft:custom_data
 
 function stuff:stuff_archer/arrows/classics_unusable/lvlx with entity @s EnderItems[0].components.minecraft:custom_data
+
+function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data

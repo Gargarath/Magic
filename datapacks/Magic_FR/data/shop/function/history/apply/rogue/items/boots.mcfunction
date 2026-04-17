@@ -16,3 +16,5 @@ execute if score @s boots matches 10 run function stuff:stuff_rogue/boots/lvl10 
 execute if score @s[tag=!invisibility_r] team_side matches 0 run item modify entity @s armor.feet minecraft:armor_change/no_team/rogue
 execute if score @s[tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/rogue
 execute if score @s[tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
+
+function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data

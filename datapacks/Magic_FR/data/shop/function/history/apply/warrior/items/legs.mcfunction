@@ -16,3 +16,5 @@ execute if score @s legs matches 10 run function stuff:stuff_warrior/legs/lvl10 
 execute if score @s team_side matches 0 run item modify entity @s armor.legs minecraft:armor_change/no_team/warrior
 execute if score @s team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/warrior
 execute if score @s team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/warrior
+
+function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data

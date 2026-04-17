@@ -16,6 +16,7 @@ execute as @s[tag=mage] run function shop:history/apply/mage/mage with entity @s
 execute as @s[tag=rogue] run function shop:history/apply/rogue/rogue with entity @s EnderItems[0].components.minecraft:custom_data
 tag @s add save_inventory
 
-execute at @s run function main:reset/resetframeroom
+function shop:refresh/money/refresh_money
+
 function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
 function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
