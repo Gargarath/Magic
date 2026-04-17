@@ -624,6 +624,10 @@ scoreboard objectives add is_ready dummy
 scoreboard objectives add InShop dummy
 scoreboard objectives add shop_lore_line dummy
 scoreboard objectives add temp_shop dummy
+scoreboard objectives add shop_history_current dummy
+scoreboard objectives add shop_history_max dummy
+scoreboard objectives add shop_history_can_undo dummy
+scoreboard objectives add shop_history_can_redo dummy
 
 # reset achats
 scoreboard objectives add reset_frameroom trigger

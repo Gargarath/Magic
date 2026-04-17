@@ -11,6 +11,9 @@ $scoreboard players add @s $(item_category) 1
 $function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item en question à @s
 
+function shop:history/push_state with entity @s EnderItems[0].components.minecraft:custom_data
+# ajoute le nouvel etat a l'historique de @s
+
 function shop:refresh/money/refresh_money
 # actualise le compteur de sous de @s
 $function shop:refresh/items/$(item_category) with entity @s EnderItems[0].components.minecraft:custom_data

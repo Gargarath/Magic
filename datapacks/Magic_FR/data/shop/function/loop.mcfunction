@@ -51,10 +51,6 @@ execute as @a[scores={spec_player11=1..}] run function shop:spectate_ppl/player1
 execute as @a[scores={spec_player12=1..}] run function shop:spectate_ppl/player12
 execute as @a[scores={spec_stop=1..}] run function shop:spectate_ppl/stop
 
-                                    ## RESET FRAMEROOM SIGN ##
-
-execute as @a[scores={reset_frameroom=1}] run function shop:reset_frameroom_sign
-
                                         ## READY SIGN ##
 
 execute store result score player playercount if entity @a[scores={Player=1..}]

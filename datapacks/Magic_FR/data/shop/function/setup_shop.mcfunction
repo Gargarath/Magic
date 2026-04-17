@@ -29,3 +29,6 @@ function shop:refresh/items/legs with entity @s EnderItems[0].components.minecra
 # actualise les infos de legs dans le shop de @s
 function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de boots dans le shop de @s
+
+function shop:history/refresh_buttons with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les boutons undo / redo de @s
