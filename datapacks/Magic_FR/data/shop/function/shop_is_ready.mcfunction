@@ -8,8 +8,6 @@ scoreboard players set shop is_working 1
 execute as @a[scores={Player=1..12}] run function shop:history/init with entity @s EnderItems[0].components.minecraft:custom_data
 # initialise l'historique undo / redo des joueurs a l'ouverture du shop
 
-execute at @a[scores={Player=1..12}] at @e[distance=..10,type=marker,tag=shop_room] run data merge block ~-4 ~1 ~ {front_text:{messages:["",{"text":"Historique","color":"gold","bold":true},{"text":"Undo / Redo","color":"white","bold":false},""]}}
-# affiche le nouveau systeme d'historique des achats dans les shops
 
 execute at @a[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
 # enleve les barrier blocs autour des joueurs

@@ -475,6 +475,20 @@
           "type": "model",
           "model": "item/shop/play_button"
         } 
+      },
+            {
+        "when": "undo",
+        "model": {
+          "type": "model",
+          "model": "item/shop/undo"
+        } 
+      },
+            {
+        "when": "redo",
+        "model": {
+          "type": "model",
+          "model": "item/shop/redo"
+        } 
       }
     ]
   }

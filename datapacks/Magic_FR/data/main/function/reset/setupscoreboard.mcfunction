@@ -628,6 +628,18 @@ scoreboard objectives add shop_history_current dummy
 scoreboard objectives add shop_history_max dummy
 scoreboard objectives add shop_history_can_undo dummy
 scoreboard objectives add shop_history_can_redo dummy
+scoreboard objectives add shop_prev_PH dummy
+scoreboard objectives add shop_prev_weapon1 dummy
+scoreboard objectives add shop_prev_spell1 dummy
+scoreboard objectives add shop_prev_spell2 dummy
+scoreboard objectives add shop_prev_spell3 dummy
+scoreboard objectives add shop_prev_chest dummy
+scoreboard objectives add shop_prev_legs dummy
+scoreboard objectives add shop_prev_boots dummy
+scoreboard objectives add shop_prev_arrow dummy
+scoreboard objectives add shop_prev_maxarrow dummy
+scoreboard objectives add shop_prev_weapon1_max_range_m dummy
+scoreboard objectives add shop_prev_explo_max_range_a dummy
 
 # reset achats
 scoreboard objectives add reset_frameroom trigger

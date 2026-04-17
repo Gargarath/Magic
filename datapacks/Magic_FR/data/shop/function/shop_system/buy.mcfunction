@@ -1,15 +1,18 @@
-## appelée par test quand @s peut acheter
+## appelee par test quand @s peut acheter
 # lui fait acheter l'item
 
 execute at @s run playsound minecraft:block.note_block.hat master @s
 
 $scoreboard players remove @s PH $(price)
-# enlève le cout en PH à @s
+# enleve le cout en PH a @s
 $scoreboard players add @s $(item_category) 1
 # ajoute 1 au niveau d'item de @s
 
+function shop:shop_system/apply_configured_scores with entity @s EnderItems[0].components.minecraft:custom_data
+# applique les scores configures sur l'entree achetee
+
 $function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
-# donne l'item en question à @s
+# donne l'item en question a @s
 
 function shop:history/push_state with entity @s EnderItems[0].components.minecraft:custom_data
 # ajoute le nouvel etat a l'historique de @s

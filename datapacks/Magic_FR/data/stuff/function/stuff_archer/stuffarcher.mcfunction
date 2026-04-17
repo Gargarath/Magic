@@ -87,6 +87,7 @@ execute if score @s chest matches 10 run function stuff:stuff_archer/chest/lvl10
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/archer
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/archer
+execute if score @s team_side matches 0 run item modify entity @s armor.chest minecraft:armor_change/no_team/archer
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.chest minecraft:armor_change/no_team/archer
 # personnalise l'armure selon l'équipe de @s
 
@@ -106,6 +107,7 @@ execute if score @s legs matches 10 run function stuff:stuff_archer/legs/lvl10 w
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/archer
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/archer
+execute if score @s team_side matches 0 run item modify entity @s armor.legs minecraft:armor_change/no_team/archer
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.legs minecraft:armor_change/no_team/archer
 # personnalise l'armure selon l'équipe de @s
 
@@ -125,6 +127,7 @@ execute if score @s boots matches 10 run function stuff:stuff_archer/boots/lvl10
 
 execute if score @s[tag=!in_lobby_arena] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/archer
 execute if score @s[tag=!in_lobby_arena] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/archer
+execute if score @s team_side matches 0 run item modify entity @s armor.feet minecraft:armor_change/no_team/archer
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/archer
 # personnalise l'armure selon l'équipe de @s
 

@@ -65,6 +65,7 @@ execute if score @s chest matches 10 run function stuff:stuff_rogue/chest/lvl10 
 
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.chest minecraft:armor_change/blue/rogue
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.chest minecraft:armor_change/red/rogue
+execute if score @s team_side matches 0 run item modify entity @s armor.chest minecraft:armor_change/red/rogue
 execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.chest minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
@@ -85,6 +86,7 @@ execute if score @s legs matches 10 run function stuff:stuff_rogue/legs/lvl10 wi
 
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.legs minecraft:armor_change/blue/rogue
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.legs minecraft:armor_change/red/rogue
+execute if score @s team_side matches 0 run item modify entity @s armor.legs minecraft:armor_change/red/rogue
 execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.legs minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
@@ -105,6 +107,7 @@ execute if score @s boots matches 10 run function stuff:stuff_rogue/boots/lvl10 
 
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 1 run item modify entity @s armor.feet minecraft:armor_change/blue/rogue
 execute if score @s[tag=!in_lobby_arena,tag=!invisibility_r] team_side matches 2 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
+execute if score @s team_side matches 0 run item modify entity @s armor.feet minecraft:armor_change/red/rogue
 execute if entity @s[tag=in_lobby_arena,tag=!invisibility_r] run item modify entity @s armor.feet minecraft:armor_change/no_team/rogue
 # personnalise l'armure selon l'équipe de @s
 
