@@ -3,9 +3,13 @@
 
 data modify storage strings en_en set value {\
 "tr_changed_language":"Your language has been set to: English",\
-"tr_joined_spectator":"You joined spectator mode!",\
-"tr_left_spectator":"You left spectator mode!",\
+"tr_joined_spectator":"You have joined spectator mode!",\
+"tr_left_spectator":"You have left spectator mode!",\
 \
+\
+"tr_gui_options_title":"Options :",\
+"tr_gui_options_quick_options":"Quick options",\
+"tr_gui_options_upgrade":"Upgrade tree",\
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
 "tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
@@ -65,8 +69,8 @@ data modify storage strings en_en set value {\
 "tr_item_team":"Team",\
 "tr_item_class":"Class",\
 "tr_item_spec_mode":"Spectator mode",\
-"tr_item_activated":"Activated",\
-"tr_item_desactivated":"Desactivated",\
+"tr_item_activated":"On",\
+"tr_item_desactivated":"Off",\
 \
 "tr_item_map_visit_spec_mode_name":"Spectator Mode",\
 "tr_item_map_visit_spec_mode_lore_1":"Switch to spectator mode",\

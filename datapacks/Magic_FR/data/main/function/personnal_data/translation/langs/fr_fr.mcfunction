@@ -7,6 +7,10 @@ data modify storage strings fr_fr set value {\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
 \
 \
+"tr_gui_options_title":"Options :",\
+"tr_gui_options_quick_options":"Options rapides",\
+"tr_gui_options_upgrade":"Arbre d'améliorations",\
+\
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
 "tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
 \
@@ -307,8 +311,8 @@ data modify storage strings fr_fr set value {\
 "tr_archer_explosive_arrow_1_lore_2":"Votre prochaine flèche explosera au",\
 "tr_archer_explosive_arrow_1_lore_3":"moindre contact et infligera 12 points",\
 "tr_archer_explosive_arrow_1_lore_4":"de dégats dans un rayon de 3 blocs",\
-"tr_archer_explosive_arrow_3_lore_5":"L'effet de ce sort peut être cumulé avec",\
-"tr_archer_explosive_arrow_3_lore_6":"celui de la flèche de glace.",\
+"tr_archer_explosive_arrow_1_lore_5":"L'effet de ce sort peut être cumulé avec",\
+"tr_archer_explosive_arrow_1_lore_6":"celui de la flèche de glace.",\
 "tr_archer_explosive_arrow_1_lore_7":"Temps de recharge: 25s.",\
 "tr_archer_explosive_arrow_1_lore_8":"-----------------------------------",\
 "tr_archer_explosive_arrow_2_name":"Flèche explosive II",\
