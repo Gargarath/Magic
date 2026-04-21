@@ -3,7 +3,7 @@
 
 
 
-function lobby:check_game_startable/matchmaking/save_class_and_team
+function lobby:check_game_startable/matchmaking/ctf/save_class_and_team
 # sauvegarde les équipes et classes déjà séléctionnées
 
 tag @a[tag=!blue_spectator,tag=!red_spectator] remove mm_needs
@@ -12,9 +12,9 @@ tag @a[scores={class_id=0,Player=0},tag=!blue_spectator,tag=!red_spectator] add 
 #Marquer ceux qui ont besoin d'une assignation (sans équipe OU sans classe)
 
 
-function lobby:check_game_startable/matchmaking/setup_count
+function lobby:check_game_startable/matchmaking/ctf/setup_count
 # Comptes initiaux (servent à équilibrer en tenant compte des choix déjà faits)
 
 
-function lobby:check_game_startable/matchmaking/attribution/attribution_loop
+function lobby:check_game_startable/matchmaking/ctf/attribution/attribution_loop
 # Boucle : prend 1 joueur à la fois (aléatoire), assigne, met à jour les comptes, recommence

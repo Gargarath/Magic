@@ -7,5 +7,5 @@ execute if score $force_launch option_panel matches 0 if score blue playercount 
 execute if score $force_launch option_panel matches 0 if score team_error start_error matches 1.. as @a[scores={operator=2}] run function lobby:cant_start/need_at_least_one_player_by_team
 # Lance la fonction lobby:need_at_least_one_player_by_team si il n'y a pas de joueurs dans l'équipe rouge ou bleu et que y'a pas assez pour combler dans les vide (sauf si on a activé le force_launch)
 
-execute if score player start_error matches 0 run function lobby:check_game_startable/matchmaking/start_matchmaking
+execute if score player start_error matches 0 run function lobby:check_game_startable/matchmaking/ctf/start_matchmaking
 # si il n'y a pas d'erreur -> lance la game

@@ -1,4 +1,4 @@
-# Appelée par lobby:start_sign/start_sign_yes permet de commencer une partie
+# Appelée par pages/main/launch_game permet de commencer une partie
 
 title @a reset
 dialog clear @a

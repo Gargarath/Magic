@@ -1,10 +1,10 @@
 ## appelée par attribution_loop
 # permet d'assigner @s à une classe et une équipe
 
-execute if score @s team_side matches 0 run function lobby:check_game_startable/matchmaking/attribution/pick_team
+execute if score @s team_side matches 0 run function lobby:check_game_startable/matchmaking/ctf/attribution/pick_team
 # donne une équipe à @s si il n'en a pas déjà une
 
-execute if score @s class_id matches 0 run function lobby:check_game_startable/matchmaking/attribution/pick_class
+execute if score @s class_id matches 0 run function lobby:check_game_startable/matchmaking/ctf/attribution/pick_class
 # donne une classe à @s si il n'en a pas déjà une
 
 # Blue
