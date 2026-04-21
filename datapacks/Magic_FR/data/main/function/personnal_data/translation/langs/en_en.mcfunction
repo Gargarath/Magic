@@ -41,6 +41,9 @@ data modify storage strings en_en set value {\
 "tr_item_blue":"Blue",\
 "tr_item_red":"Red",\
 \
+"tr_item_jump_checkpoint":"Last checkpoint",\
+"tr_item_jump_reset":"Reset",\
+\
 "tr_color_change":"Change color",\
 "tr_color_picker_0":"White",\
 "tr_color_picker_1":"Light gray",\

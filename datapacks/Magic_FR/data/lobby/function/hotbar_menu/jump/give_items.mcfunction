@@ -6,8 +6,8 @@ item replace entity @s weapon.offhand with carrot_on_a_stick[item_name=" ",encha
 # deuxième main vide
 
 ## JUMP ITEMS
-item replace entity @s hotbar.3 from block 13 97 11 container.4
-item replace entity @s hotbar.4 from block 13 97 11 container.5
+$item replace entity @s hotbar.3 with carrot_on_a_stick[item_name=[{"color":"green","text":"$(tr_item_jump_checkpoint)"}],custom_data={tp_checkpoint:1b},custom_model_data={strings:["tp_checkpoint"]}] 1
+$item replace entity @s hotbar.4 with carrot_on_a_stick[item_name=[{"bold":true,"color":"dark_red","text":"$(tr_item_jump_reset)"}],custom_data={reset_jump:1b},custom_model_data={strings:["back_to_menu"]}] 1
 
 
 ## LIVRE ADMIN

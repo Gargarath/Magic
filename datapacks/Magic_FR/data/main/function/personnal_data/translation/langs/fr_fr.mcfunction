@@ -41,6 +41,8 @@ data modify storage strings fr_fr set value {\
 "tr_item_blue":"Bleue",\
 "tr_item_red":"Rouge",\
 \
+"tr_item_jump_checkpoint":"Dernier checkpoint",\
+"tr_item_jump_reset":"Annuler",\
 \
 "tr_color_change":"Choix de couleur",\
 "tr_color_picker_0":"Blanc",\
