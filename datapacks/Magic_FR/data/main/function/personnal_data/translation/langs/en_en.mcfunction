@@ -10,6 +10,28 @@ data modify storage strings en_en set value {\
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
 "tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
 \
+"tr_item_back":"Back",\
+\
+"tr_color_change":"Change color",\
+"tr_color_picker_0":"White",\
+"tr_color_picker_1":"Light gray",\
+"tr_color_picker_2":"Gray",\
+"tr_color_picker_3":"Black",\
+"tr_color_picker_4":"Light blue",\
+"tr_color_picker_5":"Cyan",\
+"tr_color_picker_6":"Blue",\
+"tr_color_picker_7":"Dark blue",\
+"tr_color_picker_8":"Green",\
+"tr_color_picker_9":"Dark green",\
+"tr_color_picker_10":"Pink",\
+"tr_color_picker_11":"Purple",\
+"tr_color_picker_12":"Red",\
+"tr_color_picker_13":"Dark red",\
+"tr_color_picker_14":"Yellow",\
+"tr_color_picker_15":"Gold",\
+\
+"tr_last_page":"Previous page",\
+"tr_next_page":"Next page",\
 \
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\

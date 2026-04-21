@@ -10,16 +10,16 @@ item replace entity @s weapon.offhand with carrot_on_a_stick[item_name=" ",encha
 # deuxième main vide
 
 # items page précédente
-item replace entity @s hotbar.0 from block 13 97 14 container.16
+$item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"bold":true,"color":"gray","text":"$(tr_last_page)"},custom_data={previous_page:1b},custom_model_data={strings:["left_arrow"]}] 1
 
 ## COLOR ITEMS PAGE 1
-execute if score @s hotbar_menu matches 6 run function lobby:hotbar_menu/color_picker/page1/give_items
+execute if score @s hotbar_menu matches 6 run function lobby:hotbar_menu/color_picker/page1/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 ## COLOR ITEMS PAGE 2
-execute if score @s hotbar_menu matches 7 run function lobby:hotbar_menu/color_picker/page2/give_items
+execute if score @s hotbar_menu matches 7 run function lobby:hotbar_menu/color_picker/page2/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 ## COLOR ITEMS PAGE 3
-execute if score @s hotbar_menu matches 8 run function lobby:hotbar_menu/color_picker/page3/give_items
+execute if score @s hotbar_menu matches 8 run function lobby:hotbar_menu/color_picker/page3/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 # items page suivante
-item replace entity @s hotbar.8 from block 13 97 14 container.17
+$item replace entity @s hotbar.8 with carrot_on_a_stick[custom_name={"bold":true,"color":"gray","text":"$(tr_next_page)"},custom_data={next_page:1b},custom_model_data={strings:["right_arrow"]}] 1
 
 execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1

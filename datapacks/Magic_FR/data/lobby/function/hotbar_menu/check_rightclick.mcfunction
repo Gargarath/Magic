@@ -21,9 +21,9 @@ execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{se
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{island_selector:1b}}}} run return run function lobby:hotbar_menu/island_selector/give_items
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{class_selector:1b}}}} run return run function lobby:hotbar_menu/class_selector/give_items
-execute if score $gamemode option_panel matches 0 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{color_selector:1b}}}} run return run function lobby:hotbar_menu/color_picker/give_items
+execute if score $gamemode option_panel matches 0 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{color_selector:1b}}}} run return run function lobby:hotbar_menu/color_picker/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score $gamemode option_panel matches 1 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{team_selector:1b}}}} run return run function lobby:hotbar_menu/team_selector/give_items
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{back_to_menu:1b}}}} run return run function lobby:hotbar_menu/main/give_items
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{back_to_menu:1b}}}} run return run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s hotbar_menu matches 6..8 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{previous_page:1b}}}} run return run function lobby:hotbar_menu/color_picker/previous_page
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_white_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/0_white

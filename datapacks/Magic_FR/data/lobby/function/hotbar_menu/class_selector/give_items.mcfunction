@@ -11,5 +11,5 @@ item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"bold":true,
 item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"bold":true,"color":"dark_purple","text":"Mage"},custom_data={select_mage:1b},custom_model_data={strings:["select_mage"]}] 1
 item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name={"bold":true,"color":"gray","text":"Assassin"},custom_data={select_rogue:1b},custom_model_data={strings:["select_rogue"]}] 1
 item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name={"bold":true,"color":"yellow","text":"Aléatoire"},custom_data={select_random_class:1b},custom_model_data={strings:["select_random_class"]}] 1
-item replace entity @s hotbar.8 from block 13 97 11 container.8
+$item replace entity @s hotbar.8 with carrot_on_a_stick[custom_name={"bold":true,"color":"red","text":"$(tr_item_back)"},custom_data={back_to_menu:1b},custom_model_data={strings:["back_to_menu"]}] 1
 scoreboard players set @s hotbar_menu 1

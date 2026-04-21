@@ -20,7 +20,7 @@ item replace entity @s[tag=rogue] hotbar.1 with carrot_on_a_stick[item_name=[{"b
 
 ## COLOR PICKER (FFA)
 
-execute if score $gamemode option_panel matches 0 run function lobby:hotbar_menu/color_picker/give_color_picker
+execute if score $gamemode option_panel matches 0 run function lobby:hotbar_menu/color_picker/give_color_picker with entity @s EnderItems[0].components.minecraft:custom_data
 
 ## TEAM SELECTOR (CTF)
 

@@ -10,6 +10,28 @@ data modify storage strings fr_fr set value {\
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
 "tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
 \
+"tr_item_back":"Retour",\
+\
+"tr_color_change":"Choix de couleur",\
+"tr_color_picker_0":"Blanc",\
+"tr_color_picker_1":"Gris clair",\
+"tr_color_picker_2":"Gris",\
+"tr_color_picker_3":"Noir",\
+"tr_color_picker_4":"Bleu clair",\
+"tr_color_picker_5":"Cyan",\
+"tr_color_picker_6":"Bleu",\
+"tr_color_picker_7":"Bleu foncé",\
+"tr_color_picker_8":"Vert clair",\
+"tr_color_picker_9":"Vert foncé",\
+"tr_color_picker_10":"Rose",\
+"tr_color_picker_11":"Violet",\
+"tr_color_picker_12":"Rouge",\
+"tr_color_picker_13":"Rouge foncé",\
+"tr_color_picker_14":"Jaune",\
+"tr_color_picker_15":"Doré",\
+\
+"tr_last_page":"Page précédente",\
+"tr_next_page":"Page suivante",\
 \
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
