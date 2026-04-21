@@ -168,7 +168,7 @@ function main:personnal_data/translation/change_language/change_language
 # fait changer @s de langue (le passe en fr)
 # ----------------------------------------------------------
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # Donne les item de hotbar
 
 bossbar set minecraft:aaa_placeholder players @a

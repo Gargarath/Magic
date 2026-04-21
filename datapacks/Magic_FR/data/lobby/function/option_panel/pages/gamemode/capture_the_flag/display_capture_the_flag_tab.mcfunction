@@ -10,8 +10,8 @@ function main:gui/display/refresh_gui
 
 scoreboard players set $gamemode option_panel 1
 
-execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items
-execute as @a[scores={hotbar_menu=6..8}] run function lobby:hotbar_menu/main/give_items
+execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=6..8}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # refresh l'inventaire des joueurs du lobby qui ont l'option de choisir une couleur
 
 function lobby:team_selector/team_disabler/team_statues_on

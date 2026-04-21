@@ -10,7 +10,7 @@ function lobby:jump/jump_timer
 function lobby:jump/jump1/pr/convert_checkpoint
 # convertit le temps de chaque checkpoint en secondes pour @s
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet @s sur le bon menu de hotbar
 
 execute at @s run playsound entity.player.levelup master @s ~ ~ ~ 100 1

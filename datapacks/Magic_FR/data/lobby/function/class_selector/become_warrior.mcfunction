@@ -5,7 +5,7 @@ function lobby:class_selector/give_classes/warrior
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s {"text":"Vous êtes devenu un Guerrier !","color":"gold","bold":false}
+tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_became_warrior","color":"gold","bold":false,plain:true}
 
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/left_blue
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/sort_blue

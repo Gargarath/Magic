@@ -12,6 +12,36 @@ data modify storage strings fr_fr set value {\
 \
 "tr_item_back":"Retour",\
 \
+"tr_item_select_warrior":"Guerrier",\
+"tr_item_select_archer":"Archer",\
+"tr_item_select_mage":"Mage",\
+"tr_item_select_rogue":"Assassin",\
+"tr_item_select_random":"Aléatoire",\
+\
+"tr_became_warrior":"Vous êtes devenu Guerrier !",\
+"tr_became_archer":"Vous êtes devenu Archer !",\
+"tr_became_mage":"Vous êtes devenu Mage !",\
+"tr_became_rogue":"Vous êtes devenu Assassin !",\
+"tr_became_random":"Votre classe sera choisie aléatoirement !",\
+"tr_already_warrior":"Vous êtes déjà Guerrier !",\
+"tr_already_archer":"Vous êtes déjà Archer !",\
+"tr_already_mage":"Vous êtes déjà Mage !",\
+"tr_already_rogue":"Vous êtes déjà Assassin !",\
+"tr_already_random":"Vous êtes déjà en Aléatoire !",\
+\
+"tr_item_select_island":"Menu de jeu",\
+"tr_item_select_main_island":"Île principale",\
+"tr_item_select_stats_island":"Île de statistiques",\
+"tr_item_select_map_island":"Visiter les arènes",\
+"tr_item_select_jump_island":"Île de jump",\
+\
+"tr_became_team_blue":"Vous avez rejoint l'équipe bleue !",\
+"tr_became_team_red":"Vous avez rejoint l'équipe rouge !",\
+"tr_became_team_random":"Votre équipe sera choisie aléatoirement !",\
+"tr_item_blue":"Bleue",\
+"tr_item_red":"Rouge",\
+\
+\
 "tr_color_change":"Choix de couleur",\
 "tr_color_picker_0":"Blanc",\
 "tr_color_picker_1":"Gris clair",\

@@ -1,7 +1,7 @@
 ## appelée par check_join si @s a le droit de se se tp sur la jump island
 # permet de tp @s sur la jump island
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet la page principale
 
 tag @s[tag=in_podium] remove in_podium

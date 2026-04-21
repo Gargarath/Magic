@@ -27,7 +27,7 @@ execute unless entity @s[nbt={Fire:-20s}] run effect give @s minecraft:fire_resi
 
 effect give @s minecraft:instant_health 1 10 true
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 tp @s 0.5 100 0.5 180 0
 
 execute unless entity @s[nbt={Fire:-20s}] run schedule function lobby:arena/clear_fire 1t

@@ -6,5 +6,5 @@ tp @s -93.92 99.00 -1.53 -629.89 1.80
 tag @s remove jumping
 tag @s remove jumping_2
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet @s sur le bon menu de hotbar

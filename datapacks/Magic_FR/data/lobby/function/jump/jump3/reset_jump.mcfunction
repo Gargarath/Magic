@@ -9,5 +9,5 @@ tag @s remove jumping_3
 execute if entity @s[tag=jump_hide_close_players] run function lobby:jump/hide_close_player/no_more_invisible
 # si @s est invisible -> lui enlève
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet @s sur le bon menu de hotbar

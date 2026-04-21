@@ -3,4 +3,4 @@
 
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0
 
-tellraw @s {"text":"Vous êtes déjà Archer !","color":"red","bold":false}
+tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_already_archer","color":"red","bold":false,plain:true}

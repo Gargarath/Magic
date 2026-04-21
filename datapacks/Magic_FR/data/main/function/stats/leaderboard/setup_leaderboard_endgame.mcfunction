@@ -14,7 +14,7 @@ execute if data storage minecraft:matchinfo {last_game_gamemode:1b} run function
 execute as @a[scores={Player_last_game=1..}] run function main:stats/stats_book/give_stat_books
 # lance le système de livre de stats
 
-execute as @a run function lobby:hotbar_menu/main/give_items
+execute as @a run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if data storage minecraft:matchinfo {last_game_gamemode:0b} run scoreboard players set current_page leaderboard 101
 execute if data storage minecraft:matchinfo {last_game_gamemode:1b} run scoreboard players set current_page leaderboard 1

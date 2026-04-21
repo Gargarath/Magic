@@ -9,7 +9,7 @@ scoreboard players reset @s blue_flag
 scoreboard players reset @s red_spawn
 scoreboard players reset @s red_flag
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 gamemode adventure @s[gamemode=spectator]
 tp @s 76 99 0 -90 0

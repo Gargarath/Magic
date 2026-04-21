@@ -8,8 +8,8 @@ execute unless score $gamemode option_panel matches 0 as @a[scores={Player=-1}] 
 
 scoreboard players set $gamemode option_panel 0
 
-execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items
-execute as @a[scores={hotbar_menu=2}] run function lobby:hotbar_menu/main/give_items
+execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=2}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # refresh l'inventaire des joueurs du lobby qui ont l'option de choisir une équipe
 
 function lobby:team_selector/display_team_members/blue/remove_member

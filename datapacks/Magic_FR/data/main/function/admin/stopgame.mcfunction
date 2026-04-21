@@ -182,7 +182,7 @@ scoreboard players set yes used_reset 1
 scoreboard players reset * Player_last_game
 # reset le numéro des gens qui ont joué la game (pour pas que ça donne les stats)
 
-execute as @a run function lobby:hotbar_menu/main/give_items
+execute as @a run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # donne les items dans l'inventaire
 
 function lobby:arena/leaderboard/setup_leaderboard

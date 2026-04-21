@@ -1,7 +1,7 @@
 ## appelée par check_rightclick quand @s veut se tp sur la stats island
 # permet de tp @s sur la stats island
 
-function lobby:hotbar_menu/main/give_items
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet la page principale
 
 execute if entity @s[tag=in_map_display] run function lobby:map_island/quit_maps

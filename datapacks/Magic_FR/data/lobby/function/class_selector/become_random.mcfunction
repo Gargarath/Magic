@@ -12,8 +12,8 @@ function lobby:team_selector/give_lobby_team
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s {"bold":false,"color":"yellow","text":"Votre classe sera choisie aléatoirement !"}
-function lobby:hotbar_menu/main/give_items
+tellraw @s {"bold":false,"color":"yellow",entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_became_random",plain:true}
+function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/left_blue
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/sort_blue

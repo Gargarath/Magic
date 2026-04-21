@@ -12,6 +12,35 @@ data modify storage strings en_en set value {\
 \
 "tr_item_back":"Back",\
 \
+"tr_item_select_warrior":"Warrior",\
+"tr_item_select_archer":"Archer",\
+"tr_item_select_mage":"Mage",\
+"tr_item_select_rogue":"Rogue",\
+"tr_item_select_random":"Random",\
+\
+"tr_became_warrior":"Vous became a Warrior!",\
+"tr_became_archer":"Vous became an Archer!",\
+"tr_became_mage":"Vous became a Mage!",\
+"tr_became_rogue":"Vous became a Rogue!",\
+"tr_became_random":"Your class will be set randomly!",\
+"tr_already_warrior":"You are already a Warrior!",\
+"tr_already_archer":"You are already an Archer!",\
+"tr_already_mage":"You are already a Mage!",\
+"tr_already_rogue":"You are already a Rogue!",\
+"tr_already_random":"You are already set as Random!",\
+\
+"tr_item_select_island":"Game menu",\
+"tr_item_select_main_island":"Main island",\
+"tr_item_select_stats_island":"Stats island",\
+"tr_item_select_map_island":"Map island",\
+"tr_item_select_jump_island":"Jump island",\
+\
+"tr_became_team_blue":"You have joined team blue!",\
+"tr_became_team_red":"You have joined team red!",\
+"tr_became_team_random":"Your team will be set randomly!",\
+"tr_item_blue":"Blue",\
+"tr_item_red":"Red",\
+\
 "tr_color_change":"Change color",\
 "tr_color_picker_0":"White",\
 "tr_color_picker_1":"Light gray",\
