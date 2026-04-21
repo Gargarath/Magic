@@ -31,9 +31,9 @@ execute if score $gamemode option_panel matches 1 run item replace entity @s[tag
 # donne l'item en fonction de la team de @s
 
 ## SPECTATOR SELECTOR
-item replace entity @s[scores={Player=0}] hotbar.6 with carrot_on_a_stick[item_name=[{"bold":true,"color":"gray","text":"Mode spectateur ("},{"bold":true,"color":"red","italic":true,"text":"désactivé"},{"bold":true,"color":"gray","text":")"}],custom_data={join_spectator:1b},custom_model_data={strings:["join_spectator"]}] 1
+$item replace entity @s[scores={Player=0}] hotbar.6 with carrot_on_a_stick[item_name=[{"bold":true,"color":"gray","text":"$(tr_item_spec_mode) ("},{"bold":true,"color":"red","italic":true,"text":"$(tr_item_desactivated)"},{"bold":true,"color":"gray","text":")"}],custom_data={join_spectator:1b},custom_model_data={strings:["join_spectator"]}] 1
 
-execute if entity @s[scores={Player=-1}] run function lobby:hotbar_menu/main/give_spectator_item
+execute if entity @s[scores={Player=-1}] run function lobby:hotbar_menu/main/give_spectator_item with entity @s EnderItems[0].components.minecraft:custom_data
 ## LIVRE DE STATS
 item replace entity @s[scores={Player_last_game=1}] hotbar.7 from block 13 97 13 container.1
 item replace entity @s[scores={Player_last_game=2}] hotbar.7 from block 13 97 13 container.2

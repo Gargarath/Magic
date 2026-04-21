@@ -33,6 +33,12 @@ data modify storage strings en_en set value {\
 "tr_last_page":"Previous page",\
 "tr_next_page":"Next page",\
 \
+"tr_item_team":"Team",\
+"tr_item_class":"Class",\
+"tr_item_spec_mode":"Spectator mode",\
+"tr_item_activated":"Activated",\
+"tr_item_desactivated":"Desactivated",\
+\
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\
 "tr_warrior_weapon1_1_name":"Battle Axe I",\

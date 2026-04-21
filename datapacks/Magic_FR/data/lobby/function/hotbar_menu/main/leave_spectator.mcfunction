@@ -11,10 +11,9 @@ tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr
 function lobby:team_selector/leave_team/leave_spectator
 # enlève @s des spectator
 
-
 ## REND LES ITEMS
 
-item replace entity @s hotbar.6 with carrot_on_a_stick[item_name=[{"bold":true,"color":"gray","text":"Mode spectateur ("},{"bold":true,"color":"red","italic":true,"text":"désactivé"},{"bold":true,"color":"gray","text":")"}],custom_data={join_spectator:1b},custom_model_data={strings:["join_spectator"]}] 1
+$item replace entity @s hotbar.6 with carrot_on_a_stick[item_name=[{"bold":true,"color":"gray","text":"$(tr_item_spec_mode) ("},{"bold":true,"color":"red","italic":true,"text":"$(tr_item_desactivated)"},{"bold":true,"color":"gray","text":")"}],custom_data={join_spectator:1b},custom_model_data={strings:["join_spectator"]}] 1
 
 
 item replace entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] hotbar.1 with carrot_on_a_stick[item_name=[{"bold":true,"color":"yellow","text":"Classe : "},{"bold":true,"color":"light_purple","italic":true,"text":"Aléatoire"}],custom_data={class_selector:1b},custom_model_data={strings:["class_selector"]}] 1

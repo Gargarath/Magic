@@ -33,6 +33,12 @@ data modify storage strings fr_fr set value {\
 "tr_last_page":"Page précédente",\
 "tr_next_page":"Page suivante",\
 \
+"tr_item_team":"Equipe",\
+"tr_item_class":"Classe",\
+"tr_item_spec_mode":"Mode spectateur",\
+"tr_item_activated":"Activé",\
+"tr_item_desactivated":"Désactivé",\
+\
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
 "tr_warrior_weapon1_1_name":"Hache de bataille I",\
