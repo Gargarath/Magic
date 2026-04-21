@@ -114,7 +114,6 @@ data modify storage ressources rogue.spells.spell3lvl1.name set value {"text":"B
 data modify storage ressources gui.bottom_right_side.title set value {"text":"Options :                      "}
 data modify storage ressources gui.bottom_right_side.line1 set value {"text":" : Options rapides        '"}
 data modify storage ressources gui.bottom_right_side.line2 set value {"text":" : Arbre d'améliorations "}
-data modify storage ressources gui.in_spawn set value {"text":"Vous êtes dans votre zone de réapparition.","color":"green","bold":false}
 
 data modify storage ressources maps.1.name set value {"text":"Pirate","bold":false,"color":"blue"}
 data modify storage ressources maps.2.name set value {"text":"Cimetière","bold":false,"color":"red"}
