@@ -41,9 +41,6 @@ data modify storage strings en_en set value {\
 "tr_item_blue":"Blue",\
 "tr_item_red":"Red",\
 \
-"tr_item_jump_checkpoint":"Last checkpoint",\
-"tr_item_jump_reset":"Reset",\
-\
 "tr_color_change":"Change color",\
 "tr_color_picker_0":"White",\
 "tr_color_picker_1":"Light gray",\
@@ -70,6 +67,25 @@ data modify storage strings en_en set value {\
 "tr_item_spec_mode":"Spectator mode",\
 "tr_item_activated":"Activated",\
 "tr_item_desactivated":"Desactivated",\
+\
+"tr_item_map_visit_spec_mode_name":"Spectator Mode",\
+"tr_item_map_visit_spec_mode_lore_1":"Switch to spectator mode",\
+"tr_item_map_visit_blue_flag_name":"Blue flag",\
+"tr_item_map_visit_blue_flag_lore_1":"Teleport to the",\
+"tr_item_map_visit_blue_flag_lore_2":"blue flag!",\
+"tr_item_map_visit_red_flag_name":"Red flag",\
+"tr_item_map_visit_red_flag_lore_1":"Teleport to the",\
+"tr_item_map_visit_red_flag_lore_2":"red flag !",\
+"tr_item_map_visit_blue_spawn_name":"Blue spawn",\
+"tr_item_map_visit_blue_spawn_lore_1":"Teleport to the",\
+"tr_item_map_visit_blue_spawn_lore_2":"blue spawn!",\
+"tr_item_map_visit_red_spawn_name":"Red spawn",\
+"tr_item_map_visit_red_spawn_lore_1":"Teleport to the",\
+"tr_item_map_visit_red_spawn_lore_2":"red spawn!",\
+"tr_item_map_visit_quit_name":"Quit map",\
+\
+"tr_item_jump_checkpoint":"Last checkpoint",\
+"tr_item_jump_reset":"Reset",\
 \
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\

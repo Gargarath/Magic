@@ -9,7 +9,7 @@ scoreboard players enable @s red_spawn
 scoreboard players enable @s red_flag
 # active les commandes
 
-function lobby:hotbar_menu/map_visit/give_items
+function lobby:hotbar_menu/map_visit/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # donne les objets de visite de map à @s
 
 gamemode spectator @s

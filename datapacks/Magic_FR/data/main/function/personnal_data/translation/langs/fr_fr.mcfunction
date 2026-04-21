@@ -41,9 +41,6 @@ data modify storage strings fr_fr set value {\
 "tr_item_blue":"Bleue",\
 "tr_item_red":"Rouge",\
 \
-"tr_item_jump_checkpoint":"Dernier checkpoint",\
-"tr_item_jump_reset":"Annuler",\
-\
 "tr_color_change":"Choix de couleur",\
 "tr_color_picker_0":"Blanc",\
 "tr_color_picker_1":"Gris clair",\
@@ -70,6 +67,25 @@ data modify storage strings fr_fr set value {\
 "tr_item_spec_mode":"Mode spectateur",\
 "tr_item_activated":"Activé",\
 "tr_item_desactivated":"Désactivé",\
+\
+"tr_item_map_visit_spec_mode_name":"Mode spectateur",\
+"tr_item_map_visit_spec_mode_lore_1":"Passer en mode spectateur",\
+"tr_item_map_visit_blue_flag_name":"Drapeau bleu",\
+"tr_item_map_visit_blue_flag_lore_1":"Téléportez vous au",\
+"tr_item_map_visit_blue_flag_lore_2":"drapeau bleu !",\
+"tr_item_map_visit_red_flag_name":"Drapeau rouge",\
+"tr_item_map_visit_red_flag_lore_1":"Téléportez vous au",\
+"tr_item_map_visit_red_flag_lore_2":"drapeau rouge !",\
+"tr_item_map_visit_blue_spawn_name":"Spawn bleu",\
+"tr_item_map_visit_blue_spawn_lore_1":"Téléportez vous au",\
+"tr_item_map_visit_blue_spawn_lore_2":"spawn bleu !",\
+"tr_item_map_visit_red_spawn_name":"Spawn rouge",\
+"tr_item_map_visit_red_spawn_lore_1":"Téléportez vous au",\
+"tr_item_map_visit_red_spawn_lore_2":"spawn rouge !",\
+"tr_item_map_visit_quit_name":"Quitter l'arène",\
+\
+"tr_item_jump_checkpoint":"Dernier checkpoint",\
+"tr_item_jump_reset":"Annuler",\
 \
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
