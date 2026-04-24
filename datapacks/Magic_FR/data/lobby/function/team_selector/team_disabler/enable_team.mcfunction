@@ -1,6 +1,8 @@
 ## appelée lorsque l'on passe en mode CTF
 # permet de redonner l'équipe de @s et de le sortir du mode FFA
 
+scoreboard players set $gamemode option_panel 1
+
 scoreboard players operation @s team_side = @s team_side_save
 
 execute if score @s team_side matches 0 run function lobby:team_selector/join_team/random

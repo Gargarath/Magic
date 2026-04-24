@@ -1,6 +1,8 @@
 ## appelée lorsque l'on passe en mode FFA
 # permet de save l'équipe de @s et de le mettre en mode FFA
 
+scoreboard players set $gamemode option_panel 0
+
 scoreboard players operation @s team_side_save = @s team_side
 
 function lobby:team_selector/join_team/random
