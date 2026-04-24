@@ -9,7 +9,7 @@ function lobby:team_selector/join_team/random
 # rend @s sans équipe
 
 tag @s[tag=!in_lobby_arena] add no_team
-scoreboard players reset @s team_side
+scoreboard players set @s team_side 0
 # rend @s en mode FFA
 execute as @a[tag=no_team,scores={InLobby=1,Player=0..}] unless score @s ffa_lobby_slot matches 1.. run function lobby:team_selector/give_ffa_lobby_team/assign_slot
 execute as @a[tag=no_team,scores={InLobby=1,Player=0..,ffa_lobby_slot=1..}] run function lobby:team_selector/give_ffa_lobby_team/refresh_slot
