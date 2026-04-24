@@ -2,9 +2,8 @@
 # permet de mettre la bonne équipe à @s
 
 # SI FFA
-execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Player=0..}] unless score @s ffa_lobby_slot matches 1.. run function lobby:team_selector/give_ffa_lobby_team/assign_slot
-execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Player=0..,ffa_lobby_slot=1..}] run return run function lobby:team_selector/give_ffa_lobby_team/refresh_slot
-
+execute if score $gamemode option_panel matches 0 as @s[scores={Player=0..,team_side=0}] unless score @s ffa_lobby_slot matches 1.. run function lobby:team_selector/give_ffa_lobby_team/assign_slot
+execute if score $gamemode option_panel matches 0 as @s[scores={Player=0..,ffa_lobby_slot=1..,team_side=0}] run return run function lobby:team_selector/give_ffa_lobby_team/refresh_slot
 
 # SI CTF
 

@@ -8,8 +8,8 @@ scoreboard players set @s cooldown2_clock -1
 scoreboard players set @s cooldown3_clock -1
 # met en pause les cooldown
 
-tag @s remove no_team
-# enleve le fait que @s n'a pas d'équipe (pour le système de spell)
+execute if score $gamemode option_panel matches 0 run tag @s remove no_team
+# enleve le fait que @s n'a pas d'équipe (pour le système de spell) - si on est en CTF
 
 function main:reset/resetspells/generic
 # reset tout ce qui est lié au spell pour @s
