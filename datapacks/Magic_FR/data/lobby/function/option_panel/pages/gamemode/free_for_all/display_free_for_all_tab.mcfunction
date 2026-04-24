@@ -2,14 +2,14 @@
 # permet d'afficher le menu -> mode de jeu FFA
 
 
-execute unless score $gamemode option_panel matches 0 as @a[scores={Player=0}] run function lobby:team_selector/team_disabler/disable_team
+execute unless score $gamemode option_panel matches 0 as @a[scores={Player=0..}] run function lobby:team_selector/team_disabler/disable_team
 execute unless score $gamemode option_panel matches 0 as @a[scores={Player=-1}] run function lobby:team_selector/team_disabler/disable_team_spec
 # si on est pas déjà en mode FFA -> enlève les joueurs dans les équipes
 
 scoreboard players set $gamemode option_panel 0
 
-execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
-execute as @a[scores={hotbar_menu=2}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=0},tag=!in_lobby_arena] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=2},tag=!in_lobby_arena] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # refresh l'inventaire des joueurs du lobby qui ont l'option de choisir une équipe
 
 function lobby:team_selector/display_team_members/blue/remove_member

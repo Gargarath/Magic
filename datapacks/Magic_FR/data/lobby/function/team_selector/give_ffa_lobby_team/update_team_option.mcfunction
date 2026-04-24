@@ -12,7 +12,7 @@ $execute if entity @s[tag=mage,scores={operator=2}] run team modify lobby_ffa_$(
 $execute if entity @s[tag=rogue,scores={operator=2}] run team modify lobby_ffa_$(slot) prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE604 ","color":"white"}]
 
 
-$team modify lobby_ffa_$(slot) color white
+$execute if score @s opt_color matches 0 run team modify lobby_ffa_$(slot) color white
 $execute if score @s opt_color matches 1 run team modify lobby_ffa_$(slot) color gray
 $execute if score @s opt_color matches 2 run team modify lobby_ffa_$(slot) color dark_gray
 $execute if score @s opt_color matches 3 run team modify lobby_ffa_$(slot) color black

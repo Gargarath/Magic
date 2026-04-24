@@ -2,7 +2,7 @@
 # permet d'afficher le menu -> mode de jeu CTF
 
 
-execute unless score $gamemode option_panel matches 1 as @a[scores={Player=0}] run function lobby:team_selector/team_disabler/enable_team
+execute unless score $gamemode option_panel matches 1 as @a[scores={Player=0..}] run function lobby:team_selector/team_disabler/enable_team
 execute unless score $gamemode option_panel matches 1 as @a[scores={Player=-1}] run function lobby:team_selector/team_disabler/enable_team_spec
 # si on est pas déjà en mode CTF -> remet les joueurs dans les équipes
 function main:gui/display/refresh_gui
@@ -10,8 +10,8 @@ function main:gui/display/refresh_gui
 
 scoreboard players set $gamemode option_panel 1
 
-execute as @a[scores={hotbar_menu=0}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
-execute as @a[scores={hotbar_menu=6..8}] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=0},tag=!in_lobby_arena] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={hotbar_menu=6..8},tag=!in_lobby_arena] run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # refresh l'inventaire des joueurs du lobby qui ont l'option de choisir une couleur
 
 function lobby:team_selector/team_disabler/team_statues_on

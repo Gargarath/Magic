@@ -6,7 +6,6 @@ execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Play
 execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Player=0..,ffa_lobby_slot=1..}] run return run function lobby:team_selector/give_ffa_lobby_team/refresh_slot
 
 
-
 # SI CTF
 
 team join lobby @s[tag=!blue_team,tag=!red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=0}]
