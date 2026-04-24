@@ -4,6 +4,7 @@ tag @s add initialised
 scoreboard players set @s InLobby 1
 scoreboard players set @s InShop 0
 scoreboard players set @s Player 0
+scoreboard players set @s ffa_lobby_slot 0
 scoreboard players set @s is_ready 0
 scoreboard players set @s IsAlive 0
 scoreboard players set @s save_flag_time 0

@@ -287,3 +287,63 @@ team add player12
 team modify player12 nametagVisibility never
 team modify player12 prefix {"text":"\uE601 ","color":white}
 team modify player12 color white
+
+team add lobby_ffa_1
+team modify lobby_ffa_1 nametagVisibility always
+team modify lobby_ffa_1 prefix {"text":"","color":"white"}
+team modify lobby_ffa_1 color white
+
+team add lobby_ffa_2
+team modify lobby_ffa_2 nametagVisibility always
+team modify lobby_ffa_2 prefix {"text":"","color":"white"}
+team modify lobby_ffa_2 color white
+
+team add lobby_ffa_3
+team modify lobby_ffa_3 nametagVisibility always
+team modify lobby_ffa_3 prefix {"text":"","color":"white"}
+team modify lobby_ffa_3 color white
+
+team add lobby_ffa_4
+team modify lobby_ffa_4 nametagVisibility always
+team modify lobby_ffa_4 prefix {"text":"","color":"white"}
+team modify lobby_ffa_4 color white
+
+team add lobby_ffa_5
+team modify lobby_ffa_5 nametagVisibility always
+team modify lobby_ffa_5 prefix {"text":"","color":"white"}
+team modify lobby_ffa_5 color white
+
+team add lobby_ffa_6
+team modify lobby_ffa_6 nametagVisibility always
+team modify lobby_ffa_6 prefix {"text":"","color":"white"}
+team modify lobby_ffa_6 color white
+
+team add lobby_ffa_7
+team modify lobby_ffa_7 nametagVisibility always
+team modify lobby_ffa_7 prefix {"text":"","color":"white"}
+team modify lobby_ffa_7 color white
+
+team add lobby_ffa_8
+team modify lobby_ffa_8 nametagVisibility always
+team modify lobby_ffa_8 prefix {"text":"","color":"white"}
+team modify lobby_ffa_8 color white
+
+team add lobby_ffa_9
+team modify lobby_ffa_9 nametagVisibility always
+team modify lobby_ffa_9 prefix {"text":"","color":"white"}
+team modify lobby_ffa_9 color white
+
+team add lobby_ffa_10
+team modify lobby_ffa_10 nametagVisibility always
+team modify lobby_ffa_10 prefix {"text":"","color":"white"}
+team modify lobby_ffa_10 color white
+
+team add lobby_ffa_11
+team modify lobby_ffa_11 nametagVisibility always
+team modify lobby_ffa_11 prefix {"text":"","color":"white"}
+team modify lobby_ffa_11 color white
+
+team add lobby_ffa_12
+team modify lobby_ffa_12 nametagVisibility always
+team modify lobby_ffa_12 prefix {"text":"","color":"white"}
+team modify lobby_ffa_12 color white

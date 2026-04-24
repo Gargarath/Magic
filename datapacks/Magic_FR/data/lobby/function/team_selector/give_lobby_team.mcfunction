@@ -1,6 +1,14 @@
 ## appelée par end_game join_blueteam join_redteam... (chaque fois que @s change d'équipe vers une équipe du lobby)
 # permet de mettre la bonne équipe à @s
 
+# SI FFA
+execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Player=0..}] unless score @s ffa_lobby_slot matches 1.. run function lobby:team_selector/give_ffa_lobby_team/assign_slot
+execute if score $gamemode option_panel matches 0 as @s[tag=no_team,scores={Player=0..,ffa_lobby_slot=1..}] run return run function lobby:team_selector/give_ffa_lobby_team/refresh_slot
+
+
+
+# SI CTF
+
 team join lobby @s[tag=!blue_team,tag=!red_team,tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=0}]
 team join warrior @s[tag=!blue_team,tag=!red_team,tag=warrior,scores={operator=0}]
 team join archer @s[tag=!blue_team,tag=!red_team,tag=archer,scores={operator=0}]

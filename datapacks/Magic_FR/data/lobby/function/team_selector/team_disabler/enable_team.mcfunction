@@ -9,4 +9,11 @@ execute if score @s team_side matches 2 run function lobby:team_selector/join_te
 
 tag @s remove no_team
 
+function lobby:team_selector/give_ffa_lobby_team/remove_ffa_team
+# enlève le slot d'équipe de lobby ffa de @s
+
+execute if score @s hotbar_menu matches 0 run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s hotbar_menu matches 6..8 run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+# si a une option de modif de couleur -> refresh son inventaire
+
 function lobby:team_selector/give_lobby_team

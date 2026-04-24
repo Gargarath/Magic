@@ -16,6 +16,7 @@ scoreboard objectives add is_working dummy
 scoreboard objectives add variables dummy
 
 scoreboard objectives add Player dummy
+scoreboard objectives add ffa_lobby_slot dummy
 scoreboard objectives add playercount dummy
 scoreboard objectives add Player_last_game dummy
 
