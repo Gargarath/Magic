@@ -45,7 +45,8 @@ data modify storage strings fr_fr set value {\
 "tr_item_blue":"Bleue",\
 "tr_item_red":"Rouge",\
 \
-"tr_color_change":"Choix de couleur",\
+"tr_color_change_text":"Vous avez choisis la couleur :",\
+"tr_color_change_item":"Choix de couleur",\
 "tr_color_picker_0":"Blanc",\
 "tr_color_picker_1":"Gris clair",\
 "tr_color_picker_2":"Gris",\

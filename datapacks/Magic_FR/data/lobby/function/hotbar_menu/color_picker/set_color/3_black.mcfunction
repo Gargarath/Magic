@@ -8,5 +8,5 @@ function lobby:team_selector/give_lobby_team
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s [{"bold":false,"color":"white","text":"Vous avez choisis la couleur : "},{"bold":false,"color":"black","text":"noire"}]
+$tellraw @s [{"bold":false,"color":"white","text":"$(tr_color_change_text) "},{"bold":false,"color":"black","text":"$(tr_color_picker_3)"}]
 function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data

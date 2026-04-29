@@ -26,22 +26,22 @@ execute if score $gamemode option_panel matches 1 if data entity @s {SelectedIte
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{back_to_menu:1b}}}} run return run function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s hotbar_menu matches 6..8 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{previous_page:1b}}}} run return run function lobby:hotbar_menu/color_picker/previous_page
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_white_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/0_white
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_gray_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/1_gray
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_gray_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/2_dark_gray
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_black_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/3_black
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_aqua_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/4_aqua
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_aqua_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/5_dark_aqua
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_blue_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/6_blue
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_blue_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/7_dark_blue
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_green_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/8_green
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_green_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/9_dark_green
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_light_purple_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/10_light_purple
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_purple_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/11_dark_purple
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_red_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/12_red
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_red_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/13_dark_red
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_yellow_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/14_yellow
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_gold_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/15_gold
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_white_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/0_white with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_gray_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/1_gray with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_gray_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/2_dark_gray with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_black_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/3_black with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_aqua_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/4_aqua with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_aqua_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/5_dark_aqua with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_blue_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/6_blue with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_blue_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/7_dark_blue with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_green_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/8_green with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_green_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/9_dark_green with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_light_purple_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/10_light_purple with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_purple_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/11_dark_purple with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_red_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/12_red with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_dark_red_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/13_dark_red with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_yellow_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/14_yellow with entity @s EnderItems[0].components.minecraft:custom_data
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{select_gold_color:1b}}}} run return run function lobby:hotbar_menu/color_picker/set_color/15_gold with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s hotbar_menu matches 6..8 if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{next_page:1b}}}} run return run function lobby:hotbar_menu/color_picker/next_page
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{main_island:1b}}}} run return run function lobby:hotbar_menu/island_selector/main_island
