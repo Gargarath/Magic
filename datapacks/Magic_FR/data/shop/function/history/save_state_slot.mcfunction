@@ -12,3 +12,5 @@ $execute store result storage shop:history player.$(player).states.slot$(slot).a
 $execute store result storage shop:history player.$(player).states.slot$(slot).maxarrow int 1 run scoreboard players get @s maxarrow
 $execute store result storage shop:history player.$(player).states.slot$(slot).weapon1_max_range_m int 1 run scoreboard players get @s weapon1_max_range_m
 $execute store result storage shop:history player.$(player).states.slot$(slot).explo_max_range_a int 1 run scoreboard players get @s explo_max_range_a
+$execute store result storage shop:history player.$(player).states.slot$(slot).PH int 1 run scoreboard players get @s PH
+$execute store result storage shop:history player.$(player).states.slot$(slot).shop_history_money_spend int 1 run scoreboard players get @s shop_history_money_spend

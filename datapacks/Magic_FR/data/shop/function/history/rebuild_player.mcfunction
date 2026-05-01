@@ -18,5 +18,10 @@ tag @s add save_inventory
 
 function shop:refresh/money/refresh_money
 
-function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
+function shop:refresh/money/refresh_money
+# actualise l'argent dans le shop de @s
+
+function shop:history/refresh_buttons with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les boutons undo / redo de @s
+
 function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data

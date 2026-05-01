@@ -12,3 +12,4 @@ $execute store result score @s arrow run data get storage shop:history player.$(
 $execute store result score @s maxarrow run data get storage shop:history player.$(player).states.slot$(slot).maxarrow
 $execute store result score @s weapon1_max_range_m run data get storage shop:history player.$(player).states.slot$(slot).weapon1_max_range_m
 $execute store result score @s explo_max_range_a run data get storage shop:history player.$(player).states.slot$(slot).explo_max_range_a
+$execute if score @s shop_history_delta_mode matches 3 store result score @s shop_history_price run data get storage shop:history player.$(player).states.slot$(slot).shop_history_money_spend

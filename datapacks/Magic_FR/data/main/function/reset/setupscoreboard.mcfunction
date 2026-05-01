@@ -635,6 +635,7 @@ scoreboard objectives add shop_history_can_redo dummy
 scoreboard objectives add shop_history_delta_mode dummy
 scoreboard objectives add shop_history_delta_count dummy
 scoreboard objectives add shop_history_price dummy
+scoreboard objectives add shop_history_money_spend dummy
 scoreboard objectives add shop_prev_weapon1 dummy
 scoreboard objectives add shop_prev_spell1 dummy
 scoreboard objectives add shop_prev_spell2 dummy

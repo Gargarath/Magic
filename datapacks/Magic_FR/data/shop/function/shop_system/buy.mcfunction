@@ -5,6 +5,10 @@ execute at @s run playsound minecraft:block.note_block.hat master @s
 
 $scoreboard players remove @s PH $(price)
 # enleve le cout en PH a @s
+
+$scoreboard players add @s shop_history_money_spend $(price)
+# ajoute au nombre d'argent dépensé de @s
+
 $scoreboard players add @s $(item_category) 1
 # ajoute 1 au niveau d'item de @s
 

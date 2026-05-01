@@ -10,4 +10,5 @@ scoreboard players set @s spell3 0
 scoreboard players set @s maxarrow 1
 scoreboard players set @s arrow 1
 scoreboard players set @s PH 0
+scoreboard players set @s shop_history_money_spend 0
 scoreboard players set @s weapon1_max_range_m 0
