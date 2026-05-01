@@ -17,5 +17,8 @@ $execute if score @s spell2 matches 2 unless score @s spell2 >= @s temp_shop unl
 
 $execute if score @s spell2 matches 3.. run function main:personnal_data/shop/set_item_data {class:"$(class)",item_category:"spell2",level:"max"}
 
+function shop:refresh/keybinds
+# actualise le sort de @s pour l'affichage des raccourcis
+
 function shop:refresh/refresh_item with entity @s EnderItems[0].components.minecraft:custom_data
 # refresh l'item
