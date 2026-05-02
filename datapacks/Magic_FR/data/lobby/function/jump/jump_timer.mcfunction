@@ -55,5 +55,5 @@ scoreboard players operation @s jump_timer_dec01 %= %10 numbers
 # on calcule les centième (par tranches de 5 car Minecraft n'est pas plus précis)
 
 ## DISPLAY TIMER
-execute if entity @s[tag=!red_team] run function main:gui/display/in_lobby/in_jump/jumping_non_red
-execute if entity @s[tag=red_team] run function main:gui/display/in_lobby/in_jump/jumping_red
+execute if entity @s[tag=!red_team] run function main:gui/display/in_lobby/in_jump/jumping_non_red with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[tag=red_team] run function main:gui/display/in_lobby/in_jump/jumping_red with entity @s EnderItems[0].components.minecraft:custom_data

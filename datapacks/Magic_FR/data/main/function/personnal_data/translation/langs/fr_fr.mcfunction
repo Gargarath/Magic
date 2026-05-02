@@ -2,14 +2,16 @@
 # setup les strings en français (utilisés quand on doit afficher du texte)
 
 data modify storage strings fr_fr set value {\
+\
+"tr_gui_options_title":"Options :                      ",\
+"tr_gui_options_quick_options":" : Options rapides        '",\
+"tr_gui_options_upgrade":" : Arbre d'améliorations ",\
+\
 "tr_changed_language":"Votre langue a été définie sur : Français",\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
 \
 \
-"tr_gui_options_title":"Options :",\
-"tr_gui_options_quick_options":"Options rapides",\
-"tr_gui_options_upgrade":"Arbre d'améliorations",\
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
 "tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\

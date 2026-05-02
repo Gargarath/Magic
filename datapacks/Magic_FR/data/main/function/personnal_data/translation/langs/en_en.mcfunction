@@ -2,14 +2,16 @@
 # setup les strings en anglais (utilisées quand on doit afficher du texte)
 
 data modify storage strings en_en set value {\
+\
+"tr_gui_options_title":"Options:             ",\
+"tr_gui_options_quick_options":": Quick options   ",\
+"tr_gui_options_upgrade":": Upgrade tree  ",\
+\
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You have joined spectator mode!",\
 "tr_left_spectator":"You have left spectator mode!",\
 \
 \
-"tr_gui_options_title":"Options :",\
-"tr_gui_options_quick_options":"Quick options",\
-"tr_gui_options_upgrade":"Upgrade tree",\
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
 "tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
