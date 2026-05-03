@@ -3,6 +3,8 @@
 
 data modify storage strings en_en set value {\
 \
+"tr_gui_keybinds":"Keybinds:",\
+\
 "tr_gui_options_title":"Options:             ",\
 "tr_gui_options_quick_options":": Quick options   ",\
 "tr_gui_options_upgrade":": Upgrade tree  ",\

@@ -2,26 +2,24 @@
 # permet de save le stuff de @s sous forme de storage
 
 execute if score @s weapon1 matches 0 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":""}
-execute if score @s weapon1 matches 1 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.1.name
-execute if score @s weapon1 matches 2 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.2.name
-execute if score @s weapon1 matches 3 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.3.name
-execute if score @s weapon1 matches 4 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.4.name
-execute if score @s weapon1 matches 5 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.5.name
-execute if score @s weapon1 matches 6 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.6.name
-execute if score @s weapon1 matches 7 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.7.name
-execute if score @s weapon1 matches 8 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.8.name
-execute if score @s weapon1 matches 9 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.9.name
-execute if score @s weapon1 matches 10 run data modify storage stats:leaderboards by_player.1.weapon1 set from storage ressources rogue.weapon1.10.name
+$execute if score @s weapon1 matches 1 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_1_name)","color":"white"}
+$execute if score @s weapon1 matches 2 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_2_name)","color":"white"}
+$execute if score @s weapon1 matches 3 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_3_name)","color":"white"}
+$execute if score @s weapon1 matches 4 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_4_name)","color":"white"}
+$execute if score @s weapon1 matches 5 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_5_name)","color":"white"}
+$execute if score @s weapon1 matches 6 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_6_name)","color":"white"}
+$execute if score @s weapon1 matches 7 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_7_name)","color":"white"}
+$execute if score @s weapon1 matches 8 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_8_name)","color":"white"}
+$execute if score @s weapon1 matches 9 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_9_name)","color":"white"}
+$execute if score @s weapon1 matches 10 run data modify storage stats:leaderboards by_player.1.weapon1 set value {"text":"$(tr_rogue_weapon1_10_name)","color":"white"}
 
 execute if score @s spell1 matches 0 run data modify storage stats:leaderboards by_player.1.spell1 set value {"text":""}
-execute if score @s spell1 matches 1 run data modify storage stats:leaderboards by_player.1.spell1 set from storage ressources rogue.spells.spell1lvl1.name
-execute if score @s spell1 matches 2 run data modify storage stats:leaderboards by_player.1.spell1 set from storage ressources rogue.spells.spell1lvl2.name
-execute if score @s spell1 matches 3 run data modify storage stats:leaderboards by_player.1.spell1 set from storage ressources rogue.spells.spell1lvl3.name
+$execute if score @s spell1 matches 1 run data modify storage stats:leaderboards by_player.1.spell1 set value {"text":"$(tr_rogue_spell1_1_name)","color":"red"}
+$execute if score @s spell1 matches 2 run data modify storage stats:leaderboards by_player.1.spell1 set value {"text":"$(tr_rogue_spell1_1_name)","color":"red"}
+$execute if score @s spell1 matches 3 run data modify storage stats:leaderboards by_player.1.spell1 set value {"text":"$(tr_rogue_spell1_1_name)","color":"red"}
 
 execute if score @s spell2 matches 0 run data modify storage stats:leaderboards by_player.1.spell2 set value {"text":""}
-execute if score @s spell2 matches 1 run data modify storage stats:leaderboards by_player.1.spell2 set from storage ressources rogue.spells.spell2lvl1.name
-execute if score @s spell2 matches 2 run data modify storage stats:leaderboards by_player.1.spell2 set from storage ressources rogue.spells.spell2lvl2.name
-execute if score @s spell2 matches 3 run data modify storage stats:leaderboards by_player.1.spell2 set from storage ressources rogue.spells.spell2lvl3.name
+$execute if score @s spell2 matches 1 run data modify storage stats:leaderboards by_player.1.spell2 set value {"text":"$(tr_rogue_spell2_1_name)","color":"gray"}
 
 execute if score @s spell3 matches 0 run data modify storage stats:leaderboards by_player.1.spell3 set value {"text":""}
-execute if score @s spell3 matches 1 run data modify storage stats:leaderboards by_player.1.spell3 set from storage ressources rogue.spells.spell3lvl1.name
+$execute if score @s spell3 matches 1 run data modify storage stats:leaderboards by_player.1.spell3 set value {"text":"$(tr_rogue_spell3_1_name)","color":"dark_gray"}
