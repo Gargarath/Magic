@@ -13,9 +13,16 @@ data modify storage strings en_en set value {\
 "tr_joined_spectator":"You have joined spectator mode!",\
 "tr_left_spectator":"You have left spectator mode!",\
 \
+"tr_gui_ingame_spec_commands_1":"Moderator commands are",\
+"tr_gui_ingame_spec_commands_2":"accessible via the commands",\
+"tr_gui_ingame_spec_commands_3":"/trigger admin_xxxx",\
+\
+"tr_gui_map_visit_spec_commands":"Spectator's commands:",\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
+"tr_gui_arena_quit_spec":"To leave the arena, pass through the walls, the floor, or the ceiling.",\
+"tr_gui_arena_title":"Eliminations:",\
 "tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
 \
 "tr_item_back":"Back",\

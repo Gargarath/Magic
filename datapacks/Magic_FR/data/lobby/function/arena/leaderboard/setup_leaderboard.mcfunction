@@ -1,7 +1,6 @@
 ## appelée par rien
 # permet juste de setup le storage du leaderboard une fois et de voir la taille qu'il prend
 
-data modify storage minecraft:gui arena.score.title set value {text:"Eliminations : ",color:"gold"}
 data modify storage minecraft:gui arena.score.rank1.name set value ""
 data modify storage minecraft:gui arena.score.rank1.score set value ""
 

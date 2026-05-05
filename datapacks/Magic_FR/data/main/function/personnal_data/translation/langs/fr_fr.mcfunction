@@ -13,9 +13,16 @@ data modify storage strings fr_fr set value {\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
 "tr_left_spectator":"Vous avez quitté le mode spectateur !",\
 \
+"tr_gui_ingame_spec_commands_1":"Les commandes de modérateur sont",\
+"tr_gui_ingame_spec_commands_2":"accessibles via les commandes",\
+"tr_gui_ingame_spec_commands_3":"/trigger admin_xxxx",\
+\
+"tr_gui_map_visit_spec_commands":"Commandes spec :",\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
+"tr_gui_arena_quit_spec":"Pour quitter l'arène, traversez les murs, le sol ou le plafond.",\
+"tr_gui_arena_title":"Eliminations :",\
 "tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
 \
 "tr_item_back":"Retour",\
