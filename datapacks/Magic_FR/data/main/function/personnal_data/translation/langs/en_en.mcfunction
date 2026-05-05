@@ -20,6 +20,10 @@ data modify storage strings en_en set value {\
 "tr_gui_map_visit_spec_commands":"Spectator's commands:",\
 \
 \
+"tr_upgrade_tree_1":"Press",\
+"tr_upgrade_tree_2":"to view your progress in the upgrade tree!",\
+\
+\
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
 "tr_gui_arena_quit_spec":"To leave the arena, pass through the walls, the floor, or the ceiling.",\
 "tr_gui_arena_title":"Eliminations:",\

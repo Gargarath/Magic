@@ -153,7 +153,7 @@ scoreboard players set @a[scores={Player=1..}] played_last_game 1
 # ajoute les joueurs connecté à la liste des joueurs qui ont joué la dernière game
 
 
-tellraw @a[scores={Player=1..}] ["",{"text":"\nAppuyez sur ","color":"aqua"},{"keybind":"key.advancements","color":"yellow"},{"text":" pour voir votre progression dans l'arbre d'amélioration !","color":"aqua"}]
+execute as @a[scores={Player=1..}] run function main:round_end/upgrade_tree_info with entity @s EnderItems[0].components.minecraft:custom_data
 # Indique à tous les joueurs qu'ils peuvent voir leur progression dans l'arbre en appuyant sur la touche advancements
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 

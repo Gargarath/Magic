@@ -133,7 +133,7 @@ execute if score $secondary_objectives option_panel matches 1 run scoreboard pla
 # si les objectifs secondaires sont activés -> fais en sorte qu'il se lance à 5min
 
 
-tellraw @a[scores={Player=1..}] ["",{"text":"\nAppuyez sur ","color":"aqua"},{"keybind":"key.advancements","color":"yellow"},{"text":" pour voir votre progression dans l'arbre d'amélioration !","color":"aqua"}]
+execute as @a[scores={Player=1..}] run function main:round_end/upgrade_tree_info with entity @s EnderItems[0].components.minecraft:custom_data
 # Indique à tous les joueurs qu'ils peuvent voir leur progression dans l'arbre en appuyant sur la touche advancements
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 

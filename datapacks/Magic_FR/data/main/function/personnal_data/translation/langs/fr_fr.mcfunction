@@ -20,6 +20,10 @@ data modify storage strings fr_fr set value {\
 "tr_gui_map_visit_spec_commands":"Commandes spec :",\
 \
 \
+"tr_upgrade_tree_1":"Appuyez sur",\
+"tr_upgrade_tree_2":"pour voir votre progression dans l'arbre d'amélioration !",\
+\
+\
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
 "tr_gui_arena_quit_spec":"Pour quitter l'arène, traversez les murs, le sol ou le plafond.",\
 "tr_gui_arena_title":"Eliminations :",\
