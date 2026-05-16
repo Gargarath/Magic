@@ -56,6 +56,20 @@ data modify storage strings fr_fr set value {\
 "tr_team_assigned_blue":"L'équipe bleue vous a été assignée automatiquement",\
 "tr_team_assigned_red":"L'équipe rouge vous a été assignée automatiquement",\
 \
+"tr_randomize_team_title_blue":"Vous êtes bleu !",\
+"tr_randomize_team_title_red":"Vous êtes rouge !",\
+"tr_randomize_team_subtitle":"Les équipes ont été constituées aléatoirement !",\
+"tr_randomize_team_tellraw_blue":"Vous avez rejoint les bleus !",\
+"tr_randomize_team_tellraw_red":"Vous avez rejoint les rouges !",\
+\
+"tr_randomize_class_text_1":"Vous êtes",\
+"tr_randomize_class_text_warrior":"Guerrier",\
+"tr_randomize_class_text_archer":"Archer",\
+"tr_randomize_class_text_mage":"Mage",\
+"tr_randomize_class_text_rogue":"Assassin",\
+"tr_randomize_class_text_2":" !",\
+"tr_randomize_class_subtitle":"Les classes ont été constituées aléatoirement !",\
+\
 "tr_item_select_island":"Menu de jeu",\
 "tr_item_select_main_island":"Île principale",\
 "tr_item_select_stats_island":"Île de statistiques",\

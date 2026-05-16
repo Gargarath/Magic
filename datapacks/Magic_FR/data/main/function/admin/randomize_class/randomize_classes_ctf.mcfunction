@@ -38,13 +38,7 @@ execute as @r[scores={Player=0},tag=red_team,tag=!warrior,tag=!archer,tag=!mage,
 execute as @a[scores={Player=0}] run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 execute as @a[scores={Player=0}] run function main:ressource_pack_detector/display_something_else/show_another_message
 title @a[scores={Player=0}] title {"text":""}
-title @a[scores={Player=0},tag=warrior] title [{"text":"Vous êtes ","color":"white"},{"text":"Guerrier","color":"gold"},{"text":" !","color":"white"}]
-title @a[scores={Player=0},tag=archer] title [{"text":"Vous êtes ","color":"white"},{"text":"Archer","color":"dark_green"},{"text":" !","color":"white"}]
-title @a[scores={Player=0},tag=mage] title [{"text":"Vous êtes ","color":"white"},{"text":"Mage","color":"dark_purple"},{"text":" !","color":"white"}]
-title @a[scores={Player=0},tag=rogue] title [{"text":"Vous êtes ","color":"white"},{"text":"Assassin","color":"gray"},{"text":" !","color":"white"}]
-
-title @a[scores={Player=0}] subtitle {"text":"Les classes ont été constituées aléatoirement !","bold":false}
-# indique à tous que les équipes ont été formée aléatoirement et leur indique quelle est leur calsse
+execute as @a[scores={Player=0}] run function main:admin/randomize_class/class_message with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute as @a[scores={Player=0}] if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/sort_blue
 # si @s est bleu -> actualise la barre des joueurs bleus selon la classe de @s

@@ -40,11 +40,5 @@ execute as @r[tag=not_on_team] run function main:admin/randomizeteam/become_red
 execute as @a run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message
 title @a title {"text":""}
-title @a[tag=red_team] title {"text":"Vous êtes rouge !","color":"red"}
-title @a[tag=blue_team] title {"text":"Vous êtes bleu !","color":"blue"}
-
-title @a subtitle {"text":"Les équipes ont été constituées aléatoirement !","bold":false}
-# indique à tous que les équipes ont été formée aléatoirement et leur indique quelle est leur équipe
-
-tellraw @a[tag=red_team] {"text":"Vous êtes rouge !","color":"red"}
-tellraw @a[tag=blue_team] {"text":"Vous êtes bleu !","color":"blue"}
+execute as @a[tag=blue_team] run function main:admin/randomizeteam/blue_message with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[tag=red_team] run function main:admin/randomizeteam/red_message with entity @s EnderItems[0].components.minecraft:custom_data

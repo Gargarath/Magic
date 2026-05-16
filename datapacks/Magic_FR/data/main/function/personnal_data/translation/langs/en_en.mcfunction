@@ -56,6 +56,20 @@ data modify storage strings en_en set value {\
 "tr_team_assigned_blue":"You have been automatically assigned to the blue team",\
 "tr_team_assigned_red":"You have been automatically assigned to the red team",\
 \
+"tr_randomize_team_title_blue":"You are blue!",\
+"tr_randomize_team_title_red":"You are red!",\
+"tr_randomize_team_subtitle":"Team have been setup randomly!",\
+"tr_randomize_team_tellraw_blue":"You are now blue!",\
+"tr_randomize_team_tellraw_red":"You are now red!",\
+\
+"tr_randomize_class_text_1":"You are",\
+"tr_randomize_class_text_warrior":"Warrior",\
+"tr_randomize_class_text_archer":"Archer",\
+"tr_randomize_class_text_mage":"Mage",\
+"tr_randomize_class_text_rogue":"Rogue",\
+"tr_randomize_class_text_2":"!",\
+"tr_randomize_class_subtitle":"Classes have been setup randomly!",\
+\
 "tr_item_select_island":"Game menu",\
 "tr_item_select_main_island":"Main island",\
 "tr_item_select_stats_island":"Stats island",\
