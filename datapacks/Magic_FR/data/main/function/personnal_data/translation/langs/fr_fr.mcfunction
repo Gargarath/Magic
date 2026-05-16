@@ -107,6 +107,13 @@ data modify storage strings fr_fr set value {\
 "tr_item_jump_checkpoint":"Dernier checkpoint",\
 "tr_item_jump_reset":"Annuler",\
 \
+"tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
+"tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\
+"tr_map_secondary_objective_launch_map3":"Le générateur de l'usine s'est éteint ! Rallumez le pour obtenir une récompense !",\
+"tr_map_secondary_objective_launch_map4":"Le coeur du volcan s'est réveillé ! Capturez le et son butin sera à vous !",\
+"tr_map_secondary_objective_launch_map5":"Le gardien est apparu dans le temple !\nTuez le pour obtenir une récompense !",\
+"tr_map_secondary_objective_launch_map6":"La cerise a prit vie !\nTuez la pour obtenir une récompense !",\
+\
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
 "tr_warrior_weapon1_1_name":"Hache de bataille I",\

@@ -18,7 +18,8 @@ scoreboard players set is_dead living_cherry 0
 scoreboard players set is_over secnd_objective 0
 # met le score is_dead de la cerise vivante à 0 (si il n'y a plus de cerise vivante et que ce score est à 0 -> lance le système de drop de l'objet du cerise vivante)
 
-tellraw @a {"text":"La cerise a prit vie !\nTuez la pour obtenir une récompense !","color":"red","bold":false}
+execute as @a run function gamemode:ctf/secondary_objectives/launch_secondary_objective/candyworld_map/objective_launch_text with entity @s EnderItems[0].components.minecraft:custom_data
+
 execute as @a positioned -19 164 -739 run playsound minecraft:entity.slime.squish_small master @s ~ ~ ~ 100 1
 # indique à tous que la cerise à été invoquée
 scoreboard players set on living_cherry 1

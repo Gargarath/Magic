@@ -52,7 +52,8 @@ execute store result bossbar minecraft:point_capture_red max run scoreboard play
 clone 326 137 13 316 142 3 316 146 3
 # eteint le generateur de l'objectif secondaire
 
-tellraw @a {"text":"Le générateur de l'usine s'est éteint ! Rallumez le pour obtenir une récompense !","color":"gold","bold":false}
+
+execute as @a run function gamemode:ctf/secondary_objectives/launch_secondary_objective/factory_map/objective_launch_text with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a at @s run playsound minecraft:block.beacon.deactivate master @s 268 94 498 100 0
 # indique à tous que l'objectif secondaire est disponible !
 

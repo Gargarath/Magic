@@ -7,7 +7,7 @@ bossbar set minecraft:secondary_objective color green
 function gamemode:ctf/secondary_objectives/bossfight/ruin_map/summon_golem/summon_golem
 # invoque le golem
 
-tellraw @a {"text":"Le gardien est apparu dans le temple !\nTuez le pour obtenir une récompense !","color":"red","bold":false}
+execute as @a run function gamemode:ctf/secondary_objectives/launch_secondary_objective/ruin_map/objective_launch_text with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a positioned -518.5 146 -110.5 run playsound minecraft:entity.iron_golem.death master @s ~ ~ ~ 100 1
 # indique à tous que le golem à été invoqué
 scoreboard players set is_over secnd_objective 0

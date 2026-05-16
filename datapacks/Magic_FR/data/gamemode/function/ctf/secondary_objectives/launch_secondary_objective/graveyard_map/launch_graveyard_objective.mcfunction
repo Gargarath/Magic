@@ -8,7 +8,8 @@ summon minecraft:lightning_bolt 218 169 -281
 function gamemode:ctf/secondary_objectives/bossfight/graveyard_map/summon_lich/summon_lich
 # invoque un éclair puis la liche
 
-tellraw @a {"text":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !","color":"red","bold":false}
+execute as @a run function gamemode:ctf/secondary_objectives/launch_secondary_objective/graveyard_map/objective_launch_text with entity @s EnderItems[0].components.minecraft:custom_data
+
 execute as @a positioned 218 169 -281 run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 1
 # indique à tous que la liche à été invoquée
 scoreboard players set is_over secnd_objective 0

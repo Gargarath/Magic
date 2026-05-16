@@ -48,30 +48,30 @@ execute if score max_capture_red point_capture matches 451.. run scoreboard play
 execute store result bossbar minecraft:point_capture_red max run scoreboard players get max_capture_red point_capture
 # fixe le max de la bossbar capture_red selon le temps de capture fixé pour les rouges
 
-tellraw @a {"text":"Le coeur du volcan s'est réveillé ! Capturez le et son butin sera à vous !","color":"dark_red","bold":false}
+execute as @a run function gamemode:ctf/secondary_objectives/launch_secondary_objective/volcano_map/objective_launch_text with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a at @s run playsound minecraft:block.beacon.activate master @s 268 94 498 100 0
 # indique à tous que le coeur du volcan s'est réveillé !
 
-summon armor_stand -598 138 499 {Tags:["objective_center"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
+summon armor_stand -598 138 499 {Tags:["objective_center"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
 # invoque un armor_stand au centre de l'objectif secondaire
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~1 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~ {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~-1 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~1 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~ ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-1 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~-1 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~ {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~1 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~2 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~-1 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~ ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
-execute at @e[tag=objective_center] run summon armor_stand ~1 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1,Marker:1b,Invisible:1,Invulnerable:1,PersistenceRequired:1,NoBasePlate:1,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~1 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~ {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~-1 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~2 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~1 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~ ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-1 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~-2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~-1 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~ {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~1 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~2 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-2 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~-1 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~ ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
+execute at @e[tag=objective_center] run summon armor_stand ~1 ~ ~3 {Tags:["objective_border"],NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:4144959}
 # invoque les armor_stand qui délimitent l'objectif secondaire
 
 

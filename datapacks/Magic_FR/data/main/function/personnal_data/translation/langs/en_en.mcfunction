@@ -107,6 +107,13 @@ data modify storage strings en_en set value {\
 "tr_item_jump_checkpoint":"Last checkpoint",\
 "tr_item_jump_reset":"Reset",\
 \
+"tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
+"tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\
+"tr_map_secondary_objective_launch_map3":"The factory generator has shut down! Turn it back on to earn a reward!",\
+"tr_map_secondary_objective_launch_map4":"The heart of the volcano has awakened! Capture it and its loot will be yours!",\
+"tr_map_secondary_objective_launch_map5":"The guardian has appeared in the temple!\nKill it to earn a reward!",\
+"tr_map_secondary_objective_launch_map6":"The cherry has come to life!\nKill it to earn a reward!",\
+\
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\
 "tr_warrior_weapon1_1_name":"Battle Axe I",\
