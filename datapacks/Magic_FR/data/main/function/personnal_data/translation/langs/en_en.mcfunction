@@ -130,37 +130,37 @@ data modify storage strings en_en set value {\
 "tr_warrior_weapon1_10_name":"Battle Axe X",\
 "tr_warrior_weapon1_10_lore_1":"+10 attack damage",\
 "tr_warrior_weapon1_max_name":"Battle Axe X",\
-"tr_warrior_chest_1_name":"Breastplate of Health I",\
+"tr_warrior_chest_1_name":"Health Chestplate I",\
 "tr_warrior_chest_1_lore_1":"+0.5 armor.",\
 "tr_warrior_chest_1_lore_2":"+15% max health.",\
-"tr_warrior_chest_2_name":"Breastplate of Health II",\
+"tr_warrior_chest_2_name":"Health Chestplate II",\
 "tr_warrior_chest_2_lore_1":"+1 armor.",\
 "tr_warrior_chest_2_lore_2":"+30% max health.",\
-"tr_warrior_chest_3_name":"Breastplate of Health III",\
+"tr_warrior_chest_3_name":"Health Chestplate III",\
 "tr_warrior_chest_3_lore_1":"+1.5 armor.",\
 "tr_warrior_chest_3_lore_2":"+45% max health.",\
-"tr_warrior_chest_4_name":"Breastplate of Health IV",\
+"tr_warrior_chest_4_name":"Health Chestplate IV",\
 "tr_warrior_chest_4_lore_1":"+2 armor.",\
 "tr_warrior_chest_4_lore_2":"+60% max health.",\
-"tr_warrior_chest_5_name":"Breastplate of Health V",\
+"tr_warrior_chest_5_name":"Health Chestplate V",\
 "tr_warrior_chest_5_lore_1":"+2.5 armor.",\
 "tr_warrior_chest_5_lore_2":"+75% max health.",\
-"tr_warrior_chest_6_name":"Breastplate of Health VI",\
+"tr_warrior_chest_6_name":"Health Chestplate VI",\
 "tr_warrior_chest_6_lore_1":"+3 armor.",\
 "tr_warrior_chest_6_lore_2":"+90% max health.",\
-"tr_warrior_chest_7_name":"Breastplate of Health VII",\
+"tr_warrior_chest_7_name":"Health Chestplate VII",\
 "tr_warrior_chest_7_lore_1":"+3.5 armor.",\
 "tr_warrior_chest_7_lore_2":"+105% max health.",\
-"tr_warrior_chest_8_name":"Breastplate of Health VIII",\
+"tr_warrior_chest_8_name":"Health Chestplate VIII",\
 "tr_warrior_chest_8_lore_1":"+4 armor.",\
 "tr_warrior_chest_8_lore_2":"+120% max health.",\
-"tr_warrior_chest_9_name":"Breastplate of Health IX",\
+"tr_warrior_chest_9_name":"Health Chestplate IX",\
 "tr_warrior_chest_9_lore_1":"+4.5 armor.",\
 "tr_warrior_chest_9_lore_2":"+135% max health.",\
-"tr_warrior_chest_10_name":"Breastplate of Health X",\
+"tr_warrior_chest_10_name":"Health Chestplate X",\
 "tr_warrior_chest_10_lore_1":"+5 armor.",\
 "tr_warrior_chest_10_lore_2":"+150% max health.",\
-"tr_warrior_chest_max_name":"Breastplate of Health X",\
+"tr_warrior_chest_max_name":"Health Chestplate X",\
 "tr_warrior_legs_1_name":"Leggings of Speed I",\
 "tr_warrior_legs_1_lore_1":"+0.5 armor.",\
 "tr_warrior_legs_1_lore_2":"+1.5% movement speed.",\
@@ -430,34 +430,34 @@ data modify storage strings en_en set value {\
 "tr_archer_weapon1_10_lore_2":"of damage (depending on charge)",\
 "tr_archer_weapon1_10_lore_3":"Punch 2",\
 "tr_archer_weapon1_10_lore_4":"Quiver: 6 arrows",\
-"tr_archer_chest_1_name":"Breastplate of Health I",\
+"tr_archer_chest_1_name":"Health Chestplate I",\
 "tr_archer_chest_1_lore_1":"+0.5 armor.",\
 "tr_archer_chest_1_lore_2":"+10% max health.",\
-"tr_archer_chest_2_name":"Breastplate of Health II",\
+"tr_archer_chest_2_name":"Health Chestplate II",\
 "tr_archer_chest_2_lore_1":"+1 armor.",\
 "tr_archer_chest_2_lore_2":"+20% max health.",\
-"tr_archer_chest_3_name":"Breastplate of Health III",\
+"tr_archer_chest_3_name":"Health Chestplate III",\
 "tr_archer_chest_3_lore_1":"+1.5 armor.",\
 "tr_archer_chest_3_lore_2":"+30% max health.",\
-"tr_archer_chest_4_name":"Breastplate of Health IV",\
+"tr_archer_chest_4_name":"Health Chestplate IV",\
 "tr_archer_chest_4_lore_1":"+2 armor.",\
 "tr_archer_chest_4_lore_2":"+40% max health.",\
-"tr_archer_chest_5_name":"Breastplate of Health V",\
+"tr_archer_chest_5_name":"Health Chestplate V",\
 "tr_archer_chest_5_lore_1":"+2.5 armor.",\
 "tr_archer_chest_5_lore_2":"+50% max health.",\
-"tr_archer_chest_6_name":"Breastplate of Health VI",\
+"tr_archer_chest_6_name":"Health Chestplate VI",\
 "tr_archer_chest_6_lore_1":"+3 armor.",\
 "tr_archer_chest_6_lore_2":"+60% max health.",\
-"tr_archer_chest_7_name":"Breastplate of Health VII",\
+"tr_archer_chest_7_name":"Health Chestplate VII",\
 "tr_archer_chest_7_lore_1":"+3.5 armor.",\
 "tr_archer_chest_7_lore_2":"+70% max health.",\
-"tr_archer_chest_8_name":"Breastplate of Health VIII",\
+"tr_archer_chest_8_name":"Health Chestplate VIII",\
 "tr_archer_chest_8_lore_1":"+4 armor.",\
 "tr_archer_chest_8_lore_2":"+80% max health.",\
-"tr_archer_chest_9_name":"Breastplate of Health IX",\
+"tr_archer_chest_9_name":"Health Chestplate IX",\
 "tr_archer_chest_9_lore_1":"+4.5 armor.",\
 "tr_archer_chest_9_lore_2":"+90% max health.",\
-"tr_archer_chest_10_name":"Breastplate of Health X",\
+"tr_archer_chest_10_name":"Health Chestplate X",\
 "tr_archer_chest_10_lore_1":"+5 armor.",\
 "tr_archer_chest_10_lore_2":"+100% max health.",\
 "tr_archer_legs_1_name":"Leggings of Speed I",\
@@ -748,34 +748,34 @@ data modify storage strings en_en set value {\
 "tr_mage_weapon1_10_lore_6":"Maximum range: 45 blocks.",\
 "tr_mage_weapon1_10_lore_7":"Mana cost: 55",\
 "tr_mage_weapon1_10_lore_8":"----------------------------",\
-"tr_mage_chest_1_name":"Breastplate of Health I",\
+"tr_mage_chest_1_name":"Health Chestplate I",\
 "tr_mage_chest_1_lore_1":"+0.5 armor.",\
 "tr_mage_chest_1_lore_2":"+10% max health.",\
-"tr_mage_chest_2_name":"Breastplate of Health II",\
+"tr_mage_chest_2_name":"Health Chestplate II",\
 "tr_mage_chest_2_lore_1":"+1 armor.",\
 "tr_mage_chest_2_lore_2":"+20% max health.",\
-"tr_mage_chest_3_name":"Breastplate of Health III",\
+"tr_mage_chest_3_name":"Health Chestplate III",\
 "tr_mage_chest_3_lore_1":"+1.5 armor.",\
 "tr_mage_chest_3_lore_2":"+30% max health.",\
-"tr_mage_chest_4_name":"Breastplate of Health IV",\
+"tr_mage_chest_4_name":"Health Chestplate IV",\
 "tr_mage_chest_4_lore_1":"+2 armor.",\
 "tr_mage_chest_4_lore_2":"+40% max health.",\
-"tr_mage_chest_5_name":"Breastplate of Health V",\
+"tr_mage_chest_5_name":"Health Chestplate V",\
 "tr_mage_chest_5_lore_1":"+2.5 armor.",\
 "tr_mage_chest_5_lore_2":"+50% max health.",\
-"tr_mage_chest_6_name":"Breastplate of Health VI",\
+"tr_mage_chest_6_name":"Health Chestplate VI",\
 "tr_mage_chest_6_lore_1":"+3 armor.",\
 "tr_mage_chest_6_lore_2":"+60% max health.",\
-"tr_mage_chest_7_name":"Breastplate of Health VII",\
+"tr_mage_chest_7_name":"Health Chestplate VII",\
 "tr_mage_chest_7_lore_1":"+3.5 armor.",\
 "tr_mage_chest_7_lore_2":"+70% max health.",\
-"tr_mage_chest_8_name":"Breastplate of Health VIII",\
+"tr_mage_chest_8_name":"Health Chestplate VIII",\
 "tr_mage_chest_8_lore_1":"+4 armor.",\
 "tr_mage_chest_8_lore_2":"+80% max health.",\
-"tr_mage_chest_9_name":"Breastplate of Health IX",\
+"tr_mage_chest_9_name":"Health Chestplate IX",\
 "tr_mage_chest_9_lore_1":"+4.5 armor.",\
 "tr_mage_chest_9_lore_2":"+90% max health.",\
-"tr_mage_chest_10_name":"Breastplate of Health X",\
+"tr_mage_chest_10_name":"Health Chestplate X",\
 "tr_mage_chest_10_lore_1":"+5 armor.",\
 "tr_mage_chest_10_lore_2":"+100% max health.",\
 "tr_mage_legs_1_name":"Leggings of Speed I",\
@@ -951,34 +951,34 @@ data modify storage strings en_en set value {\
 "tr_rogue_weapon1_9_lore_1":"+9 attack damage.",\
 "tr_rogue_weapon1_10_name":"Sneaky Dagger X",\
 "tr_rogue_weapon1_10_lore_1":"+10 attack damage.",\
-"tr_rogue_chest_1_name":"Breastplate of Health I",\
+"tr_rogue_chest_1_name":"Health Chestplate I",\
 "tr_rogue_chest_1_lore_1":"+0.5 armor.",\
 "tr_rogue_chest_1_lore_2":"+10% max health.",\
-"tr_rogue_chest_2_name":"Breastplate of Health II",\
+"tr_rogue_chest_2_name":"Health Chestplate II",\
 "tr_rogue_chest_2_lore_1":"+1 armor.",\
 "tr_rogue_chest_2_lore_2":"+20% max health.",\
-"tr_rogue_chest_3_name":"Breastplate of Health III",\
+"tr_rogue_chest_3_name":"Health Chestplate III",\
 "tr_rogue_chest_3_lore_1":"+1.5 armor.",\
 "tr_rogue_chest_3_lore_2":"+30% max health.",\
-"tr_rogue_chest_4_name":"Breastplate of Health IV",\
+"tr_rogue_chest_4_name":"Health Chestplate IV",\
 "tr_rogue_chest_4_lore_1":"+2 armor.",\
 "tr_rogue_chest_4_lore_2":"+40% max health.",\
-"tr_rogue_chest_5_name":"Breastplate of Health V",\
+"tr_rogue_chest_5_name":"Health Chestplate V",\
 "tr_rogue_chest_5_lore_1":"+2.5 armor.",\
 "tr_rogue_chest_5_lore_2":"+50% max health.",\
-"tr_rogue_chest_6_name":"Breastplate of Health VI",\
+"tr_rogue_chest_6_name":"Health Chestplate VI",\
 "tr_rogue_chest_6_lore_1":"+3 armor.",\
 "tr_rogue_chest_6_lore_2":"+60% max health.",\
-"tr_rogue_chest_7_name":"Breastplate of Health VII",\
+"tr_rogue_chest_7_name":"Health Chestplate VII",\
 "tr_rogue_chest_7_lore_1":"+3.5 armor.",\
 "tr_rogue_chest_7_lore_2":"+70% max health.",\
-"tr_rogue_chest_8_name":"Breastplate of Health VIII",\
+"tr_rogue_chest_8_name":"Health Chestplate VIII",\
 "tr_rogue_chest_8_lore_1":"+4 armor.",\
 "tr_rogue_chest_8_lore_2":"+80% max health.",\
-"tr_rogue_chest_9_name":"Breastplate of Health IX",\
+"tr_rogue_chest_9_name":"Health Chestplate IX",\
 "tr_rogue_chest_9_lore_1":"+4.5 armor.",\
 "tr_rogue_chest_9_lore_2":"+90% max health.",\
-"tr_rogue_chest_10_name":"Breastplate of Health X",\
+"tr_rogue_chest_10_name":"Health Chestplate X",\
 "tr_rogue_chest_10_lore_1":"+5 armor.",\
 "tr_rogue_chest_10_lore_2":"+100% max health.",\
 "tr_rogue_legs_1_name":"Leggings of Speed I",\
