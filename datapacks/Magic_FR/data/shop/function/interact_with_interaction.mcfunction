@@ -24,6 +24,19 @@ execute if score @s Player matches 10 if data entity @n[type=minecraft:interacti
 execute if score @s Player matches 11 if data entity @n[type=minecraft:interaction,tag=shop_undo_11] interaction run return run function shop:history/used_undo with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 12 if data entity @n[type=minecraft:interaction,tag=shop_undo_12] interaction run return run function shop:history/used_undo with entity @s EnderItems[0].components.minecraft:custom_data
 
+execute if score @s Player matches 1 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_1] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 2 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_2] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 3 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_3] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 4 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_4] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 5 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_5] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 6 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_6] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 7 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_7] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 8 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_8] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 9 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_9] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 10 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_10] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 11 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_11] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 12 if data entity @n[type=minecraft:interaction,tag=shop_undo_all_12] interaction run return run function shop:history/undo_all with entity @s EnderItems[0].components.minecraft:custom_data
+
 execute if score @s Player matches 1 if data entity @n[type=minecraft:interaction,tag=shop_redo_1] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 2 if data entity @n[type=minecraft:interaction,tag=shop_redo_2] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 3 if data entity @n[type=minecraft:interaction,tag=shop_redo_3] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
@@ -36,6 +49,19 @@ execute if score @s Player matches 9 if data entity @n[type=minecraft:interactio
 execute if score @s Player matches 10 if data entity @n[type=minecraft:interaction,tag=shop_redo_10] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 11 if data entity @n[type=minecraft:interaction,tag=shop_redo_11] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 12 if data entity @n[type=minecraft:interaction,tag=shop_redo_12] interaction run return run function shop:history/used_redo with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s Player matches 1 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_1] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 2 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_2] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 3 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_3] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 4 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_4] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 5 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_5] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 6 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_6] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 7 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_7] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 8 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_8] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 9 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_9] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 10 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_10] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 11 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_11] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 12 if data entity @n[type=minecraft:interaction,tag=shop_redo_all_12] interaction run return run function shop:history/redo_all with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s Player matches 1 if data entity @n[type=minecraft:interaction,tag=shop_ready_1] interaction run return run function shop:ready_button/used_button with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 2 if data entity @n[type=minecraft:interaction,tag=shop_ready_2] interaction run return run function shop:ready_button/used_button with entity @s EnderItems[0].components.minecraft:custom_data

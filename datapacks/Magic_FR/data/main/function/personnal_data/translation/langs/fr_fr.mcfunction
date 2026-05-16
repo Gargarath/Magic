@@ -1143,4 +1143,8 @@ data modify storage strings fr_fr set value {\
 "tr_shop_undo_empty":"Aucun achat à annuler.",\
 "tr_shop_undo_desactivated":"L'annulation des achats est désactivée.",\
 "tr_shop_item_max_lvl":"Niveau maximal atteint",\
-"tr_shop_item_not_enough_money":"Pas assez de points d'honneur !"}
+"tr_shop_item_not_enough_money":"Pas assez de points d'honneur !",\
+"tr_shop_undo":"Annuler",\
+"tr_shop_undo_all":"Tout",\
+"tr_shop_redo":"Rétablir",\
+"tr_shop_redo_all":"Tout"}

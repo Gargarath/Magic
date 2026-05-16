@@ -1143,4 +1143,8 @@ data modify storage strings en_en set value {\
 "tr_shop_undo_empty":"You have nothing left to undo.",\
 "tr_shop_undo_desactivated":"Undo is disabled.",\
 "tr_shop_item_max_lvl":"Maximum level reached",\
-"tr_shop_item_not_enough_money":"Not enough coins!"}
+"tr_shop_item_not_enough_money":"Not enough coins!",\
+"tr_shop_undo":"Undo",\
+"tr_shop_undo_all":"All",\
+"tr_shop_redo":"Redo",\
+"tr_shop_redo_all":"All"}

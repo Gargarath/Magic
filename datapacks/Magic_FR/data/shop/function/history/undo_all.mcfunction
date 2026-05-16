@@ -1,7 +1,9 @@
 ## appelee quand @s veut tout annuler dans l'historique du shop
 # saute directement au premier etat puis reconstruit une seule fois
 
-execute unless score @s shop_history_can_undo matches 1 run return 0
+$data merge entity @n[type=minecraft:interaction,tag=shop_undo_all_$(player)] {interaction:0b}
+
+execute unless score @s shop_history_can_undo matches 1 run return run function shop:history/cant_undo with entity @s EnderItems[0].components.minecraft:custom_data
 
 scoreboard players set @s shop_history_current 0
 scoreboard players set @s shop_history_price 0

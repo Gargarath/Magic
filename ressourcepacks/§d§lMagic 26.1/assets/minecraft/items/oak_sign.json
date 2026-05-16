@@ -496,6 +496,20 @@
           "type": "model",
           "model": "item/shop/redo"
         } 
+      },
+            {
+        "when": "undo_all",
+        "model": {
+          "type": "model",
+          "model": "item/shop/undo_all"
+        } 
+      },
+            {
+        "when": "redo_all",
+        "model": {
+          "type": "model",
+          "model": "item/shop/redo_all"
+        } 
       }
     ]
   }

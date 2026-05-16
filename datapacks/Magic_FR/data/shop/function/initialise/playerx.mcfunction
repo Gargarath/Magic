@@ -7,6 +7,8 @@ $kill @e[tag=shop_ready_$(player)]
 $kill @e[tag=shop_not_ready_$(player)]
 $kill @e[tag=shop_money_display_$(player)]
 $kill @e[tag=shop_undo_$(player)]
+$kill @e[tag=shop_undo_all_$(player)]
+$kill @e[tag=shop_redo_all_$(player)]
 $kill @e[tag=shop_redo_$(player)]
 $kill @e[tag=shop_weapon1_$(player)]
 $kill @e[tag=shop_chest_$(player)]
@@ -30,12 +32,25 @@ $execute at @e[type=item_display,tag=shop_ready_$(player)] run summon text_displ
 $execute at @e[type=item_display,tag=shop_ready_$(player)] run summon text_display ~-0.18 ~-0.09 ~0.04 {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_ready","shop_ready_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.65f,0.65f,0.65f]},text:[{"text":"","bold":true}]}
 $execute at @e[type=item_display,tag=shop_ready_$(player)] run summon interaction ~ ~-0.25 ~0.5 {width:1.2f,height:0.5f,response:1b,Tags:["shop_clickable","shop_ready","shop_ready_$(player)"]}
 
+# boutons undo_all
+$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~2.25 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_undo","shop_undo_all_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["undo_all"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0.4f,0.4f,0.4f]}}
+$execute at @e[type=item_display,tag=shop_undo_all_$(player)] run summon interaction ~ ~-0.25 ~0.2 {width:0.45f,height:0.45f,response:1b,Tags:["shop_clickable","shop_undo","shop_undo_all_$(player)"]}
+$execute at @e[type=item_display,tag=shop_undo_all_$(player)] run summon text_display ~ ~-0.32 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_undo","shop_undo_all_text1","shop_undo_all_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.45f,0.45f,0.45f]},text:[{"text":"Undo","color":"yellow"}]}
+$execute at @e[type=item_display,tag=shop_undo_all_$(player)] run summon text_display ~ ~-0.42 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_undo","shop_undo_all_text2","shop_undo_all_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.45f,0.45f,0.45f]},text:[{"text":"All","color":"yellow"}]}
 # boutons undo
-$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~2 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_undo","shop_undo_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["undo"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0.4f,0.4f,0.4f]}}
+$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~1.75 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_undo","shop_undo_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["undo"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0.4f,0.4f,0.4f]}}
 $execute at @e[type=item_display,tag=shop_undo_$(player)] run summon interaction ~ ~-0.25 ~0.2 {width:0.45f,height:0.45f,response:1b,Tags:["shop_clickable","shop_undo","shop_undo_$(player)"]}
+$execute at @e[type=item_display,tag=shop_undo_$(player)] run summon text_display ~ ~-0.32 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_undo","shop_undo_text","shop_undo_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.45f,0.45f,0.45f]},text:[{"text":"Undo","color":"yellow"}]}
+
+# boutons redo_all
+$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~-2.25 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_redo","shop_redo_all_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["redo_all"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0f,0f,0f]}}
+$execute at @e[type=item_display,tag=shop_redo_all_$(player)] run summon interaction ~ ~-0.25 ~0.2 {width:0f,height:0f,response:1b,Tags:["shop_clickable","shop_redo","shop_redo_all_$(player)"]}
+$execute at @e[type=item_display,tag=shop_redo_all_$(player)] run summon text_display ~ ~-0.32 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_redo","shop_redo_all_text1","shop_redo_all_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]},text:[{"text":"Redo","color":"yellow"}]}
+$execute at @e[type=item_display,tag=shop_redo_all_$(player)] run summon text_display ~ ~-0.42 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_redo","shop_redo_all_text2","shop_redo_all_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]},text:[{"text":"All","color":"yellow"}]}
 # boutons redo
-$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~-2 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_redo","shop_redo_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["redo"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0.4f,0.4f,0.4f]}}
-$execute at @e[type=item_display,tag=shop_redo_$(player)] run summon interaction ~ ~-0.25 ~0.2 {width:0.45f,height:0.45f,response:1b,Tags:["shop_clickable","shop_redo","shop_redo_$(player)"]}
+$execute at @e[type=marker,tag=shop_room_$(player)] run summon item_display ~-1.75 ~0.5 ~4.44 {item_display:"gui",Tags:["shop_redo","shop_redo_$(player)"],item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["redo"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.05f],scale:[0f,0f,0f]}}
+$execute at @e[type=item_display,tag=shop_redo_$(player)] run summon interaction ~ ~-0.25 ~0.2 {width:0f,height:0f,response:1b,Tags:["shop_clickable","shop_redo","shop_redo_$(player)"]}
+$execute at @e[type=item_display,tag=shop_redo_$(player)] run summon text_display ~ ~-0.32 ~ {see_through:0b,shadow:1b,alignment:"center",background:0,billboard:"fixed",Tags:["shop_redo","shop_redo_text","shop_redo_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]},text:[{"text":"Redo","color":"yellow"}]}
 
 # argent
 $execute at @e[type=marker,tag=shop_room_$(player)] run summon text_display ~-2.6 ~3.2 ~4.4 {see_through:0b,shadow:1b,alignment:"left",background:0,billboard:"fixed",Tags:["shop_money_display","shop_money_display_price1","shop_money_display_$(player)"],Rotation:[180F,0F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.3f,2.3f,2.3]},text:["                                           ",{"text":"\n\uE634","color":"white"}]}

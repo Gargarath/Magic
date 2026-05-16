@@ -10,6 +10,20 @@ $item replace entity @n[type=mannequin,tag=statue_$(player)] armor.feet from ent
 $data merge entity @n[type=text_display,tag=shop_title,tag=shop_title_$(player)] {text:{"text":"$(tr_shop_title)","bold":true,"color":"gold"}}
 # traduis le titre
 
+# traduis le undo
+$data merge entity @n[type=text_display,tag=shop_undo_text,tag=shop_undo_$(player)] {text:{"text":"$(tr_shop_undo)","color":"yellow"}}
+
+# traduis le undo_all
+$data merge entity @n[type=text_display,tag=shop_undo_all_text1,tag=shop_undo_all_$(player)] {text:{"text":"$(tr_shop_undo)","color":"yellow"}}
+$data merge entity @n[type=text_display,tag=shop_undo_all_text2,tag=shop_undo_all_$(player)] {text:{"text":"$(tr_shop_undo_all)","color":"yellow"}}
+
+# traduis le redo
+$data merge entity @n[type=text_display,tag=shop_redo_text,tag=shop_redo_$(player)] {text:{"text":"$(tr_shop_redo)","color":"yellow"}}
+
+# traduis le redo_all
+$data merge entity @n[type=text_display,tag=shop_redo_all_text1,tag=shop_redo_all_$(player)] {text:{"text":"$(tr_shop_redo)","color":"yellow"}}
+$data merge entity @n[type=text_display,tag=shop_redo_all_text2,tag=shop_redo_all_$(player)] {text:{"text":"$(tr_shop_redo_all)","color":"yellow"}}
+
 # bouton ready
 execute if score $gamemode option_panel matches 0 run function shop:refresh/ready_button/play with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score $gamemode option_panel matches 1 if score @s is_ready matches 0 run function shop:refresh/ready_button/not_ready with entity @s EnderItems[0].components.minecraft:custom_data
