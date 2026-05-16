@@ -1,10 +1,6 @@
 ## appelée lorsqu'un joueur rejoint les bleus
 # permet d'ajouter un armorstand bleus en trop
 
-scoreboard players add $max blue_member 1
-# ajoute 1 au max de joueurs bleus (pour le système de statues au lobby)
-execute store result score blue playercount if entity @a[tag=blue_team]
-
 scoreboard players reset @s blue_member
 
 execute unless score @s blue_member matches 1.. unless entity @a[scores={blue_member=1}] run function lobby:team_selector/display_team_members/blue/spawn_members/member1

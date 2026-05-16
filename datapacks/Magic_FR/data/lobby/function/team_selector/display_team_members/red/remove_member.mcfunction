@@ -1,8 +1,5 @@
-## appelée lorsqu'un joueur quitte les rouges
-# permet de suprimer les armorstand rouges en trop
-
-scoreboard players remove $max red_member 1
-# enlève 1 au max de joueur rouges
+## appelée lorsqu'un joueur quitte les rouges ou par la boucle de nettoyage
+# permet de supprimer les armorstand rouges sans joueur associé
 
 execute as @e[type=armor_stand,tag=red_member1] unless entity @a[scores={red_member=1}] run kill @s
 execute as @e[type=armor_stand,tag=red_member2] unless entity @a[scores={red_member=2}] run kill @s

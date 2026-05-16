@@ -1,10 +1,6 @@
 ## appelée lorsqu'un joueur rejoint les rouges
 # permet d'ajouter un armorstand rouges en trop
 
-scoreboard players add $max red_member 1
-# ajoute 1 au max de joueurs rouges (pour le système de statues au lobby)
-execute store result score red playercount if entity @a[tag=red_team]
-
 scoreboard players reset @s red_member
 
 execute unless score @s red_member matches 1.. unless entity @a[scores={red_member=1}] run function lobby:team_selector/display_team_members/red/spawn_members/member1

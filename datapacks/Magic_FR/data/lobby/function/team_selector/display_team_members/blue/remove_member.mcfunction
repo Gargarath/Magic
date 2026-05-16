@@ -1,8 +1,5 @@
-## appelée lorsqu'un joueur quitte les bleus
-# permet de suprimer les armorstand bleus en trop
-
-scoreboard players remove $max blue_member 1
-# enlève 1 au max de joueur bleus
+## appelée lorsqu'un joueur quitte les bleus ou par la boucle de nettoyage
+# permet de supprimer les armorstand bleus sans joueur associé
 
 execute as @e[type=armor_stand,tag=blue_member1] unless entity @a[scores={blue_member=1}] run kill @s
 execute as @e[type=armor_stand,tag=blue_member2] unless entity @a[scores={blue_member=2}] run kill @s
