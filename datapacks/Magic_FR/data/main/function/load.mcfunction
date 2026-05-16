@@ -7,6 +7,9 @@
 function main:personnal_data/translation/langs/en_en
 function main:personnal_data/translation/langs/fr_fr
 
+scoreboard players remove @a opt_lang 1
+execute as @a run function main:personnal_data/translation/change_language/change_language
+
 # setup les storage pour les shop
 function main:reset/setup_stuff_storage
 

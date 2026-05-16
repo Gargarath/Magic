@@ -149,6 +149,8 @@ execute if score $gamemode option_panel matches 1 if score $random map_selection
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
 # si on est en mode CTF et que on est en "arènes aléatoires" et pas deux fois la même map -> calcule la prochaine map aléatoirement parmis les maps qui n'ont pas été jouées
 
+execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+
 scoreboard players set @a[scores={Player=1..}] played_last_game 1
 # ajoute les joueurs connecté à la liste des joueurs qui ont joué la dernière game
 

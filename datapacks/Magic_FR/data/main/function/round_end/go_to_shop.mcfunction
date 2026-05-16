@@ -160,12 +160,7 @@ scoreboard players remove round bossbar 1
 
 execute if score $show_next_map option_panel matches 0 run data modify storage minecraft:matchinfo map set value {"text":"\uE710\uE710\uE710\uE710\uE708","color":"aqua","bold":true}
 # si la prochaine map est masquée, la masque
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 1 run data modify storage minecraft:matchinfo map set value {"text":"\uE708Pirate\uE707","color":"aqua","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 2 run data modify storage minecraft:matchinfo map set value {"text":"Cimetière","color":"red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 3 run data modify storage minecraft:matchinfo map set value {"text":"\uE710Usine\uE710","color":"dark_red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 4 run data modify storage minecraft:matchinfo map set value {"text":"\uE706Volcan\uE706","color":"dark_red","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 5 run data modify storage minecraft:matchinfo map set value {"text":"\uE710Ruine\uE710","color":"gray","bold":true}
-execute if score $show_next_map option_panel matches 1 if score selected_map variables matches 6 run data modify storage minecraft:matchinfo map set value {"text":"\uE705Bonbon\uE704","color":"light_purple","bold":true}
+execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 # si on a activé le fait de montrer la prochaine map -> la montre
 
 function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/clear_overlay

@@ -7,7 +7,7 @@ $execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run return run 
 \
 {text:"\uE790\uE704",font:top_bar_round},{"interpret":true,"nbt":"round","storage":"minecraft:matchinfo"},{text:"\uE703\uE791",font:top_bar_round},\
 \
-{text:"\uE790\uE720\uE706",font:top_bar_map},{"interpret":true,"nbt":"map","storage":"minecraft:matchinfo"},{text:"\uE720\uE707\uE791",font:top_bar_map},\
+{text:"\uE790\uE720\uE706",font:top_bar_map},$(map_name),{text:"\uE720\uE707\uE791",font:top_bar_map},\
 \
 {text:"\uE790\uE730\uE710",font:top_bar_score},{"nbt":"score2.1","storage":"minecraft:matchinfo","color":"red","bold":true,"plain":true},{"nbt":"score2.2","storage":"minecraft:matchinfo","color":"red","bold":true,"plain":true},"\uE750\uE703",{"nbt":"score1.1","storage":"minecraft:matchinfo","color":"blue","bold":true,"plain":true},{"nbt":"score1.2","storage":"minecraft:matchinfo","color":"blue","bold":true,"plain":true},{text:"\uE740\uE701\uE791",font:top_bar_score},\
 \

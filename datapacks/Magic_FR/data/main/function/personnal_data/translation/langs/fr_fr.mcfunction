@@ -129,6 +129,13 @@ data modify storage strings fr_fr set value {\
 "tr_item_jump_checkpoint":"Dernier checkpoint",\
 "tr_item_jump_reset":"Annuler",\
 \
+"tr_map_1_name":"\uE708Pirate\uE707",\
+"tr_map_2_name":"Cimetière",\
+"tr_map_3_name":"\uE710Usine\uE710",\
+"tr_map_4_name":"\uE706Volcan\uE706",\
+"tr_map_5_name":"\uE710Ruine\uE710",\
+"tr_map_6_name":"\uE705Bonbon\uE704",\
+\
 "tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map3":"Le générateur de l'usine s'est éteint ! Rallumez le pour obtenir une récompense !",\

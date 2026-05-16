@@ -129,6 +129,13 @@ data modify storage strings en_en set value {\
 "tr_item_jump_checkpoint":"Last checkpoint",\
 "tr_item_jump_reset":"Reset",\
 \
+"tr_map_1_name":"\uE708Pirate\uE707",\
+"tr_map_2_name":"Cemetery",\
+"tr_map_3_name":"\uE703Factory\uE703",\
+"tr_map_4_name":"\uE703Volcano\uE703",\
+"tr_map_5_name":"\uE710\uE703Ruin\uE710\uE703",\
+"tr_map_6_name":"\uE710\uE701Cake\uE710\uE701",\
+\
 "tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map3":"The factory generator has shut down! Turn it back on to earn a reward!",\
