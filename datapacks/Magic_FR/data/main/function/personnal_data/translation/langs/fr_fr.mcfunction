@@ -1147,4 +1147,5 @@ data modify storage strings fr_fr set value {\
 "tr_shop_undo":"Annuler",\
 "tr_shop_undo_all":"Tout",\
 "tr_shop_redo":"Rétablir",\
-"tr_shop_redo_all":"Tout"}
+"tr_shop_redo_all":"Tout",\
+"tr_shop_cant_usespell":"Impossible de lancer de sorts dans la salle d'achat !"}

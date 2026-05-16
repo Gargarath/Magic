@@ -1147,4 +1147,5 @@ data modify storage strings en_en set value {\
 "tr_shop_undo":"Undo",\
 "tr_shop_undo_all":"All",\
 "tr_shop_redo":"Redo",\
-"tr_shop_redo_all":"All"}
+"tr_shop_redo_all":"All",\
+"tr_shop_cant_usespell":"You can't use spells in shop!"}

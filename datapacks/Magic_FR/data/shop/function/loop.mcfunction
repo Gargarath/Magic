@@ -82,7 +82,7 @@ execute as @a[scores={InShop=1},tag=!look_at_spell3] at @s if predicate minecraf
 execute as @a[scores={InShop=1},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 
 # Interdit d'utiliser un sort
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[scores={usespell=1..,InShop=1}] run scoreboard players set @s usespell 0
 #execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
 execute as @a[scores={Player=1..,InShop=1}] unless predicate offhand_autorized run function shop:cant_usespell
