@@ -1,4 +1,4 @@
-# appelée par shop:loop executé par un joueur qui lance un piege mais est en respawn
+# appelée par shop:loop executé par un joueur qui lance un sort mais est dans le shop
 scoreboard players set @s usespell 0
 clear @s
 

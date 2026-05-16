@@ -81,41 +81,9 @@ execute as @a[scores={InShop=1},tag=look_at_spell2] at @s unless predicate minec
 execute as @a[scores={InShop=1},tag=!look_at_spell3] at @s if predicate minecraft:shop/look_at_spell3 run function shop:look_at/look_at_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[scores={InShop=1},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 
-          # shop boots #
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=boots] run function shop:boot/testplayerscore/testboots
-# La commande du dessus est executé sur tous les item frame boots qui ont été tournés. Elle lance la fonction de verification du niveau d'objet boot et de l'agent du joueur du lobby en question.
-
-
-
-          # shop leggs #
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=legs] run function shop:legs/testplayerscore/testlegs
-# La commande du dessus est executé sur tous les item frame legs qui ont été tournés. Elle lance la fonction de verification du niveau d'objet legs et de l'agent du joueur du lobby en question.
-
-           # shop chest #
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=chest] run function shop:chest/testplayerscore/testchest
-
-
-			# shop weapon
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=weapon1] run function shop:weapon1/testplayerscore/testweapon1
-
-			# shop spell1
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell1] run function shop:spell1/testplayerscore/testspell1
-
-			# shop spell2
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell2] run function shop:spell2/testplayerscore/testspell2
-
-			# shop spell3
-
-#execute as @e[type=item_frame,nbt={ItemRotation:1b},tag=spell3] run function shop:spell3/testplayerscore/testspell3
-
 # Interdit d'utiliser un sort
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell
+execute as @a[scores={usespell=1..,InShop=1}] run scoreboard players set @s usespell 0
 #execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
 execute as @a[scores={Player=1..,InShop=1}] unless predicate offhand_autorized run function shop:cant_usespell
 
