@@ -45,10 +45,10 @@ execute if score @s class_id matches 1 run tag @s add warrior
 execute if score @s class_id matches 2 run tag @s add archer
 execute if score @s class_id matches 3 run tag @s add mage
 execute if score @s class_id matches 4 run tag @s add rogue
-tellraw @s[tag=warrior] ["",{"text":"La classe guerrier vous a été assignée automatiquement","italic":true,"color":"gray"}]
-tellraw @s[tag=archer] ["",{"text":"La classe archer vous a été assignée automatiquement","italic":true,"color":"gray"}]
-tellraw @s[tag=mage] ["",{"text":"La classe mage vous a été assignée automatiquement","italic":true,"color":"gray"}]
-tellraw @s[tag=rogue] ["",{"text":"La classe assassin vous a été assignée automatiquement","italic":true,"color":"gray"}]
+$tellraw @s[tag=warrior] ["",{"text":"$(tr_class_assigned_warrior)","italic":true,"color":"gray"}]
+$tellraw @s[tag=archer] ["",{"text":"$(tr_class_assigned_archer)","italic":true,"color":"gray"}]
+$tellraw @s[tag=mage] ["",{"text":"$(tr_class_assigned_mage)","italic":true,"color":"gray"}]
+$tellraw @s[tag=rogue] ["",{"text":"$(tr_class_assigned_rogue)","italic":true,"color":"gray"}]
 # Incrémenter le compteur de la classe choisie dans la bonne équipe
 execute if score @s team_side matches 1 if score @s class_id matches 1 run scoreboard players add #w_blue mm_count 1
 execute if score @s team_side matches 1 if score @s class_id matches 2 run scoreboard players add #a_blue mm_count 1

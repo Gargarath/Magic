@@ -48,6 +48,14 @@ data modify storage strings fr_fr set value {\
 "tr_already_rogue":"Vous êtes déjà Assassin !",\
 "tr_already_random":"Vous êtes déjà en Aléatoire !",\
 \
+"tr_class_assigned_warrior":"La classe guerrier vous a été assignée automatiquement",\
+"tr_class_assigned_archer":"La classe archer vous a été assignée automatiquement",\
+"tr_class_assigned_mage":"La classe mage vous a été assignée automatiquement",\
+"tr_class_assigned_rogue":"La classe assassin vous a été assignée automatiquement",\
+\
+"tr_team_assigned_blue":"L'équipe bleue vous a été assignée automatiquement",\
+"tr_team_assigned_red":"L'équipe rouge vous a été assignée automatiquement",\
+\
 "tr_item_select_island":"Menu de jeu",\
 "tr_item_select_main_island":"Île principale",\
 "tr_item_select_stats_island":"Île de statistiques",\

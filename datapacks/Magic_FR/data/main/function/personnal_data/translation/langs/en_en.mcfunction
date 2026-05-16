@@ -48,6 +48,14 @@ data modify storage strings en_en set value {\
 "tr_already_rogue":"You are already a Rogue!",\
 "tr_already_random":"You are already set as Random!",\
 \
+"tr_class_assigned_warrior":"You have been automatically set as a warrior",\
+"tr_class_assigned_archer":"You have been automatically set as an archer",\
+"tr_class_assigned_mage":"You have been automatically set as a mage",\
+"tr_class_assigned_rogue":"You have been automatically set as a rogue",\
+\
+"tr_team_assigned_blue":"You have been automatically assigned to the blue team",\
+"tr_team_assigned_red":"You have been automatically assigned to the red team",\
+\
 "tr_item_select_island":"Game menu",\
 "tr_item_select_main_island":"Main island",\
 "tr_item_select_stats_island":"Stats island",\

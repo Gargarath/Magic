@@ -13,8 +13,8 @@ execute if score #blue mm_count = #red mm_count if score @s mm_rand matches 1 ru
 
 execute if score @s team_side matches 1 run tag @s add blue_team
 execute if score @s team_side matches 2 run tag @s add red_team
-tellraw @s[tag=blue_team] ["",{"text":"L'équipe bleue vous a été assignée automatiquement","italic":true,"color":"gray"}]
-tellraw @s[tag=red_team] ["",{"text":"L'équipe rouge vous a été assignée automatiquement","italic":true,"color":"gray"}]
+$tellraw @s[tag=blue_team] ["",{"text":"$(tr_team_assigned_blue)","italic":true,"color":"gray"}]
+$tellraw @s[tag=red_team] ["",{"text":"$(tr_team_assigned_red)","italic":true,"color":"gray"}]
 # Mettre à jour les compteurs globaux
 execute if score @s team_side matches 1 run scoreboard players add #blue mm_count 1
 execute if score @s team_side matches 2 run scoreboard players add #red mm_count 1
