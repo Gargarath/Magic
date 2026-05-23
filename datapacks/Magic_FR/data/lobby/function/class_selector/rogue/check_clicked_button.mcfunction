@@ -2,7 +2,7 @@
 # permet de faire l'action selon le bouton cliqué
 
 
-execute if entity @s[tag=rogue_passive] on target at @e[type=marker,tag=select_rogue_spot,limit=1] run function lobby:class_selector/rogue/pages/passive/main
+execute if entity @s[tag=rogue_passive] on target at @e[type=marker,tag=select_rogue_spot,limit=1] run function lobby:class_selector/rogue/pages/passive/main with storage lobby:language translate
 execute if entity @s[tag=rogue_weapon] on target at @e[type=marker,tag=select_rogue_spot,limit=1] run function lobby:class_selector/rogue/pages/weapon1/main
 execute if entity @s[tag=rogue_spell1] on target at @e[type=marker,tag=select_rogue_spot,limit=1] run function lobby:class_selector/rogue/pages/spell1/main
 execute if entity @s[tag=rogue_spell2] on target at @e[type=marker,tag=select_rogue_spot,limit=1] run function lobby:class_selector/rogue/pages/spell2/main

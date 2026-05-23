@@ -21,7 +21,7 @@ data modify entity @e[type=text_display,tag=mage_selector_passive_text,limit=1] 
 data modify entity @e[type=text_display,tag=mage_selector_passive_text,limit=1] text.color set value green
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"dark_purple","text":"Bâton magique"},{"bold":true,"color":"green","text":"\n\nVotre bâton ensorcelé vous permet de tirer sur vos adversaires en échange de mana.\n\nAméliorez votre bâton pour augmenter sa puissance !"}],background:16711680}
+$data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"dark_purple","text":"$(tr_mage_passive1_name)"},{"bold":true,"color":"green","text":"\n\n$(tr_mage_passive1_lore_1)"}],background:16711680}
 
 ## LEVEL
 

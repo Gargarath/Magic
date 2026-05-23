@@ -10,7 +10,7 @@ execute as @e[type=marker,tag=select_warrior_spot] at @s run rotate @s facing 0.
 execute as @e[type=marker,tag=select_warrior_spot] at @s run rotate @s ~ 0
 # fait regarder le marker guerrier vers le milieu a leur hauteur de vue
 
-execute as @e[type=marker,tag=select_warrior_spot,limit=1] at @s run function lobby:class_selector/warrior/setup_statue
+execute as @e[type=marker,tag=select_warrior_spot,limit=1] at @s run function lobby:class_selector/warrior/setup_statue with storage lobby:language translate
 # invoque les boutons et cosmétique autour du marker
 
 ## ARCHER
@@ -19,7 +19,7 @@ execute as @e[type=marker,tag=select_archer_spot] at @s run rotate @s facing 0.5
 execute as @e[type=marker,tag=select_archer_spot] at @s run rotate @s ~ 0
 # fait regarder le marker archer vers le milieu a leur hauteur de vue
 
-execute as @e[type=marker,tag=select_archer_spot,limit=1] at @s run function lobby:class_selector/archer/setup_statue
+execute as @e[type=marker,tag=select_archer_spot,limit=1] at @s run function lobby:class_selector/archer/setup_statue with storage lobby:language translate
 # invoque les boutons et cosmétique autour du marker
 
 ## MAGE
@@ -28,7 +28,7 @@ execute as @e[type=marker,tag=select_mage_spot] at @s run rotate @s facing 0.5 1
 execute as @e[type=marker,tag=select_mage_spot] at @s run rotate @s ~ 0
 # fait regarder le marker mage vers le milieu a leur hauteur de vue
 
-execute as @e[type=marker,tag=select_mage_spot,limit=1] at @s run function lobby:class_selector/mage/setup_statue
+execute as @e[type=marker,tag=select_mage_spot,limit=1] at @s run function lobby:class_selector/mage/setup_statue with storage lobby:language translate
 # invoque les boutons et cosmétique autour du marker
 
 ## ASSASSIN
@@ -37,7 +37,7 @@ execute as @e[type=marker,tag=select_rogue_spot] at @s run rotate @s facing 0.5 
 execute as @e[type=marker,tag=select_rogue_spot] at @s run rotate @s ~ 0
 # fait regarder le marker mage vers le milieu a leur hauteur de vue
 
-execute as @e[type=marker,tag=select_rogue_spot,limit=1] at @s run function lobby:class_selector/rogue/setup_statue
+execute as @e[type=marker,tag=select_rogue_spot,limit=1] at @s run function lobby:class_selector/rogue/setup_statue with storage lobby:language translate
 # invoque les boutons et cosmétique autour du marker
 
 

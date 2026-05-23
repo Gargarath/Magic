@@ -43,6 +43,20 @@
         }
       },
             {
+        "when": "lang_en_en",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/main/lang_en_en"
+        }
+      },
+            {
+        "when": "lang_fr_fr",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/main/lang_fr_fr"
+        }
+      },
+            {
         "when": "start_game",
         "model": {
           "type": "model",

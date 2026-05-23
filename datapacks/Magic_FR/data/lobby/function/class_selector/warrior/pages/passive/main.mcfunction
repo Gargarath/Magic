@@ -21,7 +21,7 @@ data modify entity @e[type=text_display,tag=warrior_selector_passive_text,limit=
 data modify entity @e[type=text_display,tag=warrior_selector_passive_text,limit=1] text.color set value green
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=warrior_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"Armure blindée"},{"bold":true,"color":"green","text":"\n\nVotre plastron vous octroie 1.5 fois plus de points de vie"},{"bold":true,"color":"red","text":"\n\nVos jambières vous octroient deux fois moins de vitesse."}],background:16711680}
+$data merge entity @e[type=text_display,tag=warrior_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"$(tr_warrior_passive1_name)"},{"bold":true,"color":"green","text":"\n\n$(tr_warrior_passive1_lore_1)"},{"bold":true,"color":"red","text":"\n\n$(tr_warrior_passive1_lore_2)"}],background:16711680}
 
 ## LEVEL
 

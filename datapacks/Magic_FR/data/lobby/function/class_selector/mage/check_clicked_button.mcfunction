@@ -2,7 +2,7 @@
 # permet de faire l'action selon le bouton cliqué
 
 
-execute if entity @s[tag=mage_passive] on target at @e[type=marker,tag=select_mage_spot,limit=1] run function lobby:class_selector/mage/pages/passive/main
+execute if entity @s[tag=mage_passive] on target at @e[type=marker,tag=select_mage_spot,limit=1] run function lobby:class_selector/mage/pages/passive/main with storage lobby:language translate
 execute if entity @s[tag=mage_weapon] on target at @e[type=marker,tag=select_mage_spot,limit=1] run function lobby:class_selector/mage/pages/weapon1/main
 execute if entity @s[tag=mage_spell1] on target at @e[type=marker,tag=select_mage_spot,limit=1] run function lobby:class_selector/mage/pages/spell1/main
 execute if entity @s[tag=mage_spell2] on target at @e[type=marker,tag=select_mage_spot,limit=1] run function lobby:class_selector/mage/pages/spell2/main

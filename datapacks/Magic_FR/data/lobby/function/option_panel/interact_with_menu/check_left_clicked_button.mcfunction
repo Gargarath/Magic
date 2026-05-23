@@ -1,6 +1,9 @@
 # Fonction appellée par lobby:interact_with_menu/left_click_on_menu au nom du boutton qui a été cliqué si un joueur a cliqué sur un bouton avec left click et à le droit
 # permet de lancer le check de quel bouton
 
+# main
+execute if entity @s[tag=optn_menu_main_lang] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/main/lang/lang_decrease
+
 # gamemode (CTF)
 
     # shop_timer

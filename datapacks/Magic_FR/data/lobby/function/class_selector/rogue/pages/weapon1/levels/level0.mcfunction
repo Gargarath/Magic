@@ -7,5 +7,5 @@ data merge entity @e[type=text_display,tag=rogue_selector_text,limit=1] {transfo
 
 ## LEVEL
 
-data merge entity @e[type=text_display,tag=rogue_selector_level_text,limit=1] {text:[{"underlined":false,"bold":false,"color":"white","text":"Niveau 0"}]}
+$data merge entity @e[type=text_display,tag=rogue_selector_level_text,limit=1] {text:[{"underlined":false,"bold":false,"color":"white","text":"$(tr_lobby_item_level) 0"}]}
 # text

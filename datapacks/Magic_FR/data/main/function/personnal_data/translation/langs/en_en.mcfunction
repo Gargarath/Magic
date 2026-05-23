@@ -37,10 +37,29 @@ data modify storage strings en_en set value {\
 "tr_item_select_rogue":"Rogue",\
 "tr_item_select_random":"Random",\
 \
-"tr_became_warrior":"Vous became a Warrior!",\
-"tr_became_archer":"Vous became an Archer!",\
-"tr_became_mage":"Vous became a Mage!",\
-"tr_became_rogue":"Vous became a Rogue!",\
+"tr_lobby_warrior_title":"Warrior",\
+"tr_lobby_archer_title":"Archer",\
+"tr_lobby_mage_title":"Mage",\
+"tr_lobby_rogue_title":"Rogue",\
+\
+"tr_lobby_warrior_description":"Specialist in close combat, your ability to withstand blows and your massive axe give you a clear advantage in melee fights!",\
+"tr_lobby_archer_description":"Master of the bow, your ability to control enemy movements is unmatched!",\
+"tr_lobby_mage_description":"Adept of magic, you annihilate your enemies with your powerful spells!",\
+"tr_lobby_rogue_description":"Expert in stealth, you use cunning to subdue your enemies!",\
+\
+"tr_lobby_passive":"Passive",\
+"tr_lobby_weapon":"Weapon",\
+"tr_lobby_spell1":"Spell 1",\
+"tr_lobby_spell2":"Spell 2",\
+"tr_lobby_spell3":"Spell 3",\
+\
+"tr_lobby_choose_class":"Choose this class",\
+"tr_lobby_item_level":"Level",\
+\
+"tr_became_warrior":"You became a Warrior!",\
+"tr_became_archer":"You became an Archer!",\
+"tr_became_mage":"You became a Mage!",\
+"tr_became_rogue":"You became a Rogue!",\
 "tr_became_random":"Your class will be set randomly!",\
 "tr_already_warrior":"You are already a Warrior!",\
 "tr_already_archer":"You are already an Archer!",\
@@ -142,6 +161,10 @@ data modify storage strings en_en set value {\
 "tr_map_secondary_objective_launch_map4":"The heart of the volcano has awakened! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map5":"The guardian has appeared in the temple!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map6":"The cherry has come to life!\nKill it to earn a reward!",\
+\
+"tr_warrior_passive1_name":"Reinforced Armor",\
+"tr_warrior_passive1_lore_1":"Your chestplate grants you 1.5 times more health points.",\
+"tr_warrior_passive1_lore_2":"Your leggings reduce your movement speed by half.",\
 \
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
 "tr_warrior_weapon1_0_lore_1":"+1 attack damage",\
@@ -352,6 +375,15 @@ data modify storage strings en_en set value {\
 \
 \
 \
+\
+"tr_archer_passive1_name":"Elven Vision",\
+"tr_archer_passive1_lore_1":"You can see invisible enemy players.",\
+\
+"tr_archer_passive2_name":"Arrow Abundance",\
+"tr_archer_passive2_lore_1":"You recover one arrow 2 seconds after each shot. Upgrading your bow will allow you to carry more arrows.",\
+\
+"tr_archer_passive3_name":"Elven Agility",\
+"tr_archer_passive3_lore_1":"Sneak to increase your jump height up to 2 blocks. High jumps make you drop the flag.",\
 \
 "tr_archer_classic_arrow_1_name":"Arrow",\
 "tr_archer_classic_arrow_1_lore_1":"-----------------------------",\
@@ -688,6 +720,9 @@ data modify storage strings en_en set value {\
 \
 \
 \
+"tr_mage_passive1_name":"Magic Staff",\
+"tr_mage_passive1_lore_1":"Your enchanted staff allows you to shoot at your enemies in exchange for mana.\n\nUpgrade your staff to increase its power!",\
+\
 "tr_mage_weapon1_0_name":"Beginner's Staff",\
 "tr_mage_weapon1_0_lore_1":"-----------------------------------",\
 "tr_mage_weapon1_0_lore_2":"This shabby staff is incapable of casting",\
@@ -964,6 +999,15 @@ data modify storage strings en_en set value {\
 \
 \
 \
+\
+"tr_rogue_passive1_name":"Regeneration",\
+"tr_rogue_passive1_lore_1":"Your health regenerates much faster.",\
+\
+"tr_rogue_passive2_name":"Stealth Indicator",\
+"tr_rogue_passive2_lore_1":"While invisible, an icon indicates your level of stealth.",\
+"tr_rogue_passive2_lore_2":"When sneaking, nobody can see you.",\
+"tr_rogue_passive2_lore_3":"When walking, archers can see you thanks to their passive ability.",\
+"tr_rogue_passive2_lore_4":"When sprinting, everyone can see you because of your footsteps.",\
 \
 "tr_rogue_weapon1_0_name":"Beginner's Dagger",\
 "tr_rogue_weapon1_0_lore_1":"+0.5 attack damage.",\

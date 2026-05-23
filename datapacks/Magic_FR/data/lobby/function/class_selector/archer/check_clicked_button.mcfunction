@@ -2,7 +2,7 @@
 # permet de faire l'action selon le bouton cliqué
 
 
-execute if entity @s[tag=archer_passive] on target at @e[type=marker,tag=select_archer_spot,limit=1] run function lobby:class_selector/archer/pages/passive/main
+execute if entity @s[tag=archer_passive] on target at @e[type=marker,tag=select_archer_spot,limit=1] run function lobby:class_selector/archer/pages/passive/main with storage lobby:language translate
 execute if entity @s[tag=archer_weapon] on target at @e[type=marker,tag=select_archer_spot,limit=1] run function lobby:class_selector/archer/pages/weapon1/main
 execute if entity @s[tag=archer_spell1] on target at @e[type=marker,tag=select_archer_spot,limit=1] run function lobby:class_selector/archer/pages/spell1/main
 execute if entity @s[tag=archer_spell2] on target at @e[type=marker,tag=select_archer_spot,limit=1] run function lobby:class_selector/archer/pages/spell2/main

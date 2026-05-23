@@ -37,6 +37,25 @@ data modify storage strings fr_fr set value {\
 "tr_item_select_rogue":"Assassin",\
 "tr_item_select_random":"Aléatoire",\
 \
+"tr_lobby_warrior_title":"Guerier",\
+"tr_lobby_archer_title":"Archer",\
+"tr_lobby_mage_title":"Mage",\
+"tr_lobby_rogue_title":"Assassin",\
+\
+"tr_lobby_warrior_description":"Spécialiste du combat rapproché, votre capacité à encaisser les coups et votre grosse hache vous donnent un avantage certain au corps à corps !",\
+"tr_lobby_archer_description":"Maître dans le maniement de l'arc, votre capacité à contrôler les mouvements adverses est inégalable !",\
+"tr_lobby_mage_description":"Adepte de la magie, vous anéantissez vos ennemis grâce à vos puissants sorts !",\
+"tr_lobby_rogue_description":"Expert en dissimulation, vous utilisez la ruse pour asservir vos ennemis !",\
+\
+"tr_lobby_passive":"Passif",\
+"tr_lobby_weapon":"Arme",\
+"tr_lobby_spell1":"Sort 1",\
+"tr_lobby_spell2":"Sort 2",\
+"tr_lobby_spell3":"Sort 3",\
+\
+"tr_lobby_choose_class":"Choisir cette classe",\
+"tr_lobby_item_level":"Niveau",\
+\
 "tr_became_warrior":"Vous êtes devenu Guerrier !",\
 "tr_became_archer":"Vous êtes devenu Archer !",\
 "tr_became_mage":"Vous êtes devenu Mage !",\
@@ -142,6 +161,10 @@ data modify storage strings fr_fr set value {\
 "tr_map_secondary_objective_launch_map4":"Le coeur du volcan s'est réveillé ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map5":"Le gardien est apparu dans le temple !\nTuez le pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map6":"La cerise a prit vie !\nTuez la pour obtenir une récompense !",\
+\
+"tr_warrior_passive1_name":"Armure blindée",\
+"tr_warrior_passive1_lore_1":"Votre plastron vous octroie 1,5 fois plus de points de vie.",\
+"tr_warrior_passive1_lore_2":"Vos jambières vous octroient deux fois moins de vitesse.",\
 \
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
 "tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
@@ -352,6 +375,15 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+\
+"tr_archer_passive1_name":"Vision elfique",\
+"tr_archer_passive1_lore_1":"Vous pouvez voir les joueurs adverses invisibles.",\
+\
+"tr_archer_passive2_name":"Abondance de flèches",\
+"tr_archer_passive2_lore_1":"Vous récupérez une flèche 2 secondes après chaque tir. Améliorer votre arc vous permettra de stocker davantage de flèches sur vous.",\
+\
+"tr_archer_passive3_name":"Agilité elfique",\
+"tr_archer_passive3_lore_1":"Accroupissez-vous pour augmenter votre hauteur de saut jusqu'à 2 blocs. Les grands sauts font tomber le drapeau.",\
 \
 "tr_archer_classic_arrow_1_name":"Flèche",\
 "tr_archer_classic_arrow_1_lore_1":"-----------------------------",\
@@ -688,6 +720,9 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+"tr_mage_passive1_name":"Bâton magique",\
+"tr_mage_passive1_lore_1":"Votre bâton ensorcelé vous permet de tirer sur vos adversaires en échange de mana.\n\nAméliorez votre bâton pour augmenter sa puissance !",\
+\
 "tr_mage_weapon1_0_name":"Bâton de débutant",\
 "tr_mage_weapon1_0_lore_1":"-----------------------------------",\
 "tr_mage_weapon1_0_lore_2":"Ce bâton miteux est incapable de lancer",\
@@ -964,6 +999,15 @@ data modify storage strings fr_fr set value {\
 \
 \
 \
+\
+"tr_rogue_passive1_name":"Régénération",\
+"tr_rogue_passive1_lore_1":"Vos points de vie se régénèrent beaucoup plus rapidement",\
+\
+"tr_rogue_passive2_name":"Icone de discretion",\
+"tr_rogue_passive2_lore_1":"Lorsque vous êtes invisible, une icone indique votre degré de discrétion.",\
+"tr_rogue_passive2_lore_2":"Vous êtes accroupi, personne ne peut vous voir.",\
+"tr_rogue_passive2_lore_3":"Vous marchez, les archers peuvent vous voir grâce à leur passif.",\
+"tr_rogue_passive2_lore_4":"Vous sprintez, tout le monde peut vous voir grâce à vos traces de pas.",\
 \
 "tr_rogue_weapon1_0_name":"Dague de débutant I",\
 "tr_rogue_weapon1_0_lore_1":"+0,5 point d'attaque.",\

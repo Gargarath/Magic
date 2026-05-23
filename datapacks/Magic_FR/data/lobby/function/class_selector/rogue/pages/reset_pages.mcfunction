@@ -7,5 +7,5 @@ scoreboard players set $spell1 class_selector_rogue 1
 scoreboard players set $spell2 class_selector_rogue 1
 scoreboard players set $spell3 class_selector_rogue 1
 # initialise les numéros de pages
-execute as @e[type=marker,tag=select_rogue_spot,limit=1] at @s run function lobby:class_selector/rogue/pages/passive/main
+execute as @e[type=marker,tag=select_rogue_spot,limit=1] at @s run function lobby:class_selector/rogue/pages/passive/main with storage lobby:language translate
 # affiche la page passif
