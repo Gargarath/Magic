@@ -10,3 +10,4 @@ scoreboard players set @s operator 0
 # Indique à celui qui vient d'appuyer qu'il n'a pas les droit pour utiliser le menu d'option
 
 execute as @e[type=minecraft:interaction,tag=optn_menu_clickable] if data entity @s interaction run data remove entity @s interaction
+execute as @e[type=minecraft:interaction,tag=optn_menu_clickable] if data entity @s attack run data remove entity @s attack
