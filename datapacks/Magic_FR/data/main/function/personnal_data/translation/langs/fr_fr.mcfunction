@@ -31,6 +31,14 @@ data modify storage strings fr_fr set value {\
 \
 "tr_item_back":"Retour",\
 \
+"tr_lobby_jump_pad_maps":"Visiter les arènes",\
+"tr_lobby_jump_pad_stats":"Île de statistiques",\
+"tr_lobby_jump_pad_jump":"Île de jump",\
+"tr_lobby_jump_pad_back":"Retourner au lobby",\
+\
+"tr_lobby_map_visit_arena_title":"Visiter les arènes",\
+"tr_lobby_map_visit_arena_subtitle":"Cliquez sur une arène pour la visiter",\
+\
 "tr_item_select_warrior":"Guerrier",\
 "tr_item_select_archer":"Archer",\
 "tr_item_select_mage":"Mage",\
@@ -148,12 +156,38 @@ data modify storage strings fr_fr set value {\
 "tr_item_jump_checkpoint":"Dernier checkpoint",\
 "tr_item_jump_reset":"Annuler",\
 \
-"tr_map_1_name":"\uE708Pirate\uE707",\
+"tr_gui_map_1_name":"\uE708Pirate\uE707",\
+"tr_gui_map_2_name":"Cimetière",\
+"tr_gui_map_3_name":"\uE710Usine\uE710",\
+"tr_gui_map_4_name":"\uE706Volcan\uE706",\
+"tr_gui_map_5_name":"\uE710Ruine\uE710",\
+"tr_gui_map_6_name":"\uE705Bonbon\uE704",\
+\
+"tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cimetière",\
-"tr_map_3_name":"\uE710Usine\uE710",\
-"tr_map_4_name":"\uE706Volcan\uE706",\
-"tr_map_5_name":"\uE710Ruine\uE710",\
-"tr_map_6_name":"\uE705Bonbon\uE704",\
+"tr_map_3_name":"Usine",\
+"tr_map_4_name":"Volcan",\
+"tr_map_5_name":"Ruine",\
+"tr_map_6_name":"Bonbon",\
+\
+"tr_jump_start_title":"Défi de Parcours",\
+"tr_jump_start_subtitle":"Départ",\
+"tr_jump_checkpoint":"Checkpoint",\
+"tr_jump_end_subtitle":"Fin",\
+"tr_jump_spec_mode_title":"Mode spectateur",\
+"tr_jump_spec_mode_join":"Rejoindre",\
+\
+"tr_jump_leaderboard_title":"Parcours",\
+"tr_jump_leaderboard_subtitle":"Meilleurs temps",\
+"tr_jump_leaderboard_no_data":"Aucune donnée",\
+\
+"tr_jump_leaderboard_title_1":"Statistiques de ",\
+"tr_jump_leaderboard_title_2":"parcours",\
+"tr_jump_leaderboard_best_time":"Meilleur temps :",\
+"tr_jump_leaderboard_fall":"chutes",\
+"tr_jump_leaderboard_checkpoint":"Checkpoint",\
+"tr_jump_leaderboard_total_try":"Tentatives totales sur le parcours :",\
+"tr_jump_leaderboard_total_fall":"Chutes totales sur le parcours :",\
 \
 "tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\

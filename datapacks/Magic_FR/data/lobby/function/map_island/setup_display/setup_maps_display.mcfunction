@@ -1,4 +1,4 @@
-## appelée par rien
+## appelée par rien (mais doit etre appelée with storage lobby:language translate)
 # permet de setup les item de map sur l'île de maps
 
 kill @e[tag=map_display]
@@ -14,11 +14,11 @@ execute at @e[type=marker,tag=map_display_spot,limit=1] positioned ~ ~0.1 ~ run 
 scoreboard players set $displayed_map map_display_position 1
 
 # TITRE
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4 ~5 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:200,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3.0f,3.0f,3.0f]},text:[{"underlined":false,"bold":true,"color":"gold","text":"Visiter les arènes"}],background:16711680}
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4 ~4.6 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:300,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},text:[{"underlined":false,"bold":true,"color":"gray","text":"* cliquez sur une arène pour la visiter *"}],background:16711680}
+$execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4 ~5 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:200,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title","map_display_title_main"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3.0f,3.0f,3.0f]},text:[{"underlined":false,"bold":true,"color":"gold","text":"$(tr_lobby_map_visit_arena_title)"}],background:16711680}
+$execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4 ~4.6 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:300,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title","map_display_title_subtitle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},text:[{"underlined":false,"bold":true,"color":"gray","text":"* $(tr_lobby_map_visit_arena_subtitle) *"}],background:16711680}
 
 # INFO MAP 1
-execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4.5 ~3 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:100,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title_map1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:[{"underlined":false,"bold":true,"color":"yellow","text":"Pirate"}],background:16711680}
+$execute at @e[type=marker,tag=map_display_spot,limit=1] run summon text_display ~-4.5 ~3 ~ {Rotation:[90F,0F],view_range:2f,billboard:"horizontal",line_width:100,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["map_display","map_display_title_map1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:[{"underlined":false,"bold":true,"color":"yellow","text":"$(tr_map_1_name)"}],background:16711680}
 # text
 
 execute at @e[type=marker,tag=map_display_spot,limit=1] run summon interaction ~-4.5 ~-0.4 ~-2.65 {width:0.2f,height:3.0,response:1b,Tags:["map_display","map_display_clickable","map_display_slot1_clickable"]}

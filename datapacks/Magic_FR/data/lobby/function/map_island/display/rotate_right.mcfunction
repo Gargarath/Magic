@@ -7,4 +7,4 @@ scoreboard players set @e[type=item_display,tag=map_display_map,scores={map_disp
 scoreboard players add $displayed_map map_display_position 1
 execute if score $displayed_map map_display_position matches 7.. run scoreboard players set $displayed_map map_display_position 1
 
-execute as @e[type=item_display,tag=map_display] run function lobby:map_island/display/rotate_maps
+execute as @e[type=item_display,tag=map_display] run function lobby:map_island/display/rotate_maps with storage lobby:language translate

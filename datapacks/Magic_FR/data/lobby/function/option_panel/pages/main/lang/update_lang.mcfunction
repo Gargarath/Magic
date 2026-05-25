@@ -9,3 +9,9 @@ function lobby:option_panel/pages/main/lang/merge_stuff_prices
 
 function lobby:class_selector/refresh_language with storage lobby:language translate
 # rafraichit les pages de classes deja affichees
+
+function lobby:refresh_slime_pads_language with storage lobby:language translate
+# rafraichit les textes des jump pads deja affiches
+
+function lobby:map_island/display/refresh_language with storage lobby:language translate
+# rafraichit les textes de l'ile maps deja affiches

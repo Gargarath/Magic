@@ -31,6 +31,14 @@ data modify storage strings en_en set value {\
 \
 "tr_item_back":"Back",\
 \
+"tr_lobby_jump_pad_maps":"Visit maps",\
+"tr_lobby_jump_pad_stats":"Stats island",\
+"tr_lobby_jump_pad_jump":"Jump island",\
+"tr_lobby_jump_pad_back":"Back to lobby",\
+\
+"tr_lobby_map_visit_arena_title":"Visit maps",\
+"tr_lobby_map_visit_arena_subtitle":"Click on a map to enter spectator mode",\
+\
 "tr_item_select_warrior":"Warrior",\
 "tr_item_select_archer":"Archer",\
 "tr_item_select_mage":"Mage",\
@@ -148,12 +156,38 @@ data modify storage strings en_en set value {\
 "tr_item_jump_checkpoint":"Last checkpoint",\
 "tr_item_jump_reset":"Reset",\
 \
-"tr_map_1_name":"\uE708Pirate\uE707",\
+"tr_gui_map_1_name":"\uE708Pirate\uE707",\
+"tr_gui_map_2_name":"Cemetery",\
+"tr_gui_map_3_name":"\uE703Factory\uE703",\
+"tr_gui_map_4_name":"\uE703Volcano\uE703",\
+"tr_gui_map_5_name":"\uE710\uE703Ruin\uE710\uE703",\
+"tr_gui_map_6_name":"\uE710\uE701Cake\uE710\uE701",\
+\
+"tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cemetery",\
-"tr_map_3_name":"\uE703Factory\uE703",\
-"tr_map_4_name":"\uE703Volcano\uE703",\
-"tr_map_5_name":"\uE710\uE703Ruin\uE710\uE703",\
-"tr_map_6_name":"\uE710\uE701Cake\uE710\uE701",\
+"tr_map_3_name":"Factory",\
+"tr_map_4_name":"Volcano",\
+"tr_map_5_name":"Ruin",\
+"tr_map_6_name":"Cake",\
+\
+"tr_jump_start_title":"Défi de Parcours",\
+"tr_jump_start_subtitle":"Départ",\
+"tr_jump_checkpoint":"Checkpoint",\
+"tr_jump_end_subtitle":"Fin",\
+"tr_jump_spec_mode_title":"Mode spectateur",\
+"tr_jump_spec_mode_join":"Rejoindre",\
+\
+"tr_jump_leaderboard_title":"Parcours",\
+"tr_jump_leaderboard_subtitle":"Meilleurs temps",\
+"tr_jump_leaderboard_no_data":"Aucune donnée",\
+\
+"tr_jump_leaderboard_title_1":"Statistiques de ",\
+"tr_jump_leaderboard_title_2":"parcours",\
+"tr_jump_leaderboard_best_time":"Meilleur temps :",\
+"tr_jump_leaderboard_fall":"chutes",\
+"tr_jump_leaderboard_checkpoint":"Checkpoint",\
+"tr_jump_leaderboard_total_try":"Tentatives totales sur le parcours :",\
+"tr_jump_leaderboard_total_fall":"Chutes totales sur le parcours :",\
 \
 "tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\
