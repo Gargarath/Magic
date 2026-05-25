@@ -167,7 +167,7 @@ data modify storage strings en_en set value {\
 "tr_warrior_passive1_lore_2":"Your leggings reduce your movement speed by half.",\
 \
 "tr_warrior_weapon1_0_name":"Beginner's Axe",\
-"tr_warrior_weapon1_0_lore_1":"+1 attack damage",\
+"tr_warrior_weapon1_0_lore_1":"+0.5 attack damage",\
 "tr_warrior_weapon1_1_name":"Battle Axe I",\
 "tr_warrior_weapon1_1_lore_1":"+1 attack damage",\
 "tr_warrior_weapon1_2_name":"Battle Axe II",\

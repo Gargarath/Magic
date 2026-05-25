@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat VII - 70 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 5 : 13 à 25 points de dégats (selon la charge)\n\nRecul 1\n\nCarquois  : 4 flèches\n"}],background:16711680}
+$data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"$(tr_archer_weapon1_7_name)"},{"text":"\n\n $(tr_shop_item_overlay_price_1) ","color":"gold"},{"text":"\uE634","color":"white"},{"text":" $(stuff_archer_weapon1_7_price) $(tr_shop_item_overlay_price_2)","color":"gold"},{"bold":true,"color":"green","text":"\n\n$(tr_archer_weapon1_7_lore_1)\n$(tr_archer_weapon1_7_lore_2)\n\n$(tr_archer_weapon1_7_lore_3)\n\n$(tr_archer_weapon1_7_lore_4)"}],background:16711680}
 
 
 ## LEVEL

@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Bâton de combat VI - 60 PH"},{"bold":true,"color":"green","text":"\n\n+3 points d'attaque.\n\nLance un sort dans la direction visée, il infligera 6 points de dégats au premier joueur adverse rencontré.\n\nPortée maximale: 40 blocs.\n\nCoût en mana: 75\n"}],background:16711680}
+$data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"$(tr_mage_weapon1_6_name)"},{"text":"\n\n $(tr_shop_item_overlay_price_1) ","color":"gold"},{"text":"\uE634","color":"white"},{"text":" $(stuff_mage_weapon1_6_price) $(tr_shop_item_overlay_price_2)","color":"gold"},{"bold":true,"color":"green","text":"\n\n$(tr_mage_weapon1_6_lore_1)\n\n$(tr_mage_weapon1_6_lore_3) $(tr_mage_weapon1_6_lore_4) $(tr_mage_weapon1_6_lore_5)\n\n$(tr_mage_weapon1_6_lore_6)\n\n$(tr_mage_weapon1_6_lore_7)"}],background:16711680}
 
 
 ## LEVEL

@@ -167,7 +167,7 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_passive1_lore_2":"Vos jambières vous octroient deux fois moins de vitesse.",\
 \
 "tr_warrior_weapon1_0_name":"Hache de débutant",\
-"tr_warrior_weapon1_0_lore_1":"+1 point d'attaque",\
+"tr_warrior_weapon1_0_lore_1":"+0,5 point d'attaque",\
 "tr_warrior_weapon1_1_name":"Hache de bataille I",\
 "tr_warrior_weapon1_1_lore_1":"+1 point d'attaque",\
 "tr_warrior_weapon1_2_name":"Hache de bataille II",\
@@ -734,7 +734,7 @@ data modify storage strings fr_fr set value {\
 "tr_mage_weapon1_1_lore_2":"---------------------------",\
 "tr_mage_weapon1_1_lore_3":"Lance un sort dans la direction visée",\
 "tr_mage_weapon1_1_lore_4":"il infligera 6 points de dégats",\
-"tr_mage_weapon1_1_lore_5":"au premier joueur adverse rencontré.",\
+"tr_mage_weapon1_1_lore_5":"au premier adversaire rencontré.",\
 "tr_mage_weapon1_1_lore_6":"Portée maximale: 20 blocs.",\
 "tr_mage_weapon1_1_lore_7":"Coût en mana: 90",\
 "tr_mage_weapon1_1_lore_8":"---------------------------",\

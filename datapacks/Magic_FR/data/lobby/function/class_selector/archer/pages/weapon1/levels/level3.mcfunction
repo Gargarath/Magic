@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"Arc de combat III - 30 PH"},{"bold":true,"color":"green","text":"\n\nPuissance 3 : 10 à 20 points de dégats (selon la charge)\n\nCarquois  : 2 flèches\n\n \n"}],background:16711680}
+$data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"white","text":"$(tr_archer_weapon1_3_name)"},{"text":"\n\n $(tr_shop_item_overlay_price_1) ","color":"gold"},{"text":"\uE634","color":"white"},{"text":" $(stuff_archer_weapon1_3_price) $(tr_shop_item_overlay_price_2)","color":"gold"},{"bold":true,"color":"green","text":"\n\n$(tr_archer_weapon1_3_lore_1)\n$(tr_archer_weapon1_3_lore_2)\n\n$(tr_archer_weapon1_3_lore_3)"}],background:16711680}
 
 
 ## LEVEL

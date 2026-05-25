@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"aqua","text":"Flèche de glace I - 60 PH"},{"bold":false,"color":"green","text":"\n\nVotre prochaine flèche diminuera la vitesse de la cible de 30% pendant 4 secondes.\n\nSi la cible porte un drapeau, ce dernier tombera au sol immédiatement.\nSi la cible est en feu, l'effet de brûlure sera annulé.\n \nL'effet de ce sort peut être cumulé avec celui de la flèche explosive."},{"bold":false,"color":"white","text":"\n\nTemps de recharge: 20s."}],background:16711680}
+$data merge entity @e[type=text_display,tag=archer_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"aqua","text":"$(tr_archer_spell3_1_name)"},{"text":"\n\n $(tr_shop_item_overlay_price_1) ","color":"gold"},{"text":"\uE634","color":"white"},{"text":" $(stuff_archer_spell3_1_price) $(tr_shop_item_overlay_price_2)","color":"gold"},{"bold":false,"color":"green","text":"\n\n$(tr_archer_spell3_1_lore_2) $(tr_archer_spell3_1_lore_3)\n\n$(tr_archer_spell3_1_lore_4) $(tr_archer_spell3_1_lore_5)\n$(tr_archer_spell3_1_lore_6) $(tr_archer_spell3_1_lore_7)\n \n$(tr_archer_spell3_1_lore_8) $(tr_archer_spell3_1_lore_9)"},{"bold":false,"color":"white","text":"\n\n$(tr_archer_spell3_1_lore_10)"}],background:16711680}
 
 
 ## LEVEL

@@ -2,7 +2,7 @@
 ## affiche le bon niveau
 
 ## TEXTE
-data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"Trait de feu II - 60 PH"},{"bold":false,"color":"green","text":"\n\nLance un trait de feu dans la direction visée. Il infligera 12 points de dégats au premier adversaire rencontré et 1 point de dégâts de brulure par seconde pendant 3 secondes.\n\nSi la cible est gelée, l'effet de gel sera annulé.\n \nToucher un ennemi avec ce sort réduit son temps de recharge de moitié."},{"bold":false,"color":"white","text":"\n\nTemps de recharge: 14s."}],background:16711680}
+$data merge entity @e[type=text_display,tag=mage_selector_text,limit=1] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.3f,1.3f,1.3f]},text:["",{"underlined":true,"bold":true,"color":"red","text":"$(tr_mage_spell1_2_name)"},{"text":"\n\n $(tr_shop_item_overlay_price_1) ","color":"gold"},{"text":"\uE634","color":"white"},{"text":" $(stuff_mage_spell1_2_price) $(tr_shop_item_overlay_price_2)","color":"gold"},{"bold":false,"color":"green","text":"\n\n$(tr_mage_spell1_2_lore_2) $(tr_mage_spell1_2_lore_3) $(tr_mage_spell1_2_lore_4)\n$(tr_mage_spell1_2_lore_5) $(tr_mage_spell1_2_lore_6)\n\n$(tr_mage_spell1_2_lore_7) $(tr_mage_spell1_2_lore_8)\n \n$(tr_mage_spell1_2_lore_9) $(tr_mage_spell1_2_lore_10)"},{"bold":false,"color":"white","text":"\n\n$(tr_mage_spell1_2_lore_11)"}],background:16711680}
 
 ## LEVEL
 
