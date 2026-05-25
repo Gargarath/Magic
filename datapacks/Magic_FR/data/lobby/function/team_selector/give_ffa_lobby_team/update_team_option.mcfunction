@@ -6,6 +6,7 @@ $execute if entity @s[tag=archer,scores={operator=0}] run team modify lobby_ffa_
 $execute if entity @s[tag=mage,scores={operator=0}] run team modify lobby_ffa_$(slot) prefix {"text":"\uE603 ","color":"white"}
 $execute if entity @s[tag=rogue,scores={operator=0}] run team modify lobby_ffa_$(slot) prefix {"text":"\uE604 ","color":"white"}
 
+$execute if entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue,scores={operator=2}] run team modify lobby_ffa_$(slot) prefix [{"text":"\uE600 ","color":"gold"}]
 $execute if entity @s[tag=warrior,scores={operator=2}] run team modify lobby_ffa_$(slot) prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE601 ","color":"white"}]
 $execute if entity @s[tag=archer,scores={operator=2}] run team modify lobby_ffa_$(slot) prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE602 ","color":"white"}]
 $execute if entity @s[tag=mage,scores={operator=2}] run team modify lobby_ffa_$(slot) prefix [{"text":"\uE600 ","color":"gold"},{"text":"\uE603 ","color":"white"}]
