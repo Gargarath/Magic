@@ -15,3 +15,6 @@ function lobby:refresh_slime_pads_language with storage lobby:language translate
 
 function lobby:map_island/display/refresh_language with storage lobby:language translate
 # rafraichit les textes de l'ile maps deja affiches
+
+function lobby:jump/refresh_language with storage lobby:language translate
+# rafraichit les textes des parcours de jump deja affiches

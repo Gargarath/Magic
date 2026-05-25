@@ -170,24 +170,42 @@ data modify storage strings en_en set value {\
 "tr_map_5_name":"Ruin",\
 "tr_map_6_name":"Cake",\
 \
-"tr_jump_start_title":"Défi de Parcours",\
-"tr_jump_start_subtitle":"Départ",\
+"tr_jump_start_title":"Parkour Challenge",\
+"tr_jump_start_subtitle":"Start",\
 "tr_jump_checkpoint":"Checkpoint",\
-"tr_jump_end_subtitle":"Fin",\
-"tr_jump_spec_mode_title":"Mode spectateur",\
-"tr_jump_spec_mode_join":"Rejoindre",\
+"tr_jump_end_subtitle":"Finish",\
+"tr_jump_spec_mode_title":"Spectator mode",\
+"tr_jump_spec_mode_join":"Join",\
 \
-"tr_jump_leaderboard_title":"Parcours",\
-"tr_jump_leaderboard_subtitle":"Meilleurs temps",\
-"tr_jump_leaderboard_no_data":"Aucune donnée",\
+"tr_jump_leaderboard_title":"Parkour",\
+"tr_jump_leaderboard_subtitle":"Best times",\
+"tr_jump_leaderboard_no_data":"No data",\
 \
-"tr_jump_leaderboard_title_1":"Statistiques de ",\
-"tr_jump_leaderboard_title_2":"parcours",\
-"tr_jump_leaderboard_best_time":"Meilleur temps :",\
-"tr_jump_leaderboard_fall":"chutes",\
+"tr_jump_leaderboard_title_1":"Stats for ",\
+"tr_jump_leaderboard_title_2":"jump",\
+"tr_jump_leaderboard_best_time":"Best time:",\
+"tr_jump_leaderboard_fall":"falls",\
 "tr_jump_leaderboard_checkpoint":"Checkpoint",\
-"tr_jump_leaderboard_total_try":"Tentatives totales sur le parcours :",\
-"tr_jump_leaderboard_total_fall":"Chutes totales sur le parcours :",\
+"tr_jump_leaderboard_total_try":"Total attempts on this jump:",\
+"tr_jump_leaderboard_total_fall":"Total falls on this jump:",\
+\
+"tr_jump_wrong_start":"You must go through the start before running this jump",\
+"tr_jump_wrong_jump":"You cannot start another jump right now",\
+"tr_jump_disabled":"Jump island has been disabled by a moderator.",\
+"tr_jump_checkpoint_reached_in":"reached in",\
+"tr_jump_finished_1":"You finished jump #",\
+"tr_jump_finished_2":" in ",\
+"tr_jump_personal_record":"(personal best: ",\
+"tr_jump_new_personal_record":"* New personal best *",\
+"tr_jump_not_finished":"You have not finished this jump yet",\
+"tr_jump_rank_taken":"took",\
+"tr_jump_rank_in":"in",\
+"tr_jump_rank_1":"1st place",\
+"tr_jump_rank_2":"2nd place",\
+"tr_jump_rank_3":"3rd place",\
+"tr_jump_rank_4":"4th place",\
+"tr_jump_rank_5":"5th place",\
+"tr_jump_rank_6":"6th place",\
 \
 "tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\

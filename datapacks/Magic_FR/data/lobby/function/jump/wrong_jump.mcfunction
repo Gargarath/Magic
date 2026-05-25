@@ -6,7 +6,7 @@ execute if entity @s[tag=jumping_1] if entity @e[tag=jump_1_start_checker,distan
 execute if entity @s[tag=jumping_2] if entity @e[tag=jump_2_start_checker,distance=..3] run return fail
 execute if entity @s[tag=jumping_3] if entity @e[tag=jump_3_start_checker,distance=..3] run return fail
 
-tellraw @s {"text":"Impossible de commencer un autre parcours pour le moment","color":"red"}
+tellraw @s {entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_wrong_jump",plain:true,"color":"red"}
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1
 
 execute if entity @s[tag=jumping_1] run function lobby:jump/jump1/reset_jump

@@ -189,6 +189,24 @@ data modify storage strings fr_fr set value {\
 "tr_jump_leaderboard_total_try":"Tentatives totales sur le parcours :",\
 "tr_jump_leaderboard_total_fall":"Chutes totales sur le parcours :",\
 \
+"tr_jump_wrong_start":"Vous devez passer par le depart pour faire le parcours",\
+"tr_jump_wrong_jump":"Impossible de commencer un autre parcours pour le moment",\
+"tr_jump_disabled":"Les parcours ont ete desactives par un moderateur.",\
+"tr_jump_checkpoint_reached_in":"atteint en",\
+"tr_jump_finished_1":"Vous avez fini le parcours n°",\
+"tr_jump_finished_2":" en ",\
+"tr_jump_personal_record":"(record personnel : ",\
+"tr_jump_new_personal_record":"* Nouveau record personnel *",\
+"tr_jump_not_finished":"Vous n'avez pas encore fini ce parcours",\
+"tr_jump_rank_taken":"a pris la",\
+"tr_jump_rank_in":"en",\
+"tr_jump_rank_1":"1ere place",\
+"tr_jump_rank_2":"2eme place",\
+"tr_jump_rank_3":"3eme place",\
+"tr_jump_rank_4":"4eme place",\
+"tr_jump_rank_5":"5eme place",\
+"tr_jump_rank_6":"6eme place",\
+\
 "tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map3":"Le générateur de l'usine s'est éteint ! Rallumez le pour obtenir une récompense !",\

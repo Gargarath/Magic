@@ -78,4 +78,4 @@ data modify storage stats:jump 1.rank1.head set value {"color":"white","player":
 data modify storage stats:jump 1.rank1.name set value ""
 
 
-function lobby:jump/jump1/setup_jump
+function lobby:jump/jump1/setup_jump with storage lobby:language translate
