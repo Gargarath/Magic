@@ -25,7 +25,7 @@ execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[ty
 execute as @a[tag=jumping,tag=!jump_hide_close_players,tag=in_jump] at @s if entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/invisible
 execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/no_more_invisible
 
-execute as @a[tag=jump_spec] unless entity @s[x=-204,y=77,z=-113,dx=145,dy=71,dz=188] run tp @s -79.5 103.0 -0.4 448 11.5
+execute as @a[tag=jump_spec] unless entity @s[x=-214,y=77,z=-113,dx=155,dy=71,dz=188] run tp @s -79.5 103.0 -0.4 448 11.5
 execute as @a[tag=jump_spec,scores={quit=1..}] run function lobby:jump/spectator/quit_spec
 
                                         ## ARENE ##
