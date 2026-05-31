@@ -16,7 +16,10 @@ execute as @a[scores={hotbar_menu=6..8},tag=!in_lobby_arena] run function lobby:
 
 function lobby:team_selector/team_disabler/team_statues_on
 # reskin les statues en mode par équipe
-function main:stats/leaderboard/display/gstats/refresh_gstats {mode:"ctf",stat:"stat_final_score"}
+data modify storage stats:temp macro set from storage lobby:language translate
+data modify storage stats:temp macro.mode set value "ctf"
+data modify storage stats:temp macro.stat set value "stat_final_score"
+function main:stats/leaderboard/display/gstats/refresh_gstats with storage stats:temp macro
 # affiche les stats globales de CTF
 
 ## MENU

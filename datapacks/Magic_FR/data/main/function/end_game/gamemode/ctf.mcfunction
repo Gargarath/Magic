@@ -8,6 +8,10 @@ scoreboard players set ctf enable_loop 0
 execute as @a[scores={save_flag_time=1..}] run function gamemode:ctf/saveflag/stop_saving
 execute as @a[scores={cap_flag_time=1..}] run function gamemode:ctf/capflag_droped/stop_caping
 
+execute store result storage stats:leaderboards game_result.score.blue int 1 run scoreboard players get Bleus Flag_posed
+execute store result storage stats:leaderboards game_result.score.red int 1 run scoreboard players get Rouges Flag_posed
+# enregistre le score de la dernière partie (pour le livre de stats)
+
 function main:reset/resetctf
 # reset ce qui est lié au CTF
 
@@ -34,10 +38,6 @@ kill @e[tag=Red_flag]
 kill @e[tag=Blue_flag]
 tag @e remove Has_Blue_flag
 tag @e remove Has_Red_flag
-
-execute store result storage stats:leaderboards game.result.score.blue int 1 run scoreboard players get Bleus Flag_posed
-execute store result storage stats:leaderboards game.result.score.red int 1 run scoreboard players get Rouges Flag_posed
-# enregistre le score de la dernière partie (pour le livre de stats)
 
 execute as @a[scores={blue_place=1..}] run function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/check_place
 execute as @a[scores={red_place=1..}] run function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place

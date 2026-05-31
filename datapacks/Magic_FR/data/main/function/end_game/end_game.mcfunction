@@ -4,6 +4,14 @@
 scoreboard players set lobby enable_loop 1
 # activer le lobby
 
+# reset la map
+execute if score selected_map variables matches 1 run function main:reset/reset_map/reset_map_pirate
+execute if score selected_map variables matches 2 run function main:reset/reset_map/reset_map_graveyard
+execute if score selected_map variables matches 3 run function main:reset/reset_map/reset_map_factory
+execute if score selected_map variables matches 4 run function main:reset/reset_map/reset_map_volcano
+execute if score selected_map variables matches 5 run function main:reset/reset_map/reset_map_ruin
+execute if score selected_map variables matches 6 run function main:reset/reset_map/reset_map_candyworld
+
 execute if score $gamemode option_panel matches 0 run function main:end_game/gamemode/ffa
 execute if score $gamemode option_panel matches 1 run function main:end_game/gamemode/ctf
 # lance les système de end_game relatifs aux gamemodes

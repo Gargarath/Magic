@@ -12,5 +12,5 @@ kill @e[type=item_display,tag=leaderboard]
 # tue les textes
 
 scoreboard players set current_page leaderboard 1
-execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score
+execute as @e[tag=leaderboard] run function main:stats/leaderboard/display/stats/final_score with storage lobby:language translate
 # affiche la page de ratio

@@ -18,7 +18,10 @@ function lobby:team_selector/display_team_members/red/remove_member
 
 function lobby:team_selector/team_disabler/team_statues_off
 # reskin les statues en mode par équipe
-function main:stats/leaderboard/display/gstats/refresh_gstats {mode:"ffa",stat:"stat_final_score"}
+data modify storage stats:temp macro set from storage lobby:language translate
+data modify storage stats:temp macro.mode set value "ffa"
+data modify storage stats:temp macro.stat set value "stat_final_score"
+function main:stats/leaderboard/display/gstats/refresh_gstats with storage stats:temp macro
 # affiche les stats globales de FFA
 
 # clear menu

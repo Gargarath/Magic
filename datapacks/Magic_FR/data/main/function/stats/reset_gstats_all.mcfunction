@@ -6,7 +6,7 @@ data modify storage stats:global ctf set value {}
 data modify storage stats:global ffa.stat_final_score set value {}
 data modify storage stats:global ctf.stat_final_score set value {}
 
-function main:stats/reset_gstats {mode:"ffa",stat:"stat_final_score",class:"warrior"}
+function main:stats/reset_gstats {mode:"$()",stat:"stat_final_score",class:"warrior"}
 function main:stats/reset_gstats {mode:"ffa",stat:"stat_final_score",class:"archer"}
 function main:stats/reset_gstats {mode:"ffa",stat:"stat_final_score",class:"mage"}
 function main:stats/reset_gstats {mode:"ffa",stat:"stat_final_score",class:"rogue"}

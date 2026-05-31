@@ -207,6 +207,91 @@ data modify storage strings en_en set value {\
 "tr_jump_rank_5":"5th place",\
 "tr_jump_rank_6":"6th place",\
 \
+\
+"tr_stats_mvp":"MVP",\
+"tr_stats_deadliest_player":"Ultimate fighter",\
+"tr_stats_money_player":"Master saver",\
+"tr_stats_objectives_player":"Master strategist",\
+"tr_stats_warrior":"Warrior",\
+"tr_stats_archer":"Archer",\
+"tr_stats_mage":"Mage",\
+"tr_stats_rogue":"Rogue",\
+\
+"tr_stats_rank_1":"1st place",\
+"tr_stats_rank_2":"2nd place",\
+"tr_stats_rank_3":"3rd place",\
+"tr_stats_rank_4":"4th place",\
+"tr_stats_rank_5":"5th place",\
+"tr_stats_rank_6":"6th place",\
+"tr_stats_rank_7":"7th place",\
+"tr_stats_rank_8":"8th place",\
+"tr_stats_rank_9":"9th place",\
+"tr_stats_rank_10":"10th place",\
+"tr_stats_rank_11":"11th place",\
+"tr_stats_rank_12":"12th place",\
+\
+"tr_stats_total_score":"total score",\
+"tr_stats_kd_ratio":"K/d:",\
+"tr_stats_total_kills":"kills",\
+"tr_stats_deathcount":"deaths",\
+"tr_stats_total_dmg":"damage dealt",\
+"tr_stats_dmg_taken":"damage taken",\
+"tr_stats_obj_score":"strategic score",\
+"tr_stats_flag_earned":"flags returned",\
+"tr_stats_total_money_earned":"money earned",\
+\
+"tr_stats_best_warrior":"Best Warriors",\
+"tr_stats_best_archer":"Best Archers",\
+"tr_stats_best_mage":"Best Mages",\
+"tr_stats_best_rogue":"Best Rogues",\
+"tr_stats_best_by_total_score":"by total score",\
+"tr_stats_best_in_ffa":"in FFA",\
+"tr_stats_best_in_ctf":"in CTF",\
+\
+"tr_stats_book_name":"Statistics:",\
+"tr_stats_book_title":"     [Statistics]",\
+"tr_stats_book_subtitle_last_game":"        Last game",\
+\
+"tr_stats_book_result_ffa_1":"1st",\
+"tr_stats_book_result_ffa_2":"2nd",\
+"tr_stats_book_result_ffa_3":"3rd",\
+"tr_stats_book_result_ffa_4":"4th",\
+"tr_stats_book_result_ffa_5":"5th",\
+"tr_stats_book_result_ffa_6":"6th",\
+"tr_stats_book_result_ffa_7":"7th",\
+"tr_stats_book_result_ffa_8":"8th",\
+"tr_stats_book_result_ffa_9":"9th",\
+"tr_stats_book_result_ffa_10":"10th",\
+"tr_stats_book_result_ffa_11":"11th",\
+"tr_stats_book_result_ffa_12":"12th",\
+"tr_stats_book_result_ffa_subtitle":"With:",\
+\
+"tr_stats_book_result_ctf_draw":"        DRAW",\
+"tr_stats_book_result_ctf_win":"      VICTORY!",\
+"tr_stats_book_result_ctf_loose":"      DEFEAT :(",\
+\
+"tr_stats_book_team":"Team:",\
+"tr_stats_book_team_blue":"Blue",\
+"tr_stats_book_team_red":"Red",\
+"tr_stats_book_class":"Class:",\
+"tr_stats_book_general":"General",\
+"tr_stats_book_ratio":"Ratio:",\
+"tr_stats_book_kills":"Kills",\
+"tr_stats_book_kills_with":"including",\
+"tr_stats_book_kills_player":"players",\
+"tr_stats_book_kills_boss":"bosses",\
+"tr_stats_book_dmg":"Damage",\
+"tr_stats_book_dmg_hand":"melee damage",\
+"tr_stats_book_dmg_spell":"spell damage",\
+"tr_stats_book_dmg_bow":"bow damage",\
+"tr_stats_book_spell":"Spells",\
+"tr_stats_book_spell_launched":"spells cast",\
+"tr_stats_book_spell_dmg":"spell damage",\
+"tr_stats_book_flag":"Flags",\
+"tr_stats_book_flag_caped":"enemy flags captured",\
+"tr_stats_book_flag_earned":"enemy flags returned",\
+"tr_stats_book_flag_saved":"allied flags returned",\
+\
 "tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map3":"The factory generator has shut down! Turn it back on to earn a reward!",\

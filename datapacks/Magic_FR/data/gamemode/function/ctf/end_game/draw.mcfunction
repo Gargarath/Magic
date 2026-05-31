@@ -10,8 +10,11 @@ title @a[team=red] subtitle ["",{"score":{"name":"Rouges","objective":"Flag_pose
 title @a[team=respawn_red] subtitle ["",{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"red"},{"text":" - "},{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"blue"}]
 title @a[team=spectator] subtitle ["",{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"gray"},{"text":" - "},{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"gray"}]
 
-data modify storage stats:leaderboards game.result.title.blue set value {text:"      EGALITE",color:"gray",bold:true}
-data modify storage stats:leaderboards game.result.title.red set value {text:"      EGALITE",color:"gray",bold:true}
+scoreboard players set @a[tag=blue_team,scores={Player=1..}] result_last_game 0
+scoreboard players set @a[tag=red_team,scores={Player=1..}] result_last_game 0
+# indique l'égalité
+
+data modify storage stats:leaderboards game.result set value 0
 # indique au livre de stat qu'il y a eu égalité
 
 function main:end_game/end_game

@@ -54,4 +54,7 @@ $execute store result score $rank5 gstat_rogue_score run data get storage stats:
 execute as @a[scores={played_last_game=1..}] run function main:stats/leaderboard/sort_gstats/sort_final_score/get_data
 
 # refresh les gstat
-$function main:stats/leaderboard/display/gstats/refresh_gstats {mode:"$(mode)",stat:"stat_final_score"}
+data modify storage stats:temp macro set from storage lobby:language translate
+$data modify storage stats:temp macro.mode set value "$(mode)"
+data modify storage stats:temp macro.stat set value "stat_final_score"
+function main:stats/leaderboard/display/gstats/refresh_gstats with storage stats:temp macro

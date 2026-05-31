@@ -493,6 +493,8 @@ scoreboard objectives add spec_player12 trigger
 ## STATS
 scoreboard objectives add played_last_game dummy
 scoreboard objectives add team_last_game dummy
+scoreboard objectives add result_last_game dummy
+
 # stats
 scoreboard objectives add dmg_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add stat_kd_ratio1 dummy

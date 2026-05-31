@@ -200,12 +200,96 @@ data modify storage strings fr_fr set value {\
 "tr_jump_not_finished":"Vous n'avez pas encore fini ce parcours",\
 "tr_jump_rank_taken":"a pris la",\
 "tr_jump_rank_in":"en",\
-"tr_jump_rank_1":"1ere place",\
+"tr_jump_rank_1":"1ère place",\
 "tr_jump_rank_2":"2eme place",\
 "tr_jump_rank_3":"3eme place",\
 "tr_jump_rank_4":"4eme place",\
 "tr_jump_rank_5":"5eme place",\
 "tr_jump_rank_6":"6eme place",\
+\
+"tr_stats_mvp":"MVP",\
+"tr_stats_deadliest_player":"Combattant ultime",\
+"tr_stats_money_player":"Econome hors pair",\
+"tr_stats_objectives_player":"Stratège hors pair",\
+"tr_stats_warrior":"Guerrier",\
+"tr_stats_archer":"Archer",\
+"tr_stats_mage":"Mage",\
+"tr_stats_rogue":"Assassin",\
+\
+"tr_stats_rank_1":"1ère place",\
+"tr_stats_rank_2":"2ème place",\
+"tr_stats_rank_3":"3ème place",\
+"tr_stats_rank_4":"4ème place",\
+"tr_stats_rank_5":"5ème place",\
+"tr_stats_rank_6":"6ème place",\
+"tr_stats_rank_7":"7ème place",\
+"tr_stats_rank_8":"8ème place",\
+"tr_stats_rank_9":"9ème place",\
+"tr_stats_rank_10":"10ème place",\
+"tr_stats_rank_11":"11ème place",\
+"tr_stats_rank_12":"12ème place",\
+\
+"tr_stats_total_score":"score total",\
+"tr_stats_kd_ratio":"K/d :",\
+"tr_stats_total_kills":"kills",\
+"tr_stats_deathcount":"morts",\
+"tr_stats_total_dmg":"dégâts infligés",\
+"tr_stats_dmg_taken":"dégâts subits",\
+"tr_stats_obj_score":"score stratégique",\
+"tr_stats_flag_earned":"drapeaux rapportés",\
+"tr_stats_total_money_earned":"argent gagné",\
+\
+"tr_stats_best_warrior":"Meilleurs Guerriers",\
+"tr_stats_best_archer":"Meilleurs Archers",\
+"tr_stats_best_mage":"Meilleurs Mages",\
+"tr_stats_best_rogue":"Meilleurs Assassins",\
+"tr_stats_best_by_total_score":"par score total",\
+"tr_stats_best_in_ffa":"en FFA",\
+"tr_stats_best_in_ctf":"en CTF",\
+\
+"tr_stats_book_name":"Statistiques de :",\
+"tr_stats_book_title":"   [Statistiques]",\
+"tr_stats_book_subtitle_last_game":"    Dernière partie",\
+\
+"tr_stats_book_result_ffa_1":"1er",\
+"tr_stats_book_result_ffa_2":"2eme",\
+"tr_stats_book_result_ffa_3":"3eme",\
+"tr_stats_book_result_ffa_4":"4eme",\
+"tr_stats_book_result_ffa_5":"5eme",\
+"tr_stats_book_result_ffa_6":"6eme",\
+"tr_stats_book_result_ffa_7":"7eme",\
+"tr_stats_book_result_ffa_8":"8eme",\
+"tr_stats_book_result_ffa_9":"9eme",\
+"tr_stats_book_result_ffa_10":"10eme",\
+"tr_stats_book_result_ffa_11":"11eme",\
+"tr_stats_book_result_ffa_12":"12eme",\
+"tr_stats_book_result_ffa_subtitle":"Avec :",\
+\
+"tr_stats_book_result_ctf_draw":"      EGALITE",\
+"tr_stats_book_result_ctf_win":"      VICTOIRE !",\
+"tr_stats_book_result_ctf_loose":"      DEFAITE :(",\
+\
+"tr_stats_book_team":"Équipe :",\
+"tr_stats_book_team_blue":"Bleue",\
+"tr_stats_book_team_red":"Rouge",\
+"tr_stats_book_class":"Classe :",\
+"tr_stats_book_general":"General",\
+"tr_stats_book_ratio":"Ratio :",\
+"tr_stats_book_kills":"Kills",\
+"tr_stats_book_kills_with":"dont",\
+"tr_stats_book_kills_player":"joueurs",\
+"tr_stats_book_kills_boss":"boss",\
+"tr_stats_book_dmg":"Dégats",\
+"tr_stats_book_dmg_hand":"au corps à corps",\
+"tr_stats_book_dmg_spell":"avec sorts",\
+"tr_stats_book_dmg_bow":"avec l'arc",\
+"tr_stats_book_spell":"Sorts",\
+"tr_stats_book_spell_launched":"sorts lancés",\
+"tr_stats_book_spell_dmg":"dégâts des sorts",\
+"tr_stats_book_flag":"Drapeaux",\
+"tr_stats_book_flag_caped":"drapeaux ennemis capturés",\
+"tr_stats_book_flag_earned":"drapeaux ennemis rapportés",\
+"tr_stats_book_flag_saved":"drapeaux alliés rapportés",\
 \
 "tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\

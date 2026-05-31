@@ -14,9 +14,11 @@ title @a[team=red] subtitle ["",{"score":{"name":"Rouges","objective":"Flag_pose
 title @a[team=respawn_red] title {"text":"Défaite :(","bold":true,"color":"dark_red"}
 title @a[team=respawn_red] subtitle ["",{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"red"},{"text":" - "},{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"blue"}]
 
+scoreboard players set @a[tag=blue_team,scores={Player=1..}] result_last_game 1
+scoreboard players set @a[tag=red_team,scores={Player=1..}] result_last_game 2
+# indique les bleus gagnants
 
-data modify storage stats:leaderboards game.result.title.blue set value {text:"      VICTOIRE !",color:"gold",bold:true}
-data modify storage stats:leaderboards game.result.title.red set value {text:"      DEFAITE :(",color:"dark_red",bold:true}
+data modify storage stats:leaderboards game.result set value 1
 # indique au livre de stat que les bleus ont gagnés
 
 scoreboard players add @a[team=blue] stat_victory 1

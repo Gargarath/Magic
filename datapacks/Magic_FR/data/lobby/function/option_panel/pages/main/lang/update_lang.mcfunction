@@ -18,3 +18,6 @@ function lobby:map_island/display/refresh_language with storage lobby:language t
 
 function lobby:jump/refresh_language with storage lobby:language translate
 # rafraichit les textes des parcours de jump deja affiches
+
+function main:stats/leaderboard/refresh_language with storage lobby:language translate
+# rafraichit les textes du leaderboard deja affiches
