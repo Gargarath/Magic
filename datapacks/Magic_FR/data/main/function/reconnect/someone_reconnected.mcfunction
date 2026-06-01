@@ -8,6 +8,9 @@ execute if score $gamemode option_panel matches 0 if entity @s[tag=!no_team,scor
 execute if score $gamemode option_panel matches 1 if entity @s[tag=no_team,scores={Player=0..}] run function lobby:team_selector/team_disabler/enable_team
 execute if score $gamemode option_panel matches 1 if entity @s[tag=no_team,scores={Player=-1}] run function lobby:team_selector/team_disabler/enable_team_spec
 
+# si on est en mode FFA dans le lobby -> check si @s n'a pas le même slot de lobby que quelqu'un d'autre
+execute if score $gamemode option_panel matches 0 if score lobby enable_loop matches 1 as @s[tag=no_team,scores={InLobby=1,Player=0..}] run function lobby:team_selector/give_ffa_lobby_team/reconnect_slot
+
 execute if score lobby enable_loop matches 0 as @s[scores={InLobby=1}] run function main:reconnect/someone_joined_during_match
 # si @s pendant la partie le fait devenir spectateur
 
