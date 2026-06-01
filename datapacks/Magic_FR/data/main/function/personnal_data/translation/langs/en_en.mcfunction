@@ -292,6 +292,42 @@ data modify storage strings en_en set value {\
 "tr_stats_book_flag_earned":"enemy flags returned",\
 "tr_stats_book_flag_saved":"allied flags returned",\
 \
+"tr_admin_book_name":"Administrator's Book",\
+"tr_admin_book_title":"  Admin Book  ",\
+"tr_admin_book_stop_game_title":"     [Stop Game]",\
+"tr_admin_book_stop_game_lore":"Click to stop the current game.",\
+"tr_admin_book_quit_admin_title":"  [Leave Moderation]",\
+"tr_admin_book_quit_admin_lore":"Click to leave your\nmoderator role.",\
+\
+"tr_admin_book_options_title":"       Options",\
+"tr_admin_book_randomize_team_title":"   [Random Teams]",\
+"tr_admin_book_randomize_team_lore":"Click to randomly assign\nplayers between\nthe two teams.",\
+"tr_admin_book_randomize_classes_title":"   [Random Classes]",\
+"tr_admin_book_randomize_classes_lore":"Click to distribute\nplayers evenly\nacross all classes.",\
+"tr_admin_book_all_ready_title":"   [Force All Ready]",\
+"tr_admin_book_all_ready_lore":"Click to force all players\nto be ready in the shop.",\
+"tr_admin_book_round_over_title":"       [End Round] ",\
+"tr_admin_book_round_over_lore":"Click to end\nthe current round.",\
+\
+"tr_admin_not_op_anymore_1":"You are not",\
+"tr_admin_not_op_anymore_2":" anymore.",\
+"tr_admin_became_op_1":"Your are now",\
+"tr_admin_became_op_2":"You now have acces to the administrator's book and to the option panel.",\
+"tr_admin_how_to_be_op_platform":"You do not have access to this panel. To become a moderator, stand on the yellow platform in front of the options panel.",\
+"tr_admin_how_to_be_op_command_1":"You don't have access to this pannel. If you are a serveur admin",\
+"tr_admin_how_to_be_op_command_2":"click here",\
+"tr_admin_how_to_be_op_command_3":"to become moderator.",\
+"tr_admin_how_to_be_op_command_hover_event":"Click here to become moderator\nand gain access to the option pannel.",\
+"tr_admin_cant_become_op_1":"You do not have access to this panel,",\
+"tr_admin_cant_become_op_2":"is already the moderator.",\
+\
+"tr_admin_stopgame_title":"Game canceled!",\
+\
+"tr_admin_command_must_be_in_shop":"This command can only be used in the shop.",\
+"tr_admin_command_must_be_in_ctf":"This command can only be used in Capture the Flag mode.",\
+"tr_admin_command_must_be_in_lobby":"This command can only be used in the lobby.",\
+"tr_admin_command_must_be_in_game":"This command can only be during a round.",\
+\
 "tr_map_secondary_objective_launch_map1":"The captain's treasure has been unlocked! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map2":"A lich has appeared in the church!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map3":"The factory generator has shut down! Turn it back on to earn a reward!",\

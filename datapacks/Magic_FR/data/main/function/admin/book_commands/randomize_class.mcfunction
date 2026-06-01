@@ -9,7 +9,7 @@ scoreboard players enable @s admin_randomize_class
 
 
 execute if score @s InLobby matches 0 at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1
-execute if score @s InLobby matches 0 run return run tellraw @s {"color":"gray","italic":true,"text":"Cette commande doit être executée dans le lobby."}
+$execute if score @s InLobby matches 0 run return run tellraw @s {"color":"gray","italic":true,"text":"$(tr_admin_command_must_be_in_lobby)"}
 # prévient qu'impossible si pas dans le lobby
 
 execute if score $gamemode option_panel matches 0 run return run function main:admin/randomize_class/randomize_classes_ffa

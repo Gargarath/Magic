@@ -49,6 +49,7 @@ item replace entity @s[scores={Player_last_game=11}] hotbar.7 from block 13 97 1
 item replace entity @s[scores={Player_last_game=12}] hotbar.7 from block 13 97 13 container.12
 
 ## LIVRE ADMIN
+execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
 item replace entity @s[scores={operator=2}] hotbar.8 from block 13 97 11 container.0
 
 scoreboard players set @s hotbar_menu 0

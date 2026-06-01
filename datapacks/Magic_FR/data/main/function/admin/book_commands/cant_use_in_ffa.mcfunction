@@ -2,4 +2,4 @@
 ## indique qu'il n'a pas le droit de les utiliser
 
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1
-tellraw @s {"color":"gray","italic":true,"text":"Cette commande doit être executée en mode capture de drapeau."}
+$tellraw @s {"color":"gray","italic":true,"text":"$(tr_admin_command_must_be_in_ctf)"}

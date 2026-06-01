@@ -7,11 +7,11 @@ scoreboard players reset @s admin_randomize_team
 scoreboard players enable @s admin_randomize_team
 # permet à @s de réutiliser le trigger
 
-execute if score $gamemode option_panel matches 0 run return run function main:admin/book_commands/cant_use_in_ffa
+execute if score $gamemode option_panel matches 0 run return run function main:admin/book_commands/cant_use_in_ffa with entity @s EnderItems[0].components.minecraft:custom_data
 # prévient qu'impossible en FFA
 
 execute if score @s InLobby matches 0 at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1
-execute if score @s InLobby matches 0 run tellraw @s {"color":"gray","italic":true,"text":"Cette commande doit être executée dans le lobby."}
+$execute if score @s InLobby matches 0 run tellraw @s {"color":"gray","italic":true,"text":"$(tr_admin_command_must_be_in_lobby)"}
 # prévient qu'impossible si pas dans le lobby
 
 execute if score @s InLobby matches 1 run function main:admin/randomizeteam/randomize_team

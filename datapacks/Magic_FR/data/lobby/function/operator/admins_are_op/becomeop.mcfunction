@@ -1,6 +1,6 @@
 # Appelée par lobby:loop permet de donner le livre de commande au joueur qui vient d'etre op si on est en mode les admins sont opérateur
 
-tellraw @s {"bold":false,"color":"gold","italic":false,"text":"Vous êtes devenu modérateur.\nVous avez désormais accès au livre d'admin et au menu d'option."}
+$tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"$(tr_admin_became_op_1) "},{"color":"white","text":"\uE600"},{"bold":false,"color":"gold","italic":false,"text":"\n$(tr_admin_became_op_2)"}]
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 scoreboard players set @s operator 2
 function lobby:team_selector/give_lobby_team

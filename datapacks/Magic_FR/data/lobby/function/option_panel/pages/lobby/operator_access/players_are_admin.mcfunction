@@ -3,7 +3,7 @@
 
 scoreboard players set $operator_access option_panel 0
 
-execute at @s as @a[scores={operator=2},distance=0.1..] run function lobby:operator/leave_op
+execute at @s as @a[scores={operator=2},distance=0.1..] run function lobby:operator/leave_op with entity @s EnderItems[0].components.minecraft:custom_data
 # enlève les modos actuels (sauf @s)
 
 data merge entity @e[tag=optn_menu_lobby_operator_access,limit=1] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["players_are_admin"]}}}}

@@ -1,7 +1,7 @@
 # Appelée par lobby/option_panelpages/lobby/operator_access au noms des joueurs modo
 # permet d'enlever @s des modérateur
 
-tellraw @s [{"bold":false,"color":"red","italic":false,"text":"Vous n'êtes plus "},{"text":"\uE600","color":"white"},{"bold":false,"color":"red","italic":false,"text":"."}]
+$tellraw @s [{"bold":false,"color":"red","italic":false,"text":"$(tr_admin_not_op_anymore_1) "},{"text":"\uE600","color":"white"},{"bold":false,"color":"red","italic":false,"text":"$(tr_admin_not_op_anymore_2)"}]
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 scoreboard players set @s operator 0
 

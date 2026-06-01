@@ -75,9 +75,7 @@ tag @s remove in_jump
 function main:gui/display/in_lobby/setup_top_bar
 # met l'affichage en haut de l'écran en mode lobby
 
-title @a reset
-execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message
-title @a title {"text":"Partie annulée !","color":"dark_red","bold":true}
+execute as @a run function main:admin/stopgame_title with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score yes used_reset matches 1 as @a at @s run playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 0
 scoreboard objectives setdisplay list stat_victory
 # affiche le score de victoire en list

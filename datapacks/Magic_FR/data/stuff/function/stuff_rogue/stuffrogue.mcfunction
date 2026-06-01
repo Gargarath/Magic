@@ -1,6 +1,11 @@
 #Permet d'équiper tous les assassins avec leur équipement. Appelé par la fonction setstuff ou drop_r
 
 tag @s remove save_inventory
+
+# livre d'admin
+execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
+item replace entity @s[scores={operator=2}] inventory.26 from block 13 97 11 container.0
+
                          ###   COOLDOWN    ###
                          
 function stuff:stuff_rogue/cooldowns_r/cooldowns_r

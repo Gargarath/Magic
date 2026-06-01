@@ -11,6 +11,7 @@ $item replace entity @s hotbar.4 with carrot_on_a_stick[item_name=[{"bold":true,
 
 
 ## LIVRE ADMIN
+execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
 item replace entity @s[scores={operator=2}] hotbar.8 from block 13 97 11 container.0
 
 

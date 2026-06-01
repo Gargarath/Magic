@@ -7,12 +7,12 @@ scoreboard players reset @s admin_round_over
 scoreboard players enable @s admin_round_over
 # permet à @s de réutiliser le trigger
 
-execute if score $gamemode option_panel matches 0 run return run function main:admin/book_commands/cant_use_in_ffa
+execute if score $gamemode option_panel matches 0 run return run function main:admin/book_commands/cant_use_in_ffa with entity @s EnderItems[0].components.minecraft:custom_data
 # prévient qu'impossible en FFA
 
 execute if score @s InLobby matches 0 if score @s InShop matches 0 run return run function gamemode:ctf/round_over
 # stop cette fonction et lance la fonction pour terminer la manche
 
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1
-tellraw @s {"color":"gray","italic":true,"text":"Cette commande doit être executée pendant la partie."}
+$tellraw @s {"color":"gray","italic":true,"text":"$(tr_admin_command_must_be_in_game)"}
 # prévient qu'impossible si la fonction n'a pas été annulée plus haut

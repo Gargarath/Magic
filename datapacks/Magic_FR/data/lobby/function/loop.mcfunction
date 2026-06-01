@@ -89,8 +89,8 @@ execute if data storage minecraft:matchinfo {last_game_gamemode:1b} at @e[type=m
                                         ## DEVENIR OPERATEUR
 
 execute if score $operator_access option_panel matches 0 as @a[scores={operator=1}] run function lobby:operator/players_are_op/cant_bybass_map
-execute if score $operator_access option_panel matches 0 positioned 0 100 -13 unless entity @a[scores={operator=2}] as @a[scores={operator=0},distance=..4] if predicate minecraft:step_on_yellow_concrete run function lobby:operator/players_are_op/becomeop
-execute if score $operator_access option_panel matches 1 as @a[scores={operator=1}] run function lobby:operator/admins_are_op/becomeop
+execute if score $operator_access option_panel matches 0 positioned 0 100 -13 unless entity @a[scores={operator=2}] as @a[scores={operator=0},distance=..4] if predicate minecraft:step_on_yellow_concrete run function lobby:operator/players_are_op/becomeop with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $operator_access option_panel matches 1 as @a[scores={operator=1}] run function lobby:operator/admins_are_op/becomeop with entity @s EnderItems[0].components.minecraft:custom_data
 
 
                                          #### EFFETS DANS LE LOBBY #####

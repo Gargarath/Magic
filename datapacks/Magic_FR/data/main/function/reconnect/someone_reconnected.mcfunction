@@ -48,7 +48,7 @@ execute if score $secondary_objectives option_panel matches 1 if score on point_
 # si l'objectif secondaire a commencé mais n'est pas fini, affiche la bonne bossbar à tous
 
 execute store result score $count operator if entity @a[scores={operator=2}]
-execute if score $operator_access option_panel matches 0 if score @s operator matches 2 if score $count operator matches 2.. run function lobby:operator/leave_op
+execute if score $operator_access option_panel matches 0 if score @s operator matches 2 if score $count operator matches 2.. run function lobby:operator/leave_op with entity @s EnderItems[0].components.minecraft:custom_data
 # si on est en mode player_are_op et que @s est modo et qu'il y a déjà un modo -> enlève @s des modos
 
 execute as @a run attribute @s waypoint_receive_range base set 0

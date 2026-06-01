@@ -291,6 +291,42 @@ data modify storage strings fr_fr set value {\
 "tr_stats_book_flag_earned":"drapeaux ennemis rapportés",\
 "tr_stats_book_flag_saved":"drapeaux alliés rapportés",\
 \
+"tr_admin_book_name":"Livre d'administrateur",\
+"tr_admin_book_title":" Livre d'admin ",\
+"tr_admin_book_stop_game_title":"[Arrêter la partie]",\
+"tr_admin_book_stop_game_lore":"Cliquez pour arrêter la partie en cours.",\
+"tr_admin_book_quit_admin_title":"[Quitter la modération]",\
+"tr_admin_book_quit_admin_lore":"Cliquez pour quitter votre\nrôle de modérateur.",\
+\
+"tr_admin_book_options_title":"       Options",\
+"tr_admin_book_randomize_team_title":"Equipes aléatoires",\
+"tr_admin_book_randomize_team_lore":"Cliquez pour répartir les\njoueurs aléatoirement\nentre les deux équipes.",\
+"tr_admin_book_randomize_classes_title":" [Classes aléatoires]",\
+"tr_admin_book_randomize_classes_lore":"Cliquez pour répartir\nles joueurs équitablement\nentre les classes.",\
+"tr_admin_book_all_ready_title":" [Tous prêts magasin]",\
+"tr_admin_book_all_ready_lore":"Cliquez pour forcer tous\nles joueurs à être prêts\ndans les salles d'achat.",\
+"tr_admin_book_round_over_title":"    [Finir la manche] ",\
+"tr_admin_book_round_over_lore":"Cliquez pour terminer\nla manche actuelle.",\
+\
+"tr_admin_not_op_anymore_1":"Vous n'êtes plus",\
+"tr_admin_not_op_anymore_2":".",\
+"tr_admin_became_op_1":"Vous êtes devenu",\
+"tr_admin_became_op_2":"Vous avez désormais accès au livre d'admin et au menu d'option.",\
+"tr_admin_how_to_be_op_platform":"Vous n'avez pas accès à ce panneau. Pour devenir modérateur, tenez vous sur la plateforme jaune devant le menu d'option.",\
+"tr_admin_how_to_be_op_command_1":"Vous n'avez pas accès à ce panneau. Si vous êtes modérateur",\
+"tr_admin_how_to_be_op_command_2":"cliquez ici",\
+"tr_admin_how_to_be_op_command_3":"pour obtenir l'accès aux commandes.",\
+"tr_admin_how_to_be_op_command_hover_event":"Cliquez pour obtenir les droits d'accès aux commandes.",\
+"tr_admin_cant_become_op_1":"Vous n'avez pas accès à ce panneau,",\
+"tr_admin_cant_become_op_2":"est déjà modérateur.",\
+\
+"tr_admin_stopgame_title":"Partie annulée !",\
+\
+"tr_admin_command_must_be_in_shop":"Cette commande doit être executée dans les salles d'achat.",\
+"tr_admin_command_must_be_in_ctf":"Cette commande doit être executée en mode capture de drapeau.",\
+"tr_admin_command_must_be_in_lobby":"Cette commande doit être executée dans le lobby.",\
+"tr_admin_command_must_be_in_game":"Cette commande doit être executée pendant une manche.",\
+\
 "tr_map_secondary_objective_launch_map1":"Le trésor du capitaine à été ouvert ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map2":"Une liche est apparue dans l'église !\nTuez la pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map3":"Le générateur de l'usine s'est éteint ! Rallumez le pour obtenir une récompense !",\

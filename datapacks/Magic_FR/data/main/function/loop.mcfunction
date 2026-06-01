@@ -52,16 +52,13 @@ execute if score $gamemode option_panel matches 1 if score Is_ready Lobby_ready 
 # KILL LES ITEMS NON INVOQUES
 kill @e[type=item,tag=!summoned]
 
-# LIVRE D'ADMINISTRATEUR
-item replace entity @a[scores={operator=2}] inventory.26 from block 13 97 11 container.0
-# donne le livre aux joueurs
 
 execute as @a[scores={admin_stop_game=1}] run function main:admin/book_commands/stop_game
-execute as @a[scores={admin_quit_admin=1}] run function main:admin/book_commands/quit_admin
-execute as @a[scores={admin_randomize_team=1}] run function main:admin/book_commands/randomize_team
-execute as @a[scores={admin_randomize_class=1}] run function main:admin/book_commands/randomize_class
-execute as @a[scores={admin_all_ready=1}] run function main:admin/book_commands/all_ready
-execute as @a[scores={admin_round_over=1}] run function main:admin/book_commands/round_over
+execute as @a[scores={admin_quit_admin=1}] run function main:admin/book_commands/quit_admin with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={admin_randomize_team=1}] run function main:admin/book_commands/randomize_team with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={admin_randomize_class=1}] run function main:admin/book_commands/randomize_class with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={admin_all_ready=1}] run function main:admin/book_commands/all_ready with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={admin_round_over=1}] run function main:admin/book_commands/round_over with entity @s EnderItems[0].components.minecraft:custom_data
 # active les commandes liées aux triggers du livre
 
 # COMMANDES DE TRICHE

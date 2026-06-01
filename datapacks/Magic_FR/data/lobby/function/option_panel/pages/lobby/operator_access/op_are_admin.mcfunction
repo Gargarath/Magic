@@ -3,7 +3,7 @@
 
 scoreboard players set $operator_access option_panel 1
 
-execute as @a[scores={operator=2},distance=0.1..] run function lobby:operator/leave_op
+execute as @a[scores={operator=2},distance=0.1..] run function lobby:operator/leave_op with entity @s EnderItems[0].components.minecraft:custom_data
 scoreboard players set * operator 0
 scoreboard players reset * admin_stop_game
 scoreboard players reset * admin_quit_admin
