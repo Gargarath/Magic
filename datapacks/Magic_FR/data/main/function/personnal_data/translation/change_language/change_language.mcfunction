@@ -15,5 +15,8 @@ function main:personnal_data/translation/change_language/merge_storages with sto
 function main:personnal_data/save_new_data with storage personnal_storage.temp
 # remet son storage perso dans son enderchest
 
+function main:personnal_data/translation/change_language/refresh_language
+# actualise les textes visibles de @s selon sa nouvelle langue
+
 tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_changed_language","bold":false,"color":"yellow"}
 # indique à @s qu'il a changé de langue (selon sa langue)

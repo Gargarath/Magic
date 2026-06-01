@@ -31,5 +31,5 @@ $data merge block 14 97 13 {front_text:{messages:[[{"text":"$(tr_stats_book_name
 $data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:custom_name" set from block 14 97 13 front_text.messages[0]
 # change le nom du livre
 
-$item replace entity @s hotbar.8 from block 13 97 13 container.$(player_last_game)
+$item replace entity @s[tag=!in_lobby_arena] hotbar.8 from block 13 97 13 container.$(player_last_game)
 # copie le livre du slot de joueur X dans l'inventaire de @s

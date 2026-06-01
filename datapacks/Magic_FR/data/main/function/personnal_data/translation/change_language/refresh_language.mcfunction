@@ -1,0 +1,41 @@
+# Appelée par change_language apres un changement de langue.
+# Actualise les textes visibles de @s sans toucher aux autres joueurs.
+
+## ITEMS EN PARTIE / SHOP
+execute if score @s Player matches 1.. if entity @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
+execute if score @s Player matches 1.. if entity @s[tag=warrior] run function stuff:stuff_warrior/save_stuff_as_storage/determine_player
+execute if score @s Player matches 1.. if entity @s[tag=archer] run function stuff:stuff_archer/stuffarcher
+execute if score @s Player matches 1.. if entity @s[tag=archer] run function stuff:stuff_archer/save_stuff_as_storage/determine_player
+execute if score @s Player matches 1.. if entity @s[tag=mage] run function stuff:stuff_mage/stuffmage
+execute if score @s Player matches 1.. if entity @s[tag=mage] run function stuff:stuff_mage/save_stuff_as_storage/determine_player
+execute if score @s Player matches 1.. if entity @s[tag=rogue] run function stuff:stuff_rogue/stuffrogue
+execute if score @s Player matches 1.. if entity @s[tag=rogue] run function stuff:stuff_rogue/save_stuff_as_storage/determine_player
+execute if score @s Player matches 1.. run function main:items_positions/save_spell_order_in_gui with entity @s EnderItems[0].components.minecraft:custom_data
+
+## LIVRE DE STATS / HOTBAR DU LOBBY
+execute if score @s InLobby matches 1 if score @s Player_last_game matches 1.. run function main:stats/stats_book/give_stat_books with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s[tag=!in_lobby_arena] InLobby matches 1 run function lobby:hotbar_menu/drop_item
+## SHOP
+execute if score @s InShop matches 1 run function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
+
+## OVERLAY DU SHOP
+execute if score @s InShop matches 1 if entity @s[tag=look_at_weapon1] run function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_weapon1] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell1] run function shop:refresh/items/spell1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell1] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell2] run function shop:refresh/items/spell2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell2] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell3] run function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_spell3] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_chest] run function shop:refresh/items/chest with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_chest] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_legs] run function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_legs] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+execute if score @s InShop matches 1 if entity @s[tag=look_at_boots] run function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if entity @s[tag=look_at_boots] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
