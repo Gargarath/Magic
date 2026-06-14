@@ -5,7 +5,6 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "item/leaderboard/titles/background",
-		"10": "item/leaderboard/titles/deathcount",
 		"particle": "item/leaderboard/titles/final_score"
 	},
 	"elements": [
@@ -14,7 +13,7 @@
 			"to": [29, 9, 0],
 			"rotation": {"angle": 0, "axis": "y", "origin": [21, 0, 0]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#10"},
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
 				"east": {"uv": [0, 0, 0, 5.25], "texture": "#missing"},
 				"south": {"uv": [16, 0, 0, 16], "texture": "#1"},
 				"west": {"uv": [0, 0, 0, 5.25], "texture": "#missing"},

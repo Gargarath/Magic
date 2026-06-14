@@ -1,7 +1,7 @@
 ## appelée par lobby:leaderboard/leftarrow ou lobby:leaderboard/right_arrow quand on selectionne la page
 ## permet d'afficher le score de obj_score
 
-function lobby:leaderboard/display_titles/display_obj_score_title
+function lobby:leaderboard/display_titles/display_obj_score_title with storage lobby:language translate
 # permet d'afficher le titre sur le tableau des scores
 
 $execute if entity @s[tag=leaderboard1] run data modify storage temp:leaderboard_display macro set value {stat:"stat_obj_score",suffix:" $(tr_stats_obj_score)",place:1}

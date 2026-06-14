@@ -1,7 +1,7 @@
 ## appelée par lobby:leaderboard/leftarrow ou lobby:leaderboard/right_arrow quand on selectionne la page
 ## permet d'afficher le score de kd ratio
 
-function lobby:leaderboard/display_titles/display_ratio_title
+function lobby:leaderboard/display_titles/display_ratio_title with storage lobby:language translate
 # permet d'afficher le titre sur le tableau des scores
 
 $execute if entity @s[tag=leaderboard1] run data modify storage temp:leaderboard_display macro set value {place:1,prefix:"$(tr_stats_kd_ratio)"}

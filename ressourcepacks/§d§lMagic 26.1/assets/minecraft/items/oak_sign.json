@@ -407,66 +407,10 @@
         }
       },
             {
-        "when": "final_score_title",
+        "when": "leaderboard_stat_title",
         "model": {
           "type": "model",
-          "model": "item/leaderboard/titles/final_score"
-        } 
-      },
-            {
-        "when": "kd_ratio_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/kd_ratio"
-        } 
-      },
-            {
-        "when": "kills_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/kills"
-        } 
-      },
-            {
-        "when": "deathcount_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/deathcount"
-        } 
-      },
-            {
-        "when": "total_dmg_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/total_dmg"
-        } 
-      },
-            {
-        "when": "dmg_recieved_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/dmg_recieved"
-        } 
-      },
-            {
-        "when": "obj_score_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/obj_score"
-        } 
-      },
-            {
-        "when": "flag_earned_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/flag_earned"
-        } 
-      },
-            {
-        "when": "total_money_earned_title",
-        "model": {
-          "type": "model",
-          "model": "item/leaderboard/titles/total_money_earned"
+          "model": "item/leaderboard/titles/leaderboard_stat_title"
         } 
       },
             {

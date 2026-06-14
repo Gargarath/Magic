@@ -230,6 +230,16 @@ data modify storage strings en_en set value {\
 "tr_stats_rank_11":"11th place",\
 "tr_stats_rank_12":"12th place",\
 \
+"tr_stat_title_final_score":"Total score",\
+"tr_stat_title_kd_ratio":"K/D Ratio",\
+"tr_stat_title_kills":"Kills",\
+"tr_stat_title_deathcount":"Deaths",\
+"tr_stat_title_total_dmg":"Damage dealt",\
+"tr_stat_title_dmg_recieved":"Damage taken",\
+"tr_stat_title_obj_score":"Stratégic score",\
+"tr_stat_title_total_money_earned":"Money earned",\
+"tr_stat_title_flag_earned":"Flags returned",\
+\
 "tr_stats_total_score":"total score",\
 "tr_stats_kd_ratio":"K/d:",\
 "tr_stats_total_kills":"kills",\

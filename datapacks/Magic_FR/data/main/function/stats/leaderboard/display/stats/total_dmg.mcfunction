@@ -1,7 +1,7 @@
 ## appelée par lobby:leaderboard/leftarrow ou lobby:leaderboard/right_arrow quand on selectionne la page
 ## permet d'afficher le score de dégats infligés
 
-function lobby:leaderboard/display_titles/display_total_dmg_title
+function lobby:leaderboard/display_titles/display_total_dmg_title with storage lobby:language translate
 # permet d'afficher le titre sur le tableau des scores
 
 

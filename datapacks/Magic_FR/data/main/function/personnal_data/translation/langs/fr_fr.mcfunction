@@ -229,6 +229,16 @@ data modify storage strings fr_fr set value {\
 "tr_stats_rank_11":"11ème place",\
 "tr_stats_rank_12":"12ème place",\
 \
+"tr_stat_title_final_score":"Score total",\
+"tr_stat_title_kd_ratio":"K/D Ratio",\
+"tr_stat_title_kills":"Eliminations",\
+"tr_stat_title_deathcount":"Morts",\
+"tr_stat_title_total_dmg":"Dégâts infligés",\
+"tr_stat_title_dmg_recieved":"Dégâts subits",\
+"tr_stat_title_obj_score":"Score stratégique",\
+"tr_stat_title_total_money_earned":"Argent gagné",\
+"tr_stat_title_flag_earned":"Drapeaux rapportés",\
+\
 "tr_stats_total_score":"score total",\
 "tr_stats_kd_ratio":"K/d :",\
 "tr_stats_total_kills":"kills",\
