@@ -64,7 +64,7 @@
       "action": {
         "type": "minecraft:run_command",
         "dialog": "main:tutorial/page1/page1_main",
-        "command": "/function lobby:option_panel/pages/lobby/operator_access/op_are_admin"
+        "command": "/function lobby:option_panel/pages/lobby/operator_access/op_are_admin with storage lobby:language translate"
       }
     },
     {

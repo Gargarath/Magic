@@ -45,6 +45,38 @@ data modify storage strings en_en set value {\
 "tr_item_select_rogue":"Rogue",\
 "tr_item_select_random":"Random",\
 \
+"tr_lobby_optn_menu_top_bar_lobby":"Lobby",\
+"tr_lobby_optn_menu_top_bar_gamemode":"Gamemode",\
+"tr_lobby_optn_menu_top_bar_maps":"Maps",\
+"tr_lobby_optn_menu_top_bar_shop":"Shop",\
+"tr_lobby_optn_menu_top_bar_fun":"Fun",\
+\
+"optn_menu_button_yes":"ON",\
+"optn_menu_button_no":"OFF",\
+\
+"tr_lobby_optn_menu_main_start_game":"Start game",\
+"tr_lobby_optn_menu_main_recommended_button_1":"Recommended",\
+"tr_lobby_optn_menu_main_recommended_button_2":"settings",\
+\
+"tr_lobby_optn_menu_main_recommended_options_title_1":"Enable recommended",\
+"tr_lobby_optn_menu_main_recommended_options_title_2":"settings?",\
+"tr_lobby_optn_menu_main_recommanded_options_subtitle":"This will overwrite your current settings.",\
+"tr_lobby_optn_menu_main_recommanded_options_yes":"Yes",\
+"tr_lobby_optn_menu_main_recommanded_options_no":"No",\
+\
+"optn_menu_lobby_title_1":"General Options",\
+"optn_menu_lobby_title_2":"Moderation",\
+\
+"optn_menu_lobby_enable_arena":"Lobby Arena",\
+"optn_menu_lobby_enable_maps":"Visit Maps",\
+"optn_menu_lobby_enable_jump":"Jump Island",\
+"optn_menu_lobby_operator_access":"Moderation Access",\
+"optn_menu_lobby_operator_access_1":"First arrived",\
+"optn_menu_lobby_operator_access_2":"Admins only",\
+"optn_menu_lobby_matchmaking_1":"Automatically assign classes and",\
+"optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
+"optn_menu_lobby_force_launch":"Force launch",\
+\
 "tr_lobby_warrior_title":"Warrior",\
 "tr_lobby_archer_title":"Archer",\
 "tr_lobby_mage_title":"Mage",\

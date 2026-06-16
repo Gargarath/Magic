@@ -7,6 +7,8 @@ kill @e[tag=optn_menu_gamemode_clickable]
 kill @e[tag=optn_menu_maps_clickable]
 kill @e[tag=optn_menu_shop_clickable]
 kill @e[tag=optn_menu_fun_clickable]
+kill @e[type=text_display,tag=optn_menu_button_yes_no]
+kill @e[type=text_display,tag=optn_menu_lobby_operator_access_button]
 
 # home
 execute at @e[type=item_display,tag=optn_menu_background,limit=1] run summon interaction ~-6.75 ~3.85 ~1.55 {Glowing:1b,width:0.5f,height:0.7,response:1b,Tags:["optn_menu","optn_menu_main_tab","optn_menu_clickable"]}

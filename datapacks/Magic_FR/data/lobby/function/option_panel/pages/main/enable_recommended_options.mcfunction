@@ -30,5 +30,5 @@ scoreboard players set $ph_per_obj option_panel 75
 scoreboard players set $no_cooldowns option_panel 0
 scoreboard players set $infinite_money option_panel 0
 
-function lobby:option_panel/pages/main/display_main_tab
+function lobby:option_panel/pages/main/display_main_tab with storage lobby:language translate
 # retourne sur la page main

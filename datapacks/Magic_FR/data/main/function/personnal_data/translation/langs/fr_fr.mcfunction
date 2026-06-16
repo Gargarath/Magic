@@ -45,6 +45,38 @@ data modify storage strings fr_fr set value {\
 "tr_item_select_rogue":"Assassin",\
 "tr_item_select_random":"Aléatoire",\
 \
+"tr_lobby_optn_menu_top_bar_lobby":"Lobby",\
+"tr_lobby_optn_menu_top_bar_gamemode":"Mode de jeu",\
+"tr_lobby_optn_menu_top_bar_maps":"Arènes",\
+"tr_lobby_optn_menu_top_bar_shop":"Éconnomie",\
+"tr_lobby_optn_menu_top_bar_fun":"Fun",\
+\
+"optn_menu_button_yes":"OUI",\
+"optn_menu_button_no":"NON",\
+\
+"tr_lobby_optn_menu_main_start_game":"Lancer la partie",\
+"tr_lobby_optn_menu_main_recommended_button_1":"Paramètres",\
+"tr_lobby_optn_menu_main_recommended_button_2":"recommandés",\
+\
+"tr_lobby_optn_menu_main_recommended_options_title_1":"Activer les paramètres",\
+"tr_lobby_optn_menu_main_recommended_options_title_2":"recommandés ?",\
+"tr_lobby_optn_menu_main_recommanded_options_subtitle":"Cela écrasera vos paramètres actuels.",\
+"tr_lobby_optn_menu_main_recommanded_options_yes":"Oui",\
+"tr_lobby_optn_menu_main_recommanded_options_no":"Non",\
+\
+"optn_menu_lobby_title_1":"Options générales",\
+"optn_menu_lobby_title_2":"Modération",\
+\
+"optn_menu_lobby_enable_arena":"Arène de combat",\
+"optn_menu_lobby_enable_maps":"Visiter les maps",\
+"optn_menu_lobby_enable_jump":"Parcours de jump",\
+"optn_menu_lobby_operator_access":"Accès modération",\
+"optn_menu_lobby_operator_access_1":"Premier arrivé",\
+"optn_menu_lobby_operator_access_2":"Admins uniquement",\
+"optn_menu_lobby_matchmaking_1":"Attribution auto des classes et",\
+"optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
+"optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
+\
 "tr_lobby_warrior_title":"Guerier",\
 "tr_lobby_archer_title":"Archer",\
 "tr_lobby_mage_title":"Mage",\

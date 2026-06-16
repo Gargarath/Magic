@@ -2,8 +2,8 @@
 # permet de lancer le check de quel bouton
 
 # tab
-execute if entity @s[tag=optn_menu_main_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/display_main_tab
-execute if entity @s[tag=optn_menu_lobby_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/display_lobby_tab
+execute if entity @s[tag=optn_menu_main_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/display_main_tab with storage lobby:language translate
+execute if entity @s[tag=optn_menu_lobby_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/display_lobby_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_gamemode_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/display_gamemode_tab
 execute if entity @s[tag=optn_menu_maps_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/display_maps_tab
 execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/display_shop_tab
@@ -11,7 +11,7 @@ execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator match
 
 # Main
 execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/launch_game
-execute if entity @s[tag=optn_menu_main_recommended_button] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/recommended_options
+execute if entity @s[tag=optn_menu_main_recommended_button] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/recommended_options with storage lobby:language translate
 execute if entity @s[tag=optn_menu_main_recommended_button_yes] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/enable_recommended_options
 execute if entity @s[tag=optn_menu_main_lang] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/lang/lang_increase
 
@@ -22,7 +22,7 @@ execute if entity @s[tag=optn_menu_lobby_enable_maps_on] on target if score @s o
 execute if entity @s[tag=optn_menu_lobby_enable_maps_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/maps/maps_off
 execute if entity @s[tag=optn_menu_lobby_enable_jump_on] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/jump/jump_on
 execute if entity @s[tag=optn_menu_lobby_enable_jump_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/jump/jump_off
-execute if entity @s[tag=optn_menu_lobby_operator_access_players] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/operator_access/players_are_admin
+execute if entity @s[tag=optn_menu_lobby_operator_access_players] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/operator_access/players_are_admin with storage lobby:language translate
 execute if entity @s[tag=optn_menu_lobby_operator_access_op] on target if score @s operator matches 2 run dialog show @s main:option_panel/confirm_admin_are_op
 execute if entity @s[tag=optn_menu_lobby_enable_matchmaking_on] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/matchmaking/matchmaking_on
 execute if entity @s[tag=optn_menu_lobby_enable_matchmaking_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/matchmaking/matchmaking_off

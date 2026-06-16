@@ -7,6 +7,9 @@ execute if score $lang option_panel matches 1 run data modify storage lobby:lang
 function lobby:option_panel/pages/main/lang/merge_stuff_prices
 # ajoute les infos de prix dans le storage de langue
 
+function lobby:option_panel/refresh_language with storage lobby:language translate
+# rafraichit les pages de classes deja affichees
+
 function lobby:class_selector/refresh_language with storage lobby:language translate
 # rafraichit les pages de classes deja affichees
 

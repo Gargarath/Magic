@@ -2,8 +2,12 @@
 
 kill @e[tag=optn_menu]
 summon item_display 0.6 104.79 -21.29 {view_range:3,fbillboard:"fixed",item_display:"head",Tags:["optn_menu","optn_menu_main","optn_menu_background"],glow_color_override:16701501,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3.5f,3.5f,3.5f]},item:{view_range:3,id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["main_tab"]}}}}
-
+execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~-4.8 ~4 ~1.765 {billboard:"fixed",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_top_bar","optn_menu_top_bar_lobby"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.5f,1.2f]},text:{"bold":true,"color":"black","text":"Lobby"},background:0}
+execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~-2.3 ~4 ~1.765 {billboard:"fixed",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_top_bar","optn_menu_top_bar_gamemode"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.5f,1.2f]},text:{"bold":true,"color":"black","text":"Mode de jeu"},background:0}
+execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~0.3 ~4 ~1.765 {billboard:"fixed",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_top_bar","optn_menu_top_bar_maps"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.5f,1.2f]},text:{"bold":true,"color":"black","text":"Arènes"},background:0}
+execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~2.85 ~4 ~1.765 {billboard:"fixed",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_top_bar","optn_menu_top_bar_shop"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.5f,1.2f]},text:{"bold":true,"color":"black","text":"Éconnomie"},background:0}
+execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~5.35 ~4 ~1.765 {billboard:"fixed",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_top_bar","optn_menu_top_bar_fun"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.5f,1.2f]},text:{"bold":true,"color":"black","text":"Fun"},background:0}
 
 # clickable buttons
 
-function lobby:option_panel/pages/main/display_main_tab
+function lobby:option_panel/pages/main/display_main_tab with storage lobby:language translate
