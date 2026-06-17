@@ -73,6 +73,15 @@ data modify storage strings en_en set value {\
 "optn_menu_lobby_operator_access":"Moderation Access",\
 "optn_menu_lobby_operator_access_1":"First arrived",\
 "optn_menu_lobby_operator_access_2":"Admins only",\
+"optn_menu_warning_op_admin_title":"Options menu",\
+"optn_menu_warning_op_admin_subtitle":"Warning!",\
+"optn_menu_warning_op_admin_text_1":"You are about to enable operator mode access ",\
+"optn_menu_warning_op_admin_text_2":"only",\
+"optn_menu_warning_op_admin_text_3":" for administrator players.",\
+"optn_menu_warning_op_admin_need_admin":"If you are not an administrator yourself, this command will fail.",\
+"optn_menu_warning_op_admin_text_4":"Are you sure you want to enable this mode?",\
+"optn_menu_warning_op_admin_confirm":"I know what I am doing",\
+"optn_menu_warning_op_admin_cancel":"Cancel",\
 "optn_menu_lobby_matchmaking_1":"Automatically assign classes and",\
 "optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
 "optn_menu_lobby_force_launch":"Force launch",\

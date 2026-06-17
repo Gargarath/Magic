@@ -67,12 +67,21 @@ data modify storage strings fr_fr set value {\
 "optn_menu_lobby_title_1":"Options générales",\
 "optn_menu_lobby_title_2":"Modération",\
 \
-"optn_menu_lobby_enable_arena":"Arène de combat",\
+"optn_menu_lobby_enable_arena":"Arène du lobby",\
 "optn_menu_lobby_enable_maps":"Visiter les maps",\
 "optn_menu_lobby_enable_jump":"Parcours de jump",\
 "optn_menu_lobby_operator_access":"Accès modération",\
 "optn_menu_lobby_operator_access_1":"Premier arrivé",\
 "optn_menu_lobby_operator_access_2":"Admins uniquement",\
+"optn_menu_warning_op_admin_title":"Menu d'option",\
+"optn_menu_warning_op_admin_subtitle":"Attention !",\
+"optn_menu_warning_op_admin_text_1":"Vous êtes sur le point d'activer l'accès au mode opérateur ",\
+"optn_menu_warning_op_admin_text_2":"uniquement",\
+"optn_menu_warning_op_admin_text_3":" pour les joueurs administrateurs.",\
+"optn_menu_warning_op_admin_need_admin":"Si vous n'êtes pas vous même administrateur, cette commande échouera.",\
+"optn_menu_warning_op_admin_text_4":"Êtes vous sûr de vouloir activer ce mode ?",\
+"optn_menu_warning_op_admin_confirm":"Je sais ce que je fais",\
+"optn_menu_warning_op_admin_cancel":"Annuler",\
 "optn_menu_lobby_matchmaking_1":"Attribution auto des classes et",\
 "optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
 "optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
