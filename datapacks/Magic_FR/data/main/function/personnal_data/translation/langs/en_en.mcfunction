@@ -86,6 +86,9 @@ data modify storage strings en_en set value {\
 "optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
 "optn_menu_lobby_force_launch":"Force launch",\
 \
+"optn_menu_fun_no_cooldowns":"No cooldowns:",\
+"optn_menu_fun_infinite_money":"Infinite coins:",\
+\
 "tr_lobby_warrior_title":"Warrior",\
 "tr_lobby_archer_title":"Archer",\
 "tr_lobby_mage_title":"Mage",\

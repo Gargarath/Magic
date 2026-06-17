@@ -86,6 +86,9 @@ data modify storage strings fr_fr set value {\
 "optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
 "optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
 \
+"optn_menu_fun_no_cooldowns":"Aucun temps de recharge :",\
+"optn_menu_fun_infinite_money":"Points d'honneur illimités :",\
+\
 "tr_lobby_warrior_title":"Guerier",\
 "tr_lobby_archer_title":"Archer",\
 "tr_lobby_mage_title":"Mage",\
