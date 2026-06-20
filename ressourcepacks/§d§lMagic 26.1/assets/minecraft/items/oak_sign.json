@@ -218,69 +218,6 @@
         }
       },
             {
-        "when": "shop_timer_none",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/none"
-        }
-      },
-            {
-        "when": "shop_timer_5",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/5s"
-        }
-      },
-            {
-        "when": "shop_timer_10",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/10s"
-        }
-      },
-            {
-        "when": "shop_timer_20",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/20s"
-        }
-      },
-            {
-        "when": "shop_timer_30",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/30s"
-        }
-      },
-            {
-        "when": "shop_timer_45",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/45s"
-        }
-      },
-            {
-        "when": "shop_timer_60",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/60s"
-        }
-      },
-            {
-        "when": "shop_timer_80",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/80s"
-        }
-      },
-            {
-        "when": "shop_timer_100",
-        "model": {
-          "type": "model",
-          "model": "item/optn_menu/shop_tab/timer/100s"
-        }
-      },
-            {
         "when": "generic_value_selector_0",
         "model": {
           "type": "model",
