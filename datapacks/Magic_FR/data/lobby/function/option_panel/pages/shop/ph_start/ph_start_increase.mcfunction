@@ -1,25 +1,28 @@
-## appelée par interact_with_menu/check_clicked_button si @s clique sur le boutton plus
-# permet de passer à la page suivante
+## appelee par interact_with_menu/check_clicked_button si @s clique sur le bouton plus
+# passe au palier suivant du ph_start
 
-scoreboard players add $ph_start option_panel 1
-# ajoute 1 au score de shop_timer
+scoreboard players operation $ph_start_old option_panel = $ph_start option_panel
+# garde la valeur de depart pour snap au palier suivant
 
-execute if score $ph_start option_panel matches 401 run scoreboard players set $ph_start option_panel 0
-execute if score $ph_start option_panel matches 1 run scoreboard players set $ph_start option_panel 25
-execute if score $ph_start option_panel matches 26 run scoreboard players set $ph_start option_panel 50
-execute if score $ph_start option_panel matches 51 run scoreboard players set $ph_start option_panel 75
-execute if score $ph_start option_panel matches 76 run scoreboard players set $ph_start option_panel 100
-execute if score $ph_start option_panel matches 101 run scoreboard players set $ph_start option_panel 150
-execute if score $ph_start option_panel matches 151 run scoreboard players set $ph_start option_panel 200
-execute if score $ph_start option_panel matches 201 run scoreboard players set $ph_start option_panel 225
-execute if score $ph_start option_panel matches 226 run scoreboard players set $ph_start option_panel 250
-execute if score $ph_start option_panel matches 251 run scoreboard players set $ph_start option_panel 275
-execute if score $ph_start option_panel matches 276 run scoreboard players set $ph_start option_panel 300
-execute if score $ph_start option_panel matches 301 run scoreboard players set $ph_start option_panel 325
-execute if score $ph_start option_panel matches 326 run scoreboard players set $ph_start option_panel 350
-execute if score $ph_start option_panel matches 351 run scoreboard players set $ph_start option_panel 375
-execute if score $ph_start option_panel matches 376 run scoreboard players set $ph_start option_panel 400
-# passe au cran suivant selon à combien on est
+execute if score $ph_start_old option_panel matches ..-1 run scoreboard players set $ph_start option_panel 0
+execute if score $ph_start_old option_panel matches 0..24 run scoreboard players set $ph_start option_panel 25
+execute if score $ph_start_old option_panel matches 25..49 run scoreboard players set $ph_start option_panel 50
+execute if score $ph_start_old option_panel matches 50..74 run scoreboard players set $ph_start option_panel 75
+execute if score $ph_start_old option_panel matches 75..99 run scoreboard players set $ph_start option_panel 100
+execute if score $ph_start_old option_panel matches 100..149 run scoreboard players set $ph_start option_panel 150
+execute if score $ph_start_old option_panel matches 150..199 run scoreboard players set $ph_start option_panel 200
+execute if score $ph_start_old option_panel matches 200..249 run scoreboard players set $ph_start option_panel 250
+execute if score $ph_start_old option_panel matches 250..299 run scoreboard players set $ph_start option_panel 300
+execute if score $ph_start_old option_panel matches 300..349 run scoreboard players set $ph_start option_panel 350
+execute if score $ph_start_old option_panel matches 350..399 run scoreboard players set $ph_start option_panel 400
+execute if score $ph_start_old option_panel matches 400..449 run scoreboard players set $ph_start option_panel 450
+execute if score $ph_start_old option_panel matches 450..499 run scoreboard players set $ph_start option_panel 500
+execute if score $ph_start_old option_panel matches 500..549 run scoreboard players set $ph_start option_panel 550
+execute if score $ph_start_old option_panel matches 550..599 run scoreboard players set $ph_start option_panel 600
+execute if score $ph_start_old option_panel matches 600.. run scoreboard players set $ph_start option_panel 0
+# passe au cran suivant selon le palier actuel
 
-function lobby:option_panel/pages/shop/ph_start/display
-# affiche le nouveau score
+# stock la valeur du shop at start et l'affiche
+execute store result storage temp temp int 1 run scoreboard players get $ph_start option_panel
+data modify storage lobby:language translate merge from storage temp
+function lobby:option_panel/pages/shop/ph_start/display with storage lobby:language translate

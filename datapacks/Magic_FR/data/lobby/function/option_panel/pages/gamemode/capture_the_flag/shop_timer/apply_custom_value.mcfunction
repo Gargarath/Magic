@@ -1,4 +1,4 @@
-## appelee par le dialog custom du shop_timer
+## appelee par lobby:loop si @s utilise le dialog
 # applique une valeur libre et rafraichit l'affichage
 
 scoreboard players operation $shop_timer option_panel = @s optn_shop_timer_custom

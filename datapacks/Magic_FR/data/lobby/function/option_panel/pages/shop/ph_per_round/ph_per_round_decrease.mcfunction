@@ -1,24 +1,28 @@
-## appelée par interact_with_menu/check_clicked_button si @s clique sur le boutton moins
-# permet de passer à la page précedente
+## appelee par interact_with_menu/check_clicked_button si @s clique sur le bouton moins
+# passe au palier precedent du ph_per_round
 
-scoreboard players remove $ph_per_round option_panel 1
-# enlève 1 au score de shop_timer
-execute if score $ph_per_round option_panel matches 24 run scoreboard players set $ph_per_round option_panel 0
-execute if score $ph_per_round option_panel matches 49 run scoreboard players set $ph_per_round option_panel 25
-execute if score $ph_per_round option_panel matches 74 run scoreboard players set $ph_per_round option_panel 50
-execute if score $ph_per_round option_panel matches 99 run scoreboard players set $ph_per_round option_panel 75
-execute if score $ph_per_round option_panel matches 149 run scoreboard players set $ph_per_round option_panel 100
-execute if score $ph_per_round option_panel matches 199 run scoreboard players set $ph_per_round option_panel 150
-execute if score $ph_per_round option_panel matches 224 run scoreboard players set $ph_per_round option_panel 200
-execute if score $ph_per_round option_panel matches 249 run scoreboard players set $ph_per_round option_panel 225
-execute if score $ph_per_round option_panel matches 274 run scoreboard players set $ph_per_round option_panel 250
-execute if score $ph_per_round option_panel matches 299 run scoreboard players set $ph_per_round option_panel 275
-execute if score $ph_per_round option_panel matches 324 run scoreboard players set $ph_per_round option_panel 300
-execute if score $ph_per_round option_panel matches 349 run scoreboard players set $ph_per_round option_panel 325
-execute if score $ph_per_round option_panel matches 374 run scoreboard players set $ph_per_round option_panel 350
-execute if score $ph_per_round option_panel matches 399 run scoreboard players set $ph_per_round option_panel 375
-execute if score $ph_per_round option_panel matches -1 run scoreboard players set $ph_per_round option_panel 400
-# passe au cran précédent selon à combien on est
+scoreboard players operation $ph_per_round_old option_panel = $ph_per_round option_panel
+# garde la valeur de depart pour snap au palier precedent
 
-function lobby:option_panel/pages/shop/ph_per_round/display
-# affiche le nouveau score
+execute if score $ph_per_round_old option_panel matches ..0 run scoreboard players set $ph_per_round option_panel 600
+execute if score $ph_per_round_old option_panel matches 1..25 run scoreboard players set $ph_per_round option_panel 0
+execute if score $ph_per_round_old option_panel matches 26..50 run scoreboard players set $ph_per_round option_panel 25
+execute if score $ph_per_round_old option_panel matches 51..75 run scoreboard players set $ph_per_round option_panel 50
+execute if score $ph_per_round_old option_panel matches 76..100 run scoreboard players set $ph_per_round option_panel 75
+execute if score $ph_per_round_old option_panel matches 101..150 run scoreboard players set $ph_per_round option_panel 100
+execute if score $ph_per_round_old option_panel matches 151..200 run scoreboard players set $ph_per_round option_panel 150
+execute if score $ph_per_round_old option_panel matches 201..250 run scoreboard players set $ph_per_round option_panel 200
+execute if score $ph_per_round_old option_panel matches 251..300 run scoreboard players set $ph_per_round option_panel 250
+execute if score $ph_per_round_old option_panel matches 301..350 run scoreboard players set $ph_per_round option_panel 300
+execute if score $ph_per_round_old option_panel matches 351..400 run scoreboard players set $ph_per_round option_panel 350
+execute if score $ph_per_round_old option_panel matches 401..450 run scoreboard players set $ph_per_round option_panel 400
+execute if score $ph_per_round_old option_panel matches 451..500 run scoreboard players set $ph_per_round option_panel 450
+execute if score $ph_per_round_old option_panel matches 501..550 run scoreboard players set $ph_per_round option_panel 500
+execute if score $ph_per_round_old option_panel matches 551..600 run scoreboard players set $ph_per_round option_panel 550
+execute if score $ph_per_round_old option_panel matches 601.. run scoreboard players set $ph_per_round option_panel 600
+# passe au cran precedent selon le palier actuel
+
+# stock la valeur du shop per round et l'affiche
+execute store result storage temp temp int 1 run scoreboard players get $ph_per_round option_panel
+data modify storage lobby:language translate merge from storage temp
+function lobby:option_panel/pages/shop/ph_per_round/display with storage lobby:language translate

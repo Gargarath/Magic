@@ -51,8 +51,8 @@ data modify storage strings en_en set value {\
 "tr_lobby_optn_menu_top_bar_shop":"Shop",\
 "tr_lobby_optn_menu_top_bar_fun":"Fun",\
 \
-"optn_menu_button_yes":"ON",\
-"optn_menu_button_no":"OFF",\
+"tr_optn_menu_button_yes":"ON",\
+"tr_optn_menu_button_no":"OFF",\
 \
 "tr_lobby_optn_menu_main_start_game":"Start game",\
 "tr_lobby_optn_menu_main_recommended_button_1":"Recommended",\
@@ -64,53 +64,81 @@ data modify storage strings en_en set value {\
 "tr_lobby_optn_menu_main_recommanded_options_yes":"Yes",\
 "tr_lobby_optn_menu_main_recommanded_options_no":"No",\
 \
-"optn_menu_lobby_title_1":"General Options",\
-"optn_menu_lobby_title_2":"Moderation",\
+"tr_optn_menu_lobby_title_1":"General Options",\
+"tr_optn_menu_lobby_title_2":"Moderation",\
 \
-"optn_menu_gamemode_ffa_title_1":"General options",\
+"tr_optn_menu_gamemode_ffa_title_1":"General options",\
 \
-"optn_menu_gamemode_ctf_title_1":"General options",\
-"optn_menu_gamemode_ctf_secondary_objectives":"Secondary objectives",\
-"optn_menu_gamemode_ctf_teamkill":"Teamkill message",\
-"optn_menu_gamemode_ctf_show_next_map_1":"Show the next arena",\
-"optn_menu_gamemode_ctf_show_next_map_2":"in shop:",\
-"optn_menu_gamemode_ctf_shop_timer_1":"",\
-"optn_menu_gamemode_ctf_shop_timer_2":"Shop timer :",\
-"optn_menu_gamemode_ctf_shop_timer_none":"None",\
-"optn_menu_gamemode_ctf_shop_timer_seconds":"s",\
-"optn_menu_gamemode_ctf_shop_timer_custom_title":"Shop room timer",\
-"optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choose how many seconds players can stay in shop rooms.",\
-"optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
-"optn_menu_gamemode_ctf_shop_timer_custom_none":"no limit",\
-"optn_menu_gamemode_ctf_shop_timer_custom_range":"Accepted value: 0 to 100 seconds",\
-"optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Duration in seconds",\
-"optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Confirm",\
-"optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Cancel",\
+"tr_optn_menu_gamemode_ctf_title_1":"General options",\
+"tr_optn_menu_gamemode_ctf_secondary_objectives":"Secondary objectives",\
+"tr_optn_menu_gamemode_ctf_teamkill":"Teamkill message",\
+"tr_optn_menu_gamemode_ctf_show_next_map_1":"Show the next arena",\
+"tr_optn_menu_gamemode_ctf_show_next_map_2":"in shop:",\
+"tr_optn_menu_gamemode_ctf_shop_timer_1":"",\
+"tr_optn_menu_gamemode_ctf_shop_timer_2":"Shop timer :",\
+"tr_optn_menu_gamemode_ctf_shop_timer_none":"None",\
+"tr_optn_menu_gamemode_ctf_shop_timer_seconds":"s",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_title":"Shop room timer",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choose how many seconds players can stay in shop rooms.",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_none":"no limit",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_range":"Accepted value: 0 to 100 seconds",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Duration in seconds",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Confirm",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Cancel",\
 \
-"optn_menu_lobby_enable_arena":"Lobby Arena",\
-"optn_menu_lobby_enable_maps":"Visit Maps",\
-"optn_menu_lobby_enable_jump":"Jump Island",\
-"optn_menu_lobby_operator_access":"Moderation Access",\
-"optn_menu_lobby_operator_access_1":"First arrived",\
-"optn_menu_lobby_operator_access_2":"Admins only",\
-"optn_menu_warning_op_admin_title":"Options menu",\
-"optn_menu_warning_op_admin_subtitle":"Warning!",\
-"optn_menu_warning_op_admin_text_1":"You are about to enable operator mode access ",\
-"optn_menu_warning_op_admin_text_2":"only",\
-"optn_menu_warning_op_admin_text_3":" for administrator players.",\
-"optn_menu_warning_op_admin_need_admin":"If you are not an administrator yourself, this command will fail.",\
-"optn_menu_warning_op_admin_text_4":"Are you sure you want to enable this mode?",\
-"optn_menu_warning_op_admin_confirm":"I know what I am doing",\
-"optn_menu_warning_op_admin_cancel":"Cancel",\
-"optn_menu_lobby_matchmaking_1":"Automatically assign classes and",\
-"optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
-"optn_menu_lobby_force_launch":"Force launch",\
+"tr_optn_menu_lobby_enable_arena":"Lobby Arena",\
+"tr_optn_menu_lobby_enable_maps":"Visit Maps",\
+"tr_optn_menu_lobby_enable_jump":"Jump Island",\
+"tr_optn_menu_lobby_operator_access":"Moderation Access",\
+"tr_optn_menu_lobby_operator_access_1":"First arrived",\
+"tr_optn_menu_lobby_operator_access_2":"Admins only",\
+"tr_optn_menu_warning_op_admin_title":"Options menu",\
+"tr_optn_menu_warning_op_admin_subtitle":"Warning!",\
+"tr_optn_menu_warning_op_admin_text_1":"You are about to enable operator mode access ",\
+"tr_optn_menu_warning_op_admin_text_2":"only",\
+"tr_optn_menu_warning_op_admin_text_3":" for administrator players.",\
+"tr_optn_menu_warning_op_admin_need_admin":"If you are not an administrator yourself, this command will fail.",\
+"tr_optn_menu_warning_op_admin_text_4":"Are you sure you want to enable this mode?",\
+"tr_optn_menu_warning_op_admin_confirm":"I know what I am doing",\
+"tr_optn_menu_warning_op_admin_cancel":"Cancel",\
+"tr_optn_menu_lobby_matchmaking_1":"Automatically assign classes and",\
+"tr_optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
+"tr_optn_menu_lobby_force_launch":"Force launch",\
 \
-"optn_menu_gamemode_ffa_title":"Free for all",\
-"optn_menu_gamemode_ctf_title":"Capture the flag",\
+"tr_optn_menu_gamemode_ffa_title":"Free for all",\
+"tr_optn_menu_gamemode_ctf_title":"Capture the flag",\
 \
-"optn_menu_fun_no_cooldowns":"No cooldowns:",\
-"optn_menu_fun_infinite_money":"Infinite coins:",\
+"tr_optn_menu_shop_title_1":"General options",\
+"tr_optn_menu_shop_title_2":"Coins",\
+"tr_optn_menu_shop_build_reset":"Undo/Redo buttons:",\
+"tr_optn_menu_shop_build_reset_never":"Never",\
+"tr_optn_menu_shop_build_reset_round_only":"Round only",\
+"tr_optn_menu_shop_build_reset_game":"Whole game",\
+"tr_optn_menu_shop_ph_start":"Coins at start:",\
+"tr_optn_menu_shop_ph_start_custom_title":"Coins at start",\
+"tr_optn_menu_shop_ph_start_custom_text_1":"Choose the amount of coins players start with",\
+"tr_optn_menu_shop_ph_start_custom_range":"Allowed value: 0 to 600 coins",\
+"tr_optn_menu_shop_ph_start_custom_field_label":"Amount of coins",\
+"tr_optn_menu_shop_ph_start_custom_confirm":"Confirm",\
+"tr_optn_menu_shop_ph_start_custom_cancel":"Cancel",\
+"tr_optn_menu_shop_ph_per_round":"Coins per round:",\
+"tr_optn_menu_shop_ph_per_round_custom_title":"Coins per round",\
+"tr_optn_menu_shop_ph_per_round_custom_text_1":"Choose the amount of coins players earn per round",\
+"tr_optn_menu_shop_ph_per_round_custom_range":"Allowed value: 0 to 600 coins",\
+"tr_optn_menu_shop_ph_per_round_custom_field_label":"Amount of coins",\
+"tr_optn_menu_shop_ph_per_round_custom_confirm":"Confirm",\
+"tr_optn_menu_shop_ph_per_round_custom_cancel":"Cancel",\
+"tr_optn_menu_shop_ph_per_obj":"Coins per objective:",\
+"tr_optn_menu_shop_ph_per_obj_custom_title":"Coins per objective",\
+"tr_optn_menu_shop_ph_per_obj_custom_text_1":"Choose the amount of coins players earn per objective",\
+"tr_optn_menu_shop_ph_per_obj_custom_range":"Allowed value: 0 to 600 coins",\
+"tr_optn_menu_shop_ph_per_obj_custom_field_label":"Amount of coins",\
+"tr_optn_menu_shop_ph_per_obj_custom_confirm":"Confirm",\
+"tr_optn_menu_shop_ph_per_obj_custom_cancel":"Cancel",\
+\
+"tr_optn_menu_fun_no_cooldowns":"No cooldowns:",\
+"tr_optn_menu_fun_infinite_money":"Infinite coins:",\
 \
 "tr_lobby_warrior_title":"Warrior",\
 "tr_lobby_archer_title":"Archer",\

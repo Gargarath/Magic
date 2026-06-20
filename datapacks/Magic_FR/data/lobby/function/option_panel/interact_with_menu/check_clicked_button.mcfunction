@@ -6,7 +6,7 @@ execute if entity @s[tag=optn_menu_main_tab] on target if score @s operator matc
 execute if entity @s[tag=optn_menu_lobby_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/display_lobby_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_gamemode_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/display_gamemode_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_maps_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/display_maps_tab
-execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/display_shop_tab
+execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/display_shop_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/fun/display_fun_tab with storage lobby:language translate
 
 # Main
@@ -68,24 +68,27 @@ execute if entity @s[tag=optn_menu_maps_time_change_off] on target if score @s o
 # shop
 
     # build_reset
-execute if entity @s[tag=optn_menu_shop_build_reset_never] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/build_reset/build_reset_never
-execute if entity @s[tag=optn_menu_shop_build_reset_round_only] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/build_reset/build_reset_round_only
-execute if entity @s[tag=optn_menu_shop_build_reset_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/build_reset/build_reset_game
+execute if entity @s[tag=optn_menu_shop_build_reset_never] on target if score @s operator matches 2 as @n[type=item_display,tag=optn_menu_shop_build_reset] at @s run function lobby:option_panel/pages/shop/build_reset/build_reset_never with storage lobby:language translate
+execute if entity @s[tag=optn_menu_shop_build_reset_round_only] on target if score @s operator matches 2 as @n[type=item_display,tag=optn_menu_shop_build_reset] at @s run function lobby:option_panel/pages/shop/build_reset/build_reset_round_only with storage lobby:language translate
+execute if entity @s[tag=optn_menu_shop_build_reset_game] on target if score @s operator matches 2 as @n[type=item_display,tag=optn_menu_shop_build_reset] at @s run function lobby:option_panel/pages/shop/build_reset/build_reset_game with storage lobby:language translate
 
     # ph_start
 execute if entity @s[tag=optn_menu_shop_ph_start_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_start/ph_start_increase
 execute if entity @s[tag=optn_menu_shop_ph_start_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_start/ph_start_increase
 execute if entity @s[tag=optn_menu_shop_ph_start_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_start/ph_start_decrease
+execute if entity @s[tag=optn_menu_shop_ph_start_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_start/custom_value
 
     # ph_per_round
 execute if entity @s[tag=optn_menu_shop_ph_per_round_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_round/ph_per_round_increase
 execute if entity @s[tag=optn_menu_shop_ph_per_round_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_round/ph_per_round_increase
 execute if entity @s[tag=optn_menu_shop_ph_per_round_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_round/ph_per_round_decrease
+execute if entity @s[tag=optn_menu_shop_ph_per_round_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_round/custom_value
 
     # ph_per_objs
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_increase
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_increase
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_decrease
+execute if entity @s[tag=optn_menu_shop_ph_per_obj_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/custom_value
 
 # fun
 

@@ -51,8 +51,8 @@ data modify storage strings fr_fr set value {\
 "tr_lobby_optn_menu_top_bar_shop":"Éconnomie",\
 "tr_lobby_optn_menu_top_bar_fun":"Fun",\
 \
-"optn_menu_button_yes":"OUI",\
-"optn_menu_button_no":"NON",\
+"tr_optn_menu_button_yes":"OUI",\
+"tr_optn_menu_button_no":"NON",\
 \
 "tr_lobby_optn_menu_main_start_game":"Lancer la partie",\
 "tr_lobby_optn_menu_main_recommended_button_1":"Paramètres",\
@@ -64,53 +64,81 @@ data modify storage strings fr_fr set value {\
 "tr_lobby_optn_menu_main_recommanded_options_yes":"Oui",\
 "tr_lobby_optn_menu_main_recommanded_options_no":"Non",\
 \
-"optn_menu_lobby_title_1":"Options générales",\
-"optn_menu_lobby_title_2":"Modération",\
+"tr_optn_menu_lobby_title_1":"Options générales",\
+"tr_optn_menu_lobby_title_2":"Modération",\
 \
-"optn_menu_gamemode_ffa_title_1":"Options générales",\
+"tr_optn_menu_gamemode_ffa_title_1":"Options générales",\
 \
-"optn_menu_gamemode_ctf_title_1":"Options générales",\
-"optn_menu_gamemode_ctf_secondary_objectives":"Objectifs secondaires",\
-"optn_menu_gamemode_ctf_teamkill":"Message de teamkill",\
-"optn_menu_gamemode_ctf_show_next_map_1":"Afficher la prochaine arène",\
-"optn_menu_gamemode_ctf_show_next_map_2":"dans les salles d'achat :",\
-"optn_menu_gamemode_ctf_shop_timer_1":"Limite de temps dans les",\
-"optn_menu_gamemode_ctf_shop_timer_2":"salles d'achat :",\
-"optn_menu_gamemode_ctf_shop_timer_none":"Aucune",\
-"optn_menu_gamemode_ctf_shop_timer_seconds":" s",\
-"optn_menu_gamemode_ctf_shop_timer_custom_title":"Temps en salle d'achat",\
-"optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choisissez combien de secondes les joueurs peuvent rester dans les salles d'achat.",\
-"optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
-"optn_menu_gamemode_ctf_shop_timer_custom_none":"aucune limite",\
-"optn_menu_gamemode_ctf_shop_timer_custom_range":"Valeur acceptée : 0 à 100 secondes",\
-"optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Durée en secondes",\
-"optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Valider",\
-"optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Annuler",\
+"tr_optn_menu_gamemode_ctf_title_1":"Options générales",\
+"tr_optn_menu_gamemode_ctf_secondary_objectives":"Objectifs secondaires",\
+"tr_optn_menu_gamemode_ctf_teamkill":"Message de teamkill",\
+"tr_optn_menu_gamemode_ctf_show_next_map_1":"Afficher la prochaine arène",\
+"tr_optn_menu_gamemode_ctf_show_next_map_2":"dans les salles d'achat :",\
+"tr_optn_menu_gamemode_ctf_shop_timer_1":"Limite de temps dans les",\
+"tr_optn_menu_gamemode_ctf_shop_timer_2":"salles d'achat :",\
+"tr_optn_menu_gamemode_ctf_shop_timer_none":"Aucune",\
+"tr_optn_menu_gamemode_ctf_shop_timer_seconds":" s",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_title":"Temps en salle d'achat",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choisissez combien de secondes les joueurs peuvent rester dans les salles d'achat.",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_none":"aucune limite",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_range":"Valeur acceptée : 0 à 100 secondes",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Durée en secondes",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Valider",\
+"tr_optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Annuler",\
 \
-"optn_menu_lobby_enable_arena":"Arène du lobby",\
-"optn_menu_lobby_enable_maps":"Visiter les maps",\
-"optn_menu_lobby_enable_jump":"Parcours de jump",\
-"optn_menu_lobby_operator_access":"Accès modération",\
-"optn_menu_lobby_operator_access_1":"Premier arrivé",\
-"optn_menu_lobby_operator_access_2":"Admins uniquement",\
-"optn_menu_warning_op_admin_title":"Menu d'option",\
-"optn_menu_warning_op_admin_subtitle":"Attention !",\
-"optn_menu_warning_op_admin_text_1":"Vous êtes sur le point d'activer l'accès au mode opérateur ",\
-"optn_menu_warning_op_admin_text_2":"uniquement",\
-"optn_menu_warning_op_admin_text_3":" pour les joueurs administrateurs.",\
-"optn_menu_warning_op_admin_need_admin":"Si vous n'êtes pas vous même administrateur, cette commande échouera.",\
-"optn_menu_warning_op_admin_text_4":"Êtes vous sûr de vouloir activer ce mode ?",\
-"optn_menu_warning_op_admin_confirm":"Je sais ce que je fais",\
-"optn_menu_warning_op_admin_cancel":"Annuler",\
-"optn_menu_lobby_matchmaking_1":"Attribution auto des classes et",\
-"optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
-"optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
+"tr_optn_menu_lobby_enable_arena":"Arène du lobby",\
+"tr_optn_menu_lobby_enable_maps":"Visiter les maps",\
+"tr_optn_menu_lobby_enable_jump":"Parcours de jump",\
+"tr_optn_menu_lobby_operator_access":"Accès modération",\
+"tr_optn_menu_lobby_operator_access_1":"Premier arrivé",\
+"tr_optn_menu_lobby_operator_access_2":"Admins uniquement",\
+"tr_optn_menu_warning_op_admin_title":"Menu d'option",\
+"tr_optn_menu_warning_op_admin_subtitle":"Attention !",\
+"tr_optn_menu_warning_op_admin_text_1":"Vous êtes sur le point d'activer l'accès au mode opérateur ",\
+"tr_optn_menu_warning_op_admin_text_2":"uniquement",\
+"tr_optn_menu_warning_op_admin_text_3":" pour les joueurs administrateurs.",\
+"tr_optn_menu_warning_op_admin_need_admin":"Si vous n'êtes pas vous même administrateur, cette commande échouera.",\
+"tr_optn_menu_warning_op_admin_text_4":"Êtes vous sûr de vouloir activer ce mode ?",\
+"tr_optn_menu_warning_op_admin_confirm":"Je sais ce que je fais",\
+"tr_optn_menu_warning_op_admin_cancel":"Annuler",\
+"tr_optn_menu_lobby_matchmaking_1":"Attribution auto des classes et",\
+"tr_optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
+"tr_optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
 \
-"optn_menu_gamemode_ffa_title":"Chacun pour soi",\
-"optn_menu_gamemode_ctf_title":"Capture de drapeau",\
+"tr_optn_menu_gamemode_ffa_title":"Chacun pour soi",\
+"tr_optn_menu_gamemode_ctf_title":"Capture de drapeau",\
 \
-"optn_menu_fun_no_cooldowns":"Aucun temps de recharge :",\
-"optn_menu_fun_infinite_money":"Points d'honneur illimités :",\
+"tr_optn_menu_shop_title_1":"Options générales",\
+"tr_optn_menu_shop_title_2":"Points d'honneur",\
+"tr_optn_menu_shop_build_reset":"Bouttons Undo/Redo :",\
+"tr_optn_menu_shop_build_reset_never":"Jamais",\
+"tr_optn_menu_shop_build_reset_round_only":"De la manche",\
+"tr_optn_menu_shop_build_reset_game":"De la partie",\
+"tr_optn_menu_shop_ph_start":"Points d'honneur de départ :",\
+"tr_optn_menu_shop_ph_start_custom_title":"Point d'honneur de départ",\
+"tr_optn_menu_shop_ph_start_custom_text_1":"Choisissez avec combien de points d'honneur peuvent commencer les joueurs",\
+"tr_optn_menu_shop_ph_start_custom_range":"Valeur acceptée : 0 à 600 points d'honneur",\
+"tr_optn_menu_shop_ph_start_custom_field_label":"Points d'honneur",\
+"tr_optn_menu_shop_ph_start_custom_confirm":"Valider",\
+"tr_optn_menu_shop_ph_start_custom_cancel":"Annuler",\
+"tr_optn_menu_shop_ph_per_round":"Points d'honneur par manche :",\
+"tr_optn_menu_shop_ph_per_round_custom_title":"Points d'honneur par manche",\
+"tr_optn_menu_shop_ph_per_round_custom_text_1":"Choisissez combien de points d'honneur les joueurs gagnent par manche",\
+"tr_optn_menu_shop_ph_per_round_custom_range":"Valeur acceptée : 0 à 600 points d'honneur",\
+"tr_optn_menu_shop_ph_per_round_custom_field_label":"Points d'honneur",\
+"tr_optn_menu_shop_ph_per_round_custom_confirm":"Valider",\
+"tr_optn_menu_shop_ph_per_round_custom_cancel":"Annuler",\
+"tr_optn_menu_shop_ph_per_obj":"Points d'honneur par objectifs :",\
+"tr_optn_menu_shop_ph_per_obj_custom_title":"Points d'honneur par objectif",\
+"tr_optn_menu_shop_ph_per_obj_custom_text_1":"Choisissez combien de points d'honneur les joueurs gagnent par objectif",\
+"tr_optn_menu_shop_ph_per_obj_custom_range":"Valeur acceptée : 0 à 600 points d'honneur",\
+"tr_optn_menu_shop_ph_per_obj_custom_field_label":"Points d'honneur",\
+"tr_optn_menu_shop_ph_per_obj_custom_confirm":"Valider",\
+"tr_optn_menu_shop_ph_per_obj_custom_cancel":"Annuler",\
+\
+"tr_optn_menu_fun_no_cooldowns":"Aucun temps de recharge :",\
+"tr_optn_menu_fun_infinite_money":"Points d'honneur illimités :",\
 \
 "tr_lobby_warrior_title":"Guerier",\
 "tr_lobby_archer_title":"Archer",\
