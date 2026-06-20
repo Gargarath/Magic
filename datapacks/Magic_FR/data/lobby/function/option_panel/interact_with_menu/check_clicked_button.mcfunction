@@ -5,7 +5,7 @@
 execute if entity @s[tag=optn_menu_main_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/display_main_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_lobby_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/display_lobby_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_gamemode_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/display_gamemode_tab with storage lobby:language translate
-execute if entity @s[tag=optn_menu_maps_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/display_maps_tab
+execute if entity @s[tag=optn_menu_maps_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/display_maps_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/display_shop_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/fun/display_fun_tab with storage lobby:language translate
 

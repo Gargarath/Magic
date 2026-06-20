@@ -16,6 +16,7 @@ kill @n[type=text_display,tag=optn_menu_button_shop_ph_start]
 kill @n[type=text_display,tag=optn_menu_button_shop_ph_per_round]
 kill @n[type=text_display,tag=optn_menu_button_shop_ph_per_obj]
 kill @e[type=text_display,tag=optn_menu_shop_build_reset_button,limit=3]
+kill @e[type=text_display,tag=optn_menu_maps_map_selection_button,limit=2]
 
 # home
 execute at @n[type=item_display,tag=optn_menu_background] run summon interaction ~-6.75 ~3.85 ~1.55 {Glowing:1b,width:0.5f,height:0.7,response:1b,Tags:["optn_menu","optn_menu_main_tab","optn_menu_clickable"]}

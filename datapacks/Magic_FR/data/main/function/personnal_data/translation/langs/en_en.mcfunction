@@ -109,6 +109,16 @@ data modify storage strings en_en set value {\
 "tr_optn_menu_gamemode_ffa_title":"Free for all",\
 "tr_optn_menu_gamemode_ctf_title":"Capture the flag",\
 \
+"tr_optn_menu_maps_map_selection":"Map selection",\
+"tr_optn_menu_maps_map_selection_random":"Random",\
+"tr_optn_menu_maps_map_selection_predefined":"Predefined",\
+"tr_optn_menu_maps_rng_lvl_1":"Prevent playing the same",\
+"tr_optn_menu_maps_rng_lvl_2":"arena twice",\
+"tr_optn_menu_arena_time_change_1":"Night mode on",\
+"tr_optn_menu_arena_time_change_2":"certain maps",\
+"optn_menu_maps_round":"Round",\
+"optn_menu_maps_overtime":"Overtime",\
+\
 "tr_optn_menu_shop_title_1":"General options",\
 "tr_optn_menu_shop_title_2":"Coins",\
 "tr_optn_menu_shop_build_reset":"Undo/Redo buttons:",\

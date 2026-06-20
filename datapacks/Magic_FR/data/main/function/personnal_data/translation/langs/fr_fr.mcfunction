@@ -109,6 +109,16 @@ data modify storage strings fr_fr set value {\
 "tr_optn_menu_gamemode_ffa_title":"Chacun pour soi",\
 "tr_optn_menu_gamemode_ctf_title":"Capture de drapeau",\
 \
+"tr_optn_menu_maps_map_selection":"Sélection des arènes",\
+"tr_optn_menu_maps_map_selection_random":"Aléatoire",\
+"tr_optn_menu_maps_map_selection_predefined":"Prédéfinie",\
+"tr_optn_menu_maps_rng_lvl_1":"Empêcher de jouer 2",\
+"tr_optn_menu_maps_rng_lvl_2":"fois la même arène",\
+"tr_optn_menu_arena_time_change_1":"Mode nuit sur",\
+"tr_optn_menu_arena_time_change_2":"certaines arènes",\
+"optn_menu_maps_round":"Manche",\
+"optn_menu_maps_overtime":"Prolongations",\
+\
 "tr_optn_menu_shop_title_1":"Options générales",\
 "tr_optn_menu_shop_title_2":"Points d'honneur",\
 "tr_optn_menu_shop_build_reset":"Bouttons Undo/Redo :",\
