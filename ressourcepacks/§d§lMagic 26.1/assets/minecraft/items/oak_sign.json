@@ -281,6 +281,48 @@
         }
       },
             {
+        "when": "generic_value_selector_0",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_0"
+        }
+      },
+            {
+        "when": "generic_value_selector_1",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_1"
+        }
+      },
+            {
+        "when": "generic_value_selector_2",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_2"
+        }
+      },
+            {
+        "when": "generic_value_selector_3",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_3"
+        }
+      },
+            {
+        "when": "generic_value_selector_4",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_4"
+        }
+      },
+            {
+        "when": "generic_value_selector_5",
+        "model": {
+          "type": "model",
+          "model": "item/optn_menu/generic/value_selector/value_selector_5"
+        }
+      },
+            {
         "when": "build_reset_never",
         "model": {
           "type": "model",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "item/optn_panel/generic/value_selector/value_selector_5"
+  }
+}

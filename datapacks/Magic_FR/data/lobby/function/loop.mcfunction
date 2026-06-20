@@ -61,6 +61,8 @@ execute as @a[scores={Player=-1},tag=in_lobby_arena] at @s unless entity @s[x=-3
 
                                         ## MENU D'OPTION ##
 
+execute as @a[scores={optn_shop_timer_custom=0..,operator=2}] run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/apply_custom_value
+
 execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
 # détecte si un joueur clique gauche sur une map
 

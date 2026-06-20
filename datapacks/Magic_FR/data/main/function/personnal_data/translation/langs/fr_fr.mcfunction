@@ -67,6 +67,26 @@ data modify storage strings fr_fr set value {\
 "optn_menu_lobby_title_1":"Options générales",\
 "optn_menu_lobby_title_2":"Modération",\
 \
+"optn_menu_gamemode_ffa_title_1":"Options générales",\
+\
+"optn_menu_gamemode_ctf_title_1":"Options générales",\
+"optn_menu_gamemode_ctf_secondary_objectives":"Objectifs secondaires",\
+"optn_menu_gamemode_ctf_teamkill":"Message de teamkill",\
+"optn_menu_gamemode_ctf_show_next_map_1":"Afficher la prochaine arène",\
+"optn_menu_gamemode_ctf_show_next_map_2":"dans les salles d'achat :",\
+"optn_menu_gamemode_ctf_shop_timer_1":"Limite de temps dans les",\
+"optn_menu_gamemode_ctf_shop_timer_2":"salles d'achat :",\
+"optn_menu_gamemode_ctf_shop_timer_none":"Aucune",\
+"optn_menu_gamemode_ctf_shop_timer_seconds":" s",\
+"optn_menu_gamemode_ctf_shop_timer_custom_title":"Temps en salle d'achat",\
+"optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choisissez combien de secondes les joueurs peuvent rester dans les salles d'achat.",\
+"optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
+"optn_menu_gamemode_ctf_shop_timer_custom_none":"aucune limite",\
+"optn_menu_gamemode_ctf_shop_timer_custom_range":"Valeur acceptée : 0 à 100 secondes",\
+"optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Durée en secondes",\
+"optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Valider",\
+"optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Annuler",\
+\
 "optn_menu_lobby_enable_arena":"Arène du lobby",\
 "optn_menu_lobby_enable_maps":"Visiter les maps",\
 "optn_menu_lobby_enable_jump":"Parcours de jump",\
@@ -85,6 +105,9 @@ data modify storage strings fr_fr set value {\
 "optn_menu_lobby_matchmaking_1":"Attribution auto des classes et",\
 "optn_menu_lobby_matchmaking_2":"équipes aux joueurs non assignés",\
 "optn_menu_lobby_force_launch":"Forcer le lancement de la partie",\
+\
+"optn_menu_gamemode_ffa_title":"Chacun pour soi",\
+"optn_menu_gamemode_ctf_title":"Capture de drapeau",\
 \
 "optn_menu_fun_no_cooldowns":"Aucun temps de recharge :",\
 "optn_menu_fun_infinite_money":"Points d'honneur illimités :",\

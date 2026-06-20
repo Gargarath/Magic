@@ -39,6 +39,7 @@ scoreboard objectives add opt_trig_display_jump_timer trigger
 scoreboard objectives add opt_display_jump_timer dummy
 scoreboard objectives add opt_color dummy
 scoreboard objectives add opt_lang dummy
+scoreboard objectives add optn_shop_timer_custom trigger
 
 # teams
 scoreboard objectives add blue_place dummy

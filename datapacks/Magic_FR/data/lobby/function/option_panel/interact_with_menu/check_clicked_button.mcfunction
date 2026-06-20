@@ -4,7 +4,7 @@
 # tab
 execute if entity @s[tag=optn_menu_main_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/display_main_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_lobby_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/display_lobby_tab with storage lobby:language translate
-execute if entity @s[tag=optn_menu_gamemode_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/display_gamemode_tab
+execute if entity @s[tag=optn_menu_gamemode_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/display_gamemode_tab with storage lobby:language translate
 execute if entity @s[tag=optn_menu_maps_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/display_maps_tab
 execute if entity @s[tag=optn_menu_shop_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/display_shop_tab
 execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator matches 2 run function lobby:option_panel/pages/fun/display_fun_tab with storage lobby:language translate
@@ -30,11 +30,11 @@ execute if entity @s[tag=optn_menu_lobby_enable_force_launch_on] on target if sc
 execute if entity @s[tag=optn_menu_lobby_enable_force_launch_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/lobby/force_launch/force_launch_off
 
 # gamemode (FFA)
-execute if entity @s[tag=optn_menu_gamemode_ctf] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/display_capture_the_flag_tab
+execute if entity @s[tag=optn_menu_gamemode_ctf] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/display_capture_the_flag_tab with storage lobby:language translate
 
 # gamemode (CTF)
 
-execute if entity @s[tag=optn_menu_gamemode_ffa] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/display_free_for_all_tab
+execute if entity @s[tag=optn_menu_gamemode_ffa] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/display_free_for_all_tab with storage lobby:language translate
     # secondary objective
 execute if entity @s[tag=optn_menu_gamemode_secondary_objectives_on] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/secondary_objectives/secondary_objectives_on
 execute if entity @s[tag=optn_menu_gamemode_secondary_objectives_off] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/secondary_objectives/secondary_objectives_off
@@ -48,6 +48,7 @@ execute if entity @s[tag=optn_menu_gamemode_show_next_map_off] on target if scor
 execute if entity @s[tag=optn_menu_gamemode_shop_timer_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/shop_timer_increase
 execute if entity @s[tag=optn_menu_gamemode_shop_timer_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/shop_timer_increase
 execute if entity @s[tag=optn_menu_gamemode_shop_timer_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/shop_timer_decrease
+execute if entity @s[tag=optn_menu_gamemode_shop_timer_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/custom_value
 
 # maps
 execute if entity @s[tag=optn_menu_maps_map_1] on target if score @s operator matches 2 run function lobby:option_panel/pages/maps/map_1/go_up

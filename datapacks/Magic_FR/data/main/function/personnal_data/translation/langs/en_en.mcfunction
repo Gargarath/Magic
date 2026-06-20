@@ -67,6 +67,26 @@ data modify storage strings en_en set value {\
 "optn_menu_lobby_title_1":"General Options",\
 "optn_menu_lobby_title_2":"Moderation",\
 \
+"optn_menu_gamemode_ffa_title_1":"General options",\
+\
+"optn_menu_gamemode_ctf_title_1":"General options",\
+"optn_menu_gamemode_ctf_secondary_objectives":"Secondary objectives",\
+"optn_menu_gamemode_ctf_teamkill":"Teamkill message",\
+"optn_menu_gamemode_ctf_show_next_map_1":"Show the next arena",\
+"optn_menu_gamemode_ctf_show_next_map_2":"in shop:",\
+"optn_menu_gamemode_ctf_shop_timer_1":"",\
+"optn_menu_gamemode_ctf_shop_timer_2":"Shop timer :",\
+"optn_menu_gamemode_ctf_shop_timer_none":"None",\
+"optn_menu_gamemode_ctf_shop_timer_seconds":"s",\
+"optn_menu_gamemode_ctf_shop_timer_custom_title":"Shop room timer",\
+"optn_menu_gamemode_ctf_shop_timer_custom_text_1":"Choose how many seconds players can stay in shop rooms.",\
+"optn_menu_gamemode_ctf_shop_timer_custom_text_2":"0 =",\
+"optn_menu_gamemode_ctf_shop_timer_custom_none":"no limit",\
+"optn_menu_gamemode_ctf_shop_timer_custom_range":"Accepted value: 0 to 100 seconds",\
+"optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Duration in seconds",\
+"optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Confirm",\
+"optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Cancel",\
+\
 "optn_menu_lobby_enable_arena":"Lobby Arena",\
 "optn_menu_lobby_enable_maps":"Visit Maps",\
 "optn_menu_lobby_enable_jump":"Jump Island",\
@@ -85,6 +105,9 @@ data modify storage strings en_en set value {\
 "optn_menu_lobby_matchmaking_1":"Automatically assign classes and",\
 "optn_menu_lobby_matchmaking_2":"teams to unassigned players",\
 "optn_menu_lobby_force_launch":"Force launch",\
+\
+"optn_menu_gamemode_ffa_title":"Free for all",\
+"optn_menu_gamemode_ctf_title":"Capture the flag",\
 \
 "optn_menu_fun_no_cooldowns":"No cooldowns:",\
 "optn_menu_fun_infinite_money":"Infinite coins:",\
