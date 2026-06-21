@@ -3,6 +3,10 @@
 function lobby:map_island/reset_maps
 # vire les joueurs en visite de map et prépare les maps
 
+# vire les joueurs de l'arène
+execute as @a[tag=in_lobby_arena,scores={Player=0..}] run function lobby:arena/quit_arena
+execute as @a[tag=in_lobby_arena,scores={Player=-1}] run function lobby:arena/quit_arena_spec
+
 scoreboard players set Is_ready Lobby_ready 0
 # permet qu'une fois que le datapack lobby sera lancé ce score passe a 1 et tous les joueurs soient tp au lobby
 scoreboard players set ffa enable_loop 0
