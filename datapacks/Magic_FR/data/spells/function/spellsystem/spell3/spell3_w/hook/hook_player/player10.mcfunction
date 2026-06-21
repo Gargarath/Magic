@@ -18,10 +18,10 @@ execute as @a[scores={hooked_by_player=10}] run function spells:spellsystem/spel
 execute as @a[scores={hooked_by_player=10}] at @s facing entity @a[scores={Player=10},limit=1] eyes run tp @s ~ ~ ~ ~ ~10
 # makes the hooked player look at the player that hooked him
 
-execute as @a[scores={hooked_by_player=10}] run function spells:spellsystem/spell3/spell3_w/hook/hook_player/set_bossbar/player10
+execute as @a[scores={hooked_by_player=10}] run function spells:spellsystem/spell3/spell3_w/hook/hook_player/set_bossbar/player10 with entity @s EnderItems[0].components.minecraft:custom_data
 # display the bossbar to the player that has been hooked depending on his player level
 
-bossbar set hook_someone:player10 name ["",{"text":"Vous avez agrippé ","color":"gray","bold":true},{"selector":"@a[scores={hooked_by_player=10}]","bold":true}]
+$bossbar set hook_someone:player10 name ["",{"text":"$(tr_bossbar_hooked_someone)","color":"gray","bold":true},{"selector":"@a[scores={hooked_by_player=10}]","bold":true}]
 bossbar set hook_someone:player10 players @s
 # display the bossbar to the player that launched the hook
 

@@ -8,7 +8,8 @@ scoreboard players set @s burning 60
 
 execute if score @s freeze matches 0.. run function spells:spellsystem/spell3/spell3_a/stop_freeze
 # si @s est gelé, arrête le gel
-item replace entity @s armor.head from block 17 95 15 container.6
+execute if entity @s[type=player] run function stuff:status_items/give_burning_overlay with entity @s EnderItems[0].components.minecraft:custom_data
+execute unless entity @s[type=player] run item replace entity @s armor.head from block 17 95 15 container.6
 # met un bloc de magma sur la tête de @s
 
 
@@ -25,17 +26,29 @@ execute if score @s Player matches 10 store result bossbar burning:player10 valu
 execute if score @s Player matches 11 store result bossbar burning:player11 value run scoreboard players get @s burning
 execute if score @s Player matches 12 store result bossbar burning:player12 value run scoreboard players get @s burning
 
+execute if score @s Player matches 1 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player1 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 1 run bossbar set burning:player1 players @s
+execute if score @s Player matches 2 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player2 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 2 run bossbar set burning:player2 players @s
+execute if score @s Player matches 3 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player3 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 3 run bossbar set burning:player3 players @s
+execute if score @s Player matches 4 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player4 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 4 run bossbar set burning:player4 players @s
+execute if score @s Player matches 5 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player5 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 5 run bossbar set burning:player5 players @s
+execute if score @s Player matches 6 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player6 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 6 run bossbar set burning:player6 players @s
+execute if score @s Player matches 7 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player7 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 7 run bossbar set burning:player7 players @s
+execute if score @s Player matches 8 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player8 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 8 run bossbar set burning:player8 players @s
+execute if score @s Player matches 9 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player9 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 9 run bossbar set burning:player9 players @s
+execute if score @s Player matches 10 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player10 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 10 run bossbar set burning:player10 players @s
+execute if score @s Player matches 11 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player11 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 11 run bossbar set burning:player11 players @s
+execute if score @s Player matches 12 if entity @s[type=player] run function spells:spellsystem/spell1/spell1_m/burning_bossbar_name/player12 with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s Player matches 12 run bossbar set burning:player12 players @s
 # refresh la bossbar attribuée à @s
 

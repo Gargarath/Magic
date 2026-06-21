@@ -63,3 +63,4 @@ kill @e[type=lingering_potion,nbt={Item:{components:{"minecraft:custom_data":{sm
 kill @e[type=minecraft:area_effect_cloud,tag=smoke_bomb_player3]
 scoreboard players set player3 has_smoke_potion -1
 bossbar set smoke_bomb:player3 players
+bossbar set smoke_bomb:blinded_player3 players

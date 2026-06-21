@@ -30,18 +30,18 @@ function spells:spellsystem/spell2/spell2_a/apply_dmg
 
 
 
-execute if score @s in_trap_number matches 1 as @a[scores={trap_number_a=1}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player1
-execute if score @s in_trap_number matches 2 as @a[scores={trap_number_a=2}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player2
-execute if score @s in_trap_number matches 3 as @a[scores={trap_number_a=3}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player3
-execute if score @s in_trap_number matches 4 as @a[scores={trap_number_a=4}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player4
-execute if score @s in_trap_number matches 5 as @a[scores={trap_number_a=5}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player5
-execute if score @s in_trap_number matches 6 as @a[scores={trap_number_a=6}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player6
-execute if score @s in_trap_number matches 7 as @a[scores={trap_number_a=7}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player7
-execute if score @s in_trap_number matches 8 as @a[scores={trap_number_a=8}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player8
-execute if score @s in_trap_number matches 9 as @a[scores={trap_number_a=9}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player9
-execute if score @s in_trap_number matches 10 as @a[scores={trap_number_a=10}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player10
-execute if score @s in_trap_number matches 11 as @a[scores={trap_number_a=11}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player11
-execute if score @s in_trap_number matches 12 as @a[scores={trap_number_a=12}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player12
+execute if score @s in_trap_number matches 1 as @a[scores={trap_number_a=1}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 2 as @a[scores={trap_number_a=2}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 3 as @a[scores={trap_number_a=3}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 4 as @a[scores={trap_number_a=4}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 5 as @a[scores={trap_number_a=5}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 6 as @a[scores={trap_number_a=6}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 7 as @a[scores={trap_number_a=7}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 8 as @a[scores={trap_number_a=8}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 9 as @a[scores={trap_number_a=9}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 10 as @a[scores={trap_number_a=10}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player10 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 11 as @a[scores={trap_number_a=11}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player11 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s in_trap_number matches 12 as @a[scores={trap_number_a=12}] run function spells:spellsystem/spell2/spell2_a/tell_trap_activated/lvl1/player12 with entity @s EnderItems[0].components.minecraft:custom_data
 
 
 function spells:spellsystem/spell2/spell2_a/setup_bossbar/lvl1/check_number

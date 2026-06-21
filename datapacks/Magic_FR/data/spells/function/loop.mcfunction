@@ -250,7 +250,7 @@ execute at @e[type=minecraft:area_effect_cloud,tag=smoke_bomb_lvl1] run particle
 execute at @e[type=minecraft:lingering_potion,nbt={Item:{tag:{Tags:["smoke_bomb"]}}}] run particle smoke ~ ~ ~ 0 0 0 0 1 force @a
 # permet d'afficher les particules sur les bombes d'ombre
 
-execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=-1}] at @s if entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/enter_smoke
+execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=-1}] at @s if entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/enter_smoke with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=1}] at @s unless entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/leave_smoke
 execute as @a[tag=Has_Red_flag,scores={in_smoke1=1}] run function gamemode:ctf/usespellwithflag/usespell_redflag
 execute as @a[tag=Has_Blue_flag,scores={in_smoke1=1}] run function gamemode:ctf/usespellwithflag/usespell_blueflag

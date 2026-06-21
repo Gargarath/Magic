@@ -36,15 +36,15 @@ execute if score @s Player matches 11 at @s as @e[type=area_effect_cloud,tag=ral
 execute if score @s Player matches 12 at @s as @e[type=area_effect_cloud,tag=rally_flag,sort=nearest,limit=1] if entity @s[tag=!rally_flag_1,tag=!rally_flag_2,tag=!rally_flag_3,tag=!rally_flag_4,tag=!rally_flag_5,tag=!rally_flag_6,tag=!rally_flag_7,tag=!rally_flag_8,tag=!rally_flag_9,tag=!rally_flag_10,tag=!rally_flag_11,tag=!rally_flag_12] run tag @s add rally_flag_12
 ## tag l'area_effect_cloud pas encore tagué selon le numéro de joueur de @s (dans la même fonction pour éviter les bugs)
 
-execute if score @s Player matches 1 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player1
-execute if score @s Player matches 2 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player2
-execute if score @s Player matches 3 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player3
-execute if score @s Player matches 4 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player4
-execute if score @s Player matches 5 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player5
-execute if score @s Player matches 6 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player6
-execute if score @s Player matches 7 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player7
-execute if score @s Player matches 8 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player8
-execute if score @s Player matches 9 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player9
-execute if score @s Player matches 10 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player10
-execute if score @s Player matches 11 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player11
-execute if score @s Player matches 12 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player12
+execute if score @s Player matches 1 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 2 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 3 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 4 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 5 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 6 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 7 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 8 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 9 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 10 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player10 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 11 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player11 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 12 run function spells:spellsystem/spell2/spell2_w/summon_flag/lvl2/players/player12 with entity @s EnderItems[0].components.minecraft:custom_data

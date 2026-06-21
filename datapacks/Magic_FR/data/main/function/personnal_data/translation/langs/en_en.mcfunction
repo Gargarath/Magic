@@ -576,6 +576,11 @@ data modify storage strings en_en set value {\
 "tr_warrior_boots_10_lore_1":"+5 armor.",\
 "tr_warrior_boots_10_lore_2":"+10 fall distance before damage",\
 "tr_warrior_boots_max_name":"Acrobat Boots X",\
+"tr_bossbar_hooked_by":"Hooked by  ",\
+"tr_bossbar_hooked_someone":"You hooked ",\
+"tr_bossbar_trapped_by":" trapped you!",\
+"tr_bossbar_trapped_someone":" is in your trap!",\
+"tr_bossbar_blinded":"Blinded:",\
 "tr_warrior_spell1_1_name":"Berserk I",\
 "tr_warrior_spell1_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_1_lore_2":"Increase damage dealt by 6 points",\

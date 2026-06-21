@@ -3,4 +3,5 @@
 
 bossbar set frozen:player1 max 80
 bossbar set frozen:player1 value 80
+$bossbar set frozen:player1 name {"text":"$(tr_archer_spell3_status_0_lore_2)","color":"aqua","bold":true}
 bossbar set frozen:player1 players @s

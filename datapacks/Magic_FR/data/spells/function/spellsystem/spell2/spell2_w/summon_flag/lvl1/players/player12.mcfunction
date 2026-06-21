@@ -4,7 +4,7 @@
 scoreboard players set @e[type=minecraft:area_effect_cloud,tag=rally_flag_12] timer_rally_flag 140
 scoreboard players set @s timer_rally_flag 140
 
-bossbar set rally_flag:player12 name {"text":"Drapeau de ralliement I","color":"gold"}
+$bossbar set rally_flag:player12 name {"text":"$(tr_warrior_spell2_1_name)","color":"gold"}
 bossbar set rally_flag:player12 max 140
 bossbar set rally_flag:player12 value 140
 bossbar set rally_flag:player12 players @s

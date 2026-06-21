@@ -17,21 +17,22 @@ execute as @s[tag=Has_Blue_flag] run function spells:spellsystem/spell3/spell3_a
 execute as @s[tag=Has_Red_flag] run function spells:spellsystem/spell3/spell3_a/drop_red_flag
 # si @s a le drapeau, lui fait drop
 
-item replace entity @s armor.head from block 17 95 13 container.24
+execute if entity @s[type=player] run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
+execute unless entity @s[type=player] run item replace entity @s armor.head from block 17 95 13 container.24
 # met un bloc de glace sur la tête de @s
 
-execute if score @s Player matches 1 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player1
-execute if score @s Player matches 2 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player2
-execute if score @s Player matches 3 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player3
-execute if score @s Player matches 4 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player4
-execute if score @s Player matches 5 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player5
-execute if score @s Player matches 6 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player6
-execute if score @s Player matches 7 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player7
-execute if score @s Player matches 8 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player8
-execute if score @s Player matches 9 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player9
-execute if score @s Player matches 10 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player10
-execute if score @s Player matches 11 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player11
-execute if score @s Player matches 12 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player12
+execute if score @s Player matches 1 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 2 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 3 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 4 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 5 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 6 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 7 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 8 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 9 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 10 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player10 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 11 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player11 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s Player matches 12 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl1/player12 with entity @s EnderItems[0].components.minecraft:custom_data
 # affiche la bossbar "Vous êtes gelé !" à @s selon son numéro de joueur
 
 tag @s add cant_pickup_flag

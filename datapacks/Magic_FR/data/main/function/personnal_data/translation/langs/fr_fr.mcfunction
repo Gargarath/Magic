@@ -575,6 +575,11 @@ data modify storage strings fr_fr set value {\
 "tr_warrior_boots_10_lore_1":"+5 points d'armure.",\
 "tr_warrior_boots_10_lore_2":"+10 distance de chute avant dégâts",\
 "tr_warrior_boots_max_name":"Bottes d'acrobate X",\
+"tr_bossbar_hooked_by":"Agrippé par  ",\
+"tr_bossbar_hooked_someone":"Vous avez agrippé ",\
+"tr_bossbar_trapped_by":" vous a piégé !",\
+"tr_bossbar_trapped_someone":" est dans votre piège !",\
+"tr_bossbar_blinded":"Aveuglé :",\
 "tr_warrior_spell1_1_name":"Berzerk I",\
 "tr_warrior_spell1_1_lore_1":"-----------------------------------",\
 "tr_warrior_spell1_1_lore_2":"Augmente les dégats infligés de 6 points",\

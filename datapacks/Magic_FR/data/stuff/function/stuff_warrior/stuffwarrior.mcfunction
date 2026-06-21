@@ -17,9 +17,9 @@ item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has
 item replace entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=in_own_spawn] armor.head from block 13 97 11 container.2
 item replace entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
 
-item replace entity @s[scores={freeze=0..}] armor.head from block 17 95 13 container.24
+execute if score @s freeze matches 0.. run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
 # met un bloc de glace sur la tête de @s si il est gelé
-item replace entity @s[scores={burning=0..}] armor.head from block 17 95 15 container.6
+execute if score @s burning matches 0.. run function stuff:status_items/give_burning_overlay with entity @s EnderItems[0].components.minecraft:custom_data
 # met un bloc de magma sur la tête de @s si il est brulé
 
 execute if score @s InShop matches 1 run function stuff:stuff_warrior/save_stuff_as_storage/determine_player

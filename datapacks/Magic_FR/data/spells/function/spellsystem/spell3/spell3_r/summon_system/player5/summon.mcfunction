@@ -11,4 +11,5 @@ scoreboard players set player5 has_smoke_potion -1
 
 execute if score @s spell3 matches 1 run scoreboard players set @s smoke_bomb_timer 160
 execute if score @s spell3 matches 1 run bossbar set smoke_bomb:player5 max 160
+$bossbar set smoke_bomb:player5 name {"text":"$(tr_rogue_spell3_1_name) :","color":"gray","bold":true}
 bossbar set smoke_bomb:player5 players @s

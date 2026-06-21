@@ -25,3 +25,5 @@ function main:inventory_menu/cleanup_language_items
 # supprime les anciens items de langue
 function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise l'item du menu d'inventaire selon la langue
+
+playsound entity.experience_orb.pickup master @s ~ ~ ~ 100 1

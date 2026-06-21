@@ -10,7 +10,7 @@ execute if score @a[scores={Player=9},limit=1] hook_max_range_w matches 1 as @a[
 execute unless score @a[scores={Player=9},limit=1] hook_max_range_w matches 1 at @s positioned ~ ~0.5 ~ unless block ~ ~-45 ~ #spawn_protectors unless entity @a[tag=!hook9_immune,distance=..1] positioned ^ ^ ^1 unless block ~ ~1 ~ #spell_beam as @a[scores={Player=9}] run function spells:spellsystem/spell3/spell3_w/hook/retract_hook/start_delete/player9_break
 # if the hook is colliding with a block -> make it break
 
-execute unless score @a[scores={Player=9},limit=1] hook_max_range_w matches 1 at @s positioned ~ ~0.5 ~ unless block ~ ~-45 ~ #spawn_protectors if entity @a[tag=!hook9_immune,distance=..1] as @a[scores={Player=9},limit=1] run function spells:spellsystem/spell3/spell3_w/hook/hook_player/player9
+execute unless score @a[scores={Player=9},limit=1] hook_max_range_w matches 1 at @s positioned ~ ~0.5 ~ unless block ~ ~-45 ~ #spawn_protectors if entity @a[tag=!hook9_immune,distance=..1] as @a[scores={Player=9},limit=1] run function spells:spellsystem/spell3/spell3_w/hook/hook_player/player9 with entity @s EnderItems[0].components.minecraft:custom_data
 # if there is a player on the hook -> hook him
 
 execute at @s positioned ~ ~0.5 ~ if block ~ ~-45 ~ #spawn_protectors as @a[scores={Player=9}] run function spells:spellsystem/spell3/spell3_w/hook/retract_hook/cant_hook_in_spawn

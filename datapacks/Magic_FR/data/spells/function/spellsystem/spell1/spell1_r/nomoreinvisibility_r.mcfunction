@@ -45,7 +45,7 @@ clear @s
 function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue à @s
 
-execute unless score @s freeze matches -1 run item replace entity @s armor.head from block 17 95 13 container.24
+execute unless score @s freeze matches -1 run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est gelé, lui met le glace sur la tête
 
 effect clear @s minecraft:invisibility

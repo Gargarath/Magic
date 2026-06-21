@@ -11,7 +11,7 @@ execute if score @a[scores={in_trap_number=12},limit=1] health <= $6 numbers run
 scoreboard players add @s stat_ppl_trapped 1
 # ajoute 1 au score de joueurs piégé de @s
 
-bossbar set trapped_someone:player12 name ["",{"selector":"@a[scores={in_trap_number=12},limit=1]","bold":true},{"text":" est dans votre piège !","bold":true,"color":"dark_green"}]
+$bossbar set trapped_someone:player12 name ["",{"selector":"@a[scores={in_trap_number=12},limit=1]","bold":true},{"text":"$(tr_bossbar_trapped_someone)","bold":true,"color":"dark_green"}]
 bossbar set trapped_someone:player12 max 60
 bossbar set trapped_someone:player12 value 60
 bossbar set trapped_someone:player12 players @s
