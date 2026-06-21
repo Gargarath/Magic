@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "main:items_positions/item_save_system"
+    "function": "main:items_positions/on_inventory_changed"
   }
 }

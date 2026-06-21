@@ -2,6 +2,8 @@
 # permet de lui faire lancer le spell du keybind 2 si il l'a
 
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
 clear @s
 function stuff:stuff_rogue/stuffrogue
 

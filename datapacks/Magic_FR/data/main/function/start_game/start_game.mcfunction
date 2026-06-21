@@ -52,6 +52,8 @@ scoreboard players set @a InLobby 0
 tag @a remove in_map_display
 # indique que les joueurs ne sont pas dans la zone de maps
 
+tag @a remove save_inventory
+tag @a add inventory_rebuilding
 clear @a
 
 gamerule fall_damage true
@@ -82,6 +84,9 @@ execute as @r[scores={Player=0}] run function main:start_game/setup_players/give
 
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run tp @s ~ ~9 ~ 0 -5
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run spawnpoint @s ~ ~9 ~ 0 -5
+execute as @a[tag=inventory_rebuilding] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @a remove inventory_rebuilding
+tag @a add save_inventory
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
 
 advancement revoke @a[scores={Player=1..}] everything
@@ -149,6 +154,8 @@ execute if score $gamemode option_panel matches 1 if score $random map_selection
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
 # si on est en mode CTF et que on est en "arènes aléatoires" et pas deux fois la même map -> calcule la prochaine map aléatoirement parmis les maps qui n'ont pas été jouées
 
+execute if score $show_next_map option_panel matches 0 as @a run function main:launch_arena/hide_map_name
+# si la prochaine map est masquée, la masque
 execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 
 scoreboard players set @a[scores={Player=1..}] played_last_game 1

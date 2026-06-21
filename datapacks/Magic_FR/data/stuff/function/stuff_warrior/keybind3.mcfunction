@@ -3,6 +3,7 @@
 
 tag @s remove save_inventory
 scoreboard players set @s usespell 0
+tag @s add inventory_rebuilding
 clear @s
 execute as @s run function stuff:stuff_warrior/stuffwarrior
 

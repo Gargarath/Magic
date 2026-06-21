@@ -46,6 +46,7 @@ scoreboard players set @s in_water -1
 # donne le score pour l'eau qui empoisone sur ruine
 
 tag @s remove save_inventory
+tag @s add inventory_rebuilding
 # permet d'éviter les check d'inventaire
 
 effect clear @s
@@ -170,6 +171,7 @@ function main:personnal_data/translation/change_language/change_language
 # ----------------------------------------------------------
 
 function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # Donne les item de hotbar
 
 bossbar set minecraft:aaa_placeholder players @a
@@ -181,4 +183,6 @@ function main:gui/display/refresh_gui
 # ---------
 
 execute if score lobby enable_loop matches 0 unless score @s Player matches -1 run function main:reconnect/someone_joined_during_match
+tag @s remove inventory_rebuilding
+tag @s add save_inventory
 # si une game est déjà lancée et que @s n'est pas encore mis en spec -> le met en spec

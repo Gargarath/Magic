@@ -9,10 +9,13 @@ execute as @s[tag=rogue] run function shop:actualise_advancement/rogue
 function shop:history/reset_key_slots
 
 tag @s remove save_inventory
+tag @s add inventory_rebuilding
 execute as @s[tag=warrior] run function shop:history/apply/warrior/warrior with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @s[tag=archer] run function shop:history/apply/archer/archer with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @s[tag=mage] run function shop:history/apply/mage/mage with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @s[tag=rogue] run function shop:history/apply/rogue/rogue with entity @s EnderItems[0].components.minecraft:custom_data
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove inventory_rebuilding
 tag @s add save_inventory
 function shop:refresh/keybinds
 

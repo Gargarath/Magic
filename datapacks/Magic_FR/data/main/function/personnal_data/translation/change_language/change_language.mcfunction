@@ -20,3 +20,8 @@ function main:personnal_data/translation/change_language/refresh_language
 
 function main:personnal_data/translation/change_language/tell_changed_language with entity @s EnderItems[0].components.minecraft:custom_data
 # indique à @s qu'il a changé de langue (selon sa langue)
+
+function main:inventory_menu/cleanup_language_items
+# supprime les anciens items de langue
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise l'item du menu d'inventaire selon la langue

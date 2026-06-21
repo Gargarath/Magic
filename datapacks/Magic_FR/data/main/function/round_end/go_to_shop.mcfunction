@@ -159,7 +159,7 @@ execute if score round bossbar matches 4 run data modify storage minecraft:match
 scoreboard players remove round bossbar 1
 # actualise le numéro de manche pour l'affichage en haut de l'écran
 
-execute if score $show_next_map option_panel matches 0 run data modify storage minecraft:matchinfo map set value {"text":"\uE710\uE710\uE710\uE710\uE708","color":"aqua","bold":true}
+execute if score $show_next_map option_panel matches 0 as @a run function main:launch_arena/hide_map_name
 # si la prochaine map est masquée, la masque
 execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 # si on a activé le fait de montrer la prochaine map -> la montre

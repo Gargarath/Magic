@@ -80,6 +80,8 @@ execute if entity @s[tag=rogue] store result storage personnal_storage.temp stor
 function main:personnal_data/save_new_data with storage personnal_storage.temp
 
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
 clear @s
 execute as @s[tag=warrior] run function lobby:arena/stuff_give_max/warrior
 execute as @s[tag=archer] run function lobby:arena/stuff_give_max/archer

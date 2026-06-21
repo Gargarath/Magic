@@ -113,6 +113,8 @@ function lobby:arena/leaderboard/refresh_leaderboard
 # refresh le classement
 
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
 clear @s
 execute as @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
 execute as @s[tag=archer] run function stuff:stuff_archer/stuffarcher

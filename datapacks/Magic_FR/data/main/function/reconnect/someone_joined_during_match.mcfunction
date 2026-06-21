@@ -3,6 +3,7 @@
 execute if entity @s[tag=in_lobby_arena] run function main:reset/reset_arena
 
 tag @s remove save_inventory
+tag @s add inventory_rebuilding
 
 function lobby:hotbar_menu/main/join_spectator
 # fais passer @s en spectateur
@@ -52,3 +53,6 @@ execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 # indique à @s qu'il est passé en mode spectateur
 
 function main:gui/display/refresh_gui
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove inventory_rebuilding
+tag @s add save_inventory

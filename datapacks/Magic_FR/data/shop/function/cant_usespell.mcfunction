@@ -1,5 +1,7 @@
 # appelée par shop:loop executé par un joueur qui lance un sort mais est dans le shop
 scoreboard players set @s usespell 0
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
 clear @s
 
 execute as @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior

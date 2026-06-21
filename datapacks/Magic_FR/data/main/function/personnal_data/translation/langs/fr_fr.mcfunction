@@ -31,6 +31,10 @@ data modify storage strings fr_fr set value {\
 "tr_arena_disabled":"L'arène a été désactivée par un modérateur.",\
 \
 "tr_item_back":"Retour",\
+"tr_inventory_menu_language":"Langue",\
+"tr_inventory_menu_language_en":"Anglais",\
+"tr_inventory_menu_language_fr":"Français",\
+"tr_inventory_menu_language_lore":"Cliquez pour changer la langue",\
 \
 "tr_lobby_jump_pad_maps":"Visiter les arènes",\
 "tr_lobby_jump_pad_stats":"Île de statistiques",\
@@ -263,12 +267,12 @@ data modify storage strings fr_fr set value {\
 "tr_item_jump_checkpoint":"Dernier checkpoint",\
 "tr_item_jump_reset":"Annuler",\
 \
-"tr_gui_map_1_name":"\uE708Pirate\uE707",\
-"tr_gui_map_2_name":"Cimetière",\
-"tr_gui_map_3_name":"\uE710Usine\uE710",\
-"tr_gui_map_4_name":"\uE706Volcan\uE706",\
-"tr_gui_map_5_name":"\uE710Ruine\uE710",\
-"tr_gui_map_6_name":"\uE705Bonbon\uE704",\
+"tr_gui_map_1_name":"\uE706Pirate\uE710\uE708",\
+"tr_gui_map_2_name":"Cimetière\uE709",\
+"tr_gui_map_3_name":"\uE709Usine\uE710\uE710",\
+"tr_gui_map_4_name":"\uE705Volcan\uE710\uE706",\
+"tr_gui_map_5_name":"\uE709Ruine\uE710\uE710",\
+"tr_gui_map_6_name":"\uE704Bonbon\uE710\uE704",\
 \
 "tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cimetière",\

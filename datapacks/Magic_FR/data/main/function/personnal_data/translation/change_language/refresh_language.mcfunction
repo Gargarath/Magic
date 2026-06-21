@@ -39,3 +39,8 @@ execute if score @s InShop matches 1 if entity @s[tag=look_at_legs] run function
 
 execute if score @s InShop matches 1 if entity @s[tag=look_at_boots] run function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s InShop matches 1 if entity @s[tag=look_at_boots] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+## Nom de map
+execute unless score @s InLobby matches 1 if score $show_next_map option_panel matches 0 run function main:launch_arena/hide_map_name
+execute unless score @s InLobby matches 1 if score $show_next_map option_panel matches 1 run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+# si pas dans le lobby -> stock ou masque la map selon l'option

@@ -31,6 +31,10 @@ data modify storage strings en_en set value {\
 "tr_arena_disabled":"The arena has been disabled by a moderator.",\
 \
 "tr_item_back":"Back",\
+"tr_inventory_menu_language":"Language",\
+"tr_inventory_menu_language_en":"English",\
+"tr_inventory_menu_language_fr":"French",\
+"tr_inventory_menu_language_lore":"Click to change language",\
 \
 "tr_lobby_jump_pad_maps":"Visit maps",\
 "tr_lobby_jump_pad_stats":"Stats island",\
@@ -263,12 +267,12 @@ data modify storage strings en_en set value {\
 "tr_item_jump_checkpoint":"Last checkpoint",\
 "tr_item_jump_reset":"Reset",\
 \
-"tr_gui_map_1_name":"\uE708Pirate\uE707",\
-"tr_gui_map_2_name":"Cemetery",\
-"tr_gui_map_3_name":"\uE703Factory\uE703",\
-"tr_gui_map_4_name":"\uE703Volcano\uE703",\
-"tr_gui_map_5_name":"\uE710\uE703Ruin\uE710\uE703",\
-"tr_gui_map_6_name":"\uE710\uE701Cake\uE710\uE701",\
+"tr_gui_map_1_name":"\uE706Pirate\uE710\uE708",\
+"tr_gui_map_2_name":"Cemetery\uE708",\
+"tr_gui_map_3_name":"\uE701Factory\uE710\uE702",\
+"tr_gui_map_4_name":"\uE702Volcano\uE710\uE702",\
+"tr_gui_map_5_name":"\uE710\uE701Ruin\uE710\uE710\uE703",\
+"tr_gui_map_6_name":"\uE709Cake\uE710\uE710\uE703",\
 \
 "tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cemetery",\

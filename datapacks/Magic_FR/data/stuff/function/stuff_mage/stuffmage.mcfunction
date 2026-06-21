@@ -1,6 +1,7 @@
 #Permet d'équiper tous les mages avec leur équipement. Appelé par la fonction setstuff ou drop_m
 
 tag @s remove save_inventory
+tag @s add inventory_rebuilding
 
 # livre d'admin
 execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
@@ -119,4 +120,6 @@ execute if score @s team_side matches 0 run item modify entity @s armor.feet min
 execute if entity @s[tag=in_lobby_arena] run item modify entity @s armor.feet minecraft:armor_change/no_team/mage
 # personnalise l'armure selon l'équipe de @s
 
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove inventory_rebuilding
 tag @s add save_inventory

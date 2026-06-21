@@ -1,6 +1,7 @@
 # Permet de redonner son stuff au guerrier si il drop un objet
 
 tag @s remove save_inventory
+tag @s add inventory_rebuilding
 
 clear @s
 scoreboard players set @s usespell 0
@@ -21,4 +22,5 @@ scoreboard players set @s drop_item 0
 execute if score @s InShop matches 1 run function shop:cant_usespell
 execute if score @s InShop matches 0 run function stuff:stuff_warrior/keybind1
 
+tag @s remove inventory_rebuilding
 tag @s add save_inventory

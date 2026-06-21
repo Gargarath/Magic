@@ -13,6 +13,7 @@ effect clear @a[scores={Player=1..}] minecraft:resistance
 
 
 function stuff:setstuff
+execute as @a[scores={Player=1..}] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute as @a[tag=mage,scores={Player=1..,weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
 

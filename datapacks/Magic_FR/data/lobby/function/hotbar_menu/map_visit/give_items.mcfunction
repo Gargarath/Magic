@@ -1,5 +1,7 @@
 ## appelée en cas de visit de map
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
 clear @s
 
 item replace entity @s weapon.offhand with carrot_on_a_stick[item_name=" ",enchantments={"binding_curse":1},tooltip_display={hide_tooltip:true},custom_data={offhand_autorized:1b},custom_model_data={strings:["air"]}] 1
@@ -19,4 +21,7 @@ $item replace entity @s hotbar.8 with carrot_on_a_stick[custom_name={"bold":true
 execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
 item replace entity @s[scores={operator=2}] inventory.26 from block 13 97 11 container.0
 
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove inventory_rebuilding
+tag @s add save_inventory
 scoreboard players set @s hotbar_menu 5

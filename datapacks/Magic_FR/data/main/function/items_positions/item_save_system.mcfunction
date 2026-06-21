@@ -1,8 +1,5 @@
-## appelée par l'advancement item_save_system
+## appelée par items_positions/on_inventory_changed
 ## permet d'enregistrer les emplacements du stuff de @s selon sa classe
-
-advancement revoke @s only main:item_save_system
-tag @s remove save_inventory
 
 execute as @s[tag=warrior] run function main:items_positions/warriors/check_items_positions
 execute as @s[tag=archer] run function main:items_positions/archers/check_items_positions
@@ -17,7 +14,4 @@ clear @s[tag=Has_Red_flag] carrot_on_a_stick[custom_model_data={strings:["red_fl
 item replace entity @s[tag=Has_Red_flag] armor.head from block 13 97 11 container.7
 item replace entity @s[tag=Has_Red_flag] weapon.offhand from block 13 97 11 container.7
 # redonne le drapeau rouge à @s
-
-tag @s add save_inventory
-
 

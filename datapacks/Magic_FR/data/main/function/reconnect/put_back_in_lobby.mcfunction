@@ -41,12 +41,15 @@ effect clear @s minecraft:strength
 effect clear @s minecraft:speed
 function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
-tag @s add save_inventory
+tag @s add inventory_rebuilding
 
 execute if score yes used_reset matches 0 run tp @s 0.5 100 66.5 0 -2
 execute if score yes used_reset matches 1 run tp @s 0 100 0 180 0
 
 function lobby:hotbar_menu/drop_item
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove inventory_rebuilding
+tag @s add save_inventory
 
 attribute @s minecraft:waypoint_receive_range base set 0
 # enlève la locator bar de @s
