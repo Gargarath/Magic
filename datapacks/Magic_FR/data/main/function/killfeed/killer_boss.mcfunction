@@ -1,7 +1,7 @@
 # appelé par advancement:killed_boss quand un joueur (@s) tue un boss
 
 
-tellraw @a[tag=display_killfeed] ["",{"selector":"@s"}," ",{"nbt":"death_cause.boss","storage":"main:killfeed",plain:true}," ",{"nbt":"bossname","storage":"main:killfeed","interpret":true}]
+tellraw @a[tag=display_killfeed] ["",{"selector":"@s"}," ",{"nbt":"death_cause.boss","storage":"main:killfeed","interpret":true}," ",{"nbt":"bossname","storage":"main:killfeed","interpret":true}]
 # indique que @s a tué le boss
 
 scoreboard players add @s stat_killcount_boss 1
