@@ -37,7 +37,7 @@ execute store result storage minecraft:matchinfo score1.1 int 1 run scoreboard p
 execute store result storage minecraft:matchinfo score1.2 int 1 run scoreboard players get #Bleus2 Flag_posed
 # Ajoute un score de drapeaux à l'équipe bleue
 
-data modify storage minecraft:matchinfo.red flag_state set value "\uE304"
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE304"}
 
 
 

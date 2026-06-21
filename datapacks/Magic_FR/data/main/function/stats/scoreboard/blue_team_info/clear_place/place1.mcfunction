@@ -3,7 +3,7 @@
 
 
 data modify storage stats:leaderboards blue.player1.head set value "\uE708"
-data modify storage stats:leaderboards blue.player1.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player1.class.icon set value {"text":"\uE709"}
 data modify storage stats:leaderboards blue.player1.overlay set value "\uE709"
 scoreboard players reset @a[scores={blue_place=1}] blue_place
 scoreboard players remove @a[tag=blue_team,scores={blue_place=2..}] blue_place 1

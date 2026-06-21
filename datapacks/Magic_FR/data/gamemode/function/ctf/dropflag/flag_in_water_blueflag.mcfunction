@@ -5,7 +5,7 @@ kill @e[tag=Blue_flag,tag=droped]
 
 tellraw @a [{"text":"Le drapeau bleu a été rapporté !","bold":false,"color":"dark_blue"}]
 execute at @a run playsound minecraft:entity.enderman.teleport master @p ~ ~ ~ 100 0
-data modify storage minecraft:matchinfo.blue flag_state set value "\uE301"
+data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE301"}
 function main:gui/display/refresh_gui
 # Indique à tous que le drapeau bleu a été rapporté
 

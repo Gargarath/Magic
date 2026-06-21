@@ -6,5 +6,5 @@ execute if entity @e[tag=jump_1_start_checker,distance=..3] run function lobby:j
 execute if entity @e[tag=jump_2_start_checker,distance=..3] run function lobby:jump/jump2/reset_jump
 execute if entity @e[tag=jump_3_start_checker,distance=..3] run function lobby:jump/jump3/reset_jump
 
-tellraw @s {entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_wrong_start",plain:true,"color":"red"}
+$tellraw @s {"text":"$(tr_jump_wrong_start)","color":"red"}
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 1

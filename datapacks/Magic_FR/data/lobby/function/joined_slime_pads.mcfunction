@@ -10,6 +10,6 @@ execute positioned 17 99 0 if entity @s[distance=..4,tag=!in_map_display] if sco
 execute positioned 17 99 0 if entity @s[distance=..4,tag=!in_map_display] if score $lobby_maps option_panel matches 1 run return run function lobby:map_island/jump_pads/launch_in
 execute positioned 71 99 0 if entity @s[distance=..4,tag=in_map_display] run return run function lobby:map_island/jump_pads/launch_out
 
-execute positioned -17 99 0 if entity @s[distance=..4,tag=!in_jump] if score $lobby_jump option_panel matches 0 run return run function lobby:jump/jump_pads/disabled
+execute positioned -17 99 0 if entity @s[distance=..4,tag=!in_jump] if score $lobby_jump option_panel matches 0 run return run function lobby:jump/jump_pads/disabled with entity @s EnderItems[0].components.minecraft:custom_data
 execute positioned -17 99 0 if entity @s[distance=..4,tag=!in_jump] if score $lobby_jump option_panel matches 1 run return run function lobby:jump/jump_pads/launch_in
 execute positioned -77 99 0 if entity @s[distance=..4,tag=in_jump] run return run function lobby:jump/jump_pads/launch_out

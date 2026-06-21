@@ -2,7 +2,7 @@
 # permet de les ajouter au leaderboard global selon leur stat
 
 function main:personnal_data/get_name
-data modify storage stats:temp name set from storage temp name
+function main:stats/leaderboard/sort_gstats/sort_final_score/set_temp_name_component with storage temp
 data modify storage stats:temp head.player.id set from entity @s UUID
 data modify storage stats:temp stat set value "stat_final_score"
 execute store result storage stats:temp score int 1 run scoreboard players get @s stat_final_score

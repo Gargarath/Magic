@@ -11,7 +11,7 @@ execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/
 
 tellraw @a ["",{"selector":"@a[tag=Has_Red_flag]","bold":false},{"text":" a capturé le drapeau rouge !","bold":false,"color":"red"}]
 execute at @a run playsound minecraft:entity.iron_golem.death master @p ~ ~ ~ 100 2
-data modify storage minecraft:matchinfo.red flag_state set value "\uE305"
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE305"}
 function main:gui/display/refresh_gui
 # Prevenir les gens que @s à cap
 function main:stats/scoreboard/blue_team_info/overlays/has_flag/check_place

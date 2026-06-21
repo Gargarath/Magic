@@ -3,4 +3,4 @@
 
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0
 
-tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_already_rogue","color":"red","bold":false,plain:true}
+function lobby:class_selector/messages/already_rogue with entity @s EnderItems[0].components.minecraft:custom_data

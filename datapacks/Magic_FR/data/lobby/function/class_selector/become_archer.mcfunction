@@ -5,7 +5,7 @@ function lobby:class_selector/give_classes/archer
 
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
-tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_became_archer","color":"dark_green","bold":false,plain:true}
+function lobby:class_selector/messages/became_archer with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/left_blue
 execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team_info/sort_blue

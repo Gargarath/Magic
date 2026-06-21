@@ -10,8 +10,8 @@ data modify storage minecraft:matchinfo time.seconds.1 set value "\uE706"
 data modify storage minecraft:matchinfo time.seconds.2 set value "\uE706"
 # clear le chronometre
 
-data modify storage minecraft:matchinfo.blue flag_state set value "\uE709"
-data modify storage minecraft:matchinfo.red flag_state set value "\uE709"
+data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE709"}
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE709"}
 # clear les drapeau
 
 data modify storage minecraft:matchinfo round set value {"text":"\uE707"}

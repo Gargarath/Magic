@@ -148,18 +148,18 @@ data modify storage stats:leaderboards blue.player10 set value {}
 data modify storage stats:leaderboards blue.player11 set value {}
 data modify storage stats:leaderboards blue.player12 set value {}
 
-data modify storage stats:leaderboards blue.player1.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player2.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player3.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player4.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player5.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player6.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player7.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player8.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player9.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player10.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player11.class.icon set value "\uE709"
-data modify storage stats:leaderboards blue.player12.class.icon set value "\uE709"
+data modify storage stats:leaderboards blue.player1.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player2.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player3.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player4.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player5.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player6.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player7.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player8.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player9.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player10.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player11.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards blue.player12.class.icon set value {"text":"\uE709"}
 
 data modify storage stats:leaderboards blue.player1.head set value "\uE708"
 data modify storage stats:leaderboards blue.player2.head set value "\uE708"
@@ -202,18 +202,18 @@ data modify storage stats:leaderboards red.player10 set value {}
 data modify storage stats:leaderboards red.player11 set value {}
 data modify storage stats:leaderboards red.player12 set value {}
 
-data modify storage stats:leaderboards red.player1.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player2.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player3.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player4.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player5.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player6.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player7.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player8.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player9.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player10.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player11.class.icon set value "\uE709"
-data modify storage stats:leaderboards red.player12.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player1.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player2.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player3.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player4.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player5.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player6.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player7.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player8.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player9.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player10.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player11.class.icon set value {"text":"\uE709"}
+data modify storage stats:leaderboards red.player12.class.icon set value {"text":"\uE709"}
 
 data modify storage stats:leaderboards red.player1.head set value "\uE708"
 data modify storage stats:leaderboards red.player2.head set value "\uE708"

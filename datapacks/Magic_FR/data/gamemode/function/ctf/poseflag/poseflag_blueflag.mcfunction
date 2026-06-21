@@ -40,7 +40,7 @@ execute store result storage minecraft:matchinfo score2.1 int 1 run scoreboard p
 execute store result storage minecraft:matchinfo score2.2 int 1 run scoreboard players get #Rouges2 Flag_posed
 # Ajoute un score de drapeaux à l'équipe bleue
 
-data modify storage minecraft:matchinfo.blue flag_state set value "\uE301"
+data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE301"}
 function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
 # afficher sur la barre d'équipe que @s n'a plus le drapeau
 function main:gui/display/refresh_gui

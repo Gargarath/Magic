@@ -2,29 +2,29 @@
 # permet de lancer le check de quel bouton
 
 
-execute if entity @s[type=interaction,tag=jump_1_clickable] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_pr
-execute if entity @s[type=interaction,tag=jump_1_clickable_1] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank1
-execute if entity @s[type=interaction,tag=jump_1_clickable_2] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank2
-execute if entity @s[type=interaction,tag=jump_1_clickable_3] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank3
-execute if entity @s[type=interaction,tag=jump_1_clickable_4] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank4
-execute if entity @s[type=interaction,tag=jump_1_clickable_5] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank5
-execute if entity @s[type=interaction,tag=jump_1_clickable_6] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank6
+execute if entity @s[type=interaction,tag=jump_1_clickable] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_pr with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_1] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_2] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_3] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_4] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_5] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_1_clickable_6] if data entity @s interaction on target run function lobby:jump/jump1/pr/display_leaderboard_pr/rank6 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute if entity @s[type=interaction,tag=jump_2_clickable] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_pr
-execute if entity @s[type=interaction,tag=jump_2_clickable_1] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank1
-execute if entity @s[type=interaction,tag=jump_2_clickable_2] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank2
-execute if entity @s[type=interaction,tag=jump_2_clickable_3] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank3
-execute if entity @s[type=interaction,tag=jump_2_clickable_4] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank4
-execute if entity @s[type=interaction,tag=jump_2_clickable_5] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank5
-execute if entity @s[type=interaction,tag=jump_2_clickable_6] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank6
+execute if entity @s[type=interaction,tag=jump_2_clickable] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_pr with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_1] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_2] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_3] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_4] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_5] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_2_clickable_6] if data entity @s interaction on target run function lobby:jump/jump2/pr/display_leaderboard_pr/rank6 with entity @s EnderItems[0].components.minecraft:custom_data
 
-execute if entity @s[type=interaction,tag=jump_3_clickable] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_pr
-execute if entity @s[type=interaction,tag=jump_3_clickable_1] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank1
-execute if entity @s[type=interaction,tag=jump_3_clickable_2] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank2
-execute if entity @s[type=interaction,tag=jump_3_clickable_3] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank3
-execute if entity @s[type=interaction,tag=jump_3_clickable_4] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank4
-execute if entity @s[type=interaction,tag=jump_3_clickable_5] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank5
-execute if entity @s[type=interaction,tag=jump_3_clickable_6] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank6
+execute if entity @s[type=interaction,tag=jump_3_clickable] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_pr with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_1] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_2] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_3] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_4] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_5] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=interaction,tag=jump_3_clickable_6] if data entity @s interaction on target run function lobby:jump/jump3/pr/display_leaderboard_pr/rank6 with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if entity @s[type=interaction,tag=jump_spec_clickable] if data entity @s interaction on target run function lobby:jump/spectator/become_spec
 

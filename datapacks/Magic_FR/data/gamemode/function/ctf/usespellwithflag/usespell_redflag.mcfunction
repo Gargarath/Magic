@@ -72,7 +72,7 @@ execute if score red flag_wrong_place matches 0 at @e[tag=Red_flag] run tp @e[ta
 execute if score red flag_wrong_place matches 0 run tellraw @a {"text":"Le drapeau rouge est tombé !","color":"red","bold":false}
 execute if score red flag_wrong_place matches 0 at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
 execute if score red flag_wrong_place matches 0 as @e[type=armor_stand,tag=Red_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_red_dropped
-data modify storage minecraft:matchinfo.red flag_state set value "\uE306"
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE306"}
 function main:gui/display/refresh_gui
 # Indique à tout le monde que le drapeau rouge est tombé si il n'est pas tombé dans l'eau
 

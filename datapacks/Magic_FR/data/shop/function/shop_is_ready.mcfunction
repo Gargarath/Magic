@@ -17,8 +17,8 @@ scoreboard players set @a weapon1_mana_m 100
 execute as @a[tag=mage,scores={weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
 # remet les barres de mana a fond
 
-execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.blue flag_state set value "\uE709"
-execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.red flag_state set value "\uE709"
+execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE709"}
+execute if score $gamemode option_panel matches 1 run data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE709"}
 # masque l'etat des drapeaux si on est en CTF
 
 execute if score player_atstart playercount matches 1 run function shop:spectator_room_sign_wall/1player

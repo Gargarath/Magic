@@ -40,16 +40,16 @@ data modify storage stats:leaderboards red.player4.overlay set value {"shadow_co
 data modify storage stats:leaderboards red.player5.overlay set value {"shadow_color":0,"text":"\uE606"}
 data modify storage stats:leaderboards red.player6.overlay set value {"shadow_color":0,"text":"\uE606"}
 
-data modify storage stats:leaderboards blue.player1.class.icon set value "\uE601"
-data modify storage stats:leaderboards blue.player2.class.icon set value "\uE602"
-data modify storage stats:leaderboards blue.player3.class.icon set value "\uE603"
-data modify storage stats:leaderboards blue.player4.class.icon set value "\uE604"
-data modify storage stats:leaderboards blue.player5.class.icon set value "\uE601"
-data modify storage stats:leaderboards blue.player6.class.icon set value "\uE602"
+data modify storage stats:leaderboards blue.player1.class.icon set value {"text":"\uE601"}
+data modify storage stats:leaderboards blue.player2.class.icon set value {"text":"\uE602"}
+data modify storage stats:leaderboards blue.player3.class.icon set value {"text":"\uE603"}
+data modify storage stats:leaderboards blue.player4.class.icon set value {"text":"\uE604"}
+data modify storage stats:leaderboards blue.player5.class.icon set value {"text":"\uE601"}
+data modify storage stats:leaderboards blue.player6.class.icon set value {"text":"\uE602"}
 
-data modify storage stats:leaderboards red.player1.class.icon set value "\uE601"
-data modify storage stats:leaderboards red.player2.class.icon set value "\uE602"
-data modify storage stats:leaderboards red.player3.class.icon set value "\uE603"
-data modify storage stats:leaderboards red.player4.class.icon set value "\uE604"
-data modify storage stats:leaderboards red.player5.class.icon set value "\uE601"
-data modify storage stats:leaderboards red.player6.class.icon set value "\uE602"
+data modify storage stats:leaderboards red.player1.class.icon set value {"text":"\uE601"}
+data modify storage stats:leaderboards red.player2.class.icon set value {"text":"\uE602"}
+data modify storage stats:leaderboards red.player3.class.icon set value {"text":"\uE603"}
+data modify storage stats:leaderboards red.player4.class.icon set value {"text":"\uE604"}
+data modify storage stats:leaderboards red.player5.class.icon set value {"text":"\uE601"}
+data modify storage stats:leaderboards red.player6.class.icon set value {"text":"\uE602"}

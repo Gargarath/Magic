@@ -57,21 +57,21 @@ function lobby:team_selector/give_lobby_team
 data merge entity @e[type=minecraft:text_display,limit=1,tag=jump_2_leaderboard_rank6] {text:[{"bold":true,"color":"yellow","text":"6. "},{"color":"white","interpret":true,"nbt":"2.rank6.head","storage":"stats:jump"}," ",{"color":"green","interpret":true,"nbt":"2.rank6.name","storage":"stats:jump"},{"color":"gray","text":" - "},{"color":"green","bold":false,"nbt":"2.rank6.min10","storage":"stats:jump","plain":true},{"color":"green","bold":false,"nbt":"2.rank6.min01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","bold":false,"nbt":"2.rank6.sec10","storage":"stats:jump","plain":true},{"color":"green","bold":false,"nbt":"2.rank6.sec01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","bold":false,"nbt":"2.rank6.dec10","storage":"stats:jump","plain":true},{"color":"green","bold":false,"nbt":"2.rank6.dec01","storage":"stats:jump","plain":true}]}
 # on save le score de @s dans le rank 6
 
-execute unless score $rank6 jump2_score < $rank5 jump2_score run execute as @a[tag=in_jump] run tellraw @s ["",{"text":"[","color":"yellow"},{entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_leaderboard_title",plain:true,"color":"yellow"},{"text":" n\u00B02]","color":"yellow"},{"text":" - "},{"color":"green","interpret":true,"nbt":"2.rank6.name","storage":"stats:jump"},{"text":" "},{entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_rank_taken",plain:true},{"text":" "},{entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_rank_6",plain:true,"color":"yellow"},{"text":" "},{entity:"@s",nbt:"EnderItems[0].components.minecraft:custom_data.tr_jump_rank_in",plain:true},{"text":" "},{"color":"green","nbt":"2.rank6.min10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.min01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","nbt":"2.rank6.sec10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.sec01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","nbt":"2.rank6.dec10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.dec01","storage":"stats:jump","plain":true}]
+$execute unless score $rank6 jump2_score < $rank5 jump2_score run execute as @a[tag=in_jump] run tellraw @s ["",{"text":"[","color":"yellow"},{"text":"$(tr_jump_leaderboard_title)","color":"yellow"},{"text":" n\u00B02]","color":"yellow"},{"text":" - "},{"color":"green","interpret":true,"nbt":"2.rank6.name","storage":"stats:jump"},{"text":" "},{"text":"$(tr_jump_rank_taken)"},{"text":" "},{"text":"$(tr_jump_rank_6)","color":"yellow"},{"text":" "},{"text":"$(tr_jump_rank_in)"},{"text":" "},{"color":"green","nbt":"2.rank6.min10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.min01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","nbt":"2.rank6.sec10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.sec01","storage":"stats:jump","plain":true},{"color":"white","text":":"},{"color":"green","nbt":"2.rank6.dec10","storage":"stats:jump","plain":true},{"color":"green","nbt":"2.rank6.dec01","storage":"stats:jump","plain":true}]
 # si @s est 6ème -> affiche aux autres
-execute if score $rank6 jump2_score < $rank5 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_6_5
+execute if score $rank6 jump2_score < $rank5 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_6_5 with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est aussi meilleur que 5 -> swap
 
-execute if score $rank5 jump2_score < $rank4 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_5_4
+execute if score $rank5 jump2_score < $rank4 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_5_4 with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est aussi meilleur que 4 -> swap
 
-execute if score $rank4 jump2_score < $rank3 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_4_3
+execute if score $rank4 jump2_score < $rank3 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_4_3 with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est aussi meilleur que 3 -> swap
 
-execute if score $rank3 jump2_score < $rank2 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_3_2
+execute if score $rank3 jump2_score < $rank2 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_3_2 with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est aussi meilleur que 2 -> swap
 
-execute if score $rank2 jump2_score < $rank1 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_2_1
+execute if score $rank2 jump2_score < $rank1 jump2_score run function lobby:jump/jump2/sort_leaderboard/swap_2_1 with entity @s EnderItems[0].components.minecraft:custom_data
 # si @s est aussi meilleur que 1 -> swap
 
 execute at @s run summon firework_rocket ~ ~1.5 ~ {LifeTime:12,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_trail:true,colors:[I;16762900,16750351,16739351]}]}}}}

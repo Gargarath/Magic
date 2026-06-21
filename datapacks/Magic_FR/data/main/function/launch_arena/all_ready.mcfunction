@@ -148,8 +148,8 @@ execute if score round bossbar matches 4 run data modify storage minecraft:match
 execute if score round bossbar matches 4 run data modify storage minecraft:matchinfo time.seconds.2 set value {"text":"0","color":"red"}
 # Definit le chronometre sur 3min et l'affiche si on est au round 4 (=prolongations)
 
-data modify storage minecraft:matchinfo.blue flag_state set value "\uE301"
-data modify storage minecraft:matchinfo.red flag_state set value "\uE304"
+data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE301"}
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE304"}
 # affiche l'état des drapeaux
 
 title @a clear

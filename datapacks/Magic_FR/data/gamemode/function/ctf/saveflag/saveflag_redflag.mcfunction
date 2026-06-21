@@ -8,7 +8,7 @@ kill @e[tag=Red_flag,tag=droped]
 
 tellraw @a ["",{"selector":"@s","bold":false},{"text":" a rapporté le drapeau rouge !","bold":false,"color":"dark_red"}]
 execute at @a run playsound minecraft:entity.enderman.teleport master @p ~ ~ ~ 100 0
-data modify storage minecraft:matchinfo.red flag_state set value "\uE304"
+data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE304"}
 function main:gui/display/refresh_gui
 # Indique à tous que le drapeau rouge a été rapporté
 

@@ -18,9 +18,9 @@ execute as @a[tag=in_jump,gamemode=adventure] at @s if block ~ ~ ~ #jump_plates 
 # check sur les joueurs des jumps si ils marchent sur une plaque et fait l'action en fonction
 execute as @a[tag=jumping] run function lobby:jump/jump_timer
 # augmente le timer des joueurs dans le jump
-execute as @a[tag=in_jump,tag=jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_jump
+execute as @a[tag=in_jump,tag=jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_jump with entity @s EnderItems[0].components.minecraft:custom_data
 # check sur les joueurs dans le jumps si ils vont vers le mauvais jump -> leur cancel
-execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_start
+execute as @a[tag=in_jump,tag=!jumping,gamemode=adventure] at @s if entity @e[type=marker,tag=jump_start_checker,distance=..1] run function lobby:jump/wrong_start with entity @s EnderItems[0].components.minecraft:custom_data
 # check sur les joueurs dans le jumps si ils ont pas marché sur la plaque de départ -> leur cancel
 execute as @a[tag=jumping,tag=!jump_hide_close_players,tag=in_jump] at @s if entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/invisible
 execute as @a[tag=jumping,tag=jump_hide_close_players,tag=in_jump] at @s unless entity @a[distance=0.1..2] run function lobby:jump/hide_close_player/no_more_invisible

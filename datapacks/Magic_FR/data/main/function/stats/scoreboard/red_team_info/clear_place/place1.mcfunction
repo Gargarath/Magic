@@ -2,7 +2,7 @@
 # clear la place X
 
 data modify storage stats:leaderboards red.player1.head set value "\uE708"
-data modify storage stats:leaderboards red.player1.class.icon set value "\uE709"
+data modify storage stats:leaderboards red.player1.class.icon set value {"text":"\uE709"}
 data modify storage stats:leaderboards red.player1.overlay set value "\uE709"
 scoreboard players reset @a[scores={red_place=1}] red_place
 scoreboard players remove @a[tag=red_team,scores={red_place=2..}] red_place 1

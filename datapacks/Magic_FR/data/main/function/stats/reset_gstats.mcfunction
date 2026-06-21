@@ -26,9 +26,9 @@ scoreboard players set $rank4 gstat_rogue_score 0
 scoreboard players set $rank5 gstat_rogue_score 0
 
 $data modify storage stats:global $(mode).$(stat).$(class) set value { \
-  "1": {"head":{"color":"white","player":{"id":[]}},"name":"","score":0}, \
-  "2": {"head":{"color":"white","player":{"id":[]}},"name":"","score":0}, \
-  "3": {"head":{"color":"white","player":{"id":[]}},"name":"","score":0}, \
-  "4": {"head":{"color":"white","player":{"id":[]}},"name":"","score":0}, \
-  "5": {"head":{"color":"white","player":{"id":[]}},"name":"","score":0} \
+  "1": {"head":{"color":"white","player":{"id":[]}},"name":{"text":""},"score":0}, \
+  "2": {"head":{"color":"white","player":{"id":[]}},"name":{"text":""},"score":0}, \
+  "3": {"head":{"color":"white","player":{"id":[]}},"name":{"text":""},"score":0}, \
+  "4": {"head":{"color":"white","player":{"id":[]}},"name":{"text":""},"score":0}, \
+  "5": {"head":{"color":"white","player":{"id":[]}},"name":{"text":""},"score":0} \
 }
