@@ -25,9 +25,10 @@ data modify storage strings en_en set value {\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
+"tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
 "tr_gui_arena_quit_spec":"To leave the arena, pass through the walls, the floor, or the ceiling.",\
 "tr_gui_arena_title":"Eliminations:",\
-"tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
+"tr_arena_disabled":"The arena has been disabled by a moderator.",\
 \
 "tr_item_back":"Back",\
 \
@@ -36,8 +37,9 @@ data modify storage strings en_en set value {\
 "tr_lobby_jump_pad_jump":"Jump island",\
 "tr_lobby_jump_pad_back":"Back to lobby",\
 \
-"tr_lobby_map_visit_arena_title":"Visit maps",\
-"tr_lobby_map_visit_arena_subtitle":"Click on a map to enter spectator mode",\
+"tr_lobby_map_visit_island_title":"Visit maps",\
+"tr_lobby_map_visit_island_subtitle":"Click on a map to enter spectator mode",\
+"tr_lobby_map_visit_island_disabled":"Maps visits have been disabled by a moderator.",\
 \
 "tr_item_select_warrior":"Warrior",\
 "tr_item_select_archer":"Archer",\

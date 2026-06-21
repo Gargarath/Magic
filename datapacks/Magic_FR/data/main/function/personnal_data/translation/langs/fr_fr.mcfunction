@@ -25,9 +25,10 @@ data modify storage strings fr_fr set value {\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
+"tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
 "tr_gui_arena_quit_spec":"Pour quitter l'arène, traversez les murs, le sol ou le plafond.",\
 "tr_gui_arena_title":"Eliminations :",\
-"tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
+"tr_arena_disabled":"L'arène a été désactivée par un modérateur.",\
 \
 "tr_item_back":"Retour",\
 \
@@ -36,8 +37,9 @@ data modify storage strings fr_fr set value {\
 "tr_lobby_jump_pad_jump":"Île de jump",\
 "tr_lobby_jump_pad_back":"Retourner au lobby",\
 \
-"tr_lobby_map_visit_arena_title":"Visiter les arènes",\
-"tr_lobby_map_visit_arena_subtitle":"Cliquez sur une arène pour la visiter",\
+"tr_lobby_map_visit_island_title":"Visiter les arènes",\
+"tr_lobby_map_visit_island_subtitle":"Cliquez sur une arène pour la visiter",\
+"tr_lobby_map_visit_island_disabled":"Les visites d'arènes ont été désactivées par un modérateur.",\
 \
 "tr_item_select_warrior":"Guerrier",\
 "tr_item_select_archer":"Archer",\
@@ -296,7 +298,7 @@ data modify storage strings fr_fr set value {\
 \
 "tr_jump_wrong_start":"Vous devez passer par le depart pour faire le parcours",\
 "tr_jump_wrong_jump":"Impossible de commencer un autre parcours pour le moment",\
-"tr_jump_disabled":"Les parcours ont ete desactives par un moderateur.",\
+"tr_jump_disabled":"Les parcours ont été desactivés par un moderateur.",\
 "tr_jump_checkpoint_reached_in":"atteint en",\
 "tr_jump_finished_1":"Vous avez fini le parcours n°",\
 "tr_jump_finished_2":" en ",\

@@ -1,7 +1,7 @@
 ## appelée par lobby:loop quand @s essaye de rejoindre l'arène du lobby
 # permet de check si @s peut rejoindre l'arêne
 
-execute if score $lobby_arena option_panel matches 0 run return run function lobby:arena/join_arena/cant_join/disabled
+execute if score $lobby_arena option_panel matches 0 run return run function lobby:arena/join_arena/cant_join/disabled with entity @s EnderItems[0].components.minecraft:custom_data
 # si désactivé -> indique que pas possible
 
 execute if entity @s[tag=!warrior,tag=!archer,tag=!mage,tag=!rogue] if entity @s[scores={Player=0}] run function lobby:arena/join_arena/cant_join/no_class
