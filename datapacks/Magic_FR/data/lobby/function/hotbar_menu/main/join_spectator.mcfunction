@@ -9,7 +9,7 @@ function lobby:team_selector/join_team/spectator
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
 
-tellraw @s {entity:"@s","nbt":"EnderItems[0].components.minecraft:custom_data.tr_joined_spectator","bold":false,"color":"yellow"}
+function lobby:hotbar_menu/main/messages/joined_spectator with entity @s EnderItems[0].components.minecraft:custom_data
 # Indique à @s qu'il est en spec
 
 function lobby:hotbar_menu/main/give_spectator_item with entity @s EnderItems[0].components.minecraft:custom_data
