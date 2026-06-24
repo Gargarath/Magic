@@ -4,8 +4,8 @@
 scoreboard players set shop is_working 1
 # met le score is_working du joueur shop a 1 pour eviter que cette fonction soit appelee en boucle
 
-execute at @a[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
-# enleve les barrier blocs autour des joueurs
+execute at @a run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
+# enleve les barrier blocs autour des joueurs et specs
 
 fill 2 -47 61 -2 -50 61 air replace minecraft:oak_wall_sign
 # clear le mur des spectateurs
