@@ -10,29 +10,29 @@ execute if score shop is_working matches 0 run function shop:shop_is_ready
 
 # tp back si part trop loin
 
-execute at @e[type=marker,tag=shop_room_1] positioned ~ ~10 ~ run tp @a[tag=spec_room1,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_1] positioned ~ ~1 ~ run tp @a[tag=spec_room1,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room1
-execute at @e[type=marker,tag=shop_room_2] positioned ~ ~10 ~ run tp @a[tag=spec_room2,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_2] positioned ~ ~1 ~ run tp @a[tag=spec_room2,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room2
-execute at @e[type=marker,tag=shop_room_3] positioned ~ ~10 ~ run tp @a[tag=spec_room3,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_3] positioned ~ ~1 ~ run tp @a[tag=spec_room3,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room3
-execute at @e[type=marker,tag=shop_room_4] positioned ~ ~10 ~ run tp @a[tag=spec_room4,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_4] positioned ~ ~1 ~ run tp @a[tag=spec_room4,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room4
-execute at @e[type=marker,tag=shop_room_5] positioned ~ ~10 ~ run tp @a[tag=spec_room5,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_5] positioned ~ ~1 ~ run tp @a[tag=spec_room5,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room5
-execute at @e[type=marker,tag=shop_room_6] positioned ~ ~10 ~ run tp @a[tag=spec_room6,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_6] positioned ~ ~1 ~ run tp @a[tag=spec_room6,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room6
-execute at @e[type=marker,tag=shop_room_7] positioned ~ ~10 ~ run tp @a[tag=spec_room7,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_7] positioned ~ ~1 ~ run tp @a[tag=spec_room7,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room7
-execute at @e[type=marker,tag=shop_room_8] positioned ~ ~10 ~ run tp @a[tag=spec_room8,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_8] positioned ~ ~1 ~ run tp @a[tag=spec_room8,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room8
-execute at @e[type=marker,tag=shop_room_9] positioned ~ ~10 ~ run tp @a[tag=spec_room9,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_9] positioned ~ ~1 ~ run tp @a[tag=spec_room9,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room9
-execute at @e[type=marker,tag=shop_room_10] positioned ~ ~10 ~ run tp @a[tag=spec_room10,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_10] positioned ~ ~1 ~ run tp @a[tag=spec_room10,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room10
-execute at @e[type=marker,tag=shop_room_11] positioned ~ ~10 ~ run tp @a[tag=spec_room11,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_11] positioned ~ ~1 ~ run tp @a[tag=spec_room11,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room11
-execute at @e[type=marker,tag=shop_room_12] positioned ~ ~10 ~ run tp @a[tag=spec_room12,distance=4..] ~ ~ ~
+execute at @e[type=marker,tag=shop_room_12] positioned ~ ~1 ~ run tp @a[tag=spec_room12,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room12
 
 # Spectate ou arreter de spectate
