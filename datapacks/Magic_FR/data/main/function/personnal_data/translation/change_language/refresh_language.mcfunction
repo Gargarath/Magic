@@ -18,6 +18,8 @@ execute if score @s[tag=!in_lobby_arena] InLobby matches 1 run function lobby:ho
 
 ## SHOP
 execute if score @s[scores={Player=1..}] InShop matches 1 run function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s InShop matches 1 run item replace entity @s[scores={operator=2}] inventory.26 from block 13 97 11 container.0
 
 ## OVERLAY DU SHOP
 execute if score @s[scores={Player=1..}] InShop matches 1 if entity @s[tag=look_at_weapon1] run function shop:refresh/items/weapon1 with entity @s EnderItems[0].components.minecraft:custom_data
