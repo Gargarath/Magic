@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity":{
-          "type":"interaction",
-          "nbt": "{Tags:[\"map_display_clickable\"]}"
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "map_display_clickable"
+            ]
+          }
         }
       }
     }

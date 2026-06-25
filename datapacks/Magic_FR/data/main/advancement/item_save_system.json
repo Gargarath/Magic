@@ -8,8 +8,12 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:player",
-              "nbt": "{Tags:[\"save_inventory\"]}"
+              "entity_type": "minecraft:player",
+              "entity_tags": {
+                "all_of": [
+                  "save_inventory"
+                ]
+              }
             }
           }
         ]

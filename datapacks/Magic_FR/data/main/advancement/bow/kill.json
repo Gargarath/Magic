@@ -4,8 +4,8 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "killing_blow": {
-          "direct_entity": { "type": "minecraft:arrow" },
-          "source_entity": { "type": "minecraft:player" }
+          "direct_entity": { "entity_type": "minecraft:arrow" },
+          "source_entity": { "entity_type": "minecraft:player" }
         }
       }
     }

@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity":{
-          "type":"interaction",
-          "nbt": "{Tags:[\"class_selector_warrior_clickable\"]}"
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "class_selector_warrior_clickable"
+            ]
+          }
         }
       }
     }

@@ -3,9 +3,9 @@
     "pvp_kill": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "entity": { "type": "#minecraft:boss" },
+        "entity": { "entity_type": "#minecraft:boss" },
         "killing_blow": {
-          "source_entity": { "type": "minecraft:player" }
+          "source_entity": { "entity_type": "minecraft:player" }
         }
       }
     }

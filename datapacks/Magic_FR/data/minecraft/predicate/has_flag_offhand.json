@@ -2,9 +2,9 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "equipment": {
-      "offhand": {
-        "components": {
+    "slots": {
+      "weapon.offhand": {
+        "predicates": {
           "minecraft:custom_data": { "flag": 1 }
         }
       }
