@@ -10,12 +10,11 @@
     ],
     "description": [
       {
-        "text": "Core datapack for Magic, compatible with version:"
+        "text": "Core datapack for Magic,\ncompatible with version: "
       },
       {
         "text": "Vanilla 26.2",
-        "color": "gold",
-        "bold": true
+        "color": "gold"
       },
       {
         "text": "\nCreated by ",
