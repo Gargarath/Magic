@@ -1,24 +1,24 @@
 {
   "pack": {
     "min_format": [
-      101,
+      107,
       1
     ],
     "max_format": [
-      101,
+      107,
       1
     ],
     "description": [
       {
-        "text": "Datapack qui contient le code de Magic, compatible avec la version : "
+        "text": "Core datapack for Magic, compatible with version:"
       },
       {
-        "text": "Vanilla 26.1",
+        "text": "Vanilla 26.2",
         "color": "gold",
         "bold": true
       },
       {
-        "text": "\nCréé par ",
+        "text": "\nCreated by ",
         "color": "blue",
         "bold": true
       },
