@@ -1527,4 +1527,16 @@ data modify storage strings en_en set value {\
 "tr_shop_undo_all":"All",\
 "tr_shop_redo":"Redo",\
 "tr_shop_redo_all":"All",\
-"tr_shop_cant_usespell":"You can't use spells in shop!"}
+"tr_shop_cant_usespell":"You can't use spells in shop!",\
+\
+"tr_shop_spec":"Spectate:",\
+"tr_shop_spec_waiting":"Waiting...",\
+"tr_shop_spec_ready":"ready",\
+"tr_shop_spec_ready_plural":"",\
+\
+"tr_shop_spec_player_message_1":"You are spectating",\
+"tr_shop_spec_player_message_2":"click here",\
+"tr_shop_spec_player_message_3":"to stop spectating this player.",\
+"tr_shop_spec_player_hover_event":"Click here to stop spectating.",\
+"tr_shop_spec_player_stop_spectating":"You have stopped spectating."\
+}

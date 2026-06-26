@@ -14,5 +14,5 @@ execute if entity @s[tag=blue_team] run function main:stats/scoreboard/blue_team
 execute if entity @s[tag=red_team] run function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
 # indique que @s est pas prêt sur la barre des joueurs (selon son équipe)
 
-function shop:refresh_spec_ready_sign
+function shop:refresh_spec_ready_sign with storage lobby:language translate
 # affiche le nombre de joueurs prêt sur le panneau spec

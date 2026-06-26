@@ -10,6 +10,6 @@ scoreboard players enable @s spec_player7
 scoreboard players enable @s spec_stop
 # permet à @s de cliquer pour sortir du mode spec
 
-tellraw @s [{"color":"gray","italic":true,"text":"Vous observez "},{"bold":false,"hover_event":{"action":"show_text","value":[{"text":"","color":"gray","italic":true}]},"interpret":true,"italic":true,"nbt":"by_player.7.name","storage":"stats:leaderboards"}," ",{"click_event":{"action":"run_command","command":"/trigger spec_stop add 1"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Cliquez ici pour arrêter d'observer.","color":"gray","italic":true}]},"italic":true,"text":"cliquez ici","underlined":true},{"color":"gray","italic":true,"text":" pour arrêter d'observer ce joueur."}]
+$tellraw @s [{"color":"gray","italic":true,"text":"$(tr_shop_spec_player_message_1) "},{"bold":false,"hover_event":{"action":"show_text","value":[{"text":"","color":"gray","italic":true}]},"interpret":true,"italic":true,"nbt":"by_player.7.name","storage":"stats:leaderboards"}," ",{"click_event":{"action":"run_command","command":"/trigger spec_stop add 1"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"$(tr_shop_spec_player_hover_event)","color":"gray","italic":true}]},"italic":true,"text":"$(tr_shop_spec_player_message_2)","underlined":true},{"color":"gray","italic":true,"text":" $(tr_shop_spec_player_message_3)"}]
 # donne à @s le message cliquable pour arrêter d'observer
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 100 1

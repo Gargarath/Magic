@@ -1526,4 +1526,16 @@ data modify storage strings fr_fr set value {\
 "tr_shop_undo_all":"Tout",\
 "tr_shop_redo":"Rétablir",\
 "tr_shop_redo_all":"Tout",\
-"tr_shop_cant_usespell":"Impossible de lancer de sorts dans la salle d'achat !"}
+"tr_shop_cant_usespell":"Impossible de lancer de sorts dans la salle d'achat !",\
+\
+"tr_shop_spec":"Observer :",\
+"tr_shop_spec_waiting":"En attente...",\
+"tr_shop_spec_ready":"prêt",\
+"tr_shop_spec_ready_plural":"s",\
+\
+"tr_shop_spec_player_message_1":"Vous observez",\
+"tr_shop_spec_player_message_2":"cliquez ici",\
+"tr_shop_spec_player_message_3":"pour arrêter d'observer ce joueur.",\
+"tr_shop_spec_player_hover_event":"Cliquez ici pour arrêter d'observer.",\
+"tr_shop_spec_player_stop_spectating":"Vous avez arrêté d'observer."\
+}

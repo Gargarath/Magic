@@ -20,4 +20,4 @@ scoreboard players set @s spec_stop 0
 execute at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
 gamemode adventure @s
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 100 1
-tellraw @s ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
+$tellraw @s ["",{"text":"\n$(tr_shop_spec_player_stop_spectating)","italic":true,"color":"gray"}]

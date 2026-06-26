@@ -37,19 +37,19 @@ execute at @e[type=marker,tag=shop_room_12] positioned ~ ~1 ~ run tp @a[tag=spec
 
 # Spectate ou arreter de spectate
 
-execute as @a[scores={spec_player1=1..}] run function shop:spectate_ppl/player1
-execute as @a[scores={spec_player2=1..}] run function shop:spectate_ppl/player2
-execute as @a[scores={spec_player3=1..}] run function shop:spectate_ppl/player3
-execute as @a[scores={spec_player4=1..}] run function shop:spectate_ppl/player4
-execute as @a[scores={spec_player5=1..}] run function shop:spectate_ppl/player5
-execute as @a[scores={spec_player6=1..}] run function shop:spectate_ppl/player6
-execute as @a[scores={spec_player7=1..}] run function shop:spectate_ppl/player7
-execute as @a[scores={spec_player8=1..}] run function shop:spectate_ppl/player8
-execute as @a[scores={spec_player9=1..}] run function shop:spectate_ppl/player9
-execute as @a[scores={spec_player10=1..}] run function shop:spectate_ppl/player10
-execute as @a[scores={spec_player11=1..}] run function shop:spectate_ppl/player11
-execute as @a[scores={spec_player12=1..}] run function shop:spectate_ppl/player12
-execute as @a[scores={spec_stop=1..}] run function shop:spectate_ppl/stop
+execute as @a[scores={spec_player1=1..}] run function shop:spectate_ppl/player1 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player2=1..}] run function shop:spectate_ppl/player2 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player3=1..}] run function shop:spectate_ppl/player3 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player4=1..}] run function shop:spectate_ppl/player4 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player5=1..}] run function shop:spectate_ppl/player5 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player6=1..}] run function shop:spectate_ppl/player6 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player7=1..}] run function shop:spectate_ppl/player7 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player8=1..}] run function shop:spectate_ppl/player8 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player9=1..}] run function shop:spectate_ppl/player9 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player10=1..}] run function shop:spectate_ppl/player10 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player11=1..}] run function shop:spectate_ppl/player11 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_player12=1..}] run function shop:spectate_ppl/player12 with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={spec_stop=1..}] run function shop:spectate_ppl/stop with entity @s EnderItems[0].components.minecraft:custom_data
 
                                         ## READY SIGN ##
 
