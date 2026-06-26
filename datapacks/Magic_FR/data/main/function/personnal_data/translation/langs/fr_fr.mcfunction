@@ -281,7 +281,7 @@ data modify storage strings fr_fr set value {\
 "tr_map_5_name":"Ruine",\
 "tr_map_6_name":"Bonbon",\
 \
-"tr_graveyard_epitaph_here_lies":"Ci-g\u00eet,",\
+"tr_graveyard_epitaph_here_lies":"Ci-gît,",\
 "tr_graveyard_epitaph_1_name":"Ren\u00e9",\
 "tr_graveyard_epitaph_1_line_3":"Le pouilleux.",\
 "tr_graveyard_epitaph_2_name":"Benoit",\
