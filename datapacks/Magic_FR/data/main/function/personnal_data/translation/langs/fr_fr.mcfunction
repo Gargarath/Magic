@@ -281,6 +281,33 @@ data modify storage strings fr_fr set value {\
 "tr_map_5_name":"Ruine",\
 "tr_map_6_name":"Bonbon",\
 \
+"tr_graveyard_epitaph_here_lies":"Ci-g\u00eet,",\
+"tr_graveyard_epitaph_1_name":"Ren\u00e9",\
+"tr_graveyard_epitaph_1_line_3":"Le pouilleux.",\
+"tr_graveyard_epitaph_2_name":"Benoit",\
+"tr_graveyard_epitaph_2_line_3":"L'irr\u00e9sistible.",\
+"tr_graveyard_epitaph_3_name":"Augustin",\
+"tr_graveyard_epitaph_3_line_3":"L'homme au",\
+"tr_graveyard_epitaph_3_line_4":"cerveau immense.",\
+"tr_graveyard_epitaph_4_name":"G\u00e9rard",\
+"tr_graveyard_epitaph_4_line_3":"Le prol\u00e9taire.",\
+"tr_graveyard_epitaph_5_name":"Hugues",\
+"tr_graveyard_epitaph_5_line_3":"Le mis\u00e9rable.",\
+"tr_graveyard_epitaph_6_name":"Nico",\
+"tr_graveyard_epitaph_6_line_3":"L'idiot.",\
+"tr_graveyard_epitaph_7_name":"Archibald",\
+"tr_graveyard_epitaph_7_line_3":"Le magnifique.",\
+"tr_graveyard_epitaph_8_name":"Basile",\
+"tr_graveyard_epitaph_8_line_3":"Le cruel.",\
+"tr_graveyard_epitaph_9_name":"Maxime",\
+"tr_graveyard_epitaph_9_line_3":"Le richissime.",\
+"tr_graveyard_epitaph_10_name":"Kevin",\
+"tr_graveyard_epitaph_10_line_3":"Le demeur\u00e9.",\
+"tr_graveyard_epitaph_11_name":"Jacob",\
+"tr_graveyard_epitaph_11_line_3":"L'influent.",\
+"tr_graveyard_epitaph_12_name":"Martial",\
+"tr_graveyard_epitaph_12_line_3":"Le dodu.",\
+\
 "tr_jump_start_title":"Défi de Parcours",\
 "tr_jump_start_subtitle":"Départ",\
 "tr_jump_checkpoint":"Checkpoint",\
