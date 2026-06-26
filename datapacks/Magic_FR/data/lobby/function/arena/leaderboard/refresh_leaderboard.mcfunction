@@ -11,5 +11,5 @@ scoreboard players set @a[tag=in_lobby_arena,scores={Player=1..}] sort_arena_kil
 execute unless score $sorting sort_arena_killcount matches 1 run function lobby:arena/leaderboard/sort/sorting_clock
 # lance la boucle de tri si pas déjà en train de trier
 
-execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function main:gui/display/in_lobby/inarena
+execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function main:gui/display/in_lobby/inarena with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise le gui de l'arène pour tout les joueurs dedans

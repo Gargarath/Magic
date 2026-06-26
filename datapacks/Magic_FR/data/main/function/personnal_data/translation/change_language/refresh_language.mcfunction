@@ -6,14 +6,10 @@ execute if score @s operator matches 2 run clear @s *[minecraft:custom_data={adm
 
 ## ITEMS EN PARTIE / SHOP
 execute if score @s Player matches 1.. if entity @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
-execute if score @s Player matches 1.. if entity @s[tag=warrior] run function stuff:stuff_warrior/save_stuff_as_storage/determine_player
 execute if score @s Player matches 1.. if entity @s[tag=archer] run function stuff:stuff_archer/stuffarcher
-execute if score @s Player matches 1.. if entity @s[tag=archer] run function stuff:stuff_archer/save_stuff_as_storage/determine_player
 execute if score @s Player matches 1.. if entity @s[tag=mage] run function stuff:stuff_mage/stuffmage
-execute if score @s Player matches 1.. if entity @s[tag=mage] run function stuff:stuff_mage/save_stuff_as_storage/determine_player
 execute if score @s Player matches 1.. if entity @s[tag=rogue] run function stuff:stuff_rogue/stuffrogue
-execute if score @s Player matches 1.. if entity @s[tag=rogue] run function stuff:stuff_rogue/save_stuff_as_storage/determine_player
-execute if score @s Player matches 1.. run function main:items_positions/save_spell_order_in_gui with entity @s EnderItems[0].components.minecraft:custom_data
+function main:items_positions/refresh_keybinds_from_current_stuff
 
 ## LIVRE DE STATS / HOTBAR DU LOBBY
 execute if score @s InLobby matches 1 if score @s Player_last_game matches 1.. run function main:stats/stats_book/give_stat_books with entity @s EnderItems[0].components.minecraft:custom_data

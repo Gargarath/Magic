@@ -87,7 +87,7 @@ execute as @s[tag=warrior] run function lobby:arena/stuff_give_max/warrior
 execute as @s[tag=archer] run function lobby:arena/stuff_give_max/archer
 execute as @s[tag=mage] run function lobby:arena/stuff_give_max/mage
 execute as @s[tag=rogue] run function lobby:arena/stuff_give_max/rogue
-function main:items_positions/save_spell_order_in_gui with entity @s EnderItems[0].components.minecraft:custom_data
+function main:items_positions/refresh_keybinds_from_current_stuff
 # donne son stuff à @s
 
 execute if score @s cooldownspell1 matches 0.. run scoreboard players set @s cooldown1_clock 20
