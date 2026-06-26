@@ -84,7 +84,8 @@ execute as @r[scores={Player=0}] run function main:start_game/setup_players/give
 
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
 execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run spawnpoint @s ~ ~ ~ 0 -5
-execute as @a[scores={Player=-1},tag=inventory_rebuilding] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={Player=-1},tag=inventory_rebuilding] run function stuff:spectator/drop with entity @s EnderItems[0].components.minecraft:custom_data
+
 execute as @a[tag=inventory_rebuilding] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 tag @a remove inventory_rebuilding
 tag @a add save_inventory
