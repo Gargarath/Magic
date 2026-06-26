@@ -83,6 +83,7 @@ scoreboard objectives add admin_all_ready trigger
 scoreboard objectives add admin_randomize_class trigger
 scoreboard objectives add admin_randomize_team trigger
 scoreboard objectives add admin_stop_game trigger
+scoreboard objectives add used_reset dummy
 scoreboard objectives add admin_round_over trigger
 
 scoreboard objectives add motherlode trigger
