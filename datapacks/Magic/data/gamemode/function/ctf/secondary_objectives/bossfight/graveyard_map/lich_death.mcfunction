@@ -9,7 +9,7 @@ execute as @a[tag=targetable] at @s run playsound minecraft:entity.wither.death 
 
 kill @e[type=minecraft:item_display,tag=show_lich_invulnerable,limit=1]
 
-bossbar set minecraft:secondary_objective value 0
+bossbar set secondary_objective:state value 0
 # vide la barre de vie de la liche
 
 tag @a remove target

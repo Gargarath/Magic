@@ -9,7 +9,7 @@ execute as @a at @e[type=minecraft:item_display,tag=show_golem_invulnerable,limi
 
 kill @e[type=minecraft:item_display,tag=show_golem_invulnerable,limit=1]
 
-bossbar set minecraft:secondary_objective value 0
+bossbar set secondary_objective:state value 0
 # vide la barre de vie de la liche
 
 scoreboard players set is_dead golem 1

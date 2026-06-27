@@ -4,5 +4,5 @@
 execute if score time time_to_obj < max_time time_to_obj run scoreboard players add time time_to_obj 1
 # ajoute un au score correspondant à la valeur de la bossbar
 
-execute store result bossbar minecraft:secondary_objective value run scoreboard players get time time_to_obj
+execute store result bossbar secondary_objective:state value run scoreboard players get time time_to_obj
 # la bossbar objective secondaire prend la valeur du score time_to_obj du joueur timer

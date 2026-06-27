@@ -20,6 +20,6 @@ clone -20 142 -740 -18 145 -738 -20 164 -740
 clone -20 136 -740 -18 140 -738 -20 253 -740
 # remet la cerise pour le tp du mage
 
-bossbar set minecraft:secondary_objective players
-bossbar set minecraft:secondary_objective value 0
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+bossbar set secondary_objective:state value 0
 # enlève la bossbar de la liche

@@ -5,5 +5,5 @@
 scoreboard players set on living_cherry 0
 # arrete la clock sur l'objectif secondaire
 
-bossbar set minecraft:secondary_objective players
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
 # clear les bossbar de l'objectif secondaire

@@ -1,7 +1,8 @@
+scoreboard players set $type secondary_objective_slot 5
 # appelée par ctf:secondary_objectives/launch_secondary_objective/launch_secondary_objective permet de lancer l'objectif secondaire de la map ruine
 
-bossbar set minecraft:secondary_objective name {"text":"Le Gardien","color":"green","bold":true}
-bossbar set minecraft:secondary_objective color green
+bossbar set secondary_objective:state name {"text":"Le Gardien","color":"green","bold":true}
+bossbar set secondary_objective:state color green
 # affiche la bossbar Golem
 
 function gamemode:ctf/secondary_objectives/bossfight/ruin_map/summon_golem/summon_golem

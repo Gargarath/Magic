@@ -46,7 +46,8 @@ scoreboard players set round bossbar 0
 
 scoreboard players set on secnd_objective 1
 # indique que l'objectif secondaire a déjà été lancé et donc n'a pas besoin d'etre lancé de nouveau (au cas où on stop la game juste avant les 5min)
-bossbar set minecraft:secondary_objective players
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+bossbar set secondary_objective:state value 0
 # reset les bossbar objectifs secondaires
 
 

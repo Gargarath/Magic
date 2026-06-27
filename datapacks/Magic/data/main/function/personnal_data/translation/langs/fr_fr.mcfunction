@@ -481,6 +481,20 @@ data modify storage strings fr_fr set value {\
 "tr_map_secondary_objective_launch_map4":"Le coeur du volcan s'est réveillé ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map5":"Le gardien est apparu dans le temple !\nTuez le pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map6":"La cerise a prit vie !\nTuez la pour obtenir une récompense !",\
+"tr_secondary_objective_countdown":"???",\
+"tr_secondary_objective_pirate":"Trésor du capitaine",\
+"tr_secondary_objective_lich":"Liche",\
+"tr_secondary_objective_factory":"Générateur de l'usine",\
+"tr_secondary_objective_volcano":"Cœur du volcan",\
+"tr_secondary_objective_guardian":"Le Gardien",\
+"tr_secondary_objective_cherry":"Cerise vivante !",\
+"tr_point_capture":"Capture de l'objectif",\
+"tr_secondary_objective_blue_controls":"L'équipe bleue contrôle l'objectif secondaire !",\
+"tr_secondary_objective_red_controls":"L'équipe rouge contrôle l'objectif secondaire !",\
+"tr_secondary_objective_blue_completed":"L'équipe bleue a réussi l'objectif secondaire !",\
+"tr_secondary_objective_red_completed":"L'équipe rouge a réussi l'objectif secondaire !",\
+"tr_round_end_completed_round":"pour avoir terminé la manche ",\
+"tr_round_end_completed_secondary_objective":"pour avoir réussi l'objectif secondaire de la manche ",\
 \
 "tr_warrior_passive1_name":"Armure blindée",\
 "tr_warrior_passive1_lore_1":"Votre plastron vous octroie 1,5 fois plus de points de vie.",\

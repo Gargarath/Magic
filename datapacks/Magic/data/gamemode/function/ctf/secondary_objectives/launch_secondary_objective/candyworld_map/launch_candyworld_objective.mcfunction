@@ -1,7 +1,8 @@
+scoreboard players set $type secondary_objective_slot 6
 # appelée par ctf:secondary_objectives/launch_secondary_objective/launch_secondary_objective permet de lancer l'objectif secondaire de la map bonbon
 
-bossbar set minecraft:secondary_objective name {"text":"Cerise vivante !","color":"light_purple","bold":true}
-bossbar set minecraft:secondary_objective color pink
+bossbar set secondary_objective:state name {"text":"Cerise vivante !","color":"light_purple","bold":true}
+bossbar set secondary_objective:state color pink
 # affiche la bossbar bonbon
 
 fill -18 164 -740 -20 168 -738 air

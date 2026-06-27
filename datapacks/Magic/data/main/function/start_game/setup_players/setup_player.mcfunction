@@ -14,4 +14,5 @@ execute if entity @s[tag=archer] run function stuff:stuff_archer/stuffarcher
 execute if entity @s[tag=mage] run function stuff:stuff_mage/stuffmage
 execute if entity @s[tag=rogue] run function stuff:stuff_rogue/stuffrogue
 
+function shop:setup_statue_armor with entity @s EnderItems[0].components.minecraft:custom_data
 function shop:setup_shop with entity @s EnderItems[0].components.minecraft:custom_data

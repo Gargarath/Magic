@@ -9,7 +9,7 @@ execute as @a at @e[type=minecraft:item_display,tag=show_living_cherry_invulnera
 
 kill @e[type=minecraft:item_display,tag=show_living_cherry_invulnerable,limit=1]
 
-bossbar set minecraft:secondary_objective value 0
+bossbar set secondary_objective:state value 0
 # vide la barre de vie de la cerise bonbon
 
 scoreboard players set is_dead living_cherry 1

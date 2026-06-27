@@ -1,3 +1,4 @@
+scoreboard players set $type secondary_objective_slot 3
 # appelée par ctf:secondary_objectives/launch_secondary_objective/launch_secondary_objective permet de lancer l'objectif secondaire de la map usine
 
 # RESET LE BOLD DES POINTS DE CAPTURE
@@ -10,23 +11,18 @@ data modify storage minecraft:point_capture red_score2 set value {"score":{"name
 data modify storage minecraft:point_capture red_score3 set value {"text":"%","bold":false,"color":"red"}
 data modify storage minecraft:point_capture red_score4 set value {"text":")","bold":false,"color":"gray"}
 
-bossbar set minecraft:secondary_objective_blue players
-bossbar set minecraft:secondary_objective_red players
 data modify storage minecraft:point_capture name set value {"text":"Générateur de l\'usine","bold":true,"color":"dark_red"}
-bossbar set minecraft:secondary_objective_blue name ["",{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true}]
-bossbar set minecraft:secondary_objective_red name ["",{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true}]
-bossbar set minecraft:secondary_objective_blue value 0
-bossbar set minecraft:secondary_objective_red value 0
-bossbar set minecraft:secondary_objective_blue players @a[team=!red]
-bossbar set minecraft:secondary_objective_red players @a[team=red]
-bossbar set minecraft:secondary_objective players
+bossbar set secondary_objective:state_blue name ["",{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true}]
+bossbar set secondary_objective:state_red name ["",{"nbt":"red_score1","storage":"point_capture","interpret":true},{"nbt":"red_score2","storage":"point_capture","interpret":true},{"nbt":"red_score3","storage":"point_capture","interpret":true},{"nbt":"red_score4","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"name","storage":"point_capture","interpret":true},{"text":" - ","bold":true,"color":"gray"},{"nbt":"blue_score1","storage":"point_capture","interpret":true},{"nbt":"blue_score2","storage":"point_capture","interpret":true},{"nbt":"blue_score3","storage":"point_capture","interpret":true},{"nbt":"blue_score4","storage":"point_capture","interpret":true}]
+bossbar set secondary_objective:state_blue value 0
+bossbar set secondary_objective:state_red value 0
 # affiche la barre Générateur de l'usine
 
 scoreboard players set state point_capture 0
 scoreboard players set red point_capture 0
 scoreboard players set blue point_capture 0
-bossbar set minecraft:point_capture_blue value 0
-bossbar set minecraft:point_capture_red value 0
+bossbar set point_capture:state_blue value 0
+bossbar set point_capture:state_red value 0
 scoreboard players set is_over secnd_objective 0
 # reset l'objectif sur le state 0
 
@@ -37,7 +33,7 @@ scoreboard players operation max_capture_blue point_capture *= blue playercount
 execute if score max_capture_blue point_capture matches 0 run scoreboard players set max_capture_blue point_capture 75
 execute if score max_capture_blue point_capture matches 451.. run scoreboard players set max_capture_blue point_capture 450
 # mets le temps de capture du point de l'équipe bleu à 75 * nombre de joueurs dans l'équipe bleue (maximum 450 ticks)
-execute store result bossbar minecraft:point_capture_blue max run scoreboard players get max_capture_blue point_capture
+execute store result bossbar point_capture:state_blue max run scoreboard players get max_capture_blue point_capture
 # fixe le max de la bossbar capture_blue selon le temps de capture fixé pour les bleus
 
 # TEMPS DE CAPTURE ROUGE
@@ -46,7 +42,7 @@ scoreboard players operation max_capture_red point_capture *= red playercount
 execute if score max_capture_red point_capture matches 0 run scoreboard players set max_capture_red point_capture 75
 execute if score max_capture_red point_capture matches 451.. run scoreboard players set max_capture_red point_capture 450
 # mets le temps de capture du point de l'équipe rouge à 75 * nombre de joueurs dans l'équipe rouge (maximum 450 ticks)
-execute store result bossbar minecraft:point_capture_red max run scoreboard players get max_capture_red point_capture
+execute store result bossbar point_capture:state_red max run scoreboard players get max_capture_red point_capture
 # fixe le max de la bossbar capture_red selon le temps de capture fixé pour les rouges
 
 clone 326 137 13 316 142 3 316 146 3

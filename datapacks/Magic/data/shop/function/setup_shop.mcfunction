@@ -2,9 +2,6 @@
 # actualise le shop selon ses items et son nom
 
 $data merge entity @n[type=mannequin,tag=statue_$(player)] {profile:"$(name)"}
-$item replace entity @n[type=mannequin,tag=statue_$(player)] armor.chest from entity @s armor.chest
-$item replace entity @n[type=mannequin,tag=statue_$(player)] armor.legs from entity @s armor.legs
-$item replace entity @n[type=mannequin,tag=statue_$(player)] armor.feet from entity @s armor.feet
 # actualise le skin du mannequin
 
 $data merge entity @n[type=text_display,tag=shop_title,tag=shop_title_$(player)] {text:{"text":"$(tr_shop_title)","bold":true,"color":"gold"}}

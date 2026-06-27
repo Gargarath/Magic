@@ -38,6 +38,10 @@ data modify storage minecraft:matchinfo score2.2 set value 0
 # reset les scores
 
 execute if score $secondary_objectives option_panel matches 1 run scoreboard players set on secnd_objective 0
+execute if score $secondary_objectives option_panel matches 1 run scoreboard players set is_over secnd_objective 0
+scoreboard players set on point_capture 0
+scoreboard players set $type secondary_objective_slot 0
+execute if score $secondary_objectives option_panel matches 1 run function gamemode:ctf/secondary_objectives/bossbar/allocate_slots
 # si les objectifs secondaires sont activés -> fais en sorte qu'il se lance à 5min
 
 team modify blue nametagVisibility hideForOtherTeams

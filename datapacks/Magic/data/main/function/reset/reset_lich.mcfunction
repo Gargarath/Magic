@@ -18,8 +18,8 @@ tag @a remove target
 tag @a remove targetable
 # enleve le tag target de tous
 
-bossbar set minecraft:secondary_objective players
-bossbar set minecraft:secondary_objective value 0
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+bossbar set secondary_objective:state value 0
 # enlève la bossbar de la liche
 
 scoreboard players reset cast_time lich

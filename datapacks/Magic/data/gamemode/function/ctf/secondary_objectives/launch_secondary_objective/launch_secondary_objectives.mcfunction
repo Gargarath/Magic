@@ -8,4 +8,5 @@ execute if score selected_map variables matches 5 run function gamemode:ctf/seco
 execute if score selected_map variables matches 6 run function gamemode:ctf/secondary_objectives/launch_secondary_objective/candyworld_map/launch_candyworld_objective
 
 execute if score selected_map variables matches 1..6 run scoreboard players set on secnd_objective 1
+function gamemode:ctf/secondary_objectives/bossbar/refresh_all
 # permet de dire au système que l'objectif secondaire est en cours (pour activer la loop)

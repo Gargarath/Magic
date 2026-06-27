@@ -3,16 +3,46 @@
 bossbar add aaa_placeholder ""
 bossbar set aaa_placeholder color purple
 
-
-bossbar add secondary_objective {"text":"Point à capturer","bold":true}
-bossbar add secondary_objective_blue {"text":"Point à capturer","bold":true}
-bossbar add secondary_objective_red {"text":"Point à capturer","bold":true}
-bossbar add point_capture_blue {"text":"Capture de l'objectif","bold":true,"color":"blue"}
-bossbar set minecraft:point_capture_blue color blue
-bossbar set minecraft:point_capture_blue max 140
-bossbar add point_capture_red {"text":"Capture de l'objectif","bold":true,"color":"red"}
-bossbar set minecraft:point_capture_red color red
-bossbar set minecraft:point_capture_red max 140
+bossbar remove secondary_objective
+bossbar remove secondary_objective_blue
+bossbar remove secondary_objective_red
+bossbar add secondary_objective:state ""
+bossbar add secondary_objective:state_blue ""
+bossbar add secondary_objective:state_red ""
+bossbar add secondary_objective:viewer1 ""
+bossbar add secondary_objective:viewer2 ""
+bossbar add secondary_objective:viewer3 ""
+bossbar add secondary_objective:viewer4 ""
+bossbar add secondary_objective:viewer5 ""
+bossbar add secondary_objective:viewer6 ""
+bossbar add secondary_objective:viewer7 ""
+bossbar add secondary_objective:viewer8 ""
+bossbar add secondary_objective:viewer9 ""
+bossbar add secondary_objective:viewer10 ""
+bossbar add secondary_objective:viewer11 ""
+bossbar add secondary_objective:viewer12 ""
+bossbar add secondary_objective:viewer13 ""
+bossbar add secondary_objective:viewer14 ""
+bossbar add secondary_objective:viewer15 ""
+bossbar add secondary_objective:viewer16 ""
+bossbar add secondary_objective:viewer17 ""
+bossbar add secondary_objective:viewer18 ""
+bossbar add secondary_objective:viewer19 ""
+bossbar add secondary_objective:viewer20 ""
+bossbar add secondary_objective:viewer21 ""
+bossbar add secondary_objective:viewer22 ""
+bossbar add secondary_objective:viewer23 ""
+bossbar add secondary_objective:viewer24 ""
+bossbar add secondary_objective:viewer25 ""
+bossbar add secondary_objective:viewer26 ""
+bossbar add secondary_objective:viewer27 ""
+bossbar add secondary_objective:viewer28 ""
+bossbar add secondary_objective:viewer29 ""
+bossbar add secondary_objective:viewer30 ""
+bossbar add secondary_objective:viewer31 ""
+bossbar add secondary_objective:viewer32 ""
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+function gamemode:ctf/secondary_objectives/capture_point/bossbar/setup
 
 bossbar add lich:dmg_aoe ["",{"text":"Maudit !","bold":true,"color":"gray"}]
 bossbar set lich:dmg_aoe name ["",{"text":"Maudit !","bold":true,"color":"gray"}]

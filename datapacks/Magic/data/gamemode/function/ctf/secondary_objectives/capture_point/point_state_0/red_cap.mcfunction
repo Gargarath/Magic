@@ -5,4 +5,4 @@ execute if score capture_red point_capture < max_capture_red point_capture run s
 
 # refresh la bossbar de capture rouge
 
-execute store result bossbar minecraft:point_capture_red value run scoreboard players get capture_red point_capture
+execute store result bossbar point_capture:state_red value run scoreboard players get capture_red point_capture

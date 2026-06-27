@@ -2,6 +2,6 @@
 # donne un bonus d'argent aux bleus
 
 scoreboard players reset blue_won_last secnd_objective
-tellraw @a[tag=blue_team] ["",{"text":"\n+","bold":true,"color":"gold"},{"score":{"name":"$ph_per_obj","objective":"option_panel"},"bold":true,"color":"gold"},{"text":" Points d'Honneur ! ","bold":true,"color":"gold"},{"text":"(pour avoir réussi l'objectif secondaire de la manche ","italic":true,"color":"gray"},{"score":{"name":"round","objective":"bossbar"},"italic":true,"color":"gray"},{"text":")","italic":true,"color":"gray"}]
+execute as @a[tag=blue_team] run function main:round_end/messages/completed_secondary_objective with entity @s EnderItems[0].components.minecraft:custom_data
 scoreboard players operation @a[tag=blue_team] PH += $ph_per_obj option_panel
 execute if score $build_reset option_panel matches 2 run scoreboard players operation @a[tag=blue_team] PH_backup += $ph_per_obj option_panel

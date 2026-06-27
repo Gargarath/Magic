@@ -8,14 +8,13 @@ kill @e[tag=objective_center]
 kill @e[tag=objective_border]
 # enleve les armorstand qui font les particules
 
-bossbar set minecraft:secondary_objective players
-bossbar set minecraft:secondary_objective_blue players
-bossbar set minecraft:secondary_objective_red players
-bossbar set minecraft:point_capture_red players
-bossbar set minecraft:point_capture_blue players
-bossbar set minecraft:secondary_objective value 0
-bossbar set minecraft:point_capture_red value 0
-bossbar set minecraft:point_capture_blue value 0
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+function gamemode:ctf/secondary_objectives/capture_point/bossbar/hide_all
+bossbar set point_capture:state_red players
+bossbar set point_capture:state_blue players
+bossbar set secondary_objective:state value 0
+bossbar set point_capture:state_red value 0
+bossbar set point_capture:state_blue value 0
 # clear les bossbar liées aux objectifs secondaires
 
 execute if score selected_map variables matches 3 run clone 316 128 3 326 133 13 316 146 3

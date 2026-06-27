@@ -1,7 +1,8 @@
+scoreboard players set $type secondary_objective_slot 2
 # appelée par ctf:secondary_objectives/launch_secondary_objective/launch_secondary_objective permet de lancer l'objectif secondaire de la map ruine
 
-bossbar set minecraft:secondary_objective name {"text":"Liche","color":"gray","bold":true}
-bossbar set minecraft:secondary_objective color red
+bossbar set secondary_objective:state name {"text":"Liche","color":"gray","bold":true}
+bossbar set secondary_objective:state color red
 # affiche la bossbar Liche
 
 summon minecraft:lightning_bolt 218 169 -281

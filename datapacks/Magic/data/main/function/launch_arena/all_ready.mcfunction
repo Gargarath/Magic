@@ -157,11 +157,13 @@ data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE304
 title @a clear
 scoreboard players set @a nopack_detection -1
 
-bossbar set minecraft:secondary_objective name {"text":"???","color":"gold"}
-bossbar set minecraft:secondary_objective value 0
-bossbar set minecraft:secondary_objective color yellow
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
+scoreboard players set $type secondary_objective_slot 0
+bossbar set secondary_objective:state name {"text":"???","color":"gold"}
+bossbar set secondary_objective:state value 0
+bossbar set secondary_objective:state color yellow
 scoreboard players set time time_to_obj 0
-bossbar set minecraft:secondary_objective max 60
+bossbar set secondary_objective:state max 60
 scoreboard players set max_time time_to_obj 60
 # Affiche la bossbar objectif secondaire et prépare le crono
 

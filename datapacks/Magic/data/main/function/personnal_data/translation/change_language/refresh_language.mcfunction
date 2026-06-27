@@ -1,5 +1,8 @@
 # Appelée par change_language apres un changement de langue.
 # Actualise les textes visibles de @s sans toucher aux autres joueurs.
+scoreboard players set $refresh secondary_objective_slot 1
+execute if score @s secondary_objective_slot matches 1..32 unless score is_over secnd_objective matches 1 run function gamemode:ctf/secondary_objectives/bossbar/sync_player
+scoreboard players set $refresh secondary_objective_slot 0
 
 # clear admin book
 execute if score @s operator matches 2 run clear @s *[minecraft:custom_data={admin_item:1b}]

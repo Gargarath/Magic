@@ -140,7 +140,7 @@ execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ 
 scoreboard players operation @a[scores={Player=1..}] PH += $ph_per_round option_panel
 execute if score $build_reset option_panel matches 2 run scoreboard players operation @a[scores={Player=1..}] PH_backup += $ph_per_round option_panel
 
-tellraw @a[scores={Player=1..}] ["",{"text":"+","bold":true,"color":"gold"},{"score":{"name":"$ph_per_round","objective":"option_panel"},"bold":true,"color":"gold"},{"text":" Points d'Honneur ! ","bold":true,"color":"gold"},{"text":"(pour avoir terminé la manche ","italic":true,"color":"gray"},{"score":{"name":"round","objective":"bossbar"},"italic":true,"color":"gray"},{"text":")","italic":true,"color":"gray"}]
+execute as @a[scores={Player=1..}] run function main:round_end/messages/completed_round with entity @s EnderItems[0].components.minecraft:custom_data
 # Donne x points d'honneur a tous les joueurs et leur indique que c'est parce qu'ils viennent de terminer la manche (avec x score variables du joueur PH_per_round)
 
 execute if score blue_won_last secnd_objective matches 1 run function main:round_end/blue_completed_objective

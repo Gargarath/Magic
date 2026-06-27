@@ -482,6 +482,20 @@ data modify storage strings en_en set value {\
 "tr_map_secondary_objective_launch_map4":"The heart of the volcano has awakened! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map5":"The guardian has appeared in the temple!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map6":"The cherry has come to life!\nKill it to earn a reward!",\
+"tr_secondary_objective_countdown":"???",\
+"tr_secondary_objective_pirate":"Captain's Treasure",\
+"tr_secondary_objective_lich":"Lich",\
+"tr_secondary_objective_factory":"Factory Generator",\
+"tr_secondary_objective_volcano":"Heart of the Volcano",\
+"tr_secondary_objective_guardian":"The Guardian",\
+"tr_secondary_objective_cherry":"Living Cherry!",\
+"tr_point_capture":"Capturing the objective",\
+"tr_secondary_objective_blue_controls":"The blue team controls the secondary objective!",\
+"tr_secondary_objective_red_controls":"The red team controls the secondary objective!",\
+"tr_secondary_objective_blue_completed":"The blue team completed the secondary objective!",\
+"tr_secondary_objective_red_completed":"The red team completed the secondary objective!",\
+"tr_round_end_completed_round":"for completing round ",\
+"tr_round_end_completed_secondary_objective":"for completing the secondary objective in round ",\
 \
 "tr_warrior_passive1_name":"Reinforced Armor",\
 "tr_warrior_passive1_lore_1":"Your chestplate grants you 1.5 times more health points.",\

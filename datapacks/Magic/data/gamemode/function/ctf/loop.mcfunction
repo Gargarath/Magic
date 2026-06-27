@@ -41,6 +41,8 @@ execute if score selected_map variables matches 3 run function gamemode:ctf/maps
 execute if score selected_map variables matches 4 run function gamemode:ctf/maps_systems/volcano/loop_volcano
 execute if score selected_map variables matches 5 run function gamemode:ctf/maps_systems/ruin/loop_ruin
 execute if score selected_map variables matches 6 run function gamemode:ctf/maps_systems/candyworld/loop_candyworld
+
+function gamemode:ctf/secondary_objectives/bossbar/tick
                                     
                                          #### CES COMMANDES PERMETENT DE GERER LE CAPTURE THE FLAG #####
 

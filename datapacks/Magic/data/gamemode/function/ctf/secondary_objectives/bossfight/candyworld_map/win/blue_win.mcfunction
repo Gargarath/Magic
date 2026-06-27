@@ -1,7 +1,7 @@
 # appelée par ctf:secondary_objectives/bossfight/candyworld_map/bossfight_loop
 # permet de faire remporter l'objectif secondaire aux bleus
 
-tellraw @a {"text":"L'équipe bleue a réussie l'objectif secondaire !","color":"blue","bold":false}
+execute as @a run function gamemode:ctf/secondary_objectives/messages/blue_completed with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[team=red] at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 0
 execute as @a[team=blue] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 0
 execute as @a[team=spectateur] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 0

@@ -36,8 +36,9 @@ execute unless score state point_capture matches 2 if score capture_red point_ca
 # fait devenir le point rouge si les rouge ont capturé le point (= leur score de cap = leur score max de cap)
 
 # barres de capture
-execute unless score state point_capture matches 1 run bossbar set minecraft:point_capture_blue players @a[x=317.5,y=148,z=4.5,dx=7.1,dy=3,dz=7.1,team=blue]
-execute unless score state point_capture matches 2 run bossbar set minecraft:point_capture_red players @a[x=317.5,y=148,z=4.5,dx=7.1,dy=3,dz=7.1,team=red]
+function gamemode:ctf/secondary_objectives/capture_point/bossbar/hide_all
+execute unless score state point_capture matches 1 as @a[x=317.5,y=148,z=4.5,dx=7.1,dy=3,dz=7.1,team=blue,scores={Player=1..,secondary_objective_slot=1..32}] run function gamemode:ctf/secondary_objectives/capture_point/bossbar/sync_blue
+execute unless score state point_capture matches 2 as @a[x=317.5,y=148,z=4.5,dx=7.1,dy=3,dz=7.1,team=red,scores={Player=1..,secondary_objective_slot=1..32}] run function gamemode:ctf/secondary_objectives/capture_point/bossbar/sync_red
 # affiche la barre de capture de leur équipe à ceux qui capturent
 
          # STATE 1 = l'équipe bleue contrôle le point

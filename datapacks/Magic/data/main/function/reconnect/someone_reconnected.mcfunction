@@ -1,6 +1,8 @@
 ## appelée par main:loop si @s vient de se reconnecter
 
 scoreboard players set @s disconnected 0
+function gamemode:ctf/secondary_objectives/bossbar/allocate_slots
+function gamemode:ctf/secondary_objectives/bossbar/refresh_all
 
 # si @s n'est pas dans le même gamemode que actuellement -> l'actualise
 execute if score $gamemode option_panel matches 0 if entity @s[tag=!no_team,scores={Player=0..}] run function lobby:team_selector/team_disabler/disable_team
@@ -38,13 +40,7 @@ execute if score lobby enable_loop matches 0 as @s[tag=red_team,scores={Player=1
 
 execute if score @s nopack_detection matches -1 run function main:ressource_pack_detector/ressource_pack_detector
 
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 0 unless score shop enable_loop matches 1 unless score lobby enable_loop matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective players
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 0 unless score shop enable_loop matches 1 unless score lobby enable_loop matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective players @a
 # si l'objectif secondaire est autorisé et qu'on est in game -> affiche la bossbar obj secondaire à tous
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_blue players
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_red players
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_blue players @a[tag=!red_team]
-execute if score $secondary_objectives option_panel matches 1 if score on point_capture matches 1 unless score is_over secnd_objective matches 1 run bossbar set minecraft:secondary_objective_red players @a[tag=red_team]
 # si l'objectif secondaire a commencé mais n'est pas fini, affiche la bonne bossbar à tous
 
 execute store result score $count operator if entity @a[scores={operator=2}]

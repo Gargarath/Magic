@@ -36,5 +36,5 @@ schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
 schedule function gamemode:ctf/timer/refresh_timer 1s
 # clear la boucle du chrono
 
-execute if score round bossbar matches 1..3 if score $secondary_objectives option_panel matches 1 run bossbar set minecraft:secondary_objective players @a
-# affiche la bossbar objectif secondaire si on est sur la map pirate et que l'option objectif secondaire est activé
+execute if score round bossbar matches 1..3 if score $secondary_objectives option_panel matches 1 run function gamemode:ctf/secondary_objectives/bossbar/refresh_all
+# réaffiche la bossbar d'attente vide avec son nom traduit après le compte à rebours

@@ -29,7 +29,7 @@ setblock 287 127 -12 air
 setblock 355 127 28 air
 # allume le beacon rouge
 
-bossbar set minecraft:secondary_objective players
+function gamemode:ctf/secondary_objectives/bossbar/hide_all
 
 # Reset les trappes, portes..
 # coté bleu
