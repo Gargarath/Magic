@@ -5,7 +5,7 @@ tag @s remove save_inventory
 clear @s slime_ball
 tag @s add save_inventory
 
-tellraw @a ["",{"selector":"@s"}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"nbt":"bossname","storage":"main:killfeed","interpret":true}]
+function main:killfeed/boss_item_picked_up
 
 execute if entity @s[tag=blue_team] run function gamemode:ctf/secondary_objectives/bossfight/candyworld_map/win/blue_win
 execute if entity @s[tag=red_team] run function gamemode:ctf/secondary_objectives/bossfight/candyworld_map/win/red_win

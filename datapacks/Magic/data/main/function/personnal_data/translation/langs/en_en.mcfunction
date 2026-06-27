@@ -489,6 +489,9 @@ data modify storage strings en_en set value {\
 "tr_secondary_objective_volcano":"Heart of the Volcano",\
 "tr_secondary_objective_guardian":"The Guardian",\
 "tr_secondary_objective_cherry":"Living Cherry!",\
+"tr_killfeed_boss_lich":"Lich",\
+"tr_killfeed_boss_guardian":"The Guardian",\
+"tr_killfeed_boss_cherry":"Living Cherry",\
 "tr_point_capture":"Capturing the objective",\
 "tr_secondary_objective_blue_controls":"The blue team controls the secondary objective!",\
 "tr_secondary_objective_red_controls":"The red team controls the secondary objective!",\

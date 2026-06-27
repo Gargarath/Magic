@@ -1,0 +1,6 @@
+## appelée par main:killfeed/boss_item_picked_up pour chaque joueur
+# permet d'afficher à @s le nom traduit du boss dont l'objet a été ramassé
+
+$execute if score $killfeed_boss_type secondary_objective_slot matches 2 run tellraw @s ["",{"nbt":"picker_name","storage":"main:killfeed","interpret":true}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"text":"$(tr_killfeed_boss_lich)","color":"gray","bold":false}]
+$execute if score $killfeed_boss_type secondary_objective_slot matches 5 run tellraw @s ["",{"nbt":"picker_name","storage":"main:killfeed","interpret":true}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"text":"$(tr_killfeed_boss_guardian)","color":"green","bold":false}]
+$execute if score $killfeed_boss_type secondary_objective_slot matches 6 run tellraw @s ["",{"nbt":"picker_name","storage":"main:killfeed","interpret":true}," ",{"object":"atlas","atlas":"minecraft:items","sprite":"item/bundle","color":"white","bold":false,"shadow_color":-16250872}," ",{"text":"$(tr_killfeed_boss_cherry)","color":"light_purple","bold":false}]

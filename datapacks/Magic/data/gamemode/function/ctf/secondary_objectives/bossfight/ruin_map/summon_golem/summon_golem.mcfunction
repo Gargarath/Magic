@@ -13,8 +13,7 @@ execute if score min_players golem matches 0 run scoreboard players set min_play
 
 scoreboard players set invulnerable golem 1
 
-data modify storage main:killfeed bossname set value {"bold":false,"color":"green","text":"Le Gardien"}
-# met le nom du boss dans un storage (pour le killfeed)
+scoreboard players set $killfeed_boss_type secondary_objective_slot 5
 summon iron_golem -518.5 146 -110.5 {CustomNameVisible:1b,CustomName:{"bold":true,"color":"green","text":"Le Gardien"},Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["golem"],Passengers:[{id:"minecraft:item_display",NoGravity:1b,Tags:["show_golem_invulnerable"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1}}]}
 scoreboard players set @e[type=#boss] last_caster 0
 # fait en sorte que le boss puisse recevoir des sorts

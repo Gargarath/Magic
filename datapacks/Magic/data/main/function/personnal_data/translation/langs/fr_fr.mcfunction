@@ -488,6 +488,9 @@ data modify storage strings fr_fr set value {\
 "tr_secondary_objective_volcano":"Cœur du volcan",\
 "tr_secondary_objective_guardian":"Le Gardien",\
 "tr_secondary_objective_cherry":"Cerise vivante !",\
+"tr_killfeed_boss_lich":"Liche",\
+"tr_killfeed_boss_guardian":"Le Gardien",\
+"tr_killfeed_boss_cherry":"Cerise vivante",\
 "tr_point_capture":"Capture de l'objectif",\
 "tr_secondary_objective_blue_controls":"L'équipe bleue contrôle l'objectif secondaire !",\
 "tr_secondary_objective_red_controls":"L'équipe rouge contrôle l'objectif secondaire !",\

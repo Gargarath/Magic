@@ -11,8 +11,7 @@ execute if score blue playercount > red playercount run scoreboard players opera
 # si il y a plus de bleus que de rouges -> dis au système que le nombre de joueur minimal est = au nombre de joueur de l'équipe rouge
 execute if score min_players lich matches 0 run scoreboard players set min_players lich 1
 
-data modify storage main:killfeed bossname set value {"bold":false,"color":"gray","text":"Liche"}
-# met le nom du boss dans un storage (pour le killfeed)
+scoreboard players set $killfeed_boss_type secondary_objective_slot 2
 summon wither_skeleton 218 169 -281 {CustomNameVisible:0b,CustomName:{"bold":true,"color":"gray","text":"Liche"},Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["lich"],Passengers:[{id:"minecraft:item_display",NoGravity:1b,Tags:["show_lich_invulnerable"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1}}]}
 scoreboard players set @e[type=#boss] last_caster 0
 # fait en sorte que le boss puisse recevoir des sorts

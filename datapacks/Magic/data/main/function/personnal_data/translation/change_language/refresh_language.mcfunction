@@ -1,8 +1,5 @@
 # Appelée par change_language apres un changement de langue.
 # Actualise les textes visibles de @s sans toucher aux autres joueurs.
-scoreboard players set $refresh secondary_objective_slot 1
-execute if score @s secondary_objective_slot matches 1..32 unless score is_over secnd_objective matches 1 run function gamemode:ctf/secondary_objectives/bossbar/sync_player
-scoreboard players set $refresh secondary_objective_slot 0
 
 # clear admin book
 execute if score @s operator matches 2 run clear @s *[minecraft:custom_data={admin_item:1b}]
@@ -44,6 +41,11 @@ execute if score @s[scores={Player=1..}] InShop matches 1 if entity @s[tag=look_
 
 execute if score @s[scores={Player=1..}] InShop matches 1 if entity @s[tag=look_at_boots] run function shop:refresh/items/boots with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s[scores={Player=1..}] InShop matches 1 if entity @s[tag=look_at_boots] run function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
+
+# SECONDARY OBJECTIVES
+execute if score lonny enable_loop matches 0 if score shop enable_loop matches 0 run scoreboard players set $refresh secondary_objective_slot 1
+execute if score lonny enable_loop matches 0 if score shop enable_loop matches 0 if score @s secondary_objective_slot matches 1..32 unless score is_over secnd_objective matches 1 run function gamemode:ctf/secondary_objectives/bossbar/sync_player
+execute if score lonny enable_loop matches 0 if score shop enable_loop matches 0 run scoreboard players set $refresh secondary_objective_slot 0
 
 ## Nom de map
 execute unless score @s InLobby matches 1 if score $show_next_map option_panel matches 0 run function main:launch_arena/hide_map_name
