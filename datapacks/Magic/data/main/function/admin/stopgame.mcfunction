@@ -101,20 +101,8 @@ execute if score selected_map variables matches 6 run function main:reset/reset_
 tag @a remove save_inventory
 execute as @a run function main:fix_health/clear_and_fix_health
 
-scoreboard players reset @a spec_player1
-scoreboard players reset @a spec_player2
-scoreboard players reset @a spec_player3
-scoreboard players reset @a spec_player4
-scoreboard players reset @a spec_player5
-scoreboard players reset @a spec_player6
-scoreboard players reset @a spec_player7
-scoreboard players reset @a spec_player8
-scoreboard players reset @a spec_player9
-scoreboard players reset @a spec_player10
-scoreboard players reset @a spec_player11
-scoreboard players reset @a spec_player12
-scoreboard players reset @a spec_stop
-# reset les trigger de tous
+execute as @a[scores={Player=-1}] run function main:reset/reset_spec_inshop
+# reset les trigger des specs
 
 
 scoreboard players set @a IsAlive 0

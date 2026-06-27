@@ -13,6 +13,9 @@ execute if score yes used_reset matches 0 if score @s played_last_game matches 1
 function main:reset/resetspells/resetspells
 
 
+execute if score @s Player matches -1 run function main:reset/reset_spec_inshop
+# reset les trigger de tous
+
 scoreboard players set @s respawn_time -1
 
 

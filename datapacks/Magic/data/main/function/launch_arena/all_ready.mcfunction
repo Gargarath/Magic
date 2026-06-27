@@ -20,43 +20,8 @@ schedule clear shop:shop_timer/shop_timer
 
 scoreboard players set @a usespell 0
 
-scoreboard players set @a spec_player1 0
-scoreboard players set @a spec_player2 0
-scoreboard players set @a spec_player3 0
-scoreboard players set @a spec_player4 0
-scoreboard players set @a spec_player5 0
-scoreboard players set @a spec_player6 0
-scoreboard players set @a spec_player7 0
-scoreboard players set @a spec_player8 0
-scoreboard players set @a spec_player9 0
-scoreboard players set @a spec_player10 0
-scoreboard players set @a spec_player11 0
-scoreboard players set @a spec_player12 0
-tellraw @a[tag=spec_room1] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room2] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room3] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room4] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room5] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room6] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room7] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room8] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room9] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room10] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room11] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tellraw @a[tag=spec_room12] ["",{"text":"\nVous avez arrêté d'observer.","italic":true,"color":"gray"}]
-tag @a remove spec_room1
-tag @a remove spec_room2
-tag @a remove spec_room3
-tag @a remove spec_room4
-tag @a remove spec_room5
-tag @a remove spec_room6
-tag @a remove spec_room7
-tag @a remove spec_room8
-tag @a remove spec_room9
-tag @a remove spec_room10
-tag @a remove spec_room11
-tag @a remove spec_room12
-# permet de reset les spectateur en spec dans le shop
+execute as @a[scores={Player=-1}] run function main:reset/reset_spec_inshop
+# reset les trigger des specs
 
 
 team join red @a[tag=red_team]
@@ -85,21 +50,6 @@ team modify red collisionRule never
 team modify blue collisionRule never
 team modify red nametagVisibility never
 team modify blue nametagVisibility never
-
-scoreboard players reset @a spec_player1
-scoreboard players reset @a spec_player2
-scoreboard players reset @a spec_player3
-scoreboard players reset @a spec_player4
-scoreboard players reset @a spec_player5
-scoreboard players reset @a spec_player6
-scoreboard players reset @a spec_player7
-scoreboard players reset @a spec_player8
-scoreboard players reset @a spec_player9
-scoreboard players reset @a spec_player10
-scoreboard players reset @a spec_player11
-scoreboard players reset @a spec_player12
-scoreboard players reset @a spec_stop
-# reset les trigger de tous
 
 
 kill @e[type=item_frame,tag=weapon1]

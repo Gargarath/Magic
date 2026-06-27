@@ -60,19 +60,7 @@ attribute @s minecraft:entity_interaction_range base set 3
 attribute @s minecraft:block_interaction_range base set 4.5
 # reset la portée d'interaction block à @s (utilisé dans le shop pour les panneaux du shop)
 
-scoreboard players reset @s spec_player1
-scoreboard players reset @s spec_player2
-scoreboard players reset @s spec_player3
-scoreboard players reset @s spec_player4
-scoreboard players reset @s spec_player5
-scoreboard players reset @s spec_player6
-scoreboard players reset @s spec_player7
-scoreboard players reset @s spec_player8
-scoreboard players reset @s spec_player9
-scoreboard players reset @s spec_player10
-scoreboard players reset @s spec_player11
-scoreboard players reset @s spec_player12
-scoreboard players reset @s spec_stop
+execute if score @s Player matches -1 run function main:reset/reset_spec_inshop
 # reset les trigger de tous
 
 gamemode spectator @s[scores={Player=-1}]

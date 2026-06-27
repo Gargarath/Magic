@@ -19,6 +19,9 @@ execute if score lobby enable_loop matches 1 as @s[scores={Player=1..},tag=!in_l
 execute if score lobby enable_loop matches 0 as @s[scores={InLobby=1}] run function main:reconnect/someone_joined_during_match
 # si @s pendant la partie le fait devenir spectateur
 
+execute if score lobby enable_loop matches 1 unless score @s[scores={Player=-1}] InLobby matches 1 run function main:reconnect/put_back_in_lobby
+# si @s est un spec et n'est pas dans le lobby -> le remet dans le lobby
+
 execute if score lobby enable_loop matches 0 if score shop enable_loop matches 0 as @s[scores={InShop=1}] run function main:reconnect/reconnect_in_shop
 # si @s se reconnecte dans le shop et que le shop et lobby sont désactivés -> check quoi faire
 
