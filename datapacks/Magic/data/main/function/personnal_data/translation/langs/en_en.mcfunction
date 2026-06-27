@@ -497,6 +497,7 @@ data modify storage strings en_en set value {\
 "tr_map_secondary_objective_launch_map4":"The heart of the volcano has awakened! Capture it and its loot will be yours!",\
 "tr_map_secondary_objective_launch_map5":"The guardian has appeared in the temple!\nKill it to earn a reward!",\
 "tr_map_secondary_objective_launch_map6":"The cherry has come to life!\nKill it to earn a reward!",\
+"tr_gingerbread_warning":"Beware of the gingerbread!",\
 "tr_secondary_objective_countdown":"???",\
 "tr_secondary_objective_pirate":"Captain's Treasure",\
 "tr_secondary_objective_lich":"Lich",\

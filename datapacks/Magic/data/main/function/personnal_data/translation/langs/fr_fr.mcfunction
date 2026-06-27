@@ -496,6 +496,7 @@ data modify storage strings fr_fr set value {\
 "tr_map_secondary_objective_launch_map4":"Le coeur du volcan s'est réveillé ! Capturez le et son butin sera à vous !",\
 "tr_map_secondary_objective_launch_map5":"Le gardien est apparu dans le temple !\nTuez le pour obtenir une récompense !",\
 "tr_map_secondary_objective_launch_map6":"La cerise a prit vie !\nTuez la pour obtenir une récompense !",\
+"tr_gingerbread_warning":"Attention au pain d'épice !",\
 "tr_secondary_objective_countdown":"???",\
 "tr_secondary_objective_pirate":"Trésor du capitaine",\
 "tr_secondary_objective_lich":"Liche",\
