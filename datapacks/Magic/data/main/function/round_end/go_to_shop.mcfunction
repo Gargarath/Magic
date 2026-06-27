@@ -5,7 +5,7 @@ scoreboard players set spells enable_loop 0
 scoreboard players set shop enable_loop 1
 # Desactiver le CTF et spell et activer le shop
 execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message
-title @a title {"text":"Manche terminée !","color":"gold"}
+execute as @a run function main:round_end/messages/round_over with entity @s EnderItems[0].components.minecraft:custom_data
 # reset les bossbar
 bossbar set respawn:player1 players
 bossbar set respawn:player2 players

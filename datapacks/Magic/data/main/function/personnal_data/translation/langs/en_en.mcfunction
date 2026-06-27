@@ -534,6 +534,7 @@ data modify storage strings en_en set value {\
 "tr_secondary_objective_red_completed":"The red team completed the secondary objective!",\
 "tr_round_end_completed_round":"for completing round ",\
 "tr_round_end_completed_secondary_objective":"for completing the secondary objective in round ",\
+"tr_round_end_round_over":"Round over!",\
 \
 "tr_warrior_passive1_name":"Reinforced Armor",\
 "tr_warrior_passive1_lore_1":"Your chestplate grants you 1.5 times more health points.",\

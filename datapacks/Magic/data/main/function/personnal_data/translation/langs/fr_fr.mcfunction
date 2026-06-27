@@ -533,6 +533,7 @@ data modify storage strings fr_fr set value {\
 "tr_secondary_objective_red_completed":"L'équipe rouge a réussi l'objectif secondaire !",\
 "tr_round_end_completed_round":"pour avoir terminé la manche ",\
 "tr_round_end_completed_secondary_objective":"pour avoir réussi l'objectif secondaire de la manche ",\
+"tr_round_end_round_over":"Manche terminée !",\
 \
 "tr_warrior_passive1_name":"Armure blindée",\
 "tr_warrior_passive1_lore_1":"Votre plastron vous octroie 1,5 fois plus de points de vie.",\
