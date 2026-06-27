@@ -2,6 +2,9 @@
 # permet de lancer l'arêne bonbon
 
 
+execute if score $gamemode option_panel matches 0 run function main:launch_arena/respawn_markers/candyworld
+# setup les marker de respawn si on est en mode FFA
+
 execute if score shop enable_loop matches 0 as @a[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
 # met les spawns et tp les joueurs (seulement si le shop est désactivé, donc si on est par manche et qu'il faut tp les joueurs)
 

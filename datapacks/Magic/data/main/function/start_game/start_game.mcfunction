@@ -4,9 +4,6 @@ title @a reset
 dialog clear @a
 # clear les title et dialog de tous les joueurs
 
-execute if score $gamemode option_panel matches 0 run function main:start_game/start_gamemode/ffa
-execute if score $gamemode option_panel matches 1 run function main:start_game/start_gamemode/ctf
-
 scoreboard players set @a drop_item 0
 scoreboard players set @a hotbar_menu 0
 # met les joueurs dans le stade 0 du menu d'option hotbar
@@ -218,6 +215,9 @@ execute as @a[scores={Player=12},tag=archer,limit=1] run data modify storage gui
 
 scoreboard players operation $current playercount = player playercount
 # setup le nombre de joueur qui sert à calculer si ça bouge (détection d'une déco)
+
+execute if score $gamemode option_panel matches 0 run function main:start_game/start_gamemode/ffa
+execute if score $gamemode option_panel matches 1 run function main:start_game/start_gamemode/ctf
 
 scoreboard players set Is_ready Lobby_ready 0
 scoreboard players set shop is_working 0

@@ -15,4 +15,3 @@ summon minecraft:marker 11 65 25 {NoGravity:1b,Rotation:[87F,-13F],Tags:["respaw
 summon minecraft:marker 21 75 -21 {NoGravity:1b,Rotation:[63F,10F],Tags:["respawn_spot","respawn_spot11"]}
 summon minecraft:marker 20 70 -10 {NoGravity:1b,Rotation:[123F,3F],Tags:["respawn_spot","respawn_spot12"]}
 summon minecraft:marker 6 69 -16 {NoGravity:1b,Rotation:[-81F,0F],Tags:["respawn_spot","respawn_spot13"]}
-
