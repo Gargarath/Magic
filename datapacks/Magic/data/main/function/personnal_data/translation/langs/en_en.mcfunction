@@ -12,6 +12,11 @@ data modify storage strings en_en set value {\
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You have joined spectator mode!",\
 "tr_left_spectator":"You have left spectator mode!",\
+"tr_reconnect_match_ended":"The match is over! You have automatically been returned to the lobby.",\
+"tr_reconnect_left_arena":"You disconnected while in the arena! You have automatically been returned to the lobby.",\
+"tr_reconnect_joined_spectator":"A match has already started! You have automatically joined spectator mode.",\
+"tr_reconnect_joined_shop":"The match has already started! You have automatically rejoined.",\
+"tr_reconnect_stats_added":"Your statistics have been added to the leaderboard.",\
 \
 "tr_gui_ingame_spec_commands_1":"Moderator commands are",\
 "tr_gui_ingame_spec_commands_2":"accessible via the commands",\

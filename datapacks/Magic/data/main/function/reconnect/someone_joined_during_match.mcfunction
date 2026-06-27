@@ -48,7 +48,7 @@ attribute @s minecraft:waypoint_receive_range base reset
 title @s times 0 1000000000 0
 dialog clear @s
 
-tellraw @s ["",{"text":"Une partie a déjà commencée ! Vous êtes automatiquement passé en mode spectateur.","italic":true,"color":"gray"}]
+function main:reconnect/messages/joined_spectator with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 # indique à @s qu'il est passé en mode spectateur
 

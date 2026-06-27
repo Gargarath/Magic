@@ -3,7 +3,7 @@
 stopsound @s
 # coupe les sons de @s
 
-tellraw @s ["",{"text":"La partie est terminée ! Vous avez été automatiquement ramené au lobby.","italic":true,"color":"gray"}]
+function main:reconnect/messages/match_ended with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score yes used_reset matches 0 if score @s played_last_game matches 1 run function main:reconnect/refresh_leaderboard/refresh_leaderboard
 # permet de calculer le classement des joueurs et d'actualiser le leaderboard du spawn si il a joué la derniere game et qu'elle a pas été cancel

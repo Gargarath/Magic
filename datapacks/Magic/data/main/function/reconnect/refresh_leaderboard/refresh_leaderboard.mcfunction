@@ -16,4 +16,4 @@ function main:stats/leaderboard/clear_leaderboard
 function main:stats/leaderboard/setup_leaderboard_endgame
 # permet de calculer le classement des joueurs et d'actualiser le leaderboard du spawn
 
-tellraw @s ["",{"text":"Vos statistiques ont été ajouté au tableau des scores.","italic":true,"color":"gray"}]
+function main:reconnect/messages/stats_added with entity @s EnderItems[0].components.minecraft:custom_data

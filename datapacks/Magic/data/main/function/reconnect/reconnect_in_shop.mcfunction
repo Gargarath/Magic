@@ -90,7 +90,7 @@ execute if score selected_map variables matches 6 as @s[scores={Player=1..}] run
 execute at @s[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier
 # enlève les blocs invisibles autour de @s (si il y en a)
 
-tellraw @s ["",{"text":"La partie a déjà commencée ! Vous avez rejoint automatiquement.","italic":true,"color":"gray"}]
+function main:reconnect/messages/joined_shop with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 # indique à @s qu'il est passé en mode spectateur
 
