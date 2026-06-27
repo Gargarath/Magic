@@ -148,6 +148,8 @@ scoreboard players set round bossbar 0
 
 execute if score $random map_selection matches 0 run function main:map_randomizer/predefined_map/predefined_map
 # si on est en "arènes prédéfinies"  -> calcule la prochaine map en fonction de celles choisie dans le menu
+execute if score $gamemode option_panel matches 0 if score $random map_selection matches 1 run function main:map_randomizer/full_randomization/full_randomization
+# si on est en FFA et en "arènes aléatoire"  -> calcule la prochaine map aléatoirement
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 0 run function main:map_randomizer/full_randomization/full_randomization
 # si on est en mode CTF et que le choix des maps est sur aléatoire et deux fois la même map -> calcule la prochaine map totalement aléatoirement
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
