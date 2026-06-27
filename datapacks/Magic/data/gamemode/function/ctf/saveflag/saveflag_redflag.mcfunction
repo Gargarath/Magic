@@ -6,7 +6,8 @@ execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/
 kill @e[tag=Red_flag,tag=droped]
 
 
-tellraw @a ["",{"selector":"@s","bold":false},{"text":" a rapporté le drapeau rouge !","bold":false,"color":"dark_red"}]
+scoreboard players set $flag_message_type variables 5
+function gamemode:ctf/messages/flag/announce_player with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @a run playsound minecraft:entity.enderman.teleport master @p ~ ~ ~ 100 0
 data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE304"}
 function main:gui/display/refresh_gui

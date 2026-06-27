@@ -1,4 +1,5 @@
-tellraw @a ["",{"selector":"@s","bold":false},{"text":" a rapporté le drapeau rouge !","bold":false,"color":"dark_blue"}]
+scoreboard players set $flag_message_type variables 3
+function gamemode:ctf/messages/flag/announce_player with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @p ~ ~ ~ 100 1
 
 tag @s remove Has_Red_flag

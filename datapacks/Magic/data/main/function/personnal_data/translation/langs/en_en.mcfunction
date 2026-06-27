@@ -17,6 +17,16 @@ data modify storage strings en_en set value {\
 "tr_reconnect_joined_spectator":"A match has already started! You have automatically joined spectator mode.",\
 "tr_reconnect_joined_shop":"The match has already started! You have automatically rejoined.",\
 "tr_reconnect_stats_added":"Your statistics have been added to the leaderboard.",\
+"tr_ctf_flag_red_captured":" captured the red flag!",\
+"tr_ctf_flag_blue_captured":" captured the blue flag!",\
+"tr_ctf_flag_red_returned_by_player":" returned the red flag!",\
+"tr_ctf_flag_blue_returned_by_player":" returned the blue flag!",\
+"tr_ctf_flag_red_returned":"The red flag has been returned!",\
+"tr_ctf_flag_blue_returned":"The blue flag has been returned!",\
+"tr_ctf_flag_red_dropped":"The red flag has been dropped!",\
+"tr_ctf_flag_blue_dropped":"The blue flag has been dropped!",\
+"tr_ctf_flag_capture_bossbar":"Capture:",\
+"tr_ctf_flag_recovery_bossbar":"Saving:",\
 \
 "tr_gui_ingame_spec_commands_1":"Moderator commands are",\
 "tr_gui_ingame_spec_commands_2":"accessible via the commands",\

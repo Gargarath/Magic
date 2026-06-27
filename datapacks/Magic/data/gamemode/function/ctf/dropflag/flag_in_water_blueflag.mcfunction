@@ -3,7 +3,8 @@
 kill @e[tag=Blue_flag,tag=droped]
 
 
-tellraw @a [{"text":"Le drapeau bleu a été rapporté !","bold":false,"color":"dark_blue"}]
+scoreboard players set $flag_message_type variables 8
+function gamemode:ctf/messages/flag/announce_all
 execute at @a run playsound minecraft:entity.enderman.teleport master @p ~ ~ ~ 100 0
 data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE301"}
 function main:gui/display/refresh_gui

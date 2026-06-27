@@ -3,7 +3,6 @@
 scoreboard players add @s save_flag_time 1
 execute if score @s[scores={Player=2}] save_flag_time matches 1 run bossbar set saveflag:player2 players @s
 execute if score @s[scores={Player=2},team=red] save_flag_time matches 1 run bossbar set saveflag:player2 color red
-execute if score @s[scores={Player=2},team=red] save_flag_time matches 1 run bossbar set saveflag:player2 name ["",{"text":"Récupération:","bold":true,"color":"red"}]
 execute if score @s[scores={Player=2},team=blue] save_flag_time matches 1 run bossbar set saveflag:player2 color blue
-execute if score @s[scores={Player=2},team=blue] save_flag_time matches 1 run bossbar set saveflag:player2 name ["",{"text":"Récupération:","bold":true,"color":"blue"}]
+execute if score @s save_flag_time matches 1 run function gamemode:ctf/saveflag/bossbar/set_translated_name with entity @s EnderItems[0].components.minecraft:custom_data
 execute store result bossbar saveflag:player2 value run scoreboard players get @s save_flag_time

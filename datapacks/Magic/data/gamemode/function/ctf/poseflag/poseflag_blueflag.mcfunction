@@ -1,4 +1,5 @@
-tellraw @a ["",{"selector":"@s","bold":false},{"text":" a rapporté le drapeau bleu !","bold":false,"color":"dark_red"}]
+scoreboard players set $flag_message_type variables 4
+function gamemode:ctf/messages/flag/announce_player with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @p ~ ~ ~ 100 1
  # indique à tous que @s à rapporté le drapeau
 

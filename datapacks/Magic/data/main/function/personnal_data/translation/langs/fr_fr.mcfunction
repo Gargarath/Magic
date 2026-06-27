@@ -17,6 +17,16 @@ data modify storage strings fr_fr set value {\
 "tr_reconnect_joined_spectator":"Une partie a déjà commencé ! Vous êtes automatiquement passé en mode spectateur.",\
 "tr_reconnect_joined_shop":"La partie a déjà commencé ! Vous avez rejoint automatiquement.",\
 "tr_reconnect_stats_added":"Vos statistiques ont été ajoutées au tableau des scores.",\
+"tr_ctf_flag_red_captured":" a capturé le drapeau rouge !",\
+"tr_ctf_flag_blue_captured":" a capturé le drapeau bleu !",\
+"tr_ctf_flag_red_returned_by_player":" a rapporté le drapeau rouge !",\
+"tr_ctf_flag_blue_returned_by_player":" a rapporté le drapeau bleu !",\
+"tr_ctf_flag_red_returned":"Le drapeau rouge a été rapporté !",\
+"tr_ctf_flag_blue_returned":"Le drapeau bleu a été rapporté !",\
+"tr_ctf_flag_red_dropped":"Le drapeau rouge est tombé !",\
+"tr_ctf_flag_blue_dropped":"Le drapeau bleu est tombé !",\
+"tr_ctf_flag_capture_bossbar":"Capture :",\
+"tr_ctf_flag_recovery_bossbar":"Récupération :",\
 \
 "tr_gui_ingame_spec_commands_1":"Les commandes de modérateur sont",\
 "tr_gui_ingame_spec_commands_2":"accessibles via les commandes",\

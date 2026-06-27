@@ -8,7 +8,8 @@ item replace entity @s weapon.offhand from block 13 97 11 container.6
 execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/spell1_r/nomoreinvisibility_r
 # si @s est fufu -> le sort de son invisibilité
 
-tellraw @a ["",{"selector":"@a[tag=Has_Blue_flag]","bold":false},{"text":" a capturé le drapeau bleu !","bold":false,"color":"blue"}]
+scoreboard players set $flag_message_type variables 2
+function gamemode:ctf/messages/flag/announce_player with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @a run playsound minecraft:entity.iron_golem.death master @p ~ ~ ~ 100 2
 data modify storage minecraft:matchinfo.blue flag_state set value {"text":"\uE302"}
 function main:gui/display/refresh_gui

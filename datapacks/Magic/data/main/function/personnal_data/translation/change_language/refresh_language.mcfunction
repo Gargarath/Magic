@@ -3,6 +3,8 @@
 
 execute if score $gamemode option_panel matches 1 if score @s respawn_time matches 0.. run function gamemode:ctf/respawns/bossbar/refresh_name with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score @s gui_actionbar_alert matches 1.. run function main:gui/actionbar/set_translated_alert with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s cap_flag_time matches 1.. run function gamemode:ctf/capflag_droped/bossbar/set_translated_name with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s save_flag_time matches 1.. run function gamemode:ctf/saveflag/bossbar/set_translated_name with entity @s EnderItems[0].components.minecraft:custom_data
 
 # clear admin book
 execute if score @s operator matches 2 run clear @s *[minecraft:custom_data={admin_item:1b}]

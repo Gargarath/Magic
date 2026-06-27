@@ -160,6 +160,7 @@ execute if score $show_next_map option_panel matches 0 as @a run function main:l
 # si la prochaine map est masquée, la masque
 execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 
+scoreboard players reset * played_last_game
 scoreboard players set @a[scores={Player=1..}] played_last_game 1
 # ajoute les joueurs connecté à la liste des joueurs qui ont joué la dernière game
 

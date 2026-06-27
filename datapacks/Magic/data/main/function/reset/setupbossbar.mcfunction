@@ -49,18 +49,18 @@ bossbar set lich:dmg_aoe name ["",{"text":"Maudit !","bold":true,"color":"gray"}
 bossbar set lich:dmg_aoe color red
 bossbar set lich:dmg_aoe max 50
 
-bossbar add saveflag:player1 {"text":"Récupération:"}
-bossbar add saveflag:player2 {"text":"Récupération:"}
-bossbar add saveflag:player3 {"text":"Récupération:"}
-bossbar add saveflag:player4 {"text":"Récupération:"}
-bossbar add saveflag:player5 {"text":"Récupération:"}
-bossbar add saveflag:player6 {"text":"Récupération:"}
-bossbar add saveflag:player7 {"text":"Récupération:"}
-bossbar add saveflag:player8 {"text":"Récupération:"}
-bossbar add saveflag:player9 {"text":"Récupération:"}
-bossbar add saveflag:player10 {"text":"Récupération:"}
-bossbar add saveflag:player11 {"text":"Récupération:"}
-bossbar add saveflag:player12 {"text":"Récupération:"}
+bossbar add saveflag:player1 {"text":""}
+bossbar add saveflag:player2 {"text":""}
+bossbar add saveflag:player3 {"text":""}
+bossbar add saveflag:player4 {"text":""}
+bossbar add saveflag:player5 {"text":""}
+bossbar add saveflag:player6 {"text":""}
+bossbar add saveflag:player7 {"text":""}
+bossbar add saveflag:player8 {"text":""}
+bossbar add saveflag:player9 {"text":""}
+bossbar add saveflag:player10 {"text":""}
+bossbar add saveflag:player11 {"text":""}
+bossbar add saveflag:player12 {"text":""}
 bossbar set saveflag:player1 max 60
 bossbar set saveflag:player2 max 60
 bossbar set saveflag:player3 max 60
@@ -74,18 +74,18 @@ bossbar set saveflag:player10 max 60
 bossbar set saveflag:player11 max 60
 bossbar set saveflag:player12 max 60
 
-bossbar add capflag:player1 {"text":"Capture :"}
-bossbar add capflag:player2 {"text":"Capture :"}
-bossbar add capflag:player3 {"text":"Capture :"}
-bossbar add capflag:player4 {"text":"Capture :"}
-bossbar add capflag:player5 {"text":"Capture :"}
-bossbar add capflag:player6 {"text":"Capture :"}
-bossbar add capflag:player7 {"text":"Capture :"}
-bossbar add capflag:player8 {"text":"Capture :"}
-bossbar add capflag:player9 {"text":"Capture :"}
-bossbar add capflag:player10 {"text":"Capture :"}
-bossbar add capflag:player11 {"text":"Capture :"}
-bossbar add capflag:player12 {"text":"Capture :"}
+bossbar add capflag:player1 {"text":""}
+bossbar add capflag:player2 {"text":""}
+bossbar add capflag:player3 {"text":""}
+bossbar add capflag:player4 {"text":""}
+bossbar add capflag:player5 {"text":""}
+bossbar add capflag:player6 {"text":""}
+bossbar add capflag:player7 {"text":""}
+bossbar add capflag:player8 {"text":""}
+bossbar add capflag:player9 {"text":""}
+bossbar add capflag:player10 {"text":""}
+bossbar add capflag:player11 {"text":""}
+bossbar add capflag:player12 {"text":""}
 bossbar set capflag:player1 max 15
 bossbar set capflag:player2 max 15
 bossbar set capflag:player3 max 15

@@ -69,7 +69,8 @@ execute if score red flag_wrong_place matches 0 as @e[tag=Red_flag,tag=droped] a
 execute if score red flag_wrong_place matches 0 at @e[tag=Red_flag] run tp @e[tag=Red_banner] ~ ~-1.77 ~0.2
 # tp la banniere là où le joueur est mort avec le drapeau si il n'y a pas eu d'erreurs
 
-execute if score red flag_wrong_place matches 0 run tellraw @a {"text":"Le drapeau rouge est tombé !","color":"red","bold":false}
+scoreboard players set $flag_message_type variables 9
+execute if score red flag_wrong_place matches 0 run function gamemode:ctf/messages/flag/announce_all
 execute if score red flag_wrong_place matches 0 at @a run playsound minecraft:entity.zombie.break_wooden_door master @p ~ ~ ~ 100 2
 execute if score red flag_wrong_place matches 0 as @e[type=armor_stand,tag=Red_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_red_dropped
 data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE306"}

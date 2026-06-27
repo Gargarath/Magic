@@ -9,7 +9,8 @@ execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/
 # si @s est fufu -> le sort de son invisibilité
 
 
-tellraw @a ["",{"selector":"@a[tag=Has_Red_flag]","bold":false},{"text":" a capturé le drapeau rouge !","bold":false,"color":"red"}]
+scoreboard players set $flag_message_type variables 1
+function gamemode:ctf/messages/flag/announce_player with entity @s EnderItems[0].components.minecraft:custom_data
 execute at @a run playsound minecraft:entity.iron_golem.death master @p ~ ~ ~ 100 2
 data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE305"}
 function main:gui/display/refresh_gui
