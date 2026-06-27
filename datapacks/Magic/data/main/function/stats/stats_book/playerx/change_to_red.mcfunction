@@ -20,8 +20,7 @@ $data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minec
 $data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append value "\n\n\n\n----------------\n\n"
 $data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append value {text:"$(tr_stats_book_team) ",bold:1b}
 
-# 5) Team & Class depuis le storage
-# Si ce sont des *composants*, on copie "from storage" :
-$data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append from storage stats:leaderboards by_player.$(player_last_game).team
+# 5) Team & Class depuis les traductions personnelles
+$data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append value $(team_last_game)
 $data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append value {text:"\n$(tr_stats_book_class) ",bold:1b}
-$data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append from storage stats:leaderboards by_player.$(player_last_game).class
+$data modify block 13 97 13 Items[{Slot:$(player_last_game)b}].components."minecraft:written_book_content".pages[0].raw.extra append value $(class_last_game)
