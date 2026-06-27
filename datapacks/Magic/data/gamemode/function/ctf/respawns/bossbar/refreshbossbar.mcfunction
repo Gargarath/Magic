@@ -3,6 +3,8 @@
 execute if score @s respawn_time < @s max_respawn_bar run scoreboard players add @s respawn_time 1
 # ajoute 1 de score de respawn time si @s n'est pas au max de sa barre de respawn
 
+function gamemode:ctf/respawns/bossbar/refresh_name with entity @s EnderItems[0].components.minecraft:custom_data
+
 execute if score @s Player matches 1 run function gamemode:ctf/respawns/bossbar/refreshbossbar/refreshbossbar_player1
 # si le joueur 1 est en attente de respawn alors on actualise sa bossbar.
 execute if score @s Player matches 2 run function gamemode:ctf/respawns/bossbar/refreshbossbar/refreshbossbar_player2

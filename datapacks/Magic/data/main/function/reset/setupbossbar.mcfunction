@@ -285,18 +285,18 @@ bossbar set frozen:player10 color blue
 bossbar set frozen:player11 color blue
 bossbar set frozen:player12 color blue
 
-bossbar add respawn:player1 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player2 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player3 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player4 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player5 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player6 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player7 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player8 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player9 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player10 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player11 {"text":"Réapparition :","color":"red"}
-bossbar add respawn:player12 {"text":"Réapparition :","color":"red"}
+bossbar add respawn:player1 {"text":""}
+bossbar add respawn:player2 {"text":""}
+bossbar add respawn:player3 {"text":""}
+bossbar add respawn:player4 {"text":""}
+bossbar add respawn:player5 {"text":""}
+bossbar add respawn:player6 {"text":""}
+bossbar add respawn:player7 {"text":""}
+bossbar add respawn:player8 {"text":""}
+bossbar add respawn:player9 {"text":""}
+bossbar add respawn:player10 {"text":""}
+bossbar add respawn:player11 {"text":""}
+bossbar add respawn:player12 {"text":""}
 bossbar set respawn:player1 color red
 bossbar set respawn:player2 color red
 bossbar set respawn:player3 color red

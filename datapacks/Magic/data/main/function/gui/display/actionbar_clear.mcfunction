@@ -16,4 +16,5 @@ execute if score @s Player matches 12 run data modify storage gui player.12.acti
 # clear l'action bar de @s
 
 scoreboard players set @s gui_actionbar_alert -1
+scoreboard players set @s gui_actionbar_message -1
 # indique que son actionbar est vide

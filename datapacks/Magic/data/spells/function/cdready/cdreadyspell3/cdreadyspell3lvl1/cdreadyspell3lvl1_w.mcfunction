@@ -1,17 +1,7 @@
 # Indique au guerrier que son cooldown du spell 3 lvl 1 est terminé !
 
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 1 run data modify storage gui player.1.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 2 run data modify storage gui player.2.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 3 run data modify storage gui player.3.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 4 run data modify storage gui player.4.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 5 run data modify storage gui player.5.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 6 run data modify storage gui player.6.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 7 run data modify storage gui player.7.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 8 run data modify storage gui player.8.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 9 run data modify storage gui player.9.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 10 run data modify storage gui player.10.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 11 run data modify storage gui player.11.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
-execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 12 run data modify storage gui player.12.actionbar.alert set value [{"interpret":true,"nbt":"warrior.spells.spell3lvl1.name","storage":"ressources"},{"color":"green","text":" : disponible"}]
+execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 1..12 run scoreboard players set @s gui_actionbar_message 107
+execute if score $no_cooldowns option_panel matches 0 if score @s Player matches 1..12 run function main:gui/actionbar/set_translated_alert with entity @s EnderItems[0].components.minecraft:custom_data
 execute if score $no_cooldowns option_panel matches 0 run scoreboard players set @s gui_actionbar_alert 55
 # affiche le message sur l'actionbar de @s pendant 55 tick
 

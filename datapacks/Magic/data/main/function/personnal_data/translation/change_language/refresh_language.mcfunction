@@ -1,6 +1,9 @@
 # Appelée par change_language apres un changement de langue.
 # Actualise les textes visibles de @s sans toucher aux autres joueurs.
 
+execute if score $gamemode option_panel matches 1 if score @s respawn_time matches 0.. run function gamemode:ctf/respawns/bossbar/refresh_name with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s gui_actionbar_alert matches 1.. run function main:gui/actionbar/set_translated_alert with entity @s EnderItems[0].components.minecraft:custom_data
+
 # clear admin book
 execute if score @s operator matches 2 run clear @s *[minecraft:custom_data={admin_item:1b}]
 

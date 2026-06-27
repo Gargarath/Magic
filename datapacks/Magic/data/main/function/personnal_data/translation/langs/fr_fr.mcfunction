@@ -491,6 +491,26 @@ data modify storage strings fr_fr set value {\
 "tr_killfeed_boss_lich":"Liche",\
 "tr_killfeed_boss_guardian":"Le Gardien",\
 "tr_killfeed_boss_cherry":"Cerise vivante",\
+"tr_alert_no_spell_in_spawn":"Pas de sorts dans les spawns !",\
+"tr_respawn_bossbar":"Réapparition :",\
+"tr_actionbar_next_explosive_arrow":"Votre prochaine flèche explosera !",\
+"tr_actionbar_next_freeze_arrow":"Votre prochaine flèche gèlera sa cible !",\
+"tr_actionbar_next_combined_arrow_1":"Votre prochaine flèche explosera",\
+"tr_actionbar_next_combined_arrow_2":" et gèlera sa cible !",\
+"tr_actionbar_cannot_teleport_here":"Impossible de se téléporter ici !",\
+"tr_actionbar_teleport_too_far":"Trop loin pour se téléporter !",\
+"tr_actionbar_shadow_path_placed":"L'entrée de voie des ombres a été posée !",\
+"tr_actionbar_shadow_path_destroyed":"Votre voie des ombres a été détruite !",\
+"tr_actionbar_bear_trap_placed":"Votre piège à ours a été posé !",\
+"tr_actionbar_trap_destroyed":"Votre piège a été détruit !",\
+"tr_actionbar_own_trap_destroyed":"Vous avez détruit votre piège.",\
+"tr_actionbar_cannot_cast_here":"Impossible de lancer ce sort ici !",\
+"tr_actionbar_cannot_cast_during_countdown":"Impossible de lancer des sorts pendant l'attente !",\
+"tr_actionbar_cannot_cast_while_hooking":"Impossible de lancer un sort en agrippant !",\
+"tr_actionbar_cannot_cast_while_hooked":"Impossible de lancer un sort en étant agrippé !",\
+"tr_actionbar_cannot_cast_while_trapped":"Impossible de lancer un sort en étant piégé !",\
+"tr_actionbar_cannot_hook_in_respawn":"Impossible d'utiliser le grappin dans les zones de réapparition !",\
+"tr_actionbar_cooldown_ready":" : disponible",\
 "tr_point_capture":"Capture de l'objectif",\
 "tr_secondary_objective_blue_controls":"L'équipe bleue contrôle l'objectif secondaire !",\
 "tr_secondary_objective_red_controls":"L'équipe rouge contrôle l'objectif secondaire !",\

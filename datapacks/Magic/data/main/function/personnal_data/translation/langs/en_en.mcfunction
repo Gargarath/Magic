@@ -492,6 +492,26 @@ data modify storage strings en_en set value {\
 "tr_killfeed_boss_lich":"Lich",\
 "tr_killfeed_boss_guardian":"The Guardian",\
 "tr_killfeed_boss_cherry":"Living Cherry",\
+"tr_respawn_bossbar":"Respawn:",\
+"tr_alert_no_spell_in_spawn":"No spells in spawn!",\
+"tr_actionbar_next_explosive_arrow":"Your next arrow will explode!",\
+"tr_actionbar_next_freeze_arrow":"Your next arrow will freeze its target!",\
+"tr_actionbar_next_combined_arrow_1":"Your next arrow will explode",\
+"tr_actionbar_next_combined_arrow_2":" and freeze its target!",\
+"tr_actionbar_cannot_teleport_here":"You cannot teleport here!",\
+"tr_actionbar_teleport_too_far":"Too far away to teleport!",\
+"tr_actionbar_shadow_path_placed":"The shadow path entrance has been placed!",\
+"tr_actionbar_shadow_path_destroyed":"Your shadow path was destroyed!",\
+"tr_actionbar_bear_trap_placed":"Your bear trap has been placed!",\
+"tr_actionbar_trap_destroyed":"Your trap was destroyed!",\
+"tr_actionbar_own_trap_destroyed":"You destroyed your trap.",\
+"tr_actionbar_cannot_cast_here":"This spell cannot be cast here!",\
+"tr_actionbar_cannot_cast_during_countdown":"Spells cannot be cast during the countdown!",\
+"tr_actionbar_cannot_cast_while_hooking":"You cannot cast a spell while using the grappling hook!",\
+"tr_actionbar_cannot_cast_while_hooked":"You cannot cast a spell while being grappled!",\
+"tr_actionbar_cannot_cast_while_trapped":"You cannot cast a spell while trapped!",\
+"tr_actionbar_cannot_hook_in_respawn":"You cannot use the grappling hook in respawn areas!",\
+"tr_actionbar_cooldown_ready":" : ready",\
 "tr_point_capture":"Capturing the objective",\
 "tr_secondary_objective_blue_controls":"The blue team controls the secondary objective!",\
 "tr_secondary_objective_red_controls":"The red team controls the secondary objective!",\

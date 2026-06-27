@@ -29,6 +29,7 @@ scoreboard objectives add is_jumping minecraft.custom:minecraft.jump
 
 # gui
 scoreboard objectives add gui_actionbar_alert dummy
+scoreboard objectives add gui_actionbar_message dummy
 
 # options
 scoreboard objectives add opt_open_options trigger
