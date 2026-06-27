@@ -389,7 +389,7 @@ data modify storage strings en_en set value {\
 "tr_stat_title_deathcount":"Deaths",\
 "tr_stat_title_total_dmg":"Damage dealt",\
 "tr_stat_title_dmg_recieved":"Damage taken",\
-"tr_stat_title_obj_score":"Stratégic score",\
+"tr_stat_title_obj_score":"Strategic score",\
 "tr_stat_title_total_money_earned":"Money earned",\
 "tr_stat_title_flag_earned":"Flags returned",\
 \
