@@ -536,6 +536,13 @@ data modify storage strings en_en set value {\
 "tr_round_end_completed_round":"for completing round ",\
 "tr_round_end_completed_secondary_objective":"for completing the secondary objective in round ",\
 "tr_round_end_round_over":"Round over!",\
+"tr_end_game_ffa_wins_with":"wins with",\
+"tr_end_game_ffa_eliminations":"kills",\
+"tr_end_game_ctf_victory":"Victory!",\
+"tr_end_game_ctf_defeat":"Defeat :(",\
+"tr_end_game_ctf_draw":"Draw",\
+"tr_end_game_ctf_blue_team_won":"The blue team won!",\
+"tr_end_game_ctf_red_team_won":"The red team won!",\
 \
 "tr_warrior_passive1_name":"Reinforced Armor",\
 "tr_warrior_passive1_lore_1":"Your chestplate grants you 1.5 times more health points.",\

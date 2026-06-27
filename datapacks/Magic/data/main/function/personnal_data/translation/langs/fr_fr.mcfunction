@@ -535,6 +535,13 @@ data modify storage strings fr_fr set value {\
 "tr_round_end_completed_round":"pour avoir terminé la manche ",\
 "tr_round_end_completed_secondary_objective":"pour avoir réussi l'objectif secondaire de la manche ",\
 "tr_round_end_round_over":"Manche terminée !",\
+"tr_end_game_ffa_wins_with":"gagne avec",\
+"tr_end_game_ffa_eliminations":"éliminations",\
+"tr_end_game_ctf_victory":"Victoire !",\
+"tr_end_game_ctf_defeat":"Défaite :(",\
+"tr_end_game_ctf_draw":"Égalité",\
+"tr_end_game_ctf_blue_team_won":"L'équipe bleue a gagné !",\
+"tr_end_game_ctf_red_team_won":"L'équipe rouge a gagné !",\
 \
 "tr_warrior_passive1_name":"Armure blindée",\
 "tr_warrior_passive1_lore_1":"Votre plastron vous octroie 1,5 fois plus de points de vie.",\

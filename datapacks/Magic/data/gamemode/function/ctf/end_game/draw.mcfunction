@@ -3,7 +3,7 @@
 
 
 execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message
-title @a title {"text":"Egalitée","bold":true,"color":"gray"}
+execute as @a run function gamemode:ctf/end_game/messages/draw with entity @s EnderItems[0].components.minecraft:custom_data
 title @a[team=blue] subtitle ["",{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"blue"},{"text":" - "},{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"red"}]
 title @a[team=respawn_blue] subtitle ["",{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"blue"},{"text":" - "},{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"red"}]
 title @a[team=red] subtitle ["",{"score":{"name":"Rouges","objective":"Flag_posed"},"color":"red"},{"text":" - "},{"score":{"name":"Bleus","objective":"Flag_posed"},"color":"blue"}]

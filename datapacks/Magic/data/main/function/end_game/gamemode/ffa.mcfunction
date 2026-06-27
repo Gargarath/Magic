@@ -5,7 +5,8 @@ function main:reset/resetffa
 # reset tout ce qui est lié au FFA
 
 execute as @a run function main:ressource_pack_detector/display_something_else/show_another_message
-title @a title {"selector":"@s"}
-title @a subtitle ["",{"text":"gagne avec ","color":"gold"},{"score":{"name":"@s","objective":"stat_killcount_player"},"color":"yellow"},{"text":" kills","color":"gold"},]
+tag @s add endgame_ffa_winner
+execute as @a run function main:end_game/messages/ffa with entity @s EnderItems[0].components.minecraft:custom_data
+tag @s remove endgame_ffa_winner
 
 scoreboard players add @s stat_victory 1
