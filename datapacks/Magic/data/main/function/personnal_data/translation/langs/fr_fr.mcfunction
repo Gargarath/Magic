@@ -49,7 +49,8 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_language":"Langue",\
 "tr_inventory_menu_language_en":"Anglais",\
 "tr_inventory_menu_language_fr":"Français",\
-"tr_inventory_menu_language_lore":"\uE400 Cliquez pour changer la langue",\
+"tr_inventory_menu_language_lore_1":"\uE400 Cliquez",\
+"tr_inventory_menu_language_lore_2":"pour changer la langue",\
 \
 "tr_lobby_jump_pad_maps":"Visiter les arènes",\
 "tr_lobby_jump_pad_stats":"Île de statistiques",\
