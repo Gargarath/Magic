@@ -49,7 +49,7 @@ data modify storage strings en_en set value {\
 "tr_inventory_menu_language":"Language",\
 "tr_inventory_menu_language_en":"English",\
 "tr_inventory_menu_language_fr":"French",\
-"tr_inventory_menu_language_lore":"Click to change language",\
+"tr_inventory_menu_language_lore":"\uE400 Click to change language",\
 \
 "tr_lobby_jump_pad_maps":"Visit maps",\
 "tr_lobby_jump_pad_stats":"Stats island",\

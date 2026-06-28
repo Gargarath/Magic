@@ -27,4 +27,3 @@ summon minecraft:marker 190 168 -259 {NoGravity:1b,Rotation:[-162F,0F],Tags:["re
 summon minecraft:marker 182 168 -309 {NoGravity:1b,Rotation:[-47.8F,0F],Tags:["respawn_spot","respawn_spot12"]}
 
 summon minecraft:marker 198 168 -279 {NoGravity:1b,Rotation:[-98.5F,0F],Tags:["respawn_spot","respawn_spot13"]}
-say 1

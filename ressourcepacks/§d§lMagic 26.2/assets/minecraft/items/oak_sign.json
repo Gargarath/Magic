@@ -342,6 +342,20 @@
           "type": "model",
           "model": "item/shop/redo_all"
         } 
+      },
+            {
+        "when": "inventory_lang_fr_fr",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/lang/fr_fr"
+        }
+      },
+            {
+        "when": "inventory_lang_en_us",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/lang/en_us"
+        }
       }
     ]
   }
