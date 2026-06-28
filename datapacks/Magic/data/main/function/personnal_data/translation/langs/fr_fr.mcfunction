@@ -581,6 +581,10 @@ data modify storage strings fr_fr set value {\
 "tr_end_game_ctf_draw":"Égalité",\
 "tr_end_game_ctf_blue_team_won":"L'équipe bleue a gagné !",\
 "tr_end_game_ctf_red_team_won":"L'équipe rouge a gagné !",\
+"tr_teamkill_own_team_eliminated":"Votre équipe a été éliminée !",\
+"tr_teamkill_enemy_team_eliminated":"Équipe adverse éliminée !",\
+"tr_teamkill_blue_team_eliminated":"Équipe bleue éliminée !",\
+"tr_teamkill_red_team_eliminated":"Équipe rouge éliminée !",\
 \
 "tr_warrior_passive1_name":"Armure blindée",\
 "tr_warrior_passive1_lore_1":"Votre plastron vous octroie 1,5 fois plus de points de vie.",\

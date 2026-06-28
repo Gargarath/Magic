@@ -581,6 +581,10 @@ data modify storage strings en_en set value {\
 "tr_end_game_ctf_draw":"Draw",\
 "tr_end_game_ctf_blue_team_won":"The blue team won!",\
 "tr_end_game_ctf_red_team_won":"The red team won!",\
+"tr_teamkill_own_team_eliminated":"Your team has been eliminated!",\
+"tr_teamkill_enemy_team_eliminated":"Teamkill!",\
+"tr_teamkill_blue_team_eliminated":"Blue team eliminated!",\
+"tr_teamkill_red_team_eliminated":"Red team eliminated!",\
 \
 "tr_warrior_passive1_name":"Reinforced Armor",\
 "tr_warrior_passive1_lore_1":"Your chestplate grants you 1.5 times more health points.",\
