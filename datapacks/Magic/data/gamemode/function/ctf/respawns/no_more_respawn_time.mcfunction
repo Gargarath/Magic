@@ -9,6 +9,9 @@ execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base s
 schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
 # permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)
 
+function main:ressource_pack_detector/display_something_else/show_another_message
+# clear l'affichage en title ( en cas de teamkill)
+
 execute as @s[scores={Player=1}] run bossbar set respawn:player1 players
 execute as @s[scores={Player=2}] run bossbar set respawn:player2 players
 execute as @s[scores={Player=3}] run bossbar set respawn:player3 players
