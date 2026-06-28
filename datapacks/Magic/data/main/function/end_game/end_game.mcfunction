@@ -70,3 +70,4 @@ effect clear @a minecraft:strength
 effect clear @a minecraft:speed
 tag @a remove save_inventory
 execute as @a run function main:fix_health/clear_and_fix_health
+execute as @a run function main:items_positions/cleanup_armor

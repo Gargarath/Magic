@@ -1,6 +1,9 @@
 ## appelee par test quand @s peut acheter
 # lui fait acheter l'item
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
+
 execute at @s run playsound minecraft:block.note_block.hat master @s
 
 $scoreboard players remove @s PH $(price)
@@ -27,3 +30,6 @@ $function shop:refresh/items/$(item_category) with entity @s EnderItems[0].compo
 # actualise l'item que @s vient d'acheter (prix / level / item)
 function shop:look_at/display_infos/display_infos with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise l'overlay de @s
+
+tag @s remove inventory_rebuilding
+tag @s add save_inventory

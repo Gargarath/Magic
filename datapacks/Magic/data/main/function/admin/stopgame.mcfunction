@@ -100,6 +100,7 @@ execute if score selected_map variables matches 6 run function main:reset/reset_
 
 tag @a remove save_inventory
 execute as @a run function main:fix_health/clear_and_fix_health
+execute as @a run function main:items_positions/cleanup_armor
 
 execute as @a[scores={Player=-1}] run function main:reset/reset_spec_inshop
 # reset les trigger des specs
