@@ -536,6 +536,10 @@ data modify storage strings en_en set value {\
 "tr_round_end_completed_round":"for completing round ",\
 "tr_round_end_completed_secondary_objective":"for completing the secondary objective in round ",\
 "tr_round_end_round_over":"Round over!",\
+\
+"tr_ffa_objective_title":"Kills:",\
+"tr_ffa_objective_goal":"Goal:",\
+\
 "tr_end_game_ffa_wins_with":"wins with",\
 "tr_end_game_ffa_eliminations":"kills",\
 "tr_end_game_ctf_victory":"Victory!",\

@@ -5,22 +5,13 @@
    "advances": {
     " ": 4,
     "\u200c": 0,
-    "\uE750": 70000,
-    "\uE751": -70000,
-    "\uE701": 1,
-    "\uE702": 2,
-    "\uE703": 3,
-    "\uE704": 4,
-    "\uE705": 5,
-    "\uE706": 6,
-    "\uE707": 7,
-    "\uE708": 8
+    "\"":0
    }
   },
   {
    "type": "bitmap",
    "file": "minecraft:font/ascii.png",
-   "ascent": -70065,
+   "ascent": -60145,
    "chars": [
     "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
@@ -44,7 +35,7 @@
   "type": "bitmap",
   "file": "minecraft:font/accented.png",
   "height": 12,
-  "ascent": -70062,
+  "ascent": -60142,
   "chars": [
     "\u00C0\u00C1\u00C2\u00C3\u00C4\u00C5\u00C6\u00C7\u00C8\u00C9\u00CA\u00CB\u00CC\u00CD\u00CE\u00CF",
     "\u00D0\u00D1\u00D2\u00D3\u00D4\u00D5\u00D6\u00D9\u00DA\u00DB\u00DC\u00DD\u00E0\u00E1\u00E2\u00E3",
@@ -126,198 +117,191 @@
           {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/default.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE000"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/mage_stick.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE001"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/firetrail.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE002"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/stormed.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE003"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/explosed.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE004"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/trapped.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE005"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/hook.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE006"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/liquids.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE100"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/death_trail.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE200"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/darkness_trail.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE201"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/soul_drainer.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE202"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/killfeed/picked_up.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE203"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_blue_base.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE301"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_blue_carried.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE302"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_blue_dropped.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE303"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_red_base.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE304"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_red_carried.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE305"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/flag_red_dropped.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 9,
             "chars": ["\uE306"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/secondary_objective_empty.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 7,
             "chars": ["\uE307"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/timer_bossbar/secondary_objective_full.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 7,
             "chars": ["\uE308"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/left_click.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 8,
             "chars": ["\uE400"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/right_click.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 8,
             "chars": ["\uE401"]
         },
         {
             "type": "bitmap",
             "file": "minecraft:item/gui/generic/operator_icon.png",
-            "ascent": -70065,
+            "ascent": -60145,
             "height": 8,
             "chars": ["\uE600"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/gui/generic/class_icons/warrior_head.png",
-            "ascent": -70065,
-            "height": 16,
-            "chars": ["\uE621"]
+            "file": "minecraft:item/gui/generic/class_icons/warrior.png",
+            "ascent": -60145,
+            "height": 8,
+            "chars": ["\uE601"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/gui/generic/class_icons/archer_head.png",
-            "ascent": -70065,
-            "height": 16,
-            "chars": ["\uE622"]
+            "file": "minecraft:item/gui/generic/class_icons/archer.png",
+            "ascent": -60145,
+            "height": 8,
+            "chars": ["\uE602"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/gui/generic/class_icons/mage_head.png",
-            "ascent": -70065,
-            "height": 16,
-            "chars": ["\uE623"]
+            "file": "minecraft:item/gui/generic/class_icons/mage.png",
+            "ascent": -60145,
+            "height": 8,
+            "chars": ["\uE603"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/gui/generic/class_icons/rogue_head.png",
-            "ascent": -70065,
-            "height": 16,
-            "chars": ["\uE624"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:item/gui/top_bar/gui_ffa.png",
-            "ascent": -70065,
-            "height": 64,
-            "chars": ["\uE635"]
+            "file": "minecraft:item/gui/generic/class_icons/rogue.png",
+            "ascent": -60145,
+            "height": 8,
+            "chars": ["\uE604"]
         }
  ]
 }

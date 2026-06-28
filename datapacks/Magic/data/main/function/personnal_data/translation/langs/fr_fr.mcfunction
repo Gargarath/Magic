@@ -535,6 +535,10 @@ data modify storage strings fr_fr set value {\
 "tr_round_end_completed_round":"pour avoir terminé la manche ",\
 "tr_round_end_completed_secondary_objective":"pour avoir réussi l'objectif secondaire de la manche ",\
 "tr_round_end_round_over":"Manche terminée !",\
+\
+"tr_ffa_objective_title":"Eliminations :",\
+"tr_ffa_objective_goal":"Objectif :",\
+\
 "tr_end_game_ffa_wins_with":"gagne avec",\
 "tr_end_game_ffa_eliminations":"éliminations",\
 "tr_end_game_ctf_victory":"Victoire !",\

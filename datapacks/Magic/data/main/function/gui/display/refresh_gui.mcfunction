@@ -9,6 +9,7 @@ execute if score lobby enable_loop matches 1 run function main:gui/display/in_lo
 
 ## SI ON EST IN GAME
 execute if score lobby enable_loop matches 0 run function main:gui/display/in_game/refresh_gui
+execute if score lobby enable_loop matches 0 run function main:gui/display/in_game/refresh_gui
 
 schedule function main:gui/display/refresh_gui 5t
 # rappelle cette fonction dans 5t (car les title actionbar disparaissent après)
