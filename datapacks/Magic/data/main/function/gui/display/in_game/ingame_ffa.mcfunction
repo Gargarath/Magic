@@ -23,10 +23,10 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=0}] run return 
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
 {"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
-{"font":"default_neg","keybind":"key.quickActions"},\
-{"font":"default_neg","text":"$(tr_gui_options_quick_options)"},\
-{"font":"bottom_right_side-40","keybind":"key.quickActions","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_quick_options)","color":"gray"},\
+{"font":"default_neg","keybind":"key.inventory"},\
+{"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
+{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
 {"text":" ","font":"default_neg"}\
 ,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
 {"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\
@@ -58,10 +58,10 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return 
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
 {"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
-{"font":"default_neg","keybind":"key.quickActions"},\
-{"font":"default_neg","text":"$(tr_gui_options_quick_options)"},\
-{"font":"bottom_right_side-40","keybind":"key.quickActions","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_quick_options)","color":"gray"},\
+{"font":"default_neg","keybind":"key.inventory"},\
+{"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
+{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
 {"text":" ","font":"default_neg"}\
 ,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
 {"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\
@@ -99,10 +99,10 @@ $execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s ac
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
 {"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
-{"font":"default_neg","keybind":"key.quickActions"},\
-{"font":"default_neg","text":"$(tr_gui_options_quick_options)"},\
-{"font":"bottom_right_side-40","keybind":"key.quickActions","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_quick_options)","color":"gray"},\
+{"font":"default_neg","keybind":"key.inventory"},\
+{"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
+{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
 {"text":" ","font":"default_neg"}\
 ,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
 {"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\

@@ -177,6 +177,20 @@
         },
         {
             "type": "bitmap",
+            "file": "minecraft:item/gui/mouse_middle.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": ["\uE402"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/mouse_side_button.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": ["\uE403"]
+        },
+        {
+            "type": "bitmap",
             "file": "minecraft:item/gui/bar/empty_bar_left.png",
             "ascent": 8,
             "height": 9,

@@ -1,0 +1,9 @@
+## appelée par display_settings
+## permet d'afficher le bon item de jump_timer order selon le score de @s
+
+
+# jump_timer off
+$execute if score @s opt_display_jump_timer matches 0 run item replace entity @s inventory.3 with oak_sign[item_name=[{"color":"green","text":"$(tr_inventory_menu_settings_jump_timer)"}],lore=["",{"color":"gray","text":"> $(tr_inventory_menu_settings_jump_timer_subtitle_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_2)"},"",{"color":"green","text":"> $(tr_inventory_menu_settings_jump_timer_subtitle_2)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_3)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_4)"}],custom_data={inventory_menu:1b,inventory_menu_settings_jump_timer:1b},custom_model_data={strings:["inventory_settings_jump_timer_off"]}] 1
+
+# jump_timer on
+$execute if score @s opt_display_jump_timer matches 1 run item replace entity @s inventory.3 with oak_sign[item_name=[{"color":"green","text":"$(tr_inventory_menu_settings_jump_timer)"}],lore=["",{"color":"green","text":"> $(tr_inventory_menu_settings_jump_timer_subtitle_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_2)"},"",{"color":"gray","text":"> $(tr_inventory_menu_settings_jump_timer_subtitle_2)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_3)"},{"color":"gray","text":"$(tr_inventory_menu_settings_jump_timer_lore_4)"}],custom_data={inventory_menu:1b,inventory_menu_settings_jump_timer:1b},custom_model_data={strings:["inventory_settings_jump_timer_on"]}] 1

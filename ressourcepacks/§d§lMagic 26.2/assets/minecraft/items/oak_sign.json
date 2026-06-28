@@ -363,6 +363,41 @@
           "type": "model",
           "model": "item/inventory_menu/settings/settings"
         }
+      },
+            {
+        "when": "inventory_quit",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/quit"
+        }
+      },
+            {
+        "when": "inventory_settings_keybind_order_1",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/keybind_order_1"
+        }
+      },
+            {
+        "when": "inventory_settings_keybind_order_2",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/keybind_order_2"
+        }
+      },
+            {
+        "when": "inventory_settings_jump_timer_off",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/jump_timer_off"
+        }
+      },
+            {
+        "when": "inventory_settings_jump_timer_on",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/jump_timer_on"
+        }
       }
     ]
   }

@@ -34,11 +34,8 @@ scoreboard objectives add gui_actionbar_message dummy
 # options
 scoreboard objectives add inventory_page dummy
 
-scoreboard objectives add opt_open_options trigger
 scoreboard objectives add opt_display_keybinds dummy
-scoreboard objectives add opt_trig_keybind_order trigger
 scoreboard objectives add opt_keybind_order dummy
-scoreboard objectives add opt_trig_display_jump_timer trigger
 scoreboard objectives add opt_display_jump_timer dummy
 scoreboard objectives add opt_color dummy
 scoreboard objectives add opt_lang dummy

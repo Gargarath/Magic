@@ -266,6 +266,20 @@
             "ascent": -10045,
             "height": 8,
             "chars": ["\uE401"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/mouse_middle.png",
+            "ascent": -10045,
+            "height": 8,
+            "chars": ["\uE402"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/mouse_side_button.png",
+            "ascent": -10045,
+            "height": 8,
+            "chars": ["\uE403"]
         }
  ]
 }

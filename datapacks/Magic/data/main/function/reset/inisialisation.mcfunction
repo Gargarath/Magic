@@ -98,7 +98,7 @@ scoreboard players set @s lobby_sneak 0
 
 scoreboard players set @s operator 0
 
-dialog show @s main:initialised/main
+#dialog show @s main:initialised/main
 
 execute if score $operator_access option_panel matches 1 run tellraw @s [{"bold":false,"color":"white","text":"Si vous êtes modérateur "},{"bold":false,"click_event":{"action":"run_command","command":"/scoreboard players set @s operator 1"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Cliquez pour obtenir les droits d'accès aux commandes.","color":"red"}]},"text":"cliquez ici"},{"bold":false,"color":"white","text":" pour obtenir l'accès aux commandes"}]
 execute if score $operator_access option_panel matches 0 unless entity @a[scores={operator=2}] run tellraw @s {"bold":false,"color":"gold","text":"Pour obtenir les droits de modération, tenez vous sur la plateforme jaune devant le menu d'option."}

@@ -6,7 +6,7 @@ data modify storage strings en_en set value {\
 "tr_gui_keybinds":"Keybinds:",\
 \
 "tr_gui_options_title":"Options:             ",\
-"tr_gui_options_quick_options":": Quick options   ",\
+"tr_gui_options_open_menu":": Open menu      ",\
 "tr_gui_options_upgrade":": Upgrade tree  ",\
 \
 "tr_changed_language":"Your language has been set to: English",\
@@ -56,6 +56,28 @@ data modify storage strings en_en set value {\
 "tr_inventory_menu_settings":"Settings",\
 "tr_inventory_menu_settings_lore_1":"\uE400 Click to access",\
 "tr_inventory_menu_settings_lore_2":"the settings",\
+\
+"tr_inventory_menu_settings_quit":"Quit",\
+"tr_inventory_menu_settings_quit_lore_1":"\uE400 Click to exit",\
+"tr_inventory_menu_settings_quit_lore_2":"the settings",\
+\
+"tr_inventory_menu_settings_keybind_order":"Keybind Order",\
+"tr_inventory_menu_settings_keybind_order_subtitle_1":"(Left → Right)",\
+"tr_inventory_menu_settings_keybind_order_lore_1":"Keybinds follow spells from left to right.",\
+"tr_inventory_menu_settings_keybind_order_lore_2":"selects the leftmost spell,",\
+"tr_inventory_menu_settings_keybind_order_lore_3":"the next one, and so on.",\
+"tr_inventory_menu_settings_keybind_order_subtitle_2":"(Right → Left)",\
+"tr_inventory_menu_settings_keybind_order_lore_4":"Keybinds follow spells from right to left.",\
+"tr_inventory_menu_settings_keybind_order_lore_5":"selects the rightmost spell,",\
+"tr_inventory_menu_settings_keybind_order_lore_6":"the next one, and so on.",\
+\
+"tr_inventory_menu_settings_jump_timer":"Jump Timer",\
+"tr_inventory_menu_settings_jump_timer_subtitle_1":"Enabled",\
+"tr_inventory_menu_settings_jump_timer_lore_1":"Your time is displayed",\
+"tr_inventory_menu_settings_jump_timer_lore_2":"throughout the jump.",\
+"tr_inventory_menu_settings_jump_timer_subtitle_2":"Disabled",\
+"tr_inventory_menu_settings_jump_timer_lore_3":"Your time remains hidden",\
+"tr_inventory_menu_settings_jump_timer_lore_4":"until the end of the jump.",\
 \
 "tr_lobby_jump_pad_maps":"Visit maps",\
 "tr_lobby_jump_pad_stats":"Stats island",\

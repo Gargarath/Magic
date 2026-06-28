@@ -4,4 +4,6 @@
       "block.minecraft.set_spawn":"",
       "key.mouse.left": "\uE400",
       "key.mouse.right": "\uE401",
+      "key.mouse.middle": "\uE402",
+      "key.mouse": "\uE403",
       "mount.onboard": ""}

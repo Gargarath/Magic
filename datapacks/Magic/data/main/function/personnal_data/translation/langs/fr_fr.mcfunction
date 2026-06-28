@@ -6,7 +6,7 @@ data modify storage strings fr_fr set value {\
 "tr_gui_keybinds":"Raccourcis :",\
 \
 "tr_gui_options_title":"Options :                      ",\
-"tr_gui_options_quick_options":" : Options rapides        '",\
+"tr_gui_options_open_menu":" : Ouvrir le menu         '",\
 "tr_gui_options_upgrade":" : Arbre d'améliorations ",\
 \
 "tr_changed_language":"Votre langue a été définie sur : Français",\
@@ -56,6 +56,28 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_settings":"Options",\
 "tr_inventory_menu_settings_lore_1":"\uE400 Cliquez pour",\
 "tr_inventory_menu_settings_lore_2":"accéder aux options",\
+\
+"tr_inventory_menu_settings_quit":"Retour",\
+"tr_inventory_menu_settings_quit_lore_1":"\uE400 Cliquez pour",\
+"tr_inventory_menu_settings_quit_lore_2":"quitter les options",\
+\
+"tr_inventory_menu_settings_keybind_order":"Ordre des raccourcis",\
+"tr_inventory_menu_settings_keybind_order_subtitle_1":"(Gauche → Droite)",\
+"tr_inventory_menu_settings_keybind_order_lore_1":"Les touches suivent les sorts.",\
+"tr_inventory_menu_settings_keybind_order_lore_2":"sélectionne le sort le plus à gauche,",\
+"tr_inventory_menu_settings_keybind_order_lore_3":"le suivant, etc.",\
+"tr_inventory_menu_settings_keybind_order_subtitle_2":"(Droite → Gauche)",\
+"tr_inventory_menu_settings_keybind_order_lore_4":"Les touches suivent les sorts.",\
+"tr_inventory_menu_settings_keybind_order_lore_5":"sélectionne le sort le plus à droite,",\
+"tr_inventory_menu_settings_keybind_order_lore_6":"le suivant, etc.",\
+\
+"tr_inventory_menu_settings_jump_timer":"Chrono de parcours",\
+"tr_inventory_menu_settings_jump_timer_subtitle_1":"Activé",\
+"tr_inventory_menu_settings_jump_timer_lore_1":"Votre temps est affiché",\
+"tr_inventory_menu_settings_jump_timer_lore_2":"pendant toute la course.",\
+"tr_inventory_menu_settings_jump_timer_subtitle_2":"Désactivé",\
+"tr_inventory_menu_settings_jump_timer_lore_3":"Votre temps reste masqué",\
+"tr_inventory_menu_settings_jump_timer_lore_4":"jusqu'à la fin de la course.",\
 \
 "tr_lobby_jump_pad_maps":"Visiter les arènes",\
 "tr_lobby_jump_pad_stats":"Île de statistiques",\
