@@ -507,9 +507,16 @@ data modify storage strings fr_fr set value {\
 "tr_admin_how_to_be_op_command_1":"Vous n'avez pas accès à ce panneau. Si vous êtes modérateur",\
 "tr_admin_how_to_be_op_command_2":"cliquez ici",\
 "tr_admin_how_to_be_op_command_3":"pour obtenir l'accès aux commandes.",\
-"tr_admin_how_to_be_op_command_hover_event":"Cliquez pour obtenir les droits d'accès aux commandes.",\
+"tr_admin_how_to_be_op_command_hover_event":"Cliquez ici pour obtenir les droits d'accès aux commandes.",\
 "tr_admin_cant_become_op_1":"Vous n'avez pas accès à ce panneau,",\
 "tr_admin_cant_become_op_2":"est déjà modérateur.",\
+\
+"tr_welcome_how_to_admin_command_1":"Si vous êtes modérateur",\
+"tr_welcome_how_to_admin_command_2":"cliquez ici",\
+"tr_welcome_how_to_admin_command_3":"pour obtenir l'accès aux commandes.",\
+"tr_welcome_how_to_admin_command_hover_event":"Cliquez ici pour obtenir les droits d'accès aux commandes.",\
+\
+"tr_welcome_how_to_be_op_platform":"Il n'y a pas encore de modérateur. Pour devenir modérateur, tenez vous sur la plateforme jaune devant le menu d'option.",\
 \
 "tr_admin_stopgame_title":"Partie annulée !",\
 \

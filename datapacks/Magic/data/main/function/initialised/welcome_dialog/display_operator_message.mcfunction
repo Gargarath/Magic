@@ -1,0 +1,4 @@
+# Affiche les informations de moderation dans la langue choisie par @s.
+
+$execute if score $operator_access option_panel matches 1 run tellraw @s [{"bold":false,"color":"white","text":"$(tr_welcome_how_to_admin_command_1) "},{"bold":false,"click_event":{"action":"run_command","command":"/scoreboard players set @s operator 1"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"$(tr_welcome_how_to_admin_command_hover_event)","color":"red"}]},"text":"$(tr_welcome_how_to_admin_command_2)"},{"bold":false,"color":"white","text":" $(tr_welcome_how_to_admin_command_3)"}]
+$execute if score $operator_access option_panel matches 0 unless entity @a[scores={operator=2}] run tellraw @s {"bold":false,"color":"gold","text":"$(tr_welcome_how_to_be_op_platform)"}

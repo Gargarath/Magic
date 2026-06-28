@@ -20,6 +20,10 @@ execute as @a[scores={timer_fix_health=0}] run function main:fix_health/stop_hea
 
 execute as @a[tag=!initialised] run function main:reset/inisialisation
 
+execute as @a[tag=choosing_language,scores={welcome_language=1}] run function main:initialised/welcome_dialog/select_english
+execute as @a[tag=choosing_language,scores={welcome_language=2}] run function main:initialised/welcome_dialog/select_french
+execute as @a[tag=choosing_language,scores={welcome_language=3}] run function main:initialised/welcome_dialog/reopen
+
                                         ## LANCE LES BOUCLES DES AUTRES SYSTEMES SI IL Y A BESOIN ##
                                         
 execute if score ctf enable_loop matches 1 run function gamemode:ctf/loop

@@ -505,12 +505,18 @@ data modify storage strings en_en set value {\
 "tr_admin_became_op_1":"Your are now",\
 "tr_admin_became_op_2":"You now have acces to the administrator's book and to the option panel.",\
 "tr_admin_how_to_be_op_platform":"You do not have access to this panel. To become a moderator, stand on the yellow platform in front of the options panel.",\
-"tr_admin_how_to_be_op_command_1":"You don't have access to this pannel. If you are a serveur admin",\
+"tr_admin_how_to_be_op_command_1":"You don't have access to this panel. If you are a server administrator",\
 "tr_admin_how_to_be_op_command_2":"click here",\
-"tr_admin_how_to_be_op_command_3":"to become moderator.",\
-"tr_admin_how_to_be_op_command_hover_event":"Click here to become moderator\nand gain access to the option pannel.",\
+"tr_admin_how_to_be_op_command_3":"to become a moderator.",\
+"tr_admin_how_to_be_op_command_hover_event":"Click here to become a moderator\nand gain access to the option panel.",\
 "tr_admin_cant_become_op_1":"You do not have access to this panel,",\
 "tr_admin_cant_become_op_2":"is already the moderator.",\
+\
+"tr_welcome_how_to_admin_command_1":"If you are a server administrator",\
+"tr_welcome_how_to_admin_command_2":"click here",\
+"tr_welcome_how_to_admin_command_3":"to become a moderator.",\
+"tr_welcome_how_to_admin_command_hover_event":"Click here to become a moderator\nand gain access to the option panel.",\
+"tr_welcome_how_to_be_op_platform":"There is not moderator yet. To become a moderator, stand on the yellow platform in front of the options panel.",\
 \
 "tr_admin_stopgame_title":"Game canceled!",\
 \

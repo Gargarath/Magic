@@ -98,11 +98,6 @@ scoreboard players set @s lobby_sneak 0
 
 scoreboard players set @s operator 0
 
-#dialog show @s main:initialised/main
-
-execute if score $operator_access option_panel matches 1 run tellraw @s [{"bold":false,"color":"white","text":"Si vous êtes modérateur "},{"bold":false,"click_event":{"action":"run_command","command":"/scoreboard players set @s operator 1"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Cliquez pour obtenir les droits d'accès aux commandes.","color":"red"}]},"text":"cliquez ici"},{"bold":false,"color":"white","text":" pour obtenir l'accès aux commandes"}]
-execute if score $operator_access option_panel matches 0 unless entity @a[scores={operator=2}] run tellraw @s {"bold":false,"color":"gold","text":"Pour obtenir les droits de modération, tenez vous sur la plateforme jaune devant le menu d'option."}
-
 spawnpoint @s 0 100 0 180 0
 tp @s 0 100 0 180 0
 effect give @s minecraft:instant_health 1 10 true
@@ -167,8 +162,8 @@ slot_arrows:8}]
 
 # setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
 
-function main:personnal_data/translation/change_language/change_language
-# fait changer @s de langue (le passe en fr)
+function main:initialised/welcome_dialog/apply_language
+# initialise silencieusement les traductions en anglais avant le choix
 # ----------------------------------------------------------
 
 function lobby:hotbar_menu/main/give_items with entity @s EnderItems[0].components.minecraft:custom_data
@@ -186,4 +181,6 @@ function main:gui/display/refresh_gui
 execute if score lobby enable_loop matches 0 unless score @s Player matches -1 run function main:reconnect/someone_joined_during_match
 tag @s remove inventory_rebuilding
 tag @s add save_inventory
+function main:initialised/welcome_dialog/open
+# souhaite la bienvenue a @s et lui demande de choisir sa langue
 # si une game est déjà lancée et que @s n'est pas encore mis en spec -> le met en spec
