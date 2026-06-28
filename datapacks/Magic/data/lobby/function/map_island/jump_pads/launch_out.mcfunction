@@ -5,4 +5,7 @@ playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 100 1
 function lobby:map_island/quit_maps
 execute at @s run tp @s ~ 99.2 ~
 
-function motion:set {x: -7.8, y: 0.9, z: 0}
+scoreboard players set $x player_motion.api.launch -78000
+scoreboard players set $y player_motion.api.launch 9000
+scoreboard players set $z player_motion.api.launch 0
+function player_motion:api/launch_xyz

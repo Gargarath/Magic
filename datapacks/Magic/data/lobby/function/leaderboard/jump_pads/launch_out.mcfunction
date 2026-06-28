@@ -4,4 +4,7 @@ playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 100 1
 
 tag @s remove in_podium
 execute at @s run tp @s ~ 99.2 ~
-function motion:set {x: 0, y: 0.85, z: -7}
+scoreboard players set $x player_motion.api.launch 0
+scoreboard players set $y player_motion.api.launch 8500
+scoreboard players set $z player_motion.api.launch -70000
+function player_motion:api/launch_xyz
