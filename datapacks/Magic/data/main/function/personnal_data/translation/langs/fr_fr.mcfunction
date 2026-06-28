@@ -46,11 +46,16 @@ data modify storage strings fr_fr set value {\
 "tr_arena_disabled":"L'arène a été désactivée par un modérateur.",\
 \
 "tr_item_back":"Retour",\
+\
 "tr_inventory_menu_language":"Langue",\
 "tr_inventory_menu_language_en":"Anglais",\
 "tr_inventory_menu_language_fr":"Français",\
-"tr_inventory_menu_language_lore_1":"\uE400 Cliquez",\
-"tr_inventory_menu_language_lore_2":"pour changer la langue",\
+"tr_inventory_menu_language_lore_1":"\uE400 Cliquez pour",\
+"tr_inventory_menu_language_lore_2":"changer la langue",\
+\
+"tr_inventory_menu_settings":"Options",\
+"tr_inventory_menu_settings_lore_1":"\uE400 Cliquez pour",\
+"tr_inventory_menu_settings_lore_2":"accéder aux options",\
 \
 "tr_lobby_jump_pad_maps":"Visiter les arènes",\
 "tr_lobby_jump_pad_stats":"Île de statistiques",\

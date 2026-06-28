@@ -3,7 +3,7 @@
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
 
-clear @s
+function main:items_positions/cleanup_managed_items
 scoreboard players set @s usespell 0
 scoreboard players set @s usespell3_r 0
 function stuff:stuff_rogue/stuffrogue

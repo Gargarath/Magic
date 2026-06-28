@@ -15,13 +15,15 @@ function main:personnal_data/translation/change_language/merge_storages with sto
 function main:personnal_data/save_new_data with storage personnal_storage.temp
 # remet son storage perso dans son enderchest
 
+tag @s add refreshing_language
 function main:personnal_data/translation/change_language/refresh_language
+tag @s remove refreshing_language
 # actualise les textes visibles de @s selon sa nouvelle langue
 
 function main:personnal_data/translation/change_language/tell_changed_language with entity @s EnderItems[0].components.minecraft:custom_data
 # indique à @s qu'il a changé de langue (selon sa langue)
 
-function main:inventory_menu/cleanup_language_items
+function main:inventory_menu/lang/cleanup_language_items
 # supprime les anciens items de langue
 function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise l'item du menu d'inventaire selon la langue

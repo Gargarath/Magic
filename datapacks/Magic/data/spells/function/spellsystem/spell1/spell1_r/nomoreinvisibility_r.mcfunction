@@ -41,7 +41,7 @@ execute if score @s Player matches 11 run data modify storage minecraft:gui play
 execute if score @s Player matches 12 run data modify storage minecraft:gui player.12.actionbar.right_side set value ""
 # reset la barre de bruit de @s
 
-clear @s
+function main:items_positions/cleanup_managed_items
 function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue à @s
 

@@ -12,7 +12,7 @@ execute at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 1
 
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
-clear @s
+function main:items_positions/cleanup_managed_items
 item replace entity @s armor.head from block 13 97 11 container.1
 item replace entity @s weapon.offhand from block 13 97 11 container.1
 function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data

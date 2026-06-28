@@ -51,7 +51,7 @@ tag @s add inventory_rebuilding
 
 effect clear @s
 effect give @s minecraft:resistance infinite 255 true
-clear @s
+function main:items_positions/cleanup_managed_items
 recipe give @s *
 advancement revoke @s everything
 advancement grant @s from warrior:root
@@ -132,6 +132,7 @@ scoreboard players set @s quit_slot_m 8
 scoreboard players set @s quit_slot_r 8
 
 # intialise les options de @s
+scoreboard players set @s inventory_page 0
 scoreboard players enable @s opt_open_options
 scoreboard players set @s opt_display_keybinds 1
 scoreboard players set @s opt_keybind_order 2

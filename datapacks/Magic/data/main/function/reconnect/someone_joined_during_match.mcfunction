@@ -13,7 +13,7 @@ team join spectator @s
 
 scoreboard players set @s InLobby 0
 effect give @s minecraft:invisibility infinite 0 true
-clear @s
+function main:items_positions/cleanup_managed_items
 # permet à @s de devenir spectateur
 
 tag @s remove hurt

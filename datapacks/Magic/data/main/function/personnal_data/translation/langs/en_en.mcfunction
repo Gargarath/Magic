@@ -46,11 +46,16 @@ data modify storage strings en_en set value {\
 "tr_arena_disabled":"The arena has been disabled by a moderator.",\
 \
 "tr_item_back":"Back",\
+\
 "tr_inventory_menu_language":"Language",\
 "tr_inventory_menu_language_en":"English",\
 "tr_inventory_menu_language_fr":"French",\
-"tr_inventory_menu_language_lore_1":"\uE400 Click",\
-"tr_inventory_menu_language_lore_2":"to change language",\
+"tr_inventory_menu_language_lore_1":"\uE400 Click to change",\
+"tr_inventory_menu_language_lore_2":"your language",\
+\
+"tr_inventory_menu_settings":"Settings",\
+"tr_inventory_menu_settings_lore_1":"\uE400 Click to access",\
+"tr_inventory_menu_settings_lore_2":"the settings",\
 \
 "tr_lobby_jump_pad_maps":"Visit maps",\
 "tr_lobby_jump_pad_stats":"Stats island",\

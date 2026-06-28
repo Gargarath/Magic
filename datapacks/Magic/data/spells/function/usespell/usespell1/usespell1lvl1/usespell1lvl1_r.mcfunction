@@ -14,7 +14,7 @@ execute at @s run playsound minecraft:entity.generic.extinguish_fire master @a[d
 scoreboard players set @s dealdmg 0
 scoreboard players set @s dmgtaken 0
 
-clear @s
+function main:items_positions/cleanup_managed_items
 function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue invisible à @s
 

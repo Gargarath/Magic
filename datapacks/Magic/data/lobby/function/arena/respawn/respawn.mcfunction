@@ -115,11 +115,12 @@ function lobby:arena/leaderboard/refresh_leaderboard
 
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
-clear @s
+function main:items_positions/cleanup_managed_items
 execute as @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
 execute as @s[tag=archer] run function stuff:stuff_archer/stuffarcher
 execute as @s[tag=mage] run function stuff:stuff_mage/stuffmage
 execute as @s[tag=rogue] run function stuff:stuff_rogue/stuffrogue
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 function lobby:arena/respawn/respawn_at_good_spot
 

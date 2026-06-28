@@ -4,7 +4,7 @@
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
 
-clear @s
+function main:items_positions/cleanup_managed_items
 scoreboard players set @s usespell 0
 
 execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data

@@ -1,5 +1,9 @@
 ## appelée par les fonctions qui reconstruisent l'inventaire de @s
 ## permet de donner les items du menu d'inventaire
 
-execute if score @s opt_lang matches 0 run function main:inventory_menu/give_language_en with entity @s EnderItems[0].components.minecraft:custom_data
-execute if score @s opt_lang matches 1 run function main:inventory_menu/give_language_fr with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s opt_lang matches 0 run function main:inventory_menu/lang/give_language/en_us with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s opt_lang matches 1 run function main:inventory_menu/lang/give_language/fr_fr with entity @s EnderItems[0].components.minecraft:custom_data
+
+$item replace entity @s inventory.8 with oak_sign[item_name=[{"bold":true,"color":"gray","text":"$(tr_inventory_menu_settings)"}],lore=["",{"color":"gray","text":"$(tr_inventory_menu_settings_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_lore_2)"}],custom_data={inventory_menu:1b,inventory_menu_settings:1b},custom_model_data={strings:["inventory_settings_settings"]}] 1
+
+execute if score @s inventory_page matches -1 run function main:inventory_menu/settings/display_settings with entity @s EnderItems[0].components.minecraft:custom_data

@@ -10,4 +10,4 @@ effect give @s[scores={health=30..44}] minecraft:instant_damage 1 2 true
 effect give @s[scores={health=21..30}] minecraft:instant_damage 1 1 true
 tag @s remove hurt
 scoreboard players set @s timer_fix_health 5
-clear @s
+function main:items_positions/cleanup_managed_items

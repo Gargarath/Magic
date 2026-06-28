@@ -356,6 +356,13 @@
           "type": "model",
           "model": "item/inventory_menu/lang/en_us"
         }
+      },
+            {
+        "when": "inventory_settings_settings",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/settings"
+        }
       }
     ]
   }

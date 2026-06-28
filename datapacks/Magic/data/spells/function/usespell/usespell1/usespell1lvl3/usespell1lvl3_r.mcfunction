@@ -15,7 +15,7 @@ scoreboard players set @s dealdmg 0
 scoreboard players set @s dmgtaken 0
 effect give @s minecraft:strength infinite 3 true
 
-clear @s
+function main:items_positions/cleanup_managed_items
 function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue invisible à @s
 

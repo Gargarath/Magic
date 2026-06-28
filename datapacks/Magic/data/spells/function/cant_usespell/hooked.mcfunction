@@ -2,7 +2,7 @@
 
 scoreboard players set @s usespell 0
 tag @s remove save_inventory
-clear @s
+function main:items_positions/cleanup_managed_items
 
 execute as @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
 execute as @s[tag=archer] run function stuff:stuff_archer/stuffarcher

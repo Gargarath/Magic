@@ -4,7 +4,7 @@
 tag @s remove save_inventory
 scoreboard players set @s usespell 0
 tag @s add inventory_rebuilding
-clear @s
+function main:items_positions/cleanup_managed_items
 execute as @s run function stuff:stuff_warrior/stuffwarrior
 
 execute as @s[scores={trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
