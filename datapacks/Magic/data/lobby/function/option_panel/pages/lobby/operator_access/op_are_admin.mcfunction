@@ -17,7 +17,6 @@ scoreboard players set @s operator 2
 function lobby:operator/triggers/enable_op_triggers
 # remet @s modo
 
-$execute at @n[type=item_display,tag=optn_menu_lobby_operator_access] run data merge entity @n[type=text_display,tag=optn_menu_lobby_operator_access_button,distance=..0.6] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.1f,0f,0f],scale:[0.8f,0.8f,0.8f]},text:[{"bold":true,"color":"black","text":"$(tr_optn_menu_lobby_operator_access_2)"}],background:0}
 data merge entity @n[type=item_display,tag=optn_menu_lobby_operator_access] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["op_are_admin"]}}}}
 
 kill @e[type=interaction,tag=optn_menu_lobby_operator_access_op]
