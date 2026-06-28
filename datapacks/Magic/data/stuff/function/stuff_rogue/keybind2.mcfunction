@@ -4,8 +4,6 @@
 
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
-function main:items_positions/cleanup_managed_items
-function stuff:stuff_rogue/stuffrogue
 
 execute as @s[scores={trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
 execute as @s[scores={hooked_w=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooked

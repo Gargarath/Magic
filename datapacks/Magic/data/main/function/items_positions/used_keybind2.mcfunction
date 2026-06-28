@@ -2,6 +2,8 @@
 ## permet dans lancer un sort du raccourcis
 
 tag @s remove save_inventory
+execute store result storage temp:keybind selected_slot int 1 run data get entity @s SelectedItemSlot
+function main:items_positions/restore_swapped_item with storage temp:keybind
 execute if entity @s[scores={InLobby=0},tag=warrior] run function stuff:stuff_warrior/keybind2
 execute if entity @s[scores={InLobby=0},tag=archer] run function stuff:stuff_archer/keybind2
 execute if entity @s[scores={InLobby=0},tag=mage] run function stuff:stuff_mage/keybind2
@@ -12,6 +14,7 @@ execute if entity @s[tag=archer,tag=in_lobby_arena] run function stuff:stuff_arc
 execute if entity @s[tag=mage,tag=in_lobby_arena] run function stuff:stuff_mage/keybind2
 execute if entity @s[tag=rogue,tag=in_lobby_arena] run function stuff:stuff_rogue/keybind2
 
+item replace entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
 clear @s[tag=Has_Blue_flag] carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 item replace entity @s[tag=Has_Blue_flag] armor.head from block 13 97 11 container.6
 item replace entity @s[tag=Has_Blue_flag] weapon.offhand from block 13 97 11 container.6
