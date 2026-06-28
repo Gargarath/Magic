@@ -510,6 +510,27 @@
             "ascent": 63,
             "height": 64,
             "chars": ["\uE635"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/generic/logo_magic.png",
+            "ascent": 43,
+            "height": 54,
+            "chars": ["\uE636"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/optn_panel/main/lang_en_en.png",
+            "ascent": 10,
+            "height": 12,
+            "chars": ["\uE637"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/optn_panel/main/lang_fr_fr.png",
+            "ascent": 10,
+            "height": 12,
+            "chars": ["\uE638"]
         }
     ]
 }

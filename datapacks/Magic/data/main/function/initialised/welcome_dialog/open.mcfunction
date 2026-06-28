@@ -4,5 +4,5 @@ tag @s add choosing_language
 scoreboard players set @s welcome_language 0
 scoreboard players enable @s welcome_language
 
-data modify storage temp:dialog welcome set value {title:"Welcome to Magic!",body:"\uE605 Welcome to Magic!\\n\\nBienvenue dans Magic !\\n\\nChoose your language / Choisissez votre langue :",english:"English",french:"Français"}
+data modify storage temp:dialog welcome set value {title:"Welcome to Magic!",body:"Welcome to\n\n\n\n\n\n\uE636\n\n\nPlease choose your language:",english:"\uE637 English",french:"\uE638 Français"}
 function main:initialised/welcome_dialog/show with storage temp:dialog welcome
