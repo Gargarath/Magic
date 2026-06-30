@@ -3,4 +3,6 @@ $data modify storage temp:codex view.description[2].text set value "$(level)"
 $data modify storage temp:codex view.description[4].text set value "$(max_level)"
 $data modify storage temp:codex view.description[8].text set value "$(price)"
 $data modify storage temp:codex view.description[-1].text set value "$(current)"
+data modify storage temp:codex view.description prepend value {text:" "}
+data modify storage temp:codex view.description prepend from storage temp:codex view.inline_icon
 function main:upgrade_codex/show_detail with storage temp:codex view
