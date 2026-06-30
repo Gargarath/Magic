@@ -1,11 +1,6 @@
 ## appelee apres un undo / redo
 # reconstruit seulement les elements impactes par l'etat courant
 
-execute as @s[tag=warrior] run function shop:actualise_advancement/warrior
-execute as @s[tag=archer] run function shop:actualise_advancement/archer
-execute as @s[tag=mage] run function shop:actualise_advancement/mage
-execute as @s[tag=rogue] run function shop:actualise_advancement/rogue
-
 function shop:history/reset_key_slots
 
 tag @s remove save_inventory

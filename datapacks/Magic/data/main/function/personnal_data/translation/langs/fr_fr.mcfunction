@@ -5,9 +5,8 @@ data modify storage strings fr_fr set value {\
 \
 "tr_gui_keybinds":"Raccourcis :",\
 \
-"tr_gui_options_title":"Options :                      ",\
-"tr_gui_options_open_menu":" : Ouvrir le menu         '",\
-"tr_gui_options_upgrade":" : Arbre d'améliorations ",\
+"tr_gui_options_title":"Options :               ",\
+"tr_gui_options_open_menu":" : Ouvrir le menu  '",\
 \
 "tr_changed_language":"Votre langue a été définie sur : Français",\
 "tr_joined_spectator":"Vous avez rejoint le mode spectateur !",\
@@ -35,8 +34,41 @@ data modify storage strings fr_fr set value {\
 "tr_gui_map_visit_spec_commands":"Commandes spec :",\
 \
 \
-"tr_upgrade_tree_1":"Appuyez sur",\
-"tr_upgrade_tree_2":"pour voir votre progression dans l'arbre d'amélioration !",\
+"tr_upgrade_tree_1":"Ouvrez votre inventaire",\
+"tr_upgrade_tree_2":"et cliquez sur le codex pour consulter les classes et votre progression !",\
+"tr_codex_title":"Codex d'améliorations",\
+"tr_codex_inventory_lore_1":"Cliquez pour consulter les classes",\
+"tr_codex_inventory_lore_2":"et votre progression actuelle",\
+"tr_codex_choose_class":"Choisissez une classe pour consulter ses améliorations.",\
+"tr_codex_close":"Fermer",\
+"tr_codex_back_classes":"Retour aux classes",\
+"tr_codex_back_category":"Retour",\
+"tr_codex_previous":"Niveau précédent",\
+"tr_codex_next":"Niveau suivant",\
+"tr_codex_current_level":"Niveau actuel :",\
+"tr_codex_other_class":"Catalogue uniquement",\
+"tr_codex_chest":"Plastron",\
+"tr_codex_legs":"Jambières",\
+"tr_codex_boots":"Bottes",\
+"tr_codex_chest_base_name":"Plastron de santé",\
+"tr_codex_legs_base_name":"Jambières de vitesse",\
+"tr_codex_boots_base_name":"Bottes d'acrobate",\
+"tr_warrior_weapon1_base_name":"Hache de bataille",\
+"tr_warrior_spell1_base_name":"Berzerk",\
+"tr_warrior_spell2_base_name":"Drapeau de ralliement",\
+"tr_warrior_spell3_base_name":"Grappin",\
+"tr_archer_weapon1_base_name":"Arc de combat",\
+"tr_archer_spell1_base_name":"Flèche explosive",\
+"tr_archer_spell2_base_name":"Piège à ours",\
+"tr_archer_spell3_base_name":"Flèche de glace",\
+"tr_mage_weapon1_base_name":"Bâton de combat",\
+"tr_mage_spell1_base_name":"Trait de feu",\
+"tr_mage_spell2_base_name":"Tempête de foudre",\
+"tr_mage_spell3_base_name":"Téléportation",\
+"tr_rogue_weapon1_base_name":"Dague sournoise",\
+"tr_rogue_spell1_base_name":"Embuscade",\
+"tr_rogue_spell2_base_name":"Voie des ombres",\
+"tr_rogue_spell3_base_name":"Bombe d'ombre",\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\

@@ -9,6 +9,7 @@ $data modify storage temp:item data.item_category set value "$(item_category)"
 $data modify storage temp:item data.shop_$(item_category)_price set from storage minecraft:shop_data stuff.stuff_$(class)_$(item_category)_$(level).price
 
 data modify storage temp:item data.lore set value []
+data modify storage temp:item data.lore_text set value []
 data modify storage temp:item index set value 0
 scoreboard players set @s shop_lore_line 0
 function main:personnal_data/shop/resolve_item_lore_entry with storage temp:item

@@ -16,10 +16,6 @@ scoreboard players operation @s maxarrow = @s maxarrow_backup
 scoreboard players operation @s weapon1_max_range_m = @s weapon1_max_range_m_backup
 scoreboard players operation @s explo_max_range_a = @s explo_max_range_a_backup
 
-execute as @s[tag=warrior] run function shop:actualise_advancement/warrior
-execute as @s[tag=archer] run function shop:actualise_advancement/archer
-execute as @s[tag=mage] run function shop:actualise_advancement/mage
-execute as @s[tag=rogue] run function shop:actualise_advancement/rogue
 
 function main:gui/reset_actionbar_bars
 

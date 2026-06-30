@@ -2,8 +2,7 @@
 
 advancement revoke @s everything
 
-advancement grant @s until warrior:passif_w
-advancement grant @s until archer:passif1_a
-advancement grant @s until archer:passif2_a
-advancement grant @s until mage:passif_m
-advancement grant @s until rogue:passif_r
+advancement revoke @s from warrior:root
+advancement revoke @s from archer:root
+advancement revoke @s from mage:root
+advancement revoke @s from rogue:root

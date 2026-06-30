@@ -54,10 +54,10 @@ effect give @s minecraft:resistance infinite 255 true
 function main:items_positions/cleanup_managed_items
 recipe give @s *
 advancement revoke @s everything
-advancement grant @s from warrior:root
-advancement grant @s from archer:root
-advancement grant @s from mage:root
-advancement grant @s from rogue:root
+advancement revoke @s from warrior:root
+advancement revoke @s from archer:root
+advancement revoke @s from mage:root
+advancement revoke @s from rogue:root
 function main:reset/resetachats
 function main:reset/setupspells
 function main:reset/resetclass
@@ -128,14 +128,12 @@ scoreboard players set @s quit_slot_r 8
 
 # intialise les options de @s
 scoreboard players set @s inventory_page 0
-scoreboard players enable @s opt_open_options
 scoreboard players set @s opt_display_keybinds 1
 scoreboard players set @s opt_keybind_order 2
-scoreboard players enable @s opt_trig_keybind_order
 scoreboard players set @s opt_display_jump_timer 1
-scoreboard players enable @s opt_trig_display_jump_timer
 scoreboard players set @s opt_color 0
 scoreboard players set @s opt_lang 0
+scoreboard players enable @s upgrade_codex
 
 # ------ # STORAGE PERSONNEL # ---------------
 item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane[minecraft:custom_data={\

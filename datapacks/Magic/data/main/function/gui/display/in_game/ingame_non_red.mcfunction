@@ -22,17 +22,11 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=0}] run return 
 {text:"\uE790\uE750\uE740\uE730\uE710\uE705",font:top_bar_overlay},{"interpret":true,"nbt":"blue.player6.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"blue.player5.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"blue.player4.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"blue.player3.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"blue.player2.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"blue.player1.overlay","storage":"stats:leaderboards"},"\uE750\uE720\uE706",{"interpret":true,"nbt":"red.player1.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"red.player2.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"red.player3.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"red.player4.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"red.player5.overlay","storage":"stats:leaderboards"},"\uE709",{"interpret":true,"nbt":"red.player6.overlay","storage":"stats:leaderboards"},{text:"\uE750\uE750\uE730\uE709\uE791",font:top_bar_overlay},\
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
-{"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_title)","color":"white"},\
 {"font":"default_neg","keybind":"key.inventory"},\
 {"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
-{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
-{"text":" ","font":"default_neg"}\
-,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
-{"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\
-{"text":" ","font":"bottom_right_side-50",},\
-{"font":"bottom_right_side-50","keybind":"key.advancements","color":"gray"},\
-{"font":"bottom_right_side-50","text":"$(tr_gui_options_upgrade)","color":"gray"}]
+{"font":"bottom_right_side-50","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-50","text":"$(tr_gui_options_open_menu)","color":"gray"}]
 
 $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return run title @s actionbar ["",{text:"\uE790\uE720\uE709",font:top_bar_background},"\uE605",{text:"\uE720\uE709\uE791",font:top_bar_background},\
 \
@@ -57,17 +51,11 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return 
 {"font":"bottom_left_side","text":" $(tr_gui_ingame_spec_commands_1)","color":"gold"},{"font":"default_neg","text":" $(tr_gui_ingame_spec_commands_1)","color":"gold"},{"font":"bottom_left_side-10","text":" $(tr_gui_ingame_spec_commands_2)","color":"gold"},{"font":"default_neg","text":" $(tr_gui_ingame_spec_commands_2)","color":"gold"},{"font":"bottom_left_side-20","text":" $(tr_gui_ingame_spec_commands_3)","color":"gold"},{"font":"default_neg","text":" $(tr_gui_ingame_spec_commands_3)","color":"gold"},\
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
-{"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_title)","color":"white"},\
 {"font":"default_neg","keybind":"key.inventory"},\
 {"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
-{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
-{"text":" ","font":"default_neg"}\
-,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
-{"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\
-{"text":" ","font":"bottom_right_side-50",},\
-{"font":"bottom_right_side-50","keybind":"key.advancements","color":"gray"},\
-{"font":"bottom_right_side-50","text":"$(tr_gui_options_upgrade)","color":"gray"}]
+{"font":"bottom_right_side-50","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-50","text":"$(tr_gui_options_open_menu)","color":"gray"}]
 
 $execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s actionbar ["",{text:"\uE790\uE720\uE709",font:top_bar_background},"\uE605",{text:"\uE720\uE709\uE791",font:top_bar_background},\
 \
@@ -94,14 +82,8 @@ $execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s ac
 {"font":"hotbar_scnd_bar","nbt":"player.$(player).actionbar.bar","storage":"gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).actionbar.bar","storage":"gui","interpret":true},{"font":"hotbar_scnd_bar_score","nbt":"player.$(player).actionbar.score","storage":"gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).actionbar.score","storage":"gui","interpret":true},{"font":"hotbar_right","nbt":"player.$(player).actionbar.right_side","storage":"gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).actionbar.right_side","storage":"gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).actionbar.alert","storage":"gui","interpret":true},{"interpret":true,"nbt":"player.$(player).actionbar.alert","storage":"gui","font":"bottom_right_side"},{"text":" $(tr_gui_keybinds)","font":"bottom_left_side","color":"white"},{"text":" $(tr_gui_keybinds)","font":"default_neg","color":"white"},{"text":"  ","font":"bottom_left_side-20","color":"white"},{"font":"bottom_left_side-10","keybind":"key.drop","color":"white"},{"text":" : ","font":"bottom_left_side-10","color":"white"},{"font":"bottom_left_side-10","nbt":"by_player.$(player).key_slot1","storage":"stats:leaderboards","interpret":true},{"text":"  ","font":"default_neg","color":"white"},{"font":"default_neg","keybind":"key.drop","color":"white"},{"text":" : ","font":"default_neg","color":"white"},{"font":"default_neg","nbt":"by_player.$(player).key_slot1","storage":"stats:leaderboards","interpret":true},{"text":"  ","font":"bottom_left_side-20","color":"white"},{"font":"bottom_left_side-20","keybind":"key.swapOffhand","color":"white"},{"text":" : ","font":"bottom_left_side-20","color":"white"},{"font":"bottom_left_side-20","nbt":"by_player.$(player).key_slot2","storage":"stats:leaderboards","interpret":true},{"text":"  ","font":"default_neg","color":"white"},{"font":"default_neg","keybind":"key.swapOffhand","color":"white"},{"text":" : ","font":"default_neg","color":"white"},{"font":"default_neg","nbt":"by_player.$(player).key_slot2","storage":"stats:leaderboards","interpret":true,"color":"white"},{"text":"  ","font":"bottom_left_side-30","color":"white"},{"font":"bottom_left_side-30","keybind":"key.use","color":"white"},{"text":" : ","font":"bottom_left_side-30","color":"white"},{"font":"bottom_left_side-30","nbt":"by_player.$(player).key_slot3","storage":"stats:leaderboards","interpret":true},{"text":"  ","font":"default_neg","color":"white"},{"font":"default_neg","keybind":"key.use","color":"white"},{"text":" : ","font":"default_neg","color":"white"},{"font":"default_neg","nbt":"by_player.$(player).key_slot3","storage":"stats:leaderboards","interpret":true,"color":"white"},\
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
-{"font":"bottom_right_side-30","text":"$(tr_gui_options_title)","color":"white"},\
+{"font":"bottom_right_side-40","text":"$(tr_gui_options_title)","color":"white"},\
 {"font":"default_neg","keybind":"key.inventory"},\
 {"font":"default_neg","text":"$(tr_gui_options_open_menu)"},\
-{"font":"bottom_right_side-40","keybind":"key.inventory","color":"gray"},\
-{"font":"bottom_right_side-40","text":"$(tr_gui_options_open_menu)","color":"gray"},\
-{"text":" ","font":"default_neg"}\
-,{"font":"default_neg","keybind":"key.advancements","color":"gray"},\
-{"font":"default_neg","text":"$(tr_gui_options_upgrade)","color":"gray"},\
-{"text":" ","font":"bottom_right_side-50",},\
-{"font":"bottom_right_side-50","keybind":"key.advancements","color":"gray"},\
-{"font":"bottom_right_side-50","text":"$(tr_gui_options_upgrade)","color":"gray"}]
+{"font":"bottom_right_side-50","keybind":"key.inventory","color":"gray"},\
+{"font":"bottom_right_side-50","text":"$(tr_gui_options_open_menu)","color":"gray"}]

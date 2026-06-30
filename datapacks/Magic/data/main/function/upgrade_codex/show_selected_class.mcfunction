@@ -1,0 +1,4 @@
+execute if score @s codex_class matches 1 run function main:upgrade_codex/select_class {id:1,class:"warrior",suffix:"w",icon:"",title_key:"tr_lobby_warrior_title",description_key:"tr_lobby_warrior_description"}
+execute if score @s codex_class matches 2 run function main:upgrade_codex/select_class {id:2,class:"archer",suffix:"a",icon:"",title_key:"tr_lobby_archer_title",description_key:"tr_lobby_archer_description"}
+execute if score @s codex_class matches 3 run function main:upgrade_codex/select_class {id:3,class:"mage",suffix:"m",icon:"",title_key:"tr_lobby_mage_title",description_key:"tr_lobby_mage_description"}
+execute if score @s codex_class matches 4 run function main:upgrade_codex/select_class {id:4,class:"rogue",suffix:"r",icon:"",title_key:"tr_lobby_rogue_title",description_key:"tr_lobby_rogue_description"}

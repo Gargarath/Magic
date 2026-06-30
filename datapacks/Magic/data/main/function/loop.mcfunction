@@ -24,6 +24,9 @@ execute as @a[tag=choosing_language,scores={welcome_language=1}] run function ma
 execute as @a[tag=choosing_language,scores={welcome_language=2}] run function main:initialised/welcome_dialog/select_french
 execute as @a[tag=choosing_language,scores={welcome_language=3}] run function main:initialised/welcome_dialog/reopen
 
+## CODEX D'AMELIORATIONS
+execute as @a[scores={upgrade_codex=1..}] run function main:upgrade_codex/action
+
                                         ## LANCE LES BOUCLES DES AUTRES SYSTEMES SI IL Y A BESOIN ##
                                         
 execute if score ctf enable_loop matches 1 run function gamemode:ctf/loop

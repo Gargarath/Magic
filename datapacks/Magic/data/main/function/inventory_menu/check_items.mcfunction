@@ -4,6 +4,7 @@
 # reset storage temp
 data modify storage temp:inventory_menu language_count set value 0
 data modify storage temp:inventory_menu settings_count set value 0
+data modify storage temp:inventory_menu codex_count set value 0
 
 ## SETTINGS
 # si l'item settings n'est pas au bon slot, compte combien il y en a ailleurs
@@ -20,5 +21,10 @@ execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.17 oak_sign[custom_data={inventory_menu:1b,inventory_menu_language:1b}] unless data storage temp:inventory_menu {language_count:0} run function main:inventory_menu/lang/click_language
 # si l'item est pas au bon slot et pas ailleurs, redonne les items d'inventaire
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.17 oak_sign[custom_data={inventory_menu:1b,inventory_menu_language:1b}] if data storage temp:inventory_menu {language_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+
+## CODEX
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] store result storage temp:inventory_menu codex_count int 1 run clear @s enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] 0
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] unless data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/click_codex
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] if data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if score @s inventory_page matches -1 run function main:inventory_menu/settings/check_items/settings

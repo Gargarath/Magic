@@ -33,10 +33,10 @@ scoreboard players set @s[scores={Player=1..}] in_fight 0
 scoreboard players set @s[scores={Player=1..}] Player 0
 scoreboard players set @s InLobby 1
 function main:reset/resetachats
-advancement grant @s from warrior:root
-advancement grant @s from archer:root
-advancement grant @s from mage:root
-advancement grant @s from rogue:root
+advancement revoke @s from warrior:root
+advancement revoke @s from archer:root
+advancement revoke @s from mage:root
+advancement revoke @s from rogue:root
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:regeneration
 effect clear @s minecraft:resistance

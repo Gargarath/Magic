@@ -7,7 +7,6 @@ data modify storage strings en_en set value {\
 \
 "tr_gui_options_title":"Options:             ",\
 "tr_gui_options_open_menu":": Open menu      ",\
-"tr_gui_options_upgrade":": Upgrade tree  ",\
 \
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You have joined spectator mode!",\
@@ -35,8 +34,41 @@ data modify storage strings en_en set value {\
 "tr_gui_map_visit_spec_commands":"Spectator's commands:",\
 \
 \
-"tr_upgrade_tree_1":"Press",\
-"tr_upgrade_tree_2":"to view your progress in the upgrade tree!",\
+"tr_upgrade_tree_1":"Open your inventory",\
+"tr_upgrade_tree_2":"and click the upgrade codex to view every class and your progress!",\
+"tr_codex_title":"Upgrade Codex",\
+"tr_codex_inventory_lore_1":"Click to browse every class",\
+"tr_codex_inventory_lore_2":"and your current progression",\
+"tr_codex_choose_class":"Choose a class to browse its upgrades.",\
+"tr_codex_close":"Close",\
+"tr_codex_back_classes":"Back to classes",\
+"tr_codex_back_category":"Back",\
+"tr_codex_previous":"Previous level",\
+"tr_codex_next":"Next level",\
+"tr_codex_current_level":"Current level:",\
+"tr_codex_other_class":"Catalog only",\
+"tr_codex_chest":"Chestplate",\
+"tr_codex_legs":"Leggings",\
+"tr_codex_boots":"Boots",\
+"tr_codex_chest_base_name":"Health Chestplate",\
+"tr_codex_legs_base_name":"Leggings of Speed",\
+"tr_codex_boots_base_name":"Acrobat Boots",\
+"tr_warrior_weapon1_base_name":"Battle Axe",\
+"tr_warrior_spell1_base_name":"Berserk",\
+"tr_warrior_spell2_base_name":"Rally Flag",\
+"tr_warrior_spell3_base_name":"Grappling Hook",\
+"tr_archer_weapon1_base_name":"Battle Bow",\
+"tr_archer_spell1_base_name":"Explosive Arrow",\
+"tr_archer_spell2_base_name":"Bear Trap",\
+"tr_archer_spell3_base_name":"Ice Arrow",\
+"tr_mage_weapon1_base_name":"Battle Staff",\
+"tr_mage_spell1_base_name":"Fire Bolt",\
+"tr_mage_spell2_base_name":"Lightning Storm",\
+"tr_mage_spell3_base_name":"Teleportation",\
+"tr_rogue_weapon1_base_name":"Sneaky Dagger",\
+"tr_rogue_spell1_base_name":"Ambush",\
+"tr_rogue_spell2_base_name":"Shadow Path",\
+"tr_rogue_spell3_base_name":"Shadow Bomb",\
 \
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\

@@ -89,13 +89,10 @@ tag @a add save_inventory
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
 
 advancement revoke @a[scores={Player=1..}] everything
-advancement grant @a[tag=warrior,scores={Player=1..}] until warrior:passif_w
-advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif1_a
-advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif2_a
-advancement grant @a[tag=archer,scores={Player=1..}] until archer:passif3_a
-advancement grant @a[tag=mage,scores={Player=1..}] until mage:passif_m
-advancement grant @a[tag=rogue,scores={Player=1..}] until rogue:passif_r
-advancement grant @a[tag=rogue,scores={Player=1..}] until rogue:passif2_r
+advancement revoke @a from warrior:root
+advancement revoke @a from archer:root
+advancement revoke @a from mage:root
+advancement revoke @a from rogue:root
 # Affiche les objets achetable par le joueur selon sa classe
 
 tag @a[scores={Player=1..}] add display_killfeed
