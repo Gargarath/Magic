@@ -16,7 +16,7 @@ $execute if score @s key_slot2 = @s spell3_slot2 run data modify storage stats:l
 $execute if score @s key_slot3 = @s spell1_slot2 run data modify storage stats:leaderboards by_player.$(player).key_slot3 set from storage stats:leaderboards by_player.$(player).spell1
 $execute if score @s key_slot3 = @s spell2_slot2 run data modify storage stats:leaderboards by_player.$(player).key_slot3 set from storage stats:leaderboards by_player.$(player).spell2
 $execute if score @s key_slot3 = @s spell3_slot2 run data modify storage stats:leaderboards by_player.$(player).key_slot3 set from storage stats:leaderboards by_player.$(player).spell3
-$execute if score @s[tag=!warrior,tag=!rogue] Player matches 1 run data modify storage stats:leaderboards by_player.$(player).key_slot3 set from storage stats:leaderboards by_player.$(player).weapon1
+$execute if entity @s[tag=!warrior,tag=!rogue] run data modify storage stats:leaderboards by_player.$(player).key_slot3 set from storage stats:leaderboards by_player.$(player).weapon1
 
 function main:gui/display/refresh_gui
 # refresh le gui
