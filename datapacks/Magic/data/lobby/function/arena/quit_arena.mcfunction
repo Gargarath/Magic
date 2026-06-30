@@ -13,6 +13,8 @@ execute if score $gamemode option_panel matches 1 run tag @s remove no_team
 
 function main:reset/resetspells/generic
 # reset tout ce qui est lié au spell pour @s
+function main:reset/resetachats
+# reset les achats de @s
 
 attribute @s minecraft:entity_interaction_range base set 40
 # redonne la portée d'interaction d'entité pour le mennu à @s
