@@ -5,6 +5,7 @@
 data modify storage temp:inventory_menu language_count set value 0
 data modify storage temp:inventory_menu settings_count set value 0
 data modify storage temp:inventory_menu codex_count set value 0
+data modify storage temp:inventory_menu op_menu_count set value 0
 
 ## SETTINGS
 # si l'item settings n'est pas au bon slot, compte combien il y en a ailleurs
@@ -27,4 +28,13 @@ execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] unless data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/click_codex
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] if data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
+## OP MENU
+execute unless score @s operator matches 2 if score @s inventory_page matches -2 run function main:inventory_menu/op_menu/cleanup_op_menu_items
+execute unless score @s operator matches 2 if score @s inventory_page matches -2 run scoreboard players set @s inventory_page 0
+execute if score @s operator matches 2 if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.26 oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}] store result storage temp:inventory_menu op_menu_count int 1 run clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}] 0
+execute if score @s operator matches 2 if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.26 oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}] unless data storage temp:inventory_menu {op_menu_count:0} run function main:inventory_menu/op_menu/click_items/click_op_menu
+execute if score @s operator matches 2 if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.26 oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}] if data storage temp:inventory_menu {op_menu_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute unless score @s operator matches 2 run clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}]
+
 execute if score @s inventory_page matches -1 run function main:inventory_menu/settings/check_items/settings
+execute if score @s operator matches 2 if score @s inventory_page matches -2 run function main:inventory_menu/op_menu/check_items/op_menu

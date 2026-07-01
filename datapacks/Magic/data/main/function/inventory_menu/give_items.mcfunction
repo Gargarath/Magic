@@ -6,5 +6,8 @@ execute if score @s opt_lang matches 1 run function main:inventory_menu/lang/giv
 
 $item replace entity @s inventory.8 with oak_sign[item_name=[{"bold":true,"color":"gray","text":"$(tr_inventory_menu_settings)"}],lore=["",{"color":"gray","text":"$(tr_inventory_menu_settings_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_lore_2)"}],custom_data={inventory_menu:1b,inventory_menu_settings:1b},custom_model_data={strings:["inventory_settings_settings"]}] 1
 $item replace entity @s inventory.18 with enchanted_book[item_name=[{"bold":true,"color":"gold","text":"$(tr_codex_title)"}],lore=["",{"color":"gray","text":"$(tr_codex_inventory_lore_1)"},{"color":"gray","text":"$(tr_codex_inventory_lore_2)"}],enchantment_glint_override=true,custom_data={inventory_menu:1b,inventory_menu_codex:1b}] 1
+$item replace entity @s[scores={operator=2}] inventory.26 with oak_sign[item_name=[{"bold":true,"color":"dark_red","text":"$(tr_inventory_menu_op_menu)"}],lore=["",{"color":"gray","text":"$(tr_inventory_menu_op_menu_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_op_menu_lore_2)"}],custom_data={inventory_menu:1b,inventory_menu_op_menu:1b},custom_model_data={strings:["inventory_op_menu"]}] 1
+execute unless score @s operator matches 2 if items entity @s inventory.26 oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}] run item replace entity @s inventory.26 with air
 
 execute if score @s inventory_page matches -1 run function main:inventory_menu/settings/display_settings with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score @s operator matches 2 if score @s inventory_page matches -2 run function main:inventory_menu/op_menu/display_op_menu with entity @s EnderItems[0].components.minecraft:custom_data

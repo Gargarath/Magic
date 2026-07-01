@@ -111,6 +111,29 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_settings_jump_timer_lore_3":"Votre temps reste masqué",\
 "tr_inventory_menu_settings_jump_timer_lore_4":"jusqu'à la fin de la course.",\
 \
+"tr_inventory_menu_op_menu":"Commandes de modération",\
+"tr_inventory_menu_op_menu_lore_1":"\uE400 Cliquez pour",\
+"tr_inventory_menu_op_menu_lore_2":"accéder aux commandes",\
+"tr_inventory_menu_op_menu_quit":"Retour",\
+"tr_inventory_menu_op_menu_quit_lore_1":"\uE400 Cliquez pour quitter",\
+"tr_inventory_menu_op_menu_quit_lore_2":"les commandes de modération",\
+"tr_inventory_menu_op_menu_stop_game":"Arrêter la partie",\
+"tr_inventory_menu_op_menu_stop_game_lore":"Arrête la partie en cours.",\
+"tr_inventory_menu_op_menu_randomize_teams":"Équipes aléatoires",\
+"tr_inventory_menu_op_menu_randomize_teams_lore_1":"Répartit aléatoirement les joueurs",\
+"tr_inventory_menu_op_menu_randomize_teams_lore_2":"entre les deux équipes.",\
+"tr_inventory_menu_op_menu_randomize_classes":"Classes aléatoires",\
+"tr_inventory_menu_op_menu_randomize_classes_lore_1":"Répartit équitablement les joueurs",\
+"tr_inventory_menu_op_menu_randomize_classes_lore_2":"entre les différentes classes.",\
+"tr_inventory_menu_op_menu_all_ready":"Forcer tous prêts",\
+"tr_inventory_menu_op_menu_all_ready_lore_1":"Force tous les joueurs à être prêts",\
+"tr_inventory_menu_op_menu_all_ready_lore_2":"dans les salles d'achat.",\
+"tr_inventory_menu_op_menu_round_over":"Terminer la manche",\
+"tr_inventory_menu_op_menu_round_over_lore":"Termine la manche actuelle.",\
+"tr_inventory_menu_op_menu_quit_op":"Quitter la modération",\
+"tr_inventory_menu_op_menu_quit_op_lore_1":"Retire votre rôle de modérateur",\
+"tr_inventory_menu_op_menu_quit_op_lore_2":"et ferme ce menu.",\
+\
 "tr_lobby_jump_pad_maps":"Visiter les arènes",\
 "tr_lobby_jump_pad_stats":"Île de statistiques",\
 "tr_lobby_jump_pad_jump":"Île de jump",\
@@ -514,27 +537,10 @@ data modify storage strings fr_fr set value {\
 "tr_stats_book_flag_earned":"drapeaux ennemis rapportés",\
 "tr_stats_book_flag_saved":"drapeaux alliés rapportés",\
 \
-"tr_admin_book_name":"Livre d'administrateur",\
-"tr_admin_book_title":" Livre d'admin ",\
-"tr_admin_book_stop_game_title":"[Arrêter la partie]",\
-"tr_admin_book_stop_game_lore":"Cliquez pour arrêter la partie en cours.",\
-"tr_admin_book_quit_admin_title":"[Quitter la modération]",\
-"tr_admin_book_quit_admin_lore":"Cliquez pour quitter votre\nrôle de modérateur.",\
-\
-"tr_admin_book_options_title":"       Options",\
-"tr_admin_book_randomize_team_title":"Equipes aléatoires",\
-"tr_admin_book_randomize_team_lore":"Cliquez pour répartir les\njoueurs aléatoirement\nentre les deux équipes.",\
-"tr_admin_book_randomize_classes_title":" [Classes aléatoires]",\
-"tr_admin_book_randomize_classes_lore":"Cliquez pour répartir\nles joueurs équitablement\nentre les classes.",\
-"tr_admin_book_all_ready_title":" [Tous prêts magasin]",\
-"tr_admin_book_all_ready_lore":"Cliquez pour forcer tous\nles joueurs à être prêts\ndans les salles d'achat.",\
-"tr_admin_book_round_over_title":"    [Finir la manche] ",\
-"tr_admin_book_round_over_lore":"Cliquez pour terminer\nla manche actuelle.",\
-\
 "tr_admin_not_op_anymore_1":"Vous n'êtes plus",\
 "tr_admin_not_op_anymore_2":".",\
 "tr_admin_became_op_1":"Vous êtes devenu",\
-"tr_admin_became_op_2":"Vous avez désormais accès au livre d'admin et au menu d'option.",\
+"tr_admin_became_op_2":"Vous avez désormais accès au options de modérateur et au menu d'option.",\
 "tr_admin_how_to_be_op_platform":"Vous n'avez pas accès à ce panneau. Pour devenir modérateur, tenez vous sur la plateforme jaune devant le menu d'option.",\
 "tr_admin_how_to_be_op_command_1":"Vous n'avez pas accès à ce panneau. Si vous êtes modérateur",\
 "tr_admin_how_to_be_op_command_2":"cliquez ici",\

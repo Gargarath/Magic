@@ -17,9 +17,7 @@ $item replace entity @s hotbar.4 with red_bed[custom_data={tp_red_spawn:1b},cust
 $item replace entity @s hotbar.8 with carrot_on_a_stick[custom_name={"bold":true,"color":"dark_red","text":"$(tr_item_map_visit_quit_name)"},custom_data={quit_map:1b},custom_model_data={strings:["back_to_menu"]}] 1
 # objet pour quitter l'arène
 
-# livre d'admin
-execute if score @s operator matches 2 run function stuff:give_admin_book with entity @s EnderItems[0].components.minecraft:custom_data
-item replace entity @s[scores={operator=2}] inventory.26 from block 13 97 11 container.0
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 tag @s remove inventory_rebuilding
 tag @s add save_inventory

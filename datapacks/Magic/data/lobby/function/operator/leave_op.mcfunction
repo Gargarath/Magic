@@ -8,8 +8,10 @@ scoreboard players set @s operator 0
 execute if score @s InLobby matches 1 run function lobby:team_selector/give_lobby_team
 # Donne la bonne équipe de lobby à @s si il est dans le lobby
 
-clear @s *[minecraft:custom_data={admin_item:1b}]
-# clear les objets d'admin de @s
+function main:inventory_menu/op_menu/cleanup_op_menu_items
+clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}]
+scoreboard players set @s inventory_page 0
+# retire le menu de moderation de @s
 
 function lobby:operator/triggers/reset_op_triggers
 # enlève les trigger pour @s

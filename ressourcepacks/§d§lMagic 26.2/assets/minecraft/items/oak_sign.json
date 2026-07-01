@@ -392,11 +392,60 @@
           "model": "item/inventory_menu/settings/jump_timer_off"
         }
       },
-            {
+      {
         "when": "inventory_settings_jump_timer_on",
         "model": {
           "type": "model",
           "model": "item/inventory_menu/settings/jump_timer_on"
+        }
+      },
+      {
+        "when": "inventory_op_menu",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/op_menu"
+        }
+      },
+      {
+        "when": "inventory_op_menu_stop_game",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/stop_game"
+        }
+      },
+      {
+        "when": "inventory_op_menu_randomize_teams",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/randomize_teams"
+        }
+      },
+      {
+        "when": "inventory_op_menu_randomize_classes",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/randomize_classes"
+        }
+      },
+      {
+        "when": "inventory_op_menu_all_ready",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/all_ready"
+        }
+      },
+      {
+        "when": "inventory_op_menu_round_over",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/round_over"
+        }
+      },
+      {
+        "when": "inventory_op_menu_quit_op",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/quit_op"
         }
       }
     ]

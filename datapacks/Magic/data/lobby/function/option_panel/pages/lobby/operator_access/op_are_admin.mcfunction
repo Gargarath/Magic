@@ -15,6 +15,7 @@ scoreboard players reset * admin_round_over
 
 scoreboard players set @s operator 2
 function lobby:operator/triggers/enable_op_triggers
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # remet @s modo
 
 data merge entity @n[type=item_display,tag=optn_menu_lobby_operator_access] {item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["op_are_admin"]}}}}
