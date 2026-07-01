@@ -114,6 +114,9 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_op_menu":"Commandes de modération",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Cliquez pour",\
 "tr_inventory_menu_op_menu_lore_2":"accéder aux commandes",\
+"tr_inventory_menu_op_menu_placeholder":"Commandes verrouillées",\
+"tr_inventory_menu_op_menu_placeholder_lore_1":"\uE400 Cliquez pour savoir",\
+"tr_inventory_menu_op_menu_placeholder_lore_2":"comment devenir modérateur",\
 "tr_inventory_menu_op_menu_quit":"Retour",\
 "tr_inventory_menu_op_menu_quit_lore_1":"\uE400 Cliquez pour quitter",\
 "tr_inventory_menu_op_menu_quit_lore_2":"les commandes de modération",\

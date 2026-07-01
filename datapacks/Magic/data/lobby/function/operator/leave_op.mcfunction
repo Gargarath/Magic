@@ -11,6 +11,7 @@ execute if score @s InLobby matches 1 run function lobby:team_selector/give_lobb
 function main:inventory_menu/op_menu/cleanup_op_menu_items
 clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_op_menu:1b}]
 scoreboard players set @s inventory_page 0
+function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 # retire le menu de moderation de @s
 
 function lobby:operator/triggers/reset_op_triggers

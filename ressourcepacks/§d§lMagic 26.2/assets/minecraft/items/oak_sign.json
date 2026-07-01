@@ -407,6 +407,13 @@
         }
       },
       {
+        "when": "inventory_op_menu_placeholder",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/op_menu/op_menu_placeholder"
+        }
+      },
+      {
         "when": "inventory_op_menu_stop_game",
         "model": {
           "type": "model",

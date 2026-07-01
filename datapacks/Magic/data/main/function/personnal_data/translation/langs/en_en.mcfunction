@@ -114,6 +114,9 @@ data modify storage strings en_en set value {\
 "tr_inventory_menu_op_menu":"Moderator Commands",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Click to access",\
 "tr_inventory_menu_op_menu_lore_2":"the moderator commands",\
+"tr_inventory_menu_op_menu_placeholder":"Locked Commands",\
+"tr_inventory_menu_op_menu_placeholder_lore_1":"\uE400 Click to learn how",\
+"tr_inventory_menu_op_menu_placeholder_lore_2":"to become a moderator",\
 "tr_inventory_menu_op_menu_quit":"Back",\
 "tr_inventory_menu_op_menu_quit_lore_1":"\uE400 Click to leave",\
 "tr_inventory_menu_op_menu_quit_lore_2":"the moderator commands",\
