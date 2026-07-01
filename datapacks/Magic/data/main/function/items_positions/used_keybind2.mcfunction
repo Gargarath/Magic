@@ -25,5 +25,6 @@ item replace entity @s[tag=Has_Red_flag] weapon.offhand from block 13 97 11 cont
 # redonne le drapeau rouge à @s
 
 
+tag @s remove inventory_rebuilding
 execute if entity @s[scores={InLobby=1},tag=!in_lobby_arena] run function lobby:hotbar_menu/drop_item
 tag @s add save_inventory

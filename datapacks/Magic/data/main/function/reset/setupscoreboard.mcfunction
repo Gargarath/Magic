@@ -62,7 +62,7 @@ scoreboard objectives add secnd_objective dummy
 scoreboard objectives add time_to_obj dummy
 scoreboard objectives add point_capture dummy
 scoreboard objectives add golem dummy
-
+scoreboard objectives add secondary_objective_slot dummy
 
 
 ## LOBBY
