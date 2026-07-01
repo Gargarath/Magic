@@ -38,6 +38,7 @@ gamemode adventure @a[gamemode=spectator]
 tag @a remove in_own_spawn
 
 effect clear @a minecraft:regeneration
+execute as @a run function main:effects/refresh_persistent
 
 execute as @a run attribute @s minecraft:waypoint_receive_range base set 0
 # enlève la locator bar de tous

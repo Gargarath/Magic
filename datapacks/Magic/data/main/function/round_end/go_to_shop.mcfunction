@@ -90,6 +90,7 @@ scoreboard players set @a respawn_time -1
 # reset les gens morts
 
 scoreboard players set @a InShop 1
+execute as @a run function main:effects/refresh_persistent
 function stuff:setstuff
 
 scoreboard players set @a is_ready 0

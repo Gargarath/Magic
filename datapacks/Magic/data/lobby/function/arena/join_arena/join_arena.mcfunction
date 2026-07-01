@@ -117,6 +117,7 @@ attribute @s minecraft:entity_interaction_range base set 3
 # redonne la portée d'interaction d'entité de base à @s
 
 effect give @s minecraft:instant_health 2 10 true
+function main:effects/refresh_persistent
 
 tp @s ~ 96.0 ~
 

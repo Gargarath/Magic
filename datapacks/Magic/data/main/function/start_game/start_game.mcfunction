@@ -45,6 +45,7 @@ effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true
 # Permet à tous ceux qui ont InShop à 1 d'avoir des effets (saturation/night vision/instant health) et leur donne night vision tout de suite pour eviter un effet flash
 
 scoreboard players set @a InLobby 0
+execute as @a run function main:effects/refresh_persistent
 # Enleve les effet du lobby à @a
 tag @a remove in_map_display
 # indique que les joueurs ne sont pas dans la zone de maps

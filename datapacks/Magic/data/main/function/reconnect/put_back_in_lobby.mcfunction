@@ -42,6 +42,7 @@ effect clear @s minecraft:regeneration
 effect clear @s minecraft:resistance
 effect clear @s minecraft:strength
 effect clear @s minecraft:speed
+function main:effects/refresh_persistent
 function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
 tag @s add inventory_rebuilding

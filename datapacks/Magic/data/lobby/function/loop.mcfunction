@@ -98,10 +98,6 @@ execute if score $operator_access option_panel matches 0 positioned 0 100 -13 un
 execute if score $operator_access option_panel matches 1 as @a[scores={operator=1}] run function lobby:operator/admins_are_op/becomeop with entity @s EnderItems[0].components.minecraft:custom_data
 
 
-                                         #### EFFETS DANS LE LOBBY #####
-effect give @a[scores={InLobby=1},tag=!in_lobby_arena] minecraft:weakness 1 255 true
-
-
 ## JOUEURS QUI TOMBENT
 
 execute as @a[gamemode=adventure,tag=!in_lobby_arena,tag=!spec_map] at @s if predicate minecraft:felt_lobby run function lobby:felt_lobby

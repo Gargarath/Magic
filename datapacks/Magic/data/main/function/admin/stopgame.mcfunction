@@ -165,6 +165,7 @@ effect clear @a minecraft:strength
 effect clear @a minecraft:speed
 scoreboard players set @a InLobby 1
 scoreboard players set @a InShop 0
+execute as @a run function main:effects/refresh_persistent
 # Clear les effets puis donne les effets du lobby
 
 scoreboard players set yes used_reset 1

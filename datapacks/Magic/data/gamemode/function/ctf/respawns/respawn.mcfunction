@@ -7,8 +7,7 @@ function main:reset/resetspells/respawn_reset
 # reset tout ce qui est generique au niveau du respawn
 
 effect give @s minecraft:instant_health 1 10 true
-effect give @s[tag=!rogue] minecraft:regeneration infinite 0 true
-effect give @s[tag=rogue] minecraft:regeneration infinite 1 true
+function main:effects/refresh_persistent
 # donne la regen à @s
 
 team join respawn_blue @s[team=blue]

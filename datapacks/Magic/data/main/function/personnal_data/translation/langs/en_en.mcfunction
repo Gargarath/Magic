@@ -33,6 +33,10 @@ data modify storage strings en_en set value {\
 \
 "tr_gui_map_visit_spec_commands":"Spectator's commands:",\
 \
+"tr_discord_message":"Join the Discord server:",\
+"tr_discord_link":"[Open Discord]",\
+"tr_discord_hover":"Click to join the Discord server!",\
+\
 \
 "tr_upgrade_tree_1":"Open your inventory",\
 "tr_upgrade_tree_2":"and click the upgrade codex to view every class and your progress!",\

@@ -454,6 +454,13 @@
           "type": "model",
           "model": "item/inventory_menu/op_menu/quit_op"
         }
+      },
+      {
+        "when": "inventory_classes_codex",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/classes_codex"
+        }
       }
     ]
   }

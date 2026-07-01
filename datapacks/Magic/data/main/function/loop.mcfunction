@@ -27,6 +27,9 @@ execute as @a[tag=choosing_language,scores={welcome_language=3}] run function ma
 ## CODEX D'AMELIORATIONS
 execute as @a[scores={upgrade_codex=1..}] run function main:upgrade_codex/action
 
+## DISCORD
+execute as @a[scores={discord=1..}] run function main:commands/discord with entity @s EnderItems[0].components.minecraft:custom_data
+
                                         ## LANCE LES BOUCLES DES AUTRES SYSTEMES SI IL Y A BESOIN ##
                                         
 execute if score ctf enable_loop matches 1 run function gamemode:ctf/loop
@@ -39,10 +42,6 @@ execute if score stuff enable_loop matches 1 run function stuff:loop
                                     ## GUI ##
 
 execute as @e[scores={gui_actionbar_alert=1..}] run function main:gui/actionbar_timer
-
-                                        ### Donne effet de saturation
-
-effect give @a minecraft:saturation 5 255 true
 
 ## Test nombre de joueur ##
 execute store result score player playercount if entity @a[scores={Player=0..}]

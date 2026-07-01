@@ -1,6 +1,7 @@
 # Appellée par shop:loop permet de lancer la game quand tout le monde est prêt
 
 scoreboard players set @a InShop 0
+execute as @a run function main:effects/refresh_persistent
 scoreboard players set @a is_ready 0
 
 execute as @a[scores={blue_place=1..}] run function main:stats/scoreboard/blue_team_info/overlays/no_overlay_icon/check_place

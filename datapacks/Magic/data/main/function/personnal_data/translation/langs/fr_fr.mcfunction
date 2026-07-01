@@ -33,6 +33,10 @@ data modify storage strings fr_fr set value {\
 \
 "tr_gui_map_visit_spec_commands":"Commandes spec :",\
 \
+"tr_discord_message":"Rejoignez le serveur Discord :",\
+"tr_discord_link":"[Ouvrir Discord]",\
+"tr_discord_hover":"Cliquez pour rejoindre le serveur Discord !",\
+\
 \
 "tr_upgrade_tree_1":"Ouvrez votre inventaire",\
 "tr_upgrade_tree_2":"et cliquez sur le codex pour consulter les classes et votre progression !",\

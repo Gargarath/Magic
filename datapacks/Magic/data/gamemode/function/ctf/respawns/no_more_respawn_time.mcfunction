@@ -26,8 +26,7 @@ execute as @s[scores={Player=11}] run bossbar set respawn:player11 players
 execute as @s[scores={Player=12}] run bossbar set respawn:player12 players
 
 effect give @s minecraft:instant_health 1 10 true
-effect give @s[tag=!rogue] minecraft:regeneration infinite 0 true
-effect give @s[tag=rogue] minecraft:regeneration infinite 1 true
+function main:effects/refresh_persistent
 # donne la regen à @s
 
 execute if entity @s[tag=archer] run function stuff:stuff_archer/arrows/classics/lvlx with entity @s EnderItems[0].components.minecraft:custom_data

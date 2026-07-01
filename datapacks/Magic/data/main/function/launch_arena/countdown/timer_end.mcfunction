@@ -18,8 +18,7 @@ execute as @a[scores={Player=1..}] run function main:inventory_menu/give_items w
 execute as @a[tag=mage,scores={Player=1..,weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
 
 effect give @a[scores={Player=1..}] minecraft:instant_health 20 100 true
-effect give @a[scores={Player=1..},tag=!rogue] minecraft:regeneration infinite 0 true
-effect give @a[scores={Player=1..},tag=rogue] minecraft:regeneration infinite 1 true
+execute as @a[scores={Player=1..}] run function main:effects/refresh_persistent
 # lance la boucle de heal sur tous les joueurs
 
 team modify red seeFriendlyInvisibles true

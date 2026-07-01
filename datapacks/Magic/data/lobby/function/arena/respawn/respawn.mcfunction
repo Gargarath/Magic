@@ -101,8 +101,7 @@ execute if score @s in_trap_number matches 1.. run function spells:spellsystem/s
 
 
 effect give @s minecraft:instant_health 1 10 true
-effect give @s[tag=!rogue] minecraft:regeneration infinite 0 true
-effect give @s[tag=rogue] minecraft:regeneration infinite 1 true
+function main:effects/refresh_persistent
 # donne la regen à @s
 
 scoreboard players set @s in_fight 0

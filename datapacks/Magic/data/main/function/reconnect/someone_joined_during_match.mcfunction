@@ -54,5 +54,6 @@ execute at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 2
 
 function main:gui/display/refresh_gui
 function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+function main:effects/refresh_persistent
 tag @s remove inventory_rebuilding
 tag @s add save_inventory

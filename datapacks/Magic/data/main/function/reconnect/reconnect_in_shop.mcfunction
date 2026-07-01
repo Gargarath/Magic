@@ -95,6 +95,5 @@ execute as @s[tag=rogue,scores={Player=1..},tag=!invisibility_r] run function st
 execute as @s[tag=mage,scores={Player=1..,weapon1=1..}] run function spells:spellsystem/weapon1_m/refresh_timer/100
 
 effect give @s[scores={Player=1..}] minecraft:instant_health 20 100 true
-effect give @s[scores={Player=1..},tag=!rogue] minecraft:regeneration infinite 0 true
-effect give @s[scores={Player=1..},tag=rogue] minecraft:regeneration infinite 1 true
+execute if score @s Player matches 1.. run function main:effects/refresh_persistent
 # lance la boucle de heal sur @s

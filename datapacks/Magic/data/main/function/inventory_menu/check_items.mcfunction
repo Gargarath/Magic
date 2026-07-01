@@ -25,9 +25,9 @@ execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.17 oak_sign[custom_data={inventory_menu:1b,inventory_menu_language:1b}] if data storage temp:inventory_menu {language_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 ## CODEX
-execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] store result storage temp:inventory_menu codex_count int 1 run clear @s enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] 0
-execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] unless data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/click_codex
-execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 enchanted_book[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] if data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 oak_sign[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] store result storage temp:inventory_menu codex_count int 1 run clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] 0
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 oak_sign[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] unless data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/click_codex
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.18 oak_sign[custom_data={inventory_menu:1b,inventory_menu_codex:1b}] if data storage temp:inventory_menu {codex_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 ## OP MENU
 execute unless score @s operator matches 2 if score @s inventory_page matches -2 run function main:inventory_menu/op_menu/cleanup_op_menu_items

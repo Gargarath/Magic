@@ -86,8 +86,3 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={uses
 execute as @a[scores={usespell=1..,InShop=1}] run scoreboard players set @s usespell 0
 #execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
 execute as @a[scores={Player=1..,InShop=1}] unless predicate offhand_autorized run function shop:cant_usespell
-
-                                    # GERE LES EFFETS DANS LA ZONE DE SHOP #
-
-effect give @a[scores={InShop=1}] minecraft:saturation 10 0 true
-effect give @a[scores={InShop=1}] minecraft:instant_health 10 0 true

@@ -28,6 +28,7 @@ execute unless entity @s[nbt={Fire:-20s}] run effect give @s minecraft:fire_resi
 #si le joueur brule -> le rend insencible au feu avant de le heal
 
 effect give @s minecraft:instant_health 1 10 true
+function main:effects/refresh_persistent
 
 function main:items_positions/cleanup_managed_items
 function main:items_positions/cleanup_armor

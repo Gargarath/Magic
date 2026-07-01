@@ -63,6 +63,7 @@ function main:reset/setupspells
 function main:reset/resetclass
 function main:stats/reset_stats
 effect clear @s
+function main:effects/refresh_persistent
 
 attribute @s minecraft:waypoint_receive_range base set 0
 # enlève la locator bar de @s
@@ -134,6 +135,7 @@ scoreboard players set @s opt_display_jump_timer 1
 scoreboard players set @s opt_color 0
 scoreboard players set @s opt_lang 0
 scoreboard players enable @s upgrade_codex
+scoreboard players enable @s discord
 
 # ------ # STORAGE PERSONNEL # ---------------
 item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane[minecraft:custom_data={\
