@@ -6,7 +6,7 @@ data modify storage strings en_en set value {\
 "tr_gui_keybinds":"Keybinds:",\
 \
 "tr_gui_options_title":"Options:             ",\
-"tr_gui_options_open_menu":": Open menu      ",\
+"tr_gui_options_open_menu":": Open menu      '",\
 \
 "tr_changed_language":"Your language has been set to: English",\
 "tr_joined_spectator":"You have joined spectator mode!",\
@@ -39,7 +39,7 @@ data modify storage strings en_en set value {\
 \
 \
 "tr_upgrade_tree_1":"Open your inventory",\
-"tr_upgrade_tree_2":"and click the upgrade codex to view every class and your progress!",\
+"tr_upgrade_tree_2":"and click the upgrade codex to view your progress!",\
 "tr_codex_title":"Upgrade Codex",\
 "tr_codex_inventory_lore_1":"Click to browse every class",\
 "tr_codex_inventory_lore_2":"and your current progression",\
