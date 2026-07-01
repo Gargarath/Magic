@@ -1,5 +1,7 @@
 # Permet de reset totalement un joueur si on appelle cette fonction en son nom
 
+clear @s
+
 tag @s add initialised
 scoreboard players set @s InLobby 1
 scoreboard players set @s InShop 0
