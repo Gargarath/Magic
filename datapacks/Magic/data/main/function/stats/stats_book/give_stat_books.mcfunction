@@ -27,10 +27,11 @@ $execute if score @s class_id matches 2 run data modify storage temp:sort storag
 $execute if score @s class_id matches 3 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_mage)]","color":"dark_purple","bold":true}
 $execute if score @s class_id matches 4 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_rogue)]","color":"gray","bold":true}
 
+execute if score @s team_side matches 0 run data modify storage temp:sort storage.team_last_game set value {"text":""}
 $execute if score @s team_side matches 1 run data modify storage temp:sort storage.team_last_game set value {"text":"$(tr_stats_book_team_blue)","color":"blue","bold":true}
 $execute if score @s team_side matches 2 run data modify storage temp:sort storage.team_last_game set value {"text":"$(tr_stats_book_team_red)","color":"red","bold":true}
 
 function main:personnal_data/save_new_data with storage temp:sort
 # ajoute le rank de la game et le numéro de joueur dans la data de @s
 
-function main:stats/stats_book/playerx/setup_playerx with entity @s EnderItems[0].components.minecraft:custom_data
+function main:stats/stats_book/playerx/setup_playerx with storage temp:sort storage

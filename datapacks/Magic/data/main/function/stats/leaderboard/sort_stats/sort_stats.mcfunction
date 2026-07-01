@@ -1,12 +1,12 @@
 ## appelée par setup_leaderboard_endgame
 # permet de determiner les classements sur chaque stats
 
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_hand_dmg /= 10 operations
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_spell_dmg /= 10 operations
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_spell_dmg_f /= 10 operations
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_bow_dmg_player10 /= 10 operations
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_bow_dmg_boss10 /= 10 operations
-execute as @a[scores={Player=1..}] run scoreboard players operation @s stat_dmg_taken /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_hand_dmg /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_spell_dmg /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_spell_dmg_f /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_bow_dmg_player10 /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_bow_dmg_boss10 /= 10 operations
+execute as @a[scores={played_last_game=1}] run scoreboard players operation @s stat_dmg_taken /= 10 operations
 # divise par 10 les stats de dégâts de tous les joueurs (pour que ce soit cohérent avec les descriptions des sorts)
 
 execute as @a[scores={played_last_game=1}] run scoreboard players set @s stat_killcount 0
