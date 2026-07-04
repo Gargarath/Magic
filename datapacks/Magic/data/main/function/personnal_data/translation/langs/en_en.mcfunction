@@ -356,6 +356,7 @@ data modify storage strings en_en set value {\
 "tr_item_spec_mode":"Spectator mode",\
 "tr_item_activated":"On",\
 "tr_item_desactivated":"Off",\
+"tr_cant_use_in_spec":"You cannot use this option in spectator mode!",\
 \
 "tr_item_map_visit_spec_mode_name":"Spectator Mode",\
 "tr_item_map_visit_spec_mode_lore_1":"Switch to spectator mode",\

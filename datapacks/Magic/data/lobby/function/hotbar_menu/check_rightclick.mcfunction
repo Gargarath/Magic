@@ -60,7 +60,7 @@ execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{qu
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{join_spectator:1b}}}} run return run function lobby:hotbar_menu/main/join_spectator
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{leave_spectator:1b}}}} run return run function lobby:hotbar_menu/main/leave_spectator with entity @s EnderItems[0].components.minecraft:custom_data
-execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{cant_use_in_spec:1b}}}} run return run function lobby:hotbar_menu/main/cant_use_in_spec
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{cant_use_in_spec:1b}}}} run return run function lobby:hotbar_menu/main/cant_use_in_spec with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{tp_checkpoint:1b}}}} run return run function lobby:hotbar_menu/jump/tp_checkpoint
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{reset_jump:1b}}}} run return run function lobby:hotbar_menu/jump/reset_jump
