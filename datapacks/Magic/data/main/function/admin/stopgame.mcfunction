@@ -38,6 +38,8 @@ function main:reset/resetspells/resetspells
 scoreboard players set @a[scores={Player=1..}] Player 0
 spawnpoint @a 0 100 0 180 0
 
+execute as @a run attribute @s name_tag_distance base reset
+# remet la distance de vue des pseudo à la normale (utilisé dans le shop)
 
 execute as @a run attribute @s minecraft:block_interaction_range base set 4.5
 # reset la portée d'interaction block à tous (utilisé dans le shop pour les panneaux du shop)

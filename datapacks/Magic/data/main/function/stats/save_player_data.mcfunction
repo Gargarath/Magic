@@ -229,3 +229,4 @@ execute as @a[scores={Player=12},limit=1] if entity @s[team=Red_Color] run data 
 
 team join non_ready_blue @a[team=Blue_Color]
 team join non_ready_red @a[team=Red_Color]
+execute as @a run attribute @s name_tag_distance base set 10

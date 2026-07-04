@@ -74,6 +74,7 @@ team join non_ready_red @a[team=red]
 team join non_ready_red @a[team=respawn_red]
 team join non_ready_blue @a[team=blue]
 team join non_ready_blue @a[team=respawn_blue]
+execute as @a run attribute @s name_tag_distance base set 10
 # ChHange les equipes de joueurs pour afficher qui est prêt ou non
 
 effect clear @a[scores={Player=1..}] minecraft:invisibility

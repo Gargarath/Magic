@@ -30,6 +30,7 @@ effect clear @a[scores={Player=1..}] minecraft:resistance
 execute as @a run function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
 team join blue @a[tag=blue_team]
+execute as @a run attribute @s name_tag_distance base reset
 
 tag @a[scores={Player=1..}] add inventory_rebuilding
 execute as @a[scores={Player=1..}] run clear @s
