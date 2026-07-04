@@ -164,6 +164,12 @@ slot_arrows:8}]
 
 # setup l'item dans l'enderchest de @s qui va lui servir de storage personnel
 
+function main:personnal_data/get_name
+data modify storage personnal_storage.temp storage set from entity @s EnderItems[0].components.minecraft:custom_data
+data modify storage personnal_storage.temp storage.raw_name set from storage temp name
+function main:personnal_data/save_new_data with storage personnal_storage.temp
+# ajoute le raw_name de @s dans son storage
+
 function main:initialised/welcome_dialog/apply_language
 # initialise silencieusement les traductions en anglais avant le choix
 # ----------------------------------------------------------
