@@ -215,8 +215,8 @@ team modify respawn_red color gray
 team modify respawn_blue color gray
 team modify respawn_red nametagVisibility never
 team modify respawn_blue nametagVisibility never
-team modify respawn_blue prefix ["",{"text":"[","color":"gray"},{"text":"Mort","color":"blue"},{"text":"] ","color":"gray"}]
-team modify respawn_red prefix ["",{"text":"[","color":"gray"},{"text":"Mort","color":"red"},{"text":"] ","color":"gray"}]
+team modify respawn_blue prefix ["",{"text":"[","color":"gray"},{"text":"\uE650","color":"blue","bold":false},{"text":"] ","color":"gray"}]
+team modify respawn_red prefix ["",{"text":"[","color":"gray"},{"text":"\uE650","color":"red","bold":false},{"text":"] ","color":"gray"}]
 # Crée la team respawn utilisée pour la réaparition
 
 team add stats_book_blue
