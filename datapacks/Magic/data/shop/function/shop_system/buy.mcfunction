@@ -21,6 +21,12 @@ function shop:shop_system/apply_configured_scores with entity @s EnderItems[0].c
 $function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item en question a @s
 
+$function shop:shop_system/apply_armor_trim/$(class)
+# reapplique le trim de classe/equipe si l'item achete est une armure
+
+$function shop:apply_ffa_player_trim {class:"$(class)"}
+# adapte la matiere du trim a la couleur du joueur en FFA
+
 execute unless score $build_reset option_panel matches 0 run function shop:history/push_state with entity @s EnderItems[0].components.minecraft:custom_data
 # ajoute le nouvel etat a l'historique de @s (sauf si on est en mode pas de undo)
 

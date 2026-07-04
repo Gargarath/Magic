@@ -14,4 +14,6 @@ execute unless score @s legs = @s shop_prev_legs run function shop:history/apply
 
 execute unless score @s boots = @s shop_prev_boots run function shop:history/apply/rogue/items/boots
 
+function shop:apply_ffa_player_trim {class:"rogue"}
+
 function stuff:stuff_rogue/save_stuff_as_storage/determine_player

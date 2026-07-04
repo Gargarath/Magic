@@ -1,0 +1,11 @@
+[
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:quartz","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":0}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:iron","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":1}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:netherite","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":2,"max":3}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:diamond","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":4,"max":5}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:lapis","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":6,"max":7}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:emerald","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":8,"max":9}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:amethyst","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":10,"max":11}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:redstone","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":12,"max":13}}}]},
+  {"function":"minecraft:set_components","components":{"minecraft:trim":{"material":"minecraft:gold","pattern":"minecraft:vex"}},"conditions":[{"condition":"minecraft:entity_scores","entity":"this","scores":{"opt_color":{"min":14,"max":15}}}]}
+]
