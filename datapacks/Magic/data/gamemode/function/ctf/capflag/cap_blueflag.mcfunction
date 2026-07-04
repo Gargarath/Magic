@@ -1,8 +1,7 @@
 tag @s add Has_Blue_flag
 # Donne le tag possède le drapeau à @s
 
-item replace entity @s armor.head from block 13 97 11 container.6
-item replace entity @s weapon.offhand from block 13 97 11 container.6
+function stuff:generic_stuff/blue_flag with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item blue flag à @s
 
 execute if entity @s[tag=invisibility_r] run function spells:spellsystem/spell1/spell1_r/nomoreinvisibility_r

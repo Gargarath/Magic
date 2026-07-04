@@ -48,7 +48,7 @@ team join blue @s[tag=blue_team]
 
 tag @s[scores={Player=1..}] add inventory_rebuilding
 clear @s[scores={Player=1..}]
-item replace entity @s[scores={Player=1..}] armor.head from block 13 97 11 container.2
+execute if entity @s[scores={Player=1..}] run function stuff:generic_stuff/spawn_overlay_head
 function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 tag @s[scores={Player=1..}] remove inventory_rebuilding
 tag @s[scores={Player=1..}] add save_inventory

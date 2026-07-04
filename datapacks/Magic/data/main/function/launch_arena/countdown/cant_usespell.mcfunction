@@ -13,7 +13,7 @@ execute at @s run playsound minecraft:block.anvil.land master @s ~ ~ ~ 100 1
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
 function main:items_positions/cleanup_managed_items
-item replace entity @s weapon.offhand from block 13 97 11 container.1
+function stuff:generic_stuff/empty_offhand
 tag @s remove inventory_rebuilding
 tag @s add save_inventory
 # lui donne les placeholder tête et seconde main

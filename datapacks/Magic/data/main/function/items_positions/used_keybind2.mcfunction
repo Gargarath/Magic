@@ -14,14 +14,12 @@ execute if entity @s[tag=archer,tag=in_lobby_arena] run function stuff:stuff_arc
 execute if entity @s[tag=mage,tag=in_lobby_arena] run function stuff:stuff_mage/keybind2
 execute if entity @s[tag=rogue,tag=in_lobby_arena] run function stuff:stuff_rogue/keybind2
 
-item replace entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] weapon.offhand from block 13 97 11 container.1
+execute if entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] run function stuff:generic_stuff/empty_offhand
 clear @s[tag=Has_Blue_flag] carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
-item replace entity @s[tag=Has_Blue_flag] armor.head from block 13 97 11 container.6
-item replace entity @s[tag=Has_Blue_flag] weapon.offhand from block 13 97 11 container.6
+execute if entity @s[tag=Has_Blue_flag] run function stuff:generic_stuff/blue_flag with entity @s EnderItems[0].components.minecraft:custom_data
 # redonne le drapeau bleu à @s
 clear @s[tag=Has_Red_flag] carrot_on_a_stick[custom_model_data={strings:["red_flag"]}]
-item replace entity @s[tag=Has_Red_flag] armor.head from block 13 97 11 container.7
-item replace entity @s[tag=Has_Red_flag] weapon.offhand from block 13 97 11 container.7
+execute if entity @s[tag=Has_Red_flag] run function stuff:generic_stuff/red_flag with entity @s EnderItems[0].components.minecraft:custom_data
 # redonne le drapeau rouge à @s
 
 

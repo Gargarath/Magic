@@ -5,8 +5,8 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @p ~ ~
 tag @s remove Has_Red_flag
 # Enleve le tag à le drapeau à celui qui vient de poser le drapeau
 
-item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
-item replace entity @s weapon.offhand from block 13 97 11 container.1
+execute if entity @s[scores={freeze=-1}] run function stuff:generic_stuff/empty_head
+function stuff:generic_stuff/empty_offhand
 clear @s carrot_on_a_stick[custom_model_data={strings:["red_flag"]}]
 
 kill @e[tag=Red_banner]

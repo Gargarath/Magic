@@ -1,0 +1,4 @@
+## Équipe le drapeau rouge traduit dans la langue du joueur
+
+$item replace entity @s armor.head with carrot_on_a_stick[custom_data={offhand_autorized:1b},enchantments={"binding_curse":1},tooltip_display={hidden_components:["enchantments"]},enchantment_glint_override=false,custom_model_data={strings:["red_flag"]},custom_name={"bold":true,"color":"red","text":"$(tr_item_ctf_red_flag_name)"},lore=[{"color":"green","text":"$(tr_item_ctf_flag_lore_1)"},{"color":"green","text":"$(tr_item_ctf_flag_lore_2)"}]] 1
+$item replace entity @s weapon.offhand with carrot_on_a_stick[custom_data={offhand_autorized:1b},enchantments={"binding_curse":1},tooltip_display={hidden_components:["enchantments"]},enchantment_glint_override=false,custom_model_data={strings:["red_flag"]},custom_name={"bold":true,"color":"red","text":"$(tr_item_ctf_red_flag_name)"},lore=[{"color":"green","text":"$(tr_item_ctf_flag_lore_1)"},{"color":"green","text":"$(tr_item_ctf_flag_lore_2)"}]] 1

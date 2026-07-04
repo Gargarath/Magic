@@ -48,9 +48,9 @@ execute as @e[tag=class_selector] at @s run rotate @s ~ 0
 
 ## donne l'armure de la classe aux statues
 
-item replace entity @e[type=mannequin,tag=class_selector] armor.chest from block 13 97 11 container.9
-item replace entity @e[type=mannequin,tag=class_selector] armor.legs from block 13 97 11 container.10
-item replace entity @e[type=mannequin,tag=class_selector] armor.feet from block 13 97 11 container.11
+item replace entity @e[type=mannequin,tag=class_selector] armor.chest with netherite_chestplate[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
+item replace entity @e[type=mannequin,tag=class_selector] armor.legs with netherite_leggings[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
+item replace entity @e[type=mannequin,tag=class_selector] armor.feet with netherite_boots[enchantments={"binding_curse":1},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"},{id:"armor_toughness",type:"armor_toughness",amount:0,operation:"add_value"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value"}],tooltip_display={hide_tooltip:true}] 1
 
 item modify entity @e[type=mannequin,tag=warrior_selector_statue,limit=1] armor.chest minecraft:armor_change/no_team/warrior
 item modify entity @e[type=mannequin,tag=warrior_selector_statue,limit=1] armor.legs minecraft:armor_change/no_team/warrior

@@ -82,6 +82,10 @@ data modify storage strings en_en set value {\
 "tr_arena_disabled":"The arena has been disabled by a moderator.",\
 \
 "tr_item_back":"Back",\
+"tr_item_ctf_blue_flag_name":"Blue flag",\
+"tr_item_ctf_red_flag_name":"Red flag",\
+"tr_item_ctf_flag_lore_1":"Bring it back to your base",\
+"tr_item_ctf_flag_lore_2":"to score a point!",\
 \
 "tr_inventory_menu_language":"Language",\
 "tr_inventory_menu_language_en":"English",\

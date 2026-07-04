@@ -82,6 +82,10 @@ data modify storage strings fr_fr set value {\
 "tr_arena_disabled":"L'arène a été désactivée par un modérateur.",\
 \
 "tr_item_back":"Retour",\
+"tr_item_ctf_blue_flag_name":"Drapeau bleu",\
+"tr_item_ctf_red_flag_name":"Drapeau rouge",\
+"tr_item_ctf_flag_lore_1":"Rapportez-le à votre base",\
+"tr_item_ctf_flag_lore_2":"pour marquer un point !",\
 \
 "tr_inventory_menu_language":"Langue",\
 "tr_inventory_menu_language_en":"Anglais",\

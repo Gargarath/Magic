@@ -74,7 +74,7 @@ execute if score blue flag_wrong_place matches 1 run function gamemode:ctf/dropf
 function gamemode:ctf/locator_bar_flags/reset_waypoint
 # retire le waypoint de drapeau bleu porté à @s
 
-item replace entity @s[scores={freeze=-1}] armor.head from block 13 97 11 container.1
-item replace entity @s weapon.offhand from block 13 97 11 container.1
+execute if entity @s[scores={freeze=-1}] run function stuff:generic_stuff/empty_head
+function stuff:generic_stuff/empty_offhand
 clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
 # clear les items dans la offhand de @s

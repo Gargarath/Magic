@@ -33,7 +33,7 @@ team join blue @a[tag=blue_team]
 
 tag @a[scores={Player=1..}] add inventory_rebuilding
 execute as @a[scores={Player=1..}] run clear @s
-item replace entity @a[scores={Player=1..}] weapon.offhand from block 13 97 11 container.2
+execute as @a[scores={Player=1..}] run function stuff:generic_stuff/spawn_overlay_offhand
 tag @a[scores={Player=1..}] remove inventory_rebuilding
 tag @a[scores={Player=1..}] add save_inventory
 
