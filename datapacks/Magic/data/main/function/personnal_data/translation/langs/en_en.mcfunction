@@ -383,6 +383,7 @@ data modify storage strings en_en set value {\
 "tr_gui_map_4_name":"\uE702Volcano\uE710\uE702",\
 "tr_gui_map_5_name":"\uE710\uE701Ruin\uE710\uE710\uE703",\
 "tr_gui_map_6_name":"\uE709Cake\uE710\uE710\uE703",\
+"tr_gui_map_random_name":"\uE703Random\uE710\uE705",\
 \
 "tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cemetery",\
@@ -622,7 +623,7 @@ data modify storage strings en_en set value {\
 "tr_round_end_round_over":"Round over!",\
 \
 "tr_ffa_objective_title":"Kills:",\
-"tr_ffa_objective_goal":"Goal:",\
+"tr_ffa_objective_goal":"First to:",\
 \
 "tr_end_game_ffa_wins_with":"wins with",\
 "tr_end_game_ffa_eliminations":"kills",\

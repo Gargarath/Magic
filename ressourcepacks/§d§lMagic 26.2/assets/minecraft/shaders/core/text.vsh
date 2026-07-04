@@ -122,6 +122,10 @@ void main() {
             posoffset = vec2(-0.6, 1.2);
             pos.y += 15.0;
             pos *= 1.6;
+        } else if (sectionx == 22) {
+            posoffset = vec2(0.4, 1.2);
+            pos.y += 101.0;
+            pos *= 0.6;
         } else {
             posoffset = vec2(0.0, 0.0);
         }

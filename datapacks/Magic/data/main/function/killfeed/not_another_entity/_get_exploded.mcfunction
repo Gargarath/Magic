@@ -28,3 +28,5 @@ execute if score @s last_caster matches 10 run scoreboard players add @a[scores=
 execute if score @s last_caster matches 11 run scoreboard players add @a[scores={Player=11}] stat_killcount_player 1
 execute if score @s last_caster matches 12 run scoreboard players add @a[scores={Player=12}] stat_killcount_player 1
 # ajoute un kill allié au joueur qui a tué @s
+
+execute if score $gamemode option_panel matches 0 if score @s last_caster matches 1..12 run function gamemode:ffa/leaderboard/refresh_leaderboard

@@ -316,7 +316,7 @@
             "type": "bitmap",
             "file": "minecraft:item/gui/top_bar/gui_ffa.png",
             "ascent": -70065,
-            "height": 64,
+            "height": 30,
             "chars": ["\uE635"]
         }
  ]

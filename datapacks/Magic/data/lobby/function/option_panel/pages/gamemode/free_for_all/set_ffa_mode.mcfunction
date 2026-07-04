@@ -7,6 +7,7 @@ scoreboard players set $gamemode option_panel 0
 execute as @a[scores={Player=0..}] run function lobby:team_selector/team_disabler/disable_team
 execute as @a[scores={Player=-1}] run function lobby:team_selector/team_disabler/disable_team_spec
 # enlève les joueurs dans les équipes
+execute as @a[tag=initialised] run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 function main:gui/display/refresh_gui
 # refresh l'affichage
 

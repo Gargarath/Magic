@@ -6,6 +6,8 @@ scoreboard players set @s InShop 1
 execute if score @s killfeed_died_checked < @s killfeed_died run function main:killfeed/not_another_entity/_determine_how_died
 # si le killfeed n'a pas déterminé comment @s est mort (donc pas par une autre entité) -> determine comment il est mort
 
+function gamemode:ffa/leaderboard/refresh_leaderboard
+
 function main:reset/resetspells/respawn_reset
 function main:effects/refresh_persistent
 # reset tout ce qui est generique au niveau du respawn

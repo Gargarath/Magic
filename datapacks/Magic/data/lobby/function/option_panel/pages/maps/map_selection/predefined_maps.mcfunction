@@ -87,3 +87,5 @@ execute at @n[type=item_display,tag=optn_menu_maps_map_4] run summon interaction
 execute at @n[type=item_display,tag=optn_menu_maps_map_4] run summon interaction ~0.6 ~-0.3 ~-0.2 {Glowing:1b,width:0.5f,height:1.8,response:1b,Tags:["optn_menu","optn_menu_maps_map_4","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
 execute at @n[type=item_display,tag=optn_menu_maps_map_4] run summon interaction ~1.1 ~-0.3 ~-0.2 {Glowing:1b,width:0.5f,height:1.8,response:1b,Tags:["optn_menu","optn_menu_maps_map_4","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
 execute at @n[type=item_display,tag=optn_menu_maps_map_4] run summon interaction ~1.41 ~-0.3 ~-0.2 {Glowing:1b,width:0.5f,height:1.8,response:1b,Tags:["optn_menu","optn_menu_maps_map_4","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+
+execute if score $gamemode option_panel matches 0 as @a[tag=initialised] run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data

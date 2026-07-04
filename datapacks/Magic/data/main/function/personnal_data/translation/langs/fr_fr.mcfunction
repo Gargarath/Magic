@@ -383,6 +383,7 @@ data modify storage strings fr_fr set value {\
 "tr_gui_map_4_name":"\uE705Volcan\uE710\uE706",\
 "tr_gui_map_5_name":"\uE709Ruine\uE710\uE710",\
 "tr_gui_map_6_name":"\uE704Bonbon\uE710\uE704",\
+"tr_gui_map_random_name":"\uE709Aléatoire",\
 \
 "tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cimetière",\

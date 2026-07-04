@@ -538,6 +538,13 @@
             "ascent": 6,
             "height": 6,
             "chars": ["\uE650"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gui/top_bar/background_ffa.png",
+            "ascent": 5,
+            "height": 18,
+            "chars": ["\uE660"]
         }
     ]
 }

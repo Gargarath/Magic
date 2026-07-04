@@ -564,6 +564,7 @@ scoreboard objectives add gstat_rogue_score dummy
 # sorting
 scoreboard objectives add sort_kd_ratio1000 dummy
 scoreboard objectives add sort_arena_killcount dummy
+scoreboard objectives add sort_ffa_killcount dummy
 scoreboard objectives add sort_killcount dummy
 scoreboard objectives add sort_deathcount dummy
 scoreboard objectives add sort_total_dmg dummy
