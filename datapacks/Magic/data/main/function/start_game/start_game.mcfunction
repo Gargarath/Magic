@@ -1,5 +1,8 @@
 # Appelée par pages/main/launch_game permet de commencer une partie
 
+execute if score $gamemode option_panel matches 0 if score $random map_selection matches 1 as @a run function main:start_game/prepare_random_ffa_map_name
+# remplace l'ancienne map affichée par "Aléatoire" avant les refresh GUI déclenchés pendant la sortie du lobby
+
 title @a reset
 dialog clear @a
 # clear les title et dialog de tous les joueurs
