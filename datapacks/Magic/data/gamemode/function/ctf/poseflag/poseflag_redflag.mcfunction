@@ -5,9 +5,9 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @p ~ ~
 tag @s remove Has_Red_flag
 # Enleve le tag à le drapeau à celui qui vient de poser le drapeau
 
-execute if entity @s[scores={freeze=-1}] run function stuff:generic_stuff/empty_head
-function stuff:generic_stuff/empty_offhand
-clear @s carrot_on_a_stick[custom_model_data={strings:["red_flag"]}]
+scoreboard players set @s ctf_flag_carrier 0
+
+function gamemode:ctf/clear_flag_items
 
 kill @e[tag=Red_banner]
 # Détruit la bannière rouge

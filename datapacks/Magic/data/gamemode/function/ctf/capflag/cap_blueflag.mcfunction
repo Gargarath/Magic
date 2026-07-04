@@ -1,6 +1,10 @@
 tag @s add Has_Blue_flag
 # Donne le tag possède le drapeau à @s
 
+scoreboard players set @s ctf_flag_carrier 1
+tag @e[tag=Blue_banner] add Blue_flag_carried
+# Mémorise le porteur et indique que la bannière suit actuellement un joueur
+
 function stuff:generic_stuff/blue_flag with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item blue flag à @s
 
@@ -29,7 +33,7 @@ scoreboard players set @s IsAlive 500
 scoreboard players add @s stat_flag_cap 1
 # ajoute 1 au score de drapeau capturé de @s
 
-tag @e[tag=Blue_banner] remove Has_Blueflag
+tag @e[tag=Blue_banner] remove Has_Blue_flag
 # Enleve le tag Has_Blue_flag de L'armorstand blue_banner
 
 execute if score selected_map variables matches 1 run setblock 332 57 511 stone

@@ -5,6 +5,7 @@
 
 ## RECONNECTION
 
+execute as @a[tag=reconnect_clear_flag_items,scores={disconnected=0}] run function main:reconnect/clear_flag_items
 execute as @a[tag=initialised,scores={disconnected=1..}] run function main:reconnect/someone_reconnected
 
 ## RESSOURCE PACK DETECTION

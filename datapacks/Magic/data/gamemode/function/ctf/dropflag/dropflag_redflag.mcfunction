@@ -1,5 +1,7 @@
 # appelée par ctf:loop permet au bleu qui meurt avec le drapeau rouge de le drop
 
+tag @e[tag=Red_banner] remove Red_flag_carried
+
 tag @e[tag=Red_banner] add Has_Red_flag
 # Donne le tag Has_Red_flag à la bannière qui a drop (pour que l'équipe adverse ne puisse pas poser le drapeau tant que celui ci n'est pas rapporté)
 
@@ -8,6 +10,8 @@ execute as @a[tag=Has_Red_flag,scores={IsAlive=501}] run function main:stats/sco
 
 tag @a[tag=Has_Red_flag,scores={IsAlive=501}] remove Has_Red_flag
 # Enleve le tag Has_Red_flag a celui qui est mort avec le drapeau
+
+scoreboard players set @a[scores={ctf_flag_carrier=2}] ctf_flag_carrier 0
 
 scoreboard players set @a[team=blue,scores={IsAlive=501..}] IsAlive 600
 # met le score de IsAlive de celui qui est mort avec
@@ -72,9 +76,7 @@ data modify storage minecraft:matchinfo.red flag_state set value {"text":"\uE306
 function main:gui/display/refresh_gui
 # Indique à tout le monde que le drapeau rouge est tombé si il n'est pas tombé dans l'eau
 
-execute if entity @s[scores={freeze=-1}] run function stuff:generic_stuff/empty_head
-function stuff:generic_stuff/empty_offhand
-clear @s carrot_on_a_stick[custom_model_data={strings:["red_flag"]}]
+function gamemode:ctf/clear_flag_items
 # clear les items dans la offhand de @s
 
 function gamemode:ctf/locator_bar_flags/reset_waypoint

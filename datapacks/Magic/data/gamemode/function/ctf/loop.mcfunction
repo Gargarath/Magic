@@ -60,6 +60,10 @@ execute at @a[tag=Has_Red_flag,scores={IsAlive=500}] run tp @e[type=minecraft:ar
 execute at @a[tag=Has_Blue_flag,scores={IsAlive=500}] run tp @e[type=minecraft:armor_stand,tag=Blue_banner] ~ ~20 ~
 # TP les armorstand qui représente les banniere au dessus du joueur qui porte la banniere selon la couleur qu'il porte
 
+execute unless entity @a[tag=Has_Red_flag] as @e[type=armor_stand,tag=Red_banner,tag=Red_flag_carried,limit=1] run function gamemode:ctf/dropflag/disconnected_redflag
+execute unless entity @a[tag=Has_Blue_flag] as @e[type=armor_stand,tag=Blue_banner,tag=Blue_flag_carried,limit=1] run function gamemode:ctf/dropflag/disconnected_blueflag
+# Si le porteur n'est plus connecté, fait tomber le drapeau à sa dernière position connue
+
                         ## GERE DROP DE DRAPEAU SI UTILISE SPELL MOUVEMENT
 
 scoreboard players add @a[scores={IsAlive=700..709}] IsAlive 1

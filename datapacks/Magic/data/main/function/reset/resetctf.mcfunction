@@ -2,6 +2,7 @@
 
 tag @a[tag=Has_Red_flag] remove Has_Red_flag
 tag @a[tag=Has_Blue_flag] remove Has_Blue_flag
+scoreboard players set @a ctf_flag_carrier 0
 
 scoreboard players set ctf enable_loop 0
 
@@ -23,6 +24,8 @@ kill @e[tag=Red_flag]
 kill @e[tag=Blue_flag]
 tag @e remove Has_Blue_flag
 tag @e remove Has_Red_flag
+tag @e remove Blue_flag_carried
+tag @e remove Red_flag_carried
 
 scoreboard players set @a respawn_time -1
 bossbar set respawn:player1 players

@@ -9,11 +9,12 @@ function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_plac
 tag @s remove Has_Blue_flag
 # Enleve le tag Has_Blue_flag de @s
 
+tag @e[tag=Blue_banner] remove Blue_flag_carried
+scoreboard players set @s ctf_flag_carrier 0
+
 
 # enlève le visuel de bannière de @s
-execute if entity @s[scores={freeze=-1}] run function stuff:generic_stuff/empty_head
-function stuff:generic_stuff/empty_offhand
-clear @s carrot_on_a_stick[custom_model_data={strings:["blue_flag"]}]
+function gamemode:ctf/clear_flag_items
 # clear les items dans la offhand de @s
 
 scoreboard players set @s IsAlive 700

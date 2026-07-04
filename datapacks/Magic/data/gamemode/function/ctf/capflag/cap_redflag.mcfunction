@@ -1,6 +1,10 @@
 tag @s add Has_Red_flag
 # Donne le tag possède le drapeau à @s
 
+scoreboard players set @s ctf_flag_carrier 2
+tag @e[tag=Red_banner] add Red_flag_carried
+# Mémorise le porteur et indique que la bannière suit actuellement un joueur
+
 function stuff:generic_stuff/red_flag with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item red_flag à @s
 

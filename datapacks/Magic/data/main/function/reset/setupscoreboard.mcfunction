@@ -24,6 +24,7 @@ scoreboard objectives add drop_item dummy
 
 scoreboard objectives add nopack_detection dummy
 scoreboard objectives add disconnected dummy
+scoreboard objectives add ctf_flag_carrier dummy
 
 scoreboard objectives add is_jumping minecraft.custom:minecraft.jump
 

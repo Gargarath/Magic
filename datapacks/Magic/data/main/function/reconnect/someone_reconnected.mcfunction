@@ -1,5 +1,11 @@
 ## appelée par main:loop si @s vient de se reconnecter
 
+tag @s add reconnect_clear_flag_items
+tag @s remove Has_Blue_flag
+tag @s remove Has_Red_flag
+function gamemode:ctf/locator_bar_flags/reset_waypoint
+# Nettoie tout état de porteur conservé pendant la déconnexion
+
 scoreboard players set @s disconnected 0
 function gamemode:ctf/secondary_objectives/bossbar/allocate_slots
 function gamemode:ctf/secondary_objectives/bossbar/refresh_all
