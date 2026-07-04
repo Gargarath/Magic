@@ -17,18 +17,18 @@ execute at @n[type=item_display,tag=optn_menu_maps_map_selection] run summon int
 ## MAPS
 #round 1
 data merge entity @n[type=item_display,tag=optn_menu_maps_map_1] {item:{components:{"minecraft:custom_model_data":{strings:["map_random"]}}}}
-kill @n[type=interaction,tag=optn_menu_maps_map_1]
+kill @e[type=interaction,tag=optn_menu_maps_map_1]
 
 #round 2
 data merge entity @n[type=item_display,tag=optn_menu_maps_map_2] {item:{components:{"minecraft:custom_model_data":{strings:["map_random"]}}}}
-kill @n[type=interaction,tag=optn_menu_maps_map_2]
+kill @e[type=interaction,tag=optn_menu_maps_map_2]
 
 #round 3
 data merge entity @n[type=item_display,tag=optn_menu_maps_map_3] {item:{components:{"minecraft:custom_model_data":{strings:["map_random"]}}}}
-kill @n[type=interaction,tag=optn_menu_maps_map_3]
+kill @e[type=interaction,tag=optn_menu_maps_map_3]
 
 #round overtime
 data merge entity @n[type=item_display,tag=optn_menu_maps_map_4] {item:{components:{"minecraft:custom_model_data":{strings:["map_random"]}}}}
-kill @n[type=interaction,tag=optn_menu_maps_map_4]
+kill @e[type=interaction,tag=optn_menu_maps_map_4]
 
 execute if score $gamemode option_panel matches 0 as @a[tag=initialised] run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data
