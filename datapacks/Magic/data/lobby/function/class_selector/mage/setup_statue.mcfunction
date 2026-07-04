@@ -53,7 +53,7 @@ summon item_display ^2.5 ^0.3 ^ {billboard:"horizontal",item_display:"head",Tags
 
 
 ## DEVENIR GUERRIER
-$summon text_display ^-3.4 ^1.0 ^1 {billboard:"horizontal",line_width:100,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["class_selector","mage_selector","mage_selector_selector"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.3f,1.3f,1.3f]},text:[{"underlined":false,"bold":true,"color":"yellow","text":"$(tr_lobby_choose_class)"}],background:16711680}
+$summon text_display ^-3.4 ^1.0 ^1.2 {billboard:"horizontal",line_width:100,default_background:0b,shadow:1b,see_through:0b,alignment:"center",Tags:["class_selector","mage_selector","mage_selector_selector"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.3f,1.3f,1.3f]},text:[{"underlined":false,"bold":true,"color":"yellow","text":"$(tr_lobby_choose_class)"}],background:16711680}
 # text
 summon interaction ^-3.4 ^1.0 ^0.8 {width:2.1f,height:0.7,response:1b,Tags:["class_selector","mage_selector","class_selector_mage_clickable","mage_become_mage"]}
 # become_mage clickable
