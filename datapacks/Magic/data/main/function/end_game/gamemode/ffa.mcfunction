@@ -1,6 +1,8 @@
 ## appelée par gamemode:ctf/end_game/X ou gamemode/ffa/loop quand la partie est finie
 # permet de terminer la partie
 
+execute as @a run function main:end_game/save_last_game_map_name
+
 function main:reset/resetffa
 # reset tout ce qui est lié au FFA
 
