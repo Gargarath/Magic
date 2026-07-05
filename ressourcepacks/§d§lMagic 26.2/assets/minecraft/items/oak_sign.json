@@ -414,6 +414,20 @@
         }
       },
       {
+        "when": "inventory_settings_cd_ready_sound_off",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/cd_ready_sound_off"
+        }
+      },
+      {
+        "when": "inventory_settings_cd_ready_sound_on",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/cd_ready_sound_on"
+        }
+      },
+      {
         "when": "inventory_op_menu",
         "model": {
           "type": "model",

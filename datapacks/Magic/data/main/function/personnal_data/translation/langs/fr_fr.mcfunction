@@ -127,6 +127,14 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_settings_passive_income_alert_lore_3":"Le revenu est toujours versé,",\
 "tr_inventory_menu_settings_passive_income_alert_lore_4":"mais aucun toast n'est affiché.",\
 \
+"tr_inventory_menu_settings_cd_ready_sound":"Son des sorts disponibles",\
+"tr_inventory_menu_settings_cd_ready_sound_subtitle_1":"Son activé",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_1":"Un son est joué lorsqu'un",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_2":"sort redevient disponible.",\
+"tr_inventory_menu_settings_cd_ready_sound_subtitle_2":"Son désactivé",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_3":"Les sorts redeviennent disponibles",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_4":"sans notification sonore.",\
+\
 "tr_inventory_menu_op_menu":"Commandes de modération",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Cliquez pour",\
 "tr_inventory_menu_op_menu_lore_2":"accéder aux commandes",\

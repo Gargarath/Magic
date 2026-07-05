@@ -10,6 +10,8 @@ function main:inventory_menu/settings/display/jump_timer with entity @s EnderIte
 # passive income alert
 function main:inventory_menu/settings/display/passive_income_alert with entity @s EnderItems[0].components.minecraft:custom_data
 
+# cd ready sound
+function main:inventory_menu/settings/display/cd_ready_sound with entity @s EnderItems[0].components.minecraft:custom_data
+
 # quit
 $item replace entity @s inventory.22 with oak_sign[item_name=[{"color":"red","text":"$(tr_inventory_menu_settings_quit)"}],lore=[{"color":"gray","text":"$(tr_inventory_menu_settings_quit_lore_1)"},{"color":"gray","text":"$(tr_inventory_menu_settings_quit_lore_2)"}],custom_data={inventory_menu:1b,inventory_menu_settings_quit:1b},custom_model_data={strings:["inventory_quit"]}] 1
-

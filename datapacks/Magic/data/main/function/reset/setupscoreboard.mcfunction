@@ -42,6 +42,7 @@ scoreboard objectives add opt_display_keybinds dummy
 scoreboard objectives add opt_keybind_order dummy
 scoreboard objectives add opt_display_jump_timer dummy
 scoreboard objectives add opt_passive_income_alert dummy
+scoreboard objectives add opt_cd_ready_sound dummy
 scoreboard objectives add opt_color dummy
 scoreboard objectives add opt_lang dummy
 scoreboard objectives add welcome_language trigger

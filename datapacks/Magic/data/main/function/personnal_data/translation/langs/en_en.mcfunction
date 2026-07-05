@@ -127,6 +127,14 @@ data modify storage strings en_en set value {\
 "tr_inventory_menu_settings_passive_income_alert_lore_3":"Income is still granted,",\
 "tr_inventory_menu_settings_passive_income_alert_lore_4":"but no toast is displayed.",\
 \
+"tr_inventory_menu_settings_cd_ready_sound":"Spell Ready Sound",\
+"tr_inventory_menu_settings_cd_ready_sound_subtitle_1":"Sound enabled",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_1":"Plays a sound whenever a",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_2":"spell becomes available again.",\
+"tr_inventory_menu_settings_cd_ready_sound_subtitle_2":"Sound disabled",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_3":"Spells become available again",\
+"tr_inventory_menu_settings_cd_ready_sound_lore_4":"without a sound notification.",\
+\
 "tr_inventory_menu_op_menu":"Moderator Commands",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Click to access",\
 "tr_inventory_menu_op_menu_lore_2":"the moderator commands",\

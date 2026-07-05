@@ -135,6 +135,7 @@ scoreboard players set @s opt_display_keybinds 1
 scoreboard players set @s opt_keybind_order 2
 scoreboard players set @s opt_display_jump_timer 1
 scoreboard players set @s opt_passive_income_alert 1
+scoreboard players set @s opt_cd_ready_sound 1
 scoreboard players set @s opt_color 0
 scoreboard players set @s opt_lang 0
 scoreboard players enable @s upgrade_codex

@@ -6,6 +6,7 @@ data modify storage temp:inventory_menu quit_count set value 0
 data modify storage temp:inventory_menu keybind_order_count set value 0
 data modify storage temp:inventory_menu jump_timer_count set value 0
 data modify storage temp:inventory_menu passive_income_alert_count set value 0
+data modify storage temp:inventory_menu cd_ready_sound_count set value 0
 
 ## KEYBIND ORDER
 # si l'item settings n'est pas au bon slot, compte combien il y en a ailleurs
@@ -30,6 +31,14 @@ execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.4 oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_passive_income_alert:1b}] unless data storage temp:inventory_menu {passive_income_alert_count:0} run function main:inventory_menu/settings/click_items/click_passive_income_alert
 # si l'item n'est ni au bon slot ni ailleurs, redonne les items d'inventaire
 execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.4 oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_passive_income_alert:1b}] if data storage temp:inventory_menu {passive_income_alert_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
+
+## CD READY SOUND
+# si l'item n'est pas au bon slot, compte combien il y en a ailleurs
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.5 oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_cd_ready_sound:1b}] store result storage temp:inventory_menu cd_ready_sound_count int 1 run clear @s oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_cd_ready_sound:1b}] 0
+# si l'item n'est pas au bon slot et qu'il est ailleurs, considère qu'il a été cliqué
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.5 oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_cd_ready_sound:1b}] unless data storage temp:inventory_menu {cd_ready_sound_count:0} run function main:inventory_menu/settings/click_items/click_cd_ready_sound
+# si l'item n'est ni au bon slot ni ailleurs, redonne les items d'inventaire
+execute if entity @s[tag=!inventory_rebuilding] unless items entity @s inventory.5 oak_sign[custom_data={inventory_menu:1b,inventory_menu_settings_cd_ready_sound:1b}] if data storage temp:inventory_menu {cd_ready_sound_count:0} run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 
 ## QUIT
 # si l'item settings n'est pas au bon slot, compte combien il y en a ailleurs

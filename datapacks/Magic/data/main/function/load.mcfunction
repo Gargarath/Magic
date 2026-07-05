@@ -22,6 +22,7 @@ execute if score lobby enable_loop matches 1 if score $gamemode option_panel mat
 
 function main:reset/setupscoreboard
 execute as @a unless score @s opt_passive_income_alert matches 0..1 run scoreboard players set @s opt_passive_income_alert 1
+execute as @a unless score @s opt_cd_ready_sound matches 0..1 run scoreboard players set @s opt_cd_ready_sound 1
 function main:reset/setupbossbar
 
 tag @a remove inventory_rebuilding
