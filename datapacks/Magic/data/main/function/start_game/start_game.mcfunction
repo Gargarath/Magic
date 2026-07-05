@@ -59,7 +59,8 @@ scoreboard players set @a IsAlive 0
 scoreboard players set @a is_ready 0
 # rend tous les joueurs pas prêt
 
-scoreboard players set @a InShop 1
+execute if score $gamemode option_panel matches 0 run scoreboard players set @a[scores={Player=0..}] InShop 1
+execute if score $gamemode option_panel matches 1 run scoreboard players set @a InShop 1
 team modify spectator seeFriendlyInvisibles true
 effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true
 # Permet à tous ceux qui ont InShop à 1 d'avoir des effets (saturation/night vision/instant health) et leur donne night vision tout de suite pour eviter un effet flash
@@ -102,9 +103,11 @@ scoreboard players set @a[scores={Player=1..}] Player 0
 scoreboard players set $current Player 0
 execute as @r[scores={Player=0}] run function main:start_game/setup_players/give_player_number
 
-execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
-execute as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run spawnpoint @s ~ ~ ~ 0 -5
-execute as @a[scores={Player=-1},tag=inventory_rebuilding] run function stuff:spectator/drop with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $gamemode option_panel matches 0 run gamemode spectator @a[scores={Player=-1}]
+
+execute if score $gamemode option_panel matches 1 as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
+execute if score $gamemode option_panel matches 1 as @a[scores={Player=-1}] at @e[type=marker,tag=shop_room_0] run spawnpoint @s ~ ~ ~ 0 -5
+execute if score $gamemode option_panel matches 1 as @a[scores={Player=-1},tag=inventory_rebuilding] run function stuff:spectator/drop with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute as @a[scores={Player=1..}] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
 tag @a remove inventory_rebuilding

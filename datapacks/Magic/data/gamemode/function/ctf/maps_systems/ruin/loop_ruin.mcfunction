@@ -10,5 +10,5 @@ execute if score $secondary_objectives option_panel matches 1 if score on golem 
 execute as @a[scores={Player=1..}] at @s if block ~ ~ ~ #minecraft:water_block run function gamemode:ctf/maps_systems/ruin/effect_in_water
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=-589,y=145,z=-202,dx=140,dy=150,dz=190] run tp @s -528.5 161 -51.5
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=-589,y=145,z=-202,dx=140,dy=150,dz=190] unless entity @a[scores={InShop=1},distance=..7] run tp @s -536 158 -89 -141.2 11.4
 # tp les specs qui vont trop loins

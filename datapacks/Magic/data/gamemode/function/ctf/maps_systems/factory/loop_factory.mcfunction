@@ -11,5 +11,5 @@ function gamemode:ctf/maps_systems/factory/conveyor_belt/clock
 # lance la clock qui gere les tapis roulant si on est sur la map usine (est mise en pause si le timer general est mit en pause)
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=264,y=144,z=-35,dx=115,dy=32,dz=84] run tp @s 297.5 157 20.0
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=264,y=144,z=-35,dx=115,dy=32,dz=84] unless entity @a[scores={InShop=1},distance=..7] run tp @s 297.5 157 20.0 -125.3 5.3
 # tp les specs qui vont trop loins

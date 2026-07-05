@@ -41,5 +41,5 @@ execute as @a[scores={Player=1..}] at @s if predicate minecraft:has_jump_boost u
 execute as @a[gamemode=adventure] at @s if block ~ ~ ~ lava run function gamemode:ctf/maps_systems/volcano/effect_in_lava
 
 # SPECS CANT GO TOO FAR
-execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=-664,y=131,z=441,dx=134,dy=150,dz=116] run tp @s -611 160 483
+execute as @a[scores={Player=-1,InLobby=0}] at @s unless entity @s[x=-664,y=131,z=441,dx=134,dy=150,dz=116] unless entity @a[scores={InShop=1},distance=..7] run tp @s -614 164 480 -44.4 22.9
 # tp les specs qui vont trop loins
