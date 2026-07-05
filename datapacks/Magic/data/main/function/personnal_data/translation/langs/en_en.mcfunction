@@ -119,6 +119,14 @@ data modify storage strings en_en set value {\
 "tr_inventory_menu_settings_jump_timer_lore_3":"Your time remains hidden",\
 "tr_inventory_menu_settings_jump_timer_lore_4":"until the end of the jump.",\
 \
+"tr_inventory_menu_settings_passive_income_alert":"FFA Passive Income",\
+"tr_inventory_menu_settings_passive_income_alert_subtitle_1":"Notifications enabled",\
+"tr_inventory_menu_settings_passive_income_alert_lore_1":"Shows a toast for each",\
+"tr_inventory_menu_settings_passive_income_alert_lore_2":"passive income payment.",\
+"tr_inventory_menu_settings_passive_income_alert_subtitle_2":"Notifications disabled",\
+"tr_inventory_menu_settings_passive_income_alert_lore_3":"Income is still granted,",\
+"tr_inventory_menu_settings_passive_income_alert_lore_4":"but no toast is displayed.",\
+\
 "tr_inventory_menu_op_menu":"Moderator Commands",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Click to access",\
 "tr_inventory_menu_op_menu_lore_2":"the moderator commands",\
@@ -1719,5 +1727,7 @@ data modify storage strings en_en set value {\
 "tr_shop_spec_player_message_2":"click here",\
 "tr_shop_spec_player_message_3":"to stop spectating this player.",\
 "tr_shop_spec_player_hover_event":"Click here to stop spectating.",\
-"tr_shop_spec_player_stop_spectating":"You have stopped spectating."\
+"tr_shop_spec_player_stop_spectating":"You have stopped spectating.",\
+"tr_ffa_money_alert_kill":"Elimination",\
+"tr_ffa_money_alert_passive":"Passive income"\
 }

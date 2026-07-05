@@ -14,6 +14,20 @@ execute if score selected_map variables matches 6 run function main:reset/reset_
 
 execute if score $gamemode option_panel matches 0 run function main:end_game/gamemode/ffa
 execute if score $gamemode option_panel matches 1 run function main:end_game/gamemode/ctf
+
+# clear les alertes d'income FFA avant l'affichage du lobby
+data remove storage minecraft:gui player.1.money_alert
+data remove storage minecraft:gui player.2.money_alert
+data remove storage minecraft:gui player.3.money_alert
+data remove storage minecraft:gui player.4.money_alert
+data remove storage minecraft:gui player.5.money_alert
+data remove storage minecraft:gui player.6.money_alert
+data remove storage minecraft:gui player.7.money_alert
+data remove storage minecraft:gui player.8.money_alert
+data remove storage minecraft:gui player.9.money_alert
+data remove storage minecraft:gui player.10.money_alert
+data remove storage minecraft:gui player.11.money_alert
+data remove storage minecraft:gui player.12.money_alert
 # lance les système de end_game relatifs aux gamemodes
 
 stopsound @a

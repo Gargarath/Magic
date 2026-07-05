@@ -20,14 +20,7 @@ execute if score selected_map variables matches 6 run function main:launch_arena
 
 scoreboard players reset * stat_killcount_player
 
-scoreboard players operation $aaaa_objective stat_killcount_player = $kills_goal option_panel
-scoreboard players operation $aaab_blank stat_killcount_player = $aaaa_objective stat_killcount_player
-
-scoreboard players display name $aaaa_objective stat_killcount_player {"text":"Objectif :","color":"yellow","underlined":true}
-scoreboard players display numberformat $aaaa_objective stat_killcount_player styled {"color":"yellow"}
-
-scoreboard players display name $aaab_blank stat_killcount_player ""
-scoreboard players display numberformat $aaab_blank stat_killcount_player blank
+scoreboard players operation $ffa_goal stat_killcount_player = $kills_goal option_panel
 
 scoreboard players set @a stat_killcount_player 0
 

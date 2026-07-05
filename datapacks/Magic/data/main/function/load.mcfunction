@@ -21,6 +21,7 @@ execute if score lobby enable_loop matches 1 if score $gamemode option_panel mat
 execute if score lobby enable_loop matches 1 if score $gamemode option_panel matches 1 run function main:stats/scoreboard/red_team_info/refresh_red_side
 
 function main:reset/setupscoreboard
+execute as @a unless score @s opt_passive_income_alert matches 0..1 run scoreboard players set @s opt_passive_income_alert 1
 function main:reset/setupbossbar
 
 tag @a remove inventory_rebuilding

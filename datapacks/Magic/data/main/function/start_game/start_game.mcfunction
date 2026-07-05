@@ -7,6 +7,23 @@ title @a reset
 dialog clear @a
 # clear les title et dialog de tous les joueurs
 
+# clear les anciennes alertes d'income avant le premier refresh du GUI
+scoreboard players set @a ffa_ph_alert_1 0
+scoreboard players set @a ffa_ph_alert_2 0
+scoreboard players set @a ffa_ph_alert_3 0
+data remove storage minecraft:gui player.1.money_alert
+data remove storage minecraft:gui player.2.money_alert
+data remove storage minecraft:gui player.3.money_alert
+data remove storage minecraft:gui player.4.money_alert
+data remove storage minecraft:gui player.5.money_alert
+data remove storage minecraft:gui player.6.money_alert
+data remove storage minecraft:gui player.7.money_alert
+data remove storage minecraft:gui player.8.money_alert
+data remove storage minecraft:gui player.9.money_alert
+data remove storage minecraft:gui player.10.money_alert
+data remove storage minecraft:gui player.11.money_alert
+data remove storage minecraft:gui player.12.money_alert
+
 scoreboard players set @a drop_item 0
 scoreboard players set @a hotbar_menu 0
 # met les joueurs dans le stade 0 du menu d'option hotbar

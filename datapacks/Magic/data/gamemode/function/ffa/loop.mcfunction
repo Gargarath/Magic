@@ -20,7 +20,7 @@ execute if score selected_map variables matches 6 run function gamemode:ctf/maps
 
 # Fin de partie
 
-execute as @a if score @s stat_killcount_player >= $aaaa_objective stat_killcount_player run function main:end_game/end_game
+execute as @a if score @s stat_killcount_player >= $ffa_goal stat_killcount_player run function main:end_game/end_game
 
                         ## GERE LES MORTS
 

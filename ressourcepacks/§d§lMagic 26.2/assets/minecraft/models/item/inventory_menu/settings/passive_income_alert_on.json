@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "item/inventory_menu/settings/passive_income_alert_on"
+  }
+}

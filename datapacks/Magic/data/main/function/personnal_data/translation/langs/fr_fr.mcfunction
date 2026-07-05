@@ -119,6 +119,14 @@ data modify storage strings fr_fr set value {\
 "tr_inventory_menu_settings_jump_timer_lore_3":"Votre temps reste masqué",\
 "tr_inventory_menu_settings_jump_timer_lore_4":"jusqu'à la fin de la course.",\
 \
+"tr_inventory_menu_settings_passive_income_alert":"Revenu passif FFA",\
+"tr_inventory_menu_settings_passive_income_alert_subtitle_1":"Notifications activées",\
+"tr_inventory_menu_settings_passive_income_alert_lore_1":"Affiche un toast à chaque",\
+"tr_inventory_menu_settings_passive_income_alert_lore_2":"gain de revenu passif.",\
+"tr_inventory_menu_settings_passive_income_alert_subtitle_2":"Notifications désactivées",\
+"tr_inventory_menu_settings_passive_income_alert_lore_3":"Le revenu est toujours versé,",\
+"tr_inventory_menu_settings_passive_income_alert_lore_4":"mais aucun toast n'est affiché.",\
+\
 "tr_inventory_menu_op_menu":"Commandes de modération",\
 "tr_inventory_menu_op_menu_lore_1":"\uE400 Cliquez pour",\
 "tr_inventory_menu_op_menu_lore_2":"accéder aux commandes",\
@@ -383,7 +391,7 @@ data modify storage strings fr_fr set value {\
 "tr_gui_map_4_name":"\uE705Volcan\uE710\uE706",\
 "tr_gui_map_5_name":"\uE709Ruine\uE710\uE710",\
 "tr_gui_map_6_name":"\uE704Bonbon\uE710\uE704",\
-"tr_gui_map_random_name":"\uE709Aléatoire",\
+"tr_gui_map_random_name":"Aléatoire\uE708",\
 \
 "tr_map_1_name":"Pirate",\
 "tr_map_2_name":"Cimetière",\
@@ -1719,5 +1727,7 @@ data modify storage strings fr_fr set value {\
 "tr_shop_spec_player_message_2":"cliquez ici",\
 "tr_shop_spec_player_message_3":"pour arrêter d'observer ce joueur.",\
 "tr_shop_spec_player_hover_event":"Cliquez ici pour arrêter d'observer.",\
-"tr_shop_spec_player_stop_spectating":"Vous avez arrêté d'observer."\
+"tr_shop_spec_player_stop_spectating":"Vous avez arrêté d'observer.",\
+"tr_ffa_money_alert_kill":"Élimination",\
+"tr_ffa_money_alert_passive":"Revenu passif"\
 }

@@ -126,6 +126,23 @@ void main() {
             posoffset = vec2(0.4, 1.2);
             pos.y += 101.0;
             pos *= 0.6;
+        } else if (sectiony == 23 && sectionx >= 24 && sectionx <= 47) {
+            int alertState = sectionx - 24;
+            int alertRow = alertState / 8;
+            int alertPhase = alertState - alertRow * 8;
+            float progress = float(alertPhase) / 7.0;
+            progress = progress * progress * (3.0 - 2.0 * progress);
+
+            posoffset = vec2(mix(-1.35, -1.0, progress), 2.5);
+            pos.y += 93.0 + float(alertRow) * 12.0;
+        } else if (sectiony == 23 && sectionx == 48) {
+            float moneyScale = 1.3;
+            posoffset = vec2(-1.3, 3.2);
+            pos.y += (95.0 - 12.0) / moneyScale;
+            pos *= moneyScale;
+        } else if (sectiony == 23) {
+            posoffset = vec2(-1.0, 2.5);
+            pos.y += 93.0;
         } else {
             posoffset = vec2(0.0, 0.0);
         }

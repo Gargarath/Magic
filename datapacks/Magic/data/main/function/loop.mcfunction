@@ -43,6 +43,8 @@ execute if score stuff enable_loop matches 1 run function stuff:loop
                                     ## GUI ##
 
 execute as @e[scores={gui_actionbar_alert=1..}] run function main:gui/actionbar_timer
+execute if score ffa enable_loop matches 1 as @a[scores={Player=1..}] run function main:gui/ffa_money_alert/tick with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score ffa enable_loop matches 1 if entity @a[scores={ffa_ph_alert_1=1..}] run function main:gui/display/in_game/refresh_gui
 
 ## Test nombre de joueur ##
 execute store result score player playercount if entity @a[scores={Player=0..}]

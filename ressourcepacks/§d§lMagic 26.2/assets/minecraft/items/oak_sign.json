@@ -400,6 +400,20 @@
         }
       },
       {
+        "when": "inventory_settings_passive_income_alert_on",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/passive_income_alert_on"
+        }
+      },
+      {
+        "when": "inventory_settings_passive_income_alert_off",
+        "model": {
+          "type": "model",
+          "model": "item/inventory_menu/settings/passive_income_alert_off"
+        }
+      },
+      {
         "when": "inventory_op_menu",
         "model": {
           "type": "model",
