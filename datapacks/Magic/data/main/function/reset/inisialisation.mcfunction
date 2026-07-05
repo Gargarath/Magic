@@ -7,6 +7,7 @@ clear @s
 
 tag @s add initialised
 scoreboard players set @s InLobby 1
+scoreboard players set @s lobby_use_lock 0
 scoreboard players set @s InShop 0
 scoreboard players set @s Player 0
 scoreboard players set @s ffa_lobby_slot 0

@@ -81,6 +81,7 @@ scoreboard objectives add InLobby dummy
 scoreboard objectives add used_reset dummy
 scoreboard objectives add Lobby_ready dummy
 scoreboard objectives add hotbar_menu dummy
+scoreboard objectives add lobby_use_lock dummy
 scoreboard objectives add discord trigger
 
 scoreboard objectives add option_panel dummy

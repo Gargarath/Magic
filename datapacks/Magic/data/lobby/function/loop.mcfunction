@@ -10,7 +10,9 @@ execute if score Is_ready Lobby_ready matches 0 run function lobby:is_ready
 
                                         ## DONNER STUFF
 execute as @a[scores={drop_item=1..},tag=!in_lobby_arena] run function lobby:hotbar_menu/drop_item
-execute as @a[scores={usespell=1..},tag=!in_lobby_arena] run function lobby:hotbar_menu/check_rightclick
+execute as @a[scores={lobby_use_lock=1..}] run scoreboard players set @s usespell 0
+scoreboard players remove @a[scores={lobby_use_lock=1..}] lobby_use_lock 1
+execute as @a[scores={usespell=1..},tag=!in_lobby_arena] unless score @s lobby_use_lock matches 1.. run function lobby:hotbar_menu/check_rightclick
 execute as @a[tag=!in_lobby_arena] unless predicate offhand_autorized run function lobby:hotbar_menu/drop_item
 
                                         ## JUMP ##

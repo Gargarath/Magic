@@ -1,6 +1,10 @@
 ## appelée par gamemode:ctf/end_game/X ou gamemode/ffa/loop quand la partie est finie
 # permet de terminer la partie
 
+scoreboard players set @a lobby_use_lock 20
+scoreboard players set @a usespell 0
+# bloque les clics droits residuels pendant la transition vers le podium
+
 scoreboard players set lobby enable_loop 1
 # activer le lobby
 
