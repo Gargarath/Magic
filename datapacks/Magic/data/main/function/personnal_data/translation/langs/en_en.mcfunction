@@ -217,6 +217,15 @@ data modify storage strings en_en set value {\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Duration in seconds",\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Confirm",\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Cancel",\
+"tr_optn_menu_gamemode_ffa_goal_name_title":"Objective:",\
+"tr_optn_menu_gamemode_ffa_goal_name":"Kills",\
+"tr_optn_menu_gamemode_ffa_goal_score_title":"First to:",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_title":"Kill goal",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_text_1":"Choose the number of kills required to win",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_range":"Allowed value: 1 to 50 kills",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_field_label":"Number of kills",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_confirm":"Confirm",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_cancel":"Cancel",\
 \
 "tr_optn_menu_lobby_enable_arena":"Lobby Arena",\
 "tr_optn_menu_lobby_enable_maps":"Visit Maps",\

@@ -56,6 +56,7 @@ scoreboard objectives add optn_shop_timer_custom trigger
 scoreboard objectives add optn_ph_start_custom trigger
 scoreboard objectives add optn_ph_per_round_custom trigger
 scoreboard objectives add optn_ph_per_obj_custom trigger
+scoreboard objectives add optn_kills_goal_custom trigger
 
 # teams
 scoreboard objectives add blue_place dummy

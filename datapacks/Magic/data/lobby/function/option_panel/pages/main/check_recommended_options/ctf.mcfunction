@@ -1,5 +1,5 @@
-## appelée par display_main_tab quand on affiche la page principale du panneau d'options
-## permet de check si on a les options recommandées d'activées
+## appelée par check_recommended_options/check quand on est en CTF
+## permet de check si on a les options recommandées d'activées en CTF
 
 scoreboard players set $recommended_optns option_panel 1
 

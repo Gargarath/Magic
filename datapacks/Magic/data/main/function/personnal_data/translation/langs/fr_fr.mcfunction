@@ -217,6 +217,15 @@ data modify storage strings fr_fr set value {\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_field_label":"Durée en secondes",\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_confirm":"Valider",\
 "tr_optn_menu_gamemode_ctf_shop_timer_custom_cancel":"Annuler",\
+"tr_optn_menu_gamemode_ffa_goal_name_title":"Objectif :",\
+"tr_optn_menu_gamemode_ffa_goal_name":"Éliminations",\
+"tr_optn_menu_gamemode_ffa_goal_score_title":"Premier à :",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_title":"Objectif d'éliminations",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_text_1":"Choisissez le nombre d'éliminations nécessaires pour gagner",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_range":"Valeur acceptée : 1 à 50 éliminations",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_field_label":"Nombre d'éliminations",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_confirm":"Valider",\
+"tr_optn_menu_gamemode_ffa_kills_goal_custom_cancel":"Annuler",\
 \
 "tr_optn_menu_lobby_enable_arena":"Arène du lobby",\
 "tr_optn_menu_lobby_enable_maps":"Visiter les maps",\

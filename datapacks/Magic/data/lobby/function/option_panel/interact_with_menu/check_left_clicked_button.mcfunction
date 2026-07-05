@@ -9,6 +9,11 @@ execute if entity @s[tag=optn_menu_main_lang] on attacker if score @s operator m
     # shop_timer
 execute if entity @s[tag=optn_menu_gamemode_shop_timer_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/capture_the_flag/shop_timer/shop_timer_decrease
 
+# gamemode (FFA)
+
+    # kills_goal
+execute if entity @s[tag=optn_menu_gamemode_ffa_goal_score_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/ph_start_decrease
+
 # maps
 execute if entity @s[tag=optn_menu_maps_map_1] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/maps/map_1/go_down
 execute if entity @s[tag=optn_menu_maps_map_2] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/maps/map_2/go_down

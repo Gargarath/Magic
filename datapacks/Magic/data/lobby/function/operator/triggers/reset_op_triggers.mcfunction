@@ -11,4 +11,5 @@ scoreboard players reset @s optn_shop_timer_custom
 scoreboard players reset @s optn_ph_start_custom
 scoreboard players reset @s optn_ph_per_round_custom
 scoreboard players reset @s optn_ph_per_obj_custom
+scoreboard players reset @s optn_kills_goal_custom
 # enlève les trigger pour @s

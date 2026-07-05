@@ -12,7 +12,7 @@ execute if entity @s[tag=optn_menu_fun_tab] on target if score @s operator match
 # Main
 execute if entity @s[tag=optn_menu_main_start_game] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/launch_game
 execute if entity @s[tag=optn_menu_main_recommended_button] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/recommended_options with storage lobby:language translate
-execute if entity @s[tag=optn_menu_main_recommended_button_yes] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/enable_recommended_options
+execute if entity @s[tag=optn_menu_main_recommended_button_yes] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/enable_recommended_options/enable
 execute if entity @s[tag=optn_menu_main_lang] on target if score @s operator matches 2 run function lobby:option_panel/pages/main/lang/lang_increase
 
 # lobby
@@ -89,6 +89,14 @@ execute if entity @s[tag=optn_menu_shop_ph_per_obj_right] on target if score @s 
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_increase
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_decrease
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/custom_value
+
+# gamemode: free for all
+
+    # kills_goal
+execute if entity @s[tag=optn_menu_gamemode_ffa_goal_score_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/ph_start_increase
+execute if entity @s[tag=optn_menu_gamemode_ffa_goal_score_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/ph_start_increase
+execute if entity @s[tag=optn_menu_gamemode_ffa_goal_score_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/ph_start_decrease
+execute if entity @s[tag=optn_menu_gamemode_ffa_goal_score_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/custom_value
 
 # fun
 
