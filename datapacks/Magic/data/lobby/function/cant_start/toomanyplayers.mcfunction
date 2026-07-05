@@ -1,6 +1,6 @@
 # Appellée par option_panel/main/launch_game permet d'avertir que la limite de joueur est atteinte
 
-tellraw @s ["",{"text":"\nIl y a trop de joueur dans la partie ! La limite de joueur est de 12.","color":"red"}]
+$tellraw @s ["",{"text":"\n$(tr_cant_start_too_many_players)","color":"red"}]
 execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 100 0
 # Indique au modérateur qui a cliqué sur le panneau de lancement qu'il faut au moins 1 jouueur dans chaque équipe'
 

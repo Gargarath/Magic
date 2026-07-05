@@ -14,7 +14,7 @@ execute store result score red playercount if entity @a[tag=red_team]
 execute store result score no_team playercount if entity @a[tag=!blue_team,tag=!red_team,scores={Player=0}]
 # Permet de compter le nombre de joueurs dans les équipes rouge et bleu et sans équipe
 
-execute if score player playercount matches 13.. run function lobby:cant_start/toomanyplayers
+execute if score player playercount matches 13.. run function lobby:cant_start/toomanyplayers with entity @s EnderItems[0].components.minecraft:custom_data
 # Lance la fonction lobby:cant_start/toomanyplayers si il y a trop de joueur dans la partie
 
 execute unless score player playercount matches 13.. if score $matchmaking option_panel matches 0 run function lobby:check_game_startable/no_matchmaking

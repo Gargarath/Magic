@@ -1782,5 +1782,13 @@ data modify storage strings en_en set value {\
 "tr_ffa_money_alert_bounty":"Bounty",\
 "tr_ffa_bounty_acquired":"now has a bounty of",\
 "tr_ffa_bounty_claimed_1":"claimed the bounty on",\
-"tr_ffa_bounty_claimed_2":"for"\
+"tr_ffa_bounty_claimed_2":"for",\
+\
+"tr_cant_start_need_two_players":"At least 2 players are required to start the game!",\
+"tr_cant_start_need_one_player_per_team":"The game cannot start until there is at least one player on each team!",\
+"tr_cant_start_player_without_class":"The game cannot start until every player has chosen a class!",\
+"tr_cant_start_choose_class":"Please choose a class before the game can start!",\
+"tr_cant_start_player_without_team":"The game cannot start until every player has chosen a team!",\
+"tr_cant_start_choose_team":"Please choose a team before the game can start!",\
+"tr_cant_start_too_many_players":"There are too many players in the game! The limit is 12 players."\
 }

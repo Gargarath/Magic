@@ -1782,5 +1782,13 @@ data modify storage strings fr_fr set value {\
 "tr_ffa_money_alert_bounty":"Prime",\
 "tr_ffa_bounty_acquired":"a désormais une prime de",\
 "tr_ffa_bounty_claimed_1":"a réclamé la prime de",\
-"tr_ffa_bounty_claimed_2":"pour"\
+"tr_ffa_bounty_claimed_2":"pour",\
+\
+"tr_cant_start_need_two_players":"Il faut au minimum 2 joueurs pour lancer la partie !",\
+"tr_cant_start_need_one_player_per_team":"Impossible de lancer la partie tant qu'il n'y a pas au moins un joueur dans chaque équipe !",\
+"tr_cant_start_player_without_class":"Impossible de lancer la partie tant que tous les joueurs n'ont pas choisi leur classe !",\
+"tr_cant_start_choose_class":"Merci de bien vouloir choisir une classe afin que la partie puisse démarrer !",\
+"tr_cant_start_player_without_team":"Impossible de lancer la partie tant que tous les joueurs n'ont pas choisi leur équipe !",\
+"tr_cant_start_choose_team":"Merci de bien vouloir choisir une équipe afin que la partie puisse démarrer !",\
+"tr_cant_start_too_many_players":"Il y a trop de joueurs dans la partie ! La limite est de 12 joueurs."\
 }
