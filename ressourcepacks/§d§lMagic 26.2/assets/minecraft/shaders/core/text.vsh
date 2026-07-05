@@ -124,7 +124,7 @@ void main() {
             pos *= 1.6;
         } else if (sectionx == 22) {
             posoffset = vec2(0.4, 1.2);
-            pos.y += 101.0;
+            pos.y += 92.0;
             pos *= 0.6;
         } else if (sectiony == 23 && sectionx >= 24 && sectionx <= 47) {
             int alertState = sectionx - 24;

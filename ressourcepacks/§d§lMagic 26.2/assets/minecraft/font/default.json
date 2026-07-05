@@ -543,7 +543,7 @@
             "type": "bitmap",
             "file": "minecraft:item/gui/top_bar/background_ffa.png",
             "ascent": 5,
-            "height": 18,
+            "height": 14,
             "chars": ["\uE660"]
         }
     ]

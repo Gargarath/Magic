@@ -1,7 +1,7 @@
 ## appelée quand on est ingame
 # permet d'afficher les options + les sorts
 
-$execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=0}] run return run title @s actionbar ["",{text:"\uE790\uE720\uE709\uE706",font:top_bar_background},"\uE660",{text:"\uE720\uE709\uE706\uE791",font:top_bar_background},\
+$execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=0}] run return run title @s actionbar ["",{text:"\uE790\uE720\uE707",font:top_bar_background},"\uE660",{text:"\uE720\uE707\uE791",font:top_bar_background},\
 \
 \
 {text:"\uE790\uE704",font:top_bar_round},{"interpret":true,"nbt":"round","storage":"minecraft:matchinfo"},{text:"\uE703\uE791",font:top_bar_round},\
@@ -24,7 +24,7 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=0}] run return 
 {"font":"bottom_right_side-50","keybind":"key.inventory","color":"gray"},\
 {"font":"bottom_right_side-50","text":"$(tr_gui_options_open_menu)","color":"gray"}]
 
-$execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return run title @s actionbar ["",{text:"\uE790\uE720\uE709\uE706",font:top_bar_background},"\uE660",{text:"\uE720\uE709\uE706\uE791",font:top_bar_background},\
+$execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return run title @s actionbar ["",{text:"\uE790\uE720\uE707",font:top_bar_background},"\uE660",{text:"\uE720\uE707\uE791",font:top_bar_background},\
 \
 \
 {text:"\uE790\uE704",font:top_bar_round},{"interpret":true,"nbt":"round","storage":"minecraft:matchinfo"},{text:"\uE703\uE791",font:top_bar_round},\
@@ -49,7 +49,7 @@ $execute as @s[scores={Player=-1,opt_display_keybinds=1,operator=2}] run return 
 {"font":"bottom_right_side-50","keybind":"key.inventory","color":"gray"},\
 {"font":"bottom_right_side-50","text":"$(tr_gui_options_open_menu)","color":"gray"}]
 
-$execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s actionbar ["",{text:"\uE790\uE720\uE709\uE706",font:top_bar_background},"\uE660",{text:"\uE720\uE709\uE706\uE791",font:top_bar_background},\
+$execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s actionbar ["",{text:"\uE790\uE720\uE707",font:top_bar_background},"\uE660",{text:"\uE720\uE707\uE791",font:top_bar_background},\
 \
 \
 {text:"\uE790\uE704",font:top_bar_round},{"interpret":true,"nbt":"round","storage":"minecraft:matchinfo"},{text:"\uE703\uE791",font:top_bar_round},\
