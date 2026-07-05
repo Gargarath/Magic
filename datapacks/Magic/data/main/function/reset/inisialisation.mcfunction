@@ -1,5 +1,8 @@
 # Permet de reset totalement un joueur si on appelle cette fonction en son nom
 
+tag @s remove save_inventory
+tag @s add inventory_rebuilding
+
 clear @s
 
 tag @s add initialised
@@ -46,10 +49,6 @@ scoreboard players set @s stat_victory 0
 
 scoreboard players set @s in_water -1
 # donne le score pour l'eau qui empoisone sur ruine
-
-tag @s remove save_inventory
-tag @s add inventory_rebuilding
-# permet d'éviter les check d'inventaire
 
 effect clear @s
 effect give @s minecraft:resistance infinite 255 true
