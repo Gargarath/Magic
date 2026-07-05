@@ -275,6 +275,13 @@ data modify storage strings en_en set value {\
 "tr_optn_menu_gamemode_ctf_title":"Capture the flag",\
 \
 "tr_optn_menu_maps_map_selection":"Map selection",\
+"tr_optn_menu_maps_ffa_random":"Random",\
+"tr_optn_menu_maps_ffa_map_1":"Pirate",\
+"tr_optn_menu_maps_ffa_map_2":"Cemetery",\
+"tr_optn_menu_maps_ffa_map_3":"Factory",\
+"tr_optn_menu_maps_ffa_map_4":"Volcano",\
+"tr_optn_menu_maps_ffa_map_5":"Ruin",\
+"tr_optn_menu_maps_ffa_map_6":"Cake",\
 "tr_optn_menu_maps_map_selection_random":"Random",\
 "tr_optn_menu_maps_map_selection_predefined":"Predefined",\
 "tr_optn_menu_maps_rng_lvl_1":"Prevent playing the same",\

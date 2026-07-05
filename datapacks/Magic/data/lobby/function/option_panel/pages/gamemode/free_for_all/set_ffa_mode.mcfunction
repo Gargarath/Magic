@@ -2,6 +2,7 @@
 # passe le mode en FFA
 
 scoreboard players set $gamemode option_panel 0
+execute unless score map_1 map_selection matches 0..6 run scoreboard players set map_1 map_selection 0
 # passe en FFA
 
 execute as @a[scores={Player=0..}] run function lobby:team_selector/team_disabler/disable_team

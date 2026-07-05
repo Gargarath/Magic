@@ -1,0 +1,8 @@
+## Zone de clic adaptee a la grande carte FFA
+
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~-2.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~-1.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~-0.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~0.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~1.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}
+execute at @n[type=item_display,tag=optn_menu_maps_map_1] run summon interaction ~2.5 ~-0.6 ~-0.2 {Glowing:1b,width:1f,height:3.6,response:1b,Tags:["optn_menu","optn_menu_maps_map_1","optn_menu_maps_clickable","optn_menu_left_clickable","optn_menu_clickable"]}

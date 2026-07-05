@@ -275,6 +275,13 @@ data modify storage strings fr_fr set value {\
 "tr_optn_menu_gamemode_ctf_title":"Capture de drapeau",\
 \
 "tr_optn_menu_maps_map_selection":"Sélection des arènes",\
+"tr_optn_menu_maps_ffa_random":"Aléatoire",\
+"tr_optn_menu_maps_ffa_map_1":"Pirate",\
+"tr_optn_menu_maps_ffa_map_2":"Cimetière",\
+"tr_optn_menu_maps_ffa_map_3":"Usine",\
+"tr_optn_menu_maps_ffa_map_4":"Volcan",\
+"tr_optn_menu_maps_ffa_map_5":"Ruine",\
+"tr_optn_menu_maps_ffa_map_6":"Bonbon",\
 "tr_optn_menu_maps_map_selection_random":"Aléatoire",\
 "tr_optn_menu_maps_map_selection_predefined":"Prédéfinie",\
 "tr_optn_menu_maps_rng_lvl_1":"Empêcher de jouer 2",\
