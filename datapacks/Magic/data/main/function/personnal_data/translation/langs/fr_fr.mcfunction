@@ -226,6 +226,31 @@ data modify storage strings fr_fr set value {\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_field_label":"Nombre d'éliminations",\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_confirm":"Valider",\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_cancel":"Annuler",\
+"tr_optn_menu_ffa_passive_money":"Revenu passif :",\
+"tr_optn_menu_ffa_passive_speed":"Vitesse du revenu passif :",\
+"tr_optn_menu_ffa_ph_per_kill":"Points par élimination :",\
+"tr_optn_menu_ffa_never":"Jamais",\
+"tr_optn_menu_ffa_none":"Aucun",\
+"tr_optn_menu_ffa_seconds":" s",\
+"tr_optn_menu_custom_confirm":"Valider",\
+"tr_optn_menu_custom_cancel":"Annuler",\
+"tr_optn_menu_ffa_passive_money_custom_title":"Revenu passif",\
+"tr_optn_menu_ffa_passive_money_custom_text":"Choisissez le nombre de points reçus à chaque versement",\
+"tr_optn_menu_ffa_passive_money_custom_range":"Valeur acceptée : 1 à 50 points",\
+"tr_optn_menu_ffa_passive_money_custom_label":"Nombre de points",\
+"tr_optn_menu_ffa_passive_speed_custom_title":"Vitesse du revenu passif",\
+"tr_optn_menu_ffa_passive_speed_custom_text":"Choisissez le délai entre chaque versement",\
+"tr_optn_menu_ffa_passive_speed_custom_range":"0 désactive le revenu passif ; maximum 30 secondes",\
+"tr_optn_menu_ffa_passive_speed_custom_label":"Délai en secondes",\
+"tr_optn_menu_ffa_first_income_delay":"Délai du premier revenu :",\
+"tr_optn_menu_ffa_first_income_delay_custom_title":"Délai du premier revenu",\
+"tr_optn_menu_ffa_first_income_delay_custom_text":"Choisissez le délai avant le premier versement du revenu passif",\
+"tr_optn_menu_ffa_first_income_delay_custom_range":"Valeur acceptée : 1 à 60 secondes",\
+"tr_optn_menu_ffa_first_income_delay_custom_label":"Délai en secondes",\
+"tr_optn_menu_ffa_ph_per_kill_custom_title":"Points par élimination",\
+"tr_optn_menu_ffa_ph_per_kill_custom_text":"Choisissez le nombre de points reçus par élimination",\
+"tr_optn_menu_ffa_ph_per_kill_custom_range":"0 désactive la récompense ; maximum 50 points",\
+"tr_optn_menu_ffa_ph_per_kill_custom_label":"Nombre de points",\
 \
 "tr_optn_menu_lobby_enable_arena":"Arène du lobby",\
 "tr_optn_menu_lobby_enable_maps":"Visiter les maps",\

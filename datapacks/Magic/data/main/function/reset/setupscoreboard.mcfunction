@@ -57,6 +57,10 @@ scoreboard objectives add optn_ph_start_custom trigger
 scoreboard objectives add optn_ph_per_round_custom trigger
 scoreboard objectives add optn_ph_per_obj_custom trigger
 scoreboard objectives add optn_kills_goal_custom trigger
+scoreboard objectives add optn_passive_money_custom trigger
+scoreboard objectives add optn_passive_speed_custom trigger
+scoreboard objectives add optn_ph_per_kill_custom trigger
+scoreboard objectives add optn_first_income_delay_custom trigger
 
 # teams
 scoreboard objectives add blue_place dummy

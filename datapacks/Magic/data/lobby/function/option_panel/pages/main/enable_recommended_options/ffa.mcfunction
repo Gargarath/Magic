@@ -10,5 +10,9 @@ scoreboard players set $kills_goal option_panel 15
 
 # shop
 scoreboard players set $build_reset option_panel 1
+scoreboard players set $passive_money option_panel 10
+scoreboard players set $passive_income_speed option_panel 7
+scoreboard players set $ph_per_kills option_panel 10
+scoreboard players set $first_income_delay option_panel 10
 
 # fun

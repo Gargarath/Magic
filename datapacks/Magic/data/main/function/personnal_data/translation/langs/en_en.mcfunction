@@ -226,6 +226,31 @@ data modify storage strings en_en set value {\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_field_label":"Number of kills",\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_confirm":"Confirm",\
 "tr_optn_menu_gamemode_ffa_kills_goal_custom_cancel":"Cancel",\
+"tr_optn_menu_ffa_passive_money":"Passive income coins:",\
+"tr_optn_menu_ffa_passive_speed":"Passive income speed:",\
+"tr_optn_menu_ffa_ph_per_kill":"Coins per kill:",\
+"tr_optn_menu_ffa_never":"Never",\
+"tr_optn_menu_ffa_none":"None",\
+"tr_optn_menu_ffa_seconds":"s",\
+"tr_optn_menu_custom_confirm":"Confirm",\
+"tr_optn_menu_custom_cancel":"Cancel",\
+"tr_optn_menu_ffa_passive_money_custom_title":"Passive income coins",\
+"tr_optn_menu_ffa_passive_money_custom_text":"Choose how many coins are received with each payment",\
+"tr_optn_menu_ffa_passive_money_custom_range":"Allowed value: 1 to 50 coins",\
+"tr_optn_menu_ffa_passive_money_custom_label":"Number of coins",\
+"tr_optn_menu_ffa_passive_speed_custom_title":"Passive income speed",\
+"tr_optn_menu_ffa_passive_speed_custom_text":"Choose the delay between passive income payments",\
+"tr_optn_menu_ffa_passive_speed_custom_range":"0 disables passive income; maximum 30 seconds",\
+"tr_optn_menu_ffa_passive_speed_custom_label":"Delay in seconds",\
+"tr_optn_menu_ffa_first_income_delay":"First income delay:",\
+"tr_optn_menu_ffa_first_income_delay_custom_title":"First income delay",\
+"tr_optn_menu_ffa_first_income_delay_custom_text":"Choose the delay before the first passive income payment",\
+"tr_optn_menu_ffa_first_income_delay_custom_range":"Allowed value: 1 to 60 seconds",\
+"tr_optn_menu_ffa_first_income_delay_custom_label":"Delay in seconds",\
+"tr_optn_menu_ffa_ph_per_kill_custom_title":"Coins per kill",\
+"tr_optn_menu_ffa_ph_per_kill_custom_text":"Choose how many coins are received per kill",\
+"tr_optn_menu_ffa_ph_per_kill_custom_range":"0 disables the reward; maximum 50 coins",\
+"tr_optn_menu_ffa_ph_per_kill_custom_label":"Number of coins",\
 \
 "tr_optn_menu_lobby_enable_arena":"Lobby Arena",\
 "tr_optn_menu_lobby_enable_maps":"Visit Maps",\

@@ -90,6 +90,24 @@ execute if entity @s[tag=optn_menu_shop_ph_per_obj_center] on target if score @s
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_decrease
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/custom_value
 
+    # économie FFA
+execute if entity @s[tag=optn_menu_ffa_passive_money_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_money/increase
+execute if entity @s[tag=optn_menu_ffa_passive_money_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_money/increase
+execute if entity @s[tag=optn_menu_ffa_passive_money_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_money/decrease
+execute if entity @s[tag=optn_menu_ffa_passive_money_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_money/custom_value
+execute if entity @s[tag=optn_menu_ffa_passive_speed_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/increase
+execute if entity @s[tag=optn_menu_ffa_passive_speed_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/increase
+execute if entity @s[tag=optn_menu_ffa_passive_speed_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/decrease
+execute if entity @s[tag=optn_menu_ffa_passive_speed_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/custom_value
+execute if entity @s[tag=optn_menu_ffa_ph_per_kill_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/increase
+execute if entity @s[tag=optn_menu_ffa_ph_per_kill_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/increase
+execute if entity @s[tag=optn_menu_ffa_ph_per_kill_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/decrease
+execute if entity @s[tag=optn_menu_ffa_ph_per_kill_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/custom_value
+execute if entity @s[tag=optn_menu_ffa_first_income_delay_right] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/increase
+execute if entity @s[tag=optn_menu_ffa_first_income_delay_center] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/increase
+execute if entity @s[tag=optn_menu_ffa_first_income_delay_left] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/decrease
+execute if entity @s[tag=optn_menu_ffa_first_income_delay_custom] on target if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/custom_value
+
 # gamemode: free for all
 
     # kills_goal

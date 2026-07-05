@@ -6,6 +6,7 @@ scoreboard players set $lobby_arena option_panel 1
 scoreboard players set $lobby_maps option_panel 1
 scoreboard players set $lobby_jump option_panel 1
 scoreboard players set $operator_access option_panel 0
+scoreboard players set $matchmaking option_panel 1
 scoreboard players set $force_launch option_panel 0
 
 # gamemode

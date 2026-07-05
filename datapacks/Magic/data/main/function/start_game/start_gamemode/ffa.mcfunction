@@ -31,5 +31,9 @@ scoreboard players set $three ffa_bounty_calc 3
 
 function gamemode:ffa/leaderboard/refresh_leaderboard
 
-    schedule function gamemode:ffa/money_distribution/increase_player_money 10s
+execute unless score $passive_money option_panel matches 1..50 run scoreboard players set $passive_money option_panel 10
+execute unless score $passive_income_speed option_panel matches 0..30 run scoreboard players set $passive_income_speed option_panel 7
+execute unless score $ph_per_kills option_panel matches 0..50 run scoreboard players set $ph_per_kills option_panel 10
+execute unless score $first_income_delay option_panel matches 1..60 run scoreboard players set $first_income_delay option_panel 10
+function gamemode:ffa/money_distribution/schedule_first
 # lance la boucle de money passive pour les joueurs

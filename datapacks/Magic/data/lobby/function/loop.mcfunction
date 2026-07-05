@@ -66,6 +66,10 @@ execute as @a[scores={optn_ph_start_custom=0..,operator=2}] run function lobby:o
 execute as @a[scores={optn_ph_per_round_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ph_per_round/apply_custom_value
 execute as @a[scores={optn_ph_per_obj_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ph_per_obj/apply_custom_value
 execute as @a[scores={optn_kills_goal_custom=0..,operator=2}] run function lobby:option_panel/pages/gamemode/free_for_all/kills_goal/apply_custom_value
+execute as @a[scores={optn_passive_money_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ffa_economy/passive_money/apply_custom_value
+execute as @a[scores={optn_passive_speed_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/apply_custom_value
+execute as @a[scores={optn_ph_per_kill_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/apply_custom_value
+execute as @a[scores={optn_first_income_delay_custom=0..,operator=2}] run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/apply_custom_value
 
 execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
 # détecte si un joueur clique gauche sur une map

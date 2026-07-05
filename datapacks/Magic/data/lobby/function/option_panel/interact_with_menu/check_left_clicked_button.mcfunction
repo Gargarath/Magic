@@ -31,6 +31,12 @@ execute if entity @s[tag=optn_menu_shop_ph_per_round_center] on attacker if scor
     # ph_per_objs
 execute if entity @s[tag=optn_menu_shop_ph_per_obj_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/shop/ph_per_obj/ph_per_obj_decrease
 
+    # économie FFA
+execute if entity @s[tag=optn_menu_ffa_passive_money_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_money/decrease
+execute if entity @s[tag=optn_menu_ffa_passive_speed_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/passive_speed/decrease
+execute if entity @s[tag=optn_menu_ffa_ph_per_kill_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/decrease
+execute if entity @s[tag=optn_menu_ffa_first_income_delay_center] on attacker if score @s operator matches 2 run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/decrease
+
 
 
 

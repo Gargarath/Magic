@@ -21,6 +21,10 @@ execute unless score $time_change option_panel matches 1 run scoreboard players 
 
 # shop
 execute unless score $build_reset option_panel matches 1 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $passive_money option_panel matches 10 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $passive_income_speed option_panel matches 7 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $ph_per_kills option_panel matches 10 run scoreboard players set $recommended_optns option_panel 0
+execute unless score $first_income_delay option_panel matches 10 run scoreboard players set $recommended_optns option_panel 0
 
 # fun
 execute unless score $no_cooldowns option_panel matches 0 run scoreboard players set $recommended_optns option_panel 0

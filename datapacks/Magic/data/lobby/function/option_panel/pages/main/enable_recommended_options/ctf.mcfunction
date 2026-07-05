@@ -2,7 +2,6 @@
 # active les options recommandées propre au CTF
 
 # lobby
-scoreboard players set $matchmaking option_panel 1
 
 # gamemode
 scoreboard players set $secondary_objectives option_panel 1

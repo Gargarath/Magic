@@ -1,0 +1,8 @@
+$execute if score $ph_per_kills option_panel matches 0 run data merge entity @n[type=text_display,tag=optn_menu_button_ffa_ph_per_kill] {text:{"bold":true,"color":"black","text":"$(tr_optn_menu_ffa_none)"},background:0}
+$execute if score $ph_per_kills option_panel matches 1.. run data merge entity @n[type=text_display,tag=optn_menu_button_ffa_ph_per_kill] {text:{"bold":true,"color":"black","text":"$(temp)"},background:0}
+execute if score $ph_per_kills option_panel matches ..9 run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_0"]}}}}
+execute if score $ph_per_kills option_panel matches 10..19 run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_1"]}}}}
+execute if score $ph_per_kills option_panel matches 20..29 run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_2"]}}}}
+execute if score $ph_per_kills option_panel matches 30..39 run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_3"]}}}}
+execute if score $ph_per_kills option_panel matches 40..49 run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_4"]}}}}
+execute if score $ph_per_kills option_panel matches 50.. run data merge entity @n[type=item_display,tag=optn_menu_ffa_ph_per_kill] {item:{components:{"minecraft:custom_model_data":{strings:["generic_value_selector_5"]}}}}

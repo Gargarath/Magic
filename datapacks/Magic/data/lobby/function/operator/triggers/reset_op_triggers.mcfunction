@@ -12,4 +12,8 @@ scoreboard players reset @s optn_ph_start_custom
 scoreboard players reset @s optn_ph_per_round_custom
 scoreboard players reset @s optn_ph_per_obj_custom
 scoreboard players reset @s optn_kills_goal_custom
+scoreboard players reset @s optn_passive_money_custom
+scoreboard players reset @s optn_passive_speed_custom
+scoreboard players reset @s optn_ph_per_kill_custom
+scoreboard players reset @s optn_first_income_delay_custom
 # enlève les trigger pour @s
