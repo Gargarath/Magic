@@ -24,6 +24,11 @@ scoreboard players operation $ffa_goal stat_killcount_player = $kills_goal optio
 
 scoreboard players set @a stat_killcount_player 0
 
+scoreboard players set @a ffa_bounty_streak 0
+scoreboard players set @a ffa_bounty_level 0
+scoreboard players set @a ffa_bounty_calc 0
+scoreboard players set $three ffa_bounty_calc 3
+
 function gamemode:ffa/leaderboard/refresh_leaderboard
 
     schedule function gamemode:ffa/money_distribution/increase_player_money 10s

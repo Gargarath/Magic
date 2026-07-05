@@ -466,7 +466,7 @@ data modify storage strings fr_fr set value {\
 \
 "tr_stats_mvp":"MVP",\
 "tr_stats_deadliest_player":"Combattant ultime",\
-"tr_stats_money_player":"Econome hors pair",\
+"tr_stats_money_player":"Chasseur de prime",\
 "tr_stats_objectives_player":"Stratège hors pair",\
 "tr_stats_warrior":"Guerrier",\
 "tr_stats_archer":"Archer",\
@@ -1729,5 +1729,9 @@ data modify storage strings fr_fr set value {\
 "tr_shop_spec_player_hover_event":"Cliquez ici pour arrêter d'observer.",\
 "tr_shop_spec_player_stop_spectating":"Vous avez arrêté d'observer.",\
 "tr_ffa_money_alert_kill":"Élimination",\
-"tr_ffa_money_alert_passive":"Revenu passif"\
+"tr_ffa_money_alert_passive":"Revenu passif",\
+"tr_ffa_money_alert_bounty":"Prime",\
+"tr_ffa_bounty_acquired":"a désormais une prime de",\
+"tr_ffa_bounty_claimed_1":"a réclamé la prime de",\
+"tr_ffa_bounty_claimed_2":"pour"\
 }

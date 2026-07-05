@@ -65,3 +65,6 @@ function main:stats/leaderboard/sort_stats/sort_final_score/sort_final_score
 
 function main:stats/leaderboard/sort_stats/sort_total_money_earned/sort_total_money_earned
 # calcule le classement d'argent total récolté
+
+function main:stats/leaderboard/sort_stats/sort_total_bounty_earned/sort_total_bounty_earned
+# calcule le classement d'argent récolté via les primes

@@ -81,9 +81,10 @@ scoreboard players operation player_atstart playercount = player playercount
 # Fait en sorte que le score playercount de player_atstart indique le nombre de joueur qu'il y aura dans cette partie
 
 
-execute if score $infinite_money option_panel matches 0 run scoreboard objectives setdisplay list PH
+execute if score $infinite_money option_panel matches 0 if score $gamemode option_panel matches 0 run scoreboard objectives setdisplay list stat_total_money_earned
+execute if score $infinite_money option_panel matches 0 if score $gamemode option_panel matches 1 run scoreboard objectives setdisplay list PH
 execute if score $infinite_money option_panel matches 1 run scoreboard objectives setdisplay list
-# affiche l'objectif points d'honneur en list sauf si on est en argent ilimité (ou ça affiche rien)
+# affiche le revenu total en FFA et les points d'honneur en CTF, sauf en argent ilimité (ou ça affiche rien)
 
 execute if score $infinite_money option_panel matches 0 run scoreboard players operation @a[scores={Player=0}] PH = $ph_start option_panel
 #Donne un nombre Points d'honneur à tous les joueurs équivalent à ce qui a été config
@@ -91,7 +92,8 @@ execute if score $infinite_money option_panel matches 0 run scoreboard players o
 execute if score $infinite_money option_panel matches 1 run scoreboard players set @a[scores={Player=0}] PH 99999999
 # si mode argent illimité -> donne plein d'argent
 
-scoreboard players operation @a[scores={Player=0}] stat_total_money_earned = @s PH
+execute as @a[scores={Player=0}] run scoreboard players operation @s stat_total_money_earned = @s PH
+scoreboard players set @a[scores={Player=0}] stat_total_bounty_earned 0
 
 execute at @e[type=marker,tag=shop_room] positioned ~ ~1 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
 # remet les barrier blocs dans le shop

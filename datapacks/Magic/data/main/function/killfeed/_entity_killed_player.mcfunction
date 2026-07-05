@@ -15,7 +15,7 @@ execute if score @s Player matches 11 run data modify storage main:killfeed kill
 execute if score @s Player matches 12 run data modify storage main:killfeed killer_name set from storage main:killfeed name.12
 
 execute if score @s Player matches 1..12 run scoreboard players add @s stat_killcount_player 1
-execute if score $gamemode option_panel matches 0 if score @s Player matches 1..12 run function gamemode:ffa/money_distribution/killed_player
+execute if score $gamemode option_panel matches 0 if score @s Player matches 1..12 run function gamemode:ffa/bounty/player_kill
 execute if score $gamemode option_panel matches 0 if score @s Player matches 1..12 run function gamemode:ffa/leaderboard/refresh_leaderboard
 execute if score @s Player matches -2 run function main:killfeed/boss_killed_player
 # si @s est un joueur -> ajoute 1 à sa stat de kill de joueur

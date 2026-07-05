@@ -467,7 +467,7 @@ data modify storage strings en_en set value {\
 \
 "tr_stats_mvp":"MVP",\
 "tr_stats_deadliest_player":"Ultimate fighter",\
-"tr_stats_money_player":"Master saver",\
+"tr_stats_money_player":"Bounty hunter",\
 "tr_stats_objectives_player":"Master strategist",\
 "tr_stats_warrior":"Warrior",\
 "tr_stats_archer":"Archer",\
@@ -1729,5 +1729,9 @@ data modify storage strings en_en set value {\
 "tr_shop_spec_player_hover_event":"Click here to stop spectating.",\
 "tr_shop_spec_player_stop_spectating":"You have stopped spectating.",\
 "tr_ffa_money_alert_kill":"Elimination",\
-"tr_ffa_money_alert_passive":"Passive income"\
+"tr_ffa_money_alert_passive":"Passive income",\
+"tr_ffa_money_alert_bounty":"Bounty",\
+"tr_ffa_bounty_acquired":"now has a bounty of",\
+"tr_ffa_bounty_claimed_1":"claimed the bounty on",\
+"tr_ffa_bounty_claimed_2":"for"\
 }

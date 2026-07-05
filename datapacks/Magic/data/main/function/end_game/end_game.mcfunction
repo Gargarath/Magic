@@ -28,6 +28,9 @@ data remove storage minecraft:gui player.9.money_alert
 data remove storage minecraft:gui player.10.money_alert
 data remove storage minecraft:gui player.11.money_alert
 data remove storage minecraft:gui player.12.money_alert
+scoreboard players set @a ffa_bounty_streak 0
+scoreboard players set @a ffa_bounty_level 0
+scoreboard players set @a ffa_bounty_calc 0
 # lance les système de end_game relatifs aux gamemodes
 
 stopsound @a

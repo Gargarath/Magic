@@ -554,9 +554,16 @@ scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add bow_dmg_counted10 dummy
 scoreboard objectives add stat_obj_time dummy
 scoreboard objectives add stat_total_money_earned dummy
+scoreboard objectives modify stat_total_money_earned numberformat styled {"color":"gold"}
+scoreboard objectives add stat_total_bounty_earned dummy
+scoreboard objectives modify stat_total_bounty_earned numberformat styled {"color":"gold"}
 
 scoreboard objectives add stat_killcount_player dummy
-scoreboard objectives modify stat_killcount_player displayname {"text":"Eliminations","color":"red","bold":true}
+
+# FFA bounty system
+scoreboard objectives add ffa_bounty_streak dummy
+scoreboard objectives add ffa_bounty_level dummy
+scoreboard objectives add ffa_bounty_calc dummy
 
 
 # global stats
@@ -578,6 +585,7 @@ scoreboard objectives add sort_bow_dmg10 dummy
 scoreboard objectives add sort_dmg_taken dummy
 scoreboard objectives add sort_flag_earned dummy
 scoreboard objectives add sort_total_money_earned dummy
+scoreboard objectives add sort_total_bounty_earned dummy
 
 ## SPELLS
 scoreboard objectives add usespell dummy

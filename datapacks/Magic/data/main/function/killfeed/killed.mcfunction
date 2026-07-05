@@ -3,6 +3,9 @@
 tag @s add killed
 # flag pour savoir que @s est celui qui est tué
 
+# Toute mort casse la série FFA, mais la prime acquise reste active.
+execute if score $gamemode option_panel matches 0 run scoreboard players set @s ffa_bounty_streak 0
+
 
 ## MORT PAR JOUEUR OU BOSS
 execute positioned as @s on attacker if entity @s[type=#spellable] run function main:killfeed/_entity_killed_player
