@@ -32,9 +32,9 @@ execute if score red steam_timer matches 205.. run function gamemode:ctf/maps_sy
 
 particle happy_villager -578 134 489.0 0.2 0 -0.5 0 2 normal @a
 particle happy_villager -618 134 510.9 0.2 0 -0.5 0 2 normal @a
-execute as @a[scores={Player=1..}] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 6 true
-execute as @a[scores={Player=1..,is_jumping=1..}] run function gamemode:ctf/maps_systems/volcano/is_jumping
-execute as @a[scores={Player=1..}] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
+execute as @a[gamemode=adventure,tag=!in_lobby_arena] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 6 true
+execute as @a[gamemode=adventure,scores={is_jumping=1..},tag=!in_lobby_arena] run function gamemode:ctf/maps_systems/volcano/is_jumping
+execute as @a[gamemode=adventure,tag=!in_lobby_arena] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
 
 ## LAVE MORTELLE
 

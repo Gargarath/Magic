@@ -36,9 +36,9 @@ execute as @a[tag=in_lobby_arena,scores={Player=1..}] at @s if block ~ ~ ~ lava 
 
 # jump pad
 execute positioned 14.5 54.0 -9.50 run particle minecraft:happy_villager ~ ~ ~ 0.5 0 0.5 0 5 force @a[tag=in_lobby_arena]
-execute as @a[scores={Player=1..}] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 16 true
-execute as @a[scores={Player=1..,is_jumping=1..}] run function lobby:arena/jump_pad
-execute as @a[scores={Player=1..}] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
+execute as @a[scores={Player=1..},tag=in_lobby_arena] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 16 true
+execute as @a[scores={Player=1..,is_jumping=1..},tag=in_lobby_arena] run function lobby:arena/jump_pad
+execute as @a[scores={Player=1..},tag=in_lobby_arena] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
 
 # tp
 particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} 1 81.5 -22.7 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
