@@ -8,3 +8,4 @@ execute if score map_1 map_selection matches 3 run data merge entity @e[type=ite
 execute if score map_1 map_selection matches 4 run data merge entity @e[type=item_display,tag=optn_menu_maps_map_1,limit=1] {item:{components:{"minecraft:custom_model_data":{strings:["map_4"]}}}}
 execute if score map_1 map_selection matches 5 run data merge entity @e[type=item_display,tag=optn_menu_maps_map_1,limit=1] {item:{components:{"minecraft:custom_model_data":{strings:["map_5"]}}}}
 execute if score map_1 map_selection matches 6 run data merge entity @e[type=item_display,tag=optn_menu_maps_map_1,limit=1] {item:{components:{"minecraft:custom_model_data":{strings:["map_6"]}}}}
+execute if score map_1 map_selection matches 7 run data merge entity @e[type=item_display,tag=optn_menu_maps_map_1,limit=1] {item:{components:{"minecraft:custom_model_data":{strings:["map_7"]}}}}

@@ -59,12 +59,10 @@ execute as @a[tag=Has_Red_flag] run function gamemode:ctf/locator_bar_flags/rese
 # enlève les waypoint à tous les joueurs qui avaient un drapeau
 
 execute as @a run function gamemode:ctf/locator_bar_flags/reset_waypoint
-execute as @a run attribute @s waypoint_receive_range base set 0
-schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe)
-
 team modify blue nametagVisibility always
 team modify red nametagVisibility always
+execute as @a[team=blue] run function main:locator_bar/team_updated
+execute as @a[team=red] run function main:locator_bar/team_updated
 # modifie la visibilité des nametag pour le lobby
 
 scoreboard players set Rouges Flag_posed 0

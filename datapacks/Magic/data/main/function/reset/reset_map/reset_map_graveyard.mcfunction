@@ -66,4 +66,6 @@ bossbar set bad_path:player12 players
 
 team modify blue color blue
 team modify red color red
+execute as @a[team=blue] run function main:locator_bar/team_updated
+execute as @a[team=red] run function main:locator_bar/team_updated
 # utilisé par les épitaphes

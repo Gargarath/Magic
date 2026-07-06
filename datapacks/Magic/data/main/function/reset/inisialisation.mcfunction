@@ -83,6 +83,7 @@ scoreboard players reset @s[tag=red_member] red_member
 
 # permet d'ajouter @s à la liste des statues rouges si pas déjà le cas
 team join lobby @s
+function main:locator_bar/team_updated
 tag @s remove blue_team
 tag @s remove red_team
 tag @s remove spectator

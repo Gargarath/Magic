@@ -100,6 +100,7 @@ execute store result storage stats:jump 2.rank1.tries int 1 run scoreboard playe
 data modify storage stats:jump 2.rank1.head.player.id set from entity @s UUID
 
 team leave @s
+function main:locator_bar/team_updated
 tag @s add get_name
 execute at @s run data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[tag=get_name,limit=1]"},"","",""]}}
 tag @s remove get_name

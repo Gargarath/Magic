@@ -6,7 +6,9 @@ function shop:refresh/ready_button/not_ready with entity @s EnderItems[0].compon
 execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
 
 team join non_ready_red @s[team=ready_red]
+function main:locator_bar/team_updated
 team join non_ready_blue @s[team=ready_blue]
+function main:locator_bar/team_updated
 
 scoreboard players set @s is_ready 0
 

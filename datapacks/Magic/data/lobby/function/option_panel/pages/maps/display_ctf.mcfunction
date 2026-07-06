@@ -1,6 +1,11 @@
 ## appelée par interact_with_menu/check_clicked_button si un modo à cliqué sur le menu arènes
 # permet d'afficher le menu -> arènes
 
+execute unless score map_1 map_selection matches 0..6 run scoreboard players set map_1 map_selection 0
+execute unless score map_2 map_selection matches 0..6 run scoreboard players set map_2 map_selection 0
+execute unless score map_3 map_selection matches 0..6 run scoreboard players set map_3 map_selection 0
+execute unless score map_4 map_selection matches 0..6 run scoreboard players set map_4 map_selection 0
+
             ## MAP SELECTION
 $execute at @n[type=item_display,tag=optn_menu_background] run summon text_display ~-3.8 ~2.52 ~1.79 {billboard:"fixed",alignment:"center",see_through:0b,shadow:0b,Rotation:[0F,0F],Tags:["optn_menu","optn_menu_maps","optn_menu_maps_clickable","optn_menu_maps_map_selection"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.3f,1.5f,1.3f]},text:{"bold":true,"color":"white","text":"$(tr_optn_menu_maps_map_selection)"},background:0}
 execute if score $random map_selection matches 0 at @e[tag=optn_menu_background,limit=1] run summon item_display ~-3.65 ~1.9 ~1.765 {billboard:"fixed",item_display:"head",Tags:["optn_menu","optn_menu_maps","optn_menu_maps_clickable","optn_menu_maps_map_selection"],glow_color_override:16701501,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:oak_sign",count:1,components:{"minecraft:custom_model_data":{strings:["map_selection_predefined"]}}}}

@@ -5,7 +5,9 @@ function shop:refresh/ready_button/ready with entity @s EnderItems[0].components
 execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
 
 team join ready_red @s[tag=red_team]
+function main:locator_bar/team_updated
 team join ready_blue @s[tag=blue_team]
+function main:locator_bar/team_updated
 
 scoreboard players set @s is_ready 1
 

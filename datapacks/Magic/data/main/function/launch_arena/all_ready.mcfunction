@@ -26,10 +26,12 @@ execute as @a[scores={Player=-1}] run function main:reset/reset_spec_inshop
 
 
 team join red @a[tag=red_team]
+execute as @a[team=red] run function main:locator_bar/team_updated
 effect clear @a[scores={Player=1..}] minecraft:resistance
 execute as @a run function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
 team join blue @a[tag=blue_team]
+execute as @a[team=blue] run function main:locator_bar/team_updated
 execute as @a run attribute @s name_tag_distance base reset
 
 tag @a[scores={Player=1..}] add inventory_rebuilding
@@ -51,6 +53,8 @@ team modify red collisionRule never
 team modify blue collisionRule never
 team modify red nametagVisibility never
 team modify blue nametagVisibility never
+execute as @a[team=red] run function main:locator_bar/team_updated
+execute as @a[team=blue] run function main:locator_bar/team_updated
 
 
 kill @e[type=item_frame,tag=weapon1]

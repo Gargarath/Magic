@@ -9,6 +9,7 @@ function lobby:hotbar_menu/main/join_spectator
 # fais passer @s en spectateur
 
 team join spectator @s
+function main:locator_bar/team_updated
 # affiche @s dans l'équipe des specs
 
 scoreboard players set @s InLobby 0

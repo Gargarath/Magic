@@ -232,6 +232,13 @@
         }
       },
             {
+        "when": "map_7",
+        "model": {
+          "type": "model",
+          "model": "item/maps/map_7"
+        }
+      },
+            {
         "when": "map_random",
         "model": {
           "type": "model",

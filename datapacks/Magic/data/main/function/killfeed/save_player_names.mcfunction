@@ -1,7 +1,9 @@
 ## appelée par main:start_game en début de partie pour enregistrer les noms des joueurs dans un storage
 
 team join Blue_Color @a[tag=blue_team,scores={Player=1..}]
+execute as @a[team=Blue_Color] run function main:locator_bar/team_updated
 team join Red_Color @a[tag=red_team,scores={Player=1..}]
+execute as @a[team=Red_Color] run function main:locator_bar/team_updated
 execute as @a[tag=no_team,scores={Player=1..}] run function lobby:team_selector/give_ffa_team/check_player
 
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={Player=1},limit=1]"},"","",""]}}
@@ -53,4 +55,6 @@ data modify storage main:killfeed name.12 set from block 14 97 13 front_text.mes
 # stock le nom du joueur 12 dans le storage
 
 team join non_ready_blue @a[team=Blue_Color]
+execute as @a[team=non_ready_blue] run function main:locator_bar/team_updated
 team join non_ready_red @a[team=Red_Color]
+execute as @a[team=non_ready_red] run function main:locator_bar/team_updated

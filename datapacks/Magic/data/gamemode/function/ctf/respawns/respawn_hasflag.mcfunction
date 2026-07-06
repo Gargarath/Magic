@@ -11,7 +11,9 @@ function main:effects/refresh_persistent
 # donne la regen à @s
 
 team join respawn_blue @s[team=blue]
+function main:locator_bar/team_updated
 team join respawn_red @s[team=red]
+function main:locator_bar/team_updated
 # fait passer @s dans l"équipe des morts
 
 execute if entity @s[team=respawn_blue] run function gamemode:ctf/respawns/calculate_respawn_time_blue

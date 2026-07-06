@@ -282,6 +282,7 @@ data modify storage strings fr_fr set value {\
 "tr_optn_menu_maps_ffa_map_4":"Volcan",\
 "tr_optn_menu_maps_ffa_map_5":"Ruine",\
 "tr_optn_menu_maps_ffa_map_6":"Bonbon",\
+"tr_optn_menu_maps_ffa_map_7":"Enfer",\
 "tr_optn_menu_maps_map_selection_random":"Aléatoire",\
 "tr_optn_menu_maps_map_selection_predefined":"Prédéfinie",\
 "tr_optn_menu_maps_rng_lvl_1":"Empêcher de jouer 2",\
@@ -440,6 +441,7 @@ data modify storage strings fr_fr set value {\
 "tr_gui_map_4_name":"\uE705Volcan\uE710\uE706",\
 "tr_gui_map_5_name":"\uE709Ruine\uE710\uE710",\
 "tr_gui_map_6_name":"\uE704Bonbon\uE710\uE704",\
+"tr_gui_map_7_name":"\uE710Enfer\uE710\uE706",\
 "tr_gui_map_random_name":"Aléatoire\uE708",\
 \
 "tr_map_1_name":"Pirate",\

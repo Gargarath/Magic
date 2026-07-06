@@ -115,6 +115,7 @@ stopsound @a
 
 team modify spectator seeFriendlyInvisibles false
 team modify spectator nametagVisibility always
+execute as @a[team=spectator] run function main:locator_bar/team_updated
 # modifie la visibilité des nametag pour le lobby
 
 execute as @a run function lobby:team_selector/give_lobby_team

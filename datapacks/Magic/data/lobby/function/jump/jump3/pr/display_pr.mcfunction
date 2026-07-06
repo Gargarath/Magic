@@ -2,6 +2,7 @@
 # permet d'afficher les données de @s sur son record
 
 team leave @s
+function main:locator_bar/team_updated
 tag @s add get_name
 execute at @s run data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[tag=get_name,limit=1]"},"","",""]}}
 tag @s remove get_name

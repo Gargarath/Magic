@@ -7,3 +7,4 @@ $execute if score map_1 map_selection matches 3 run data merge entity @n[type=te
 $execute if score map_1 map_selection matches 4 run data merge entity @n[type=text_display,tag=optn_menu_maps_ffa_map_label] {text:{"bold":true,"color":"dark_red","text":"$(tr_optn_menu_maps_ffa_map_4)"}}
 $execute if score map_1 map_selection matches 5 run data merge entity @n[type=text_display,tag=optn_menu_maps_ffa_map_label] {text:{"bold":true,"color":"gray","text":"$(tr_optn_menu_maps_ffa_map_5)"}}
 $execute if score map_1 map_selection matches 6 run data merge entity @n[type=text_display,tag=optn_menu_maps_ffa_map_label] {text:{"bold":true,"color":"light_purple","text":"$(tr_optn_menu_maps_ffa_map_6)"}}
+$execute if score map_1 map_selection matches 7 run data merge entity @n[type=text_display,tag=optn_menu_maps_ffa_map_label] {text:{"bold":true,"color":"dark_red","text":"$(tr_optn_menu_maps_ffa_map_7)"}}

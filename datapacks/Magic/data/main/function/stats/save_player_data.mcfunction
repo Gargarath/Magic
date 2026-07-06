@@ -4,7 +4,9 @@ data modify storage stats:leaderboards by_player set value {}
 # reset les stats par joueur dans le storage
 
 team join Blue_Color @a[tag=blue_team,scores={Player=1..}]
+execute as @a[team=Blue_Color] run function main:locator_bar/team_updated
 team join Red_Color @a[tag=red_team,scores={Player=1..}]
+execute as @a[team=Red_Color] run function main:locator_bar/team_updated
 execute as @a[tag=no_team,scores={Player=1..}] run function lobby:team_selector/give_ffa_team/check_player
 
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={Player=1},limit=1]"},"","",""]}}
@@ -228,5 +230,7 @@ execute as @a[scores={Player=12},limit=1] if entity @s[team=Blue_Color] run data
 execute as @a[scores={Player=12},limit=1] if entity @s[team=Red_Color] run data modify storage stats:leaderboards by_player."12".team set value {text:"Rouge",color:"red"}
 
 team join non_ready_blue @a[team=Blue_Color]
+execute as @a[team=non_ready_blue] run function main:locator_bar/team_updated
 team join non_ready_red @a[team=Red_Color]
+execute as @a[team=non_ready_red] run function main:locator_bar/team_updated
 execute as @a run attribute @s name_tag_distance base set 10

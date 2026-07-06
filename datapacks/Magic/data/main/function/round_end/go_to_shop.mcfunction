@@ -56,10 +56,6 @@ execute as @a[tag=Has_Blue_flag] run function gamemode:ctf/locator_bar_flags/res
 execute as @a[tag=Has_Red_flag] run function gamemode:ctf/locator_bar_flags/reset_waypoint
 # enlève les waypoint à tous les joueurs qui avaient un drapeau
 
-execute as @a run attribute @s waypoint_receive_range base set 0
-schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe)
-
 kill @e[tag=Spot_Red_flag]
 kill @e[tag=Spot_Blue_flag]
 kill @e[tag=Red_banner]
@@ -71,9 +67,13 @@ tag @e remove Has_Red_flag
 
 spawnpoint @a 0 100 0 180 0
 team join non_ready_red @a[team=red]
+execute as @a[team=non_ready_red] run function main:locator_bar/team_updated
 team join non_ready_red @a[team=respawn_red]
+execute as @a[team=non_ready_red] run function main:locator_bar/team_updated
 team join non_ready_blue @a[team=blue]
+execute as @a[team=non_ready_blue] run function main:locator_bar/team_updated
 team join non_ready_blue @a[team=respawn_blue]
+execute as @a[team=non_ready_blue] run function main:locator_bar/team_updated
 execute as @a run attribute @s name_tag_distance base set 10
 # ChHange les equipes de joueurs pour afficher qui est prêt ou non
 

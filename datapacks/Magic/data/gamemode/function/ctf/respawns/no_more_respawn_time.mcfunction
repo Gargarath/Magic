@@ -3,11 +3,9 @@
 
 scoreboard players set @s respawn_time -1
 team join blue @s[team=respawn_blue]
+function main:locator_bar/team_updated
 team join red @s[team=respawn_red]
-
-execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
-schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)
+function main:locator_bar/team_updated
 
 function main:ressource_pack_detector/display_something_else/show_another_message
 # clear l'affichage en title ( en cas de teamkill)

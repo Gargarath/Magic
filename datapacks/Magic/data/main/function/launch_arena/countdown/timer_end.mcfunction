@@ -27,10 +27,8 @@ team modify red collisionRule pushOtherTeams
 team modify blue collisionRule pushOtherTeams
 team modify red nametagVisibility hideForOtherTeams
 team modify blue nametagVisibility hideForOtherTeams
-
-execute as @a run attribute @s waypoint_receive_range base set 0
-schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint (bug MC qui fait que parfois on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe)
+execute as @a[team=red] run function main:locator_bar/team_updated
+execute as @a[team=blue] run function main:locator_bar/team_updated
 
 schedule function gamemode:ctf/timer/refresh_timer 1s
 # clear la boucle du chrono

@@ -2,7 +2,7 @@
 # permet d'afficher le menu -> arènes
 
 execute if score $gamemode option_panel matches 0 run scoreboard players add map_1 map_selection 1
-execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 7 run scoreboard players set map_1 map_selection 0
+execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 8 run scoreboard players set map_1 map_selection 0
 execute if score $gamemode option_panel matches 1 run scoreboard players add map_1 map_selection 1
 execute if score $gamemode option_panel matches 1 if score map_1 map_selection matches 7 run scoreboard players set map_1 map_selection 0
 

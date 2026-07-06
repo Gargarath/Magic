@@ -282,6 +282,7 @@ data modify storage strings en_en set value {\
 "tr_optn_menu_maps_ffa_map_4":"Volcano",\
 "tr_optn_menu_maps_ffa_map_5":"Ruin",\
 "tr_optn_menu_maps_ffa_map_6":"Cake",\
+"tr_optn_menu_maps_ffa_map_7":"Hell",\
 "tr_optn_menu_maps_map_selection_random":"Random",\
 "tr_optn_menu_maps_map_selection_predefined":"Predefined",\
 "tr_optn_menu_maps_rng_lvl_1":"Prevent playing the same",\
@@ -440,6 +441,7 @@ data modify storage strings en_en set value {\
 "tr_gui_map_4_name":"\uE702Volcano\uE710\uE702",\
 "tr_gui_map_5_name":"\uE710\uE701Ruin\uE710\uE710\uE703",\
 "tr_gui_map_6_name":"\uE709Cake\uE710\uE710\uE703",\
+"tr_gui_map_7_name":"\uE710\uE702Hell\uE710\uE710\uE704",\
 "tr_gui_map_random_name":"\uE703Random\uE710\uE705",\
 \
 "tr_map_1_name":"Pirate",\

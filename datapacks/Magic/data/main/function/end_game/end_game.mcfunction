@@ -72,6 +72,9 @@ team modify spectator seeFriendlyInvisibles false
 team modify blue nametagVisibility always
 team modify red nametagVisibility always
 team modify spectator nametagVisibility always
+execute as @a[team=blue] run function main:locator_bar/team_updated
+execute as @a[team=red] run function main:locator_bar/team_updated
+execute as @a[team=spectator] run function main:locator_bar/team_updated
 # modifie la visibilité des nametag pour le lobby
 
 scoreboard players set @a[scores={Player=1..}] out_of_fight 301

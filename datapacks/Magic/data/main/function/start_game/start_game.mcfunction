@@ -1,6 +1,7 @@
 # Appelée par pages/main/launch_game permet de commencer une partie
 
 # remplace l'ancienne map affichée par "Aléatoire" avant les refresh GUI déclenchés pendant la sortie du lobby
+execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 0 as @a[tag=initialised] run function main:start_game/prepare_random_ffa_map_name
 
 title @a reset
 dialog clear @a
@@ -61,6 +62,7 @@ scoreboard players set @a is_ready 0
 execute if score $gamemode option_panel matches 0 run scoreboard players set @a[scores={Player=0..}] InShop 1
 execute if score $gamemode option_panel matches 1 run scoreboard players set @a InShop 1
 team modify spectator seeFriendlyInvisibles true
+execute as @a[team=spectator] run function main:locator_bar/team_updated
 effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true
 # Permet à tous ceux qui ont InShop à 1 d'avoir des effets (saturation/night vision/instant health) et leur donne night vision tout de suite pour eviter un effet flash
 
@@ -168,9 +170,9 @@ scoreboard players set round bossbar 0
 
 # MAPS
 
-execute if score $gamemode option_panel matches 0 unless score map_1 map_selection matches 0..6 run scoreboard players set map_1 map_selection 0
+execute if score $gamemode option_panel matches 0 unless score map_1 map_selection matches 0..7 run scoreboard players set map_1 map_selection 0
 execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 0 run function main:map_randomizer/full_randomization/full_randomization
-execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 1..6 run scoreboard players operation selected_map variables = map_1 map_selection
+execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 1..7 run scoreboard players operation selected_map variables = map_1 map_selection
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 0 run function main:map_randomizer/predefined_map/predefined_map
 # si on est en "arènes prédéfinies"  -> calcule la prochaine map en fonction de celles choisie dans le menu
 # si on est en FFA et en "arènes aléatoire"  -> calcule la prochaine map aléatoirement

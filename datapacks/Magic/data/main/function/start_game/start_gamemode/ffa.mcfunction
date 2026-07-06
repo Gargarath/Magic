@@ -17,6 +17,7 @@ execute if score selected_map variables matches 3 run function main:launch_arena
 execute if score selected_map variables matches 4 run function main:launch_arena/launch_map_volcano
 execute if score selected_map variables matches 5 run function main:launch_arena/launch_map_ruin
 execute if score selected_map variables matches 6 run function main:launch_arena/launch_map_candyworld
+execute if score selected_map variables matches 7 run function main:launch_arena/launch_map_hell
 
 scoreboard players reset * stat_killcount_player
 

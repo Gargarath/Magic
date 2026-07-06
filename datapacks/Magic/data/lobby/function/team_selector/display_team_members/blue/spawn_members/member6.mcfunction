@@ -6,6 +6,7 @@ summon armor_stand -10.5 111.99 -20.18 {CustomNameVisible:0b,NoGravity:1b,Invuln
 data modify entity @e[type=armor_stand,tag=blue_member6,limit=1] equipment.head.components."minecraft:profile".id set from entity @s UUID
 
 team join blue @s
+function main:locator_bar/team_updated
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={blue_member=6},limit=1]"},"","",""]}}
 data modify entity @e[type=armor_stand,tag=blue_member6,limit=1] CustomName set from block 14 97 13 front_text.messages[0]
 execute at @e[type=armor_stand,tag=blue_member6,limit=1] run summon text_display ~ ~2.2 ~ {billboard:"center",see_through:0b,shadow:1b,background:0,Tags:["team_member_name","blue_member_name","blue_member6_name"],text:{text:""}}

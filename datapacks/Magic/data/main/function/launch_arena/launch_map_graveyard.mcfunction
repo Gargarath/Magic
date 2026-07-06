@@ -31,6 +31,8 @@ function main:launch_arena/graveyard_epitaphs with storage lobby:language transl
 
 team modify blue color blue
 team modify red color red
+execute as @a[team=blue] run function main:locator_bar/team_updated
+execute as @a[team=red] run function main:locator_bar/team_updated
 
 
 tag @a[tag=targetable] remove targetable

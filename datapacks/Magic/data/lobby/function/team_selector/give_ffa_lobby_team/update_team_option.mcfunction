@@ -30,4 +30,5 @@ $execute if score @s opt_color matches 13 run team modify lobby_ffa_$(slot) colo
 $execute if score @s opt_color matches 14 run team modify lobby_ffa_$(slot) color yellow
 $execute if score @s opt_color matches 15 run team modify lobby_ffa_$(slot) color gold
 $team join lobby_ffa_$(slot)
+function main:locator_bar/team_updated
 

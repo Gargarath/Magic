@@ -64,7 +64,3 @@ execute if entity @s[tag=targetable] run tag @s remove targetable
 
 function spells:cooldowns/reset_cooldown
 # reset les temps de recharge de @s
-
-execute as @a[scores={Player=-1}] run attribute @s waypoint_receive_range base set 0
-schedule function gamemode:ctf/locator_bar_flags/enable_waypoint 1t
-# permet de refresh les waypoint des specs (bug MC qui fait qu'on voit des waypoints qu'on ne doit pas voir quand un joueur change d'équipe et qu'on est en spec)

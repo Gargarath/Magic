@@ -25,3 +25,4 @@ execute if score @s opt_color matches 14 run team modify player6 color yellow
 execute if score @s opt_color matches 15 run team modify player6 color gold
 
 team join player6
+function main:locator_bar/team_updated

@@ -10,6 +10,7 @@ $execute if score selected_map variables matches 3 run data modify storage perso
 $execute if score selected_map variables matches 4 run data modify storage personnal_storage.temp storage.map_name set value {"text":"$(tr_gui_map_4_name)","color":"dark_red","bold":true}
 $execute if score selected_map variables matches 5 run data modify storage personnal_storage.temp storage.map_name set value {"text":"$(tr_gui_map_5_name)","color":"gray","bold":true}
 $execute if score selected_map variables matches 6 run data modify storage personnal_storage.temp storage.map_name set value {"text":"$(tr_gui_map_6_name)","color":"light_purple","bold":true}
+$execute if score selected_map variables matches 7 run data modify storage personnal_storage.temp storage.map_name set value {"text":"$(tr_gui_map_7_name)","color":"dark_red","bold":true}
 
 function main:personnal_data/save_new_data with storage personnal_storage.temp
 # remet son storage perso dans son enderchest

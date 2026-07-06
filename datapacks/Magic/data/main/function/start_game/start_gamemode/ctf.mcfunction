@@ -47,4 +47,7 @@ execute if score $secondary_objectives option_panel matches 1 run function gamem
 team modify blue nametagVisibility hideForOtherTeams
 team modify red nametagVisibility hideForOtherTeams
 team modify spectator nametagVisibility never
+execute as @a[team=blue] run function main:locator_bar/team_updated
+execute as @a[team=red] run function main:locator_bar/team_updated
+execute as @a[team=spectator] run function main:locator_bar/team_updated
 # modifie la visibilité des nametag pour la game

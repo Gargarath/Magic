@@ -41,10 +41,12 @@ tag @s remove spec_room12
 
 
 team join red @s[tag=red_team]
+function main:locator_bar/team_updated
 effect clear @s[scores={Player=1..}] minecraft:resistance
 execute as @s run function main:fix_health/clear_and_fix_health
 # reset la vie des joueurs et empêche aussi de check leur inventaire
 team join blue @s[tag=blue_team]
+function main:locator_bar/team_updated
 
 tag @s[scores={Player=1..}] add inventory_rebuilding
 clear @s[scores={Player=1..}]
@@ -73,6 +75,7 @@ execute if score selected_map variables matches 3 as @s[scores={Player=1..}] run
 execute if score selected_map variables matches 4 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/volcano
 execute if score selected_map variables matches 5 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/ruin
 execute if score selected_map variables matches 6 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/candyworld
+execute if score selected_map variables matches 7 as @s[scores={Player=1..}] run function main:launch_arena/setspawn_and_tp/hell
 # tp @s sur la bonne map et set son spawn
 
 execute at @s[scores={Player=1..}] run fill ~-1 ~1 ~-1 ~1 ~2 ~1 air replace minecraft:barrier

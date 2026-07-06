@@ -2,7 +2,7 @@
 # permet d'afficher la map suivante
 
 execute if score $gamemode option_panel matches 0 run scoreboard players remove map_1 map_selection 1
-execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches -1 run scoreboard players set map_1 map_selection 6
+execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches -1 run scoreboard players set map_1 map_selection 7
 execute if score $gamemode option_panel matches 1 run scoreboard players remove map_1 map_selection 1
 execute if score $gamemode option_panel matches 1 if score map_1 map_selection matches -1 run scoreboard players set map_1 map_selection 6
 

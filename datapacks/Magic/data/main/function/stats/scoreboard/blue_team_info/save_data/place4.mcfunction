@@ -2,6 +2,7 @@
 # permet de save les données de @s
 
 team leave @s
+function main:locator_bar/team_updated
 data merge block 14 97 13 {front_text:{messages:[{"selector":"@a[scores={blue_place=4},limit=1]"},"","",""]}}
 data modify storage stats:leaderboards blue.player4.name set from block 14 97 13 front_text.messages[0]
 function lobby:team_selector/give_lobby_team
