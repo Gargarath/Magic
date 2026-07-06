@@ -77,7 +77,7 @@ data modify storage strings en_en set value {\
 \
 "tr_stuff_generic_quit_arena_name":"Quit arena",\
 "tr_stuff_generic_cooldown_lore_1":"Your spell is on cooldown!",\
-"tr_gui_arena_quit_spec":"To leave the arena, pass through the walls, the floor, or the ceiling.",\
+"tr_gui_arena_quit_spec":"To leave the arena, pass through the walls, or the ceiling.",\
 "tr_gui_arena_title":"Eliminations:",\
 "tr_arena_disabled":"The arena has been disabled by a moderator.",\
 \

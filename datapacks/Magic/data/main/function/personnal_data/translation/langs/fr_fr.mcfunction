@@ -77,7 +77,7 @@ data modify storage strings fr_fr set value {\
 \
 "tr_stuff_generic_quit_arena_name":"Quitter l'arène",\
 "tr_stuff_generic_cooldown_lore_1":"Votre sort doit se recharger",\
-"tr_gui_arena_quit_spec":"Pour quitter l'arène, traversez les murs, le sol ou le plafond.",\
+"tr_gui_arena_quit_spec":"Pour quitter l'arène, traversez les murs ou le plafond.",\
 "tr_gui_arena_title":"Eliminations :",\
 "tr_arena_disabled":"L'arène a été désactivée par un modérateur.",\
 \

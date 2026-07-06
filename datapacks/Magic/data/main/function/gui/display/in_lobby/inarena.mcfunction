@@ -1,7 +1,7 @@
 ## appelée quand on est ingame
 # permet d'afficher les options + les sorts
 
-$execute as @s[scores={Player=-1,opt_display_keybinds=1},tag=in_lobby_arena] run return run title @s actionbar [{"font":"bottom_left_side","text":" $(tr_gui_arena_quit_spec)","color":"gold"},{"font":"default_neg","text":" $(tr_gui_arena_quit_spec)","color":"gold"},\
+$execute as @s[scores={Player=-1,opt_display_keybinds=1},tag=in_lobby_arena] run return run title @s actionbar ["",{"font":"bottom_left_side","text":" $(tr_gui_arena_quit_spec)","color":"gold"},{"font":"default_neg","text":" $(tr_gui_arena_quit_spec)","color":"gold"},\
 \
 {"font":"default_neg","text":"$(tr_gui_options_title)"},\
 {"font":"bottom_right_side-40","text":"$(tr_gui_options_title)","color":"white"},\
