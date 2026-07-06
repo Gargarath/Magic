@@ -11,12 +11,15 @@ setblock -636 98 529 air
 function main:reset/reset_control_point
 # reset l'objectif secondaire point de contrôle
 
+schedule clear gamemode:ctf/maps_systems/volcano/steam/button_blue/steam_system
+schedule clear gamemode:ctf/maps_systems/volcano/steam/button_red/steam_system
+
 scoreboard players set red steam_timer -1
 setblock -598 162 477 minecraft:stone_button[face=wall,facing=north,powered=false]
-kill @e[tag=steam_button_red]
+kill @n[tag=steam_button_red]
 # reset zone vapeur rouge
 setblock -598 162 522 minecraft:stone_button[face=wall,facing=south,powered=false]
 scoreboard players set blue steam_timer -1
-kill @e[tag=steam_button_blue]
+kill @n[tag=steam_button_blue]
 # reset zone vapeur bleue
 advancement revoke @a only main:used_bed

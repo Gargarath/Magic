@@ -7,10 +7,6 @@ execute if score $secondary_objectives option_panel matches 1 if score on point_
 
 ## VAPEUR
 
-execute if score blue steam_timer matches 1.. run scoreboard players remove blue steam_timer 1
-execute if score red steam_timer matches 1.. run scoreboard players remove red steam_timer 1
-# timer des boutons
-
 execute if score blue steam_timer matches -1 if block -598 162 522 minecraft:stone_button[powered=true] run function gamemode:ctf/maps_systems/volcano/steam/button_blue/button_activated
 execute if score red steam_timer matches -1 if block -598 162 477 minecraft:stone_button[powered=true] run function gamemode:ctf/maps_systems/volcano/steam/button_red/button_activated
 # détection bouton activés
@@ -19,14 +15,9 @@ execute if score blue steam_timer matches 0 run function gamemode:ctf/maps_syste
 execute if score red steam_timer matches 0 run function gamemode:ctf/maps_systems/volcano/steam/button_red/timer_over
 # lance les systèmes de reset de boutons quand les timers sont finis
 
-execute as @e[type=text_display,tag=steam_button_blue] run function gamemode:ctf/maps_systems/volcano/steam/button_blue/refresh_button_timer
-execute as @e[type=text_display,tag=steam_button_red] run function gamemode:ctf/maps_systems/volcano/steam/button_red/refresh_button_timer
-# Timer boutons
-
-execute if score blue steam_timer matches 205.. run function gamemode:ctf/maps_systems/volcano/steam/button_blue/steam_system
-execute if score red steam_timer matches 205.. run function gamemode:ctf/maps_systems/volcano/steam/button_red/steam_system
-# systèmes de vapeur
-
+execute if score blue steam_timer matches 0.. as @a[gamemode=adventure,x=-602,y=146,z=507,dx=3,dy=3,dz=2] run effect give @s minecraft:levitation 1 10 true
+execute if score red steam_timer matches 0.. as @a[gamemode=adventure,x=-597,y=145,z=490,dx=3,dy=3,dz=2] run effect give @s minecraft:levitation 1 10 true
+# propulse dans la zone
 
 ## JUMPS PADS
 
