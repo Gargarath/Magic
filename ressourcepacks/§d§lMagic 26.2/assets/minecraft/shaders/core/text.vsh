@@ -29,10 +29,41 @@ bool is_orthographic() {
 }
 
 const float period = 10000.0;
+const float colorTolerance = 0.002;
+const vec2 countdownPivot = vec2(0.0, 0.15);
+
+bool is_color(vec3 color, vec3 expected) {
+    return all(lessThan(abs(color - expected), vec3(colorTolerance)));
+}
+
+int countdown_color(vec3 color) {
+    // Main glyph colors and the matching 25% title-shadow colors.
+    if (is_color(color, vec3(1.0, 254.0, 2.0) / 255.0)) return 1;
+    if (is_color(color, vec3(0.0, 63.0, 0.0) / 255.0)) return 4;
+    if (is_color(color, vec3(254.0, 253.0, 1.0) / 255.0)) return 2;
+    if (is_color(color, vec3(63.0, 63.0, 0.0) / 255.0)) return 5;
+    if (is_color(color, vec3(253.0, 1.0, 2.0) / 255.0)) return 3;
+    if (is_color(color, vec3(63.0, 0.0, 0.0) / 255.0)) return 6;
+    return 0;
+}
+
+vec3 displayed_countdown_color(int colorId) {
+    if (colorId == 1) return vec3(0.0, 170.0, 0.0) / 255.0;
+    if (colorId == 4) return vec3(0.0, 42.0, 0.0) / 255.0;
+    if (colorId == 2) return vec3(255.0, 255.0, 85.0) / 255.0;
+    if (colorId == 5) return vec3(63.0, 63.0, 21.0) / 255.0;
+    if (colorId == 3) return vec3(170.0, 0.0, 0.0) / 255.0;
+    return vec3(42.0, 0.0, 0.0) / 255.0;
+}
 
 void main() {
     vec3 pos = Position;
     vec2 posoffset = vec2(0.0);
+    int countdownColor = 0;
+
+    if (is_orthographic()) {
+        countdownColor = countdown_color(Color.rgb);
+    }
 
     if (is_orthographic()) {
         int sectionx = int(round(pos.x / period));
@@ -151,6 +182,13 @@ void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
     gl_Position.xy += gl_Position.w * posoffset;
 
+    if (countdownColor != 0) {
+        // The title fade alpha drives the old text_display scale animation.
+        float countdownScale = clamp(Color.a, 0.0, 1.0) * 2.0;
+        vec2 pivot = countdownPivot * gl_Position.w;
+        gl_Position.xy = pivot + (gl_Position.xy - pivot) * countdownScale;
+    }
+
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
     sphericalVertexDistance = fog_spherical_distance(pos);
     cylindricalVertexDistance = fog_cylindrical_distance(pos);
@@ -158,5 +196,11 @@ void main() {
 #else
     vertexColor = Color;
 #endif
+
+    if (countdownColor != 0) {
+        vertexColor.rgb = displayed_countdown_color(countdownColor);
+        // Scale alone handles appearing/disappearing, as with the old display.
+        vertexColor.a = Color.a > 0.0 ? 1.0 : 0.0;
+    }
     texCoord0 = UV0;
 }

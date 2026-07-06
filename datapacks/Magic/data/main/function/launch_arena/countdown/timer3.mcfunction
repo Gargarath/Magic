@@ -2,12 +2,9 @@
 
 scoreboard players reset $enable_game_countdown timers
 
-
-schedule function main:launch_arena/countdown/animation_up 1t
-schedule function main:launch_arena/countdown/animation_down 17t
-# fait l'animation du numéro
-
-#title @a title {"text":"3","color":"dark_green"}
+title @a times 4 13 3
+title @a title {"text":"3","color":"#01FE02"}
+# La couleur technique est convertie en vert et animée par text.vsh.
 execute as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 100 0
 
 execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~2 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["Red_flag"],DisabledSlots:4144959}

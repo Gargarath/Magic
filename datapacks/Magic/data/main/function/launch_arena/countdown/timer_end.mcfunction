@@ -1,7 +1,5 @@
 # Appellée par main:loop permet de reset les title enlever les blocs invisible et rendre les joueurs visibles de nouveau
 
-kill @e[type=text_display,tag=start_countdown]
-
 tag @a[scores={Player=1..}] remove in_countdown
 # indique que les joueurs ne sont plus en attente (pour éviter qu'ils utilisent leurs raccourcis de sorts)
 
