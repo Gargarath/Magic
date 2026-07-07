@@ -1466,7 +1466,7 @@ data modify storage strings en_en set value {\
 "tr_mage_spell1_2_lore_2":"Launches a fire bolt in the aimed",\
 "tr_mage_spell1_2_lore_3":"direction. It deals 12 points of damage to the",\
 "tr_mage_spell1_2_lore_4":"first enemy player hit and",\
-"tr_mage_spell1_2_lore_5":"2 points of burning damage",\
+"tr_mage_spell1_2_lore_5":"1 point of burning damage",\
 "tr_mage_spell1_2_lore_6":"per second for 3 seconds.",\
 "tr_mage_spell1_2_lore_7":"If the target is frozen, the freezing effect",\
 "tr_mage_spell1_2_lore_8":"will be canceled.",\
@@ -1479,7 +1479,7 @@ data modify storage strings en_en set value {\
 "tr_mage_spell1_3_lore_2":"Launches a fire bolt in the aimed",\
 "tr_mage_spell1_3_lore_3":"direction. It deals 12 points of damage to the",\
 "tr_mage_spell1_3_lore_4":"first enemy player hit and",\
-"tr_mage_spell1_3_lore_5":"3 points of burning damage",\
+"tr_mage_spell1_3_lore_5":"2 points of burning damage",\
 "tr_mage_spell1_3_lore_6":"per second for 3 seconds.",\
 "tr_mage_spell1_3_lore_7":"If the target is frozen, the freezing effect",\
 "tr_mage_spell1_3_lore_8":"will be canceled.",\
@@ -1726,7 +1726,7 @@ data modify storage strings en_en set value {\
 "tr_rogue_spell2_1_lore_9":"The shadow path entrance can be",\
 "tr_rogue_spell2_1_lore_10":"destroyed by any player.",\
 "tr_rogue_spell2_1_lore_11":"",\
-"tr_rogue_spell2_1_lore_12":"Cooldown: 10s.",\
+"tr_rogue_spell2_1_lore_12":"Cooldown: 7s.",\
 "tr_rogue_spell2_1_lore_13":"--------------------------------------",\
 "tr_rogue_cooldownspell2_1_name":"Shadow Path - Place",\
 "tr_rogue_spell3_1_name":"Shadow Bomb",\

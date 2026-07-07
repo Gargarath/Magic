@@ -1466,7 +1466,7 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell1_2_lore_2":"Lance un trait de feu dans la direction",\
 "tr_mage_spell1_2_lore_3":"visée. Il infligera 12 points de dégats au",\
 "tr_mage_spell1_2_lore_4":"premier adversaire rencontré et",\
-"tr_mage_spell1_2_lore_5":"2 points de dégâts de brulure",\
+"tr_mage_spell1_2_lore_5":"1 point de dégâts de brulure",\
 "tr_mage_spell1_2_lore_6":"par seconde pendant 3 secondes.",\
 "tr_mage_spell1_2_lore_7":"Si la cible est gelée, l'effet de gel sera",\
 "tr_mage_spell1_2_lore_8":"annulé.",\
@@ -1479,7 +1479,7 @@ data modify storage strings fr_fr set value {\
 "tr_mage_spell1_3_lore_2":"Lance un trait de feu dans la direction",\
 "tr_mage_spell1_3_lore_3":"visée. Il infligera 12 points de dégats au",\
 "tr_mage_spell1_3_lore_4":"premier adversaire rencontré et",\
-"tr_mage_spell1_3_lore_5":"3 points de dégâts de brulure",\
+"tr_mage_spell1_3_lore_5":"2 points de dégâts de brulure",\
 "tr_mage_spell1_3_lore_6":"par seconde pendant 3 secondes.",\
 "tr_mage_spell1_3_lore_7":"Si la cible est gelée, l'effet de gel sera",\
 "tr_mage_spell1_3_lore_8":"annulé.",\
@@ -1726,7 +1726,7 @@ data modify storage strings fr_fr set value {\
 "tr_rogue_spell2_1_lore_9":"L'entree de la voie des ombre peut etre.",\
 "tr_rogue_spell2_1_lore_10":"detruite par tous les joueurs.",\
 "tr_rogue_spell2_1_lore_11":"",\
-"tr_rogue_spell2_1_lore_12":"Temps de recharge: 10s.",\
+"tr_rogue_spell2_1_lore_12":"Temps de recharge: 7s.",\
 "tr_rogue_spell2_1_lore_13":"--------------------------------------",\
 "tr_rogue_cooldownspell2_1_name":"Voie des ombres - Poser",\
 "tr_rogue_spell3_1_name":"Bombe d'ombre",\

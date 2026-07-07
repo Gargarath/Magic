@@ -6,7 +6,7 @@
       "bold": true
     },
     "description": {
-      "text": "Lance un grappin dans la direction visée, qui ramènera le premier joueur adverse dans une distance de 25 blocs.\n\nLe joueur ramené est également étourdit pendant 2 secondes et subit 1 point de dégât.\n\nL'étourdissement empêche l'utilisation des sorts.\n\nVitesse du grappin 30 blocs / seconde\n\n\nTemps de recharge: 15s.\n\nTemps de recharge en cas de collision proche: 2s.",
+      "text": "Lance un grappin dans la direction visée, qui ramènera le premier joueur adverse dans une distance de 25 blocs.\n\nLe joueur ramené est également étourdit pendant 2 secondes et subit 1 point de dégât.\n\nL'étourdissement empêche l'utilisation des sorts.\n\nVitesse du grappin 30 blocs / seconde\n\n\nTemps de recharge: 7s.\n\nTemps de recharge en cas de collision proche: 2s.",
       "color": "green",
       "bold": false
     },
