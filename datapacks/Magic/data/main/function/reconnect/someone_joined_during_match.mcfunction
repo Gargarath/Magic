@@ -21,21 +21,26 @@ function main:items_positions/cleanup_managed_items
 
 tag @s remove hurt
 
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 1.. run scoreboard players enable @s spec_player1
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 2.. run scoreboard players enable @s spec_player2
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 3.. run scoreboard players enable @s spec_player3
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 4.. run scoreboard players enable @s spec_player4
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 5.. run scoreboard players enable @s spec_player5
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 6.. run scoreboard players enable @s spec_player6
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 7.. run scoreboard players enable @s spec_player7
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 8.. run scoreboard players enable @s spec_player8
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 9.. run scoreboard players enable @s spec_player9
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 10.. run scoreboard players enable @s spec_player10
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 11.. run scoreboard players enable @s spec_player11
-execute if score shop enable_loop matches 1 if score player_atstart playercount matches 12 run scoreboard players enable @s spec_player12
+execute if score ffa enable_loop matches 1 run gamemode spectator @s
+execute if score ffa enable_loop matches 1 run tp @s @r[scores={Player=1..}]
+execute if score ffa enable_loop matches 1 run scoreboard players set @s InShop 0
+# si on est en FFA, met @s en spectateur sur un joueur sans l'envoyer au shop
+
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 1.. run scoreboard players enable @s spec_player1
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 2.. run scoreboard players enable @s spec_player2
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 3.. run scoreboard players enable @s spec_player3
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 4.. run scoreboard players enable @s spec_player4
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 5.. run scoreboard players enable @s spec_player5
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 6.. run scoreboard players enable @s spec_player6
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 7.. run scoreboard players enable @s spec_player7
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 8.. run scoreboard players enable @s spec_player8
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 9.. run scoreboard players enable @s spec_player9
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 10.. run scoreboard players enable @s spec_player10
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 11.. run scoreboard players enable @s spec_player11
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 12 run scoreboard players enable @s spec_player12
 # donne les droits de cliquer sur le panneau spec selon le nombre de joueurs
-execute if score shop enable_loop matches 1 at @e[type=marker,tag=shop_room_0] run tp @s ~ ~9 ~ 0 -5
-execute if score shop enable_loop matches 1 run scoreboard players set @s InShop 1
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 at @e[type=marker,tag=shop_room_0] run tp @s ~ ~9 ~ 0 -5
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 run scoreboard players set @s InShop 1
 # si les joueurs sont dans le shop tp @s dans le shop
 
 
