@@ -8,6 +8,8 @@ execute as @s[tag=blue_team] at @s run function main:start_game/make_frameroom_b
 # modifie la frameroom des joueurs bleus en bleue.
 execute as @s[tag=red_team] at @s run function main:start_game/make_frameroom_red
 # modifie la frameroom des joueurs rouges en rouge.
+execute as @s[tag=no_team] at @s run function main:start_game/make_frameroom_ffa
+# modifie la frameroom des joueurs FFA selon leur couleur.
 
 execute if entity @s[tag=warrior] run function stuff:stuff_warrior/stuffwarrior
 execute if entity @s[tag=archer] run function stuff:stuff_archer/stuffarcher
