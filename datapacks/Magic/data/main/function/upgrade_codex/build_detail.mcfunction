@@ -40,5 +40,7 @@ data modify storage temp:codex view.next set value {text:"",color:"white"}
 data modify storage temp:codex view.next.text set from entity @s EnderItems[0].components.minecraft:custom_data.tr_codex_next
 data modify storage temp:codex view.back set value {text:"",color:"yellow"}
 data modify storage temp:codex view.back.text set from entity @s EnderItems[0].components.minecraft:custom_data.tr_codex_back_category
+data modify storage temp:codex view.close set value {text:"",color:"red"}
+data modify storage temp:codex view.close.text set from entity @s EnderItems[0].components.minecraft:custom_data.tr_codex_close
 
 function main:upgrade_codex/finalize_detail with storage temp:codex view
