@@ -5,4 +5,4 @@ tag @s remove archer
 tag @s remove mage
 tag @s remove rogue
 
-scoreboard players set @a class_id 0
+scoreboard players set @s class_id 0
