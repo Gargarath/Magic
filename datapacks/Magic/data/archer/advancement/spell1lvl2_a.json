@@ -7,7 +7,7 @@
       "italic": false
     },
     "description": {
-      "text": "Votre prochaine flèche explosera 0,4s après avoir touché sa cible ou le sol, infligeant 6 à 24 points de dégâts dans un rayon de 13 blocs.\n\nLes dégâts varient selon le temps de charge du tir.\n\nL'effet de ce sort peut être cumulé avec celui de la flèche de glace.\n\nTemps de recharge : 15s.",
+      "text": "Votre prochaine flèche explosera 1s après avoir touché sa cible ou le sol, infligeant 6 à 24 points de dégâts dans un rayon de 8 blocs.\n\nLes dégâts varient selon le temps de charge du tir.\n\nL'effet de ce sort peut être cumulé avec celui de la flèche de glace.\n\nTemps de recharge : 15s.",
       "color": "green",
       "bold": false,
       "italic": false

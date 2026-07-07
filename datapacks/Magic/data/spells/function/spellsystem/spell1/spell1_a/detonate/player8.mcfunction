@@ -5,22 +5,22 @@ kill @e[type=marker,tag=exploraycast8]
 scoreboard players set @a[scores={Player=8},limit=1] explosive_arrow_timer -1
 bossbar set explosive_arrow:player8 players
 
-playsound minecraft:entity.generic.explode master @a[distance=..15] ~ ~ ~ 100 1
-playsound minecraft:entity.generic.explode master @a[distance=16..,scores={Player=8}] ~ ~ ~ 100 1
+playsound minecraft:entity.generic.explode master @a[distance=..9] ~ ~ ~ 100 1
+playsound minecraft:entity.generic.explode master @a[distance=10..,scores={Player=8}] ~ ~ ~ 100 1
 particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @a
 
-execute if score @a[scores={Player=8},limit=1] spell1 matches 1 as @e[type=#spellable,tag=!spell_immune,distance=..10] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
-execute if score @a[scores={Player=8},limit=1] spell1 matches 2 as @e[type=#spellable,tag=!spell_immune,distance=..12] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
-execute if score @a[scores={Player=8},limit=1] spell1 matches 3 as @e[type=#spellable,tag=!spell_immune,distance=..15] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
-# spawn des markers autour des joueurs dans la zone rayon de 10 blocs
+execute if score @a[scores={Player=8},limit=1] spell1 matches 1 as @e[type=#spellable,tag=!spell_immune,distance=..7] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
+execute if score @a[scores={Player=8},limit=1] spell1 matches 2 as @e[type=#spellable,tag=!spell_immune,distance=..8] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
+execute if score @a[scores={Player=8},limit=1] spell1 matches 3 as @e[type=#spellable,tag=!spell_immune,distance=..9] at @s run function spells:spellsystem/spell1/spell1_a/detonate/summon_markers {id:8}
+# spawn des markers autour des joueurs dans la zone rayon de 7/8/9 blocs
 
 execute as @e[type=marker,tag=exploraycast8] run rotate @s facing ~ ~ ~
 # fait regarder ses marquers vers ici
 
 scoreboard players set @e[type=marker,tag=exploraycast8] explo_position_a 0
-execute if score @a[scores={Player=8},limit=1] spell1 matches 1 if entity @e[type=#spellable,tag=!spell_immune,distance=..10] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
-execute if score @a[scores={Player=8},limit=1] spell1 matches 2 if entity @e[type=#spellable,tag=!spell_immune,distance=..12] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
-execute if score @a[scores={Player=8},limit=1] spell1 matches 3 if entity @e[type=#spellable,tag=!spell_immune,distance=..15] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
+execute if score @a[scores={Player=8},limit=1] spell1 matches 1 if entity @e[type=#spellable,tag=!spell_immune,distance=..7] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
+execute if score @a[scores={Player=8},limit=1] spell1 matches 2 if entity @e[type=#spellable,tag=!spell_immune,distance=..8] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
+execute if score @a[scores={Player=8},limit=1] spell1 matches 3 if entity @e[type=#spellable,tag=!spell_immune,distance=..9] as @e[type=marker,tag=exploraycast8] positioned ~ ~ ~ facing entity @s feet run function spells:spellsystem/spell1/spell1_a/raycast/player8/dark_red
 # fait un raycast depuis les markers
 
 execute if score @s explosive_player_timer matches 0.. if score @s Player matches 1 run bossbar set explosive_player:player1 players

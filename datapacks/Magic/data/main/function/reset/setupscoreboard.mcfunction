@@ -807,6 +807,6 @@ stopwatch create jump
 
 # setup values
 
-scoreboard players set $lvl1 explo_max_range_a 40
-scoreboard players set $lvl2 explo_max_range_a 48
-scoreboard players set $lvl3 explo_max_range_a 60
+scoreboard players set $lvl1 explo_max_range_a 28
+scoreboard players set $lvl2 explo_max_range_a 32
+scoreboard players set $lvl3 explo_max_range_a 36
