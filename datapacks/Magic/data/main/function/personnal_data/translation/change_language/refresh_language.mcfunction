@@ -50,6 +50,5 @@ execute if score lonny enable_loop matches 0 if score shop enable_loop matches 0
 
 ## Nom de map
 execute if score $gamemode option_panel matches 0 run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data
-execute unless score @s InLobby matches 1 if score $show_next_map option_panel matches 0 run function main:launch_arena/hide_map_name
-execute unless score @s InLobby matches 1 if score $show_next_map option_panel matches 1 run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+execute unless score @s InLobby matches 1 run function main:personnal_data/sync_runtime_gui_data
 # si pas dans le lobby -> stock ou masque la map selon l'option

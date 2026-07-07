@@ -6,7 +6,7 @@
 ## RECONNECTION
 
 execute as @a[tag=reconnect_clear_flag_items,scores={disconnected=0}] run function main:reconnect/clear_flag_items
-execute as @a[tag=initialised,scores={disconnected=1..}] run function main:reconnect/someone_reconnected
+execute as @a[tag=finished_tutorial,scores={disconnected=1..}] run function main:reconnect/someone_reconnected
 
 ## RESSOURCE PACK DETECTION
 scoreboard players remove @a[scores={nopack_detection=1..}] nopack_detection 1

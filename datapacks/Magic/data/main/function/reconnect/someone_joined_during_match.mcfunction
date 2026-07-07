@@ -8,6 +8,8 @@ tag @s add inventory_rebuilding
 function lobby:hotbar_menu/main/join_spectator
 # fais passer @s en spectateur
 
+function main:personnal_data/sync_runtime_gui_data
+
 team join spectator @s
 function main:locator_bar/team_updated
 # affiche @s dans l'équipe des specs

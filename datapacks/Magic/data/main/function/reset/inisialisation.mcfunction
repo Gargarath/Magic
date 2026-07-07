@@ -1,5 +1,8 @@
 # Permet de reset totalement un joueur si on appelle cette fonction en son nom
 
+tag @s remove finished_tutorial
+# enlève le tag qui dit que @s a finit le tuto
+
 tag @s remove save_inventory
 tag @s add inventory_rebuilding
 
@@ -189,7 +192,6 @@ function main:gui/display/refresh_gui
 
 # ---------
 
-execute if score lobby enable_loop matches 0 unless score @s Player matches -1 run function main:reconnect/someone_joined_during_match
 tag @s remove inventory_rebuilding
 tag @s add save_inventory
 function main:initialised/welcome_dialog/open

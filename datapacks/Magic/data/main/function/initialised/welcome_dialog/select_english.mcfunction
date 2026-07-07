@@ -13,3 +13,6 @@ function main:inventory_menu/give_items with entity @s EnderItems[0].components.
 function main:personnal_data/translation/change_language/tell_changed_language with entity @s EnderItems[0].components.minecraft:custom_data
 function main:initialised/welcome_dialog/display_operator_message with entity @s EnderItems[0].components.minecraft:custom_data
 playsound entity.experience_orb.pickup master @s ~ ~ ~ 100 1
+
+function main:initialised/tutorial/finished_tutorial
+# indique que @s a finit le tuto et le rend ciblable par les systèmes de la map
