@@ -39,15 +39,14 @@ execute unless score ffa enable_loop matches 1 if score shop enable_loop matches
 execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 11.. run scoreboard players enable @s spec_player11
 execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 12 run scoreboard players enable @s spec_player12
 # donne les droits de cliquer sur le panneau spec selon le nombre de joueurs
-execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 at @e[type=marker,tag=shop_room_0] run tp @s ~ ~9 ~ 0 -5
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 at @e[type=marker,tag=shop_room_0] run tp @s ~ ~ ~ 0 -5
+execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 at @s run fill ~1 ~1 ~1 ~-1 ~2 ~-1 air replace barrier
 execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 run scoreboard players set @s InShop 1
 # si les joueurs sont dans le shop tp @s dans le shop
 
 
 execute if score ctf enable_loop matches 1 run tp @s @r[scores={Player=1..}]
 execute if score ctf enable_loop matches 1 run gamemode spectator @s
-execute if score ctf enable_loop matches 1 if score selected_map variables matches 1 run spawnpoint @s 269 101 456
-execute if score ctf enable_loop matches 1 if score selected_map variables matches 2 run spawnpoint @s 223 52 -320
 # si les joueurs sont sur une map passe @s en mode spectateur déffini son spawn et le tp à un joueur aléatoire et réaffiche le timer à @a
 
 attribute @s minecraft:waypoint_receive_range base reset
