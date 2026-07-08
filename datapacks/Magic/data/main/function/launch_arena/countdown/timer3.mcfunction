@@ -3,7 +3,7 @@
 scoreboard players reset $enable_game_countdown timers
 
 title @a times 4 13 3
-title @a title {"text":"3","color":"#01FE02"}
+title @a title [{"text":"\uE780"},{"text":"3","color":"#01FE02"},{"text":"\uE781"}]
 # La couleur technique est convertie en vert et animée par text.vsh.
 execute as @a at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 100 0
 

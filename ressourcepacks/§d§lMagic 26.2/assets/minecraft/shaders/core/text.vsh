@@ -60,15 +60,22 @@ void main() {
     vec3 pos = Position;
     vec2 posoffset = vec2(0.0);
     int countdownColor = 0;
+    bool isOrthographic = is_orthographic();
+    int sectionx = 0;
+    int sectiony = 0;
+    bool isMagicSection = false;
 
-    if (is_orthographic()) {
+    if (isOrthographic) {
+        sectionx = int(round(pos.x / period));
+        sectiony = int(round(pos.y / period));
+        isMagicSection = sectionx != 0 || sectiony != 0;
+    }
+
+    if (isOrthographic && isMagicSection) {
         countdownColor = countdown_color(Color.rgb);
     }
 
-    if (is_orthographic()) {
-        int sectionx = int(round(pos.x / period));
-        int sectiony = int(round(pos.y / period));
-
+    if (isOrthographic && isMagicSection) {
         pos.x -= period * float(sectionx);
         pos.y -= period * float(sectiony);
 
