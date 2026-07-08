@@ -49,7 +49,7 @@ execute if score lobby enable_loop matches 0 as @s[tag=red_team,scores={Player=1
 
 execute if score @s nopack_detection matches -1 run function main:ressource_pack_detector/ressource_pack_detector
 
-execute if score $gamemode option_panel matches 0 unless data entity @s EnderItems[0].components.minecraft:custom_data.lobby_map_name run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $gamemode option_panel matches 0 run function main:gui/display/in_lobby/refresh_ffa_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 
 # si l'objectif secondaire est autorisé et qu'on est in game -> affiche la bossbar obj secondaire à tous
 # si l'objectif secondaire a commencé mais n'est pas fini, affiche la bonne bossbar à tous
