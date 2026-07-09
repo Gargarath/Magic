@@ -36,10 +36,3 @@ scoreboard players add @s stat_flag_cap 1
 tag @e[tag=Blue_banner] remove Has_Blue_flag
 # Enleve le tag Has_Blue_flag de L'armorstand blue_banner
 
-execute if score selected_map variables matches 1 run setblock 332 57 511 stone
-execute if score selected_map variables matches 2 run setblock 259 131 -276 stone
-execute if score selected_map variables matches 3 run setblock 287 127 -12 stone
-execute if score selected_map variables matches 4 run setblock -560 98 470 stone
-execute if score selected_map variables matches 5 run setblock -545 123 -94 stone
-execute if score selected_map variables matches 6 run setblock 11 145 -711 stone
-# eteint le beacon bleu selon la map

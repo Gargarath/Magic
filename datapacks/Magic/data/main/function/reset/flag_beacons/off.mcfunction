@@ -1,0 +1,12 @@
+setblock 332 57 511 stone
+setblock 204 57 485 stone
+setblock 259 131 -276 stone
+setblock 177 131 -286 stone
+setblock 287 127 -12 stone
+setblock 355 127 28 stone
+setblock -560 98 470 stone
+setblock -636 98 529 stone
+setblock -545 123 -94 stone
+setblock -493 123 -128 stone
+setblock 11 145 -711 stone
+setblock -49 145 -767 stone

@@ -1,0 +1,12 @@
+setblock 332 57 511 air
+setblock 204 57 485 air
+setblock 259 131 -276 air
+setblock 177 131 -286 air
+setblock 287 127 -12 air
+setblock 355 127 28 air
+setblock -560 98 470 air
+setblock -636 98 529 air
+setblock -545 123 -94 air
+setblock -493 123 -128 air
+setblock 11 145 -711 air
+setblock -49 145 -767 air

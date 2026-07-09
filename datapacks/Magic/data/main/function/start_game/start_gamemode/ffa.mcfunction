@@ -11,6 +11,8 @@ scoreboard players set @a usespell 0
 execute as @a[scores={Player=1..}] run function lobby:team_selector/give_ffa_team/change_name_visibility/hide_name
 # cache le pseudo et locator bar des joueurs
 
+function main:reset/flag_beacons/off
+
 execute if score selected_map variables matches 1 run function main:launch_arena/launch_map_pirate
 execute if score selected_map variables matches 2 run function main:launch_arena/launch_map_graveyard
 execute if score selected_map variables matches 3 run function main:launch_arena/launch_map_factory

@@ -16,6 +16,8 @@ scoreboard players set spells enable_loop 0
 
 ## BOSSBAR
 
+function main:reset/flag_beacons/on
+
 data modify storage minecraft:matchinfo.blue scnd_objective_completed set value {"text":"\uE307\uE307\uE307","shadow_color":855309,"color":"white","bold":false}
 data modify storage minecraft:matchinfo.red scnd_objective_completed set value {"text":"\uE307\uE307\uE307","shadow_color":855309,"color":"white","bold":false}
 scoreboard players set blue_wins secnd_objective 0

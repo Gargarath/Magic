@@ -56,10 +56,3 @@ scoreboard players add @s stat_flag_earned 1
 scoreboard players set @s IsAlive 0
 # Reset le score de IsAlive de @s à 0
 
-execute if score selected_map variables matches 1 run setblock 332 57 511 air
-execute if score selected_map variables matches 2 run setblock 259 131 -276 air
-execute if score selected_map variables matches 3 run setblock 287 127 -12 air
-execute if score selected_map variables matches 4 run setblock -560 98 470 air
-execute if score selected_map variables matches 5 run setblock -545 123 -94 air
-execute if score selected_map variables matches 6 run setblock 11 145 -711 air
-# allume le beacon bleu selon la map

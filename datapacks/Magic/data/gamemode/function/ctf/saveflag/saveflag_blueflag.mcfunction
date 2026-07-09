@@ -28,12 +28,5 @@ execute at @e[tag=Spot_Blue_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity
 execute as @e[type=armor_stand,tag=Blue_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_blue_base
 # remet le waypoint de drapeau bleu à sa base
 
-execute if score selected_map variables matches 1 run setblock 332 57 511 air
-execute if score selected_map variables matches 2 run setblock 259 131 -276 air
-execute if score selected_map variables matches 3 run setblock 287 127 -12 air
-execute if score selected_map variables matches 4 run setblock -560 98 470 air
-execute if score selected_map variables matches 5 run setblock -545 123 -94 air
-execute if score selected_map variables matches 6 run setblock 11 145 -711 air
-# allume le beacon bleu selon la map
 
 tag @s remove Flag_save

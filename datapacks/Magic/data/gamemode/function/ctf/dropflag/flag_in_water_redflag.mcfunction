@@ -22,10 +22,3 @@ execute at @e[tag=Spot_Red_flag] run summon armor_stand ~ ~0.23 ~0.2 {NoGravity:
 execute as @e[type=armor_stand,tag=Red_flag,limit=1] run function gamemode:ctf/locator_bar_flags/flag_red_base
 # remet le waypoint de drapeau rouge à sa base
 
-execute if score selected_map variables matches 1 run setblock 204 57 485 air
-execute if score selected_map variables matches 2 run setblock 177 131 -286 air
-execute if score selected_map variables matches 3 run setblock 355 127 28 air
-execute if score selected_map variables matches 4 run setblock -636 98 529 air
-execute if score selected_map variables matches 5 run setblock -493 123 -128 air
-execute if score selected_map variables matches 6 run setblock -49 145 -767 air
-# allume le beacon rouge selon la map
