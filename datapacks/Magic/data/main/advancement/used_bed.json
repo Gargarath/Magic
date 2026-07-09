@@ -1,7 +1,7 @@
 {
   "criteria": {
     "used_bed": {
-      "trigger": "minecraft:default_block_use",
+      "trigger": "minecraft:any_block_use",
       "conditions": {
         "location": [
           {
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:used_bed/detect_map"
+    "function": "gamemode:ctf/used_bed/detect_map"
   }
 }
