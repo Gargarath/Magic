@@ -19,6 +19,9 @@ execute if score $gamemode option_panel matches 1 if entity @s[tag=no_team,score
 # si on est en mode FFA dans le lobby -> check si @s n'a pas le même slot de lobby que quelqu'un d'autre
 execute if score $gamemode option_panel matches 0 if score lobby enable_loop matches 1 as @s[tag=no_team,scores={InLobby=1,Player=0..}] run function lobby:team_selector/give_ffa_lobby_team/reconnect_slot
 
+execute if score ffa enable_loop matches 1 run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+# si @s se reconnecte pendant un FFA -> actualise le nom de map affiche en jeu
+
 execute if score lobby enable_loop matches 1 as @s[scores={Player=1..},tag=!in_lobby_arena] run function main:reconnect/put_back_in_lobby
 # si @s rejoint après la game, le remet dans le lobby
 

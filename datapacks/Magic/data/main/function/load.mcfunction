@@ -25,5 +25,11 @@ execute as @a unless score @s opt_passive_income_alert matches 0..1 run scoreboa
 execute as @a unless score @s opt_cd_ready_sound matches 0..1 run scoreboard players set @s opt_cd_ready_sound 1
 function main:reset/setupbossbar
 
+execute if score ffa enable_loop matches 1 if score lobby enable_loop matches 0 as @a[tag=finished_tutorial] run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+# restaure le nom de map FFA apres /reload pour les joueurs deja en jeu
+
 tag @a remove inventory_rebuilding
 tag @a add save_inventory
+
+function main:gui/display/refresh_gui
+# relance la boucle scheduled du GUI apres /reload

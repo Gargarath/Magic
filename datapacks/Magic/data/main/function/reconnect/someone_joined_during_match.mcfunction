@@ -25,6 +25,8 @@ execute if score ffa enable_loop matches 1 run gamemode spectator @s
 execute if score ffa enable_loop matches 1 run tp @s @r[scores={Player=1..}]
 execute if score ffa enable_loop matches 1 run scoreboard players set @s InShop 0
 # si on est en FFA, met @s en spectateur sur un joueur sans l'envoyer au shop
+execute if score ffa enable_loop matches 1 run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+# si on est en FFA, actualise le nom de map apres le setup spectateur
 
 execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 1.. run scoreboard players enable @s spec_player1
 execute unless score ffa enable_loop matches 1 if score shop enable_loop matches 1 if score player_atstart playercount matches 2.. run scoreboard players enable @s spec_player2
