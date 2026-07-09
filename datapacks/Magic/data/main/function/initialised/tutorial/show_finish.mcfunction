@@ -1,0 +1,4 @@
+function main:initialised/tutorial/spectate_intro
+execute if score @s tutorial_timer matches 1 run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 0.8 1.2
+execute if score @s tutorial_timer matches 1 run dialog show @s {"type":"minecraft:multi_action","title":{"text":"Tutoriel termine","color":"gold","bold":true},"body":[{"type":"minecraft:plain_message","contents":{"text":"Tu connais maintenant l'essentiel de Magic. Tu peux rejoindre le lobby, choisir ta classe, puis te preparer pour la prochaine partie.","color":"white"},"width":440}],"pause":false,"columns":1,"actions":[{"label":{"text":"Entrer dans le lobby","color":"green","bold":true},"action":{"type":"minecraft:run_command","command":"/trigger tutorial_action set 1"}}]}
+execute if score @s tutorial_timer matches 200 run scoreboard players set @s tutorial_timer 0

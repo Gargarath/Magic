@@ -1,0 +1,10 @@
+execute if score @s tutorial_step matches 1 at @s run particle minecraft:enchant ~ ~1.2 ~ 0.7 0.45 0.7 0.03 5 force @s
+execute if score @s tutorial_step matches 2 at @s run particle minecraft:dust{color:[1.0,0.72,0.08],scale:1.15} ~0.8 ~1.0 ~ 0.08 0.18 0.08 0 1 force @s
+execute if score @s tutorial_step matches 2 at @s run particle minecraft:dust{color:[0.1,0.9,0.25],scale:1.15} ~-0.8 ~1.0 ~ 0.08 0.18 0.08 0 1 force @s
+execute if score @s tutorial_step matches 2 at @s run particle minecraft:dust{color:[0.55,0.0,1.0],scale:1.15} ~ ~1.0 ~0.8 0.08 0.18 0.08 0 1 force @s
+execute if score @s tutorial_step matches 2 at @s run particle minecraft:dust{color:[0.35,0.35,0.35],scale:1.15} ~ ~1.0 ~-0.8 0.08 0.18 0.08 0 1 force @s
+execute if score @s tutorial_step matches 3 at @s run particle minecraft:witch ~ ~1 ~ 0.8 0.35 0.8 0.02 5 force @s
+execute if score @s tutorial_step matches 4 at @s run particle minecraft:happy_villager ~ ~1 ~ 0.7 0.35 0.7 0.02 4 force @s
+execute if score @s tutorial_step matches 5 at @s run particle minecraft:dust{color:[1.0,0.05,0.05],scale:1.2} ~0.6 ~1 ~ 0.16 0.16 0.16 0 2 force @s
+execute if score @s tutorial_step matches 5 at @s run particle minecraft:dust{color:[0.0,0.25,1.0],scale:1.2} ~-0.6 ~1 ~ 0.16 0.16 0.16 0 2 force @s
+execute if score @s tutorial_step matches 6 at @s run particle minecraft:end_rod ~ ~1.2 ~ 0.3 0.3 0.3 0.01 2 force @s

@@ -24,6 +24,7 @@ execute as @a[tag=!initialised] run function main:reset/inisialisation
 execute as @a[tag=choosing_language,scores={welcome_language=1}] run function main:initialised/welcome_dialog/select_english
 execute as @a[tag=choosing_language,scores={welcome_language=2}] run function main:initialised/welcome_dialog/select_french
 execute as @a[tag=choosing_language,scores={welcome_language=3}] run function main:initialised/welcome_dialog/reopen
+execute as @a[tag=in_tutorial] run function main:initialised/tutorial/loop
 
 ## CODEX D'AMELIORATIONS
 execute as @a[scores={upgrade_codex=1..}] run function main:upgrade_codex/action

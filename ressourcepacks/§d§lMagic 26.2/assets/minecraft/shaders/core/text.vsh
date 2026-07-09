@@ -181,6 +181,24 @@ void main() {
         } else if (sectiony == 23) {
             posoffset = vec2(-1.0, 2.5);
             pos.y += 93.0;
+        } else if (sectiony == 30) {
+            posoffset = vec2(0.0, 1.30);
+            pos *= 1.15;
+        } else if (sectiony == 31) {
+            posoffset = vec2(0.0, 1.12);
+            pos *= 0.85;
+        } else if (sectiony == 32) {
+            posoffset = vec2(0.0, -0.42);
+            pos *= 0.90;
+        } else if (sectiony == 33) {
+            posoffset = vec2(0.0, -0.30);
+            pos *= 0.82;
+        } else if (sectiony == 34) {
+            posoffset = vec2(0.0, -0.18);
+            pos *= 0.78;
+        } else if (sectiony == 35) {
+            posoffset = vec2(1.05, 0.10);
+            pos *= 0.78;
         } else {
             posoffset = vec2(0.0, 0.0);
         }

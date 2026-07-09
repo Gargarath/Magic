@@ -47,6 +47,9 @@ scoreboard objectives add opt_cd_ready_sound dummy
 scoreboard objectives add opt_color dummy
 scoreboard objectives add opt_lang dummy
 scoreboard objectives add welcome_language trigger
+scoreboard objectives add tutorial_action trigger
+scoreboard objectives add tutorial_step dummy
+scoreboard objectives add tutorial_timer dummy
 scoreboard objectives add upgrade_codex trigger
 scoreboard objectives add codex_class dummy
 scoreboard objectives add codex_category dummy

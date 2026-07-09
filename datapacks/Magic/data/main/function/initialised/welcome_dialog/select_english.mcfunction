@@ -15,4 +15,5 @@ function main:initialised/welcome_dialog/display_operator_message with entity @s
 playsound entity.experience_orb.pickup master @s ~ ~ ~ 100 1
 
 function main:initialised/tutorial/finished_tutorial
-# indique que @s a finit le tuto et le rend ciblable par les systèmes de la map
+#function main:initialised/tutorial/start
+# lance le tutoriel avant de rendre @s ciblable par les systemes de la map

@@ -1,16 +1,16 @@
 # Appelée par pages/main/launch_game permet de commencer une partie
 
 # remplace l'ancienne map affichée par "Aléatoire" avant les refresh GUI déclenchés pendant la sortie du lobby
-execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 0 as @a[tag=initialised] run function main:start_game/prepare_random_ffa_map_name
+execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 0 as @a[tag=initialised,tag=!in_tutorial] run function main:start_game/prepare_random_ffa_map_name
 
-title @a reset
-dialog clear @a
+title @a[tag=!in_tutorial] reset
+dialog clear @a[tag=!in_tutorial]
 # clear les title et dialog de tous les joueurs
 
 # clear les anciennes alertes d'income avant le premier refresh du GUI
-scoreboard players set @a ffa_ph_alert_1 0
-scoreboard players set @a ffa_ph_alert_2 0
-scoreboard players set @a ffa_ph_alert_3 0
+scoreboard players set @a[tag=!in_tutorial] ffa_ph_alert_1 0
+scoreboard players set @a[tag=!in_tutorial] ffa_ph_alert_2 0
+scoreboard players set @a[tag=!in_tutorial] ffa_ph_alert_3 0
 data remove storage minecraft:gui player.1.money_alert
 data remove storage minecraft:gui player.2.money_alert
 data remove storage minecraft:gui player.3.money_alert
@@ -24,8 +24,8 @@ data remove storage minecraft:gui player.10.money_alert
 data remove storage minecraft:gui player.11.money_alert
 data remove storage minecraft:gui player.12.money_alert
 
-scoreboard players set @a drop_item 0
-scoreboard players set @a hotbar_menu 0
+scoreboard players set @a[tag=!in_tutorial] drop_item 0
+scoreboard players set @a[tag=!in_tutorial] hotbar_menu 0
 # met les joueurs dans le stade 0 du menu d'option hotbar
 
 scoreboard players set lobby enable_loop 0
@@ -34,47 +34,47 @@ scoreboard players set shop enable_loop 1
 
 execute as @a[tag=in_lobby_arena,scores={Player=1..}] run function lobby:arena/quit_arena
 execute as @a[tag=in_lobby_arena,scores={Player=-1}] run function lobby:arena/quit_arena_spec
-scoreboard players set @a cooldownspell1 -1
-scoreboard players set @a cooldownspell2 -1
-scoreboard players set @a cooldownspell3 -1
+scoreboard players set @a[tag=!in_tutorial] cooldownspell1 -1
+scoreboard players set @a[tag=!in_tutorial] cooldownspell2 -1
+scoreboard players set @a[tag=!in_tutorial] cooldownspell3 -1
 # vire de l'arènes les joueurs qui sont dedans
 
 function lobby:map_island/reset_maps
-execute as @a[tag=in_map_display] run function lobby:map_island/quit_maps
+execute as @a[tag=in_map_display,tag=!in_tutorial] run function lobby:map_island/quit_maps
 # vire les joueurs en visite de map et prépare les maps
 
-execute as @a[tag=jump_spec] run function lobby:jump/spectator/leave_spec
-execute as @a[tag=in_jump] run function lobby:jump/quit_jump
+execute as @a[tag=jump_spec,tag=!in_tutorial] run function lobby:jump/spectator/leave_spec
+execute as @a[tag=in_jump,tag=!in_tutorial] run function lobby:jump/quit_jump
 # vire les joueurs en jump
 
-execute as @a run function main:reset/resetachats
-execute as @a run function main:stats/reset_stats
+execute as @a[tag=!in_tutorial] run function main:reset/resetachats
+execute as @a[tag=!in_tutorial] run function main:stats/reset_stats
 
 scoreboard players set yes used_reset 0
 # indique qu'on a pas encore utilisé la commande reset game (pour tp les joueurs vers le menu de stats à la fin de la game)
 
-scoreboard players set @a IsAlive 0
+scoreboard players set @a[tag=!in_tutorial] IsAlive 0
 # reset le score de mort de @a
 
-scoreboard players set @a is_ready 0
+scoreboard players set @a[tag=!in_tutorial] is_ready 0
 # rend tous les joueurs pas prêt
 
 execute if score $gamemode option_panel matches 0 run scoreboard players set @a[scores={Player=0..}] InShop 1
-execute if score $gamemode option_panel matches 1 run scoreboard players set @a InShop 1
+execute if score $gamemode option_panel matches 1 run scoreboard players set @a[tag=!in_tutorial] InShop 1
 team modify spectator seeFriendlyInvisibles true
 execute as @a[team=spectator] run function main:locator_bar/team_updated
 effect give @a[scores={Player=-1}] minecraft:invisibility infinite 0 true
 # Permet à tous ceux qui ont InShop à 1 d'avoir des effets (saturation/night vision/instant health) et leur donne night vision tout de suite pour eviter un effet flash
 
-scoreboard players set @a InLobby 0
-execute as @a run function main:effects/refresh_persistent
+scoreboard players set @a[tag=!in_tutorial] InLobby 0
+execute as @a[tag=!in_tutorial] run function main:effects/refresh_persistent
 # Enleve les effet du lobby à @a
-tag @a remove in_map_display
+tag @a[tag=!in_tutorial] remove in_map_display
 # indique que les joueurs ne sont pas dans la zone de maps
 
-tag @a remove save_inventory
-tag @a add inventory_rebuilding
-clear @a
+tag @a[tag=!in_tutorial] remove save_inventory
+tag @a[tag=!in_tutorial] add inventory_rebuilding
+clear @a[tag=!in_tutorial]
 
 gamerule fall_damage true
 # remet les dégats de chutes
@@ -111,15 +111,15 @@ execute if score $gamemode option_panel matches 1 as @a[scores={Player=-1}] at @
 execute if score $gamemode option_panel matches 1 as @a[scores={Player=-1},tag=inventory_rebuilding] run function stuff:spectator/drop with entity @s EnderItems[0].components.minecraft:custom_data
 
 execute as @a[scores={Player=1..}] run function main:inventory_menu/give_items with entity @s EnderItems[0].components.minecraft:custom_data
-tag @a remove inventory_rebuilding
-tag @a add save_inventory
+tag @a[tag=!in_tutorial] remove inventory_rebuilding
+tag @a[tag=!in_tutorial] add save_inventory
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
 
 advancement revoke @a[scores={Player=1..}] everything
-advancement revoke @a from warrior:root
-advancement revoke @a from archer:root
-advancement revoke @a from mage:root
-advancement revoke @a from rogue:root
+advancement revoke @a[tag=!in_tutorial] from warrior:root
+advancement revoke @a[tag=!in_tutorial] from archer:root
+advancement revoke @a[tag=!in_tutorial] from mage:root
+advancement revoke @a[tag=!in_tutorial] from rogue:root
 # Affiche les objets achetable par le joueur selon sa classe
 
 tag @a[scores={Player=1..}] add display_killfeed
@@ -158,10 +158,10 @@ scoreboard players set @a[scores={Player=12}] Player_last_game 12
 clone -4 -52 56 -4 -52 56 -4 -51 56
 # rend le levier de particule des specs utilisable
 
-execute as @a run attribute @s minecraft:waypoint_receive_range base reset
+execute as @a[tag=!in_tutorial] run attribute @s minecraft:waypoint_receive_range base reset
 # remet la locator bar de tous
 
-execute as @a run attribute @s minecraft:block_interaction_range base set 20
+execute as @a[tag=!in_tutorial] run attribute @s minecraft:block_interaction_range base set 20
 # augmente la portée d'interaction block à tous (pour les panneaux du shop)
 
 ## BOSSBAR
@@ -181,9 +181,9 @@ execute if score $gamemode option_panel matches 1 if score $random map_selection
 execute if score $gamemode option_panel matches 1 if score $random map_selection matches 1 if score $block_same_map map_selection matches 1 run function main:map_randomizer/limited_randomization/limited_randomization
 # si on est en mode CTF et que on est en "arènes aléatoires" et pas deux fois la même map -> calcule la prochaine map aléatoirement parmis les maps qui n'ont pas été jouées
 
-execute if score $show_next_map option_panel matches 0 as @a run function main:launch_arena/hide_map_name
+execute if score $show_next_map option_panel matches 0 as @a[tag=!in_tutorial] run function main:launch_arena/hide_map_name
 # si la prochaine map est masquée, la masque
-execute if score $show_next_map option_panel matches 1 as @a run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
+execute if score $show_next_map option_panel matches 1 as @a[tag=!in_tutorial] run function main:launch_arena/save_map_name with entity @s EnderItems[0].components.minecraft:custom_data
 
 scoreboard players reset * played_last_game
 scoreboard players set @a[scores={Player=1..}] played_last_game 1
@@ -192,7 +192,7 @@ scoreboard players set @a[scores={Player=1..}] played_last_game 1
 
 execute as @a[scores={Player=1..}] run function main:round_end/upgrade_tree_info with entity @s EnderItems[0].components.minecraft:custom_data
 # Indique à tous les joueurs qu'ils peuvent voir leur progression dans l'arbre en appuyant sur la touche advancements
-execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
+execute as @a[tag=!in_tutorial] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 2
 
 
 function main:gui/clear/clear_actionbar_bar
