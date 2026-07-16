@@ -2,11 +2,11 @@
 # permet d'appliquer les dmgs aux joueurs dans la zone
 
 
-execute as @e[type=#spellable,tag=!spell_immune,tag=in_explo2,scores={last_caster=0}] run function spells:spellsystem/spell1/spell1_a/took_spell1_a
-# indique que @s est touché par la flèche explo (pour le kill feed)
-
-scoreboard players set @e[type=#spellable,tag=!spell_immune,tag=in_explo2,scores={last_caster=0}] last_caster 2
+scoreboard players set @e[type=#spellable,tag=!spell_immune,tag=in_explo2] last_caster 2
 # tag pour check après 1 tick les pv des joueurs ou du boss - le tag dépend du numéro de joueur du caster
+
+execute as @e[type=#spellable,tag=!spell_immune,tag=in_explo2] run function spells:spellsystem/spell1/spell1_a/took_spell1_a
+# indique que @s est touché par la flèche explo (pour le kill feed)
 
 
 execute at @e[type=#spellable,tag=!spell_immune,tag=in_explo2] run playsound minecraft:entity.arrow.hit_player master @a[scores={Player=2}] ~ ~ ~ 100 0

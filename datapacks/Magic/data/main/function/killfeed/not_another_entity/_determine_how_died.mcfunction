@@ -2,8 +2,8 @@
 # permet de check si il s'est auto tué ou qu'il est mort de l'environnement
 
 execute if entity @s[tag=self_target] run function main:killfeed/not_another_entity/_killed_itself
-execute if entity @s[tag=killed_by_ally] run function main:killfeed/not_another_entity/_killed_by_ally
-execute if entity @s[tag=get_exploded] run function main:killfeed/not_another_entity/_get_exploded
+execute unless entity @s[tag=self_target] if entity @s[tag=killed_by_ally] run function main:killfeed/not_another_entity/_killed_by_ally
+execute unless entity @s[tag=self_target] unless entity @s[tag=killed_by_ally] if entity @s[tag=get_exploded] run function main:killfeed/not_another_entity/_get_exploded
 
 execute unless entity @s[tag=self_target] unless entity @s[tag=killed_by_ally] unless entity @s[tag=get_exploded] run function main:killfeed/not_another_entity/_environement
 
