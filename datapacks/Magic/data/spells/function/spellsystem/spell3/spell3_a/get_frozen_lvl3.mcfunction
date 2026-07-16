@@ -18,7 +18,7 @@ execute as @s[tag=Has_Red_flag] run function spells:spellsystem/spell3/spell3_a/
 # si @s a le drapeau, lui fait drop
 
 execute if entity @s[type=player] run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
-execute unless entity @s[type=player] run item replace entity @s armor.head from block 17 95 13 container.24
+execute unless entity @s[type=player] run function stuff:status_items/give_frozen_overlay_static
 # met un bloc de glace sur la tête de @s
 
 execute if score @s Player matches 1 run function spells:spellsystem/spell3/spell3_a/initialize_bossbar_lvl3/player1 with entity @s EnderItems[0].components.minecraft:custom_data
