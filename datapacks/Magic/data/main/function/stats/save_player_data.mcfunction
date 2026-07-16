@@ -2,6 +2,19 @@
 
 data modify storage stats:leaderboards by_player set value {}
 # reset les stats par joueur dans le storage
+data modify storage stats:leaderboards by_player."1".player_last_game set value 1
+data modify storage stats:leaderboards by_player."2".player_last_game set value 2
+data modify storage stats:leaderboards by_player."3".player_last_game set value 3
+data modify storage stats:leaderboards by_player."4".player_last_game set value 4
+data modify storage stats:leaderboards by_player."5".player_last_game set value 5
+data modify storage stats:leaderboards by_player."6".player_last_game set value 6
+data modify storage stats:leaderboards by_player."7".player_last_game set value 7
+data modify storage stats:leaderboards by_player."8".player_last_game set value 8
+data modify storage stats:leaderboards by_player."9".player_last_game set value 9
+data modify storage stats:leaderboards by_player."10".player_last_game set value 10
+data modify storage stats:leaderboards by_player."11".player_last_game set value 11
+data modify storage stats:leaderboards by_player."12".player_last_game set value 12
+# garde un id stable dans les entrees copiees vers by_stat
 
 team join Blue_Color @a[tag=blue_team,scores={Player=1..}]
 execute as @a[team=Blue_Color] run function main:locator_bar/team_updated

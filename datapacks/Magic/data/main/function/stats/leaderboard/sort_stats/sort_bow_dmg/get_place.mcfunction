@@ -1,9 +1,9 @@
 ## appelée par sorting_clock -> permet de save la place de @s
 
-scoreboard players operation @s sort_bow_dmg = $current_check sort_bow_dmg
+scoreboard players operation @s sort_bow_dmg10 = $current_check sort_bow_dmg10
 # donne son classement à @s
 
-execute store result storage temp:sort rank int 1 run scoreboard players get @s sort_bow_dmg
+execute store result storage temp:sort rank int 1 run scoreboard players get @s sort_bow_dmg10
 execute store result storage temp:sort player int 1 run scoreboard players get @s Player_last_game
 # stocke temporairement les info de @s
 

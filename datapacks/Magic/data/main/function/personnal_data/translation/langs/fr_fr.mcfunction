@@ -15,7 +15,7 @@ data modify storage strings fr_fr set value {\
 "tr_reconnect_left_arena":"Vous vous êtes déconnecté dans l'arène ! Vous avez été automatiquement ramené au lobby.",\
 "tr_reconnect_joined_spectator":"Une partie a déjà commencé ! Vous êtes automatiquement passé en mode spectateur.",\
 "tr_reconnect_joined_shop":"La partie a déjà commencé ! Vous avez rejoint automatiquement.",\
-"tr_reconnect_stats_added":"Vos statistiques ont été ajoutées au tableau des scores.",\
+"tr_reconnect_stats_added":"Vos statistiques ont été ajoutées au podium.",\
 "tr_ctf_flag_red_captured":" a capturé le drapeau rouge !",\
 "tr_ctf_flag_blue_captured":" a capturé le drapeau bleu !",\
 "tr_ctf_flag_red_returned_by_player":" a rapporté le drapeau rouge !",\

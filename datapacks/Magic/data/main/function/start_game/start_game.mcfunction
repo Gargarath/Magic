@@ -153,6 +153,7 @@ scoreboard players set @a[scores={Player=9}] Player_last_game 9
 scoreboard players set @a[scores={Player=10}] Player_last_game 10
 scoreboard players set @a[scores={Player=11}] Player_last_game 11
 scoreboard players set @a[scores={Player=12}] Player_last_game 12
+scoreboard players set @a[scores={Player=1..}] result_last_game 0
 # enregistre le numéro de joueur des joueurs
 
 clone -4 -52 56 -4 -52 56 -4 -51 56

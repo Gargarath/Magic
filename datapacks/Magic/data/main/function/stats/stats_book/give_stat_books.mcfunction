@@ -3,6 +3,9 @@
 
 data modify storage temp:sort storage set from entity @s EnderItems[0].components.minecraft:custom_data
 execute store result storage temp:sort storage.player_last_game int 1 run scoreboard players get @s Player_last_game
+data modify storage temp:sort storage.team_last_game set value {"text":""}
+$data modify storage temp:sort storage.ctf_result set value {"text":"$(tr_stats_book_result_ctf_draw)","color":"gray","bold":true}
+# valeurs par defaut pour eviter qu'une macro manquante bloque la creation du livre
 
 # setup le rank de @s selon le placement
 execute if score @s sort_killcount matches 1 run data modify storage temp:sort storage.ffa_rank set from entity @s EnderItems[0].components.minecraft:custom_data.tr_stats_book_result_ffa_1
@@ -23,7 +26,7 @@ $execute if score @s result_last_game matches 1 run data modify storage temp:sor
 $execute if score @s result_last_game matches 2 run data modify storage temp:sort storage.ctf_result set value {"text":"$(tr_stats_book_result_ctf_loose)","color":"dark_red","bold":true}
 
 $execute if score @s class_id matches 1 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_warrior)]","color":"gold","bold":true}
-$execute if score @s class_id matches 2 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_archer)]","color":"dark_red","bold":true}
+$execute if score @s class_id matches 2 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_archer)]","color":"dark_green","bold":true}
 $execute if score @s class_id matches 3 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_mage)]","color":"dark_purple","bold":true}
 $execute if score @s class_id matches 4 run data modify storage temp:sort storage.class_last_game set value {"text":"[$(tr_stats_rogue)]","color":"gray","bold":true}
 

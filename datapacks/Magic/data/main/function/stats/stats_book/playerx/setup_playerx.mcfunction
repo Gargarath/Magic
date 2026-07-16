@@ -1,6 +1,7 @@
 ## appelée par main:stats_book/create_stat_books
 ## permet de créer le stat_book du joueur X selon son numéro de joueur
 
+$data modify storage stats:leaderboards by_player."$(player_last_game)".player_last_game set value $(player_last_game)
 $execute store result storage stats:leaderboards by_player."$(player_last_game)".stat_kd_ratio1000 int 1 run scoreboard players get @s stat_kd_ratio1000
 $execute store result storage stats:leaderboards by_player."$(player_last_game)".stat_killcount int 1 run scoreboard players get @s stat_killcount
 $execute store result storage stats:leaderboards by_player."$(player_last_game)".stat_deathcount int 1 run scoreboard players get @s stat_deathcount
