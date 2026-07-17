@@ -1,5 +1,7 @@
 ## Macro appelée en tant que tueur avec {player:<numéro>}.
 
+execute if score $infinite_money option_panel matches 1 run return 0
+
 scoreboard players operation @s PH += $bounty_payout ffa_bounty_calc
 scoreboard players operation @s stat_total_money_earned += $bounty_payout ffa_bounty_calc
 scoreboard players operation @s stat_total_bounty_earned += $bounty_payout ffa_bounty_calc

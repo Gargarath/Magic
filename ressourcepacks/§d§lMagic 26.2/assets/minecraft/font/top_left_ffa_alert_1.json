@@ -359,6 +359,13 @@
             "ascent": -230085,
             "height": 8,
             "chars": ["\uE634"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/infinity.png",
+            "ascent": -230085,
+            "height": 8,
+            "chars": ["∞"]
         }
  ]
 }

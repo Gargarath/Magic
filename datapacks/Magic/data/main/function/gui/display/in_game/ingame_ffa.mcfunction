@@ -57,7 +57,7 @@ $execute as @s[scores={Player=$(player),opt_display_keybinds=1}] run title @s ac
 {text:"\uE790\uE720\uE706",font:top_bar_map_ffa},$(map_name),{text:"\uE720\uE710\uE707\uE791",font:top_bar_map_ffa},\
 \
 \
-{"text":"","font":"top_left_ffa_alert_1","extra":[{"text":"\uF018","font":"top_left_ffa_alert_1"},{"text":" \uE634","color":"white"},{"text":" "},{"score":{"name":"@s","objective":"PH"},"color":"gold"},{"text":"\uF038","font":"top_left_ffa_alert_1"}]},{"text":"","font":"default_neg","extra":[{"text":" \uE634"},{"text":" "},{"score":{"name":"@s","objective":"PH"}}]},\
+{"text":"","font":"top_left_ffa_alert_1","extra":[{"text":"\uF018","font":"top_left_ffa_alert_1"},{"text":" \uE634","color":"white"},{"text":" "},{"nbt":"ffa.money.render","storage":"minecraft:gui","interpret":true},{"text":"\uF038","font":"top_left_ffa_alert_1"}]},{"text":"","font":"default_neg","extra":[{"text":" \uE634"},{"text":" "},{"nbt":"ffa.money.cancel","storage":"minecraft:gui","interpret":true}]},\
 \
 {"font":"top_left_ffa_alert_1","nbt":"player.$(player).money_alert.slot1.render","storage":"minecraft:gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).money_alert.slot1.cancel","storage":"minecraft:gui","interpret":true},\
 {"font":"top_left_ffa_alert_1","nbt":"player.$(player).money_alert.slot2.render","storage":"minecraft:gui","interpret":true},{"font":"default_neg","nbt":"player.$(player).money_alert.slot2.cancel","storage":"minecraft:gui","interpret":true},\

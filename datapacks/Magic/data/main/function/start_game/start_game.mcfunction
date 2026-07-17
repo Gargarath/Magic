@@ -24,6 +24,12 @@ data remove storage minecraft:gui player.10.money_alert
 data remove storage minecraft:gui player.11.money_alert
 data remove storage minecraft:gui player.12.money_alert
 
+data modify storage minecraft:gui ffa.money.render set value {score:{name:"@s",objective:"PH"},color:"gold"}
+data modify storage minecraft:gui ffa.money.cancel set value {score:{name:"@s",objective:"PH"}}
+execute if score $infinite_money option_panel matches 1 run data modify storage minecraft:gui ffa.money.render set value {text:"∞",font:"minecraft:top_left_ffa_alert_1",color:"gold"}
+execute if score $infinite_money option_panel matches 1 run data modify storage minecraft:gui ffa.money.cancel set value {text:"∞",font:"minecraft:default_neg"}
+# prépare l'affichage du montant dans le GUI FFA
+
 scoreboard players set @a[tag=!in_tutorial] drop_item 0
 scoreboard players set @a[tag=!in_tutorial] hotbar_menu 0
 # met les joueurs dans le stade 0 du menu d'option hotbar
@@ -94,7 +100,7 @@ execute if score $infinite_money option_panel matches 0 run scoreboard players o
 execute if score $infinite_money option_panel matches 1 run scoreboard players set @a[scores={Player=0}] PH 99999999
 # si mode argent illimité -> donne plein d'argent
 
-execute as @a[scores={Player=0}] run scoreboard players operation @s stat_total_money_earned = @s PH
+execute if score $infinite_money option_panel matches 0 as @a[scores={Player=0}] run scoreboard players operation @s stat_total_money_earned = @s PH
 scoreboard players set @a[scores={Player=0}] stat_total_bounty_earned 0
 
 execute at @e[type=marker,tag=shop_room] positioned ~ ~1 ~ run clone 19 95 17 21 96 19 ~-1 ~ ~-1
