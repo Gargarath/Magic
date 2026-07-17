@@ -1,7 +1,7 @@
 # appelée par determine_player selon le numéro de sort de @s si il est mage
 # permet de save le stuff de @s sous forme de storage
 
-execute if score @s weapon1 matches 0 run data modify storage stats:leaderboards by_player.2.weapon1 set value {"text":""}
+$execute if score @s weapon1 matches 0 run data modify storage stats:leaderboards by_player.2.weapon1 set value {"text":"$(tr_mage_weapon1_0_name)","color":"white"}
 $execute if score @s weapon1 matches 1 run data modify storage stats:leaderboards by_player.2.weapon1 set value {"text":"$(tr_mage_weapon1_1_name)","color":"white"}
 $execute if score @s weapon1 matches 2 run data modify storage stats:leaderboards by_player.2.weapon1 set value {"text":"$(tr_mage_weapon1_2_name)","color":"white"}
 $execute if score @s weapon1 matches 3 run data modify storage stats:leaderboards by_player.2.weapon1 set value {"text":"$(tr_mage_weapon1_3_name)","color":"white"}

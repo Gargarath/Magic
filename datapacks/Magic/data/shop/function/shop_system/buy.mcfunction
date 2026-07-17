@@ -21,6 +21,12 @@ function shop:shop_system/apply_configured_scores with entity @s EnderItems[0].c
 $function stuff:stuff_$(class)/$(item_category)/lvl$(item_level) with entity @s EnderItems[0].components.minecraft:custom_data
 # donne l'item en question a @s
 
+$function stuff:stuff_$(class)/save_stuff_as_storage/determine_player with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les noms traduits utilises par le HUD apres la modification des scores
+
+function main:items_positions/save_spell_order_in_gui with entity @s EnderItems[0].components.minecraft:custom_data
+# actualise les raccourcis du HUD selon l'ordre configure par @s
+
 $function shop:shop_system/apply_armor_trim/$(class)
 # reapplique le trim de classe/equipe si l'item achete est une armure
 

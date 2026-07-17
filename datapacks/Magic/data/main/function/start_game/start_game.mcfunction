@@ -207,19 +207,8 @@ data modify storage gui player.12.actionbar.alert set value {"text":""}
 scoreboard players set @a[scores={Player=1..}] gui_actionbar_alert -1
 # clear l'action bar de tous
 
-execute as @a[scores={Player=1},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.1.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=2},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.2.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=3},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.3.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=4},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.4.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=5},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.5.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=6},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.6.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=7},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.7.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=8},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.8.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=9},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.9.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=10},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.10.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=11},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.11.key_slot3 set from storage ressources archer.weapon1.0.name
-execute as @a[scores={Player=12},tag=archer,limit=1] run data modify storage stats:leaderboards by_player.12.key_slot3 set from storage ressources archer.weapon1.0.name
-# afiche en racourcis archer que le sort 3 est l'arc
+execute as @a[scores={Player=1..12},tag=archer] run function stuff:stuff_archer/save_stuff_as_storage/determine_player with entity @s EnderItems[0].components.minecraft:custom_data
+# affiche dans les raccourcis de l'archer le nom traduit de son arc
 
 execute as @a[scores={Player=1},tag=archer,limit=1] run data modify storage gui player.1.actionbar.right_side set value ["                       ",{"score":{"name":"@s","objective":"arrow"}},{"text":"/"},{"score":{"name":"@s","objective":"maxarrow"}}]
 execute as @a[scores={Player=2},tag=archer,limit=1] run data modify storage gui player.2.actionbar.right_side set value ["                       ",{"score":{"name":"@s","objective":"arrow"}},{"text":"/"},{"score":{"name":"@s","objective":"maxarrow"}}]
