@@ -3,6 +3,9 @@
 
 ## LAST GAME 
 
+function main:stats/scoreboard/clear_topbar_players_lastgame
+# clear les joueurs enregistrés dans la topbar de la game précédente
+
 # top bar
 function main:stats/scoreboard/save_topbar_players_lastgame
 # enregistre les joueurs connectés dans la topbar pour l'ile des stats de fin de game

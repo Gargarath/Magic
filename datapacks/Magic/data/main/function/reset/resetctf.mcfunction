@@ -10,9 +10,6 @@ execute as @a[scores={blue_place=1..}] run function main:stats/scoreboard/blue_t
 execute as @a[scores={red_place=1..}] run function main:stats/scoreboard/red_team_info/overlays/no_overlay_icon/check_place
 # clear les overlays de tous
 
-function main:stats/scoreboard/clear_topbar_players_lastgame
-# clear les joueurs enregistrés dans la topbar de la game précédente
-
 execute as @a[scores={save_flag_time=1..}] run function gamemode:ctf/saveflag/stop_saving
 execute as @a[scores={cap_flag_time=1..}] run function gamemode:ctf/capflag_droped/stop_caping
 
