@@ -8,7 +8,7 @@ scoreboard players set @s burning 60
 
 execute if score @s freeze matches 0.. run function spells:spellsystem/spell3/spell3_a/stop_freeze
 # si @s est gelé, arrête le gel
-execute if entity @s[type=player] run function stuff:status_items/give_burning_overlay with entity @s EnderItems[0].components.minecraft:custom_data
+execute if entity @s[type=player] run function stuff:status_items/refresh_overlay
 execute unless entity @s[type=player] run function stuff:status_items/give_burning_overlay_static
 # met un bloc de magma sur la tête de @s
 

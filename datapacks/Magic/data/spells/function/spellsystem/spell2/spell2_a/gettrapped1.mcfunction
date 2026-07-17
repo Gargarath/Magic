@@ -6,6 +6,7 @@ attribute @s minecraft:knockback_resistance base set 1
 # rend @s immobile
 
 scoreboard players set @s trapped 40
+function stuff:status_items/refresh_overlay
 execute positioned ~ ~-1 ~ if entity @e[tag=trap,distance=..1.1,scores={trap_number_a=1}] run scoreboard players set @s in_trap_number 1
 execute positioned ~ ~-1 ~ if entity @e[tag=trap,distance=..1.1,scores={trap_number_a=2}] run scoreboard players set @s in_trap_number 2
 execute positioned ~ ~-1 ~ if entity @e[tag=trap,distance=..1.1,scores={trap_number_a=3}] run scoreboard players set @s in_trap_number 3

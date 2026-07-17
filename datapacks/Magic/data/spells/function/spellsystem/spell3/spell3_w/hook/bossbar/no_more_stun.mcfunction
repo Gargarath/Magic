@@ -2,6 +2,7 @@
 ## clear all @s stuned effect
 
 scoreboard players set @s hooked_w -1
+function stuff:status_items/refresh_overlay
 # indicate that @s is no more stuned
 
 execute if score @s hooked_by_player matches 1 run bossbar set hook_someone:player1 players

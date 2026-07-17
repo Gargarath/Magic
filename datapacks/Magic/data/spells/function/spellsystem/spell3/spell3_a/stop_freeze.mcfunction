@@ -4,7 +4,8 @@
 
 scoreboard players set @s freeze -1
 # met le score de freeze de @s à -1
-item replace entity @s armor.head with air
+execute if entity @s[type=player] run function stuff:status_items/refresh_overlay
+execute unless entity @s[type=player] run item replace entity @s armor.head with air
 # enleve le bloc de glace sur la tête de @s
 
 execute if score @s Player matches 1 run bossbar set frozen:player1 players

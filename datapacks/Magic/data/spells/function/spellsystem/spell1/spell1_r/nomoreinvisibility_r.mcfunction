@@ -45,7 +45,7 @@ function main:items_positions/cleanup_managed_items
 function stuff:stuff_rogue/stuffrogue
 # donne le stuff de rogue à @s
 
-execute unless score @s freeze matches -1 run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
+function stuff:status_items/refresh_overlay
 # si @s est gelé, lui met le glace sur la tête
 
 effect clear @s minecraft:invisibility

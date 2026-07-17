@@ -1,6 +1,7 @@
 # appelée par ctf:respawns permet de reset le piege qui vient de tuer @s et de reset ses scores liés à ça
 
 scoreboard players set @s trapped -1
+function stuff:status_items/refresh_overlay
 
 attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:jump_strength base reset

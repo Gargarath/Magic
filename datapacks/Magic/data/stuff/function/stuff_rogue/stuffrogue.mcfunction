@@ -8,14 +8,8 @@ tag @s add inventory_rebuilding
 function stuff:stuff_rogue/cooldowns_r/cooldowns_r
 
                          ###   HEAD ET OFFHAND    ###
-execute if entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=!in_own_spawn] run function stuff:generic_stuff/empty_head
-execute if entity @s[scores={freeze=-1,burning=-1},tag=!Has_Blue_flag,tag=!Has_Red_flag,tag=in_own_spawn] run function stuff:generic_stuff/spawn_overlay_head
+function stuff:status_items/refresh_overlay
 execute if entity @s[tag=!Has_Blue_flag,tag=!Has_Red_flag] run function stuff:generic_stuff/empty_offhand
-
-execute if score @s freeze matches 0.. run function stuff:status_items/give_frozen_overlay with entity @s EnderItems[0].components.minecraft:custom_data
-# met un bloc de glace sur la tête de @s si il est gelé
-execute if score @s burning matches 0.. run function stuff:status_items/give_burning_overlay with entity @s EnderItems[0].components.minecraft:custom_data
-# met un bloc de magma sur la tête de @s si il est brulé
 
 execute if score @s InShop matches 1 run function stuff:stuff_rogue/save_stuff_as_storage/determine_player
 # permet de save le stuff de @s dans un storage

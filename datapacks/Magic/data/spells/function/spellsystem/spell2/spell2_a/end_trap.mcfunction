@@ -1,5 +1,6 @@
 # appelée par spells:loop detruit le piege quand @s n'est plus piégé
 scoreboard players set @s trapped -1
+function stuff:status_items/refresh_overlay
 
 attribute @s[scores={hooked_w=-1}] minecraft:movement_speed base reset
 attribute @s[scores={hooked_w=-1}] minecraft:jump_strength base reset
