@@ -63,5 +63,3 @@ team modify lobby_ffa_9 collisionRule always
 team modify lobby_ffa_10 collisionRule always
 team modify lobby_ffa_11 collisionRule always
 team modify lobby_ffa_12 collisionRule always
-
-say 2

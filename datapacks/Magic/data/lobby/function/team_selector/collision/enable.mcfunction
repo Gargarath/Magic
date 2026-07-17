@@ -51,5 +51,3 @@ team modify lobby_ffa_9 collisionRule never
 team modify lobby_ffa_10 collisionRule never
 team modify lobby_ffa_11 collisionRule never
 team modify lobby_ffa_12 collisionRule never
-
-say 1
