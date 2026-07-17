@@ -6,13 +6,9 @@
     
      ## ANTI SPAWN-KILL
 
-execute as @a[team=blue] at @s run function gamemode:ctf/anti_spawnkill/anti_spawnkill_blue
-execute as @a[team=red] at @s run function gamemode:ctf/anti_spawnkill/anti_spawnkill_red
 
      # Projectile
 
-execute as @e[type=arrow] at @s if block ~ ~-45 ~ #spawn_protectors run tp @s 0 50 0
-execute as @e[type=lingering_potion,tag=smoke_bomb] at @s if block ~ ~-45 ~ #spawn_protectors run tp @s 0 50 0
 
 
    ## LANCEMENT D'OBJECTIFS SECONDAIRES
@@ -22,7 +18,6 @@ execute if score round bossbar matches 1..3 if score $secondary_objectives optio
 
     ## RESPAWN SYSTEM
 
-execute as @a[scores={respawn_time=0..}] run function gamemode:ctf/respawns/bossbar/refreshbossbar
 # actualise les temps de respawn
 
 

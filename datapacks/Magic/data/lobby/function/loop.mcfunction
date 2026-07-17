@@ -35,18 +35,13 @@ execute as @a[tag=jump_spec,scores={quit=1..},tag=!in_tutorial] run function lob
 execute as @a[tag=in_lobby_arena,scores={Player=1..}] at @s if block ~ ~ ~ lava run function lobby:arena/in_lava
 
 # jump pad
-execute positioned 14.5 54.0 -9.50 run particle minecraft:happy_villager ~ ~ ~ 0.5 0 0.5 0 5 force @a[tag=in_lobby_arena]
 execute as @a[scores={Player=1..},tag=in_lobby_arena] at @s if block ~ ~-1 ~ slime_block run effect give @s minecraft:jump_boost 1 16 true
 execute as @a[scores={Player=1..,is_jumping=1..},tag=in_lobby_arena] run function lobby:arena/jump_pad
 execute as @a[scores={Player=1..},tag=in_lobby_arena] at @s if predicate minecraft:has_jump_boost unless block ~ ~-1 ~ slime_block run effect clear @s minecraft:jump_boost
 
 # tp
-particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} 1 81.5 -22.7 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
-particle minecraft:dust{"color":[0.55,0.0,1.0],"scale":1.5} 1 81.5 -22.7 -0.5 0.6 0 0 5 force @a[tag=in_lobby_arena]
 # particule sortie tp
 
-particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} -0.9 55.3 20.70 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
-particle minecraft:dust{"color":[0.55,0.0,1.0],"scale":1.5} -0.9 55.3 20.70 -0.5 0.6 0 0 5 force @a[tag=in_lobby_arena]
 execute positioned -0.9 54.00 20.70 as @a[distance=..1.5,scores={Player=1..}] run function lobby:arena/tp
 
 execute as @a[scores={lobby_sneak=0},tag=!in_tutorial] if predicate minecraft:is_sneaking at @s run function lobby:arena/join_arena/start_sneak
@@ -73,7 +68,6 @@ execute as @a[scores={optn_passive_speed_custom=0..,operator=2},tag=!in_tutorial
 execute as @a[scores={optn_ph_per_kill_custom=0..,operator=2},tag=!in_tutorial] run function lobby:option_panel/pages/shop/ffa_economy/ph_per_kill/apply_custom_value
 execute as @a[scores={optn_first_income_delay_custom=0..,operator=2},tag=!in_tutorial] run function lobby:option_panel/pages/shop/ffa_economy/first_income_delay/apply_custom_value
 
-execute as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
 # détecte si un joueur clique gauche sur une map
 
                                         ## MAP ISLAND ##
@@ -93,9 +87,6 @@ execute if score $map_6 map_spectator matches 1.. run function lobby:map_island/
 
                                         ## LEADERBOARD
 
-execute at @e[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
-execute if data storage minecraft:matchinfo {last_game_gamemode:0b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[1.0,0.745,0.035],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
-execute if data storage minecraft:matchinfo {last_game_gamemode:1b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[0.208,0.965,0.988],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
 
 
                                         ## DEVENIR OPERATEUR
@@ -113,7 +104,6 @@ execute as @a[gamemode=adventure,tag=!in_lobby_arena,tag=!spec_map,tag=!in_tutor
 
 execute as @a[tag=!in_tutorial] if predicate minecraft:step_on_slimeblock if entity @s[nbt={OnGround:1b},tag=!on_pads] run function lobby:joined_slime_pads
 execute as @a[tag=on_pads,tag=!in_tutorial] at @s unless block ~ ~-1 ~ slime_block run function lobby:left_slime_pads
-execute at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1 0 2 normal
 
 
                                          #### STATUES DE CHOIX D'EQUIPES ####

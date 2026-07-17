@@ -10,29 +10,17 @@ execute if score shop is_working matches 0 run function shop:shop_is_ready
 
 # tp back si part trop loin
 
-execute at @e[type=marker,tag=shop_room_1] positioned ~ ~1 ~ run tp @a[tag=spec_room1,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room1
-execute at @e[type=marker,tag=shop_room_2] positioned ~ ~1 ~ run tp @a[tag=spec_room2,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room2
-execute at @e[type=marker,tag=shop_room_3] positioned ~ ~1 ~ run tp @a[tag=spec_room3,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room3
-execute at @e[type=marker,tag=shop_room_4] positioned ~ ~1 ~ run tp @a[tag=spec_room4,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room4
-execute at @e[type=marker,tag=shop_room_5] positioned ~ ~1 ~ run tp @a[tag=spec_room5,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room5
-execute at @e[type=marker,tag=shop_room_6] positioned ~ ~1 ~ run tp @a[tag=spec_room6,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room6
-execute at @e[type=marker,tag=shop_room_7] positioned ~ ~1 ~ run tp @a[tag=spec_room7,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room7
-execute at @e[type=marker,tag=shop_room_8] positioned ~ ~1 ~ run tp @a[tag=spec_room8,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room8
-execute at @e[type=marker,tag=shop_room_9] positioned ~ ~1 ~ run tp @a[tag=spec_room9,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room9
-execute at @e[type=marker,tag=shop_room_10] positioned ~ ~1 ~ run tp @a[tag=spec_room10,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room10
-execute at @e[type=marker,tag=shop_room_11] positioned ~ ~1 ~ run tp @a[tag=spec_room11,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room11
-execute at @e[type=marker,tag=shop_room_12] positioned ~ ~1 ~ run tp @a[tag=spec_room12,distance=6..] ~ ~ ~
 # Empêche les spectateurs de sortir de la room12
 
 # Spectate ou arreter de spectate
@@ -82,7 +70,7 @@ execute as @a[scores={InShop=1,Player=1..},tag=!look_at_spell3] at @s if predica
 execute as @a[scores={InShop=1,Player=1..},tag=look_at_spell3] at @s unless predicate minecraft:shop/look_at_spell3 run function shop:look_away/look_away_spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 
 # Interdit d'utiliser un sort
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,InShop=1}] run function shop:cant_usespell with entity @s EnderItems[0].components.minecraft:custom_data
+execute as @a[scores={usespell=1..,InShop=1}] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function shop:cant_usespell with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[scores={usespell=1..,InShop=1}] run scoreboard players set @s usespell 0
 #execute as @a[scores={Player=1..}] unless predicate minecraft:has_item_offhand unless predicate has_flag_offhand run function shop:cant_usespell
 execute as @a[scores={Player=1..,InShop=1}] unless predicate offhand_autorized run function shop:cant_usespell

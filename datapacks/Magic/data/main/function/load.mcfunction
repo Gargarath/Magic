@@ -33,3 +33,7 @@ tag @a add save_inventory
 
 function main:gui/display/refresh_gui
 # relance la boucle scheduled du GUI apres /reload
+
+# Relance les boucles globales cadencees sans creer de doublon apres /reload.
+schedule function main:scheduled/fast 1t replace
+schedule function main:scheduled/cleanup 1t replace

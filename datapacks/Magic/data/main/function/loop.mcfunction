@@ -54,10 +54,6 @@ execute store result score player playercount if entity @a[scores={Player=0..}]
 execute if score $gamemode option_panel matches 1 if score Is_ready Lobby_ready matches 0 unless score $current playercount = player playercount run function main:disconnected/someone_disconnected
 # si en CTF -> si le nombre de joueur a changé in game -> lance le système un joueur leave
 
-# KILL LES ITEMS NON INVOQUES
-kill @e[type=item,tag=!summoned]
-
-
 execute as @a[scores={admin_stop_game=1}] run function main:admin/book_commands/stop_game
 execute as @a[scores={admin_quit_admin=1}] run function main:admin/book_commands/quit_admin with entity @s EnderItems[0].components.minecraft:custom_data
 execute as @a[scores={admin_randomize_team=1}] run function main:admin/book_commands/randomize_team with entity @s EnderItems[0].components.minecraft:custom_data

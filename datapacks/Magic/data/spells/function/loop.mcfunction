@@ -25,14 +25,14 @@ execute as @a[scores={out_of_fight=300}] run function gamemode:ctf/healing_out_o
 
 # Gere les spells
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:testspell
+execute as @a[scores={usespell=1..,trapped=-1,hooked_w=-1},tag=!is_hooking,team=!respawn_red,team=!respawn_blue] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:testspell
 execute as @a[scores={usespell=1..}] unless items entity @s weapon.mainhand carrot_on_a_stick run scoreboard players set @s usespell 0
 # si @s peut lancer un sort, check lequel (sauf si utilise arc)
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,trapped=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/trapped
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..,hooked_w=0..},team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooked
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},tag=is_hooking,team=!respawn_red,team=!respawn_blue] run function spells:cant_usespell/hooker
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},team=respawn_red] run function spells:cant_usespell/respawn
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={usespell=1..},team=respawn_blue] run function spells:cant_usespell/respawn
+execute as @a[scores={usespell=1..,trapped=0..},team=!respawn_red,team=!respawn_blue] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:cant_usespell/trapped
+execute as @a[scores={usespell=1..,hooked_w=0..},team=!respawn_red,team=!respawn_blue] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:cant_usespell/hooked
+execute as @a[scores={usespell=1..},tag=is_hooking,team=!respawn_red,team=!respawn_blue] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:cant_usespell/hooker
+execute as @a[scores={usespell=1..},team=respawn_red] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:cant_usespell/respawn
+execute as @a[scores={usespell=1..},team=respawn_blue] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run function spells:cant_usespell/respawn
 
 execute as @a[scores={Player=1..},tag=save_inventory,tag=!in_countdown] unless predicate offhand_autorized run function main:items_positions/used_keybind2
 execute as @a[scores={Player=1..},tag=save_inventory,tag=in_countdown] unless predicate offhand_autorized run function main:launch_arena/countdown/cant_usespell
@@ -139,7 +139,7 @@ execute as @a[scores={trapped=0}] run function spells:spellsystem/spell2/spell2_
 execute at @a[scores={trapped=0..}] run particle minecraft:crit ~ ~0.4 ~ 0.2 0.1 0.2 0.001 10 force @a
 execute as @a[scores={trapped=0..999}] run function spells:spellsystem/spell2/spell2_a/refresh_bossbar/refresh_bossbar
 
-tag @e[scores={trap_number_a=1..},type=!player] add have_trap_number
+tag @e[type=wandering_trader,tag=trap,tag=!have_trap_number,scores={trap_number_a=1..}] add have_trap_number
 # ajoute le tag have_trapp_number à tous les pièges à ours qui sont attribués à un joueur afin que personne ne puisse se les atribuer si il pose un piège à ours à côté
 
 execute as @e[type=minecraft:wandering_trader,nbt={HurtTime:10s}] run function spells:spellsystem/spell2/spell2_a/villagertakesdmg
@@ -153,9 +153,9 @@ execute as @a[scores={shotarrow=1..},tag=Has_freeze_arrow] run function spells:s
 execute at @a[scores={shotarrow=0},tag=Has_freeze_arrow] run particle minecraft:dripping_water ~ ~2 ~ 0.1 0.1 0.1 1 1 force
 # Les joueurs avec leur prochaine fleche de glace on des particules au dessus de la tête
 
-scoreboard players remove @e[scores={freeze=1..}] freeze 1
+scoreboard players remove @e[type=#spellable,scores={freeze=1..}] freeze 1
 # Enlève 1 de score de freeze à @a qui a un score de freeze de 1 ou plus (pour savoir combien de temps il leur reste)
-execute as @e[scores={freeze=0}] run function spells:spellsystem/spell3/spell3_a/stop_freeze
+execute as @e[type=#spellable,scores={freeze=0}] run function spells:spellsystem/spell3/spell3_a/stop_freeze
 # enleve le freeze de tous ceux qui ont un score de freeze de 0
 
 execute as @a[scores={freeze=0..}] run function spells:spellsystem/spell3/spell3_a/refresh_bossbar
@@ -172,7 +172,7 @@ execute as @e[type=#living_spellabale,type=!player,nbt={active_effects:[{id:"min
 
 	# WEAPON1 #
 
-execute as @a[scores={usespell=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{"weapon_1_m":1b}}}}] run function spells:spellsystem/weapon1_m/use_stick/usestick
+execute as @a[scores={usespell=1..}] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={weapon_1_m:1b}] run function spells:spellsystem/weapon1_m/use_stick/usestick
 # lance le spell du baton de mage au nom du joueur qui l'utilise
 
 # donne du mana a ceux a qui il en manque
@@ -232,7 +232,7 @@ execute as @a[scores={using_ambush=0}] run function spells:spellsystem/spell1/sp
 execute as @e[type=minecraft:wandering_trader,nbt={HurtTime:10s}] run function spells:spellsystem/spell2/spell2_r/villagertakesdmg
 # test quel wandering_trader a subit des dégats pour détruire la bonne voie des ombres
 
-tag @e[scores={backup_number_r=1..},type=!player] add have_backup_number
+tag @e[type=wandering_trader,tag=backup_r,tag=!have_backup_number,scores={backup_number_r=1..}] add have_backup_number
 # ajoute le tag have_backup_number à toutes les entrée de voie des ombres qui sont attribuées à un joueur afin que personne ne puisse se les atribuer si il cast une voie des ombres à côté
 
 execute as @e[tag=backup_r,type=wandering_trader] at @s run function spells:spellsystem/spell2/spell2_r/particle
@@ -247,7 +247,7 @@ execute as @a[scores={smoke_bomb_timer=0..}] run function spells:spellsystem/spe
 # permet de refresh les bossbar de bombe d'ombre
 
 execute at @e[type=minecraft:area_effect_cloud,tag=smoke_bomb_lvl1] run particle minecraft:smoke ~ ~1 ~ 2.5 1 2.5 0 5 force @a
-execute at @e[type=minecraft:lingering_potion,nbt={Item:{tag:{Tags:["smoke_bomb"]}}}] run particle smoke ~ ~ ~ 0 0 0 0 1 force @a
+execute at @e[type=minecraft:lingering_potion,tag=launched_potion] run particle smoke ~ ~ ~ 0 0 0 0 1 force @a
 # permet d'afficher les particules sur les bombes d'ombre
 
 execute as @a[tag=!spell_immune,tag=!rogue,scores={in_smoke1=-1}] at @s if entity @e[type=area_effect_cloud,tag=smoke_bomb_lvl1,distance=..4] run function spells:spellsystem/spell3/spell3_r/enter_smoke with entity @s EnderItems[0].components.minecraft:custom_data
