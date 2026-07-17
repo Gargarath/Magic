@@ -158,12 +158,12 @@ slot_spell1_m:1,\
 slot_spell1_r:1,\
 \
 slot_spell2_w:2,\
-slot_spell2_a:2,\
+slot_spell2_a:3,\
 slot_spell2_m:2,\
 slot_spell2_r:2,\
 \
 slot_spell3_w:3,\
-slot_spell3_a:3,\
+slot_spell3_a:2,\
 slot_spell3_m:3,\
 slot_spell3_r:3,\
 slot_arrows:8}]

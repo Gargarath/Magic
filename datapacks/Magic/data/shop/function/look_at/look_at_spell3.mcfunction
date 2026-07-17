@@ -11,7 +11,8 @@ data merge entity @n[type=text_display,tag=shop_spell3_price] {start_interpolati
 $kill @n[type=text_display,tag=shop_overlay_$(player)]
 # kill l'overlay si il en reste
 
-$execute at @n[type=item_display,tag=shop_spell3] run summon text_display ~1.9 ~-0.5 ~-0.3 {line_width:250,see_through:0b,shadow:1b,alignment:"left",background:-14869215,billboard:"fixed",Tags:["shop_overlay","shop_overlay_$(player)","shop_overlay_spell3","shop_overlay_spell3_$(player)"],Rotation:[180F,0F],start_interpolation:0,interpolation_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},text:["                                                       "]}
+$execute unless entity @s[tag=archer] at @n[type=item_display,tag=shop_spell3] run summon text_display ~1.9 ~-0.5 ~-0.3 {line_width:250,see_through:0b,shadow:1b,alignment:"left",background:-14869215,billboard:"fixed",Tags:["shop_overlay","shop_overlay_$(player)","shop_overlay_spell3","shop_overlay_spell3_$(player)"],Rotation:[180F,0F],start_interpolation:0,interpolation_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},text:["                                                       "]}
+$execute if entity @s[tag=archer] at @n[type=item_display,tag=shop_spell3] run summon text_display ~1.9 ~-1.0 ~-0.3 {line_width:250,see_through:0b,shadow:1b,alignment:"left",background:-14869215,billboard:"fixed",Tags:["shop_overlay","shop_overlay_$(player)","shop_overlay_spell3","shop_overlay_spell3_$(player)"],Rotation:[180F,0F],start_interpolation:0,interpolation_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},text:["                                                       "]}
 # invoque l'overlay
 
 function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minecraft:custom_data

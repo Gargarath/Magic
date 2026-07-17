@@ -37,6 +37,29 @@ function shop:refresh/items/spell2 with entity @s EnderItems[0].components.minec
 # actualise les infos de spell2 dans le shop de @s
 function shop:refresh/items/spell3 with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de spell3 dans le shop de @s
+
+# restaure les positions normales des sorts 2 et 3 pour les autres classes
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=item_display,tag=shop_spell2_$(player)] ~-1 ~1.6 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell2_level,tag=shop_spell2_$(player)] ~-1 ~1.1 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell2_price,tag=shop_spell2_$(player)] ~-1.45 ~1.2 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=interaction,tag=shop_spell2_$(player)] ~-1 ~1.2 ~4.4
+
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=item_display,tag=shop_spell3_$(player)] ~-1 ~0.7 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell3_level,tag=shop_spell3_$(player)] ~-1 ~0.2 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell3_price,tag=shop_spell3_$(player)] ~-1.45 ~0.3 ~4.4
+$execute unless entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=interaction,tag=shop_spell3_$(player)] ~-1 ~0.3 ~4.4
+
+# inverse les positions des sorts 2 et 3 dans le shop de l'archer
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=item_display,tag=shop_spell2_$(player)] ~-1 ~0.7 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell2_level,tag=shop_spell2_$(player)] ~-1 ~0.2 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell2_price,tag=shop_spell2_$(player)] ~-1.45 ~0.3 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=interaction,tag=shop_spell2_$(player)] ~-1 ~0.3 ~4.4
+
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=item_display,tag=shop_spell3_$(player)] ~-1 ~1.6 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell3_level,tag=shop_spell3_$(player)] ~-1 ~1.1 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=text_display,tag=shop_spell3_price,tag=shop_spell3_$(player)] ~-1.45 ~1.2 ~4.4
+$execute if entity @s[tag=archer] at @e[type=marker,tag=shop_room_$(player)] run tp @e[type=interaction,tag=shop_spell3_$(player)] ~-1 ~1.2 ~4.4
+
 function shop:refresh/items/chest with entity @s EnderItems[0].components.minecraft:custom_data
 # actualise les infos de chest dans le shop de @s
 function shop:refresh/items/legs with entity @s EnderItems[0].components.minecraft:custom_data
