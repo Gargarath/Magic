@@ -27,11 +27,6 @@ execute if score $gamemode option_panel matches 0 run function main:reset/resetf
 execute if score $gamemode option_panel matches 1 run function main:reset/resetctf
 # reset spécifiques aux modes de jeu
 
-advancement revoke @a everything
-advancement revoke @a from warrior:root
-advancement revoke @a from archer:root
-advancement revoke @a from mage:root
-advancement revoke @a from rogue:root
 execute as @a run function main:reset/resetachats
 function main:reset/resetspells/resetspells
 # reset les achats et les spells de @s (DOIT ETRE MIS AVANT DE RESET LES PLAYER)

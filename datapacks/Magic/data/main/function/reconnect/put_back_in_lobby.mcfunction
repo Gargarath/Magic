@@ -29,10 +29,6 @@ scoreboard players set @s InLobby 1
 execute if score yes used_reset matches 0 run tag @s add in_podium
 execute if score yes used_reset matches 1 run tag @s remove in_podium
 function main:reset/resetachats
-advancement revoke @s from warrior:root
-advancement revoke @s from archer:root
-advancement revoke @s from mage:root
-advancement revoke @s from rogue:root
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:regeneration
 effect clear @s minecraft:resistance

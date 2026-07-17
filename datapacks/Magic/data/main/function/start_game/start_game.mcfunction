@@ -115,13 +115,6 @@ tag @a[tag=!in_tutorial] remove inventory_rebuilding
 tag @a[tag=!in_tutorial] add save_inventory
 # execute la fonction main:start_game/players/player_X pour chaque joueur dans le lobby
 
-advancement revoke @a[scores={Player=1..}] everything
-advancement revoke @a[tag=!in_tutorial] from warrior:root
-advancement revoke @a[tag=!in_tutorial] from archer:root
-advancement revoke @a[tag=!in_tutorial] from mage:root
-advancement revoke @a[tag=!in_tutorial] from rogue:root
-# Affiche les objets achetable par le joueur selon sa classe
-
 tag @a[scores={Player=1..}] add display_killfeed
 tag @a[scores={Player=-1}] add display_killfeed
 # permet aux joueurs de voir le killfeed

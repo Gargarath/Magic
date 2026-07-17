@@ -58,11 +58,7 @@ effect clear @s
 effect give @s minecraft:resistance infinite 255 true
 function main:items_positions/cleanup_managed_items
 recipe give @s *
-advancement revoke @s everything
-advancement revoke @s from warrior:root
-advancement revoke @s from archer:root
-advancement revoke @s from mage:root
-advancement revoke @s from rogue:root
+
 function main:reset/resetachats
 function main:reset/setupspells
 function main:reset/resetclass
