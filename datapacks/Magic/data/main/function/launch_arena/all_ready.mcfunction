@@ -15,6 +15,7 @@ tag @a[scores={Player=1..}] add in_countdown
 # indique que les joueurs sont en attente (pour éviter qu'ils utilisent leurs raccourcis de sorts)
 
 scoreboard players set shop enable_loop 0
+function shop:clear_overlays
 scoreboard players set ctf enable_loop 1
 scoreboard players set spells enable_loop 1
 schedule clear shop:shop_timer/shop_timer

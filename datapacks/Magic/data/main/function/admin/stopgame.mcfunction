@@ -11,6 +11,7 @@ scoreboard players set Is_ready Lobby_ready 0
 # permet qu'une fois que le datapack lobby sera lancé ce score passe a 1 et tous les joueurs soient tp au lobby
 scoreboard players set ffa enable_loop 0
 scoreboard players set shop enable_loop 0
+function shop:clear_overlays
 schedule clear shop:shop_timer/shop_timer
 scoreboard players set stuff enable_loop 1
 scoreboard players set spells enable_loop 1
