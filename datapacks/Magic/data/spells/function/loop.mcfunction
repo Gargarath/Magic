@@ -172,7 +172,7 @@ execute as @e[type=#living_spellabale,type=!player,nbt={active_effects:[{id:"min
 
 	# WEAPON1 #
 
-execute as @a[scores={usespell=1..}] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={weapon_1_m:1b}] run function spells:spellsystem/weapon1_m/use_stick/usestick
+execute as @a[scores={usespell=1..}] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{weapon_1_m:1b}] run function spells:spellsystem/weapon1_m/use_stick/usestick
 # lance le spell du baton de mage au nom du joueur qui l'utilise
 
 # donne du mana a ceux a qui il en manque

@@ -7,7 +7,7 @@ execute if score lobby enable_loop matches 1 run particle minecraft:dust{"color"
 execute if score lobby enable_loop matches 1 run particle minecraft:dust{"color":[0,0.0,0.0],"scale":1} -0.9 55.3 20.70 -0.5 0.6 0 0 10 force @a[tag=in_lobby_arena]
 execute if score lobby enable_loop matches 1 run particle minecraft:dust{"color":[0.55,0.0,1.0],"scale":1.5} -0.9 55.3 20.70 -0.5 0.6 0 0 5 force @a[tag=in_lobby_arena]
 execute if score lobby enable_loop matches 1 as @e[type=minecraft:interaction,tag=optn_menu_left_clickable] if data entity @s attack on attacker run function lobby:option_panel/interact_with_menu/left_click_on_menu
-execute if score lobby enable_loop matches 1 at @n[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
+execute if score lobby enable_loop matches 1 at @e[type=marker,tag=leaderboard_place_deadliest_player] run particle dust{color:[0.588,0.035,0.071],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
 execute if score lobby enable_loop matches 1 if data storage minecraft:matchinfo {last_game_gamemode:0b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[1.0,0.745,0.035],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
 execute if score lobby enable_loop matches 1 if data storage minecraft:matchinfo {last_game_gamemode:1b} at @e[type=marker,tag=leaderboard_place_objectives_player] run particle dust{color:[0.208,0.965,0.988],scale:2} ~ ~-0.3 ~ 0.7 0 0.7 0 3 normal @a[tag=in_podium]
 execute if score lobby enable_loop matches 1 at @e[type=marker,tag=jump_pads] run particle happy_villager ~ ~ ~ 1 0 1 0 2 normal
