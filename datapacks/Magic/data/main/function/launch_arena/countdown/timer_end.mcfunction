@@ -21,8 +21,7 @@ execute as @a[scores={Player=1..}] run function main:effects/refresh_persistent
 
 team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
-team modify red collisionRule pushOtherTeams
-team modify blue collisionRule pushOtherTeams
+function lobby:team_selector/collision/enable_ctf_game
 team modify red nametagVisibility hideForOtherTeams
 team modify blue nametagVisibility hideForOtherTeams
 execute as @a[team=red] run function main:locator_bar/team_updated

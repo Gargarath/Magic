@@ -1,5 +1,8 @@
 # Appelée par pages/main/launch_game permet de commencer une partie
 
+function lobby:team_selector/collision/disable
+# restaure les règles de collision utilisées hors du lobby
+
 # remplace l'ancienne map affichée par "Aléatoire" avant les refresh GUI déclenchés pendant la sortie du lobby
 execute if score $gamemode option_panel matches 0 if score map_1 map_selection matches 0 as @a[tag=initialised,tag=!in_tutorial] run function main:start_game/prepare_random_ffa_map_name
 

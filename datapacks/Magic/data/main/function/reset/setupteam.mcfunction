@@ -2,14 +2,12 @@ team add red
 team modify red color red
 team modify red nametagVisibility hideForOtherTeams
 team modify red friendlyFire false
-team modify red collisionRule pushOwnTeam
 # Crée la team red utilisée pour le CTF
 
 team add blue
 team modify blue color blue
 team modify blue nametagVisibility hideForOtherTeams
 team modify blue friendlyFire false
-team modify blue collisionRule pushOwnTeam
 # Crée la team blue utilisée pour le CTF
 
 team add spectator
@@ -18,21 +16,15 @@ team modify spectator prefix [{"atlas":"minecraft:items","sprite":"item/ender_ey
 team modify spectator nametagVisibility always
 team modify spectator friendlyFire false
 team modify spectator seeFriendlyInvisibles false
-team modify spectator collisionRule never
 # Crée la team spectator utilisée pour le CTF
 
 team add lobby
-team modify lobby collisionRule never
 # Crée la team lobby utilisée pour les joueurs qui n'ont ni équipe ni équipe
 
 team add warrior
 team add archer
 team add mage
 team add rogue
-team modify warrior collisionRule never
-team modify archer collisionRule never
-team modify mage collisionRule never
-team modify rogue collisionRule never
 team modify warrior seeFriendlyInvisibles false
 team modify archer seeFriendlyInvisibles false
 team modify mage seeFriendlyInvisibles false
@@ -52,10 +44,6 @@ team modify w_red color red
 team modify a_red color red
 team modify m_red color red
 team modify r_red color red
-team modify w_red collisionRule never
-team modify a_red collisionRule never
-team modify m_red collisionRule never
-team modify r_red collisionRule never
 team modify w_red seeFriendlyInvisibles false
 team modify a_red seeFriendlyInvisibles false
 team modify m_red seeFriendlyInvisibles false
@@ -75,10 +63,6 @@ team modify w_blue color blue
 team modify a_blue color blue
 team modify m_blue color blue
 team modify r_blue color blue
-team modify w_blue collisionRule never
-team modify a_blue collisionRule never
-team modify m_blue collisionRule never
-team modify r_blue collisionRule never
 team modify w_blue seeFriendlyInvisibles false
 team modify a_blue seeFriendlyInvisibles false
 team modify m_blue seeFriendlyInvisibles false
@@ -95,7 +79,6 @@ team add red_op
 team modify red_op color red
 team modify red_op nametagVisibility always
 team modify red_op friendlyFire false
-team modify red_op collisionRule pushOwnTeam
 team modify red_op prefix {"text":"\uE600 ","color":"gold"}
 # Crée la team red_op
 
@@ -103,7 +86,6 @@ team add blue_op
 team modify blue_op color blue
 team modify blue_op nametagVisibility always
 team modify blue_op friendlyFire false
-team modify blue_op collisionRule pushOwnTeam
 team modify blue_op prefix {"text":"\uE600 ","color":"gold"}
 # Crée la team blue_op
 
@@ -113,22 +95,16 @@ team modify spectator_op prefix [{"text":"\uE600 ","color":"gold"},{"atlas":"min
 team modify spectator_op nametagVisibility always
 team modify spectator_op friendlyFire false
 team modify spectator_op seeFriendlyInvisibles false
-team modify spectator_op collisionRule never
 # Crée la team spectator utilisée pour le CTF
 
 team add lobby_op
 team modify lobby_op prefix {"text":"\uE600 ","color":"gold"}
-team modify lobby_op collisionRule never
 # Crée la team lobby utilisée pour les joueurs qui n'ont ni équipe ni équipe
 
 team add warrior_op
 team add archer_op
 team add mage_op
 team add rogue_op
-team modify warrior_op collisionRule never
-team modify archer_op collisionRule never
-team modify mage_op collisionRule never
-team modify rogue_op collisionRule never
 team modify warrior_op seeFriendlyInvisibles false
 team modify archer_op seeFriendlyInvisibles false
 team modify mage_op seeFriendlyInvisibles false
@@ -148,10 +124,6 @@ team modify w_red_op color red
 team modify a_red_op color red
 team modify m_red_op color red
 team modify r_red_op color red
-team modify w_red_op collisionRule never
-team modify a_red_op collisionRule never
-team modify m_red_op collisionRule never
-team modify r_red_op collisionRule never
 team modify w_red_op seeFriendlyInvisibles false
 team modify a_red_op seeFriendlyInvisibles false
 team modify m_red_op seeFriendlyInvisibles false
@@ -171,10 +143,6 @@ team modify w_blue_op color blue
 team modify a_blue_op color blue
 team modify m_blue_op color blue
 team modify r_blue_op color blue
-team modify w_blue_op collisionRule never
-team modify a_blue_op collisionRule never
-team modify m_blue_op collisionRule never
-team modify r_blue_op collisionRule never
 team modify w_blue_op seeFriendlyInvisibles false
 team modify a_blue_op seeFriendlyInvisibles false
 team modify m_blue_op seeFriendlyInvisibles false

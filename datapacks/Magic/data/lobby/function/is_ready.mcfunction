@@ -22,6 +22,9 @@ function lobby:map_island/setup_maps_info
 
 ## AUTRE
 
+function lobby:team_selector/collision/enable
+# désactive les collisions entre les joueurs du lobby
+
 gamerule fall_damage false
 # enlève les dégats de chutes
 

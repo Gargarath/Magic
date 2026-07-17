@@ -8,6 +8,9 @@ scoreboard players set @a usespell 0
 scoreboard players set lobby enable_loop 1
 # activer le lobby
 
+function lobby:team_selector/collision/enable
+# désactive les collisions entre les joueurs du lobby
+
 # reset la map
 execute if score selected_map variables matches 1 run function main:reset/reset_map/reset_map_pirate
 execute if score selected_map variables matches 2 run function main:reset/reset_map/reset_map_graveyard
