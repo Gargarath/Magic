@@ -143,6 +143,7 @@ scoreboard players enable @s discord
 
 # ------ # STORAGE PERSONNEL # ---------------
 item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane[minecraft:custom_data={\
+player:0,\
 slot_weapon1_w:0,\
 slot_weapon1_a:0,\
 slot_weapon1_m:0,\
